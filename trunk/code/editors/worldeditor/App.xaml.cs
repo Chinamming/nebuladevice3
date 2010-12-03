@@ -4,7 +4,7 @@ using System.Data;
 using System.Xml;
 using System.Configuration;
 
-namespace ModelEditor
+namespace WorldEditor
 {
     /// <summary>
     /// Interaction logic for App.xaml

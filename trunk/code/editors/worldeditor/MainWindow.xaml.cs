@@ -13,7 +13,7 @@ using DevComponents.WpfRibbon;
 using DevComponents.WpfDock;
 
 
-namespace ModelEditor
+namespace WorldEditor
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,15 +27,15 @@ namespace ModelEditor
 
             // Connect an existing command to the extender so the shared properties can be propagated.
             // See http://www.devcomponents.com/kb/questions.php?questionid=83 for details
-            RibbonCommandManager.Connect(ApplicationCommands.Open, new ButtonDropDownCommandExtender("打开", "/images/FolderOpen32.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.New, new ButtonDropDownCommandExtender("新建", "/images/Document32.png", "/images/NewDocument.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.Close, new ButtonDropDownCommandExtender("退出ModelEditor", "/images/Exit.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.Paste, new ButtonDropDownCommandExtender("粘贴", "/images/Paste32.png", "/images/Paste16.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.Cut, new ButtonDropDownCommandExtender("剪切", "/images/Cut.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.Copy, new ButtonDropDownCommandExtender("复制", "/images/Copy.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.Save, new ButtonDropDownCommandExtender("保存", "/images/Save32.png", "/images/Save.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.SaveAs, new ButtonDropDownCommandExtender("另存为...", "/images/SaveAs32.png"));
-            RibbonCommandManager.Connect(ApplicationCommands.Print, new ButtonDropDownCommandExtender("打印...", "/images/Print32.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Open, new ButtonDropDownCommandExtender("Open", "/images/FolderOpen32.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.New, new ButtonDropDownCommandExtender("New", "/images/Document32.png", "/images/NewDocument.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Close, new ButtonDropDownCommandExtender("Exit WorldEditor", "/images/Exit.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Paste, new ButtonDropDownCommandExtender("Paste", "/images/Paste32.png", "/images/Paste16.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Cut, new ButtonDropDownCommandExtender("Cut", "/images/Cut.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Copy, new ButtonDropDownCommandExtender("Copy", "/images/Copy.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Save, new ButtonDropDownCommandExtender("Save", "/images/Save32.png", "/images/Save.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.SaveAs, new ButtonDropDownCommandExtender("Save as...", "/images/SaveAs32.png"));
+            RibbonCommandManager.Connect(ApplicationCommands.Print, new ButtonDropDownCommandExtender("Print...", "/images/Print32.png"));
 
             // Create command bindings for some commands
             this.CommandBindings.Add(new CommandBinding(MyCommands.MostRecentlyUsed, MostRecentlyUsedCommandExecute));
@@ -227,12 +227,6 @@ namespace ModelEditor
         {
             var hostWindow = new Editor.Control.HostWindow();
             this.renderArea.Child = hostWindow;
-
-            // load file tree
-            var root = new Editor.IO.DirectoryInfo();
-            root.DirectoryURI = "export:";
-            root.DirectoryName = "root";
-            this.fileTree.ItemsSource = root.SubDirectories;
         }
     }
 }
