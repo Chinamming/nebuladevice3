@@ -12,12 +12,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ModelEditor")]
+[assembly: AssemblyTitle("WorldEditor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("db")]
-[assembly: AssemblyProduct("ModelEditor")]
-[assembly: AssemblyCopyright("Copyright @ db 2007")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("WorldEditor")]
+[assembly: AssemblyCopyright("Copyright @ xoyojank")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
