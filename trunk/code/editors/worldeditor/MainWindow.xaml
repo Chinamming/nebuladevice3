@@ -27,12 +27,12 @@
                     </dc:ApplicationMenu.Image>
                     <!-- Application Commands -->
                     <dc:ApplicationMenu.AppItems>
-                        <dc:ButtonDropDown ColorClass="ButtonWithBackground" dc:Ribbon.KeyTip="T" Command="rp:MyCommands.Options" Header="选项">
+                        <dc:ButtonDropDown ColorClass="ButtonWithBackground" dc:Ribbon.KeyTip="T" Command="rp:MyCommands.Options" Header="Options">
                             <dc:ButtonDropDown.Image>
                                 <Image Source="images/Options.png" Stretch="None"/>
                             </dc:ButtonDropDown.Image>
                         </dc:ButtonDropDown>
-                        <dc:ButtonDropDown ColorClass="ButtonWithBackground" Margin="6,0,0,0" dc:Ribbon.KeyTip="X" Command="ApplicationCommands.Close" Header="退出WorldEditor">
+                        <dc:ButtonDropDown ColorClass="ButtonWithBackground" Margin="6,0,0,0" dc:Ribbon.KeyTip="X" Command="ApplicationCommands.Close" Header="Exit WorldEditor">
                             <dc:ButtonDropDown.Image>
                                 <Image Source="images/Exit.png" Stretch="None"/>
                             </dc:ButtonDropDown.Image>
@@ -48,23 +48,23 @@
                         <dc:ButtonDropDown Header="_4. WpfRibbon.doc" dc:Ribbon.KeyTip="4" Command="rp:MyCommands.MostRecentlyUsed" CommandParameter="wpfribbon.doc" />
                     </dc:ApplicationMenu.MruItems>
                     <!-- Document Commands etc.-->
-                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="O" Command="ApplicationCommands.Open" Header="打开">
+                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="O" Command="ApplicationCommands.Open" Header="Open">
                         <dc:ButtonDropDown.Image>
                             <Image Source="images/FolderOpen32.png" Stretch="None"/>
                         </dc:ButtonDropDown.Image>
                     </dc:ButtonDropDown>
-                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="S" Command="ApplicationCommands.Save" Header="保存">
+                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="S" Command="ApplicationCommands.Save" Header="Save">
                         <dc:ButtonDropDown.Image>
                             <Image Source="images/Save32.png" Stretch="None"/>
                         </dc:ButtonDropDown.Image>
                     </dc:ButtonDropDown>
-                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="A" Command="ApplicationCommands.SaveAs" Header="另存为...">
+                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="A" Command="ApplicationCommands.SaveAs" Header="Save As...">
                         <dc:ButtonDropDown.Image>
                             <Image Source="images/SaveAs32.png" Stretch="None"/>
                         </dc:ButtonDropDown.Image>
                     </dc:ButtonDropDown>
                     <Separator Style="{DynamicResource AppMenuSeparator}"/>
-                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="P" Command="ApplicationCommands.Print" Header="截图...">
+                    <dc:ButtonDropDown Style="{DynamicResource AppMenuCommandButton}" dc:Ribbon.KeyTip="P" Command="ApplicationCommands.Print" Header="Print...">
                         <dc:ButtonDropDown.Image>
                             <Image Source="images/Print32.png" Stretch="None"/>
                         </dc:ButtonDropDown.Image>
@@ -234,9 +234,9 @@
             </dc:RibbonTab>
 
             <StackPanel dc:RibbonTabPanel.PanelAlignment="Right" Orientation="Horizontal">
-                <dc:ButtonDropDown Command="Paste" ContentExpands="True" Header="Layout" InlineExpand="False" PopupType="Menu" VerticalContentAlignment="Center">
+                <dc:ButtonDropDown ContentExpands="True" Header="Layout" InlineExpand="False" PopupType="Menu" VerticalContentAlignment="Center">
                     <dc:ButtonDropDown.Image>
-                        <Image Source="images/Paste16.png" Stretch="None" />
+                        <Image Source="images/Help.png" Stretch="None" />
                     </dc:ButtonDropDown.Image>
                     <dc:ButtonDropDown Header="2 by 3" Role="MenuItem" />
                     <dc:ButtonDropDown Header="Tall" Role="MenuItem" />
@@ -253,7 +253,7 @@
             <dc:RibbonTab Header="Assets">
                 <dc:RibbonBarPanel Height="89">
                     <dc:RibbonBar Header="Asset" Padding="3">
-                        <dc:ButtonDropDown Command="Paste" ContentExpands="True" ExpandPosition="Bottom" Header="Create" ImagePosition="Top" InlineExpand="False" PopupType="Menu" dc:Ribbon.KeyTip="V" ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" VerticalContentAlignment="Center">
+                        <dc:ButtonDropDown ContentExpands="True" ExpandPosition="Bottom" Header="Create" ImagePosition="Top" InlineExpand="False" PopupType="Menu" dc:Ribbon.KeyTip="V" ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" VerticalContentAlignment="Center">
                             <dc:ButtonDropDown.Image>
                                 <Image Source="images/Paste32.png" Stretch="None" />
                             </dc:ButtonDropDown.Image>
@@ -313,7 +313,7 @@
                                 <Image Source="images/SchemeBlue.png" Stretch="None" />
                             </dc:ButtonDropDown.Image>
                         </dc:ButtonDropDown>
-                        <dc:ButtonDropDown Command="Paste" ContentExpands="True" ExpandPosition="Bottom" Header="Other" ImagePosition="Top" InlineExpand="False" PopupType="Menu" dc:Ribbon.KeyTip="V" ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" VerticalContentAlignment="Center">
+                        <dc:ButtonDropDown ContentExpands="True" ExpandPosition="Bottom" Header="Other" ImagePosition="Top" InlineExpand="False" PopupType="Menu" dc:Ribbon.KeyTip="V" ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" VerticalContentAlignment="Center">
                             <dc:ButtonDropDown.Image>
                                 <Image Source="images/Paste32.png" Stretch="None" />
                             </dc:ButtonDropDown.Image>

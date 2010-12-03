@@ -5,7 +5,7 @@
     <ProjectGuid>{FD3E4E08-B7BF-4BA7-9F78-421BDAA6F57A}</ProjectGuid>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <RootNamespace>WorldEditor</RootNamespace>
-    <AssemblyName>ModelEditor</AssemblyName>
+    <AssemblyName>WorldEditor</AssemblyName>
     <WarningLevel>4</WarningLevel>
     <OutputType>winexe</OutputType>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
