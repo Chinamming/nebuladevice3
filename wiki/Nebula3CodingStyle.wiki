@@ -9,7 +9,7 @@
   * don't intent the code in a namespace scope
   * don't define global enums, use a struct to pack them
   * don't use global variabals
-  * don't use "using namespace" header files
+  * don't use "using namespace" in header files
 
 = Classes =
   * don't use multiple inheritance, especially when the class is a sub-class of RefCounted
