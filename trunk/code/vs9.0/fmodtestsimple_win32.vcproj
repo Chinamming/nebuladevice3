@@ -92,7 +92,6 @@
 				MapFileName="..\..\bin\win32\fmodtestsimple_win32.debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -189,7 +188,6 @@
 				MapFileName="..\..\bin\win32\fmodtestsimple_win32.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -279,7 +277,6 @@
 				MapFileName="..\..\bin\win32\fmodtestsimple_win32.maya_debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -367,7 +364,6 @@
 				MapFileName="..\..\bin\win32\fmodtestsimple_win32.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
