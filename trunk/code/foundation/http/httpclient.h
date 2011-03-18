@@ -69,4 +69,4 @@ HttpClient::GetUserAgent() const
 
 } // namespace Http
 //------------------------------------------------------------------------------
-#endif // __WII__
+#endif // __NEBULA3_HTTP_FILESYSTEM__

@@ -92,7 +92,6 @@
 				MapFileName="..\..\bin\win32\distributedtesttool.debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
