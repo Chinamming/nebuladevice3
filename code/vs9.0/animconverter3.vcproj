@@ -92,7 +92,6 @@
 				MapFileName="..\..\bin\win32\animconverter3.debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
