@@ -188,7 +188,6 @@
 				MapFileName="..\..\bin\win32\n2tableconverter.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -278,7 +277,6 @@
 				MapFileName="..\..\bin\win32\n2tableconverter.maya_debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -366,7 +364,6 @@
 				MapFileName="..\..\bin\win32\n2tableconverter.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
