@@ -10,6 +10,8 @@ namespace Messaging
 __ImplementClass(Messaging::BlockingHandlerThread, 'BLHT', Messaging::HandlerThreadBase);
 
 //------------------------------------------------------------------------------
+/**
+*/
 BlockingHandlerThread::BlockingHandlerThread() :
     waitTimeout(0)
 {

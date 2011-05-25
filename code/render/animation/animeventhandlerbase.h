@@ -48,6 +48,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimEventHandlerBase::SetCategoryName(const Util::StringAtom& catName)
 {
@@ -55,6 +57,8 @@ AnimEventHandlerBase::SetCategoryName(const Util::StringAtom& catName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 AnimEventHandlerBase::GetCategoryName() const
 {

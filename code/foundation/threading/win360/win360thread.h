@@ -106,6 +106,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Thread::SetPriority(Priority p)
 {
@@ -113,6 +115,8 @@ Win360Thread::SetPriority(Priority p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Win360Thread::Priority
 Win360Thread::GetPriority() const
 {
@@ -120,6 +124,8 @@ Win360Thread::GetPriority() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Thread::SetStackSize(SizeT s)
 {
@@ -127,6 +133,8 @@ Win360Thread::SetStackSize(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Win360Thread::GetStackSize() const
 {
@@ -173,6 +181,8 @@ Win360Thread::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Thread::SetCoreId(System::Cpu::CoreId id)
 {
@@ -180,6 +190,8 @@ Win360Thread::SetCoreId(System::Cpu::CoreId id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline System::Cpu::CoreId
 Win360Thread::GetCoreId() const
 {

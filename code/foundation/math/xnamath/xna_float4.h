@@ -226,6 +226,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4::float4()
 {
@@ -233,6 +235,8 @@ float4::float4()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4::float4(scalar x, scalar y, scalar z, scalar w)
 {
@@ -240,6 +244,8 @@ float4::float4(scalar x, scalar y, scalar z, scalar w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4::float4(XMVECTOR rhs) :
     vec(rhs)
@@ -248,6 +254,8 @@ float4::float4(XMVECTOR rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::operator=(const float4 &rhs)
 {
@@ -255,6 +263,8 @@ float4::operator=(const float4 &rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::operator=(XMVECTOR rhs)
 {
@@ -262,6 +272,8 @@ float4::operator=(XMVECTOR rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::operator==(const float4 &rhs) const
 {
@@ -269,6 +281,8 @@ float4::operator==(const float4 &rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::operator!=(const float4 &rhs) const
 {
@@ -316,6 +330,8 @@ float4::storeu(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::stream(scalar* ptr) const
 {
@@ -323,6 +339,8 @@ float4::stream(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::load_float3(const void* ptr, float w)
 {
@@ -331,6 +349,8 @@ float4::load_float3(const void* ptr, float w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::operator-() const
 {
@@ -338,6 +358,8 @@ float4::operator-() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::operator*(scalar t) const
 {
@@ -345,6 +367,8 @@ float4::operator*(scalar t) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::operator*=(const float4& rhs)
 {
@@ -352,6 +376,8 @@ float4::operator*=(const float4& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::operator+=(const float4 &rhs)
 {
@@ -359,6 +385,8 @@ float4::operator+=(const float4 &rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::operator-=(const float4 &rhs)
 {
@@ -366,6 +394,8 @@ float4::operator-=(const float4 &rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::operator*=(scalar s)
 {
@@ -373,6 +403,8 @@ float4::operator*=(scalar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::operator+(const float4 &rhs) const
 {
@@ -380,6 +412,8 @@ float4::operator+(const float4 &rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::operator-(const float4 &rhs) const
 {
@@ -387,6 +421,8 @@ float4::operator-(const float4 &rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::set(scalar x, scalar y, scalar z, scalar w)
 {
@@ -394,6 +430,8 @@ float4::set(scalar x, scalar y, scalar z, scalar w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 float4::x()
 {
@@ -405,6 +443,8 @@ float4::x()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::x() const
 {
@@ -412,6 +452,8 @@ float4::x() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 float4::y()
 {
@@ -423,6 +465,8 @@ float4::y()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::y() const
 {
@@ -430,6 +474,8 @@ float4::y() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 float4::z()
 {
@@ -441,6 +487,8 @@ float4::z()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::z() const
 {
@@ -448,6 +496,8 @@ float4::z() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 float4::w()
 {
@@ -459,6 +509,8 @@ float4::w()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::w() const
 {
@@ -466,6 +518,8 @@ float4::w() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::set_x(scalar x)
 {
@@ -473,6 +527,8 @@ float4::set_x(scalar x)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::set_y(scalar y)
 {
@@ -480,6 +536,8 @@ float4::set_y(scalar y)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::set_z(scalar z)
 {
@@ -487,6 +545,8 @@ float4::set_z(scalar z)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 float4::set_w(scalar w)
 {
@@ -494,6 +554,8 @@ float4::set_w(scalar w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::length() const
 {
@@ -501,6 +563,8 @@ float4::length() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::lengthsq() const
 {
@@ -508,6 +572,8 @@ float4::lengthsq() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::reciprocal(const float4 &v)
 {
@@ -515,6 +581,8 @@ float4::reciprocal(const float4 &v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::multiply(const float4 &v0, const float4 &v1)
 {
@@ -522,6 +590,8 @@ float4::multiply(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::abs() const
 {
@@ -529,6 +599,8 @@ float4::abs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::cross3(const float4 &v0, const float4 &v1)
 {
@@ -536,6 +608,8 @@ float4::cross3(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 float4::dot3(const float4 &v0, const float4 &v1)
 {
@@ -543,6 +617,8 @@ float4::dot3(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::barycentric(const float4 &v0, const float4 &v1, const float4 &v2, scalar f, scalar g)
 {
@@ -550,6 +626,8 @@ float4::barycentric(const float4 &v0, const float4 &v1, const float4 &v2, scalar
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::catmullrom(const float4 &v0, const float4 &v1, const float4 &v2, const float4 &v3, scalar s)
 {
@@ -557,6 +635,8 @@ float4::catmullrom(const float4 &v0, const float4 &v1, const float4 &v2, const f
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::hermite(const float4 &v1, const float4 &t1, const float4 &v2, const float4 &t2, scalar s)
 {
@@ -564,6 +644,8 @@ float4::hermite(const float4 &v1, const float4 &t1, const float4 &v2, const floa
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::lerp(const float4 &v0, const float4 &v1, scalar s)
 {
@@ -571,6 +653,8 @@ float4::lerp(const float4 &v0, const float4 &v1, scalar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::maximize(const float4 &v0, const float4 &v1)
 {
@@ -578,6 +662,8 @@ float4::maximize(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::minimize(const float4 &v0, const float4 &v1)
 {
@@ -585,6 +671,8 @@ float4::minimize(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::normalize(const float4 &v)
 {
@@ -593,6 +681,8 @@ float4::normalize(const float4 &v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::reflect(const float4 &normal, const float4 &incident)
 {
@@ -600,6 +690,8 @@ float4::reflect(const float4 &normal, const float4 &incident)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::less4_any(const float4 &v0, const float4 &v1)
 {
@@ -607,6 +699,8 @@ float4::less4_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::less4_all(const float4 &v0, const float4 &v1)
 {
@@ -614,6 +708,8 @@ float4::less4_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::lessequal4_any(const float4 &v0, const float4 &v1)
 {
@@ -621,6 +717,8 @@ float4::lessequal4_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::lessequal4_all(const float4 &v0, const float4 &v1)
 {
@@ -628,6 +726,8 @@ float4::lessequal4_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greater4_any(const float4 &v0, const float4 &v1)
 {
@@ -635,6 +735,8 @@ float4::greater4_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greater4_all(const float4 &v0, const float4 &v1)
 {
@@ -642,6 +744,8 @@ float4::greater4_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greaterequal4_any(const float4 &v0, const float4 &v1)
 {
@@ -649,6 +753,8 @@ float4::greaterequal4_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greaterequal4_all(const float4 &v0, const float4 &v1)
 {
@@ -656,6 +762,8 @@ float4::greaterequal4_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::equal4_any(const float4 &v0, const float4 &v1)
 {
@@ -663,6 +771,8 @@ float4::equal4_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::equal4_all(const float4 &v0, const float4 &v1)
 {
@@ -670,6 +780,8 @@ float4::equal4_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::nearequal4(const float4 &v0, const float4 &v1, const float4 &epsilon)
 {
@@ -677,6 +789,8 @@ float4::nearequal4(const float4 &v0, const float4 &v1, const float4 &epsilon)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::less3_any(const float4 &v0, const float4 &v1)
 {
@@ -684,6 +798,8 @@ float4::less3_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::less3_all(const float4 &v0, const float4 &v1)
 {
@@ -691,6 +807,8 @@ float4::less3_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::lessequal3_any(const float4 &v0, const float4 &v1)
 {
@@ -698,6 +816,8 @@ float4::lessequal3_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::lessequal3_all(const float4 &v0, const float4 &v1)
 {
@@ -705,6 +825,8 @@ float4::lessequal3_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greater3_any(const float4 &v0, const float4 &v1)
 {
@@ -712,6 +834,8 @@ float4::greater3_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greater3_all(const float4 &v0, const float4 &v1)
 {
@@ -719,6 +843,8 @@ float4::greater3_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greaterequal3_any(const float4 &v0, const float4 &v1)
 {
@@ -726,6 +852,8 @@ float4::greaterequal3_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::greaterequal3_all(const float4 &v0, const float4 &v1)
 {
@@ -733,6 +861,8 @@ float4::greaterequal3_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::equal3_any(const float4 &v0, const float4 &v1)
 {
@@ -740,6 +870,8 @@ float4::equal3_any(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::equal3_all(const float4 &v0, const float4 &v1)
 {
@@ -747,6 +879,8 @@ float4::equal3_all(const float4 &v0, const float4 &v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 float4::nearequal3(const float4 &v0, const float4 &v1, const float4 &epsilon)
 {
@@ -754,6 +888,8 @@ float4::nearequal3(const float4 &v0, const float4 &v1, const float4 &epsilon)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float
 float4::unpack_x(XMVECTOR v)
 {
@@ -763,6 +899,8 @@ float4::unpack_x(XMVECTOR v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float
 float4::unpack_y(XMVECTOR v)
 {
@@ -772,6 +910,8 @@ float4::unpack_y(XMVECTOR v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float
 float4::unpack_z(XMVECTOR v)
 {
@@ -781,6 +921,8 @@ float4::unpack_z(XMVECTOR v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float
 float4::unpack_w(XMVECTOR v)
 {
@@ -789,6 +931,8 @@ float4::unpack_w(XMVECTOR v)
     return w;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 float4::splat(scalar s)
@@ -799,6 +943,8 @@ float4::splat(scalar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 float4::splat(const float4 &v, uint element)
@@ -817,6 +963,8 @@ float4::splat(const float4 &v, uint element)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 float4::splat_x(const float4 &v)
@@ -825,6 +973,8 @@ float4::splat_x(const float4 &v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 float4::splat_y(const float4 &v)
@@ -833,6 +983,8 @@ float4::splat_y(const float4 &v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 float4::splat_z(const float4 &v)
@@ -841,6 +993,8 @@ float4::splat_z(const float4 &v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 float4::splat_w(const float4 &v)
@@ -849,6 +1003,8 @@ float4::splat_w(const float4 &v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::permute_control(unsigned int i0, unsigned int i1, unsigned int i2, unsigned int i3)
 {
@@ -856,6 +1012,8 @@ float4::permute_control(unsigned int i0, unsigned int i1, unsigned int i2, unsig
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline float4
 float4::permute(const float4& v0, const float4& v1, const float4& control)
 {

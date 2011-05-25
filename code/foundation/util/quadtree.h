@@ -216,6 +216,8 @@ QuadTree<TYPE>::FindContainmentNode(const Math::bbox& checkBox)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 QuadTree<TYPE>::Node::Node() :
     level(-1),
@@ -230,6 +232,8 @@ QuadTree<TYPE>::Node::Node() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 QuadTree<TYPE>::Node::~Node()
 {
@@ -325,6 +329,8 @@ QuadTree<TYPE>::Node::FindContainmentNode(const Math::bbox& checkBox)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> const typename QuadTree<TYPE>::Node&
 QuadTree<TYPE>::GetNodeByIndex(IndexT index) const
 {
@@ -332,6 +338,8 @@ QuadTree<TYPE>::GetNodeByIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename QuadTree<TYPE>::Node&
 QuadTree<TYPE>::NodeByIndex(IndexT index)
 {
@@ -339,6 +347,8 @@ QuadTree<TYPE>::NodeByIndex(IndexT index)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> const Math::bbox&
 QuadTree<TYPE>::Node::GetBoundingBox() const
 {
@@ -346,6 +356,8 @@ QuadTree<TYPE>::Node::GetBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> char
 QuadTree<TYPE>::Node::Level() const
 {
@@ -353,6 +365,8 @@ QuadTree<TYPE>::Node::Level() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> ushort
 QuadTree<TYPE>::Node::Column() const
 {
@@ -360,6 +374,8 @@ QuadTree<TYPE>::Node::Column() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> ushort
 QuadTree<TYPE>::Node::Row() const
 {
@@ -367,6 +383,8 @@ QuadTree<TYPE>::Node::Row() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 QuadTree<TYPE>::Node::SetElement(const TYPE& elm)
 {
@@ -374,6 +392,8 @@ QuadTree<TYPE>::Node::SetElement(const TYPE& elm)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> const TYPE&
 QuadTree<TYPE>::Node::GetElement() const
 {
@@ -381,6 +401,8 @@ QuadTree<TYPE>::Node::GetElement() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename QuadTree<TYPE>::Node*
 QuadTree<TYPE>::Node::GetChildAt(IndexT i)
 {

@@ -38,6 +38,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 RenderEvent::RenderEvent() :
     code(InvalidCode)
@@ -46,6 +48,8 @@ RenderEvent::RenderEvent() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 RenderEvent::RenderEvent(Code c) :
     code(c)
@@ -54,6 +58,8 @@ RenderEvent::RenderEvent(Code c) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 RenderEvent::Code
 RenderEvent::GetEventCode() const

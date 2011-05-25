@@ -13,6 +13,8 @@ __ImplementClass(Debug::DebugCounter, 'DBGC', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugCounter::DebugCounter() :
     value(0),
     history(1024)
@@ -21,6 +23,8 @@ DebugCounter::DebugCounter() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugCounter::~DebugCounter()
 {
     // we may need de-construct if the critical section is still taken
@@ -30,6 +34,8 @@ DebugCounter::~DebugCounter()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugCounter::Setup(const StringAtom& counterName)
 {
@@ -46,6 +52,8 @@ DebugCounter::Setup(const StringAtom& counterName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugCounter::Discard()
 {
@@ -60,6 +68,8 @@ DebugCounter::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 DebugCounter::GetSample() const
 {
@@ -74,6 +84,8 @@ DebugCounter::GetSample() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<int>
 DebugCounter::GetHistory() const
 {

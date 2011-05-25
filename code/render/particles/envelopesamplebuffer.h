@@ -43,6 +43,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 EnvelopeSampleBuffer::IsValid() const
 {
@@ -50,6 +52,8 @@ EnvelopeSampleBuffer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 EnvelopeSampleBuffer::AsSampleIndex(float t) const
 {
@@ -61,6 +65,8 @@ EnvelopeSampleBuffer::AsSampleIndex(float t) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float*
 EnvelopeSampleBuffer::LookupSamples(IndexT sampleIndex) const
 {
@@ -72,6 +78,8 @@ EnvelopeSampleBuffer::LookupSamples(IndexT sampleIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT 
 EnvelopeSampleBuffer::GetNumSamples() const 
 { 
@@ -79,6 +87,8 @@ EnvelopeSampleBuffer::GetNumSamples() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const float* 
 EnvelopeSampleBuffer::GetSampleBuffer() const 
 { 

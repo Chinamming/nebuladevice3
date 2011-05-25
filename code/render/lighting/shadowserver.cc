@@ -19,12 +19,16 @@ __ImplementClass(Lighting::ShadowServer, 'SDSV', Lighting::ShadowServerBase);
 __ImplementSingleton(Lighting::ShadowServer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShadowServer::ShadowServer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShadowServer::~ShadowServer()
 {
     __DestructSingleton;

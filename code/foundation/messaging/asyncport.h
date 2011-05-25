@@ -74,6 +74,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AsyncPort::SetHandlerThread(const Ptr<HandlerThreadBase>& handlerThread)
 {
@@ -82,6 +84,8 @@ AsyncPort::SetHandlerThread(const Ptr<HandlerThreadBase>& handlerThread)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<HandlerThreadBase>&
 AsyncPort::GetHandlerThread() const
 {
@@ -89,6 +93,8 @@ AsyncPort::GetHandlerThread() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AsyncPort::IsOpen() const
 {
@@ -96,6 +102,8 @@ AsyncPort::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class MESSAGETYPE> inline void 
 AsyncPort::Send(const Ptr<MESSAGETYPE>& msg)
 {
@@ -103,6 +111,8 @@ AsyncPort::Send(const Ptr<MESSAGETYPE>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class MESSAGETYPE> inline void 
 AsyncPort::SendWait(const Ptr<MESSAGETYPE>& msg)
 {
@@ -110,6 +120,8 @@ AsyncPort::SendWait(const Ptr<MESSAGETYPE>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class MESSAGETYPE> inline void 
 AsyncPort::Wait(const Ptr<MESSAGETYPE>& msg)
 {
@@ -117,6 +129,8 @@ AsyncPort::Wait(const Ptr<MESSAGETYPE>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class MESSAGETYPE> inline bool 
 AsyncPort::Peek(const Ptr<MESSAGETYPE>& msg)
 {
@@ -124,6 +138,8 @@ AsyncPort::Peek(const Ptr<MESSAGETYPE>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class MESSAGETYPE> inline void 
 AsyncPort::Cancel(const Ptr<MESSAGETYPE>& msg)
 {

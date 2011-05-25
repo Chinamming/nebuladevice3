@@ -13,6 +13,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SvgLineChartWriter::SvgLineChartWriter() :
     xAxisMinVal(0),
     xAxisMaxVal(100),
@@ -23,12 +25,16 @@ SvgLineChartWriter::SvgLineChartWriter() :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 SvgLineChartWriter::~SvgLineChartWriter()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 SvgLineChartWriter::Open()
 {
@@ -38,6 +44,8 @@ SvgLineChartWriter::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgLineChartWriter::SetupXAxis(const String& axisName, const String& unitName, int minVal, int maxVal)
 {
@@ -49,6 +57,8 @@ SvgLineChartWriter::SetupXAxis(const String& axisName, const String& unitName, i
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgLineChartWriter::SetupYAxis(const String& axisName, const String& unitName, float minVal, float maxVal)
 {
@@ -60,6 +70,8 @@ SvgLineChartWriter::SetupYAxis(const String& axisName, const String& unitName, f
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgLineChartWriter::AddTrack(const String& name, const String& color, const Array<float>& values)
 {
@@ -72,6 +84,8 @@ SvgLineChartWriter::AddTrack(const String& name, const String& color, const Arra
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 SvgLineChartWriter::AddTrack(const Util::String& name, const Util::String& color, const Util::Array<float>& values, const Util::Array<Timing::Tick>& timeStamps)
 {    
@@ -86,6 +100,8 @@ SvgLineChartWriter::AddTrack(const Util::String& name, const Util::String& color
 
 }
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgLineChartWriter::Draw()
 {

@@ -53,6 +53,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 MediaType::MediaType()
 {
@@ -60,6 +62,8 @@ MediaType::MediaType()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 MediaType::Set(const Util::String& str)
@@ -72,6 +76,8 @@ MediaType::Set(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 MediaType::MediaType(const Util::String& str)
 {
@@ -79,6 +85,8 @@ MediaType::MediaType(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 MediaType::MediaType(const Util::String& t, const Util::String& s) :
     type(t),
@@ -89,6 +97,8 @@ MediaType::MediaType(const Util::String& t, const Util::String& s) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 MediaType::MediaType(const MediaType& rhs) :
     type(rhs.type),
@@ -98,6 +108,8 @@ MediaType::MediaType(const MediaType& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 MediaType::operator=(const MediaType& rhs)
@@ -107,6 +119,8 @@ MediaType::operator=(const MediaType& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MediaType::operator==(const MediaType& rhs)
 {
@@ -114,6 +128,8 @@ MediaType::operator==(const MediaType& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MediaType::operator!=(const MediaType& rhs)
 {
@@ -121,6 +137,8 @@ MediaType::operator!=(const MediaType& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MediaType::Set(const Util::String& t, const Util::String& s)
 {
@@ -130,6 +148,8 @@ MediaType::Set(const Util::String& t, const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 MediaType::AsString() const
 {
@@ -142,6 +162,8 @@ MediaType::AsString() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 MediaType::GetType() const
 {
@@ -149,6 +171,8 @@ MediaType::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 MediaType::GetSubType() const
 {
@@ -156,6 +180,8 @@ MediaType::GetSubType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MediaType::IsValid() const
 {
@@ -163,6 +189,8 @@ MediaType::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MediaType::Clear()
 {

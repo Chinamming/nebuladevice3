@@ -26,6 +26,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 AnimKeyArray<TYPE>::AnimKeyArray() :
 Util::Array<TYPE>()
@@ -34,6 +36,8 @@ Util::Array<TYPE>()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 AnimKeyArray<TYPE>::AnimKeyArray(int initialSize, int initialGrow) :
 Util::Array<TYPE>(initialSize, initialGrow)
@@ -42,6 +46,8 @@ Util::Array<TYPE>(initialSize, initialGrow)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 AnimKeyArray<TYPE>::Sample(float sampleTime, AnimLoopType::Type loopType, TYPE& result)

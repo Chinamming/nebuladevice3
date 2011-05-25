@@ -18,12 +18,16 @@ __ImplementSingleton(CoreGraphics::MouseRenderDevice);
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseRenderDevice::MouseRenderDevice()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseRenderDevice::~MouseRenderDevice()
 {
     __DestructSingleton;

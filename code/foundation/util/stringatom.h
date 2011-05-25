@@ -80,6 +80,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 StringAtom::StringAtom() :
     content(0)
@@ -88,6 +90,8 @@ StringAtom::StringAtom() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 StringAtom::StringAtom(const StringAtom& rhs) :
     content(rhs.content)
@@ -96,6 +100,8 @@ StringAtom::StringAtom(const StringAtom& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 StringAtom::StringAtom(char* str)
 {
@@ -110,6 +116,8 @@ StringAtom::StringAtom(char* str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 StringAtom::StringAtom(const char* str)
 {
@@ -124,6 +132,8 @@ StringAtom::StringAtom(const char* str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 StringAtom::StringAtom(unsigned char* str)
 {
@@ -138,6 +148,8 @@ StringAtom::StringAtom(unsigned char* str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 StringAtom::StringAtom(const unsigned char* str)
 {
@@ -152,6 +164,8 @@ StringAtom::StringAtom(const unsigned char* str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 StringAtom::StringAtom(const String& str)
 {
@@ -159,6 +173,8 @@ StringAtom::StringAtom(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 StringAtom::operator=(const StringAtom& rhs)
 {
@@ -166,6 +182,8 @@ StringAtom::operator=(const StringAtom& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StringAtom::operator=(const char* str)
 {
@@ -180,6 +198,8 @@ StringAtom::operator=(const char* str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StringAtom::operator=(const String& str)
 {
@@ -187,6 +207,8 @@ StringAtom::operator=(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::operator==(const StringAtom& rhs) const
 {
@@ -194,6 +216,8 @@ StringAtom::operator==(const StringAtom& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::operator!=(const StringAtom& rhs) const
 {
@@ -201,6 +225,8 @@ StringAtom::operator!=(const StringAtom& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::operator>(const StringAtom& rhs) const
 {
@@ -208,6 +234,8 @@ StringAtom::operator>(const StringAtom& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::operator<(const StringAtom& rhs) const
 {
@@ -215,6 +243,8 @@ StringAtom::operator<(const StringAtom& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::operator>=(const StringAtom& rhs) const
 {
@@ -222,6 +252,8 @@ StringAtom::operator>=(const StringAtom& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::operator<=(const StringAtom& rhs) const
 {
@@ -263,6 +295,8 @@ StringAtom::operator!=(const String& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 StringAtom::Clear()
 {
@@ -270,6 +304,8 @@ StringAtom::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 StringAtom::IsValid() const
 {
@@ -277,6 +313,8 @@ StringAtom::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const char*
 StringAtom::Value() const
 {

@@ -95,6 +95,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 BinaryWriter::SetMemoryMappingEnabled(bool b)
@@ -103,6 +105,8 @@ BinaryWriter::SetMemoryMappingEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 BinaryWriter::IsMemoryMappingEnabled() const
@@ -111,6 +115,8 @@ BinaryWriter::IsMemoryMappingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 BinaryWriter::SetStreamByteOrder(System::ByteOrder::Type order)
 {
@@ -118,6 +124,8 @@ BinaryWriter::SetStreamByteOrder(System::ByteOrder::Type order)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline System::ByteOrder::Type
 BinaryWriter::GetStreamByteOrder() const
 {

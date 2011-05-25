@@ -18,6 +18,8 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreateVisibilityCluster)
 {
     const Ptr<InternalStage>& stage = InternalGraphicsServer::Instance()->GetStageByName(msg->GetStageName());

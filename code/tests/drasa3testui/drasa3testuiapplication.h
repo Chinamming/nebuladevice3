@@ -15,6 +15,10 @@
 #include "ui/uirendermodule.h"
 #include "ui/uimanager.h"
 
+#include "GFxTutorial.h"
+#include "GfxRendermodule.h"
+#include "GfXRender.h"
+
 //------------------------------------------------------------------------------
 namespace Test
 {
@@ -63,6 +67,8 @@ private:
     Ptr<UI::UIRenderModule> uiRenderModule;
 
     Ptr<UI::MainScreen> mainWindow;
+
+	Ptr<ScaleForms::GfxRenderModule> gfxRenderModule;
 };
 
 } // namespace Test

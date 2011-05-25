@@ -11,6 +11,8 @@ namespace App
 __ImplementSingleton(App::Application);
 
 //------------------------------------------------------------------------------
+/**
+*/
 Application::Application() :
     companyName("Radon Labs GmbH"),
     appName("Nebula3 Application"),
@@ -24,12 +26,16 @@ Application::Application() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Application::~Application()
 {
     n_assert(!this->isOpen);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Application::Open()
 {
@@ -39,6 +45,8 @@ Application::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Application::Close()
 {
@@ -47,6 +55,8 @@ Application::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Application::Run()
 {

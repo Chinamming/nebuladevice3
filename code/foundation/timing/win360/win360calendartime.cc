@@ -12,6 +12,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime
 Win360CalendarTime::FromWin32SystemTime(const SYSTEMTIME& t)
 {
@@ -28,6 +30,8 @@ Win360CalendarTime::FromWin32SystemTime(const SYSTEMTIME& t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SYSTEMTIME
 Win360CalendarTime::ToWin32SystemTime(const CalendarTime& calTime)
 {
@@ -69,6 +73,8 @@ Win360CalendarTime::GetLocalTime()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FileTime
 Win360CalendarTime::SystemTimeToFileTime(const CalendarTime& systemTime)
 {
@@ -79,6 +85,8 @@ Win360CalendarTime::SystemTimeToFileTime(const CalendarTime& systemTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime
 Win360CalendarTime::FileTimeToSystemTime(const FileTime& fileTime)
 {
@@ -88,6 +96,8 @@ Win360CalendarTime::FileTimeToSystemTime(const FileTime& fileTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FileTime
 Win360CalendarTime::LocalTimeToFileTime(const CalendarTime& localTime)
 {
@@ -100,6 +110,8 @@ Win360CalendarTime::LocalTimeToFileTime(const CalendarTime& localTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime
 Win360CalendarTime::FileTimeToLocalTime(const FileTime& fileTime)
 {

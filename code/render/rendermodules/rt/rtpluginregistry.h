@@ -73,6 +73,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RTPluginRegistry::IsValid() const
 {
@@ -80,6 +82,8 @@ RTPluginRegistry::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<RTPlugin> >&
 RTPluginRegistry::GetRTPlugins() const
 {

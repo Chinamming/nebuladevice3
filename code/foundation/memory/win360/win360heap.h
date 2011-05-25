@@ -78,6 +78,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const char*
 Win360Heap::GetName() const
 {
@@ -86,6 +88,8 @@ Win360Heap::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void*
 Win360Heap::Alloc(size_t size)
 {
@@ -98,6 +102,8 @@ Win360Heap::Alloc(size_t size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void*
 Win360Heap::Realloc(void* ptr, size_t size)
 {
@@ -110,6 +116,8 @@ Win360Heap::Realloc(void* ptr, size_t size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 Win360Heap::Free(void* ptr)
 {

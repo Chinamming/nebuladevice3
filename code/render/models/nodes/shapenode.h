@@ -62,6 +62,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resources::ManagedMesh>& 
 ShapeNode::GetManagedMesh() const
 {
@@ -69,6 +71,8 @@ ShapeNode::GetManagedMesh() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShapeNode::SetMeshResourceId(const Resources::ResourceId& resId)
 {
@@ -76,6 +80,8 @@ ShapeNode::SetMeshResourceId(const Resources::ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 ShapeNode::GetMeshResourceId() const
 {
@@ -83,6 +89,8 @@ ShapeNode::GetMeshResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShapeNode::SetPrimitiveGroupIndex(IndexT i)
 {
@@ -90,6 +98,8 @@ ShapeNode::SetPrimitiveGroupIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ShapeNode::GetPrimitiveGroupIndex() const
 {
@@ -97,6 +107,8 @@ ShapeNode::GetPrimitiveGroupIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 ShapeNode::SetMeshResourceLoader(const Ptr<Resources::ResourceLoader>& loader)
 {

@@ -99,6 +99,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityCell::SetBoundingBox(const Math::bbox& box)
 {
@@ -106,6 +108,8 @@ VisibilityCell::SetBoundingBox(const Math::bbox& box)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 VisibilityCell::GetBoundingBox() const
 {
@@ -113,6 +117,8 @@ VisibilityCell::GetBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<VisibilityCell>& 
 VisibilityCell::GetParentCell() const
 {
@@ -120,6 +126,8 @@ VisibilityCell::GetParentCell() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<VisibilityCell> >& 
 VisibilityCell::GetChildCells() const
 {
@@ -127,6 +135,8 @@ VisibilityCell::GetChildCells() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<VisibilityContext> >&
 VisibilityCell::GetEntityContexts() const
 {
@@ -134,6 +144,8 @@ VisibilityCell::GetEntityContexts() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<VisibilityContext> >&
 VisibilityCell::GetEntitiesByType(InternalGraphics::InternalGraphicsEntityType::Code type) const
 {
@@ -142,6 +154,8 @@ VisibilityCell::GetEntitiesByType(InternalGraphics::InternalGraphicsEntityType::
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VisibilityCell::GetNumEntitiesInHierarchy() const
 {
@@ -149,6 +163,8 @@ VisibilityCell::GetNumEntitiesInHierarchy() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VisibilityCell::GetNumEntitiesInHierarchyByType(InternalGraphics::InternalGraphicsEntityType::Code type) const
 {
@@ -156,6 +172,8 @@ VisibilityCell::GetNumEntitiesInHierarchyByType(InternalGraphics::InternalGraphi
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VisibilityCell::GetNumEntitiesInHierarchyByTypeMask(uint entityTypeMask) const
 {

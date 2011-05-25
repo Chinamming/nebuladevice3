@@ -30,12 +30,16 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(AdapterExists)
 {
     msg->SetResult(DisplayDevice::Instance()->AdapterExists(msg->GetAdapter()));
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(GetAvailableDisplayModes)
 {
     Adapter::Code adapter = msg->GetAdapter();
@@ -44,12 +48,8 @@ __StaticHandler(GetAvailableDisplayModes)
 }
 
 //------------------------------------------------------------------------------
-__StaticHandler(AdjustDisplaySize)
-{
-	DisplayDevice::Instance()->AdjustSize();
-}
-
-//------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(GetCurrentAdapterDisplayMode)
 {
     Adapter::Code adapter = msg->GetAdapter();
@@ -57,6 +57,8 @@ __StaticHandler(GetCurrentAdapterDisplayMode)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(GetAdapterInfo)
 {
     Adapter::Code adapter = msg->GetAdapter();
@@ -64,30 +66,40 @@ __StaticHandler(GetAdapterInfo)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(AttachDisplayEventHandler)
 {
     DisplayDevice::Instance()->AttachEventHandler(msg->GetHandler().upcast<DisplayEventHandler>());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(RemoveDisplayEventHandler)
 {
     DisplayDevice::Instance()->RemoveEventHandler(msg->GetHandler().upcast<DisplayEventHandler>());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(AttachRenderEventHandler)
 {
     RenderDevice::Instance()->AttachEventHandler(msg->GetHandler().upcast<RenderEventHandler>());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(RemoveRenderEventHandler)
 {
     RenderDevice::Instance()->RemoveEventHandler(msg->GetHandler().upcast<RenderEventHandler>());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreateGraphicsStage)
 {
     const StringAtom& name = msg->GetName();
@@ -96,6 +108,8 @@ __StaticHandler(CreateGraphicsStage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(DiscardGraphicsStage)
 {
     Ptr<InternalStage> stage = msg->GetObjectRef()->Ref<InternalStage>();
@@ -106,6 +120,8 @@ __StaticHandler(DiscardGraphicsStage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreateGraphicsView)
 {
     const Core::Rtti* viewClass = msg->GetViewClass();
@@ -125,6 +141,8 @@ __StaticHandler(CreateGraphicsView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(DiscardGraphicsView)
 {
     Ptr<InternalView> view = msg->GetObjectRef()->Ref<InternalView>();
@@ -135,6 +153,8 @@ __StaticHandler(DiscardGraphicsView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(SetDefaultGraphicsView)
 {
     Ptr<InternalView> view = msg->GetObjectRef()->Ref<InternalView>();
@@ -142,42 +162,56 @@ __StaticHandler(SetDefaultGraphicsView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(RegisterAnimEventHandler)
 {
     Animation::AnimEventServer::Instance()->RegisterAnimEventHandler(msg->GetAnimEventHandler());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(UnregisterAnimEventHandler)
 {
     Animation::AnimEventServer::Instance()->UnregisterAnimEventHandler(msg->GetCategoryName());  
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(PreloadMousePointerTextures)
 {
     MouseRenderDevice::Instance()->PreloadTextures(msg->GetResourceIds());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(UpdateMousePointers)
 {
     MouseRenderDevice::Instance()->UpdatePointers(msg->GetPointers());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(RegisterRTPlugin)
 {
     RenderModules::RTPluginRegistry::Instance()->RegisterRTPlugin(msg->GetType());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(UnregisterRTPlugin)
 {
     RenderModules::RTPluginRegistry::Instance()->UnregisterRTPlugin(msg->GetType());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(SetTimeFactor)
 {
     FrameSync::FrameSyncTimer::Instance()->SetTimeFactor(msg->GetFactor());
@@ -189,6 +223,8 @@ __StaticHandler(SetTimeFactor)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(UpdateSharedShaderVariable)
 {
     const Ptr<ShaderVariable>& shaderVar = ShaderServer::Instance()->GetSharedVariableBySemantic(msg->GetSemantic());
@@ -231,12 +267,16 @@ __StaticHandler(UpdateSharedShaderVariable)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(SetShadowPointOfInterest)
 {
     ShadowServer::Instance()->SetPointOfInterest(msg->GetPoi());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(HoldSharedResources)
 {
     // @todo: remove this message and related stuff as new resource management won't need this (at least it shouldn't ...)
@@ -244,6 +284,8 @@ __StaticHandler(HoldSharedResources)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(ReleaseSharedResources)
 {
     // @todo: remove this message and related stuff as new resource management won't need this (at least it shouldn't ...)

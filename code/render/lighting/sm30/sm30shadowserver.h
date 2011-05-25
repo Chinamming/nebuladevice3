@@ -62,6 +62,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 SM30ShadowServer::GetLocalLightShadowBufferTexture() const
 {
@@ -69,6 +71,8 @@ SM30ShadowServer::GetLocalLightShadowBufferTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 SM30ShadowServer::GetGlobalLightShadowBufferTexture() const
 {

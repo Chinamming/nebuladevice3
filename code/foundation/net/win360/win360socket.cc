@@ -17,6 +17,8 @@ using namespace Util;
 bool Win360Socket::NetworkInitialized = false;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360Socket::Win360Socket() :
     error(ErrorNone),
     sock(0),
@@ -27,6 +29,8 @@ Win360Socket::Win360Socket() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360Socket::~Win360Socket()
 {
     if (this->IsOpen())
@@ -62,6 +66,8 @@ Win360Socket::InitNetwork()
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win360Socket::Open(Protocol protocol)
 {
@@ -113,6 +119,8 @@ Win360Socket::OpenWithExistingSocket(SOCKET s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win360Socket::Close()
 {
@@ -705,6 +713,8 @@ Win360Socket::ErrorAsString(ErrorCode err)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win360Socket::WSAErrorToString(int wsaError)
 {
@@ -712,6 +722,8 @@ Win360Socket::WSAErrorToString(int wsaError)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win360Socket::GetErrorString() const
 {
@@ -719,6 +731,8 @@ Win360Socket::GetErrorString() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 Win360Socket::IsNetworkInitialized()
 {

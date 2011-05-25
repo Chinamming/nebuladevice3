@@ -51,6 +51,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 KeyValuePair<KEYTYPE, VALUETYPE>::KeyValuePair()
 {
@@ -58,6 +60,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::KeyValuePair()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 KeyValuePair<KEYTYPE, VALUETYPE>::KeyValuePair(const KEYTYPE& k, const VALUETYPE& v) :
     keyData(k),
@@ -79,6 +83,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::KeyValuePair(const KEYTYPE& k) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 KeyValuePair<KEYTYPE, VALUETYPE>::KeyValuePair(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) :
     keyData(rhs.keyData),
@@ -88,6 +94,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::KeyValuePair(const KeyValuePair<KEYTYPE, VALUE
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 void
 KeyValuePair<KEYTYPE, VALUETYPE>::operator=(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs)
@@ -97,6 +105,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator=(const KeyValuePair<KEYTYPE, VALUETYP
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 KeyValuePair<KEYTYPE, VALUETYPE>::operator==(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) const
@@ -105,6 +115,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator==(const KeyValuePair<KEYTYPE, VALUETY
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 KeyValuePair<KEYTYPE, VALUETYPE>::operator!=(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) const
@@ -113,6 +125,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator!=(const KeyValuePair<KEYTYPE, VALUETY
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 KeyValuePair<KEYTYPE, VALUETYPE>::operator>(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) const
@@ -121,6 +135,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator>(const KeyValuePair<KEYTYPE, VALUETYP
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 KeyValuePair<KEYTYPE, VALUETYPE>::operator>=(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) const
@@ -129,6 +145,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator>=(const KeyValuePair<KEYTYPE, VALUETY
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 KeyValuePair<KEYTYPE, VALUETYPE>::operator<(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) const
@@ -137,6 +155,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator<(const KeyValuePair<KEYTYPE, VALUETYP
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 KeyValuePair<KEYTYPE, VALUETYPE>::operator<=(const KeyValuePair<KEYTYPE, VALUETYPE>& rhs) const
@@ -145,6 +165,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::operator<=(const KeyValuePair<KEYTYPE, VALUETY
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 VALUETYPE&
 KeyValuePair<KEYTYPE, VALUETYPE>::Value()
@@ -153,6 +175,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::Value()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 const KEYTYPE&
 KeyValuePair<KEYTYPE, VALUETYPE>::Key() const
@@ -161,6 +185,8 @@ KeyValuePair<KEYTYPE, VALUETYPE>::Key() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 const VALUETYPE&
 KeyValuePair<KEYTYPE, VALUETYPE>::Value() const

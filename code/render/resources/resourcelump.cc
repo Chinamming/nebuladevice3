@@ -11,6 +11,8 @@ namespace Resources
 __ImplementClass(Resources::ResourceLump, 'RSLP', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceLump::ResourceLump() : 
     arenaStartAddress(0),
     firstBlockIndex(InvalidIndex),
@@ -22,6 +24,8 @@ ResourceLump::ResourceLump() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceLump::~ResourceLump()
 {
     n_assert(!this->IsBound());
@@ -64,6 +68,8 @@ ResourceLump::Resize(SizeT newNumBlocks)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceLump::Discard()
 {
@@ -77,6 +83,8 @@ ResourceLump::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourceLump::IsBound() const
 {

@@ -13,6 +13,8 @@ __ImplementClass(Debug::HelloWorldRequestHandler, 'HWRH', Http::HttpRequestHandl
 using namespace Http;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HelloWorldRequestHandler::HelloWorldRequestHandler()
 {
     // we need to set a human-readable name, a description, and
@@ -23,6 +25,8 @@ HelloWorldRequestHandler::HelloWorldRequestHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HelloWorldRequestHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {

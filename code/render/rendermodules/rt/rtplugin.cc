@@ -12,18 +12,24 @@ __ImplementClass(RenderModules::RTPlugin, 'RTPG', Core::RefCounted);
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 RTPlugin::RTPlugin()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RTPlugin::~RTPlugin()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnRegister()
 {
@@ -31,6 +37,8 @@ RTPlugin::OnRegister()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnUnregister()
 {
@@ -38,6 +46,8 @@ RTPlugin::OnUnregister()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnStageCreated(const Ptr<InternalStage>& stage)
 {
@@ -45,6 +55,8 @@ RTPlugin::OnStageCreated(const Ptr<InternalStage>& stage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnDiscardStage(const Ptr<InternalStage>& stage)
 {
@@ -52,6 +64,8 @@ RTPlugin::OnDiscardStage(const Ptr<InternalStage>& stage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnViewCreated(const Ptr<InternalView>& view)
 {
@@ -59,6 +73,8 @@ RTPlugin::OnViewCreated(const Ptr<InternalView>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnDiscardView(const Ptr<InternalView>& view)
 {
@@ -66,6 +82,8 @@ RTPlugin::OnDiscardView(const Ptr<InternalView>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnAttachEntity(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -73,6 +91,8 @@ RTPlugin::OnAttachEntity(const Ptr<InternalGraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnRemoveEntity(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -80,6 +100,8 @@ RTPlugin::OnRemoveEntity(const Ptr<InternalGraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnUpdateBefore(IndexT frameId, Timing::Time time)
 {
@@ -87,6 +109,8 @@ RTPlugin::OnUpdateBefore(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnUpdateAfter(IndexT frameId, Timing::Time time)
 {
@@ -94,6 +118,8 @@ RTPlugin::OnUpdateAfter(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnRenderBefore(IndexT frameId, Timing::Time time)
 {
@@ -101,6 +127,8 @@ RTPlugin::OnRenderBefore(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnRenderAfter(IndexT frameId, Timing::Time time)
 {
@@ -108,6 +136,8 @@ RTPlugin::OnRenderAfter(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnRenderFrameBatch(const Ptr<Frame::FrameBatch>& frameBatch)
 {
@@ -115,6 +145,8 @@ RTPlugin::OnRenderFrameBatch(const Ptr<Frame::FrameBatch>& frameBatch)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPlugin::OnRenderWithoutView(IndexT frameId, Timing::Time time)
 {

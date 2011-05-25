@@ -79,6 +79,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterServer::IsValid() const
 {
@@ -86,6 +88,8 @@ CharacterServer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SkinningTechnique::Code
 CharacterServer::GetSkinningTechnique() const
 {

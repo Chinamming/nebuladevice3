@@ -46,6 +46,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MouseRenderDeviceBase::IsValid() const
 {

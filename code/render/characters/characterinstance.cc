@@ -30,6 +30,8 @@ using namespace InternalGraphics;
 using namespace Jobs;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterInstance::CharacterInstance():
     updateFrameIndex(InvalidIndex),
     updateTime(InvalidIndex),
@@ -40,12 +42,16 @@ CharacterInstance::CharacterInstance():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterInstance::~CharacterInstance()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterInstance::Setup(const Ptr<Character>& origCharacter, const Ptr<Models::ModelInstance>& modelInst)
 {
@@ -74,6 +80,8 @@ CharacterInstance::Setup(const Ptr<Character>& origCharacter, const Ptr<Models::
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterInstance::Discard()
 {
@@ -202,6 +210,8 @@ CharacterInstance::RenderDebug(const matrix44& modelTransform)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 CharacterInstance::SetVariationSetName(const Util::StringAtom& variationSetName)
 {

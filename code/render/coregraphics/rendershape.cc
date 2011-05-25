@@ -13,6 +13,8 @@ using namespace Math;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderShape::RenderShape() :
     threadId(InvalidThreadId),
     shapeType(InvalidShapeType),
@@ -28,6 +30,8 @@ RenderShape::RenderShape() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderShape::RenderShape(ThreadId threadId_, Type shapeType_, const matrix44& modelTransform_, const float4& color_) :
     threadId(threadId_),
     shapeType(shapeType_),
@@ -44,6 +48,8 @@ RenderShape::RenderShape(ThreadId threadId_, Type shapeType_, const matrix44& mo
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderShape::SetupSimpleShape(ThreadId threadId_, Type shapeType_, const matrix44& modelTransform_, const float4& color_)
 {
@@ -56,6 +62,8 @@ RenderShape::SetupSimpleShape(ThreadId threadId_, Type shapeType_, const matrix4
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderShape::SetupPrimitives(ThreadId threadId_, const Math::matrix44& modelTransform_, PrimitiveTopology::Code topology_, SizeT numPrimitives_, const void* vertices_, SizeT vertexWidth_, const Math::float4& color_)
 {
@@ -82,6 +90,8 @@ RenderShape::SetupPrimitives(ThreadId threadId_, const Math::matrix44& modelTran
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderShape::SetupIndexedPrimitives(ThreadId threadId_, const Math::matrix44& modelTransform_, PrimitiveTopology::Code topology_, SizeT numPrimitives_, const void* vertices_, SizeT numVertices_, SizeT vertexWidth_, const void* indices_, IndexType::Code indexType_, const Math::float4& color_)
 {

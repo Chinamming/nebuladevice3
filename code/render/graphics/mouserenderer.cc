@@ -17,18 +17,24 @@ using namespace Resources;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseRenderer::MouseRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseRenderer::~MouseRenderer()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseRenderer::PreloadTextures(const Array<ResourceId>& resIds)
 {
@@ -38,6 +44,8 @@ MouseRenderer::PreloadTextures(const Array<ResourceId>& resIds)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseRenderer::UpdatePointers(const Array<MousePointer>& pointers)
 {

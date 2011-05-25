@@ -15,6 +15,8 @@ using namespace Util;
 using namespace CoreAnimation;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimJob::AnimJob() :
     animSequencer(0),
     enqueueMode(AnimJobEnqueueMode::Intercept),
@@ -37,12 +39,16 @@ AnimJob::AnimJob() :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimJob::~AnimJob()
 {
     n_assert(!this->IsAttachedToSequencer());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimJob::OnAttachedToSequencer(const AnimSequencer& animSeq)
 {
@@ -55,6 +61,8 @@ AnimJob::OnAttachedToSequencer(const AnimSequencer& animSeq)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimJob::OnRemoveFromSequencer()
 {
@@ -87,6 +95,8 @@ AnimJob::FixFadeTimes()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AnimJob::IsAttachedToSequencer() const
 {
@@ -283,6 +293,8 @@ AnimJob::CreateEvaluationJob(Timing::Tick time, const Ptr<AnimSampleBuffer>& opt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::Array<AnimEventInfo> 
 AnimJob::EmitAnimEvents(Timing::Tick startTime, Timing::Tick endTime, const Util::String& optionalCatgeory)
 {

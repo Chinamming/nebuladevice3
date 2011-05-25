@@ -23,18 +23,24 @@ using namespace Threading;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShapeRenderer::D3D9ShapeRenderer()
 {
     Memory::Clear(this->shapeMeshes, sizeof(this->shapeMeshes));
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShapeRenderer::~D3D9ShapeRenderer()
 {
     n_assert(!this->IsOpen());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShapeRenderer::Open()
 {
@@ -67,6 +73,8 @@ D3D9ShapeRenderer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShapeRenderer::Close()
 {
@@ -96,6 +104,8 @@ D3D9ShapeRenderer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShapeRenderer::DrawShapes()
 {
@@ -150,6 +160,8 @@ D3D9ShapeRenderer::DrawShapes()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShapeRenderer::DrawSimpleShape(const matrix44& modelTransform, RenderShape::Type shapeType, const float4& color)
 {
@@ -171,6 +183,8 @@ D3D9ShapeRenderer::DrawSimpleShape(const matrix44& modelTransform, RenderShape::
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShapeRenderer::DrawPrimitives(const matrix44& modelTransform, 
                                   PrimitiveTopology::Code topology,
@@ -200,6 +214,8 @@ D3D9ShapeRenderer::DrawPrimitives(const matrix44& modelTransform,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShapeRenderer::DrawIndexedPrimitives(const matrix44& modelTransform,
                                          PrimitiveTopology::Code topology,

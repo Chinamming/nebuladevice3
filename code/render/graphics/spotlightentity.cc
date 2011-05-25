@@ -13,12 +13,16 @@ __ImplementClass(Graphics::SpotLightEntity, 'SLEN', Graphics::AbstractLightEntit
 
 using namespace Math;
 //------------------------------------------------------------------------------
+/**
+*/
 SpotLightEntity::SpotLightEntity()
 {
     this->SetLightType(Lighting::LightType::Spot);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SpotLightEntity::Setup(const Ptr<Stage>& stage_)
 {
@@ -37,6 +41,8 @@ SpotLightEntity::Setup(const Ptr<Stage>& stage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 SpotLightEntity::SetTransformFromPosDirRangeAndCone(const Math::point& pos, const Math::vector& dir, float range, float coneAngle)
 {

@@ -105,6 +105,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetType(Type t)
 {
@@ -112,6 +114,8 @@ TextureBase::SetType(Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline TextureBase::Type
 TextureBase::GetType() const
 {
@@ -119,6 +123,8 @@ TextureBase::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetWidth(SizeT w)
 {
@@ -126,6 +132,8 @@ TextureBase::SetWidth(SizeT w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 TextureBase::GetWidth() const
 {
@@ -133,6 +141,8 @@ TextureBase::GetWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetHeight(SizeT h)
 {
@@ -140,6 +150,8 @@ TextureBase::SetHeight(SizeT h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 TextureBase::GetHeight() const
 {
@@ -147,6 +159,8 @@ TextureBase::GetHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetDepth(SizeT d)
 {
@@ -154,6 +168,8 @@ TextureBase::SetDepth(SizeT d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 TextureBase::GetDepth() const
 {
@@ -161,6 +177,8 @@ TextureBase::GetDepth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetNumMipLevels(SizeT n)
 {
@@ -168,6 +186,8 @@ TextureBase::SetNumMipLevels(SizeT n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 TextureBase::GetNumMipLevels() const
 {
@@ -175,6 +195,8 @@ TextureBase::GetNumMipLevels() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetSkippedMips(SizeT m)
 {
@@ -182,6 +204,8 @@ TextureBase::SetSkippedMips(SizeT m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 TextureBase::GetSkippedMips() const
 {
@@ -189,6 +213,8 @@ TextureBase::GetSkippedMips() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureBase::SetPixelFormat(CoreGraphics::PixelFormat::Code f)
 {
@@ -196,6 +222,8 @@ TextureBase::SetPixelFormat(CoreGraphics::PixelFormat::Code f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::PixelFormat::Code
 TextureBase::GetPixelFormat() const
 {

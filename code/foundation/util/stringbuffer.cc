@@ -11,6 +11,8 @@ namespace Util
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 StringBuffer::StringBuffer() :
     chunkSize(0), 
     curPointer(0)
@@ -19,6 +21,8 @@ StringBuffer::StringBuffer() :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 StringBuffer::~StringBuffer()
 {
     if (this->IsValid())
@@ -41,6 +45,8 @@ StringBuffer::Setup(SizeT size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StringBuffer::Discard()
 {
@@ -57,6 +63,8 @@ StringBuffer::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StringBuffer::AllocNewChunk()
 {

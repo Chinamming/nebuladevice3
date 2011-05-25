@@ -10,12 +10,16 @@ namespace Interface
 __ImplementClass(Interface::InterfaceHandlerBase, 'IFHB', Messaging::Handler);
 
 //------------------------------------------------------------------------------
+/**
+*/
 InterfaceHandlerBase::InterfaceHandlerBase()
 {
     // empty
 }     
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InterfaceHandlerBase::DoWork()
 {

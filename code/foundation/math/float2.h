@@ -89,6 +89,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float2::float2()
 {
@@ -96,6 +98,8 @@ float2::float2()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline 
 float2::float2(scalar x, scalar y) :
     X(x), Y(y)
@@ -104,6 +108,8 @@ float2::float2(scalar x, scalar y) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float2::float2(const float2& rhs) :
     X(rhs.X), Y(rhs.Y)
@@ -112,6 +118,8 @@ float2::float2(const float2& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 float2::operator=(const float2& rhs)
 {
@@ -120,6 +128,8 @@ float2::operator=(const float2& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 float2::operator==(const float2& rhs) const
 {
@@ -127,6 +137,8 @@ float2::operator==(const float2& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 float2::operator!=(const float2& rhs) const
 {
@@ -134,6 +146,8 @@ float2::operator!=(const float2& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::operator-() const
 {
@@ -141,6 +155,8 @@ float2::operator-() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::operator*(scalar t) const
 {
@@ -148,6 +164,8 @@ float2::operator*(scalar t) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 float2::operator+=(const float2& rhs)
 {
@@ -156,6 +174,8 @@ float2::operator+=(const float2& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 float2::operator-=(const float2& rhs)
 {
@@ -164,6 +184,8 @@ float2::operator-=(const float2& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 float2::operator*=(scalar s)
 {
@@ -172,6 +194,8 @@ float2::operator*=(scalar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::operator+(const float2& rhs) const
 {
@@ -179,6 +203,8 @@ float2::operator+(const float2& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::operator-(const float2& rhs) const
 {
@@ -186,6 +212,8 @@ float2::operator-(const float2& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 float2::set(scalar x, scalar y)
 {
@@ -194,6 +222,8 @@ float2::set(scalar x, scalar y)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar&
 float2::x()
 {
@@ -201,6 +231,8 @@ float2::x()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 float2::x() const
 {
@@ -208,6 +240,8 @@ float2::x() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar&
 float2::y()
 {
@@ -215,6 +249,8 @@ float2::y()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 float2::y() const
 {
@@ -222,6 +258,8 @@ float2::y() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 float2::length() const
 {
@@ -229,6 +267,8 @@ float2::length() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 float2::lengthsq() const
 {
@@ -236,6 +276,8 @@ float2::lengthsq() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::abs() const
 {
@@ -243,6 +285,8 @@ float2::abs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 float2::any() const
 {
@@ -250,6 +294,8 @@ float2::any() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 float2::all() const
 {
@@ -257,6 +303,8 @@ float2::all() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::lt(const float2& v0, const float2& v1)
 {
@@ -267,6 +315,8 @@ float2::lt(const float2& v0, const float2& v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::le(const float2& v0, const float2& v1)
 {
@@ -277,6 +327,8 @@ float2::le(const float2& v0, const float2& v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::gt(const float2& v0, const float2& v1)
 {
@@ -287,6 +339,8 @@ float2::gt(const float2& v0, const float2& v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::ge(const float2& v0, const float2& v1)
 {
@@ -297,6 +351,8 @@ float2::ge(const float2& v0, const float2& v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::normalize(const float2& v)
 {
@@ -312,6 +368,8 @@ float2::normalize(const float2& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::maximize(const float2& v0, const float2& v1)
 {
@@ -319,6 +377,8 @@ float2::maximize(const float2& v0, const float2& v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float2
 float2::minimize(const float2& v0, const float2& v1)
 {

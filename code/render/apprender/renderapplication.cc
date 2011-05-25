@@ -40,6 +40,8 @@ using namespace FrameSync;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderApplication::RenderApplication() :
     time(0.0),
     frameTime(0.0),
@@ -51,12 +53,16 @@ RenderApplication::RenderApplication() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderApplication::~RenderApplication()
 {
     n_assert(!this->IsOpen());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 RenderApplication::LookupProjectDirectory()
 {
@@ -71,6 +77,8 @@ RenderApplication::LookupProjectDirectory()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 RenderApplication::Open()
 {
@@ -173,6 +181,8 @@ RenderApplication::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderApplication::OnConfigureDisplay()
 {
@@ -266,6 +276,8 @@ RenderApplication::OnSetupResourceMappers()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderApplication::Close()
 {
@@ -317,6 +329,8 @@ RenderApplication::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderApplication::Run()
 {
@@ -360,6 +374,8 @@ RenderApplication::Run()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderApplication::OnProcessInput()
 {
@@ -367,6 +383,8 @@ RenderApplication::OnProcessInput()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderApplication::OnUpdateFrame()
 {
@@ -374,6 +392,8 @@ RenderApplication::OnUpdateFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderApplication::UpdateTime()
 {    

@@ -14,18 +14,24 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StdTcpClientConnection::StdTcpClientConnection()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StdTcpClientConnection::~StdTcpClientConnection()
 {
     this->Shutdown();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StdTcpClientConnection::Connect(const Ptr<Socket>& sock)
 {
@@ -49,6 +55,8 @@ StdTcpClientConnection::Connect(const Ptr<Socket>& sock)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StdTcpClientConnection::IsConnected() const
 {
@@ -63,6 +71,8 @@ StdTcpClientConnection::IsConnected() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StdTcpClientConnection::Shutdown()
 {
@@ -76,6 +86,8 @@ StdTcpClientConnection::Shutdown()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const IpAddress&
 StdTcpClientConnection::GetClientAddress() const
 {
@@ -84,6 +96,8 @@ StdTcpClientConnection::GetClientAddress() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Socket::Result
 StdTcpClientConnection::Send(const Ptr<Stream>& stream)
 {
@@ -124,6 +138,8 @@ StdTcpClientConnection::Send(const Ptr<Stream>& stream)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Socket::Result
 StdTcpClientConnection::Send()
 {
@@ -134,6 +150,8 @@ StdTcpClientConnection::Send()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Socket::Result
 StdTcpClientConnection::Recv()
 {
@@ -176,6 +194,8 @@ StdTcpClientConnection::Recv()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Stream>&
 StdTcpClientConnection::GetSendStream()
 {
@@ -183,6 +203,8 @@ StdTcpClientConnection::GetSendStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Stream>&
 StdTcpClientConnection::GetRecvStream()
 {

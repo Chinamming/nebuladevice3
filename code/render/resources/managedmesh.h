@@ -22,6 +22,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Mesh>&
 ManagedMesh::GetMesh() const
 {

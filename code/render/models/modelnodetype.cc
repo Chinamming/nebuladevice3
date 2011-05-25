@@ -23,6 +23,8 @@ ModelNodeType::ModelNodeType()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelNodeType::Code
 ModelNodeType::FromName(const Name& name)
 {
@@ -43,6 +45,8 @@ ModelNodeType::FromName(const Name& name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelNodeType::Name
 ModelNodeType::ToName(Code c)
 {

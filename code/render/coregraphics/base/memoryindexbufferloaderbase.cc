@@ -12,6 +12,8 @@ __ImplementClass(Base::MemoryIndexBufferLoaderBase, 'MILB', Resources::ResourceL
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MemoryIndexBufferLoaderBase::MemoryIndexBufferLoaderBase() :
     indexType(IndexType::None),
     numIndices(0),

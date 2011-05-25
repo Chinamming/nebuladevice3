@@ -84,6 +84,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 StdTcpServer::IsOpen() const
 {
@@ -91,6 +93,8 @@ StdTcpServer::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StdTcpServer::SetAddress(const IpAddress& addr)
 {
@@ -98,6 +102,8 @@ StdTcpServer::SetAddress(const IpAddress& addr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const IpAddress&
 StdTcpServer::GetAddress() const
 {
@@ -105,6 +111,8 @@ StdTcpServer::GetAddress() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StdTcpServer::SetClientConnectionClass(const Core::Rtti& type)
 {

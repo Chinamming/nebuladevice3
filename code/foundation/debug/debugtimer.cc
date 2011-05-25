@@ -13,6 +13,8 @@ __ImplementClass(Debug::DebugTimer, 'DBGT', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugTimer::DebugTimer() :
     accumTime(0.0),
     startTime(0.0),
@@ -23,6 +25,8 @@ DebugTimer::DebugTimer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugTimer::~DebugTimer()
 {
     // we may need de-construct if the critical section is still taken
@@ -32,6 +36,8 @@ DebugTimer::~DebugTimer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugTimer::Setup(const StringAtom& timerName)
 {
@@ -48,6 +54,8 @@ DebugTimer::Setup(const StringAtom& timerName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugTimer::Discard()
 {
@@ -62,6 +70,8 @@ DebugTimer::Discard()
 }
         
 //------------------------------------------------------------------------------
+/**
+*/
 Timing::Time
 DebugTimer::GetSample() const
 {
@@ -76,6 +86,8 @@ DebugTimer::GetSample() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Timing::Time>
 DebugTimer::GetHistory() const
 {
@@ -86,6 +98,8 @@ DebugTimer::GetHistory() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<DebugTimer>
 DebugTimer::CreateAsSingleton(const Util::StringAtom& timerName)
 {
@@ -99,6 +113,8 @@ DebugTimer::CreateAsSingleton(const Util::StringAtom& timerName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 DebugTimer::DestroySingleton(const Util::StringAtom& timerName)
 {

@@ -25,6 +25,8 @@ using namespace Util;
 using namespace Timing;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceManager::ResourceManager() :
     isOpen(false),
     frameIdx(0),
@@ -34,6 +36,8 @@ ResourceManager::ResourceManager() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceManager::~ResourceManager()
 {
     if (this->IsOpen())
@@ -44,6 +48,8 @@ ResourceManager::~ResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::Open()
 {
@@ -52,6 +58,8 @@ ResourceManager::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::Close()
 {
@@ -86,6 +94,8 @@ ResourceManager::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::AttachMapper(const Ptr<ResourceMapper>& mapper)
 {
@@ -97,6 +107,8 @@ ResourceManager::AttachMapper(const Ptr<ResourceMapper>& mapper)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::RemoveMapper(const Core::Rtti& resType)
 {
@@ -107,6 +119,8 @@ ResourceManager::RemoveMapper(const Core::Rtti& resType)
 }
    
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::RemoveAllMappers()
 {
@@ -119,6 +133,8 @@ ResourceManager::RemoveAllMappers()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourceManager::HasMapper(const Rtti& resType) const
 {
@@ -127,6 +143,8 @@ ResourceManager::HasMapper(const Rtti& resType) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ResourceMapper>&
 ResourceManager::GetMapperByResourceType(const Rtti& resType) const
 {
@@ -230,6 +248,8 @@ ResourceManager::DiscardManagedResource(const Ptr<ManagedResource>& managedResou
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourceManager::HasManagedResource(const ResourceId& resId) const
 {
@@ -238,6 +258,8 @@ ResourceManager::HasManagedResource(const ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ManagedResource>&
 ResourceManager::LookupManagedResource(const ResourceId& resId) const
 {
@@ -246,6 +268,8 @@ ResourceManager::LookupManagedResource(const ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::AutoManageManagedResource(const ResourceId& id, bool autoManage)
 {
@@ -314,6 +338,8 @@ ResourceManager::WaitForPendingResources(Time timeOut)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::RequestResourceForLoading(const Ptr<ManagedResource>& managedResource)
 {
@@ -419,6 +445,8 @@ ResourceManager::UnregisterUnmanagedResource(const ResourceId& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::HoldResources()
 {
@@ -434,6 +462,8 @@ ResourceManager::HoldResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceManager::ReleaseResources()
 {

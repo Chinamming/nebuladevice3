@@ -83,6 +83,8 @@ Win360CriticalSection::Win360CriticalSection()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win360CriticalSection::~Win360CriticalSection()
 {
@@ -90,6 +92,8 @@ Win360CriticalSection::~Win360CriticalSection()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360CriticalSection::Enter() const
 {
@@ -97,6 +101,8 @@ Win360CriticalSection::Enter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360CriticalSection::Leave() const
 {
@@ -105,18 +111,24 @@ Win360CriticalSection::Leave() const
 
 #else
 //------------------------------------------------------------------------------
+/**
+*/
 inline void Win360CriticalSection::WaiterPlus() const
 {
     _InterlockedIncrement(&this->waiterCount);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void Win360CriticalSection::WaiterMinus() const
 {
     _InterlockedDecrement(&this->waiterCount);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 Win360CriticalSection::PerfLockImmediate(DWORD dwThreadID) const 
 {
@@ -124,6 +136,8 @@ Win360CriticalSection::PerfLockImmediate(DWORD dwThreadID) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360CriticalSection::Enter() const
 {
@@ -144,6 +158,8 @@ Win360CriticalSection::Enter() const
     this->recursiveLockCount++;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 Win360CriticalSection::AllocateKernelSemaphore() const
 {
@@ -157,6 +173,8 @@ Win360CriticalSection::AllocateKernelSemaphore() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360CriticalSection::PerfLock(DWORD dwThreadID) const
 {
@@ -180,6 +198,8 @@ Win360CriticalSection::PerfLock(DWORD dwThreadID) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 Win360CriticalSection::PerfLockKernel(DWORD dwThreadID) const
 {
@@ -211,6 +231,8 @@ Win360CriticalSection::PerfLockKernel(DWORD dwThreadID) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360CriticalSection::Leave() const
 {
@@ -221,6 +243,8 @@ Win360CriticalSection::Leave() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360CriticalSection::PerfUnlock() const
 {

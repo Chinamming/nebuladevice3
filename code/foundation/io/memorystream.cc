@@ -10,6 +10,8 @@ namespace IO
 __ImplementClass(IO::MemoryStream, 'MSTR', IO::Stream);
 
 //------------------------------------------------------------------------------
+/**
+*/
 MemoryStream::MemoryStream() :
     capacity(0),
     size(0),
@@ -20,6 +22,8 @@ MemoryStream::MemoryStream() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MemoryStream::~MemoryStream()
 {
     // close the stream if still open
@@ -37,6 +41,8 @@ MemoryStream::~MemoryStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MemoryStream::CanRead() const
 {
@@ -44,6 +50,8 @@ MemoryStream::CanRead() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MemoryStream::CanWrite() const
 {
@@ -51,6 +59,8 @@ MemoryStream::CanWrite() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MemoryStream::CanSeek() const
 {
@@ -58,6 +68,8 @@ MemoryStream::CanSeek() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MemoryStream::CanBeMapped() const
 {
@@ -65,6 +77,8 @@ MemoryStream::CanBeMapped() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MemoryStream::SetSize(Size s)
 {
@@ -76,6 +90,8 @@ MemoryStream::SetSize(Size s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Size
 MemoryStream::GetSize() const
 {
@@ -83,6 +99,8 @@ MemoryStream::GetSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Position
 MemoryStream::GetPosition() const
 {
@@ -140,6 +158,8 @@ MemoryStream::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MemoryStream::Write(const void* ptr, Size numBytes)
 {
@@ -165,6 +185,8 @@ MemoryStream::Write(const void* ptr, Size numBytes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Size
 MemoryStream::Read(void* ptr, Size numBytes)
 {
@@ -185,6 +207,8 @@ MemoryStream::Read(void* ptr, Size numBytes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MemoryStream::Seek(Offset offset, SeekOrigin origin)
 {
@@ -209,6 +233,8 @@ MemoryStream::Seek(Offset offset, SeekOrigin origin)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MemoryStream::Eof() const
 {
@@ -219,6 +245,8 @@ MemoryStream::Eof() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MemoryStream::HasRoom(Size numBytes) const
 {

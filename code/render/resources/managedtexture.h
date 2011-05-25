@@ -26,6 +26,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 ManagedTexture::GetTexture() const
 {
@@ -33,6 +35,8 @@ ManagedTexture::GetTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 ManagedTexture::GetTextureUnloaded() const
 {

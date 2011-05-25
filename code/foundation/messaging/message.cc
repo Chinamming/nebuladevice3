@@ -12,6 +12,8 @@ __ImplementClass(Messaging::Message, 'MSG_', Core::RefCounted);
 __ImplementMsgId(Message);
 
 //------------------------------------------------------------------------------
+/**
+*/
 Message::Message() :
     handled(0),
     deferred(false),
@@ -21,6 +23,8 @@ Message::Message() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Message::Encode(const Ptr<IO::BinaryWriter>& writer)
 {
@@ -28,6 +32,8 @@ Message::Encode(const Ptr<IO::BinaryWriter>& writer)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Message::Decode(const Ptr<IO::BinaryReader>& reader)
 {

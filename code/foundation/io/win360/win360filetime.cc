@@ -10,6 +10,8 @@ namespace Win360
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360FileTime::Win360FileTime(const String& str)
 {
     Array<String> tokens = str.Tokenize("#");
@@ -19,6 +21,8 @@ Win360FileTime::Win360FileTime(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win360FileTime::AsString() const
 {

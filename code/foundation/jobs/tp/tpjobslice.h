@@ -35,6 +35,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline TPJob*
 TPJobSlice::GetJob() const
 {
@@ -42,6 +44,8 @@ TPJobSlice::GetJob() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 TPJobSlice::GetSliceIndex() const
 {

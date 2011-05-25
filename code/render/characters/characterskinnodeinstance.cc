@@ -23,18 +23,24 @@ using namespace CoreGraphics;
 using namespace Models;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinNodeInstance::CharacterSkinNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinNodeInstance::~CharacterSkinNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNodeInstance::Setup(const Ptr<ModelInstance>& inst, 
                                  const Ptr<ModelNode>& node, 
@@ -77,6 +83,8 @@ CharacterSkinNodeInstance::Setup(const Ptr<ModelInstance>& inst,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNodeInstance::Discard()
 {
@@ -87,6 +95,8 @@ CharacterSkinNodeInstance::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time time)
 {
@@ -107,6 +117,8 @@ CharacterSkinNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Tim
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNodeInstance::Render()
 {   

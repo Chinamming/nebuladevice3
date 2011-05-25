@@ -7,7 +7,7 @@
 
 namespace Maya
 {
-__ImplementClass(Maya::MayaExtractorBase, 'MEXB', Core::RefCounted);
+__ImplementClass(Maya::MayaExtractorBase, 'MEXS', Core::RefCounted);
 
 //------------------------------------------------------------------------------
 /**

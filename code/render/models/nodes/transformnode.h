@@ -89,6 +89,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 TransformNode::CheckLodDistance(float distToViewer) const
 {
@@ -111,6 +113,8 @@ TransformNode::CheckLodDistance(float distToViewer) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNode::SetPosition(const Math::point& p)
 {
@@ -118,6 +122,8 @@ TransformNode::SetPosition(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 TransformNode::GetPosition() const
 {
@@ -125,6 +131,8 @@ TransformNode::GetPosition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNode::SetRotation(const Math::quaternion& r)
 {
@@ -132,6 +140,8 @@ TransformNode::SetRotation(const Math::quaternion& r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::quaternion&
 TransformNode::GetRotation() const
 {
@@ -139,6 +149,8 @@ TransformNode::GetRotation() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNode::SetScale(const Math::vector& s)
 {
@@ -146,6 +158,8 @@ TransformNode::SetScale(const Math::vector& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 TransformNode::GetScale() const
 {
@@ -153,6 +167,8 @@ TransformNode::GetScale() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNode::SetRotatePivot(const Math::point& p)
 {
@@ -160,6 +176,8 @@ TransformNode::SetRotatePivot(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 TransformNode::GetRotatePivot() const
 {
@@ -167,6 +185,8 @@ TransformNode::GetRotatePivot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNode::SetScalePivot(const Math::point& p)
 {
@@ -174,6 +194,8 @@ TransformNode::SetScalePivot(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 TransformNode::GetScalePivot() const
 {
@@ -181,6 +203,8 @@ TransformNode::GetScalePivot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 TransformNode::IsInViewSpace() const
 {
@@ -188,6 +212,8 @@ TransformNode::IsInViewSpace() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformNode::SetInViewSpace(bool b)
 {
@@ -195,6 +221,8 @@ TransformNode::SetInViewSpace(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float 
 TransformNode::GetMinDistance() const
 {
@@ -202,6 +230,8 @@ TransformNode::GetMinDistance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformNode::SetMinDistance(float val)
 {
@@ -210,6 +240,8 @@ TransformNode::SetMinDistance(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float 
 TransformNode::GetMaxDistance() const
 {
@@ -217,6 +249,8 @@ TransformNode::GetMaxDistance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformNode::SetMaxDistance(float val)
 {
@@ -225,6 +259,8 @@ TransformNode::SetMaxDistance(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 TransformNode::LodDistancesUsed() const
 {
@@ -232,6 +268,8 @@ TransformNode::LodDistancesUsed() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 TransformNode::GetLockedToViewer() const
 {
@@ -239,6 +277,8 @@ TransformNode::GetLockedToViewer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformNode::SetLockedToViewer(bool val)
 {

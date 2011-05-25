@@ -16,6 +16,8 @@ __ImplementClass(IO::ZipFileStream, 'ZFST', IO::Stream);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileStream::ZipFileStream() :
     size(0),
     position(0),
@@ -25,6 +27,8 @@ ZipFileStream::ZipFileStream() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileStream::~ZipFileStream()
 {
     if (this->IsOpen())
@@ -35,6 +39,8 @@ ZipFileStream::~ZipFileStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileStream::CanRead() const
 {
@@ -42,6 +48,8 @@ ZipFileStream::CanRead() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileStream::CanWrite() const
 {
@@ -49,6 +57,8 @@ ZipFileStream::CanWrite() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileStream::CanSeek() const
 {
@@ -56,6 +66,8 @@ ZipFileStream::CanSeek() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileStream::CanBeMapped() const
 {
@@ -63,6 +75,8 @@ ZipFileStream::CanBeMapped() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Size
 ZipFileStream::GetSize() const
 {
@@ -70,6 +84,8 @@ ZipFileStream::GetSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Position
 ZipFileStream::GetPosition() const
 {
@@ -126,6 +142,8 @@ ZipFileStream::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ZipFileStream::Close()
 {
@@ -142,6 +160,8 @@ ZipFileStream::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Size
 ZipFileStream::Read(void* ptr, Size numBytes)
 {
@@ -164,6 +184,8 @@ ZipFileStream::Read(void* ptr, Size numBytes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ZipFileStream::Seek(Offset offset, SeekOrigin origin)
 {
@@ -204,6 +226,8 @@ ZipFileStream::Seek(Offset offset, SeekOrigin origin)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileStream::Eof() const
 {
@@ -214,6 +238,8 @@ ZipFileStream::Eof() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 ZipFileStream::Map()
 {
@@ -230,6 +256,8 @@ ZipFileStream::Map()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ZipFileStream::Unmap()
 {

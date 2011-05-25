@@ -54,6 +54,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 StreamModelLoader::SetStreamMeshLoader(const Ptr<CoreGraphics::StreamMeshLoader>& meshLaoder)
 {

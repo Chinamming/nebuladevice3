@@ -12,6 +12,8 @@ __ImplementClass(IO::ArchiveBase, 'ARCB', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ArchiveBase::ArchiveBase() :
     isValid(false)
 {
@@ -19,6 +21,8 @@ ArchiveBase::ArchiveBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ArchiveBase::~ArchiveBase()
 {
     n_assert(!this->IsValid());
@@ -40,6 +44,8 @@ ArchiveBase::Setup(const URI& archiveFileURI)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ArchiveBase::Discard()
 {

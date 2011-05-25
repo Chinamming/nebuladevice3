@@ -45,6 +45,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PlayClipJob::SetClipName(const Util::StringAtom& n)
 {
@@ -52,6 +54,8 @@ PlayClipJob::SetClipName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 PlayClipJob::GetClipName() const
 {
@@ -59,6 +63,8 @@ PlayClipJob::GetClipName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PlayClipJob::SetLoopCount(float c)
 {
@@ -66,6 +72,8 @@ PlayClipJob::SetLoopCount(float c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 PlayClipJob::GetLoopCount() const
 {

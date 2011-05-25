@@ -22,6 +22,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderConsoleHandler::RenderConsoleHandler():
     linesVisible(12),
     curIndex(0)
@@ -29,6 +31,8 @@ RenderConsoleHandler::RenderConsoleHandler():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderConsoleHandler::Print(const String& s)
 {
@@ -37,6 +41,8 @@ RenderConsoleHandler::Print(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderConsoleHandler::DebugOut(const String& s)
 {
@@ -45,6 +51,8 @@ RenderConsoleHandler::DebugOut(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderConsoleHandler::Error(const String& msg)
 {
@@ -62,6 +70,8 @@ RenderConsoleHandler::Error(const String& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderConsoleHandler::Warning(const String& s)
 {
@@ -70,6 +80,8 @@ RenderConsoleHandler::Warning(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 RenderConsoleHandler::Update()
 {

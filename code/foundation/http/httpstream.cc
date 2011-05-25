@@ -13,12 +13,16 @@ namespace Http
 __ImplementClass(Http::HttpStream, 'HTST', IO::MemoryStream);
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStream::HttpStream()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStream::~HttpStream()
 {
     if (this->IsOpen())
@@ -28,6 +32,8 @@ HttpStream::~HttpStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpStream::Open()
 {

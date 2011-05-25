@@ -27,6 +27,8 @@ using namespace IO;
 
 Util::Dictionary<StringAtom, ResourceId> FrameShaderLoader::textureNameResIdMapping;
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<FrameShader>
 FrameShaderLoader::LoadFrameShader(const ResourceId& name, const URI& uri)
 {
@@ -56,6 +58,8 @@ FrameShaderLoader::LoadFrameShader(const ResourceId& name, const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameShaderLoader::ParseFrameShader(const Ptr<XmlReader>& xmlReader, const Ptr<FrameShader>& frameShader)
 {
@@ -102,6 +106,8 @@ FrameShaderLoader::ParseFrameShader(const Ptr<XmlReader>& xmlReader, const Ptr<F
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameShaderLoader::ParseRenderTarget(const Ptr<XmlReader>& xmlReader, const Ptr<FrameShader>& frameShader)
 {
@@ -144,15 +150,11 @@ FrameShaderLoader::ParseRenderTarget(const Ptr<XmlReader>& xmlReader, const Ptr<
     }
     if (xmlReader->HasAttr("relWidth"))
     {
-		float relWidth = xmlReader->GetFloat("relWidth");
-        renderTarget->SetWidth(uint(float(displayMode.GetWidth()) * relWidth));
-		renderTarget->SetRelativeWidth(relWidth);
+        renderTarget->SetWidth(uint(float(displayMode.GetWidth()) * xmlReader->GetFloat("relWidth")));
     }
     if (xmlReader->HasAttr("relHeight"))
     {
-		float relHeight = xmlReader->GetFloat("relHeight");
-        renderTarget->SetHeight(uint(float(displayMode.GetHeight()) * relHeight));
-		renderTarget->SetRelativeHeight(relHeight);
+        renderTarget->SetHeight(uint(float(displayMode.GetHeight()) * xmlReader->GetFloat("relHeight")));
     }
     if (xmlReader->HasAttr("msaa"))
     {
@@ -184,6 +186,8 @@ FrameShaderLoader::ParseRenderTarget(const Ptr<XmlReader>& xmlReader, const Ptr<
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ShaderVariableInstance>
 FrameShaderLoader::ParseShaderVariableInstance(const Ptr<XmlReader>& xmlReader, const Ptr<ShaderInstance>& shd)
 {
@@ -253,6 +257,8 @@ FrameShaderLoader::ParseShaderVariableInstance(const Ptr<XmlReader>& xmlReader, 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameShaderLoader::ParseFramePass(const Ptr<XmlReader>& xmlReader, const Ptr<FrameShader>& frameShader)
 {
@@ -354,6 +360,8 @@ FrameShaderLoader::ParseFramePass(const Ptr<XmlReader>& xmlReader, const Ptr<Fra
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<FrameBatch>
 FrameShaderLoader::ParseFrameBatch(const Ptr<XmlReader>& xmlReader, const Util::String& passName)
 {
@@ -409,6 +417,8 @@ FrameShaderLoader::ParseFrameBatch(const Ptr<XmlReader>& xmlReader, const Util::
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameShaderLoader::ParsePostEffect(const Ptr<XmlReader>& xmlReader, const Ptr<FrameShader>& frameShader)
 {
@@ -485,6 +495,8 @@ FrameShaderLoader::ParsePostEffect(const Ptr<XmlReader>& xmlReader, const Ptr<Fr
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 FrameShaderLoader::ParseMultipleRenderTarget(const Ptr<IO::XmlReader>& xmlReader, const Ptr<FrameShader>& frameShader)
 {
@@ -530,6 +542,8 @@ FrameShaderLoader::ParseMultipleRenderTarget(const Ptr<IO::XmlReader>& xmlReader
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 FrameShaderLoader::ParseTexture(const Ptr<IO::XmlReader>& xmlReader, const Ptr<FrameShader>& frameShader)
 {

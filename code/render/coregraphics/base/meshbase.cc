@@ -13,18 +13,24 @@ __ImplementClass(Base::MeshBase, 'MSHB', Resources::Resource);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MeshBase::MeshBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MeshBase::~MeshBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MeshBase::Unload()
 {
@@ -42,6 +48,8 @@ MeshBase::Unload()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MeshBase::ApplyPrimitives(IndexT primGroupIndex)
 {

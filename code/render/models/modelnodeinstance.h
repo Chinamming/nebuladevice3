@@ -112,6 +112,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelNodeInstance::IsValid() const
 {
@@ -119,6 +121,8 @@ ModelNodeInstance::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ModelNodeInstance::GetName() const
 {
@@ -126,6 +130,8 @@ ModelNodeInstance::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNodeInstance::SetParent(const Ptr<ModelNodeInstance>& p)
 {
@@ -133,6 +139,8 @@ ModelNodeInstance::SetParent(const Ptr<ModelNodeInstance>& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelNodeInstance::HasParent() const
 {
@@ -140,6 +148,8 @@ ModelNodeInstance::HasParent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ModelNodeInstance>&
 ModelNodeInstance::GetParent() const
 {
@@ -147,6 +157,8 @@ ModelNodeInstance::GetParent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelNodeInstance> >&
 ModelNodeInstance::GetChildren() const
 {
@@ -154,6 +166,8 @@ ModelNodeInstance::GetChildren() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT 
 ModelNodeInstance::GetModelNodeInstanceIndex() const
 {
@@ -162,6 +176,8 @@ ModelNodeInstance::GetModelNodeInstanceIndex() const
 
 #if NEBULA3_ENABLE_PROFILING
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 ModelNodeInstance::StartDebugTimer()
 {
@@ -169,6 +185,8 @@ ModelNodeInstance::StartDebugTimer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 ModelNodeInstance::StopDebugTimer()
 {
@@ -176,6 +194,8 @@ ModelNodeInstance::StopDebugTimer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 ModelNodeInstance::ResetDebugTimer()
 {

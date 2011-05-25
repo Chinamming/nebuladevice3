@@ -122,6 +122,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 const inline Core::Rtti&
 StreamingResourceMapper::GetResourceType() const
 {
@@ -129,6 +131,8 @@ StreamingResourceMapper::GetResourceType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 StreamingResourceMapper::GetFrameIndex() const
 {
@@ -136,6 +140,8 @@ StreamingResourceMapper::GetFrameIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StreamingResourceMapper::SetResourceType(const Core::Rtti& resType)
 {
@@ -143,6 +149,8 @@ StreamingResourceMapper::SetResourceType(const Core::Rtti& resType)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StreamingResourceMapper::SetResourceLoaderClass(const Core::Rtti& loaderType)
 {
@@ -150,6 +158,8 @@ StreamingResourceMapper::SetResourceLoaderClass(const Core::Rtti& loaderType)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StreamingResourceMapper::SetAutoMipMapping(bool enabled)
 {

@@ -27,6 +27,8 @@ using namespace Resources;
 using namespace Models;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderPageHandler::ShaderPageHandler()
 {
     this->SetName("Shaders");
@@ -35,6 +37,8 @@ ShaderPageHandler::ShaderPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {
@@ -107,6 +111,8 @@ ShaderPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 ShaderPageHandler::HandleShaderInfoRequest(const ResourceId& resId, const Ptr<Stream>& responseContentStream)
 {
@@ -250,6 +256,8 @@ ShaderPageHandler::HandleShaderInfoRequest(const ResourceId& resId, const Ptr<St
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderPageHandler::WriteShaderVariableTable(const Ptr<HtmlPageWriter>& htmlWriter, const Array<Ptr<ShaderVariable> >& vars)
 {
@@ -279,6 +287,8 @@ ShaderPageHandler::WriteShaderVariableTable(const Ptr<HtmlPageWriter>& htmlWrite
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 ShaderPageHandler::HasShaderInstance(const Ptr<Models::ModelNodeInstance>& node, const ResourceId& resId)
 {

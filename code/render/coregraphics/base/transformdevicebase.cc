@@ -16,6 +16,8 @@ using namespace Math;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformDeviceBase::TransformDeviceBase() :
     isOpen(false),
     dirtyFlags(0),
@@ -30,12 +32,16 @@ TransformDeviceBase::TransformDeviceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformDeviceBase::~TransformDeviceBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 TransformDeviceBase::Open()
 {
@@ -45,6 +51,8 @@ TransformDeviceBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::Close()
 {
@@ -53,6 +61,8 @@ TransformDeviceBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::ApplyViewSettings()
 {
@@ -60,6 +70,8 @@ TransformDeviceBase::ApplyViewSettings()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::ApplyModelTransforms(const Ptr<ShaderInstance>& /*shdInst*/)
 {
@@ -67,6 +79,8 @@ TransformDeviceBase::ApplyModelTransforms(const Ptr<ShaderInstance>& /*shdInst*/
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::SetProjTransform(const matrix44& m)
 {
@@ -77,6 +91,8 @@ TransformDeviceBase::SetProjTransform(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::SetViewTransform(const matrix44& m)
 {
@@ -89,6 +105,8 @@ TransformDeviceBase::SetViewTransform(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::SetModelTransform(const matrix44& m)
 {
@@ -100,6 +118,8 @@ TransformDeviceBase::SetModelTransform(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateInvProjTransform()
 {
@@ -109,6 +129,8 @@ TransformDeviceBase::UpdateInvProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateInvViewTransform()
 {
@@ -118,6 +140,8 @@ TransformDeviceBase::UpdateInvViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateViewProjTransform()
 {
@@ -127,6 +151,8 @@ TransformDeviceBase::UpdateViewProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateInvModelTransform()
 {
@@ -136,6 +162,8 @@ TransformDeviceBase::UpdateInvModelTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateModelViewTransform()
 {
@@ -145,6 +173,8 @@ TransformDeviceBase::UpdateModelViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateInvModelViewTransform()
 {
@@ -165,6 +195,8 @@ TransformDeviceBase::UpdateInvModelViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformDeviceBase::UpdateModelViewProjTransform()
 {

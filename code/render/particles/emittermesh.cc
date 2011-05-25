@@ -14,6 +14,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 EmitterMesh::EmitterMesh() :
     numPoints(0),
     points(NULL)
@@ -22,6 +24,8 @@ EmitterMesh::EmitterMesh() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 EmitterMesh::~EmitterMesh()
 {
     if (this->IsValid())
@@ -31,6 +35,8 @@ EmitterMesh::~EmitterMesh()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 EmitterMesh::Setup(const Ptr<Mesh>& mesh, IndexT primGroupIndex)
 {
@@ -135,6 +141,8 @@ EmitterMesh::Setup(const Ptr<Mesh>& mesh, IndexT primGroupIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 EmitterMesh::Discard()
 {
@@ -145,6 +153,8 @@ EmitterMesh::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const EmitterMesh::EmitterPoint& 
 EmitterMesh::GetEmitterPoint(IndexT key) const
 {

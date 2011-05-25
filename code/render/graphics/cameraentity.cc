@@ -16,6 +16,8 @@ using namespace Math;
 using namespace Shared;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CameraEntity::CameraEntity()
 {
     this->SetType(GraphicsEntityType::Camera);
@@ -24,6 +26,8 @@ CameraEntity::CameraEntity()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CameraEntity::~CameraEntity()
 {
     // empty
@@ -93,6 +97,8 @@ CameraEntity::OnTransformChanged()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CameraEntity::OnAttachToView(const Ptr<View>& view_)
 {
@@ -103,6 +109,8 @@ CameraEntity::OnAttachToView(const Ptr<View>& view_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CameraEntity::OnRemoveFromView(const Ptr<View>& view_)
 {

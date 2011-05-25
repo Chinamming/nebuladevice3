@@ -67,6 +67,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SafeQueue<TYPE>::SafeQueue() :
     signalOnEnqueueEnabled(true)
@@ -75,6 +77,8 @@ SafeQueue<TYPE>::SafeQueue() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SafeQueue<TYPE>::SafeQueue(const SafeQueue<TYPE>& rhs)
 {
@@ -85,6 +89,8 @@ SafeQueue<TYPE>::SafeQueue(const SafeQueue<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::operator=(const SafeQueue<TYPE>& rhs)
 {
@@ -95,6 +101,8 @@ SafeQueue<TYPE>::operator=(const SafeQueue<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::SetSignalOnEnqueueEnabled(bool b)
 {
@@ -104,6 +112,8 @@ SafeQueue<TYPE>::SetSignalOnEnqueueEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::Clear()
 {
@@ -113,6 +123,8 @@ SafeQueue<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 SafeQueue<TYPE>::Size() const
 {
@@ -120,6 +132,8 @@ SafeQueue<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 SafeQueue<TYPE>::IsEmpty() const
 {
@@ -130,6 +144,8 @@ SafeQueue<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::Enqueue(const TYPE& e)
 {
@@ -143,6 +159,8 @@ SafeQueue<TYPE>::Enqueue(const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::EnqueueArray(const Util::Array<TYPE>& a)
 {
@@ -156,6 +174,8 @@ SafeQueue<TYPE>::EnqueueArray(const Util::Array<TYPE>& a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE
 SafeQueue<TYPE>::Dequeue()
 {
@@ -167,6 +187,8 @@ SafeQueue<TYPE>::Dequeue()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::DequeueAll(Util::Array<TYPE>& outArray)
 {
@@ -177,6 +199,8 @@ SafeQueue<TYPE>::DequeueAll(Util::Array<TYPE>& outArray)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE
 SafeQueue<TYPE>::Peek() const
 {
@@ -187,6 +211,8 @@ SafeQueue<TYPE>::Peek() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::Wait()
 {
@@ -197,6 +223,8 @@ SafeQueue<TYPE>::Wait()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::WaitTimeout(int ms)
 {
@@ -219,6 +247,8 @@ SafeQueue<TYPE>::Signal()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SafeQueue<TYPE>::EraseMatchingElements(const TYPE& e)
 {

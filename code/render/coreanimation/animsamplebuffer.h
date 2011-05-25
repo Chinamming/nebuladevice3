@@ -58,6 +58,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimSampleBuffer::IsValid() const
 {
@@ -65,6 +67,8 @@ AnimSampleBuffer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimSampleBuffer::GetNumSamples() const
 {
@@ -72,6 +76,8 @@ AnimSampleBuffer::GetNumSamples() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Math::float4*
 AnimSampleBuffer::GetSamplesPointer() const
 {
@@ -79,6 +85,8 @@ AnimSampleBuffer::GetSamplesPointer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uchar*
 AnimSampleBuffer::GetSampleCountsPointer() const
 {

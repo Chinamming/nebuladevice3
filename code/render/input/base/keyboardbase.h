@@ -67,6 +67,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 KeyboardBase::KeyPressed(Input::Key::Code keyCode) const
 {
@@ -74,6 +76,8 @@ KeyboardBase::KeyPressed(Input::Key::Code keyCode) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 KeyboardBase::KeyDown(Input::Key::Code keyCode) const
 {
@@ -81,6 +85,8 @@ KeyboardBase::KeyDown(Input::Key::Code keyCode) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 KeyboardBase::KeyUp(Input::Key::Code keyCode) const
 {
@@ -88,6 +94,8 @@ KeyboardBase::KeyUp(Input::Key::Code keyCode) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 KeyboardBase::GetCharInput() const
 {

@@ -13,12 +13,13 @@ __ImplementSingleton(Base::DisplayDeviceBase);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayDeviceBase::DisplayDeviceBase() :
     adapter(Adapter::Primary),
     displayMode(0, 0, 1024, 768, PixelFormat::X8R8G8B8),
     antiAliasQuality(AntiAliasQuality::None),
     fullscreen(false),
-	autoAdjustSize(true),
     modeSwitchEnabled(true),
     tripleBufferingEnabled(false),
     alwaysOnTop(false),
@@ -33,6 +34,8 @@ DisplayDeviceBase::DisplayDeviceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayDeviceBase::~DisplayDeviceBase()
 {
     n_assert(!this->IsOpen());
@@ -197,13 +200,6 @@ DisplayDeviceBase::GetAdapterInfo(Adapter::Code adapter)
 {
     AdapterInfo emptyAdapterInfo;
     return emptyAdapterInfo;
-}
-
-//------------------------------------------------------------------------------
-void
-DisplayDeviceBase::AdjustSize()
-{
-	// implemented in sub-class
 }
 
 } // namespace DisplayDevice

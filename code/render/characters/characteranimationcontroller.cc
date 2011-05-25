@@ -15,6 +15,8 @@ using namespace Animation;
 using namespace CoreAnimation;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterAnimationController::CharacterAnimationController() :
     animDrivenMotionJointIndex(InvalidIndex),
     animDrivenMotionVector(vector::nullvec()),
@@ -25,12 +27,16 @@ CharacterAnimationController::CharacterAnimationController() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterAnimationController::~CharacterAnimationController()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::Setup(const Ptr<Jobs::JobPort>& jobPort, const CharacterAnimationLibrary& animLib)
 {
@@ -43,6 +49,8 @@ CharacterAnimationController::Setup(const Ptr<Jobs::JobPort>& jobPort, const Cha
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::SetupAnimDrivenMotion(IndexT jointIndex)
 {
@@ -89,6 +97,8 @@ CharacterAnimationController::SetupAnimDrivenMotion(IndexT jointIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::Discard()
 {
@@ -120,6 +130,8 @@ CharacterAnimationController::Update(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::EnqueueAnimJob(const Ptr<AnimJob>& animJob)
 {
@@ -127,6 +139,8 @@ CharacterAnimationController::EnqueueAnimJob(const Ptr<AnimJob>& animJob)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::StopTrack(IndexT trackIndex, bool allowFadeOut)
 {
@@ -134,6 +148,8 @@ CharacterAnimationController::StopTrack(IndexT trackIndex, bool allowFadeOut)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::StopAllTracks(bool allowFadeOut)
 {
@@ -141,6 +157,8 @@ CharacterAnimationController::StopAllTracks(bool allowFadeOut)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterAnimationController::UpdateAnimDrivenMotionVector()
 {

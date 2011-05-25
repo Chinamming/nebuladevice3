@@ -63,6 +63,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SystemInfoBase::Platform
 SystemInfoBase::GetPlatform() const
 {
@@ -70,6 +72,8 @@ SystemInfoBase::GetPlatform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SystemInfoBase::CpuType
 SystemInfoBase::GetCpuType() const
 {
@@ -77,6 +81,8 @@ SystemInfoBase::GetCpuType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 SystemInfoBase::GetNumCpuCores() const
 {
@@ -84,6 +90,8 @@ SystemInfoBase::GetNumCpuCores() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 SystemInfoBase::GetPageSize() const
 {

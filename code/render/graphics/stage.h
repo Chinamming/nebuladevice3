@@ -67,6 +67,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Stage::IsValid() const
 {
@@ -74,6 +76,8 @@ Stage::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Stage::SetName(const Util::StringAtom& n)
 {
@@ -81,6 +85,8 @@ Stage::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 Stage::GetName() const
 {
@@ -88,6 +94,8 @@ Stage::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<GraphicsEntity> >& 
 Stage::GetEntities() const
 {
@@ -95,6 +103,8 @@ Stage::GetEntities() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<GraphicsEntity> >& 
 Stage::GetEntitiesByType(GraphicsEntityType::Code entityType) const
 {

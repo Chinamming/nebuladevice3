@@ -17,6 +17,8 @@ using namespace CoreAnimation;
 using namespace Jobs;
 
 //------------------------------------------------------------------------------
+/**
+*/
 PlayClipJob::PlayClipJob() :
     clipIndex(InvalidIndex),
     loopCount(1.0f),
@@ -26,12 +28,16 @@ PlayClipJob::PlayClipJob() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 PlayClipJob::~PlayClipJob()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 PlayClipJob::OnAttachedToSequencer(const AnimSequencer& animSequencer)
 {
@@ -59,6 +65,8 @@ PlayClipJob::OnAttachedToSequencer(const AnimSequencer& animSequencer)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Job>
 PlayClipJob::CreateEvaluationJob(Timing::Tick time, const Ptr<AnimSampleBuffer>& optMixIn, const Ptr<AnimSampleBuffer>& resultBuffer)
 {

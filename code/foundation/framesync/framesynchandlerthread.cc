@@ -17,6 +17,8 @@ using namespace Threading;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameSyncHandlerThread::FrameSyncHandlerThread() :
     lockStepMode(0),
     frameCount(0),
@@ -32,6 +34,8 @@ FrameSyncHandlerThread::FrameSyncHandlerThread() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameSyncHandlerThread::~FrameSyncHandlerThread()
 {
     __DestructInterfaceSingleton;

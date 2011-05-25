@@ -17,6 +17,8 @@ using namespace Math;
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 BinaryWriter::BinaryWriter() :
     enableMapping(false),
     isMapped(false),
@@ -27,6 +29,8 @@ BinaryWriter::BinaryWriter() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 BinaryWriter::~BinaryWriter()
 {
     if (this->IsOpen())
@@ -36,6 +40,8 @@ BinaryWriter::~BinaryWriter()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BinaryWriter::Open()
 {
@@ -59,6 +65,8 @@ BinaryWriter::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::Close()
 {
@@ -69,6 +77,8 @@ BinaryWriter::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteChar(char c)
 {
@@ -84,6 +94,8 @@ BinaryWriter::WriteChar(char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteUChar(unsigned char c)
 {
@@ -99,6 +111,8 @@ BinaryWriter::WriteUChar(unsigned char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteShort(short s)
 {
@@ -117,6 +131,8 @@ BinaryWriter::WriteShort(short s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteUShort(unsigned short s)
 {
@@ -135,6 +151,8 @@ BinaryWriter::WriteUShort(unsigned short s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteInt(int i)
 {
@@ -153,6 +171,8 @@ BinaryWriter::WriteInt(int i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteUInt(unsigned int i)
 {
@@ -171,6 +191,8 @@ BinaryWriter::WriteUInt(unsigned int i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteFloat(float f)
 {
@@ -189,6 +211,8 @@ BinaryWriter::WriteFloat(float f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteFloatAsNormalizedUByte2(float f)
 {
@@ -198,6 +222,8 @@ BinaryWriter::WriteFloatAsNormalizedUByte2(float f)
 }
           
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 BinaryWriter::WriteFloatAsUnsignedNormalizedUByte2(float f)
 {
@@ -207,6 +233,8 @@ BinaryWriter::WriteFloatAsUnsignedNormalizedUByte2(float f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteDouble(double d)
 {
@@ -225,6 +253,8 @@ BinaryWriter::WriteDouble(double d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteBool(bool b)
 {
@@ -267,6 +297,8 @@ BinaryWriter::WriteString(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteBlob(const Util::Blob& blob)
 {
@@ -284,6 +316,8 @@ BinaryWriter::WriteBlob(const Util::Blob& blob)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteGuid(const Util::Guid& guid)
 {
@@ -295,6 +329,8 @@ BinaryWriter::WriteGuid(const Util::Guid& guid)
 
 #if !__OSX__
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 BinaryWriter::WriteFloat2(Math::float2 f)
 {
@@ -314,6 +350,8 @@ BinaryWriter::WriteFloat2(Math::float2 f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteFloat4(const float4& v)
 {
@@ -333,6 +371,8 @@ BinaryWriter::WriteFloat4(const float4& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 BinaryWriter::WritePoint(const Math::point& v)
 {
@@ -355,6 +395,8 @@ BinaryWriter::WritePoint(const Math::point& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 BinaryWriter::WriteVector(const Math::vector& v)
 {
@@ -377,6 +419,8 @@ BinaryWriter::WriteVector(const Math::vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteMatrix44(const matrix44& m)
 {
@@ -397,6 +441,8 @@ BinaryWriter::WriteMatrix44(const matrix44& m)
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryWriter::WriteRawData(const void* ptr, SizeT numBytes)
 {

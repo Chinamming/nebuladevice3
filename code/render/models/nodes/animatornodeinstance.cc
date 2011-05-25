@@ -26,6 +26,8 @@ using namespace Math;
 using namespace CoreAnimation;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimatorNodeInstance::AnimatorNodeInstance(): startTime(-1.0),
                                               overWrittenAnimTime(-1.0)
 {
@@ -33,12 +35,16 @@ AnimatorNodeInstance::AnimatorNodeInstance(): startTime(-1.0),
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimatorNodeInstance::~AnimatorNodeInstance()
 {
     //Empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AnimatorNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode>& node, const Ptr<ModelNodeInstance>& parentNodeInst)
 {
@@ -88,6 +94,8 @@ AnimatorNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode>
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AnimatorNodeInstance::OnShow(Timing::Time time)
 {
@@ -99,6 +107,8 @@ AnimatorNodeInstance::OnShow(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AnimatorNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time time)
 {
@@ -116,6 +126,8 @@ AnimatorNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time tim
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimatorNodeInstance::Animate(Timing::Time time)
 {

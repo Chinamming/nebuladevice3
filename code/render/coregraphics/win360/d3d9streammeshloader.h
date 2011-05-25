@@ -52,6 +52,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9StreamMeshLoader::SetUsage(Base::ResourceBase::Usage usage_)
 {
@@ -59,6 +61,8 @@ D3D9StreamMeshLoader::SetUsage(Base::ResourceBase::Usage usage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Base::ResourceBase::Usage
 D3D9StreamMeshLoader::GetUsage() const
 {
@@ -66,6 +70,8 @@ D3D9StreamMeshLoader::GetUsage() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9StreamMeshLoader::SetAccess(Base::ResourceBase::Access access_)
 {
@@ -73,6 +79,8 @@ D3D9StreamMeshLoader::SetAccess(Base::ResourceBase::Access access_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Base::ResourceBase::Access
 D3D9StreamMeshLoader::GetAccess() const
 {

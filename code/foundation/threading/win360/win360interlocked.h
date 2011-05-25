@@ -28,6 +28,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline int
 Win360Interlocked::Increment(int volatile& var)
 {
@@ -35,6 +37,8 @@ Win360Interlocked::Increment(int volatile& var)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline int
 Win360Interlocked::Decrement(int volatile& var)
 {
@@ -42,6 +46,8 @@ Win360Interlocked::Decrement(int volatile& var)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline int
 Win360Interlocked::Add(int volatile& var, int add)
 {
@@ -49,6 +55,8 @@ Win360Interlocked::Add(int volatile& var, int add)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline int
 Win360Interlocked::Exchange(int volatile* dest, int value)
 {
@@ -56,6 +64,8 @@ Win360Interlocked::Exchange(int volatile* dest, int value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline int
 Win360Interlocked::CompareExchange(int volatile* dest, int exchange, int comparand)
 {

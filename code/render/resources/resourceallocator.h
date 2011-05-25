@@ -77,6 +77,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourceAllocator::GetBlockSize() const
 {
@@ -84,6 +86,8 @@ ResourceAllocator::GetBlockSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourceAllocator::GetNumBlocks() const
 {

@@ -13,17 +13,23 @@ __ImplementClass(Frame::FramePass, 'FPSS', Frame::FramePassBase);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FramePass::FramePass()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FramePass::~FramePass()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FramePass::Discard()
 {
@@ -32,6 +38,8 @@ FramePass::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FramePass::Render()
 {
@@ -84,6 +92,8 @@ FramePass::Render()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if NEBULA3_ENABLE_PROFILING
 void 
 FramePass::SetFramePassDebugTimer(const Util::String& name)

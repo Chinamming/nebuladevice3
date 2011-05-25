@@ -38,6 +38,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 HttpRequestReader::IsValidHttpRequest() const
 {
@@ -45,6 +47,8 @@ HttpRequestReader::IsValidHttpRequest() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline HttpMethod::Code
 HttpRequestReader::GetHttpMethod() const
 {
@@ -52,6 +56,8 @@ HttpRequestReader::GetHttpMethod() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const IO::URI&
 HttpRequestReader::GetRequestURI() const
 {

@@ -48,6 +48,8 @@ protected:
 };    
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ParticleRendererBase::IsValid() const
 {

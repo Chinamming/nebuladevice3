@@ -10,6 +10,8 @@ namespace CoreGraphics
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderFeature::ShaderFeature() :
     uniqueId(0)
 {

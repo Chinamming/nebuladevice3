@@ -32,6 +32,8 @@ Win360Heap::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360Heap::Win360Heap(const char* heapName, size_t initialSize, size_t maxSize)
 {
     n_assert(0 != heapName);
@@ -57,6 +59,8 @@ Win360Heap::Win360Heap(const char* heapName, size_t initialSize, size_t maxSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360Heap::~Win360Heap()
 {
     #if NEBULA3_MEMORY_STATS
@@ -94,6 +98,8 @@ Win360Heap::ValidateHeap() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 Win360Heap::GetAllocCount() const
 {
@@ -101,6 +107,8 @@ Win360Heap::GetAllocCount() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 Win360Heap::GetAllocSize() const
 {
@@ -108,6 +116,8 @@ Win360Heap::GetAllocSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Win360Heap::Stats>
 Win360Heap::GetAllHeapStats()
 {

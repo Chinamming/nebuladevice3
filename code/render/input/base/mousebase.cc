@@ -13,6 +13,8 @@ __ImplementClass(Base::MouseBase, 'MSBS', Input::InputHandler);
 using namespace Input;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseBase::MouseBase() :
     buttonStates(MouseButton::NumMouseButtons),
     wheelForward(false),
@@ -23,12 +25,16 @@ MouseBase::MouseBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseBase::~MouseBase()
 {
     n_assert(!this->IsAttached());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::BeginCapture()
 {
@@ -37,6 +43,8 @@ MouseBase::BeginCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::EndCapture()
 {
@@ -45,6 +53,8 @@ MouseBase::EndCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::OnAttach()
 {
@@ -63,6 +73,8 @@ MouseBase::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::OnBeginFrame()
 {
@@ -93,6 +105,8 @@ MouseBase::OnBeginFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MouseBase::OnEvent(const InputEvent& inputEvent)
 {
@@ -170,6 +184,8 @@ MouseBase::OnEvent(const InputEvent& inputEvent)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::OnObtainCapture()
 {
@@ -182,6 +198,8 @@ MouseBase::OnObtainCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::OnReleaseCapture()
 {
@@ -194,6 +212,8 @@ MouseBase::OnReleaseCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::UpdateMousePositions(const Math::float2& pixelPos, const Math::float2& screenPos)
 {    
@@ -209,6 +229,8 @@ MouseBase::UpdateMousePositions(const Math::float2& pixelPos, const Math::float2
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseBase::OnReset()
 {

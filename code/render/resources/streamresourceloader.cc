@@ -15,12 +15,16 @@ using namespace IO;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamResourceLoader::StreamResourceLoader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamResourceLoader::~StreamResourceLoader()
 {
     // empty

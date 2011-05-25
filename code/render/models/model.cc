@@ -18,6 +18,8 @@ using namespace Resources;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Model::Model() :
     inLoadResources(false),
     resourcesLoaded(false)
@@ -26,12 +28,16 @@ Model::Model() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Model::~Model()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Model::Unload()
 {    
@@ -144,6 +150,8 @@ Model::OnResourcesLoaded()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Model::AttachNode(const Ptr<ModelNode>& node)
 {
@@ -153,6 +161,8 @@ Model::AttachNode(const Ptr<ModelNode>& node)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Model::RemoveNode(const Ptr<ModelNode>& node)
 {
@@ -163,6 +173,8 @@ Model::RemoveNode(const Ptr<ModelNode>& node)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Model::AddVisibleModelNode(IndexT frameIndex, ModelNodeType::Code t, const Ptr<ModelNode>& modelNode)
 {
@@ -175,6 +187,8 @@ Model::AddVisibleModelNode(IndexT frameIndex, ModelNodeType::Code t, const Ptr<M
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelInstance>
 Model::CreateInstance()
 {
@@ -186,6 +200,8 @@ Model::CreateInstance()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelInstance>
 Model::CreatePartialInstance(const StringAtom& rootNodePath, const matrix44& rootNodeOffsetMatrix)
 {
@@ -204,6 +220,8 @@ Model::CreatePartialInstance(const StringAtom& rootNodePath, const matrix44& roo
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Model::DiscardInstance(Ptr<ModelInstance> modelInst)
 {

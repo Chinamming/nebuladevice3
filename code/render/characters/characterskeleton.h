@@ -53,6 +53,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterSkeleton::IsValid() const
 {
@@ -60,6 +62,8 @@ CharacterSkeleton::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 CharacterSkeleton::GetNumJoints() const
 {
@@ -67,6 +71,8 @@ CharacterSkeleton::GetNumJoints() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CharacterJoint& 
 CharacterSkeleton::GetJoint(IndexT index) const
 {
@@ -74,6 +80,8 @@ CharacterSkeleton::GetJoint(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 CharacterSkeleton::GetJointIndexByName(const Util::StringAtom& jointName)
 {
@@ -89,6 +97,8 @@ CharacterSkeleton::GetJointIndexByName(const Util::StringAtom& jointName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::FixedArray<Math::matrix44>&
 CharacterSkeleton::GetInvPoseMatrixArray() const
 {

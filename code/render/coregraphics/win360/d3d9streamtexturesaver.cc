@@ -15,6 +15,8 @@ using namespace IO;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9StreamTextureSaver::OnSave()
 {

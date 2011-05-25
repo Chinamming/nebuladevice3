@@ -31,16 +31,22 @@ namespace Resources
     __ImplementClass(Resources::PoolResourceMapper, 'PRSM', Resources::StreamingResourceMapper);
 
 //------------------------------------------------------------------------------
+/**
+*/
 PoolResourceMapper::PoolResourceMapper(void)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 PoolResourceMapper::~PoolResourceMapper(void)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::SetDefaultPoolScheduler(const Ptr<PoolScheduler>& scheduler)
 {
@@ -48,6 +54,8 @@ PoolResourceMapper::SetDefaultPoolScheduler(const Ptr<PoolScheduler>& scheduler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::SetupPools(const Util::Dictionary<Util::StringAtom, PoolSetupInfo>& poolSetupData)
 {
@@ -67,6 +75,8 @@ PoolResourceMapper::SetupPools(const Util::Dictionary<Util::StringAtom, PoolSetu
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::OnAttachToResourceManager()
 {
@@ -100,6 +110,8 @@ PoolResourceMapper::OnRemoveFromResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::OnPrepare(bool waiting)
 {
@@ -113,6 +125,8 @@ PoolResourceMapper::OnPrepare(bool waiting)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::Reset()
 {
@@ -125,6 +139,8 @@ PoolResourceMapper::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 PoolResourceMapper::GetAllocatedMemory()
 {
@@ -138,6 +154,8 @@ PoolResourceMapper::GetAllocatedMemory()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 PoolResourceMapper::GetUsedMemory()
 {
@@ -188,6 +206,8 @@ PoolResourceMapper::WritePoolsToXML(const URI& fileName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT
 PoolResourceMapper::GetFittingPoolIndex(const ResourceInfo* resInfo) const
 {
@@ -215,6 +235,8 @@ PoolResourceMapper::NoSlotFound(const Ptr<ManagedResource>& resource, IndexT fra
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ResourcePool>&
 PoolResourceMapper::GetPoolForDebug(const Util::StringAtom& poolId) const
 {
@@ -231,6 +253,8 @@ PoolResourceMapper::GetPoolForDebug(const Util::StringAtom& poolId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::ReadTexturePoolFromXML(const IO::URI& fileName, Util::Dictionary<Util::StringAtom, PoolSetupInfo>& setupData)
 {
@@ -268,6 +292,8 @@ PoolResourceMapper::ReadTexturePoolFromXML(const IO::URI& fileName, Util::Dictio
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolResourceMapper::WriteTexturePoolToXML(const URI& fileName, const Dictionary<StringAtom, PoolSetupInfo>& setupData)
 {

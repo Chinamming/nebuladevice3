@@ -25,18 +25,24 @@ using namespace Visibility;
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 ViewerApplication::ViewerApplication()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ViewerApplication::~ViewerApplication()
 {
     n_assert(!this->stage.isvalid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ViewerApplication::Open()
 {
@@ -53,10 +59,10 @@ ViewerApplication::Open()
 
         // create a default stage
         // attach visibility systems to checker
-        Ptr<VisibilityQuadtree> visQuadtreeSystem = VisibilityQuadtree::Create();
+        Ptr<Visibility::VisibilityQuadtree> visQuadtreeSystem = Visibility::VisibilityQuadtree::Create();
         visQuadtreeSystem->SetQuadTreeSettings(4, Math::bbox(Math::point(0,0,0), Math::vector(100.0f, 10.0f, 100.0f)));
-        Ptr<VisibilityClusterSystem> visClusterSystem = VisibilityClusterSystem::Create();
-        Ptr<VisibilityBoxSystem> visBoxSystem = VisibilityBoxSystem::Create();
+        Ptr<Visibility::VisibilityClusterSystem> visClusterSystem = Visibility::VisibilityClusterSystem::Create();
+        Ptr<Visibility::VisibilityBoxSystem> visBoxSystem = Visibility::VisibilityBoxSystem::Create();
         
         Util::Array<Ptr<VisibilitySystemBase> > visSystems;
         visSystems.Append(visQuadtreeSystem.cast<VisibilitySystemBase>());
@@ -88,6 +94,8 @@ ViewerApplication::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ViewerApplication::Close()
 {
@@ -110,6 +118,8 @@ ViewerApplication::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ViewerApplication::OnProcessInput()
 {
@@ -194,6 +204,8 @@ ViewerApplication::OnProcessInput()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ViewerApplication::OnUpdateFrame()
 {

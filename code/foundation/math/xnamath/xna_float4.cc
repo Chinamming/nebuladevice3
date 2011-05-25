@@ -11,6 +11,8 @@ namespace Math
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 float4
 float4::transform(__Float4Arg v, const matrix44 &m)
 {
@@ -18,6 +20,8 @@ float4::transform(__Float4Arg v, const matrix44 &m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float4
 float4::clamp(__Float4Arg vClamp, __Float4Arg vMin, __Float4Arg vMax)
 {
@@ -25,6 +29,8 @@ float4::clamp(__Float4Arg vClamp, __Float4Arg vMin, __Float4Arg vMax)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 scalar
 float4::angle(__Float4Arg v0, __Float4Arg v1)
 {
@@ -32,6 +38,8 @@ float4::angle(__Float4Arg v0, __Float4Arg v1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 float4::load_ubyte4n_signed(const void* ptr, float w)
 {

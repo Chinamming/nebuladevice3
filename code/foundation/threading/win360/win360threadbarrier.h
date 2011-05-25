@@ -40,6 +40,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win360ThreadBarrier::Win360ThreadBarrier() :
     numThreads(0),
@@ -51,6 +53,8 @@ Win360ThreadBarrier::Win360ThreadBarrier() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win360ThreadBarrier::~Win360ThreadBarrier()
 {
@@ -59,6 +63,8 @@ Win360ThreadBarrier::~Win360ThreadBarrier()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360ThreadBarrier::Setup(SizeT num)
 {
@@ -69,6 +75,8 @@ Win360ThreadBarrier::Setup(SizeT num)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360ThreadBarrier::IsValid() const
 {

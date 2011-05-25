@@ -10,6 +10,8 @@ namespace Frame
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightingMode::Code
 LightingMode::FromString(const String& str)
 {
@@ -24,6 +26,8 @@ LightingMode::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 LightingMode::ToString(Code c)
 {

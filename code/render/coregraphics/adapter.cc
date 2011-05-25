@@ -9,6 +9,8 @@ namespace CoreGraphics
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 Adapter::Code
 Adapter::FromString(const Util::String& str)
 {
@@ -23,6 +25,8 @@ Adapter::FromString(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String
 Adapter::ToString(Code code)
 {

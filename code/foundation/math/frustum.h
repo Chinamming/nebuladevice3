@@ -66,6 +66,8 @@ public:
 };        
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 frustum::frustum()
 {
@@ -73,6 +75,8 @@ frustum::frustum()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline 
 frustum::frustum(const matrix44& invViewProj)
 {
@@ -192,6 +196,8 @@ frustum::clipmask(const point& p) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ClipStatus::Type
 frustum::clip(const line& l, line& clippedLine) const
 {
@@ -217,6 +223,8 @@ frustum::clip(const line& l, line& clippedLine) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ClipStatus::Type
 frustum::clipstatus(const bbox& box) const
 {

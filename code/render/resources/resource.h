@@ -102,6 +102,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::SetAsyncEnabled(bool b)
 {
@@ -109,6 +111,8 @@ Resource::SetAsyncEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Resource::IsAsyncEnabled() const
 {
@@ -116,6 +120,8 @@ Resource::IsAsyncEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::Lock()
 {
@@ -123,6 +129,8 @@ Resource::Lock()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::Unlock()
 {
@@ -130,6 +138,8 @@ Resource::Unlock()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Resource::IsLocked() const
 {
@@ -137,6 +147,8 @@ Resource::IsLocked() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::IncrUseCount()
 {
@@ -144,6 +156,8 @@ Resource::IncrUseCount()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::DecrUseCount()
 {
@@ -152,6 +166,8 @@ Resource::DecrUseCount()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Resource::GetUseCount() const
 {
@@ -159,6 +175,8 @@ Resource::GetUseCount() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::SetResourceId(const ResourceId& id)
 {
@@ -166,6 +184,8 @@ Resource::SetResourceId(const ResourceId& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ResourceId&
 Resource::GetResourceId() const
 {
@@ -173,6 +193,8 @@ Resource::GetResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Resource::SetState(State s)
 {
@@ -180,6 +202,8 @@ Resource::SetState(State s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Resource::State
 Resource::GetState() const
 {
@@ -187,6 +211,8 @@ Resource::GetState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Resource::IsLoaded() const
 {
@@ -194,6 +220,8 @@ Resource::IsLoaded() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Resource::IsPending() const
 {
@@ -201,6 +229,8 @@ Resource::IsPending() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Resource::LoadFailed() const
 {

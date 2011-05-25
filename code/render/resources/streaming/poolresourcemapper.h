@@ -85,6 +85,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PoolResourceMapper::SetResourceCreatorClass(const Core::Rtti& creatorType)
 {
@@ -92,6 +94,8 @@ PoolResourceMapper::SetResourceCreatorClass(const Core::Rtti& creatorType)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 PoolResourceMapper::GetNumPools() const
 {

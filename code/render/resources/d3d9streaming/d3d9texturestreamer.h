@@ -68,6 +68,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureStreamer::SetReuseTexture(const Ptr<CoreGraphics::Texture>& tex)
 {
@@ -76,6 +78,8 @@ D3D9TextureStreamer::SetReuseTexture(const Ptr<CoreGraphics::Texture>& tex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 D3D9TextureStreamer::GetReuseTexture() const
 {

@@ -8,18 +8,24 @@
 namespace Resources
 {
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceInfo::ResourceInfo() :
     estimatedSize(0)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceInfo::ResourceInfo(const ResourceInfo* info) :
     estimatedSize(info->estimatedSize)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceInfo::~ResourceInfo()
 {
 }

@@ -72,6 +72,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 HashTable<KEYTYPE, VALUETYPE>::HashTable() :
     hashArray(128),
@@ -81,6 +83,8 @@ HashTable<KEYTYPE, VALUETYPE>::HashTable() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 HashTable<KEYTYPE, VALUETYPE>::HashTable(SizeT capacity) :
     hashArray(capacity),
@@ -90,6 +94,8 @@ HashTable<KEYTYPE, VALUETYPE>::HashTable(SizeT capacity) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 HashTable<KEYTYPE, VALUETYPE>::HashTable(const HashTable<KEYTYPE, VALUETYPE>& rhs) :
     hashArray(rhs.hashArray),
@@ -99,6 +105,8 @@ HashTable<KEYTYPE, VALUETYPE>::HashTable(const HashTable<KEYTYPE, VALUETYPE>& rh
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 void
 HashTable<KEYTYPE, VALUETYPE>::operator=(const HashTable<KEYTYPE, VALUETYPE>& rhs)
@@ -111,6 +119,8 @@ HashTable<KEYTYPE, VALUETYPE>::operator=(const HashTable<KEYTYPE, VALUETYPE>& rh
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 VALUETYPE&
 HashTable<KEYTYPE, VALUETYPE>::operator[](const KEYTYPE& key) const
@@ -140,6 +150,8 @@ HashTable<KEYTYPE, VALUETYPE>::operator[](const KEYTYPE& key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 SizeT
 HashTable<KEYTYPE, VALUETYPE>::Size() const
@@ -148,6 +160,8 @@ HashTable<KEYTYPE, VALUETYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 SizeT
 HashTable<KEYTYPE, VALUETYPE>::Capacity() const
@@ -156,6 +170,8 @@ HashTable<KEYTYPE, VALUETYPE>::Capacity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 void
 HashTable<KEYTYPE, VALUETYPE>::Clear()
@@ -170,6 +186,8 @@ HashTable<KEYTYPE, VALUETYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 HashTable<KEYTYPE, VALUETYPE>::IsEmpty() const
@@ -178,6 +196,8 @@ HashTable<KEYTYPE, VALUETYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 void
 HashTable<KEYTYPE, VALUETYPE>::Add(const KeyValuePair<KEYTYPE, VALUETYPE>& kvp)
@@ -191,6 +211,8 @@ HashTable<KEYTYPE, VALUETYPE>::Add(const KeyValuePair<KEYTYPE, VALUETYPE>& kvp)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 void
 HashTable<KEYTYPE, VALUETYPE>::Add(const KEYTYPE& key, const VALUETYPE& value)
@@ -200,6 +222,8 @@ HashTable<KEYTYPE, VALUETYPE>::Add(const KEYTYPE& key, const VALUETYPE& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 void
 HashTable<KEYTYPE, VALUETYPE>::Erase(const KEYTYPE& key)
@@ -218,6 +242,8 @@ HashTable<KEYTYPE, VALUETYPE>::Erase(const KEYTYPE& key)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 bool
 HashTable<KEYTYPE, VALUETYPE>::Contains(const KEYTYPE& key) const
@@ -236,6 +262,8 @@ HashTable<KEYTYPE, VALUETYPE>::Contains(const KEYTYPE& key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 Array<KeyValuePair<KEYTYPE, VALUETYPE> >
 HashTable<KEYTYPE, VALUETYPE>::Content() const

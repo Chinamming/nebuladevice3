@@ -25,6 +25,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 Win32Mouse::GetMovement() const
 {

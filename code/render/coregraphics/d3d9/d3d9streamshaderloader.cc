@@ -18,6 +18,8 @@ using namespace CoreGraphics;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9StreamShaderLoader::CanLoadAsync() const
 {

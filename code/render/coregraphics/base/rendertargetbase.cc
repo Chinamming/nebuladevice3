@@ -5,7 +5,6 @@
 #include "stdneb.h"
 #include "coregraphics/rendertarget.h"
 #include "resources/resourcemanager.h"
-#include "coregraphics/displaydevice.h"
 
 namespace Base
 {
@@ -15,12 +14,12 @@ using namespace CoreGraphics;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderTargetBase::RenderTargetBase() :
     batchType(BatchType::InvalidBatchType),
     width(0),
     height(0),
-	relWidth(0.0f),
-	relHeight(0.0f),
     resolveTextureDimensionsValid(false),
     resolveRectValid(false),
     resolveTextureWidth(0),
@@ -49,30 +48,26 @@ RenderTargetBase::RenderTargetBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderTargetBase::~RenderTargetBase()
 {
     n_assert(!this->isValid);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::Setup()
 {
     n_assert(!this->isValid);
-	// recompute the relative width and height
-	const DisplayMode& displayMode = DisplayDevice::Instance()->GetDisplayMode();
-	if (0.0f != this->relWidth)
-	{
-		this->SetWidth(uint(float(displayMode.GetWidth()) * this->relWidth));
-	}
-	if (0.0f != this->relHeight)
-	{
-		this->SetHeight(uint(float(displayMode.GetHeight()) * this->relHeight));
-	}
     this->isValid = true;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::Discard()
 {
@@ -93,6 +88,8 @@ RenderTargetBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::AddDepthStencilBuffer()
 {
@@ -102,6 +99,8 @@ RenderTargetBase::AddDepthStencilBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::AddSharedDepthStencilBuffer(const Ptr<RenderTarget>& rt)
 {
@@ -111,6 +110,8 @@ RenderTargetBase::AddSharedDepthStencilBuffer(const Ptr<RenderTarget>& rt)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::BeginPass()
 {
@@ -121,6 +122,8 @@ RenderTargetBase::BeginPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::BeginBatch(BatchType::Code t)
 {
@@ -131,6 +134,8 @@ RenderTargetBase::BeginBatch(BatchType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::EndBatch()
 {
@@ -140,6 +145,8 @@ RenderTargetBase::EndBatch()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::EndPass()
 {
@@ -150,6 +157,8 @@ RenderTargetBase::EndPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::GenerateMipLevels()
 {
@@ -157,6 +166,8 @@ RenderTargetBase::GenerateMipLevels()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderTargetBase::ResolveDepthBuffer()
 {
@@ -164,6 +175,8 @@ RenderTargetBase::ResolveDepthBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 RenderTargetBase::SetMemoryOffset(SizeT size)
 {
@@ -171,10 +184,11 @@ RenderTargetBase::SetMemoryOffset(SizeT size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT 
 RenderTargetBase::GetMemorySize() const
 {
     return 0;
 }
-
 } // namespace Base

@@ -71,6 +71,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 FrameCaptureServer::SetBaseDirectory(const Util::String& n)
@@ -79,6 +81,8 @@ FrameCaptureServer::SetBaseDirectory(const Util::String& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 FrameCaptureServer::GetBaseDirectory() const
@@ -87,6 +91,8 @@ FrameCaptureServer::GetBaseDirectory() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 FrameCaptureServer::SetFrameTime(Timing::Time t)
@@ -95,6 +101,8 @@ FrameCaptureServer::SetFrameTime(Timing::Time t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Timing::Time
 FrameCaptureServer::GetFrameTime() const
@@ -103,6 +111,8 @@ FrameCaptureServer::GetFrameTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 FrameCaptureServer::SetCaptureFileFormat(CoreGraphics::ImageFileFormat::Code fmt)
@@ -111,6 +121,8 @@ FrameCaptureServer::SetCaptureFileFormat(CoreGraphics::ImageFileFormat::Code fmt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 CoreGraphics::ImageFileFormat::Code
 FrameCaptureServer::GetCaptureFileFormat() const
@@ -119,6 +131,8 @@ FrameCaptureServer::GetCaptureFileFormat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 FrameCaptureServer::IsCapturing() const

@@ -81,6 +81,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayEvent::DisplayEvent() :
     code(InvalidCode),
@@ -94,6 +96,8 @@ DisplayEvent::DisplayEvent() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayEvent::DisplayEvent(Code c) :
     code(c),
@@ -107,6 +111,8 @@ DisplayEvent::DisplayEvent(Code c) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayEvent::DisplayEvent(Code c, const Math::float2& absPos, const Math::float2& normPos) :
     code(c),
@@ -120,6 +126,8 @@ DisplayEvent::DisplayEvent(Code c, const Math::float2& absPos, const Math::float
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayEvent::DisplayEvent(Code c, Input::Key::Code k) :
     code(c),
@@ -133,6 +141,8 @@ DisplayEvent::DisplayEvent(Code c, Input::Key::Code k) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayEvent::DisplayEvent(Code c, Input::Char chr) :
     code(c),
@@ -146,6 +156,8 @@ DisplayEvent::DisplayEvent(Code c, Input::Char chr) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayEvent::DisplayEvent(Code c, Input::MouseButton::Code b, const Math::float2& absPos, const Math::float2& normPos) :
     code(c),
@@ -159,6 +171,8 @@ DisplayEvent::DisplayEvent(Code c, Input::MouseButton::Code b, const Math::float
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline DisplayEvent::Code
 DisplayEvent::GetEventCode() const
 {
@@ -166,6 +180,8 @@ DisplayEvent::GetEventCode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 DisplayEvent::GetAbsMousePos() const
 {
@@ -173,6 +189,8 @@ DisplayEvent::GetAbsMousePos() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 DisplayEvent::GetNormMousePos() const
 {
@@ -180,6 +198,8 @@ DisplayEvent::GetNormMousePos() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Input::Key::Code
 DisplayEvent::GetKey() const
 {
@@ -187,6 +207,8 @@ DisplayEvent::GetKey() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Input::Char
 DisplayEvent::GetChar() const
 {
@@ -194,6 +216,8 @@ DisplayEvent::GetChar() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Input::MouseButton::Code
 DisplayEvent::GetMouseButton() const
 {

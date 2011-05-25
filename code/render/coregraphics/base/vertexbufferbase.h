@@ -45,6 +45,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VertexBufferBase::SetVertexLayout(const Ptr<CoreGraphics::VertexLayout>& l)
 {
@@ -52,6 +54,8 @@ VertexBufferBase::SetVertexLayout(const Ptr<CoreGraphics::VertexLayout>& l)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::VertexLayout>&
 VertexBufferBase::GetVertexLayout() const
 {
@@ -59,6 +63,8 @@ VertexBufferBase::GetVertexLayout() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VertexBufferBase::SetNumVertices(SizeT num)
 {
@@ -67,6 +73,8 @@ VertexBufferBase::SetNumVertices(SizeT num)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VertexBufferBase::GetNumVertices() const
 {

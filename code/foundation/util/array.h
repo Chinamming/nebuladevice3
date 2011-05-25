@@ -140,6 +140,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Array<TYPE>::Array() :
     grow(8),
@@ -151,6 +153,8 @@ Array<TYPE>::Array() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Array<TYPE>::Array(SizeT _capacity, SizeT _grow) :
     grow(_grow),
@@ -172,6 +176,8 @@ Array<TYPE>::Array(SizeT _capacity, SizeT _grow) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Array<TYPE>::Array(SizeT initialSize, SizeT _grow, const TYPE& initialValue) :
     grow(_grow),
@@ -198,6 +204,8 @@ Array<TYPE>::Array(SizeT initialSize, SizeT _grow, const TYPE& initialValue) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Copy(const Array<TYPE>& src)
 {
@@ -220,6 +228,8 @@ Array<TYPE>::Copy(const Array<TYPE>& src)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Delete()
 {
@@ -234,6 +244,8 @@ Array<TYPE>::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Destroy(TYPE* elm)
 {
@@ -241,6 +253,8 @@ Array<TYPE>::Destroy(TYPE* elm)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Array<TYPE>::Array(const Array<TYPE>& rhs) :
     grow(0),
@@ -252,6 +266,8 @@ Array<TYPE>::Array(const Array<TYPE>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Array<TYPE>::~Array()
 {
@@ -259,6 +275,8 @@ Array<TYPE>::~Array()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Realloc(SizeT _capacity, SizeT _grow)
 {
@@ -277,6 +295,8 @@ Array<TYPE>::Realloc(SizeT _capacity, SizeT _grow)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void 
 Array<TYPE>::operator=(const Array<TYPE>& rhs)
 {
@@ -310,6 +330,8 @@ Array<TYPE>::operator=(const Array<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::GrowTo(SizeT newCapacity)
 {
@@ -331,6 +353,8 @@ Array<TYPE>::GrowTo(SizeT newCapacity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Grow()
 {
@@ -425,6 +449,8 @@ Array<TYPE>::Move(IndexT fromIndex, IndexT toIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Append(const TYPE& elm)
 {
@@ -440,6 +466,8 @@ Array<TYPE>::Append(const TYPE& elm)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::AppendArray(const Array<TYPE>& rhs)
 {
@@ -475,6 +503,8 @@ Array<TYPE>::Reserve(SizeT num)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 Array<TYPE>::Size() const
 {
@@ -482,6 +512,8 @@ Array<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 Array<TYPE>::Capacity() const
 {
@@ -541,6 +573,8 @@ Array<TYPE>::operator!=(const Array<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE&
 Array<TYPE>::Front() const
 {
@@ -551,6 +585,8 @@ Array<TYPE>::Front() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE&
 Array<TYPE>::Back() const
 {
@@ -561,6 +597,8 @@ Array<TYPE>::Back() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool 
 Array<TYPE>::IsEmpty() const
 {
@@ -568,6 +606,8 @@ Array<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::EraseIndex(IndexT index)
 {
@@ -608,6 +648,8 @@ Array<TYPE>::EraseIndexSwap(IndexT index)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename Array<TYPE>::Iterator
 Array<TYPE>::Erase(typename Array<TYPE>::Iterator iter)
 {
@@ -633,6 +675,8 @@ Array<TYPE>::EraseSwap(typename Array<TYPE>::Iterator iter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 Array<TYPE>::Insert(IndexT index, const TYPE& elm)
 {
@@ -679,6 +723,8 @@ Array<TYPE>::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename Array<TYPE>::Iterator
 Array<TYPE>::Begin() const
 {
@@ -686,6 +732,8 @@ Array<TYPE>::Begin() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename Array<TYPE>::Iterator
 Array<TYPE>::End() const
 {

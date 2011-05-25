@@ -88,6 +88,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 CameraSettings::UpdateViewMatrix(const Math::matrix44& m)
 {
@@ -96,6 +98,8 @@ CameraSettings::UpdateViewMatrix(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraSettings::GetProjTransform() const
 {
@@ -103,6 +107,8 @@ CameraSettings::GetProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraSettings::GetInvProjTransform() const
 {
@@ -110,6 +116,8 @@ CameraSettings::GetInvProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraSettings::GetViewTransform() const
 {
@@ -117,6 +125,8 @@ CameraSettings::GetViewTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraSettings::GetViewProjTransform() const
 {
@@ -128,6 +138,8 @@ CameraSettings::GetViewProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::frustum&
 CameraSettings::GetViewFrustum() const
 {
@@ -139,6 +151,8 @@ CameraSettings::GetViewFrustum() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CameraSettings::IsPerspective() const
 {
@@ -146,6 +160,8 @@ CameraSettings::IsPerspective() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CameraSettings::IsOrthogonal() const
 {
@@ -153,6 +169,8 @@ CameraSettings::IsOrthogonal() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetZNear() const
 {
@@ -160,6 +178,8 @@ CameraSettings::GetZNear() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetZFar() const
 {
@@ -167,6 +187,8 @@ CameraSettings::GetZFar() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetFov() const
 {
@@ -174,6 +196,8 @@ CameraSettings::GetFov() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetAspect() const
 {
@@ -181,6 +205,8 @@ CameraSettings::GetAspect() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetNearWidth() const
 {
@@ -188,6 +214,8 @@ CameraSettings::GetNearWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetNearHeight() const
 {
@@ -195,6 +223,8 @@ CameraSettings::GetNearHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetFarWidth() const
 {
@@ -202,6 +232,8 @@ CameraSettings::GetFarWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 CameraSettings::GetFarHeight() const
 {
@@ -209,6 +241,8 @@ CameraSettings::GetFarHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 CameraSettings::GetFocalLength() const
 {

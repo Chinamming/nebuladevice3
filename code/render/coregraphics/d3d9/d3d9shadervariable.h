@@ -56,6 +56,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetInt(int value)
 {
@@ -63,6 +65,8 @@ D3D9ShaderVariable::SetInt(int value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetIntArray(const int* values, SizeT count)
 {
@@ -70,6 +74,8 @@ D3D9ShaderVariable::SetIntArray(const int* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetFloat(float value)
 {
@@ -77,6 +83,8 @@ D3D9ShaderVariable::SetFloat(float value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetFloatArray(const float* values, SizeT count)
 {
@@ -84,6 +92,8 @@ D3D9ShaderVariable::SetFloatArray(const float* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetFloat4(const Math::float4& value)
 {
@@ -91,6 +101,8 @@ D3D9ShaderVariable::SetFloat4(const Math::float4& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetFloat4Array(const Math::float4* values, SizeT count)
 {
@@ -98,6 +110,8 @@ D3D9ShaderVariable::SetFloat4Array(const Math::float4* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetMatrix(const Math::matrix44& value)
 {
@@ -105,6 +119,8 @@ D3D9ShaderVariable::SetMatrix(const Math::matrix44& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetMatrixArray(const Math::matrix44* values, SizeT count)
 {
@@ -112,6 +128,8 @@ D3D9ShaderVariable::SetMatrixArray(const Math::matrix44* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetBool(bool value)
 {
@@ -119,6 +137,8 @@ D3D9ShaderVariable::SetBool(bool value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetBoolArray(const bool* values, SizeT count)
 {
@@ -135,6 +155,8 @@ D3D9ShaderVariable::SetBoolArray(const bool* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9ShaderVariable::SetTexture(const Ptr<CoreGraphics::Texture>& value)
 {

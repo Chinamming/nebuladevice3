@@ -10,6 +10,8 @@ namespace Base
 __ImplementClass(Base::JobSystemBase, 'JBSB', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobSystemBase::JobSystemBase() :
     isValid(false)
 {
@@ -17,12 +19,16 @@ JobSystemBase::JobSystemBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobSystemBase::~JobSystemBase()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobSystemBase::Setup()
 {
@@ -31,6 +37,8 @@ JobSystemBase::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobSystemBase::Discard()
 {

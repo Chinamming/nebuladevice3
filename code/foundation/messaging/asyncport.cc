@@ -13,6 +13,8 @@ using namespace Util;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AsyncPort::AsyncPort() :
     isOpen(false)
 {
@@ -20,6 +22,8 @@ AsyncPort::AsyncPort() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AsyncPort::~AsyncPort()
 {
     if (this->IsOpen())

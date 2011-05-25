@@ -31,6 +31,8 @@ using namespace Models;
 using namespace Shared;
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsPageHandler::GraphicsPageHandler()
 {
     this->SetName("InternalGraphics");
@@ -39,6 +41,8 @@ GraphicsPageHandler::GraphicsPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {
@@ -290,6 +294,8 @@ GraphicsPageHandler::WriteEntityTable(const Array<Ptr<InternalGraphicsEntity> >&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 GraphicsPageHandler::WriteStageInfo(const Ptr<HttpRequest>& request, const ResourceId& stageName)
 {
@@ -328,6 +334,8 @@ GraphicsPageHandler::WriteStageInfo(const Ptr<HttpRequest>& request, const Resou
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 GraphicsPageHandler::WriteViewInfo(const Ptr<HttpRequest>& request, const ResourceId& viewName)
 {
@@ -336,6 +344,8 @@ GraphicsPageHandler::WriteViewInfo(const Ptr<HttpRequest>& request, const Resour
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 GraphicsPageHandler::WriteEntityInfo(const Ptr<HttpRequest>& request, InternalGraphicsEntity::Id entityId)
 {
@@ -414,6 +424,8 @@ GraphicsPageHandler::WriteEntityInfo(const Ptr<HttpRequest>& request, InternalGr
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsPageHandler::WriteModelEntityInfo(const Ptr<InternalModelEntity>& modelEntity, const Ptr<HtmlPageWriter>& htmlWriter)
 {
@@ -617,6 +629,8 @@ GraphicsPageHandler::WriteModelEntityInfo(const Ptr<InternalModelEntity>& modelE
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsPageHandler::WriteLightEntityInfo(const Ptr<InternalAbstractLightEntity>& lightEntity, const Ptr<HtmlPageWriter>& htmlWriter)
 {
@@ -655,6 +669,8 @@ GraphicsPageHandler::WriteLightEntityInfo(const Ptr<InternalAbstractLightEntity>
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsPageHandler::WriteCameraEntityInfo(const Ptr<InternalCameraEntity>& cameraEntity, const Ptr<HtmlPageWriter>& htmlWriter)
 {
@@ -688,6 +704,8 @@ GraphicsPageHandler::LookupCharacterModelEntityById(InternalGraphicsEntity::Id e
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 GraphicsPageHandler::PlayAnim(const Ptr<HttpRequest>& request, const String& argString)
 {
@@ -727,6 +745,8 @@ GraphicsPageHandler::PlayAnim(const Ptr<HttpRequest>& request, const String& arg
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 GraphicsPageHandler::ToggleSkin(const Ptr<HttpRequest>& request, const String& argString)
 {
@@ -760,6 +780,8 @@ GraphicsPageHandler::ToggleSkin(const Ptr<HttpRequest>& request, const String& a
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 GraphicsPageHandler::ApplySkinList(const Ptr<HttpRequest>& request, const String& argString)
 {
@@ -819,6 +841,8 @@ GraphicsPageHandler::ShowHideAnimSequencerHUD(const Ptr<HttpRequest>& request, c
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GraphicsPageHandler::WriteModelInstanceHierarchy(int entityId, const Ptr<Models::ModelInstance>& modelInstance, const Ptr<Http::HtmlPageWriter>& htmlWriter)
 {
@@ -852,6 +876,8 @@ GraphicsPageHandler::WriteModelInstanceHierarchy(int entityId, const Ptr<Models:
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Http::HttpStatus::Code 
 GraphicsPageHandler::WriteModelNodeInstanceInfo(const Ptr<Http::HttpRequest>& request, const String& argString)
 {         
@@ -903,6 +929,8 @@ GraphicsPageHandler::WriteModelNodeInstanceInfo(const Ptr<Http::HttpRequest>& re
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GraphicsPageHandler::WriteTransformNodeInfo(const Ptr<TransformNodeInstance>& transformNode, const Ptr<Http::HtmlPageWriter>& htmlWriter)
 {       
@@ -931,6 +959,8 @@ GraphicsPageHandler::WriteTransformNodeInfo(const Ptr<TransformNodeInstance>& tr
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GraphicsPageHandler::WriteAnimatorNodeInfo(const Ptr<AnimatorNodeInstance>& animNode, const Ptr<Http::HtmlPageWriter>& htmlWriter)
 {
@@ -938,6 +968,8 @@ GraphicsPageHandler::WriteAnimatorNodeInfo(const Ptr<AnimatorNodeInstance>& anim
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GraphicsPageHandler::WriteStateNodeInfo(const Ptr<StateNodeInstance>& stateNodeInst, const Ptr<Http::HtmlPageWriter>& htmlWriter)
 {
@@ -953,6 +985,8 @@ GraphicsPageHandler::WriteStateNodeInfo(const Ptr<StateNodeInstance>& stateNodeI
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GraphicsPageHandler::WriteShapeNodeInfo(const Ptr<ShapeNodeInstance>& shapeNode, const Ptr<Http::HtmlPageWriter>& htmlWriter)
 {
@@ -960,6 +994,8 @@ GraphicsPageHandler::WriteShapeNodeInfo(const Ptr<ShapeNodeInstance>& shapeNode,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Http::HttpStatus::Code 
 GraphicsPageHandler::ApplyVariation(const Ptr<Http::HttpRequest>& request, const Util::String& argString)
 {

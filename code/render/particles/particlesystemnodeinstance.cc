@@ -22,18 +22,24 @@ using namespace CoreGraphics;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystemNodeInstance::ParticleSystemNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystemNodeInstance::~ParticleSystemNodeInstance()
 {
     n_assert(!this->particleSystemInstance.isvalid());
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ParticleSystemNodeInstance::OnVisibilityResolve(IndexT resolveIndex, float distanceToViewer)
 {
@@ -47,6 +53,8 @@ ParticleSystemNodeInstance::OnVisibilityResolve(IndexT resolveIndex, float dista
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode>& node, const Ptr<ModelNodeInstance>& parentNodeInst)
 {
@@ -93,6 +101,8 @@ ParticleSystemNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<Mode
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::Discard()
 {
@@ -107,6 +117,8 @@ ParticleSystemNodeInstance::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::OnRenderBefore(IndexT frameIndex, Timing::Time time)
 {
@@ -154,6 +166,8 @@ ParticleSystemNodeInstance::OnRenderBefore(IndexT frameIndex, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::ApplyState()
 {
@@ -173,6 +187,8 @@ ParticleSystemNodeInstance::ApplyState()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ParticleSystemNodeInstance::Render()
 {
@@ -181,6 +197,8 @@ ParticleSystemNodeInstance::Render()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::RenderDebug()
 {
@@ -189,6 +207,8 @@ ParticleSystemNodeInstance::RenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::OnShow(Timing::Time time)
 {
@@ -196,6 +216,8 @@ ParticleSystemNodeInstance::OnShow(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNodeInstance::OnHide(Timing::Time time)
 {

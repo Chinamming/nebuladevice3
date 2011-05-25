@@ -62,6 +62,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 MousePointer::MousePointer() :
     pos(Math::point::origin()),
@@ -74,6 +76,8 @@ MousePointer::MousePointer() :
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MousePointer::SetResourceId(const Resources::ResourceId& id)
 {
@@ -81,6 +85,8 @@ MousePointer::SetResourceId(const Resources::ResourceId& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 MousePointer::GetResourceId() const
 {
@@ -88,6 +94,8 @@ MousePointer::GetResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MousePointer::SetPosition(const Math::point& p)
 {
@@ -95,6 +103,8 @@ MousePointer::SetPosition(const Math::point& p)
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 MousePointer::GetPosition() const
 {
@@ -102,6 +112,8 @@ MousePointer::GetPosition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MousePointer::SetSize(const Math::vector& v)
 {
@@ -109,6 +121,8 @@ MousePointer::SetSize(const Math::vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 MousePointer::GetSize() const
 {
@@ -116,6 +130,8 @@ MousePointer::GetSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MousePointer::SetOrientation(const Math::vector& v)
 {
@@ -123,6 +139,8 @@ MousePointer::SetOrientation(const Math::vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 MousePointer::GetOrientation() const
 {
@@ -130,6 +148,8 @@ MousePointer::GetOrientation() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MousePointer::SetHotspot(const Math::point& p)
 {
@@ -137,6 +157,8 @@ MousePointer::SetHotspot(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 MousePointer::GetHotspot() const
 {
@@ -144,6 +166,8 @@ MousePointer::GetHotspot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MousePointer::SetAlpha(Math::scalar a)
 {
@@ -151,6 +175,8 @@ MousePointer::SetAlpha(Math::scalar a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Math::scalar
 MousePointer::GetAlpha() const
 {

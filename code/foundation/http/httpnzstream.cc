@@ -17,12 +17,16 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpNzStream::HttpNzStream()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpNzStream::~HttpNzStream()
 {
     if (this->IsOpen())
@@ -32,6 +36,8 @@ HttpNzStream::~HttpNzStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpNzStream::Open()
 {

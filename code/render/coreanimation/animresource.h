@@ -65,6 +65,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimResource::GetNumClips() const
 {
@@ -72,6 +74,8 @@ AnimResource::GetNumClips() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const AnimClip&
 AnimResource::GetClipByIndex(IndexT i) const
 {
@@ -79,6 +83,8 @@ AnimResource::GetClipByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<AnimKeyBuffer>&
 AnimResource::GetKeyBuffer() const
 {
@@ -86,6 +92,8 @@ AnimResource::GetKeyBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimResource::HasClip(const Util::StringAtom& clipName) const
 {
@@ -93,6 +101,8 @@ AnimResource::HasClip(const Util::StringAtom& clipName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 AnimResource::GetClipIndexByName(const Util::StringAtom& clipName) const
 {
@@ -108,6 +118,8 @@ AnimResource::GetClipIndexByName(const Util::StringAtom& clipName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const AnimClip&
 AnimResource::GetClipByName(const Util::StringAtom& clipName) const
 {

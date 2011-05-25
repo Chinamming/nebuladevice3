@@ -15,12 +15,16 @@ using namespace Math;
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 BXmlReader::BXmlReader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 BXmlReader::~BXmlReader()
 {
     if (this->IsOpen())
@@ -30,6 +34,8 @@ BXmlReader::~BXmlReader()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::Open()
 {
@@ -51,6 +57,8 @@ BXmlReader::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BXmlReader::Close()
 {
@@ -61,6 +69,8 @@ BXmlReader::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::HasNode(const String& path) const
 {
@@ -69,6 +79,8 @@ BXmlReader::HasNode(const String& path) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 BXmlReader::GetCurrentNodeName() const
 {
@@ -77,6 +89,8 @@ BXmlReader::GetCurrentNodeName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 BXmlReader::GetCurrentNodePath() const
 {
@@ -106,6 +120,8 @@ BXmlReader::GetCurrentNodePath() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BXmlReader::SetToNode(const String& path)
 {
@@ -122,6 +138,8 @@ BXmlReader::SetToNode(const String& path)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::SetToFirstChild(const String& name)
 {
@@ -130,6 +148,8 @@ BXmlReader::SetToFirstChild(const String& name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::SetToNextChild(const String& name)
 {
@@ -138,6 +158,8 @@ BXmlReader::SetToNextChild(const String& name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::SetToParent()
 {
@@ -146,6 +168,8 @@ BXmlReader::SetToParent()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::HasAttr(const char* attr) const
 {
@@ -154,6 +178,8 @@ BXmlReader::HasAttr(const char* attr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 BXmlReader::GetAttrs() const
 {
@@ -173,6 +199,8 @@ BXmlReader::GetAttrs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 BXmlReader::GetString(const char* attr) const
 {
@@ -191,6 +219,8 @@ BXmlReader::GetString(const char* attr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::GetBool(const char* attr) const
 {
@@ -198,6 +228,8 @@ BXmlReader::GetBool(const char* attr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 BXmlReader::GetInt(const char* attr) const
 {
@@ -205,6 +237,8 @@ BXmlReader::GetInt(const char* attr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 BXmlReader::GetFloat(const char* attr) const
 {
@@ -213,6 +247,8 @@ BXmlReader::GetFloat(const char* attr) const
 
 #if !__OSX__
 //------------------------------------------------------------------------------
+/**
+*/
 Math::float2
 BXmlReader::GetFloat2(const char* attr) const
 {
@@ -220,6 +256,8 @@ BXmlReader::GetFloat2(const char* attr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::float4
 BXmlReader::GetFloat4(const char* attr) const
 {
@@ -235,6 +273,8 @@ BXmlReader::GetFloat4(const char* attr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::matrix44
 BXmlReader::GetMatrix44(const char* attr) const
 {
@@ -243,6 +283,8 @@ BXmlReader::GetMatrix44(const char* attr) const
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 String
 BXmlReader::GetOptString(const char* attr, const String& defaultValue) const
 {
@@ -257,6 +299,8 @@ BXmlReader::GetOptString(const char* attr, const String& defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlReader::GetOptBool(const char* attr, bool defaultValue) const
 {
@@ -271,6 +315,8 @@ BXmlReader::GetOptBool(const char* attr, bool defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 BXmlReader::GetOptInt(const char* attr, int defaultValue) const
 {
@@ -285,6 +331,8 @@ BXmlReader::GetOptInt(const char* attr, int defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 BXmlReader::GetOptFloat(const char* attr, float defaultValue) const
 {
@@ -300,6 +348,8 @@ BXmlReader::GetOptFloat(const char* attr, float defaultValue) const
 
 #if !__OSX__    
 //------------------------------------------------------------------------------
+/**
+*/
 Math::float2
 BXmlReader::GetOptFloat2(const char* attr, const Math::float2& defaultValue) const
 {
@@ -314,6 +364,8 @@ BXmlReader::GetOptFloat2(const char* attr, const Math::float2& defaultValue) con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::float4
 BXmlReader::GetOptFloat4(const char* attr, const Math::float4& defaultValue) const
 {
@@ -328,6 +380,8 @@ BXmlReader::GetOptFloat4(const char* attr, const Math::float4& defaultValue) con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::matrix44
 BXmlReader::GetOptMatrix44(const char* attr, const Math::matrix44& defaultValue) const
 {

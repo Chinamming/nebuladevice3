@@ -12,16 +12,22 @@ namespace Resources
 __ImplementClass(Resources::ResourceSlot, 'RSSL', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceSlot::ResourceSlot()
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceSlot::~ResourceSlot()
 {
     this->Unload();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSlot::CreateLoader(const Core::Rtti& loaderClass)
 {
@@ -30,6 +36,8 @@ ResourceSlot::CreateLoader(const Core::Rtti& loaderClass)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSlot::Reset()
 {
@@ -54,6 +62,8 @@ ResourceSlot::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSlot::SetupFromManagedResource(Ptr<ManagedResource> managedResource)
 {
@@ -68,6 +78,8 @@ ResourceSlot::SetupFromManagedResource(Ptr<ManagedResource> managedResource)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSlot::Unload()
 {
@@ -81,6 +93,8 @@ ResourceSlot::Unload()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSlot::PrintDebugInfo() const
 {

@@ -12,18 +12,24 @@ using namespace Math;
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 CommandLineArgs::CommandLineArgs()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CommandLineArgs::CommandLineArgs(const String& l)
 {
     this->args = l.Tokenize(" \t\n=", '"');
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CommandLineArgs::CommandLineArgs(int argc, const char** argv)
 {
     int i;
@@ -82,6 +88,8 @@ CommandLineArgs::FindArgIndex(const String& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const String&
 CommandLineArgs::GetString(const String& name, const String& defaultValue) const
 {
@@ -96,6 +104,8 @@ CommandLineArgs::GetString(const String& name, const String& defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 CommandLineArgs::GetInt(const String& name, int defaultValue) const
 {
@@ -110,6 +120,8 @@ CommandLineArgs::GetInt(const String& name, int defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 CommandLineArgs::GetFloat(const String& name, float defaultValue) const
 {
@@ -124,6 +136,8 @@ CommandLineArgs::GetFloat(const String& name, float defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 CommandLineArgs::GetBool(const String& name, bool defaultValue) const
 {
@@ -138,6 +152,8 @@ CommandLineArgs::GetBool(const String& name, bool defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 CommandLineArgs::GetBoolFlag(const String& name) const
 {
@@ -146,6 +162,8 @@ CommandLineArgs::GetBoolFlag(const String& name) const
 
 #if !__OSX__
 //------------------------------------------------------------------------------
+/**
+*/
 float4
 CommandLineArgs::GetFloat4(const String& name, const float4& defaultValue) const
 {
@@ -160,6 +178,8 @@ CommandLineArgs::GetFloat4(const String& name, const float4& defaultValue) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 matrix44
 CommandLineArgs::GetMatrix44(const String& name, const matrix44& defaultValue) const
 {
@@ -175,6 +195,8 @@ CommandLineArgs::GetMatrix44(const String& name, const matrix44& defaultValue) c
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 CommandLineArgs::GetNumArgs() const
 {
@@ -183,6 +205,8 @@ CommandLineArgs::GetNumArgs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const String&
 CommandLineArgs::GetStringAtIndex(IndexT index) const
 {
@@ -190,6 +214,8 @@ CommandLineArgs::GetStringAtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 CommandLineArgs::GetIntAtIndex(IndexT index) const
 {
@@ -197,6 +223,8 @@ CommandLineArgs::GetIntAtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 CommandLineArgs::GetFloatAtIndex(IndexT index) const
 {
@@ -204,6 +232,8 @@ CommandLineArgs::GetFloatAtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 CommandLineArgs::GetBoolAtIndex(IndexT index) const
 {
@@ -212,6 +242,8 @@ CommandLineArgs::GetBoolAtIndex(IndexT index) const
 
 #if !__OSX__    
 //------------------------------------------------------------------------------
+/**
+*/
 float4
 CommandLineArgs::GetFloat4AtIndex(IndexT index) const
 {
@@ -219,6 +251,8 @@ CommandLineArgs::GetFloat4AtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 matrix44
 CommandLineArgs::GetMatrix44AtIndex(IndexT index) const
 {
@@ -227,6 +261,8 @@ CommandLineArgs::GetMatrix44AtIndex(IndexT index) const
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 CommandLineArgs::AppendCommandString(const CommandLineArgs& otherArgs)
 {

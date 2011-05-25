@@ -28,6 +28,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 RandomNumberTable::Rand(IndexT key)
 {
@@ -35,6 +37,8 @@ RandomNumberTable::Rand(IndexT key)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 RandomNumberTable::Rand(IndexT key, float minVal, float maxVal)
 {

@@ -39,6 +39,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<CoreGraphics::ShaderInstance> >&
 ShaderBase::GetAllShaderInstances() const
 {

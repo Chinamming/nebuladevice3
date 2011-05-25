@@ -78,6 +78,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderInstance>&
 StateNode::GetShaderInstance() const
 {
@@ -85,6 +87,8 @@ StateNode::GetShaderInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StateNode::SetShader(const Resources::ResourceId& resId)
 {
@@ -92,6 +96,8 @@ StateNode::SetShader(const Resources::ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 StateNode::GetShader() const
 {
@@ -99,6 +105,8 @@ StateNode::GetShader() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Util::KeyValuePair<Util::StringAtom, Util::Variant> >& 
 StateNode::GetShaderParameter() const
 {

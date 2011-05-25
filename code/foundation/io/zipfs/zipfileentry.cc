@@ -11,6 +11,8 @@ using namespace Util;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileEntry::ZipFileEntry() :
     archiveCritSect(0),
     zipFileHandle(0),
@@ -20,12 +22,16 @@ ZipFileEntry::ZipFileEntry() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileEntry::~ZipFileEntry()
 {
     this->zipFileHandle = 0;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ZipFileEntry::Setup(const StringAtom& n, unzFile h, CriticalSection* critSect)
 {
@@ -51,6 +57,8 @@ ZipFileEntry::Setup(const StringAtom& n, unzFile h, CriticalSection* critSect)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileEntry::Open(const String& password)
 {
@@ -85,6 +93,8 @@ ZipFileEntry::Open(const String& password)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ZipFileEntry::Close()
 {
@@ -97,6 +107,8 @@ ZipFileEntry::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ZipFileEntry::Read(void* buf, Stream::Size numBytes) const
 {

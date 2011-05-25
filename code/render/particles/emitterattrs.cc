@@ -9,6 +9,8 @@ namespace Particles
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 EmitterAttrs::EmitterAttrs()
 {
     Memory::Clear(this->floatValues, sizeof(this->floatValues));

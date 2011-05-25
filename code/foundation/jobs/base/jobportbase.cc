@@ -13,6 +13,8 @@ using namespace Jobs;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobPortBase::JobPortBase() :
     isValid(false)
 {
@@ -20,12 +22,16 @@ JobPortBase::JobPortBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobPortBase::~JobPortBase()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::Setup()
 {
@@ -34,6 +40,8 @@ JobPortBase::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::Discard()
 {
@@ -42,6 +50,8 @@ JobPortBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::PushJob(const Ptr<Job>& job)
 {
@@ -50,6 +60,8 @@ JobPortBase::PushJob(const Ptr<Job>& job)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::PushJobChain(const Array<Ptr<Job> >& jobs)
 {
@@ -58,6 +70,8 @@ JobPortBase::PushJobChain(const Array<Ptr<Job> >& jobs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::PushFlush()
 {
@@ -65,6 +79,8 @@ JobPortBase::PushFlush()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::PushSync()
 {
@@ -72,6 +88,8 @@ JobPortBase::PushSync()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobPortBase::WaitDone()
 {
@@ -79,6 +97,8 @@ JobPortBase::WaitDone()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 JobPortBase::CheckDone()
 {

@@ -14,6 +14,8 @@ using namespace CoreGraphics;
 using namespace Win360;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9Texture::D3D9Texture() :
     d3d9BaseTexture(0),
     d3d9Texture(0),
@@ -25,6 +27,8 @@ D3D9Texture::D3D9Texture() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9Texture::~D3D9Texture()
 {
     n_assert(0 == this->d3d9BaseTexture);
@@ -35,6 +39,8 @@ D3D9Texture::~D3D9Texture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9Texture::Unload()
 {
@@ -63,6 +69,8 @@ D3D9Texture::Unload()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9Texture::Map(IndexT mipLevel, MapType mapType, MapInfo& outMapInfo)
 {
@@ -120,6 +128,8 @@ D3D9Texture::Map(IndexT mipLevel, MapType mapType, MapInfo& outMapInfo)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9Texture::Unmap(IndexT mipLevel)
 {
@@ -137,6 +147,8 @@ D3D9Texture::Unmap(IndexT mipLevel)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9Texture::MapCubeFace(CubeFace face, IndexT mipLevel, MapType mapType, MapInfo& outMapInfo)
 {
@@ -178,6 +190,8 @@ D3D9Texture::MapCubeFace(CubeFace face, IndexT mipLevel, MapType mapType, MapInf
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9Texture::UnmapCubeFace(CubeFace face, IndexT mipLevel)
 {

@@ -11,6 +11,8 @@ namespace Messaging
 __ImplementClass(Messaging::Dispatcher, 'MDIS', Messaging::Port);
 
 //------------------------------------------------------------------------------
+/**
+*/
 Dispatcher::Dispatcher() :
     idPorts(64, 64)
 {

@@ -40,6 +40,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Threading::ThreadId
 TextElement::GetThreadId() const
 {
@@ -47,6 +49,8 @@ TextElement::GetThreadId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 TextElement::GetText() const
 {
@@ -54,6 +58,8 @@ TextElement::GetText() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 TextElement::GetColor() const
 {
@@ -61,6 +67,8 @@ TextElement::GetColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 TextElement::GetPosition() const
 {

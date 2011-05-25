@@ -12,6 +12,8 @@ __ImplementClass(Base::MemoryVertexBufferLoaderBase, 'MVLB', Resources::Resource
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MemoryVertexBufferLoaderBase::MemoryVertexBufferLoaderBase() :
     numVertices(0),
     vertexDataPtr(0),

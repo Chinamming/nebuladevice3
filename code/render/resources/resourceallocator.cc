@@ -13,6 +13,8 @@ __ImplementClass(Resources::ResourceAllocator, 'RSAC', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceAllocator::ResourceAllocator() :
     arenaBlockSize(0),
     arenaNumBlocks(0),
@@ -23,12 +25,16 @@ ResourceAllocator::ResourceAllocator() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceAllocator::~ResourceAllocator()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceAllocator::Setup(SizeT blockSize, SizeT numBlocks)
 {
@@ -46,6 +52,8 @@ ResourceAllocator::Setup(SizeT blockSize, SizeT numBlocks)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceAllocator::Discard()
 {

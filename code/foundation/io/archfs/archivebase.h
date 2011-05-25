@@ -47,6 +47,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ArchiveBase::IsValid() const
 {
@@ -54,6 +56,8 @@ ArchiveBase::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const URI&
 ArchiveBase::GetURI() const
 {

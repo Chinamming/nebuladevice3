@@ -14,6 +14,8 @@ using namespace Util;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HandlerThreadBase::HandlerThreadBase()
 {
     // empty

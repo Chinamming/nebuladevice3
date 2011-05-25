@@ -15,6 +15,8 @@ __ImplementClass(Base::ShaderInstanceBase, 'SIBS', Core::RefCounted);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderInstanceBase::ShaderInstanceBase() :
     inBegin(false),
     inBeginPass(false)
@@ -23,6 +25,8 @@ ShaderInstanceBase::ShaderInstanceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderInstanceBase::~ShaderInstanceBase()
 {
     // check if Discard() has been called...
@@ -35,6 +39,8 @@ ShaderInstanceBase::~ShaderInstanceBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ShaderInstanceBase::IsValid() const
 {
@@ -84,6 +90,8 @@ ShaderInstanceBase::Cleanup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ShaderInstanceBase::Begin()
 {
@@ -94,6 +102,8 @@ ShaderInstanceBase::Begin()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderInstanceBase::BeginPass(IndexT passIndex)
 {
@@ -103,6 +113,8 @@ ShaderInstanceBase::BeginPass(IndexT passIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderInstanceBase::Commit()
 {
@@ -110,6 +122,8 @@ ShaderInstanceBase::Commit()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderInstanceBase::EndPass()
 {
@@ -118,6 +132,8 @@ ShaderInstanceBase::EndPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderInstanceBase::End()
 {
@@ -127,6 +143,8 @@ ShaderInstanceBase::End()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ShaderInstanceBase::SelectActiveVariation(CoreGraphics::ShaderFeature::Mask featureMask)
 {
@@ -151,6 +169,8 @@ ShaderInstanceBase::SelectActiveVariation(CoreGraphics::ShaderFeature::Mask feat
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<CoreGraphics::ShaderVariable>&
 ShaderInstanceBase::GetVariableBySemantic(const CoreGraphics::ShaderVariable::Semantic& s) const
 {
@@ -165,6 +185,8 @@ ShaderInstanceBase::GetVariableBySemantic(const CoreGraphics::ShaderVariable::Se
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<CoreGraphics::ShaderVariable>&
 ShaderInstanceBase::GetVariableByName(const CoreGraphics::ShaderVariable::Name& n) const
 {

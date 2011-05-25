@@ -90,6 +90,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameSyncTimer::IsValid() const
 {
@@ -97,6 +99,8 @@ FrameSyncTimer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 FrameSyncTimer::GetTime() const
 {
@@ -104,6 +108,8 @@ FrameSyncTimer::GetTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 FrameSyncTimer::GetTicks() const
 {
@@ -111,6 +117,8 @@ FrameSyncTimer::GetTicks() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 FrameSyncTimer::GetFrameTime() const
 {
@@ -118,6 +126,8 @@ FrameSyncTimer::GetFrameTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 FrameSyncTimer::GetFrameTicks() const
 {
@@ -125,6 +135,8 @@ FrameSyncTimer::GetFrameTicks() const
 }
  
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 FrameSyncTimer::SetTimeFactor(Timing::Time factor)
 {
@@ -132,6 +144,8 @@ FrameSyncTimer::SetTimeFactor(Timing::Time factor)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time 
 FrameSyncTimer::GetTimeFactor() const
 {
@@ -139,6 +153,8 @@ FrameSyncTimer::GetTimeFactor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 FrameSyncTimer::GetScaledTime()const 
 {

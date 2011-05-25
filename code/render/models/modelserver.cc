@@ -22,6 +22,8 @@ using namespace IO;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelServer::ModelServer() :
     isOpen(false),
     curModelNodeInstanceIndex(InvalidIndex),
@@ -31,6 +33,8 @@ ModelServer::ModelServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelServer::~ModelServer()
 {
     if (this->IsOpen())
@@ -41,6 +45,8 @@ ModelServer::~ModelServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelServer::Open()
 {
@@ -70,6 +76,8 @@ ModelServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelServer::Close()
 {
@@ -85,6 +93,8 @@ ModelServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ModelServer::HasManagedModel(const ResourceId& resId) const
 {
@@ -92,6 +102,8 @@ ModelServer::HasManagedModel(const ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ManagedModel>
 ModelServer::LoadManagedModel(const ResourceId& resId)
 {
@@ -99,6 +111,8 @@ ModelServer::LoadManagedModel(const ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ManagedModel>&
 ModelServer::LookupManagedModel(const ResourceId& resId) const
 {
@@ -107,6 +121,8 @@ ModelServer::LookupManagedModel(const ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelServer::DiscardManagedModel(const Ptr<ManagedModel>& managedModel) const
 {
@@ -114,6 +130,8 @@ ModelServer::DiscardManagedModel(const Ptr<ManagedModel>& managedModel) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT 
 ModelServer::ConsumeNewModelNodeInstanceIndex()
 {
@@ -127,6 +145,8 @@ ModelServer::ConsumeNewModelNodeInstanceIndex()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelServer::ResetModelNodeInstanceIndex()
 {

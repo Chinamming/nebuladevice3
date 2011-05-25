@@ -78,6 +78,8 @@ Win32MiniDump::WriteMiniDumpInternal(EXCEPTION_POINTERS* exceptionInfo)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win32MiniDump::BuildMiniDumpFilename()
 {

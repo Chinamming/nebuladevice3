@@ -46,6 +46,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimKeyBuffer::IsValid() const
 {
@@ -53,6 +55,8 @@ AnimKeyBuffer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimKeyBuffer::IsMapped() const
 {
@@ -60,6 +64,8 @@ AnimKeyBuffer::IsMapped() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimKeyBuffer::GetNumKeys() const
 {
@@ -67,6 +73,8 @@ AnimKeyBuffer::GetNumKeys() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimKeyBuffer::GetByteSize() const
 {
@@ -74,6 +82,8 @@ AnimKeyBuffer::GetByteSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Math::float4*
 AnimKeyBuffer::GetKeyBufferPointer() const
 {

@@ -106,6 +106,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalStage::IsAttachedToServer() const
 {
@@ -113,6 +115,8 @@ InternalStage::IsAttachedToServer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalStage::SetName(const Util::StringAtom& n)
 {
@@ -120,6 +124,8 @@ InternalStage::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InternalStage::GetName() const
 {
@@ -127,6 +133,8 @@ InternalStage::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<InternalGraphics::InternalGraphicsEntity> >&
 InternalStage::GetEntities() const
 {
@@ -134,6 +142,8 @@ InternalStage::GetEntities() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<InternalGraphics::InternalGraphicsEntity> >&
 InternalStage::GetEntitiesByType(InternalGraphicsEntityType::Code entityType) const
 {

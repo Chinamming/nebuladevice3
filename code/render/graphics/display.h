@@ -51,8 +51,6 @@ public:
     Util::Array<CoreGraphics::DisplayMode> GetAvailableDisplayModes(CoreGraphics::Adapter::Code adapter, CoreGraphics::PixelFormat::Code pixelFormat);
     /// return true if a given display mode is supported (waits for completion)
     bool SupportsDisplayMode(CoreGraphics::Adapter::Code adapter, const CoreGraphics::DisplayMode& requestedMode);
-	/// adjust display mode's size to window's size
-	void AdjustSize();
     /// get current adapter display mode (i.e. the desktop display mode) (waits for completion)
     CoreGraphics::DisplayMode GetCurrentAdapterDisplayMode(CoreGraphics::Adapter::Code adapter);
     /// get general info about display adapter (waits for completion)
@@ -74,6 +72,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Display::IsOpen() const
 {
@@ -81,6 +81,8 @@ Display::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline DisplaySettings&
 Display::Settings()
 {
@@ -88,6 +90,8 @@ Display::Settings()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Display::SetParentWindow(void* h)
 {
@@ -95,6 +99,8 @@ Display::SetParentWindow(void* h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 Display::GetParentWindow() const
 {
@@ -102,6 +108,8 @@ Display::GetParentWindow() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Display::SetResourceMappers(const Util::Array<Ptr<Resources::ResourceMapper> >& mappers)
 {

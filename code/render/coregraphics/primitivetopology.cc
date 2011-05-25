@@ -10,6 +10,8 @@ namespace CoreGraphics
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 PrimitiveTopology::Code
 PrimitiveTopology::FromString(const String& str)
 {
@@ -30,6 +32,8 @@ PrimitiveTopology::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 PrimitiveTopology::ToString(Code code)
 {

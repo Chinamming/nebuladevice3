@@ -13,6 +13,8 @@ __ImplementClass(Http::HttpServerProxy, 'HTSP', Core::RefCounted);
 __ImplementSingleton(Http::HttpServerProxy);
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpServerProxy::HttpServerProxy() :
     isOpen(false)
 {
@@ -20,6 +22,8 @@ HttpServerProxy::HttpServerProxy() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpServerProxy::~HttpServerProxy()
 {
     n_assert(!this->isOpen);
@@ -27,6 +31,8 @@ HttpServerProxy::~HttpServerProxy()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServerProxy::Open()
 {
@@ -36,6 +42,8 @@ HttpServerProxy::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServerProxy::Close()
 {
@@ -50,6 +58,8 @@ HttpServerProxy::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServerProxy::AttachRequestHandler(const Ptr<HttpRequestHandler>& requestHandler)
 {
@@ -63,6 +73,8 @@ HttpServerProxy::AttachRequestHandler(const Ptr<HttpRequestHandler>& requestHand
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServerProxy::RemoveRequestHandler(const Ptr<HttpRequestHandler>& requestHandler)
 {
@@ -80,6 +92,8 @@ HttpServerProxy::RemoveRequestHandler(const Ptr<HttpRequestHandler>& requestHand
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServerProxy::HandlePendingRequests()
 {

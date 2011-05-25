@@ -14,18 +14,24 @@ __ImplementClass(Base::ShaderBase, 'SHDB', Resources::Resource);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderBase::ShaderBase() 
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderBase::~ShaderBase()
 {
     n_assert(0 == this->shaderInstances.Size());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ShaderInstance>
 ShaderBase::CreateShaderInstance()
 {
@@ -37,6 +43,8 @@ ShaderBase::CreateShaderInstance()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderBase::DiscardShaderInstance(const Ptr<ShaderInstance>& inst)
 {

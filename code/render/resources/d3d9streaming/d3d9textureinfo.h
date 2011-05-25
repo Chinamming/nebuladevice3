@@ -70,11 +70,15 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 D3D9TextureInfo::~D3D9TextureInfo()
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 D3D9TextureInfo::IsEqual(const D3D9TextureInfo* info) const
 {
@@ -87,6 +91,8 @@ D3D9TextureInfo::IsEqual(const D3D9TextureInfo* info) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 D3D9TextureInfo::IsEqual(const ResourceInfo* info) const
 {
@@ -95,6 +101,8 @@ D3D9TextureInfo::IsEqual(const ResourceInfo* info) const
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureInfo::SetType(CoreGraphics::Texture::Type t)
 {
@@ -102,6 +110,8 @@ D3D9TextureInfo::SetType(CoreGraphics::Texture::Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::Texture::Type
 D3D9TextureInfo::GetType() const
 {
@@ -109,6 +119,8 @@ D3D9TextureInfo::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureInfo::SetWidth(uint w)
 {
@@ -116,6 +128,8 @@ D3D9TextureInfo::SetWidth(uint w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 D3D9TextureInfo::GetWidth() const
 {
@@ -123,6 +137,8 @@ D3D9TextureInfo::GetWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureInfo::SetHeight(uint h)
 {
@@ -130,6 +146,8 @@ D3D9TextureInfo::SetHeight(uint h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 D3D9TextureInfo::GetHeight() const
 {
@@ -137,6 +155,8 @@ D3D9TextureInfo::GetHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureInfo::SetDepth(uint d)
 {
@@ -144,6 +164,8 @@ D3D9TextureInfo::SetDepth(uint d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 D3D9TextureInfo::GetDepth() const
 {
@@ -151,6 +173,8 @@ D3D9TextureInfo::GetDepth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureInfo::SetMipLevels(uint n)
 {
@@ -158,6 +182,8 @@ D3D9TextureInfo::SetMipLevels(uint n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 D3D9TextureInfo::GetMipLevels() const
 {
@@ -165,6 +191,8 @@ D3D9TextureInfo::GetMipLevels() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9TextureInfo::SetPixelFormat(CoreGraphics::PixelFormat::Code f)
 {
@@ -172,6 +200,8 @@ D3D9TextureInfo::SetPixelFormat(CoreGraphics::PixelFormat::Code f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::PixelFormat::Code
 D3D9TextureInfo::GetPixelFormat() const
 {

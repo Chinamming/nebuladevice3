@@ -40,6 +40,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline HttpMethod::Code
 HttpMethod::FromString(const Util::String& str)
 {
@@ -58,6 +60,8 @@ HttpMethod::FromString(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 HttpMethod::ToString(Code c)
 {

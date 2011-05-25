@@ -71,6 +71,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 View::IsValid() const
 {
@@ -78,6 +80,8 @@ View::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 View::SetName(const Util::StringAtom& n)
 {
@@ -85,6 +89,8 @@ View::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 View::GetName() const
 {
@@ -92,6 +98,8 @@ View::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 View::SetViewClass(const Core::Rtti& rtti)
 {
@@ -99,6 +107,8 @@ View::SetViewClass(const Core::Rtti& rtti)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Core::Rtti& 
 View::GetViewClass() const
 {
@@ -107,6 +117,8 @@ View::GetViewClass() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 View::SetStageName(const Util::StringAtom& n)
 {
@@ -114,6 +126,8 @@ View::SetStageName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 View::GetStageName() const
 {
@@ -121,6 +135,8 @@ View::GetStageName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 View::SetFrameShaderName(const Resources::ResourceId& r)
 {
@@ -128,6 +144,8 @@ View::SetFrameShaderName(const Resources::ResourceId& r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 View::GetFrameShaderName() const
 {
@@ -135,6 +153,8 @@ View::GetFrameShaderName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 View::IsDefaultView() const
 {

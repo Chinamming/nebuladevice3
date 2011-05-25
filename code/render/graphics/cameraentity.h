@@ -63,6 +63,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CameraEntity::IsAttachedToView() const
 {
@@ -70,6 +72,8 @@ CameraEntity::IsAttachedToView() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<View>&
 CameraEntity::GetView() const
 {
@@ -77,6 +81,8 @@ CameraEntity::GetView() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraEntity::GetProjTransform() const
 {
@@ -84,6 +90,8 @@ CameraEntity::GetProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraEntity::GetViewTransform() const
 {
@@ -91,6 +99,8 @@ CameraEntity::GetViewTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CameraEntity::GetViewProjTransform() const
 {
@@ -98,6 +108,8 @@ CameraEntity::GetViewProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::frustum&
 CameraEntity::GetViewFrustum() const
 {
@@ -105,6 +117,8 @@ CameraEntity::GetViewFrustum() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Shared::CameraSettings&
 CameraEntity::GetCameraSettings() const
 {

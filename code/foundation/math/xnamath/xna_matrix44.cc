@@ -11,6 +11,8 @@ namespace Math
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 matrix44
 matrix44::reflect(const plane& p)
 {
@@ -18,6 +20,8 @@ matrix44::reflect(const plane& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 matrix44::decompose(float4& outScale, quaternion& outRotation, float4& outTranslation) const
 {
@@ -31,6 +35,8 @@ matrix44::decompose(float4& outScale, quaternion& outRotation, float4& outTransl
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 matrix44
 matrix44::affinetransformation(scalar scaling, float4 const &rotationCenter, const quaternion& rotation, float4 const &translation)
 {
@@ -38,6 +44,8 @@ matrix44::affinetransformation(scalar scaling, float4 const &rotationCenter, con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 matrix44
 matrix44::rotationquaternion(const quaternion& q)
 {
@@ -45,6 +53,8 @@ matrix44::rotationquaternion(const quaternion& q)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 matrix44
 matrix44::transformation(float4 const &scalingCenter, const quaternion& scalingRotation, float4 const &scaling, float4 const &rotationCenter, const quaternion& rotation, float4 const &translation)
 {
@@ -57,6 +67,8 @@ matrix44::transformation(float4 const &scalingCenter, const quaternion& scalingR
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 matrix44::ispointinside(const float4& p, const matrix44& m)
 {

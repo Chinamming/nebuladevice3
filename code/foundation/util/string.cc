@@ -13,6 +13,8 @@ namespace Util
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::CopyToBuffer(char* buf, SizeT bufSize) const
 {
@@ -30,6 +32,8 @@ String::CopyToBuffer(char* buf, SizeT bufSize) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void __cdecl
 String::Format(const char* fmtString, ...)
 {
@@ -49,6 +53,8 @@ String::Format(const char* fmtString, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void __cdecl
 String::FormatArgList(const char* fmtString, va_list argList)
 {
@@ -106,6 +112,8 @@ String::Set(const char* str, SizeT length)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::AppendRange(const char* append, SizeT length)
 {
@@ -607,6 +615,8 @@ match:
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::ReplaceChars(const String& charSet, char replacement)
 {
@@ -645,6 +655,8 @@ String::AsMatrix44() const
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 String
 String::Concatenate(const Array<String>& strArray, const String& whiteSpace)
 {
@@ -664,6 +676,8 @@ String::Concatenate(const Array<String>& strArray, const String& whiteSpace)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::SetCharPtr(const char* s)
 {
@@ -676,6 +690,8 @@ String::SetCharPtr(const char* s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::Append(const char* str)
 {
@@ -713,6 +729,8 @@ String::StripFileExtension()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 operator==(const String& a, const String& b)
 {
@@ -720,6 +738,8 @@ operator==(const String& a, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 operator==(const String& a, const char* cStr)
 {
@@ -728,6 +748,8 @@ operator==(const String& a, const char* cStr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 operator==(const char* cStr, const String& b)
 {
@@ -736,6 +758,8 @@ operator==(const char* cStr, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 operator != (const String& a, const String& b)
 {
@@ -743,6 +767,8 @@ operator != (const String& a, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 operator < (const String& a, const String& b)
 {
@@ -750,6 +776,8 @@ operator < (const String& a, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 operator > (const String& a, const String& b)
 {
@@ -757,6 +785,8 @@ operator > (const String& a, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 operator <= (const String& a, const String& b)
 {
@@ -764,6 +794,8 @@ operator <= (const String& a, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 operator >= (const String& a, const String& b)
 {
@@ -771,6 +803,8 @@ operator >= (const String& a, const String& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::ToLower()
 {
@@ -783,6 +817,8 @@ String::ToLower()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::ToUpper()
 {
@@ -795,6 +831,8 @@ String::ToUpper()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 String::FirstCharToUpper()
 {
@@ -846,6 +884,8 @@ String::GetLastSlash() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::IsValidBool() const
 {
@@ -889,6 +929,8 @@ String::AsFloat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::AsBool() const
 {
@@ -909,6 +951,8 @@ String::AsBool() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::IsDigit(char c)
 {
@@ -916,6 +960,8 @@ String::IsDigit(char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::IsAlpha(char c)
 {
@@ -923,6 +969,8 @@ String::IsAlpha(char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::IsAlNum(char c)
 {
@@ -930,6 +978,8 @@ String::IsAlNum(char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::IsLower(char c)
 {
@@ -937,6 +987,8 @@ String::IsLower(char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 String::IsUpper(char c)
 {
@@ -944,6 +996,8 @@ String::IsUpper(char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 String::StrCmp(const char* str0, const char* str1)
 {
@@ -952,6 +1006,8 @@ String::StrCmp(const char* str0, const char* str1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 String::StrLen(const char* str)
 {
@@ -960,6 +1016,8 @@ String::StrLen(const char* str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const char*
 String::StrChr(const char* str, int c)
 {
@@ -968,6 +1026,8 @@ String::StrChr(const char* str, int c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Dictionary<String,String>
 String::ParseKeyValuePairs(const String& str)
 {
@@ -983,6 +1043,8 @@ String::ParseKeyValuePairs(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 String::ChangeFileExtension(const Util::String& newExt)
 {

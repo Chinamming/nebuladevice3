@@ -15,17 +15,23 @@ namespace Direct3D9
 __ImplementClass(Direct3D9::D3D9ParticleSystemInstance, 'DPSI', Particles::ParticleSystemInstanceBase);
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ParticleSystemInstance::D3D9ParticleSystemInstance()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ParticleSystemInstance::~D3D9ParticleSystemInstance()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void D3D9ParticleSystemInstance::UpdateVertexStreams()
 {
     ParticleSystemInstanceBase::UpdateVertexStreams();
@@ -61,6 +67,8 @@ void D3D9ParticleSystemInstance::UpdateVertexStreams()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ParticleSystemInstance::Render()
 {

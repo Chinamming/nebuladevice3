@@ -76,7 +76,7 @@ MainScreen::Close()
 void
 MainScreen::HandleEvent(Event* e)
 {
-    n_printf("MainScreen::HandleEvent()\n  eventNa me: %s\n  type: %d\n", e->GetEventName().AsCharPtr(), e->GetEventType());
+    //n_printf("MainScreen::HandleEvent()\n  eventNa me: %s\n  type: %d\n", e->GetEventName().AsCharPtr(), e->GetEventType());
 
     // if input disabled because we're currently fading out, do nothing
     if (this->inputDisabled)

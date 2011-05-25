@@ -14,6 +14,8 @@ namespace Resources {
 __ImplementClass(Resources::ResourcePool, 'RESP', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourcePool::ResourcePool(void) :
     initialized(false),
     poolSize(0),
@@ -32,11 +34,15 @@ ResourcePool::ResourcePool(void) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourcePool::~ResourcePool(void)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ResourcePool::GetSlotsUsed() const
 {
@@ -54,6 +60,8 @@ ResourcePool::GetSlotsUsed() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 ResourcePool::GetUsedSize() const
 {
@@ -61,6 +69,8 @@ ResourcePool::GetUsedSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourcePool::SetLoader(const Core::Rtti* loader)
 {
@@ -68,6 +78,8 @@ ResourcePool::SetLoader(const Core::Rtti* loader)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourcePool::Initialize(const Ptr<ResourceCreator>& resourceCreator, const Ptr<PoolScheduler>& scheduler, SizeT amountSlots)
 {
@@ -135,6 +147,8 @@ ResourcePool::InitializeMax(const Ptr<ResourceCreator>& resourceCreator, const P
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourcePool::Reset()
 {
@@ -147,6 +161,8 @@ ResourcePool::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourcePool::Unload()
 {
@@ -176,6 +192,8 @@ ResourcePool::RequestSlot(const ResourceRequestInfo* requestInfo, bool startSear
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ResourceSlot>
 ResourcePool::GetSlot(const Ptr<ManagedResource>& managedResource) const
 {
@@ -191,6 +209,8 @@ ResourcePool::GetSlot(const Ptr<ManagedResource>& managedResource) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ResourceSlot>
 ResourcePool::GetSlot(const ResourceId& resId) const
 {
@@ -215,6 +235,8 @@ ResourcePool::GetSlot(const ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const ResourceId&
 ResourcePool::GetIdForSlot(IndexT slotIdx) const
 {
@@ -223,6 +245,8 @@ ResourcePool::GetIdForSlot(IndexT slotIdx) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ResourcePool::GetSlotStatistics(PoolStatisticsRequest conditions) const
 {
@@ -267,6 +291,8 @@ ResourcePool::GetSlotStatistics(PoolStatisticsRequest conditions) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Util::StringAtom
 ResourcePool::GetStateStringForSlot(const ResourceId& resId) const
 {

@@ -12,6 +12,8 @@ __ImplementClass(Base::TextureBase, 'TXRB', Base::ResourceBase);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextureBase::TextureBase() :
     type(InvalidType),
     width(0),
@@ -25,12 +27,16 @@ TextureBase::TextureBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextureBase::~TextureBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 TextureBase::Map(IndexT mipLevel, Access accessMode, MapInfo& outMapInfo)
 {
@@ -39,6 +45,8 @@ TextureBase::Map(IndexT mipLevel, Access accessMode, MapInfo& outMapInfo)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextureBase::Unmap(IndexT mipLevel)
 {
@@ -46,6 +54,8 @@ TextureBase::Unmap(IndexT mipLevel)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 TextureBase::MapCubeFace(CubeFace face, IndexT mipLevel, Access accessMode, MapInfo& outMapInfo)
 {
@@ -54,6 +64,8 @@ TextureBase::MapCubeFace(CubeFace face, IndexT mipLevel, Access accessMode, MapI
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextureBase::UnmapCubeFace(CubeFace cubeFace, IndexT mipLevel)
 {

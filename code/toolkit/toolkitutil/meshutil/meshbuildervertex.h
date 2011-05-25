@@ -20,19 +20,19 @@ public:
     /// vertex component indices
     enum ComponentIndex
     {
-        CoordIndex = 0,
-        NormalIndex,
-        TangentIndex,
-        BinormalIndex,
-        Uv0Index,
-        Uv1Index,
-        Uv2Index,
-        Uv3Index,
-        ColorIndex,
-        WeightsIndex,
-        JIndicesIndex,
+        CoordIndex		= 0,
+        NormalIndex		= 1,
+        Uv0Index		= 3,
+        Uv1Index		= 5,
+        Uv2Index		= 7,
+        Uv3Index		= 9,
+        ColorIndex		= 11,
+		TangentIndex	= 13,
+		BinormalIndex	= 15,
+        WeightsIndex	= 17,
+        JIndicesIndex	= 19,
 
-        NumComponents,
+        NumComponents	= 21,
         InvalidComponentIndex,
     };
 
@@ -86,6 +86,8 @@ public:
     void DeleteComponents(ComponentMask compMask);
     /// get component mask
     ComponentMask GetComponentMask() const;
+	/// get vertex width
+	int GetWidth() const;
 
     /// set vertex flag
     void SetFlag(Flag f);
@@ -99,10 +101,15 @@ public:
     /// transform the vertex
     void Transform(const Math::matrix44& m);
 
+	void SetOrigIndex(IndexT index){ this->origIndex = index;}
+
+	IndexT GetOrigIndex() const { return this->origIndex;}
+
 private:
     ComponentMask compMask;
     FlagMask flagMask;
     Math::float4 comps[NumComponents];
+	IndexT origIndex;
 };
 
 //------------------------------------------------------------------------------
@@ -157,6 +164,27 @@ inline bool
 MeshBuilderVertex::CheckFlag(Flag f) const
 {
     return (0 != (this->flagMask & f));
+}
+
+//------------------------------------------------------------------------------
+/**
+*/	 
+inline int
+MeshBuilderVertex::GetWidth() const
+{
+	int w = 0;
+	if (this->HasComponents(CoordBit))      w += 3;
+	if (this->HasComponents(NormalBit))     w += 3;		
+	if (this->HasComponents(TangentBit))    w += 3;		
+	if (this->HasComponents(BinormalBit))   w += 3;		
+	if (this->HasComponents(ColorBit))      w += 4;		
+	if (this->HasComponents(Uv0Bit))        w += 2;		
+	if (this->HasComponents(Uv1Bit))        w += 2;		
+	if (this->HasComponents(Uv2Bit))        w += 2;		
+	if (this->HasComponents(Uv3Bit))        w += 2;		
+	if (this->HasComponents(WeightsBit))    w += 4;		
+	if (this->HasComponents(JIndicesBit))   w += 4;
+	return w;
 }
 
 } // namespace ToolkitUtil

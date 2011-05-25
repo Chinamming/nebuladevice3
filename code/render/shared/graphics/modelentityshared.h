@@ -26,6 +26,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 ModelEntityShared::ModelEntityShared() :
     animDrivenMotionVector(Math::vector::nullvec()),

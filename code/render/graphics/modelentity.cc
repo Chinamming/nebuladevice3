@@ -15,6 +15,8 @@ using namespace Shared;
 using namespace FrameSync;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelEntity::ModelEntity() :
     animDrivenMotionTrackingEnabled(false),
     animEventTrackingEnabled(false),
@@ -25,12 +27,16 @@ ModelEntity::ModelEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelEntity::~ModelEntity()
 {
     n_assert(!this->sharedData.isvalid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::ConfigureAnimDrivenMotionTracking(bool enabled, const StringAtom& jointName)
 {
@@ -39,6 +45,8 @@ ModelEntity::ConfigureAnimDrivenMotionTracking(bool enabled, const StringAtom& j
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::ConfigureAnimEventTracking(bool enabled, bool onlyDominatingClip)
 {
@@ -47,6 +55,8 @@ ModelEntity::ConfigureAnimEventTracking(bool enabled, bool onlyDominatingClip)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::ConfigureCharJointTracking(bool enabled, const Array<StringAtom>& jointNames)
 {
@@ -83,6 +93,8 @@ ModelEntity::Setup(const Ptr<Stage>& stage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::OnSetupSharedData()
 {
@@ -92,6 +104,8 @@ ModelEntity::OnSetupSharedData()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::OnDiscardSharedData()
 {
@@ -101,6 +115,8 @@ ModelEntity::OnDiscardSharedData()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::UpdateModelNodeInstanceShaderVariable(const StringAtom& nodeName, const StringAtom& variableSemantic, const Variant& value)
 {
@@ -113,6 +129,8 @@ ModelEntity::UpdateModelNodeInstanceShaderVariable(const StringAtom& nodeName, c
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::UpdateModelNodeInstanceVisibility(const StringAtom& nodeName, bool visible)
 {
@@ -124,6 +142,8 @@ ModelEntity::UpdateModelNodeInstanceVisibility(const StringAtom& nodeName, bool 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelEntity::AddTrackedCharJoint(const StringAtom& jointName)
 {

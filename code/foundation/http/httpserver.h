@@ -79,6 +79,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 HttpServer::IsOpen() const
 {
@@ -101,6 +103,8 @@ HttpServer::SetSingleThreadMode(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 HttpServer::IsSingleThreadMode() const
 {
@@ -108,6 +112,8 @@ HttpServer::IsSingleThreadMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpServer::SetPort(ushort p)
 {
@@ -115,6 +121,8 @@ HttpServer::SetPort(ushort p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ushort
 HttpServer::GetPort() const
 {
@@ -122,6 +130,8 @@ HttpServer::GetPort() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::Array<Ptr<HttpRequestHandler> >
 HttpServer::GetRequestHandlers() const
 {

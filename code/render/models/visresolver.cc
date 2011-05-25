@@ -20,6 +20,8 @@ using namespace FrameSync;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisResolver::VisResolver() :
     cameraTransform(matrix44::identity()),
     resolveCount(InvalidIndex),
@@ -30,6 +32,8 @@ VisResolver::VisResolver() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisResolver::~VisResolver()
 {
     n_assert(!this->isOpen);
@@ -38,6 +42,8 @@ VisResolver::~VisResolver()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisResolver::Open()
 {
@@ -48,6 +54,8 @@ VisResolver::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisResolver::Close()
 {
@@ -58,6 +66,8 @@ VisResolver::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisResolver::BeginResolve(const matrix44& camTransform)
 {
@@ -70,6 +80,8 @@ VisResolver::BeginResolve(const matrix44& camTransform)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisResolver::AttachVisibleModelInstance(const Ptr<ModelInstance>& inst)
 {
@@ -77,6 +89,8 @@ VisResolver::AttachVisibleModelInstance(const Ptr<ModelInstance>& inst)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisResolver::AttachVisibleModelInstancePlayerCamera(const Ptr<ModelInstance>& inst)
 {
@@ -85,6 +99,8 @@ VisResolver::AttachVisibleModelInstancePlayerCamera(const Ptr<ModelInstance>& in
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisResolver::EndResolve()
 {
@@ -93,6 +109,8 @@ VisResolver::EndResolve()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<Model> >&
 VisResolver::GetVisibleModels(ModelNodeType::Code nodeType) const
 {
@@ -101,6 +119,8 @@ VisResolver::GetVisibleModels(ModelNodeType::Code nodeType) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<ModelNode> >&
 VisResolver::GetVisibleModelNodes(ModelNodeType::Code nodeType, const Ptr<Model>& model) const
 {
@@ -108,6 +128,8 @@ VisResolver::GetVisibleModelNodes(ModelNodeType::Code nodeType, const Ptr<Model>
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<ModelNodeInstance> >&
 VisResolver::GetVisibleModelNodeInstances(ModelNodeType::Code nodeType, const Ptr<ModelNode>& modelNode) const
 {

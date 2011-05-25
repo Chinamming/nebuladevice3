@@ -20,6 +20,8 @@ using namespace CoreGraphics;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SM30LightServer::SM30LightServer() :
     shdFeatureMasks(MaxLocalLights + 1, 0)
 {
@@ -34,12 +36,16 @@ SM30LightServer::SM30LightServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SM30LightServer::~SM30LightServer()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SM30LightServer::Open()
 {
@@ -88,6 +94,8 @@ SM30LightServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SM30LightServer::Close()
 {

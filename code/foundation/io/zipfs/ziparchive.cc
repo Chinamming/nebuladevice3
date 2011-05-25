@@ -15,6 +15,8 @@ __ImplementClass(IO::ZipArchive, 'ZPAR', IO::ArchiveBase);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipArchive::ZipArchive() :
     zipFileHandle(0)
 {
@@ -22,6 +24,8 @@ ZipArchive::ZipArchive() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipArchive::~ZipArchive()
 {
     if (this->IsValid())
@@ -193,6 +197,8 @@ ZipArchive::ConvertToPathInArchive(const Util::String& absPath) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const ZipFileEntry*
 ZipArchive::FindFileEntry(const String& pathInZipArchive) const
 {
@@ -230,6 +236,8 @@ ZipArchive::FindFileEntry(const String& pathInZipArchive) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileEntry*
 ZipArchive::FindFileEntry(const String& pathInZipArchive)
 {
@@ -238,6 +246,8 @@ ZipArchive::FindFileEntry(const String& pathInZipArchive)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const ZipDirEntry*
 ZipArchive::FindDirEntry(const String& pathInZipArchive) const
 {
@@ -269,6 +279,8 @@ ZipArchive::FindDirEntry(const String& pathInZipArchive) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 ZipArchive::ListFiles(const String& dirPathInZipArchive, const String& pattern) const
 {
@@ -292,6 +304,8 @@ ZipArchive::ListFiles(const String& dirPathInZipArchive, const String& pattern) 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 ZipArchive::ListDirectories(const String& dirPathInZipArchive, const String& pattern) const
 {

@@ -58,6 +58,8 @@ protected:
 }; 
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGlobalLightEntity::SetBackLightColor(const Math::float4& c)
 {
@@ -65,6 +67,8 @@ InternalGlobalLightEntity::SetBackLightColor(const Math::float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 InternalGlobalLightEntity::GetBackLightColor() const
 {
@@ -72,6 +76,8 @@ InternalGlobalLightEntity::GetBackLightColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 InternalGlobalLightEntity::GetLightDirection() const
 {
@@ -79,6 +85,8 @@ InternalGlobalLightEntity::GetLightDirection() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4& 
 InternalGlobalLightEntity::GetAmbientLightColor() const
 {
@@ -86,6 +94,8 @@ InternalGlobalLightEntity::GetAmbientLightColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 InternalGlobalLightEntity::SetAmbientLightColor(const Math::float4& color)
 {
@@ -93,6 +103,8 @@ InternalGlobalLightEntity::SetAmbientLightColor(const Math::float4& color)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const float& 
 InternalGlobalLightEntity::GetBackLightOffset() const
 {
@@ -100,6 +112,8 @@ InternalGlobalLightEntity::GetBackLightOffset() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 InternalGlobalLightEntity::SetBackLightOffset(const float& val)
 {

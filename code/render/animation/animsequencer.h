@@ -116,6 +116,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimSequencer::GetTime() const
 {
@@ -123,6 +125,8 @@ AnimSequencer::GetTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimSequencer::IsValid() const
 {
@@ -130,6 +134,8 @@ AnimSequencer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreAnimation::AnimSampleBuffer>&
 AnimSequencer::GetResult() const
 {
@@ -137,6 +143,8 @@ AnimSequencer::GetResult() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreAnimation::AnimResource>&
 AnimSequencer::GetAnimResource() const
 {
@@ -144,6 +152,8 @@ AnimSequencer::GetAnimResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimSequencer::SetDebugHudEnabled(bool b)
 {
@@ -151,6 +161,8 @@ AnimSequencer::SetDebugHudEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimSequencer::IsDebugHudEnabled() const
 {

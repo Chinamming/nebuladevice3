@@ -19,6 +19,8 @@ using namespace IO;
 using namespace Net;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpClient::HttpClient() :
     userAgent("Mozilla")    // NOTE: web browser are picky about user agent strings, so use something common
 {
@@ -27,6 +29,8 @@ HttpClient::HttpClient() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpClient::~HttpClient()
 {
     if (this->IsConnected())
@@ -37,6 +41,8 @@ HttpClient::~HttpClient()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpClient::Connect(const URI& uri)
 {
@@ -56,6 +62,8 @@ HttpClient::Connect(const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpClient::Disconnect()
 {
@@ -66,6 +74,8 @@ HttpClient::Disconnect()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpClient::IsConnected() const
 {
@@ -73,6 +83,8 @@ HttpClient::IsConnected() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code 
 HttpClient::SendRequest(HttpMethod::Code requestMethod, const URI& uri, const Ptr<Stream>& responseContentStream)
 {

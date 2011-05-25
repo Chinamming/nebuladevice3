@@ -57,6 +57,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VisibilitySystemBase::IsOpen() const
 {
@@ -64,6 +66,8 @@ VisibilitySystemBase::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint 
 VisibilitySystemBase::GetObserverBitMask() const
 {

@@ -53,6 +53,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MemoryMeshLoader::SetUsage(Base::ResourceBase::Usage usage_)
 {
@@ -60,6 +62,8 @@ MemoryMeshLoader::SetUsage(Base::ResourceBase::Usage usage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Base::ResourceBase::Usage
 MemoryMeshLoader::GetUsage() const
 {
@@ -67,6 +71,8 @@ MemoryMeshLoader::GetUsage() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MemoryMeshLoader::SetAccess(Base::ResourceBase::Access access_)
 {
@@ -74,6 +80,8 @@ MemoryMeshLoader::SetAccess(Base::ResourceBase::Access access_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Base::ResourceBase::Access
 MemoryMeshLoader::GetAccess() const
 {
@@ -81,6 +89,8 @@ MemoryMeshLoader::GetAccess() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 MemoryMeshLoader::SetVertexBuffer(const Ptr<CoreGraphics::VertexBuffer>& vBuffer)
 {
@@ -88,6 +98,8 @@ MemoryMeshLoader::SetVertexBuffer(const Ptr<CoreGraphics::VertexBuffer>& vBuffer
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 MemoryMeshLoader::SetIndexBuffer(const Ptr<CoreGraphics::IndexBuffer>& iBuffer)
 {
@@ -95,6 +107,8 @@ MemoryMeshLoader::SetIndexBuffer(const Ptr<CoreGraphics::IndexBuffer>& iBuffer)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 MemoryMeshLoader::SetPrimitiveGroups(const Util::Array<CoreGraphics::PrimitiveGroup>& pGroup)
 {

@@ -12,12 +12,16 @@ __ImplementClass(IO::ExcelXmlReader, 'EXRD', IO::StreamReader);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ExcelXmlReader::ExcelXmlReader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ExcelXmlReader::~ExcelXmlReader()
 {
     if (this->IsOpen())
@@ -55,6 +59,8 @@ ExcelXmlReader::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ExcelXmlReader::Close()
 {
@@ -249,6 +255,8 @@ ExcelXmlReader::ParseTables(const Ptr<XmlReader>& xmlReader)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ExcelXmlReader::GetNumTables() const
 {
@@ -257,6 +265,8 @@ ExcelXmlReader::GetNumTables() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const String&
 ExcelXmlReader::GetTableName(IndexT tableIndex) const
 {
@@ -265,6 +275,8 @@ ExcelXmlReader::GetTableName(IndexT tableIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ExcelXmlReader::GetNumRows(IndexT tableIndex) const
 {
@@ -273,6 +285,8 @@ ExcelXmlReader::GetNumRows(IndexT tableIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ExcelXmlReader::GetNumColumns(IndexT tableIndex) const
 {
@@ -316,6 +330,8 @@ ExcelXmlReader::FindColumnIndex(const String& columnName, IndexT tableIndex) con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const String&
 ExcelXmlReader::GetElement(IndexT rowIndex, IndexT columnIndex, IndexT tableIndex) const
 {
@@ -324,6 +340,8 @@ ExcelXmlReader::GetElement(IndexT rowIndex, IndexT columnIndex, IndexT tableInde
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const String&
 ExcelXmlReader::GetElement(IndexT rowIndex, const String& columnName, IndexT tableIndex) const
 {
@@ -333,6 +351,8 @@ ExcelXmlReader::GetElement(IndexT rowIndex, const String& columnName, IndexT tab
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT 
 ExcelXmlReader::GetTableIndex(const Util::String& tableName)
 {

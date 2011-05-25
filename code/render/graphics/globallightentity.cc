@@ -13,6 +13,8 @@ __ImplementClass(Graphics::GlobalLightEntity, 'GLEP', Graphics::AbstractLightEnt
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 GlobalLightEntity::GlobalLightEntity() :
     backLightColor(0.0f, 0.0f, 0.0f, 0.0f),
     ambientLightColor(0.0f,0.0f,0.0f,1.0f),
@@ -22,6 +24,8 @@ GlobalLightEntity::GlobalLightEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GlobalLightEntity::Setup(const Ptr<Stage>& stage_)
 {
@@ -43,6 +47,8 @@ GlobalLightEntity::Setup(const Ptr<Stage>& stage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GlobalLightEntity::SetBackLightColor(const float4& c)
 {
@@ -56,6 +62,8 @@ GlobalLightEntity::SetBackLightColor(const float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GlobalLightEntity::SetAmbientLightColor(const float4& c)
 {
@@ -69,6 +77,8 @@ GlobalLightEntity::SetAmbientLightColor(const float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GlobalLightEntity::SetBackLightOffset(float val)
 {
@@ -82,6 +92,8 @@ GlobalLightEntity::SetBackLightOffset(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GlobalLightEntity::SetAllParams(const Math::float4& color, const Math::float4& backColor, const Math::float4& ambColor, float backOffset, bool castShdws)
 {

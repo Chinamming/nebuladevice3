@@ -80,6 +80,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedArray<TYPE>::FixedArray() :
     size(0),
@@ -89,6 +91,8 @@ FixedArray<TYPE>::FixedArray() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Delete()
 {
@@ -101,6 +105,8 @@ FixedArray<TYPE>::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Alloc(SizeT s)
 {
@@ -133,6 +139,8 @@ FixedArray<TYPE>::Copy(const FixedArray<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedArray<TYPE>::FixedArray(SizeT s) :
     size(0),
@@ -142,6 +150,8 @@ FixedArray<TYPE>::FixedArray(SizeT s) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedArray<TYPE>::FixedArray(SizeT s, const TYPE& initialValue) :
     size(0),
@@ -152,6 +162,8 @@ FixedArray<TYPE>::FixedArray(SizeT s, const TYPE& initialValue) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedArray<TYPE>::FixedArray(const FixedArray<TYPE>& rhs) :
     size(0),
@@ -161,6 +173,8 @@ FixedArray<TYPE>::FixedArray(const FixedArray<TYPE>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedArray<TYPE>::~FixedArray()
 {
@@ -168,6 +182,8 @@ FixedArray<TYPE>::~FixedArray()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::operator=(const FixedArray<TYPE>& rhs)
 {
@@ -176,6 +192,8 @@ FixedArray<TYPE>::operator=(const FixedArray<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE&
 FixedArray<TYPE>::operator[](IndexT index) const
 {
@@ -186,6 +204,8 @@ FixedArray<TYPE>::operator[](IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 FixedArray<TYPE>::operator==(const FixedArray<TYPE>& rhs) const
 {
@@ -212,6 +232,8 @@ FixedArray<TYPE>::operator==(const FixedArray<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 FixedArray<TYPE>::operator!=(const FixedArray<TYPE>& rhs) const
 {
@@ -219,6 +241,8 @@ FixedArray<TYPE>::operator!=(const FixedArray<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::SetSize(SizeT s)
 {
@@ -227,6 +251,8 @@ FixedArray<TYPE>::SetSize(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Resize(SizeT newSize)
 {
@@ -253,6 +279,8 @@ FixedArray<TYPE>::Resize(SizeT newSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 FixedArray<TYPE>::Size() const
 {
@@ -260,6 +288,8 @@ FixedArray<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 FixedArray<TYPE>::IsEmpty() const
 {
@@ -267,6 +297,8 @@ FixedArray<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Clear()
 {
@@ -274,6 +306,8 @@ FixedArray<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Fill(const TYPE& val)
 {
@@ -285,6 +319,8 @@ FixedArray<TYPE>::Fill(const TYPE& val)
 }       
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Fill(IndexT first, SizeT num, const TYPE& val)
 {
@@ -300,6 +336,8 @@ FixedArray<TYPE>::Fill(IndexT first, SizeT num, const TYPE& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename FixedArray<TYPE>::Iterator
 FixedArray<TYPE>::Begin() const
 {
@@ -307,6 +345,8 @@ FixedArray<TYPE>::Begin() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename FixedArray<TYPE>::Iterator
 FixedArray<TYPE>::End() const
 {
@@ -314,6 +354,8 @@ FixedArray<TYPE>::End() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> typename FixedArray<TYPE>::Iterator
 FixedArray<TYPE>::Find(const TYPE& elm) const
 {
@@ -329,6 +371,8 @@ FixedArray<TYPE>::Find(const TYPE& elm) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> IndexT
 FixedArray<TYPE>::FindIndex(const TYPE& elm) const
 {
@@ -344,6 +388,8 @@ FixedArray<TYPE>::FindIndex(const TYPE& elm) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 FixedArray<TYPE>::Sort()
 {
@@ -405,6 +451,8 @@ FixedArray<TYPE>::BinarySearchIndex(const TYPE& elm) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> Array<TYPE>
 FixedArray<TYPE>::AsArray() const
 {

@@ -87,6 +87,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GraphicsServer::IsOpen() const
 {
@@ -94,6 +96,8 @@ GraphicsServer::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint 
 GraphicsServer::GetFrameCount() const
 {

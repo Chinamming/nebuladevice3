@@ -84,6 +84,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 BXmlLoaderUtil::IsValid() const
 {
@@ -91,6 +93,8 @@ BXmlLoaderUtil::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 BXmlLoaderUtil::SetCurrentNodeIndex(ushort i)
 {
@@ -99,6 +103,8 @@ BXmlLoaderUtil::SetCurrentNodeIndex(ushort i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ushort
 BXmlLoaderUtil::GetCurrentNodeIndex() const
 {
@@ -106,6 +112,8 @@ BXmlLoaderUtil::GetCurrentNodeIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const char*
 BXmlLoaderUtil::GetCurrentNodeName() const
 {

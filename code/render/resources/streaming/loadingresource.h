@@ -57,6 +57,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 LoadingResource::LoadingResource() :
     priority(0)
@@ -65,6 +67,8 @@ LoadingResource::LoadingResource() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 LoadingResource::~LoadingResource()
 {
@@ -72,6 +76,8 @@ LoadingResource::~LoadingResource()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator < (const LoadingResource& a, const LoadingResource& b)
 {
@@ -79,6 +85,8 @@ operator < (const LoadingResource& a, const LoadingResource& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline int
 LoadingResource::GetPriority() const
 {
@@ -86,6 +94,8 @@ LoadingResource::GetPriority() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ManagedResource>&
 LoadingResource::GetManagedResource() const
 {
@@ -93,6 +103,8 @@ LoadingResource::GetManagedResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resource>&
 LoadingResource::GetTargetResource() const
 {
@@ -100,6 +112,8 @@ LoadingResource::GetTargetResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 LoadingResource::SetPriority(int priority)
 {
@@ -107,6 +121,8 @@ LoadingResource::SetPriority(int priority)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 LoadingResource::SetManagedResource(const Ptr<ManagedResource>& managedResource)
 {
@@ -114,6 +130,8 @@ LoadingResource::SetManagedResource(const Ptr<ManagedResource>& managedResource)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 LoadingResource::SetTargetResource(const Ptr<Resource>& targetResource)
 {

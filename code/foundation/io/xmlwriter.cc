@@ -15,6 +15,8 @@ using namespace Math;
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 XmlWriter::XmlWriter() :
     xmlDocument(0),
     curNode(0)
@@ -23,6 +25,8 @@ XmlWriter::XmlWriter() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 XmlWriter::~XmlWriter()
 {
     if (this->IsOpen())
@@ -223,6 +227,8 @@ XmlWriter::SetMatrix44(const String& name, const matrix44& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 XmlWriter::SetFloat2(const Util::String& name, const Math::float2& value)
 {       

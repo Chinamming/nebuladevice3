@@ -148,6 +148,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GamePadBase::IsConnected() const
 {
@@ -156,6 +158,8 @@ GamePadBase::IsConnected() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GamePadBase::SetPlayerIndex(IndexT i)
 {
@@ -164,6 +168,8 @@ GamePadBase::SetPlayerIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 GamePadBase::GetPlayerIndex() const
 {
@@ -171,6 +177,8 @@ GamePadBase::GetPlayerIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 GamePadBase::GetMaxNumPlayers()
 {
@@ -178,6 +186,8 @@ GamePadBase::GetMaxNumPlayers()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GamePadBase::ButtonPressed(Button btn) const
 {
@@ -186,6 +196,8 @@ GamePadBase::ButtonPressed(Button btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GamePadBase::ButtonDown(Button btn) const
 {
@@ -194,6 +206,8 @@ GamePadBase::ButtonDown(Button btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GamePadBase::ButtonUp(Button btn) const
 {
@@ -202,6 +216,8 @@ GamePadBase::ButtonUp(Button btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 GamePadBase::GetAxisValue(Axis axis) const
 {
@@ -210,6 +226,8 @@ GamePadBase::GetAxisValue(Axis axis) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GamePadBase::SetLowFrequencyVibrator(float f)
 {        
@@ -220,6 +238,8 @@ GamePadBase::SetLowFrequencyVibrator(float f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 GamePadBase::GetLowFrequencyVibrator() const
 {                    
@@ -230,6 +250,8 @@ GamePadBase::GetLowFrequencyVibrator() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GamePadBase::SetHighFrequencyVibrator(float f)
 {   
@@ -240,6 +262,8 @@ GamePadBase::SetHighFrequencyVibrator(float f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 GamePadBase::GetHighFrequencyVibrator() const
 {   

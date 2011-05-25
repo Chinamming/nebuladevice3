@@ -92,6 +92,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelInstance::IsValid() const
 {
@@ -99,6 +101,8 @@ ModelInstance::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Model>&
 ModelInstance::GetModel() const
 {
@@ -106,6 +110,8 @@ ModelInstance::GetModel() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelInstance::SetTransform(const Math::matrix44& m)
 {
@@ -113,6 +119,8 @@ ModelInstance::SetTransform(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 ModelInstance::GetTransform() const
 {
@@ -120,6 +128,8 @@ ModelInstance::GetTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelNodeInstance> >&
 ModelInstance::GetNodeInstances() const
 {

@@ -11,6 +11,8 @@ namespace Resources
     __ImplementClass(Resources::PoolLoadingResource, 'PLRS', Resources::LoadingResource);
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolLoadingResource::OnSuccessRequest()
 {

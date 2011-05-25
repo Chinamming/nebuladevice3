@@ -86,6 +86,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceDictionary::IsValid() const
 {
@@ -93,6 +95,8 @@ ResourceDictionary::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceDictionary::SetURI(const IO::URI& u)
 {
@@ -101,6 +105,8 @@ ResourceDictionary::SetURI(const IO::URI& u)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const IO::URI&
 ResourceDictionary::GetURI() const
 {
@@ -108,6 +114,8 @@ ResourceDictionary::GetURI() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceDictionary::HasEntry(const ResourceId& resId) const
 {
@@ -115,6 +123,8 @@ ResourceDictionary::HasEntry(const ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ResourceDictionary::Entry&
 ResourceDictionary::GetEntry(const ResourceId& resId) const
 {

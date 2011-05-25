@@ -83,6 +83,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DebugCounter::IsValid() const
 {
@@ -90,6 +92,8 @@ DebugCounter::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugCounter::Begin(bool reset)
 {
@@ -100,6 +104,8 @@ DebugCounter::Begin(bool reset)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugCounter::Reset()
 {
@@ -107,6 +113,8 @@ DebugCounter::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugCounter::Incr(int amount)
 {
@@ -114,6 +122,8 @@ DebugCounter::Incr(int amount)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugCounter::Decr(int amount)
 {
@@ -121,6 +131,8 @@ DebugCounter::Decr(int amount)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugCounter::Set(int val)
 {
@@ -128,6 +140,8 @@ DebugCounter::Set(int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugCounter::End()
 {
@@ -137,6 +151,8 @@ DebugCounter::End()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 DebugCounter::GetName() const
 {

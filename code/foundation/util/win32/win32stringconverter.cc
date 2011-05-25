@@ -10,6 +10,8 @@ namespace Win32
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 Win32StringConverter::UTF8ToWide(const String& src, ushort* dst, SizeT dstMaxBytes)
 {
@@ -17,6 +19,8 @@ Win32StringConverter::UTF8ToWide(const String& src, ushort* dst, SizeT dstMaxByt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 Win32StringConverter::UTF8ToWide(const char* src, ushort* dst, SizeT dstMaxBytes)
 {
@@ -45,6 +49,8 @@ Win32StringConverter::UTF8ToWide(const char* src, ushort* dst, SizeT dstMaxBytes
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win32StringConverter::WideToUTF8(ushort* src)
 {

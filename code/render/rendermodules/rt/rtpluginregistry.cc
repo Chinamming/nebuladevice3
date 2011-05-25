@@ -22,6 +22,8 @@ RTPluginRegistry::RTPluginRegistry() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RTPluginRegistry::~RTPluginRegistry()
 {
     n_assert(!this->IsValid());
@@ -29,6 +31,8 @@ RTPluginRegistry::~RTPluginRegistry()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::Setup()
 {
@@ -37,6 +41,8 @@ RTPluginRegistry::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::Discard()
 {
@@ -53,6 +59,8 @@ RTPluginRegistry::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::RegisterRTPlugin(const Core::Rtti* rtti)
 {
@@ -68,6 +76,8 @@ RTPluginRegistry::RegisterRTPlugin(const Core::Rtti* rtti)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::UnregisterRTPlugin(const Core::Rtti* rtti)
 {
@@ -82,6 +92,8 @@ RTPluginRegistry::UnregisterRTPlugin(const Core::Rtti* rtti)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT
 RTPluginRegistry::FindPlugin(const Core::Rtti* rtti)
 {
@@ -102,6 +114,8 @@ RTPluginRegistry::FindPlugin(const Core::Rtti* rtti)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnStageCreated(const Ptr<InternalStage>& stage)
 {
@@ -114,6 +128,8 @@ RTPluginRegistry::OnStageCreated(const Ptr<InternalStage>& stage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnDiscardStage(const Ptr<InternalStage>& stage)
 {
@@ -126,6 +142,8 @@ RTPluginRegistry::OnDiscardStage(const Ptr<InternalStage>& stage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnViewCreated(const Ptr<InternalView>& view)
 {
@@ -138,6 +156,8 @@ RTPluginRegistry::OnViewCreated(const Ptr<InternalView>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnDiscardView(const Ptr<InternalView>& view)
 {
@@ -150,6 +170,8 @@ RTPluginRegistry::OnDiscardView(const Ptr<InternalView>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnAttachEntity(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -162,6 +184,8 @@ RTPluginRegistry::OnAttachEntity(const Ptr<InternalGraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnRemoveEntity(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -174,6 +198,8 @@ RTPluginRegistry::OnRemoveEntity(const Ptr<InternalGraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnUpdateBefore(IndexT frameId, Timing::Time time)
 {
@@ -186,6 +212,8 @@ RTPluginRegistry::OnUpdateBefore(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnUpdateAfter(IndexT frameId, Timing::Time time)
 {
@@ -198,6 +226,8 @@ RTPluginRegistry::OnUpdateAfter(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnRenderBefore(IndexT frameId, Timing::Time time)
 {
@@ -210,6 +240,8 @@ RTPluginRegistry::OnRenderBefore(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnRenderAfter(IndexT frameId, Timing::Time time)
 {
@@ -222,6 +254,8 @@ RTPluginRegistry::OnRenderAfter(IndexT frameId, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnRenderFrameBatch(const Ptr<Frame::FrameBatch>& frameBatch)
 {
@@ -234,6 +268,8 @@ RTPluginRegistry::OnRenderFrameBatch(const Ptr<Frame::FrameBatch>& frameBatch)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RTPluginRegistry::OnRenderWithoutView(IndexT frameId, Timing::Time time)
 {

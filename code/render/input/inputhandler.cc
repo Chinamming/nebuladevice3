@@ -10,6 +10,8 @@ namespace Input
 __ImplementClass(Input::InputHandler, 'INPH', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 InputHandler::InputHandler() :
     isAttached(false),
     isCapturing(false)
@@ -18,6 +20,8 @@ InputHandler::InputHandler() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InputHandler::~InputHandler()
 {
     n_assert(!this->IsAttached());
@@ -49,6 +53,8 @@ InputHandler::EndCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputHandler::OnAttach()
 {
@@ -57,6 +63,8 @@ InputHandler::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputHandler::OnRemove()
 {
@@ -65,6 +73,8 @@ InputHandler::OnRemove()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputHandler::OnBeginFrame()
 {
@@ -72,6 +82,8 @@ InputHandler::OnBeginFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputHandler::OnEndFrame()
 {
@@ -79,6 +91,8 @@ InputHandler::OnEndFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputHandler::OnObtainCapture()
 {
@@ -86,6 +100,8 @@ InputHandler::OnObtainCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputHandler::OnReleaseCapture()
 {
@@ -93,6 +109,8 @@ InputHandler::OnReleaseCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 InputHandler::OnEvent(const InputEvent& inputEvent)
 {

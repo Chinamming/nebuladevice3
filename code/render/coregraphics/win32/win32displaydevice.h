@@ -33,13 +33,6 @@ public:
     /// get the application window HWND
     HWND GetHwnd() const;
 
-	/// adjust size to window's size
-	virtual void AdjustSize();
-
-public:
-	/// translate a Windows virtual key code into a Nebula3 key code
-	static Input::Key::Code TranslateKeyCode(WPARAM wParam);
-
 protected:
     /// the WinProc
     static LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
@@ -75,6 +68,8 @@ protected:
     virtual void OnMouseMove(LPARAM lParam);
     /// called on WM_MOUSEWHEEL
     virtual void OnMouseWheel(WPARAM wParam);
+    /// translate a Windows virtual key code into a Nebula3 key code
+    Input::Key::Code TranslateKeyCode(WPARAM wParam) const;
     /// adjust window size taking client area into account
     virtual CoreGraphics::DisplayMode ComputeAdjustedWindowRect();
     /// compute absolute mouse position from lParam
@@ -96,6 +91,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline HWND
 Win32DisplayDevice::GetHwnd() const
 {

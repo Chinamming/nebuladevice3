@@ -17,6 +17,8 @@ using namespace Messaging;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VibrationInterface::VibrationInterface()
 {
     __ConstructSingleton;
@@ -24,12 +26,16 @@ VibrationInterface::VibrationInterface()
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 VibrationInterface::~VibrationInterface()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationInterface::Open()
 {
@@ -46,6 +52,8 @@ VibrationInterface::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationInterface::Close()
 {

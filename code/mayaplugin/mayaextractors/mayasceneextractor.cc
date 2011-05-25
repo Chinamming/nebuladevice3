@@ -7,7 +7,7 @@
 
 namespace Maya
 {
-__ImplementClass(Maya::MayaSceneExtractor, 'MSCX', Maya::MayaExtractorBase);
+__ImplementClass(Maya::MayaSceneExtractor, 'MSCS', Maya::MayaExtractorBase);
 
 //------------------------------------------------------------------------------
 /**

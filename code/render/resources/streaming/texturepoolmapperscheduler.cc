@@ -24,12 +24,16 @@ namespace Resources
     __ImplementClass(Resources::TexturePoolMapperScheduler, 'STPS', Resources::ResourceScheduler);
 
 //------------------------------------------------------------------------------
+/**
+*/
 TexturePoolMapperScheduler::TexturePoolMapperScheduler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TexturePoolMapperScheduler::~TexturePoolMapperScheduler()
 {
     // empty
@@ -48,6 +52,8 @@ TexturePoolMapperScheduler::SetMapper(const Ptr<StreamingResourceMapper>& mapper
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TexturePoolMapperScheduler::DoResourceLOD(const Ptr<ManagedResource>& managedResource)
 {
@@ -190,6 +196,8 @@ TexturePoolMapperScheduler::OnRequestManagedResource(const Ptr<ManagedResource>&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TexturePoolMapperScheduler::OnRemoveFromMapper()
 {
@@ -198,6 +206,8 @@ TexturePoolMapperScheduler::OnRemoveFromMapper()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 TexturePoolMapperScheduler::OnRequestOtherMipMap(const Ptr<ManagedTexture>& managedTexture, const TextureRequestInfo* requestInfo)
 {

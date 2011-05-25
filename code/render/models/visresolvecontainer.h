@@ -43,6 +43,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 VisResolveContainer<TYPE>::VisResolveContainer() :
     entries(ModelNodeType::MaxNumModelNodeTypes),
@@ -52,6 +54,8 @@ VisResolveContainer<TYPE>::VisResolveContainer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 VisResolveContainer<TYPE>::SetResolved(ModelNodeType::Code t, bool b)
 {
@@ -59,6 +63,8 @@ VisResolveContainer<TYPE>::SetResolved(ModelNodeType::Code t, bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 VisResolveContainer<TYPE>::IsResolved(ModelNodeType::Code t) const
 {
@@ -66,6 +72,8 @@ VisResolveContainer<TYPE>::IsResolved(ModelNodeType::Code t) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 VisResolveContainer<TYPE>::Reset()
 {
@@ -78,6 +86,8 @@ VisResolveContainer<TYPE>::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 VisResolveContainer<TYPE>::Add(IndexT curFrameIndex, ModelNodeType::Code t, const Ptr<TYPE>& e)
 {
@@ -90,6 +100,8 @@ VisResolveContainer<TYPE>::Add(IndexT curFrameIndex, ModelNodeType::Code t, cons
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> const Util::Array<Ptr<TYPE> >&
 VisResolveContainer<TYPE>::Get(ModelNodeType::Code t) const
 {

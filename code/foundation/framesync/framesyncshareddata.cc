@@ -12,6 +12,8 @@ __ImplementClass(FrameSyncSharedData, 'FSSD', Core::RefCounted);
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameSyncSharedData::FrameSyncSharedData() :
     ownerThreadId(Threading::InvalidThreadId),
     clientThreadId(Threading::InvalidThreadId),
@@ -24,6 +26,8 @@ FrameSyncSharedData::FrameSyncSharedData() :
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 FrameSyncSharedData::~FrameSyncSharedData()
 {
     n_assert(0 == this->useCount);

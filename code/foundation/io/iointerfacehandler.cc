@@ -109,6 +109,8 @@ IoInterfaceHandler::HandleMessage(const Ptr<Message>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnMountArchive(const Ptr<IO::MountArchive>& msg)
 {
@@ -117,6 +119,8 @@ IoInterfaceHandler::OnMountArchive(const Ptr<IO::MountArchive>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnCreateDirectory(const Ptr<IO::CreateDirectory>& msg)
 {
@@ -125,6 +129,8 @@ IoInterfaceHandler::OnCreateDirectory(const Ptr<IO::CreateDirectory>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnDeleteDirectory(const Ptr<IO::DeleteDirectory>& msg)
 {
@@ -133,6 +139,8 @@ IoInterfaceHandler::OnDeleteDirectory(const Ptr<IO::DeleteDirectory>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnCopyFile(const Ptr<IO::CopyFile>& msg)
 {
@@ -141,6 +149,8 @@ IoInterfaceHandler::OnCopyFile(const Ptr<IO::CopyFile>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnDeleteFile(const Ptr<IO::DeleteFile>& msg)
 {
@@ -149,6 +159,8 @@ IoInterfaceHandler::OnDeleteFile(const Ptr<IO::DeleteFile>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnWriteStream(const Ptr<IO::WriteStream>& msg)
 {
@@ -178,6 +190,8 @@ IoInterfaceHandler::OnWriteStream(const Ptr<IO::WriteStream>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterfaceHandler::OnReadStream(const Ptr<IO::ReadStream>& msg)
 {

@@ -9,6 +9,8 @@ namespace Particles
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 EnvelopeCurve::EnvelopeCurve() :
     keyPos0(0.25f),
     keyPos1(0.75f),
@@ -23,6 +25,8 @@ EnvelopeCurve::EnvelopeCurve() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 EnvelopeCurve::Setup(float val0, float val1, float val2, float val3, float keyp0, float keyp1, float freq, float amp, ModFunc mod)
 {
@@ -95,6 +99,8 @@ EnvelopeCurve::PreSample(float* sampleBuffer, SizeT numSamples, SizeT sampleStri
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 EnvelopeCurve::GetMaxValue() const
 {

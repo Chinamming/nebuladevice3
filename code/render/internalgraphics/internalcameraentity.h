@@ -64,6 +64,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Shared::CameraSettings&
 InternalCameraEntity::GetCameraSettings() const
 {
@@ -71,6 +73,8 @@ InternalCameraEntity::GetCameraSettings() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalCameraEntity::GetProjTransform() const
 {
@@ -78,6 +82,8 @@ InternalCameraEntity::GetProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalCameraEntity::GetViewTransform() const
 {
@@ -85,6 +91,8 @@ InternalCameraEntity::GetViewTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalCameraEntity::GetViewProjTransform() const
 {
@@ -92,6 +100,8 @@ InternalCameraEntity::GetViewProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::frustum&
 InternalCameraEntity::GetViewFrustum() const
 {

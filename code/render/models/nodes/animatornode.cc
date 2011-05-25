@@ -15,18 +15,24 @@ using namespace CoreAnimation;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimatorNode::AnimatorNode()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimatorNode::~AnimatorNode()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Models::ModelNodeInstance>
 AnimatorNode::CreateNodeInstance() const
 {
@@ -96,6 +102,8 @@ AnimatorNode::UnloadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AnimatorNode::ParseDataTag(const Util::FourCC& fourCC, const Ptr<IO::BinaryReader>& reader)
 {
@@ -290,6 +298,8 @@ AnimatorNode::ParseDataTag(const Util::FourCC& fourCC, const Ptr<IO::BinaryReade
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resources::Resource::State 
 AnimatorNode::GetResourceState() const
 {

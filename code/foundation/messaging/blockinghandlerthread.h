@@ -42,6 +42,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 BlockingHandlerThread::SetWaitTimeout(int milliSec)
 {
@@ -50,6 +52,8 @@ BlockingHandlerThread::SetWaitTimeout(int milliSec)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline int
 BlockingHandlerThread::GetWaitTimeout() const
 {

@@ -17,6 +17,8 @@ __ImplementInterfaceSingleton(IO::SchemeRegistry);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SchemeRegistry::SchemeRegistry() :
     isValid(false)
 {
@@ -24,6 +26,8 @@ SchemeRegistry::SchemeRegistry() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SchemeRegistry::~SchemeRegistry()
 {
     if (this->IsValid())
@@ -34,6 +38,8 @@ SchemeRegistry::~SchemeRegistry()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SchemeRegistry::Setup()
 {
@@ -47,6 +53,8 @@ SchemeRegistry::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SchemeRegistry::Discard()
 {
@@ -60,6 +68,8 @@ SchemeRegistry::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 SchemeRegistry::IsValid() const
 {
@@ -88,6 +98,8 @@ SchemeRegistry::RegisterUriScheme(const String& uriScheme, const Core::Rtti& cla
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SchemeRegistry::UnregisterUriScheme(const String& uriScheme)
 {
@@ -101,6 +113,8 @@ SchemeRegistry::UnregisterUriScheme(const String& uriScheme)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 SchemeRegistry::IsUriSchemeRegistered(const String& uriScheme) const
 {
@@ -112,6 +126,8 @@ SchemeRegistry::IsUriSchemeRegistered(const String& uriScheme) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Core::Rtti&
 SchemeRegistry::GetStreamClassByUriScheme(const String& uriScheme) const
 {
@@ -123,6 +139,8 @@ SchemeRegistry::GetStreamClassByUriScheme(const String& uriScheme) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String> 
 SchemeRegistry::GetAllRegisteredUriSchemes() const
 {

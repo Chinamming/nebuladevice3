@@ -10,12 +10,16 @@ namespace Frame
 __ImplementClass(Frame::FrameShader, 'FSHD', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameShader::FrameShader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameShader::~FrameShader()
 {
     // make sure Discard() has been called
@@ -26,6 +30,8 @@ FrameShader::~FrameShader()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameShader::Discard()
 {
@@ -45,6 +51,8 @@ FrameShader::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameShader::Render()
 {

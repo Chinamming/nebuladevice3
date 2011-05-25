@@ -10,6 +10,8 @@ namespace Math
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 plane
 plane::transform(__PlaneArg p, const matrix44& m)
 {

@@ -11,14 +11,20 @@ namespace Resources
 __ImplementClass(Resources::ResourceCreator, 'RSCR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceCreator::ResourceCreator()
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceCreator::~ResourceCreator()
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Resource>
 ResourceCreator::CreateResource(const ResourceInfo* resourceInfo)
 {

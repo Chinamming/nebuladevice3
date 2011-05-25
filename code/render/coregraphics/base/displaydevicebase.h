@@ -59,10 +59,6 @@ public:
     void SetFullscreen(bool b);
     /// get windowed/fullscreen mode
     bool IsFullscreen() const;
-	/// set whether the size can be auto-adjusted to window's size
-	void SetAutoAdjustSize(bool b);
-	/// get whether the size can be auto-adjusted to window's size
-	bool IsAutoAdjustSize() const;
     /// enable display mode switch when running fullscreen (default is true);
     void SetDisplayModeSwitchEnabled(bool b);
     /// is display mode switch enabled for fullscreen?
@@ -106,19 +102,16 @@ public:
     void AttachEventHandler(const Ptr<CoreGraphics::DisplayEventHandler>& h);
     /// remove a display event handler
     void RemoveEventHandler(const Ptr<CoreGraphics::DisplayEventHandler>& h);
+        
+protected:
     /// notify event handlers about an event
     bool NotifyEventHandlers(const CoreGraphics::DisplayEvent& e);
 
-	/// adjust size to window's size
-	virtual void AdjustSize();
-
-protected:
     CoreGraphics::Adapter::Code adapter;
     CoreGraphics::DisplayMode displayMode;
     CoreGraphics::AntiAliasQuality::Code antiAliasQuality;
 
     bool fullscreen;
-	bool autoAdjustSize;
     bool modeSwitchEnabled;
     bool tripleBufferingEnabled;
     bool alwaysOnTop;
@@ -134,6 +127,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayDeviceBase::IsOpen() const
 {
@@ -141,6 +136,8 @@ DisplayDeviceBase::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetDisplayMode(const CoreGraphics::DisplayMode& m)
 {
@@ -148,6 +145,8 @@ DisplayDeviceBase::SetDisplayMode(const CoreGraphics::DisplayMode& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CoreGraphics::DisplayMode& 
 DisplayDeviceBase::GetDisplayMode() const
 {
@@ -155,6 +154,8 @@ DisplayDeviceBase::GetDisplayMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aa)
 {
@@ -162,6 +163,8 @@ DisplayDeviceBase::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aa)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::AntiAliasQuality::Code
 DisplayDeviceBase::GetAntiAliasQuality() const
 {
@@ -169,6 +172,8 @@ DisplayDeviceBase::GetAntiAliasQuality() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetAdapter(CoreGraphics::Adapter::Code a)
 {
@@ -176,6 +181,8 @@ DisplayDeviceBase::SetAdapter(CoreGraphics::Adapter::Code a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::Adapter::Code
 DisplayDeviceBase::GetAdapter() const
 {
@@ -183,6 +190,8 @@ DisplayDeviceBase::GetAdapter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetFullscreen(bool b)
 {
@@ -190,6 +199,8 @@ DisplayDeviceBase::SetFullscreen(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayDeviceBase::IsFullscreen() const
 {
@@ -197,20 +208,8 @@ DisplayDeviceBase::IsFullscreen() const
 }
 
 //------------------------------------------------------------------------------
-inline void
-DisplayDeviceBase::SetAutoAdjustSize(bool b)
-{
-	this->autoAdjustSize = b;
-}
-
-//------------------------------------------------------------------------------
-inline bool
-DisplayDeviceBase::IsAutoAdjustSize() const
-{
-	return this->autoAdjustSize;
-}
-
-//------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetDisplayModeSwitchEnabled(bool b)
 {
@@ -218,6 +217,8 @@ DisplayDeviceBase::SetDisplayModeSwitchEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayDeviceBase::IsDisplayModeSwitchEnabled() const
 {
@@ -225,6 +226,8 @@ DisplayDeviceBase::IsDisplayModeSwitchEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetTripleBufferingEnabled(bool b)
 {
@@ -232,6 +235,8 @@ DisplayDeviceBase::SetTripleBufferingEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayDeviceBase::IsTripleBufferingEnabled() const
 {
@@ -239,6 +244,8 @@ DisplayDeviceBase::IsTripleBufferingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetAlwaysOnTop(bool b)
 {
@@ -246,6 +253,8 @@ DisplayDeviceBase::SetAlwaysOnTop(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayDeviceBase::IsAlwaysOnTop() const
 {
@@ -253,6 +262,8 @@ DisplayDeviceBase::IsAlwaysOnTop() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetVerticalSyncEnabled(bool b)
 {
@@ -260,6 +271,8 @@ DisplayDeviceBase::SetVerticalSyncEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayDeviceBase::IsVerticalSyncEnabled() const
 {
@@ -267,6 +280,8 @@ DisplayDeviceBase::IsVerticalSyncEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetIconName(const Util::String& s)
 {
@@ -274,6 +289,8 @@ DisplayDeviceBase::SetIconName(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 DisplayDeviceBase::GetIconName() const
 {
@@ -281,6 +298,8 @@ DisplayDeviceBase::GetIconName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 DisplayDeviceBase::GetWindowTitle() const
 {
@@ -288,6 +307,8 @@ DisplayDeviceBase::GetWindowTitle() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayDeviceBase::SetParentWindow(void* h)
 {
@@ -295,6 +316,8 @@ DisplayDeviceBase::SetParentWindow(void* h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 DisplayDeviceBase::GetParentWindow() const
 {

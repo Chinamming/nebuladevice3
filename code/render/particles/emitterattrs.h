@@ -107,6 +107,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 EmitterAttrs::SetFloat(FloatAttr key, float value)
 {
@@ -114,6 +116,8 @@ EmitterAttrs::SetFloat(FloatAttr key, float value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 EmitterAttrs::GetFloat(FloatAttr key) const
 {
@@ -121,6 +125,8 @@ EmitterAttrs::GetFloat(FloatAttr key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 EmitterAttrs::SetBool(BoolAttr key, bool value)
 {
@@ -128,6 +134,8 @@ EmitterAttrs::SetBool(BoolAttr key, bool value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 EmitterAttrs::GetBool(BoolAttr key) const
 {
@@ -135,6 +143,8 @@ EmitterAttrs::GetBool(BoolAttr key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 EmitterAttrs::SetInt(IntAttr key, int value)
 {
@@ -142,6 +152,8 @@ EmitterAttrs::SetInt(IntAttr key, int value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline int
 EmitterAttrs::GetInt(IntAttr key) const
 {
@@ -149,6 +161,8 @@ EmitterAttrs::GetInt(IntAttr key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 EmitterAttrs::SetEnvelope(EnvelopeAttr key, const EnvelopeCurve& value)
 {
@@ -156,6 +170,8 @@ EmitterAttrs::SetEnvelope(EnvelopeAttr key, const EnvelopeCurve& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const EnvelopeCurve&
 EmitterAttrs::GetEnvelope(EnvelopeAttr key) const
 {

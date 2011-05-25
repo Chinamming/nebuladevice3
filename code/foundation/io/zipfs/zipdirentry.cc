@@ -10,6 +10,8 @@ namespace IO
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipDirEntry::ZipDirEntry()
 {
     // empty
@@ -53,6 +55,8 @@ ZipDirEntry::AddDirEntry(const StringAtom& name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileEntry*
 ZipDirEntry::FindFileEntry(const StringAtom& name) const
 {
@@ -69,6 +73,8 @@ ZipDirEntry::FindFileEntry(const StringAtom& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipDirEntry*
 ZipDirEntry::FindDirEntry(const StringAtom& name) const
 {

@@ -57,6 +57,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AnimCurve::AnimCurve() :
     staticKey(0.0f, 0.0f, 0.0f, 0.0f),
@@ -69,6 +71,8 @@ AnimCurve::AnimCurve() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimCurve::SetActive(bool b)
 {
@@ -76,6 +80,8 @@ AnimCurve::SetActive(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimCurve::IsActive() const
 {
@@ -83,6 +89,8 @@ AnimCurve::IsActive() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimCurve::SetStatic(bool b)
 {
@@ -90,6 +98,8 @@ AnimCurve::SetStatic(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimCurve::IsStatic() const
 {
@@ -97,6 +107,8 @@ AnimCurve::IsStatic() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimCurve::SetStaticKey(const Math::float4& key)
 {
@@ -104,6 +116,8 @@ AnimCurve::SetStaticKey(const Math::float4& key)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 AnimCurve::GetStaticKey() const
 {
@@ -111,6 +125,8 @@ AnimCurve::GetStaticKey() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimCurve::SetFirstKeyIndex(IndexT i)
 {
@@ -118,6 +134,8 @@ AnimCurve::SetFirstKeyIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 AnimCurve::GetFirstKeyIndex() const
 {
@@ -125,6 +143,8 @@ AnimCurve::GetFirstKeyIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimCurve::SetCurveType(CurveType::Code t)
 {
@@ -132,6 +152,8 @@ AnimCurve::SetCurveType(CurveType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CurveType::Code
 AnimCurve::GetCurveType() const
 {

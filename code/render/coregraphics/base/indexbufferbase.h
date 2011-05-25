@@ -42,6 +42,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 IndexBufferBase::SetIndexType(CoreGraphics::IndexType::Code type)
 {
@@ -49,6 +51,8 @@ IndexBufferBase::SetIndexType(CoreGraphics::IndexType::Code type)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::IndexType::Code
 IndexBufferBase::GetIndexType() const
 {
@@ -56,6 +60,8 @@ IndexBufferBase::GetIndexType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 IndexBufferBase::SetNumIndices(SizeT num)
 {
@@ -64,6 +70,8 @@ IndexBufferBase::SetNumIndices(SizeT num)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 IndexBufferBase::GetNumIndices() const
 {

@@ -14,6 +14,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpRequestWriter::HttpRequestWriter() :
     httpMethod(HttpMethod::Get),
     userAgent("Mozilla")    // NOTE: web browser are picky about user agent strings, so use something common
@@ -22,6 +24,8 @@ HttpRequestWriter::HttpRequestWriter() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpRequestWriter::WriteRequestHeader()
 {

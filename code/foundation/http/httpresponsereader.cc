@@ -15,6 +15,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpResponseReader::HttpResponseReader() :
     isValidHttpResponse(false),
     httpStatus(HttpStatus::InvalidHttpStatus),
@@ -24,6 +26,8 @@ HttpResponseReader::HttpResponseReader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpResponseReader::ReadResponse()
 {

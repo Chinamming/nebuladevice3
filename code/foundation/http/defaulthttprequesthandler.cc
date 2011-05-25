@@ -19,6 +19,8 @@ using namespace Util;
 using namespace Timing;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DefaultHttpRequestHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {

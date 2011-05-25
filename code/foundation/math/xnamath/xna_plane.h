@@ -101,6 +101,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 plane::plane()
 {
@@ -108,6 +110,8 @@ plane::plane()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 plane::plane(scalar a, scalar b, scalar c, scalar d)
 {
@@ -115,6 +119,8 @@ plane::plane(scalar a, scalar b, scalar c, scalar d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 plane::plane(const float4& p0, const float4& p1, const float4& p2)
 {
@@ -122,6 +128,8 @@ plane::plane(const float4& p0, const float4& p1, const float4& p2)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 plane::plane(const float4& p0, const float4& n)
 {
@@ -129,6 +137,8 @@ plane::plane(const float4& p0, const float4& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 plane::plane(XMVECTOR rhs) :
     vec(rhs)
@@ -137,6 +147,8 @@ plane::plane(XMVECTOR rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 plane::setup_from_points(const float4& p0, const float4& p1, const float4& p2)
 {
@@ -144,6 +156,8 @@ plane::setup_from_points(const float4& p0, const float4& p1, const float4& p2)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 plane::setup_from_point_and_normal(const float4& p, const float4& n)
 {
@@ -151,6 +165,8 @@ plane::setup_from_point_and_normal(const float4& p, const float4& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 plane::set(scalar a, scalar b, scalar c, scalar d)
 {
@@ -158,6 +174,8 @@ plane::set(scalar a, scalar b, scalar c, scalar d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar&
 plane::a()
 {
@@ -169,6 +187,8 @@ plane::a()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 plane::a() const
 {
@@ -176,6 +196,8 @@ plane::a() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar&
 plane::b()
 {
@@ -196,6 +218,8 @@ plane::b() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar&
 plane::c()
 {
@@ -207,6 +231,8 @@ plane::c()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 plane::c() const
 {
@@ -214,6 +240,8 @@ plane::c() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar&
 plane::d()
 {
@@ -225,6 +253,8 @@ plane::d()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 plane::d() const
 {
@@ -232,6 +262,8 @@ plane::d() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 plane::dot(const float4& v) const
 {
@@ -239,6 +271,8 @@ plane::dot(const float4& v) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 plane::intersectline(const float4& startPoint, const float4& endPoint, float4& outIntersectPoint) const
 {
@@ -254,6 +288,8 @@ plane::intersectline(const float4& startPoint, const float4& endPoint, float4& o
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline plane
 plane::normalize(const plane& p)
 {
@@ -261,6 +297,8 @@ plane::normalize(const plane& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 plane::set_a(scalar a)
 {
@@ -268,6 +306,8 @@ plane::set_a(scalar a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 plane::set_b(scalar b)
 {
@@ -275,6 +315,8 @@ plane::set_b(scalar b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 plane::set_c(scalar c)
 {
@@ -282,6 +324,8 @@ plane::set_c(scalar c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 plane::set_d(scalar d)
 {
@@ -289,6 +333,8 @@ plane::set_d(scalar d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ClipStatus::Type
 plane::clip(const line& l, line& clippedLine) const
 {

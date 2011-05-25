@@ -15,6 +15,8 @@ __ImplementClass(Win32::Win32ConsoleHandler, 'W32C', IO::ConsoleHandler);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32ConsoleHandler::Win32ConsoleHandler()
 {
     // obtain handle to stdout
@@ -27,6 +29,8 @@ Win32ConsoleHandler::Win32ConsoleHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32ConsoleHandler::Print(const String& s)
 {
@@ -46,6 +50,8 @@ Win32ConsoleHandler::Print(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32ConsoleHandler::DebugOut(const String& s)
 {
@@ -53,6 +59,8 @@ Win32ConsoleHandler::DebugOut(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32ConsoleHandler::Error(const String& msg)
 {
@@ -74,6 +82,8 @@ Win32ConsoleHandler::Error(const String& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32ConsoleHandler::Warning(const String& s)
 {
@@ -85,6 +95,8 @@ Win32ConsoleHandler::Warning(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32ConsoleHandler::Confirm(const String& s)
 {

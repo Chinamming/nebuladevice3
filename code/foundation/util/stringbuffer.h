@@ -57,6 +57,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 StringBuffer::IsValid() const
 {
@@ -64,6 +66,8 @@ StringBuffer::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 StringBuffer::GetNumChunks() const
 {

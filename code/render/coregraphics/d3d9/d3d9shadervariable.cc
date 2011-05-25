@@ -12,6 +12,8 @@ __ImplementClass(Direct3D9::D3D9ShaderVariable, 'D9VR', Base::ShaderVariableBase
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderVariable::D3D9ShaderVariable() :
     d3d9Effect(0),
     hParam(0)
@@ -20,6 +22,8 @@ D3D9ShaderVariable::D3D9ShaderVariable() :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderVariable::~D3D9ShaderVariable()
 {
     this->d3d9Effect = 0;
@@ -27,6 +31,8 @@ D3D9ShaderVariable::~D3D9ShaderVariable()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderVariable::Setup(ID3DXEffect* effect, D3DXHANDLE handle)
 {

@@ -53,6 +53,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 PFeedbackLoop<TYPE>::PFeedbackLoop() :
     time(0.0),
@@ -63,6 +65,8 @@ PFeedbackLoop<TYPE>::PFeedbackLoop() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PFeedbackLoop<TYPE>::Reset(Timing::Time t, float s, float g, const TYPE& curState)
@@ -75,6 +79,8 @@ PFeedbackLoop<TYPE>::Reset(Timing::Time t, float s, float g, const TYPE& curStat
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PFeedbackLoop<TYPE>::SetGain(float g)
@@ -83,6 +89,8 @@ PFeedbackLoop<TYPE>::SetGain(float g)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 float
 PFeedbackLoop<TYPE>::GetGain() const
@@ -91,6 +99,8 @@ PFeedbackLoop<TYPE>::GetGain() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PFeedbackLoop<TYPE>::SetGoal(const TYPE& g)
@@ -99,6 +109,8 @@ PFeedbackLoop<TYPE>::SetGoal(const TYPE& g)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 const TYPE&
 PFeedbackLoop<TYPE>::GetGoal() const
@@ -107,6 +119,8 @@ PFeedbackLoop<TYPE>::GetGoal() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PFeedbackLoop<TYPE>::SetState(const TYPE& s)
@@ -115,6 +129,8 @@ PFeedbackLoop<TYPE>::SetState(const TYPE& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 const TYPE&
 PFeedbackLoop<TYPE>::GetState() const
@@ -123,6 +139,8 @@ PFeedbackLoop<TYPE>::GetState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PFeedbackLoop<TYPE>::Update(Timing::Time curTime)

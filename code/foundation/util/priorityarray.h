@@ -69,6 +69,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 PriorityArray<TYPE>::PriorityArray(int size) :
     numElements(0),
@@ -80,6 +82,8 @@ PriorityArray<TYPE>::PriorityArray(int size) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PriorityArray<TYPE>::Copy(const PriorityArray<TYPE>& src) :
@@ -97,6 +101,8 @@ PriorityArray<TYPE>::Copy(const PriorityArray<TYPE>& src) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PriorityArray<TYPE>::Delete()
@@ -112,6 +118,8 @@ PriorityArray<TYPE>::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 PriorityArray<TYPE>::PriorityArray(const PriorityArray<TYPE>& rhs) :
     numElements(0),
@@ -123,6 +131,8 @@ PriorityArray<TYPE>::PriorityArray(const PriorityArray<TYPE>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 PriorityArray<TYPE>::~PriorityArray()
 {
@@ -130,6 +140,8 @@ PriorityArray<TYPE>::~PriorityArray()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PriorityArray<TYPE>::Destroy(TYPE* elm)
@@ -138,6 +150,8 @@ PriorityArray<TYPE>::Destroy(TYPE* elm)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PriorityArray<TYPE>::Clear()
@@ -155,6 +169,8 @@ PriorityArray<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PriorityArray<TYPE>::UpdateMinPriElementIndex()
@@ -173,6 +189,8 @@ PriorityArray<TYPE>::UpdateMinPriElementIndex()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 PriorityArray<TYPE>::Add(const TYPE& elm, float pri)
@@ -199,6 +217,8 @@ PriorityArray<TYPE>::Add(const TYPE& elm, float pri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 int
 PriorityArray<TYPE>::Size() const
@@ -207,6 +227,8 @@ PriorityArray<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 PriorityArray<TYPE>::At(int index)
@@ -216,6 +238,8 @@ PriorityArray<TYPE>::At(int index)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 PriorityArray<TYPE>::operator[](int index) const
@@ -225,6 +249,8 @@ PriorityArray<TYPE>::operator[](int index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 PriorityArray<TYPE>& 
 PriorityArray<TYPE>::operator=(const PriorityArray<TYPE>& rhs)
@@ -235,6 +261,8 @@ PriorityArray<TYPE>::operator=(const PriorityArray<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 PriorityArray<TYPE>::IsEmpty() const

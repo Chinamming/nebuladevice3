@@ -15,6 +15,8 @@ __ImplementInterfaceSingleton(IO::ArchiveFileSystemBase);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ArchiveFileSystemBase::ArchiveFileSystemBase() :
     isValid(false)
 {
@@ -22,6 +24,8 @@ ArchiveFileSystemBase::ArchiveFileSystemBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ArchiveFileSystemBase::~ArchiveFileSystemBase()
 {
     if (this->IsValid())
@@ -158,6 +162,8 @@ ArchiveFileSystemBase::FindArchive(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ArchiveFileSystemBase::IsMounted(const URI& uri) const
 {

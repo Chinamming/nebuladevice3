@@ -21,12 +21,16 @@ __ImplementInterfaceSingleton(IO::ArchiveFileSystem);
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 ArchiveFileSystem::ArchiveFileSystem()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ArchiveFileSystem::~ArchiveFileSystem()
 {
     __DestructInterfaceSingleton;

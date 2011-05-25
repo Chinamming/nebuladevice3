@@ -53,6 +53,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::FixedArray<Ptr<VisibilityContext> >& 
 VisibilityQuery::GetVisibleEntities() const
 {
@@ -61,6 +63,8 @@ VisibilityQuery::GetVisibleEntities() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 VisibilityQuery::SetObserver(const Ptr<InternalGraphics::InternalGraphicsEntity>& val)
 {
@@ -68,6 +72,8 @@ VisibilityQuery::SetObserver(const Ptr<InternalGraphics::InternalGraphicsEntity>
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<InternalGraphics::InternalGraphicsEntity>& 
 VisibilityQuery::GetObserver() const
 {
@@ -75,6 +81,8 @@ VisibilityQuery::GetObserver() const
 }       
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 VisibilityQuery::SetEntityMask(uint mask)
 {

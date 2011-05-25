@@ -15,12 +15,16 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FramePostEffect::FramePostEffect()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FramePostEffect::~FramePostEffect()
 {     
     // empty
@@ -42,6 +46,8 @@ FramePostEffect::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FramePostEffect::Discard()
 {
@@ -50,6 +56,8 @@ FramePostEffect::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FramePostEffect::Render()
 {

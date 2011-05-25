@@ -90,6 +90,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityQuadtree::SetQuadTreeSettings(uchar depth, const Math::bbox& worldBox)
 {
@@ -97,6 +99,8 @@ VisibilityQuadtree::SetQuadTreeSettings(uchar depth, const Math::bbox& worldBox)
     this->quadTreeBox = worldBox;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint 
 VisibilityQuadtree::GetObserverBitMask() const
 {

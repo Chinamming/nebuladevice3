@@ -19,6 +19,8 @@ using namespace Threading;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalAbstractLightEntity::InternalAbstractLightEntity() :
     lightType(LightType::InvalidLightType),
     invTransform(matrix44::identity()),
@@ -35,6 +37,8 @@ InternalAbstractLightEntity::InternalAbstractLightEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalAbstractLightEntity::~InternalAbstractLightEntity()
 {
     // empty
@@ -61,6 +65,8 @@ InternalAbstractLightEntity::OnResolveVisibility()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalAbstractLightEntity::OnTransformChanged()
 {
@@ -74,6 +80,8 @@ InternalAbstractLightEntity::OnTransformChanged()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalAbstractLightEntity::OnRenderDebug()
 {
@@ -108,6 +116,8 @@ InternalAbstractLightEntity::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Math::matrix44& 
 InternalAbstractLightEntity::GetShadowInvTransform()
 {
@@ -119,6 +129,8 @@ InternalAbstractLightEntity::GetShadowInvTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Math::matrix44& 
 InternalAbstractLightEntity::GetShadowProjTransform()
 {
@@ -130,6 +142,8 @@ InternalAbstractLightEntity::GetShadowProjTransform()
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Math::matrix44& 
 InternalAbstractLightEntity::GetShadowInvLightProjTransform()
 {       
@@ -141,6 +155,8 @@ InternalAbstractLightEntity::GetShadowInvLightProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalAbstractLightEntity::UpdateShadowTransforms()
 {

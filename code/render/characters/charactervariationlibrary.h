@@ -50,6 +50,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterVariationLibrary::IsValid() const
 {
@@ -57,6 +59,8 @@ CharacterVariationLibrary::IsValid() const
 }  
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::FixedArray<CharJointComponents>& 
 CharacterVariationLibrary::GetVariationComponentsByName(const Util::StringAtom& variationName) const
 {
@@ -65,6 +69,8 @@ CharacterVariationLibrary::GetVariationComponentsByName(const Util::StringAtom& 
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT 
 CharacterVariationLibrary::GetNumVariations() const
 {
@@ -72,6 +78,8 @@ CharacterVariationLibrary::GetNumVariations() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom& 
 CharacterVariationLibrary::GetVariationNameAtIndex(IndexT i) const
 {

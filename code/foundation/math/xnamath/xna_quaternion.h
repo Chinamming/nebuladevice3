@@ -145,6 +145,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 quaternion::quaternion()
 {
@@ -152,6 +154,8 @@ quaternion::quaternion()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 quaternion::quaternion(scalar x, scalar y, scalar z, scalar w)
 {
@@ -159,6 +163,8 @@ quaternion::quaternion(scalar x, scalar y, scalar z, scalar w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 quaternion::quaternion(float4 const &rhs) :
     vec(rhs.vec)
@@ -167,6 +173,8 @@ quaternion::quaternion(float4 const &rhs) :
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline 
 quaternion::quaternion(XMVECTOR rhs) :
     vec(rhs)
@@ -175,6 +183,8 @@ quaternion::quaternion(XMVECTOR rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::operator=(const quaternion& rhs)
 {
@@ -182,6 +192,8 @@ quaternion::operator=(const quaternion& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::operator=(XMVECTOR rhs)
 {
@@ -189,6 +201,8 @@ quaternion::operator=(XMVECTOR rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 quaternion::operator==(const quaternion& rhs) const
 {
@@ -196,6 +210,8 @@ quaternion::operator==(const quaternion& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 quaternion::operator!=(const quaternion& rhs) const
 {
@@ -203,6 +219,8 @@ quaternion::operator!=(const quaternion& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::load(const scalar* ptr)
 {
@@ -210,6 +228,8 @@ quaternion::load(const scalar* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::loadu(const scalar* ptr)
 {
@@ -217,6 +237,8 @@ quaternion::loadu(const scalar* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::store(scalar* ptr) const
 {
@@ -224,6 +246,8 @@ quaternion::store(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::storeu(scalar* ptr) const
 {
@@ -231,6 +255,8 @@ quaternion::storeu(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::stream(scalar* ptr) const
 {
@@ -238,6 +264,8 @@ quaternion::stream(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::set(scalar x, scalar y, scalar z, scalar w)
 {
@@ -245,6 +273,8 @@ quaternion::set(scalar x, scalar y, scalar z, scalar w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 quaternion::set_x(scalar x)
 {
@@ -252,6 +282,8 @@ quaternion::set_x(scalar x)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 quaternion::set_y(scalar y)
 {
@@ -259,6 +291,8 @@ quaternion::set_y(scalar y)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 quaternion::set_z(scalar z)
 {
@@ -266,6 +300,8 @@ quaternion::set_z(scalar z)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 quaternion::set_w(scalar w)
 {
@@ -273,6 +309,8 @@ quaternion::set_w(scalar w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::set(float4 const &f4)
 {
@@ -280,6 +318,8 @@ quaternion::set(float4 const &f4)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 quaternion::x()
 {
@@ -291,6 +331,8 @@ quaternion::x()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::x() const
 {
@@ -298,6 +340,8 @@ quaternion::x() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 quaternion::y()
 {
@@ -309,6 +353,8 @@ quaternion::y()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::y() const
 {
@@ -316,6 +362,8 @@ quaternion::y() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 quaternion::z()
 {
@@ -327,6 +375,8 @@ quaternion::z()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::z() const
 {
@@ -334,6 +384,8 @@ quaternion::z() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar&
 quaternion::w()
 {
@@ -345,6 +397,8 @@ quaternion::w()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::w() const
 {
@@ -352,6 +406,8 @@ quaternion::w() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 quaternion::isidentity() const
 {
@@ -359,6 +415,8 @@ quaternion::isidentity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::length() const
 {
@@ -366,6 +424,8 @@ quaternion::length() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::lengthsq() const
 {
@@ -373,6 +433,8 @@ quaternion::lengthsq() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::undenormalize()
 {
@@ -387,6 +449,8 @@ quaternion::undenormalize()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::barycentric(const quaternion& q0, const quaternion& q1, const quaternion& q2, scalar f, scalar g)
 {
@@ -394,6 +458,8 @@ quaternion::barycentric(const quaternion& q0, const quaternion& q1, const quater
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::conjugate(const quaternion& q)
 {
@@ -401,6 +467,8 @@ quaternion::conjugate(const quaternion& q)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 quaternion::dot(const quaternion& q0, const quaternion& q1)
 {
@@ -408,6 +476,8 @@ quaternion::dot(const quaternion& q0, const quaternion& q1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::exp(const quaternion& q)
 {
@@ -415,6 +485,8 @@ quaternion::exp(const quaternion& q)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::identity()
 {
@@ -422,6 +494,8 @@ quaternion::identity()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::inverse(const quaternion& q)
 {
@@ -429,6 +503,8 @@ quaternion::inverse(const quaternion& q)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::ln(const quaternion& q)
 {
@@ -436,6 +512,8 @@ quaternion::ln(const quaternion& q)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::multiply(const quaternion& q0, const quaternion& q1)
 {
@@ -443,6 +521,8 @@ quaternion::multiply(const quaternion& q0, const quaternion& q1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::normalize(const quaternion& q)
 {
@@ -450,6 +530,8 @@ quaternion::normalize(const quaternion& q)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::rotationaxis(const float4& axis, scalar angle)
 {
@@ -457,6 +539,8 @@ quaternion::rotationaxis(const float4& axis, scalar angle)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::rotationyawpitchroll(scalar yaw, scalar pitch, scalar roll)
 {
@@ -464,6 +548,8 @@ quaternion::rotationyawpitchroll(scalar yaw, scalar pitch, scalar roll)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::slerp(const quaternion& q1, const quaternion& q2, scalar t)
 {
@@ -471,6 +557,8 @@ quaternion::slerp(const quaternion& q1, const quaternion& q2, scalar t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::squadsetup(const quaternion& q0, const quaternion& q1, const quaternion& q2, const quaternion& q3, quaternion& aOut, quaternion& bOut, quaternion& cOut)
 {
@@ -478,6 +566,8 @@ quaternion::squadsetup(const quaternion& q0, const quaternion& q1, const quatern
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline quaternion
 quaternion::squad(const quaternion& q1, const quaternion& a, const quaternion& b, const quaternion& c, scalar t)
 {
@@ -485,6 +575,8 @@ quaternion::squad(const quaternion& q1, const quaternion& a, const quaternion& b
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 quaternion::to_axisangle(const quaternion& q, float4& outAxis, scalar& outAngle)
 {

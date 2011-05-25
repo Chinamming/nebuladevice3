@@ -58,6 +58,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MeshBase::HasVertexBuffer() const
 {
@@ -65,6 +67,8 @@ MeshBase::HasVertexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MeshBase::SetVertexBuffer(const Ptr<CoreGraphics::VertexBuffer>& vb)
 {
@@ -72,6 +76,8 @@ MeshBase::SetVertexBuffer(const Ptr<CoreGraphics::VertexBuffer>& vb)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::VertexBuffer>&
 MeshBase::GetVertexBuffer() const
 {
@@ -79,6 +85,8 @@ MeshBase::GetVertexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MeshBase::HasIndexBuffer() const
 {
@@ -86,6 +94,8 @@ MeshBase::HasIndexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MeshBase::SetIndexBuffer(const Ptr<CoreGraphics::IndexBuffer>& ib)
 {
@@ -93,6 +103,8 @@ MeshBase::SetIndexBuffer(const Ptr<CoreGraphics::IndexBuffer>& ib)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::IndexBuffer>&
 MeshBase::GetIndexBuffer() const
 {
@@ -100,6 +112,8 @@ MeshBase::GetIndexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MeshBase::SetPrimitiveGroups(const Util::Array<CoreGraphics::PrimitiveGroup>& groups)
 {
@@ -107,6 +121,8 @@ MeshBase::SetPrimitiveGroups(const Util::Array<CoreGraphics::PrimitiveGroup>& gr
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 MeshBase::GetNumPrimitiveGroups() const
 {
@@ -114,6 +130,8 @@ MeshBase::GetNumPrimitiveGroups() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CoreGraphics::PrimitiveGroup&
 MeshBase::GetPrimitiveGroupAtIndex(IndexT i) const
 {

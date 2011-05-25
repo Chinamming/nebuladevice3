@@ -56,6 +56,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 TPJobCommand::TPJobCommand() :
     firstSlice(0),
@@ -66,6 +68,8 @@ TPJobCommand::TPJobCommand() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TPJobCommand::SetupSync(const Threading::Event* syncEvent_)
 {
@@ -76,6 +80,8 @@ TPJobCommand::SetupSync(const Threading::Event* syncEvent_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TPJobCommand::SetupRun(TPJobSlice* firstSlice_, ushort numSlices_, ushort stride_)
 {
@@ -86,6 +92,8 @@ TPJobCommand::SetupRun(TPJobSlice* firstSlice_, ushort numSlices_, ushort stride
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline TPJobCommand::Code 
 TPJobCommand::GetCode() const
 {
@@ -93,6 +101,8 @@ TPJobCommand::GetCode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Threading::Event*
 TPJobCommand::GetSyncEvent() const
 {
@@ -101,6 +111,8 @@ TPJobCommand::GetSyncEvent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline TPJobSlice*
 TPJobCommand::GetFirstSlice() const
 {
@@ -109,6 +121,8 @@ TPJobCommand::GetFirstSlice() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ushort
 TPJobCommand::GetNumSlices() const
 {
@@ -116,6 +130,8 @@ TPJobCommand::GetNumSlices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ushort
 TPJobCommand::GetStride() const
 {

@@ -10,6 +10,8 @@ namespace Shared
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CameraSettings::CameraSettings() :
     viewProjDirty(true),
     viewMatrix(matrix44::identity()),
@@ -86,6 +88,8 @@ CameraSettings::UpdateViewProjMatrix() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CameraSettings::UpdateViewFrustum() const
 {

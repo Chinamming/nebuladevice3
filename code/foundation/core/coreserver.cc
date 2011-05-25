@@ -13,6 +13,8 @@ __ImplementSingleton(Core::CoreServer);
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CoreServer::CoreServer() :
     companyName("Radon Labs GmbH"),
     appName("Nebula3"),
@@ -23,6 +25,8 @@ CoreServer::CoreServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CoreServer::~CoreServer()
 {
     if (this->IsOpen())
@@ -33,6 +37,8 @@ CoreServer::~CoreServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CoreServer::Open()
 {
@@ -45,6 +51,8 @@ CoreServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CoreServer::Close()
 {
@@ -57,6 +65,8 @@ CoreServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 CoreServer::Trigger()
 {

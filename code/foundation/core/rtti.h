@@ -68,6 +68,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Rtti::operator==(const Rtti& rhs) const
 {
@@ -75,6 +77,8 @@ Rtti::operator==(const Rtti& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Rtti::operator!=(const Rtti& rhs) const
 {
@@ -82,6 +86,8 @@ Rtti::operator!=(const Rtti& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 Rtti::GetName() const
 {
@@ -89,6 +95,8 @@ Rtti::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::FourCC
 Rtti::GetFourCC() const
 {
@@ -96,6 +104,8 @@ Rtti::GetFourCC() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Core::Rtti*
 Rtti::GetParent() const
 {
@@ -103,6 +113,8 @@ Rtti::GetParent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Rtti::GetInstanceSize() const
 {

@@ -15,18 +15,24 @@ using namespace Messaging;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpMessageHandler::HttpMessageHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpMessageHandler::~HttpMessageHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpMessageHandler::Open()
 {   
@@ -40,6 +46,8 @@ HttpMessageHandler::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpMessageHandler::Close()
 {
@@ -66,6 +74,8 @@ HttpMessageHandler::DoWork()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpMessageHandler::HandleMessage(const Ptr<Message>& msg)
 {
@@ -89,6 +99,8 @@ HttpMessageHandler::HandleMessage(const Ptr<Message>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpMessageHandler::OnAttachRequestHandler(const Ptr<AttachRequestHandler>& msg)
 {
@@ -96,6 +108,8 @@ HttpMessageHandler::OnAttachRequestHandler(const Ptr<AttachRequestHandler>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpMessageHandler::OnRemoveRequestHandler(const Ptr<RemoveRequestHandler>& msg)
 {

@@ -62,6 +62,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DBaseTexture9*
 D3D9Texture::GetD3D9BaseTexture() const
 {
@@ -71,6 +73,8 @@ D3D9Texture::GetD3D9BaseTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DTexture9*
 D3D9Texture::GetD3D9Texture() const
 {
@@ -87,6 +91,8 @@ D3D9Texture::GetD3D9Texture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DCubeTexture9*
 D3D9Texture::GetD3D9CubeTexture() const
 {
@@ -103,6 +109,8 @@ D3D9Texture::GetD3D9CubeTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DVolumeTexture9*
 D3D9Texture::GetD3D9VolumeTexture() const
 {

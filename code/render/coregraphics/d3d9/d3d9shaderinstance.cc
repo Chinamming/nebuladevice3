@@ -17,6 +17,8 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderInstance::D3D9ShaderInstance() :
     d3d9Effect(0)
 {
@@ -24,6 +26,8 @@ D3D9ShaderInstance::D3D9ShaderInstance() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderInstance::~D3D9ShaderInstance()
 {
     n_assert(0 == this->d3d9Effect);
@@ -82,6 +86,8 @@ D3D9ShaderInstance::Setup(const Ptr<Shader>& origShader)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::Cleanup()
 {
@@ -92,6 +98,8 @@ D3D9ShaderInstance::Cleanup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9ShaderInstance::SelectActiveVariation(ShaderFeature::Mask featureMask)
 {
@@ -106,6 +114,8 @@ D3D9ShaderInstance::SelectActiveVariation(ShaderFeature::Mask featureMask)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::OnLostDevice()
 {
@@ -115,6 +125,8 @@ D3D9ShaderInstance::OnLostDevice()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::OnResetDevice()
 {
@@ -124,6 +136,8 @@ D3D9ShaderInstance::OnResetDevice()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 D3D9ShaderInstance::Begin()
 {
@@ -137,6 +151,8 @@ D3D9ShaderInstance::Begin()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::BeginPass(IndexT passIndex)
 {
@@ -147,6 +163,8 @@ D3D9ShaderInstance::BeginPass(IndexT passIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::Commit()
 {
@@ -157,6 +175,8 @@ D3D9ShaderInstance::Commit()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::EndPass()
 {
@@ -167,6 +187,8 @@ D3D9ShaderInstance::EndPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderInstance::End()
 {

@@ -10,6 +10,8 @@ namespace Base
 __ImplementClass(Base::ShaderVariationBase, 'SVBS', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariationBase::ShaderVariationBase() :
     featureMask(0),
     numPasses(0)
@@ -18,6 +20,8 @@ ShaderVariationBase::ShaderVariationBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariationBase::~ShaderVariationBase()
 {
     // empty

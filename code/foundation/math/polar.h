@@ -48,6 +48,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 polar::polar() :
     theta(0.0f),
@@ -57,6 +59,8 @@ polar::polar() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 polar::polar(scalar t, scalar r) :
     theta(t),
@@ -66,6 +70,8 @@ polar::polar(scalar t, scalar r) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 polar::polar(const vector& v)
 {
@@ -73,6 +79,8 @@ polar::polar(const vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 polar::polar(const polar& src) :
     theta(src.theta),
@@ -82,6 +90,8 @@ polar::polar(const polar& src) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 polar::operator=(const polar& rhs)
 {
@@ -90,6 +100,8 @@ polar::operator=(const polar& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 polar::set(const polar& p)
 {
@@ -98,6 +110,8 @@ polar::set(const polar& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 polar::set(scalar t, scalar r)
 {

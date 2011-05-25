@@ -75,6 +75,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PSSMUtil::SetCameraEntity(const Ptr<InternalGraphics::InternalCameraEntity>& camera)
 {
@@ -82,6 +84,8 @@ PSSMUtil::SetCameraEntity(const Ptr<InternalGraphics::InternalCameraEntity>& cam
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<InternalGraphics::InternalCameraEntity>&
 PSSMUtil::GetCameraEntity() const
 {
@@ -89,6 +93,8 @@ PSSMUtil::GetCameraEntity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PSSMUtil::SetLightDir(const Math::vector& v)
 {
@@ -96,6 +102,8 @@ PSSMUtil::SetLightDir(const Math::vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 PSSMUtil::GetLightDir() const
 {
@@ -103,6 +111,8 @@ PSSMUtil::GetLightDir() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 PSSMUtil::GetSplitLightProjTransform(IndexT i) const
 {
@@ -111,6 +121,8 @@ PSSMUtil::GetSplitLightProjTransform(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 PSSMUtil::GetSplitLightTransform(IndexT i) const
 {
@@ -119,6 +131,8 @@ PSSMUtil::GetSplitLightTransform(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 PSSMUtil::GetSplitProjTransform(IndexT i) const
 {
@@ -127,6 +141,8 @@ PSSMUtil::GetSplitProjTransform(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const float*
 PSSMUtil::GetSplitDistances() const
 {
@@ -134,6 +150,8 @@ PSSMUtil::GetSplitDistances() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44*
 PSSMUtil::GetSplitLightProjTransforms() const
 {

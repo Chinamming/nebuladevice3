@@ -17,6 +17,8 @@ using namespace Util;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ThreadPageHandler::ThreadPageHandler()
 {
     this->SetName("Threads");
@@ -25,6 +27,8 @@ ThreadPageHandler::ThreadPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ThreadPageHandler::HandleRequest(const Ptr<HttpRequest>& request) 
 {

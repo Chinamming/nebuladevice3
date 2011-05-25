@@ -20,18 +20,24 @@ using namespace Util;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamModelLoader::StreamModelLoader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamModelLoader::~StreamModelLoader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamModelLoader::CanLoadAsync() const
 {
@@ -39,6 +45,8 @@ StreamModelLoader::CanLoadAsync() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamModelLoader::OnLoadRequested()
 {
@@ -74,6 +82,8 @@ StreamModelLoader::OnLoadRequested()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamModelLoader::OnLoadCancelled()
 {
@@ -85,6 +95,8 @@ StreamModelLoader::OnLoadCancelled()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamModelLoader::OnPending()
 {

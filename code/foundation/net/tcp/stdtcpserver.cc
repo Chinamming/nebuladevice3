@@ -16,6 +16,8 @@ using namespace Threading;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StdTcpServer::StdTcpServer() :
     isOpen(false)
 {
@@ -23,12 +25,16 @@ StdTcpServer::StdTcpServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StdTcpServer::~StdTcpServer()
 {
     n_assert(!this->IsOpen());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StdTcpServer::Open()
 {
@@ -50,6 +56,8 @@ StdTcpServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StdTcpServer::Close()
 {
@@ -75,6 +83,8 @@ StdTcpServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StdTcpServer::AddClientConnection(const Ptr<TcpClientConnection>& conn)
 {
@@ -85,6 +95,8 @@ StdTcpServer::AddClientConnection(const Ptr<TcpClientConnection>& conn)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Ptr<TcpClientConnection> >
 StdTcpServer::Recv()
 {
@@ -132,6 +144,8 @@ StdTcpServer::Recv()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StdTcpServer::Broadcast(const Ptr<Stream>& msg)
 {
@@ -150,6 +164,8 @@ StdTcpServer::Broadcast(const Ptr<Stream>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StdTcpServer::ListenerThread::SetTcpServer(StdTcpServer* serv)
 {
@@ -158,6 +174,8 @@ StdTcpServer::ListenerThread::SetTcpServer(StdTcpServer* serv)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StdTcpServer::ListenerThread::SetAddress(const IpAddress& a)
 {
@@ -165,6 +183,8 @@ StdTcpServer::ListenerThread::SetAddress(const IpAddress& a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StdTcpServer::ListenerThread::SetClientConnectionClass(const Core::Rtti& type)
 {

@@ -10,6 +10,8 @@ namespace Base
 __ImplementClass(Base::ResourceBase, 'RSBS', Resources::Resource);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceBase::ResourceBase() :
     usage(UsageImmutable),
     access(AccessNone)
@@ -18,6 +20,8 @@ ResourceBase::ResourceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceBase::~ResourceBase()
 {
     // empty

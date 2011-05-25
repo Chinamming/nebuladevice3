@@ -12,12 +12,16 @@ __ImplementSingleton(Animation::AnimEventServer);
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimEventServer::AnimEventServer() : isOpen(false)
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimEventServer::~AnimEventServer()
 {
     this->animEventHandler.Clear();
@@ -26,6 +30,8 @@ AnimEventServer::~AnimEventServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimEventServer::Open()
 {
@@ -37,6 +43,8 @@ AnimEventServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimEventServer::Close()
 {
@@ -48,6 +56,8 @@ AnimEventServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimEventServer::RegisterAnimEventHandler(const Ptr<AnimEventHandlerBase>& newHandler)
 {
@@ -65,6 +75,8 @@ AnimEventServer::RegisterAnimEventHandler(const Ptr<AnimEventHandlerBase>& newHa
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimEventServer::UnregisterAnimEventHandler(const Util::StringAtom& categoryName)
 {
@@ -83,6 +95,8 @@ AnimEventServer::UnregisterAnimEventHandler(const Util::StringAtom& categoryName
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AnimEventServer::HandleAnimEvents(const Util::Array<Animation::AnimEventInfo>& eventz)
 {
@@ -113,6 +127,8 @@ AnimEventServer::HandleAnimEvents(const Util::Array<Animation::AnimEventInfo>& e
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimEventServer::OnFrame(Timing::Time time)
 {
@@ -124,6 +140,8 @@ AnimEventServer::OnFrame(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 AnimEventServer::HandleMessage(const Ptr<Messaging::Message>& msg)
 {

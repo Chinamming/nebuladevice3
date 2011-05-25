@@ -26,6 +26,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 #define __Dispatch(OBJCLASS,OBJ,MSG) Messaging::StaticMessageHandler::Dispatch<OBJCLASS>(OBJ, MSG)
 #define __Dispatcher(OBJCLASS) template<> void Messaging::StaticMessageHandler::Dispatch(const Ptr<OBJCLASS>& obj, const Ptr<Messaging::Message>& msg)
 #define __Handle(OBJCLASS,MSGCLASS) if (msg->CheckId(MSGCLASS::Id)) { Messaging::StaticMessageHandler::Handle<OBJCLASS,MSGCLASS>(obj, msg.downcast<MSGCLASS>()); return; }

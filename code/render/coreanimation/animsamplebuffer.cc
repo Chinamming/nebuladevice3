@@ -12,6 +12,8 @@ __ImplementClass(CoreAnimation::AnimSampleBuffer, 'ASBF', Core::RefCounted);
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimSampleBuffer::AnimSampleBuffer() :
     numSamples(0),
     samples(0),
@@ -23,6 +25,8 @@ AnimSampleBuffer::AnimSampleBuffer() :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimSampleBuffer::~AnimSampleBuffer()
 {
     if (this->IsValid())
@@ -32,6 +36,8 @@ AnimSampleBuffer::~AnimSampleBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimSampleBuffer::Setup(const Ptr<AnimResource>& animRes)
 {
@@ -50,6 +56,8 @@ AnimSampleBuffer::Setup(const Ptr<AnimResource>& animRes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimSampleBuffer::Discard()
 {
@@ -67,6 +75,8 @@ AnimSampleBuffer::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::float4*
 AnimSampleBuffer::MapSamples()
 {
@@ -77,6 +87,8 @@ AnimSampleBuffer::MapSamples()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimSampleBuffer::UnmapSamples()
 {
@@ -86,6 +98,8 @@ AnimSampleBuffer::UnmapSamples()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uchar*
 AnimSampleBuffer::MapSampleCounts()
 {
@@ -96,6 +110,8 @@ AnimSampleBuffer::MapSampleCounts()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimSampleBuffer::UnmapSampleCounts()
 {

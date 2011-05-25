@@ -44,6 +44,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterVariationSet::IsValid() const
 {

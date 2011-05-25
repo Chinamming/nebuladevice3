@@ -27,6 +27,8 @@ using namespace Util;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Console::Console() :
     isOpen(false)
 {
@@ -35,6 +37,8 @@ Console::Console() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Console::~Console()
 {
     this->critSect.Enter();
@@ -47,6 +51,8 @@ Console::~Console()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Open()
 {
@@ -72,6 +78,8 @@ Console::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Close()
 {
@@ -107,6 +115,8 @@ Console::Update()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::AttachHandler(const Ptr<ConsoleHandler>& h)
 {
@@ -121,6 +131,8 @@ Console::AttachHandler(const Ptr<ConsoleHandler>& h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::RemoveHandler(const Ptr<ConsoleHandler>& h)
 {
@@ -134,6 +146,8 @@ Console::RemoveHandler(const Ptr<ConsoleHandler>& h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Console::HasInput() const
 {
@@ -154,6 +168,8 @@ Console::HasInput() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Console::GetInput() const
 {
@@ -174,6 +190,8 @@ Console::GetInput() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Print(const char* fmt, ...)
 {
@@ -185,6 +203,8 @@ Console::Print(const char* fmt, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Print(const char* fmt, va_list argList)
 {
@@ -201,6 +221,8 @@ Console::Print(const char* fmt, va_list argList)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Print(const String& str)
 {
@@ -215,6 +237,8 @@ Console::Print(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Error(const char* fmt, ...)
 {
@@ -226,6 +250,8 @@ Console::Error(const char* fmt, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Error(const char* fmt, va_list argList)
 {
@@ -242,6 +268,8 @@ Console::Error(const char* fmt, va_list argList)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::DebugOut(const char* fmt, ...)
 {
@@ -253,6 +281,8 @@ Console::DebugOut(const char* fmt, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::DebugOut(const char* fmt, va_list argList)
 {
@@ -269,6 +299,8 @@ Console::DebugOut(const char* fmt, va_list argList)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Warning(const char* fmt, ...)
 {
@@ -280,6 +312,8 @@ Console::Warning(const char* fmt, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Warning(const char* fmt, va_list argList)
 {
@@ -296,6 +330,8 @@ Console::Warning(const char* fmt, va_list argList)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Confirm(const char* fmt, ...)
 {
@@ -307,6 +343,8 @@ Console::Confirm(const char* fmt, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Console::Confirm(const char* fmt, va_list argList)
 {

@@ -51,6 +51,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariationBase::SetName(const Name& n)
 {
@@ -58,6 +60,8 @@ ShaderVariationBase::SetName(const Name& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ShaderVariationBase::Name&
 ShaderVariationBase::GetName() const
 {
@@ -65,6 +69,8 @@ ShaderVariationBase::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariationBase::SetFeatureMask(CoreGraphics::ShaderFeature::Mask m)
 {
@@ -72,6 +78,8 @@ ShaderVariationBase::SetFeatureMask(CoreGraphics::ShaderFeature::Mask m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::ShaderFeature::Mask
 ShaderVariationBase::GetFeatureMask() const
 {
@@ -79,6 +87,8 @@ ShaderVariationBase::GetFeatureMask() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariationBase::SetNumPasses(SizeT n)
 {
@@ -86,6 +96,8 @@ ShaderVariationBase::SetNumPasses(SizeT n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ShaderVariationBase::GetNumPasses() const
 {

@@ -10,6 +10,8 @@ namespace Input
 Util::Dictionary<Util::String,Key::Code> Key::dict;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String
 Key::ToString(Code code)
 {
@@ -170,6 +172,8 @@ Key::ToString(Code code)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Key::Code
 Key::FromString(const Util::String& str)
 {
@@ -328,6 +332,8 @@ Key::FromString(const Util::String& str)
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 Util::Array<Key::Code>
 Key::KeyCodesByGroup(Key::Group group)
 {

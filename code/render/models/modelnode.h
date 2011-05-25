@@ -130,6 +130,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNode::SetResourceStreamingLevelOfDetail(float factor)
 {
@@ -151,6 +153,8 @@ ModelNode::ResetScreenSpaceStats()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNode::SetType(ModelNodeType::Code t)
 {
@@ -158,6 +162,8 @@ ModelNode::SetType(ModelNodeType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ModelNodeType::Code
 ModelNode::GetType() const
 {
@@ -165,6 +171,8 @@ ModelNode::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNode::SetName(const Util::StringAtom& n)
 {
@@ -172,6 +180,8 @@ ModelNode::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ModelNode::GetName() const
 {
@@ -179,6 +189,8 @@ ModelNode::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNode::SetParent(const Ptr<ModelNode>& p)
 {
@@ -186,6 +198,8 @@ ModelNode::SetParent(const Ptr<ModelNode>& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelNode::HasParent() const
 {
@@ -193,6 +207,8 @@ ModelNode::HasParent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ModelNode>&
 ModelNode::GetParent() const
 {
@@ -200,6 +216,8 @@ ModelNode::GetParent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelNode> >&
 ModelNode::GetChildren() const
 {
@@ -207,6 +225,8 @@ ModelNode::GetChildren() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelNodeInstance> >&
 ModelNode::GetVisibleModelNodeInstances(ModelNodeType::Code t) const
 {
@@ -214,6 +234,8 @@ ModelNode::GetVisibleModelNodeInstances(ModelNodeType::Code t) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNode::SetBoundingBox(const Math::bbox& b)
 {
@@ -221,6 +243,8 @@ ModelNode::SetBoundingBox(const Math::bbox& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 ModelNode::GetBoundingBox() const
 {
@@ -228,6 +252,8 @@ ModelNode::GetBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelNode::HasStringAttr(const Util::StringAtom& attrId) const
 {
@@ -235,6 +261,8 @@ ModelNode::HasStringAttr(const Util::StringAtom& attrId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom& 
 ModelNode::GetStringAttr(const Util::StringAtom& attrId) const
 {
@@ -242,6 +270,8 @@ ModelNode::GetStringAttr(const Util::StringAtom& attrId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelNode::SetStringAttr(const Util::StringAtom& attrId, const Util::StringAtom& value)
 {

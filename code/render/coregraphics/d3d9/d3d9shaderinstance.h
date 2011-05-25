@@ -4,6 +4,8 @@
     @class Direct3D9::D3D9ShaderInstance
     
     D3D9 implementation of CoreGraphics::ShaderInstance.
+    
+    @todo lost/reset device handling
 
     (C) 2007 Radon Labs GmbH
 */
@@ -59,6 +61,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ID3DXEffect*
 D3D9ShaderInstance::GetD3D9Effect() const
 {

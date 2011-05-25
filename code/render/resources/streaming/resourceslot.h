@@ -59,6 +59,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Ptr<ManagedResource>
 ResourceSlot::GetCurrentManagedResource() const
 {
@@ -66,6 +68,8 @@ ResourceSlot::GetCurrentManagedResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceSlot::SetCurrentManagedResource(const Ptr<ManagedResource>& managedResource)
 {
@@ -73,6 +77,8 @@ ResourceSlot::SetCurrentManagedResource(const Ptr<ManagedResource>& managedResou
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resource>&
 ResourceSlot::GetResource() const
 {
@@ -80,6 +86,8 @@ ResourceSlot::GetResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceSlot::SetResource(const Ptr<Resource>& resource)
 {

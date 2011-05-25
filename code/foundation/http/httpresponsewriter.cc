@@ -13,6 +13,8 @@ __ImplementClass(Http::HttpResponseWriter, 'HRSW', IO::StreamWriter);
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpResponseWriter::WriteResponse()
 {

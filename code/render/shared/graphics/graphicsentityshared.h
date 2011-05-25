@@ -30,6 +30,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 GraphicsEntityShared::GraphicsEntityShared() :
     clipStatus(Math::ClipStatus::Outside),

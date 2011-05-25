@@ -18,16 +18,22 @@ using namespace Util;
 __ImplementClass(Resources::ResourceDictionaryReader, 'RDCR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceDictionaryReader::ResourceDictionaryReader(void)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceDictionaryReader::~ResourceDictionaryReader(void)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceDictionaryReader::CreateResourceDictionary(const URI& dstPath, Dictionary<ResourceId, ResourceInfo*>& dict)
 {

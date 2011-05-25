@@ -33,6 +33,8 @@ using namespace Lighting;
 using namespace FrameSync;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalGraphicsServer::InternalGraphicsServer() :
     isOpen(false),
     renderDebug(false)
@@ -41,6 +43,8 @@ InternalGraphicsServer::InternalGraphicsServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalGraphicsServer::~InternalGraphicsServer()
 {
     n_assert(!this->isOpen);
@@ -52,6 +56,8 @@ InternalGraphicsServer::~InternalGraphicsServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::Open()
 {
@@ -79,6 +85,8 @@ InternalGraphicsServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::Close()
 {
@@ -98,6 +106,8 @@ InternalGraphicsServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<InternalStage> 
 InternalGraphicsServer::CreateStage(const Util::StringAtom& stageName, const Util::Array<Ptr<Visibility::VisibilitySystemBase> >& visSystems)
 {
@@ -120,6 +130,8 @@ InternalGraphicsServer::CreateStage(const Util::StringAtom& stageName, const Uti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::DiscardStage(const Ptr<InternalStage>& stage)
 {
@@ -141,6 +153,8 @@ InternalGraphicsServer::DiscardStage(const Ptr<InternalStage>& stage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::DiscardAllStages()
 {
@@ -156,6 +170,8 @@ InternalGraphicsServer::DiscardAllStages()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 InternalGraphicsServer::HasStage(const StringAtom& stageName) const
 {
@@ -163,6 +179,8 @@ InternalGraphicsServer::HasStage(const StringAtom& stageName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InternalStage>&
 InternalGraphicsServer::GetStageByName(const StringAtom& stageName) const
 {
@@ -170,6 +188,8 @@ InternalGraphicsServer::GetStageByName(const StringAtom& stageName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<InternalStage> >&
 InternalGraphicsServer::GetStages() const
 {
@@ -177,6 +197,8 @@ InternalGraphicsServer::GetStages() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<InternalView>
 InternalGraphicsServer::CreateView(const Core::Rtti& viewClass, const StringAtom& viewName, bool isDefaultView)
 {
@@ -201,6 +223,8 @@ InternalGraphicsServer::CreateView(const Core::Rtti& viewClass, const StringAtom
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::DiscardView(const Ptr<InternalView>& view)
 {
@@ -225,6 +249,8 @@ InternalGraphicsServer::DiscardView(const Ptr<InternalView>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::DiscardAllViews()
 {
@@ -241,6 +267,8 @@ InternalGraphicsServer::DiscardAllViews()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 InternalGraphicsServer::HasView(const StringAtom& viewName) const
 {
@@ -248,6 +276,8 @@ InternalGraphicsServer::HasView(const StringAtom& viewName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InternalView>&
 InternalGraphicsServer::GetViewByName(const StringAtom& viewName) const
 {
@@ -255,6 +285,8 @@ InternalGraphicsServer::GetViewByName(const StringAtom& viewName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<InternalView> >&
 InternalGraphicsServer::GetViews() const
 {
@@ -262,6 +294,8 @@ InternalGraphicsServer::GetViews() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::SetDefaultView(const Ptr<InternalView>& defView)
 {
@@ -269,6 +303,8 @@ InternalGraphicsServer::SetDefaultView(const Ptr<InternalView>& defView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InternalView>&
 InternalGraphicsServer::GetDefaultView() const
 {
@@ -276,6 +312,8 @@ InternalGraphicsServer::GetDefaultView() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::RegisterEntity(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -284,6 +322,8 @@ InternalGraphicsServer::RegisterEntity(const Ptr<InternalGraphicsEntity>& entity
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::UnregisterEntity(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -304,6 +344,8 @@ InternalGraphicsServer::UnregisterEntity(const Ptr<InternalGraphicsEntity>& enti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 InternalGraphicsServer::HasEntity(InternalGraphicsEntity::Id id) const
 {
@@ -311,6 +353,8 @@ InternalGraphicsServer::HasEntity(InternalGraphicsEntity::Id id) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InternalGraphicsEntity>&
 InternalGraphicsServer::GetEntityById(InternalGraphicsEntity::Id id) const
 {
@@ -322,6 +366,8 @@ InternalGraphicsServer::GetEntityById(InternalGraphicsEntity::Id id) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<InternalGraphicsEntity> >&
 InternalGraphicsServer::GetEntities() const
 {
@@ -358,6 +404,8 @@ InternalGraphicsServer::GetCurrentGlobalLightEntity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsServer::OnFrame(Timing::Time curTime, Timing::Time globalTimeFactor)
 {

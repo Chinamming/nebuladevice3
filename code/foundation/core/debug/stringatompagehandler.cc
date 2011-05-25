@@ -18,6 +18,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StringAtomPageHandler::StringAtomPageHandler()
 {
     this->SetName("StringAtoms");
@@ -26,6 +28,8 @@ StringAtomPageHandler::StringAtomPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StringAtomPageHandler::HandleRequest(const Ptr<HttpRequest>& request) 
 {

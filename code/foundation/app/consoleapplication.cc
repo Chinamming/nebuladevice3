@@ -12,18 +12,24 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ConsoleApplication::ConsoleApplication()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ConsoleApplication::~ConsoleApplication()
 {
     n_assert(!this->IsOpen());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ConsoleApplication::Open()
 {
@@ -51,6 +57,8 @@ ConsoleApplication::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleApplication::Close()
 {

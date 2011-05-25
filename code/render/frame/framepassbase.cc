@@ -13,6 +13,8 @@ __ImplementClass(Frame::FramePassBase, 'FPSB', Core::RefCounted);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FramePassBase::FramePassBase() :
     clearFlags(0),
     clearDepth(1.0f),
@@ -22,6 +24,8 @@ FramePassBase::FramePassBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FramePassBase::~FramePassBase()
 {
     // make sure Discard() has been called
@@ -33,6 +37,8 @@ FramePassBase::~FramePassBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FramePassBase::Discard()
 {
@@ -64,6 +70,8 @@ FramePassBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FramePassBase::Render()
 {

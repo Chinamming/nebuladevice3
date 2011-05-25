@@ -22,6 +22,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<AnimResource>&
 ManagedAnimResource::GetAnimResource() const
 {

@@ -44,6 +44,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobUniformDesc::JobUniformDesc() :
     numBuffers(0),
@@ -58,6 +60,8 @@ JobUniformDesc::JobUniformDesc() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobUniformDesc::JobUniformDesc(void* ptr_, SizeT bufSize_, SizeT scratchSize_) :
     numBuffers(1)
@@ -70,6 +74,8 @@ JobUniformDesc::JobUniformDesc(void* ptr_, SizeT bufSize_, SizeT scratchSize_) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobUniformDesc::JobUniformDesc(void* ptr0_, SizeT bufSize0_, void* ptr1_, SizeT bufSize1_, SizeT scratchSize_) :
     numBuffers(2)
@@ -82,6 +88,8 @@ JobUniformDesc::JobUniformDesc(void* ptr0_, SizeT bufSize0_, void* ptr1_, SizeT 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 JobUniformDesc::Update(IndexT index, void* ptr_, SizeT size_, SizeT scratchSize_)
 {
@@ -92,6 +100,8 @@ JobUniformDesc::Update(IndexT index, void* ptr_, SizeT size_, SizeT scratchSize_
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 JobUniformDesc::GetNumBuffers() const
 {
@@ -99,6 +109,8 @@ JobUniformDesc::GetNumBuffers() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 JobUniformDesc::GetPointer(IndexT i) const
 {
@@ -107,6 +119,8 @@ JobUniformDesc::GetPointer(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 JobUniformDesc::GetBufferSize(IndexT i) const
 {
@@ -115,6 +129,8 @@ JobUniformDesc::GetBufferSize(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT 
 JobUniformDesc::GetScratchSize() const
 {

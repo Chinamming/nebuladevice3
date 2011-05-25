@@ -11,6 +11,8 @@ namespace RenderModules
 __ImplementClass(RenderModules::RenderModule, 'RMDL', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderModule::RenderModule() :
     isValid(false)
 {
@@ -18,12 +20,16 @@ RenderModule::RenderModule() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderModule::~RenderModule()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderModule::Setup()
 {
@@ -35,6 +41,8 @@ RenderModule::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderModule::Discard()
 {
@@ -46,6 +54,8 @@ RenderModule::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderModule::OnFrame()
 {

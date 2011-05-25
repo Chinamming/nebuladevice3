@@ -16,18 +16,24 @@ using namespace Math;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VibrationPlayer::VibrationPlayer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VibrationPlayer::~VibrationPlayer()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationPlayer::AddEnvelopeVibration( IndexT playerIndex, 
                                        float hiFreq, 
@@ -53,6 +59,8 @@ VibrationPlayer::AddEnvelopeVibration( IndexT playerIndex,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationPlayer::ClearVibration(IndexT playerIndex, bool hiFreq /* = true */, bool lowFreq /* = true */)
 {

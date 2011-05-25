@@ -12,6 +12,8 @@ __ImplementClass(IO::Stream, 'STRM', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Stream() :
     accessMode(ReadAccess),
     accessPattern(Sequential),
@@ -22,6 +24,8 @@ Stream::Stream() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::~Stream()
 {
     n_assert(!this->IsOpen());
@@ -171,6 +175,8 @@ Stream::GetAccessPattern() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Stream::SetMediaType(const MediaType& t)
 {
@@ -178,6 +184,8 @@ Stream::SetMediaType(const MediaType& t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const MediaType&
 Stream::GetMediaType() const
 {

@@ -13,14 +13,20 @@ namespace Resources
 __ImplementClass(Resources::D3D9TextureCreator, 'WTCR', Resources::ResourceCreator);
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextureCreator::D3D9TextureCreator()
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextureCreator::~D3D9TextureCreator()
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Resource>
 D3D9TextureCreator::CreateResource(const TextureInfo* texInfo)
 {
@@ -50,6 +56,8 @@ D3D9TextureCreator::CreateResource(const TextureInfo* texInfo)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Resource>
 D3D9TextureCreator::CreateResource(const ResourceInfo* resInfo)
 {

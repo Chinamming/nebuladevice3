@@ -75,6 +75,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 SvgPageWriter::SetCanvasDimensions(SizeT w, SizeT h)
 {
@@ -83,6 +85,8 @@ SvgPageWriter::SetCanvasDimensions(SizeT w, SizeT h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 SvgPageWriter::SetUnitDimensions(SizeT w, SizeT h)
 {

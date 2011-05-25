@@ -57,6 +57,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 PrimitiveGroup::PrimitiveGroup() :
     baseVertex(0),
@@ -69,6 +71,8 @@ PrimitiveGroup::PrimitiveGroup() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PrimitiveGroup::SetBaseVertex(IndexT i)
 {
@@ -76,6 +80,8 @@ PrimitiveGroup::SetBaseVertex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 PrimitiveGroup::GetBaseVertex() const
 {
@@ -83,6 +89,8 @@ PrimitiveGroup::GetBaseVertex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PrimitiveGroup::SetNumVertices(SizeT n)
 {
@@ -90,6 +98,8 @@ PrimitiveGroup::SetNumVertices(SizeT n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 PrimitiveGroup::GetNumVertices() const
 {
@@ -97,6 +107,8 @@ PrimitiveGroup::GetNumVertices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PrimitiveGroup::SetBaseIndex(IndexT i)
 {
@@ -104,6 +116,8 @@ PrimitiveGroup::SetBaseIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 PrimitiveGroup::GetBaseIndex() const
 {
@@ -111,6 +125,8 @@ PrimitiveGroup::GetBaseIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PrimitiveGroup::SetNumIndices(SizeT n)
 {
@@ -118,6 +134,8 @@ PrimitiveGroup::SetNumIndices(SizeT n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 PrimitiveGroup::GetNumIndices() const
 {
@@ -125,6 +143,8 @@ PrimitiveGroup::GetNumIndices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PrimitiveGroup::SetPrimitiveTopology(PrimitiveTopology::Code t)
 {
@@ -132,6 +152,8 @@ PrimitiveGroup::SetPrimitiveTopology(PrimitiveTopology::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline PrimitiveTopology::Code
 PrimitiveGroup::GetPrimitiveTopology() const
 {
@@ -139,6 +161,8 @@ PrimitiveGroup::GetPrimitiveTopology() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PrimitiveGroup::SetBoundingBox(const Math::bbox& b)
 {
@@ -146,6 +170,8 @@ PrimitiveGroup::SetBoundingBox(const Math::bbox& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 PrimitiveGroup::GetBoundingBox() const
 {
@@ -153,6 +179,8 @@ PrimitiveGroup::GetBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 PrimitiveGroup::GetNumPrimitives() const
 {

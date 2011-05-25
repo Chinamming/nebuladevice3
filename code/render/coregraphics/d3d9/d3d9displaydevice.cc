@@ -17,12 +17,16 @@ using namespace CoreGraphics;
 using namespace Win360;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9DisplayDevice::D3D9DisplayDevice()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9DisplayDevice::~D3D9DisplayDevice()
 {
     __DestructSingleton;
@@ -72,6 +76,8 @@ D3D9DisplayDevice::GetAvailableDisplayModes(Adapter::Code adapter, PixelFormat::
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9DisplayDevice::SupportsDisplayMode(Adapter::Code adapter, const DisplayMode& requestedMode)
 {
@@ -80,6 +86,8 @@ D3D9DisplayDevice::SupportsDisplayMode(Adapter::Code adapter, const DisplayMode&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayMode
 D3D9DisplayDevice::GetCurrentAdapterDisplayMode(Adapter::Code adapter)
 {
@@ -93,6 +101,8 @@ D3D9DisplayDevice::GetCurrentAdapterDisplayMode(Adapter::Code adapter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AdapterInfo
 D3D9DisplayDevice::GetAdapterInfo(Adapter::Code adapter)
 {
@@ -175,22 +185,6 @@ D3D9DisplayDevice::ComputeAdjustedWindowRect()
             return DisplayMode(adjXPos, adjYPos, adjWidth, adjHeight, this->displayMode.GetPixelFormat());
         }
     }
-}
-
-//------------------------------------------------------------------------------
-void
-D3D9DisplayDevice::AdjustSize()
-{
-	DisplayMode oldDisplayMode = this->GetDisplayMode();
-	Win32DisplayDevice::AdjustSize();
-	if (oldDisplayMode != this->GetDisplayMode())
-	{
-		D3D9RenderDevice* d3d9RenderDevice = D3D9RenderDevice::Instance();
-		if (d3d9RenderDevice->IsOpen())
-		{
-			d3d9RenderDevice->ResetDevice();
-		}
-	}
 }
 
 } // namespace CoreGraphics

@@ -8,12 +8,11 @@
     (C) 2007 Radon Labs GmbH
 */    
 #include "coregraphics/base/vertexbufferbase.h"
-#include "coregraphics/d3d9/d3d9resource.h"
 
 //------------------------------------------------------------------------------
 namespace Win360
 {
-class D3D9VertexBuffer : public Base::VertexBufferBase, public Direct3D9::D3D9Resource
+class D3D9VertexBuffer : public Base::VertexBufferBase
 {
     __DeclareClass(D3D9VertexBuffer);
 public:
@@ -22,11 +21,6 @@ public:
     /// destructor
     virtual ~D3D9VertexBuffer();
 
-	/// setup the d3d9 object
-	void Setup();
-	/// discard the d3d9 object
-	void Discard();
-
     /// unload the resource, or cancel the pending load
     virtual void Unload();
     /// map the vertices for CPU access
@@ -34,14 +28,10 @@ public:
     /// unmap the resource
     void Unmap();
 
+    /// set d3d9 vertex buffer pointer
+    void SetD3D9VertexBuffer(IDirect3DVertexBuffer9* ptr);
     /// get pointer to d3d9 vertex buffer object
     IDirect3DVertexBuffer9* GetD3D9VertexBuffer() const;
-
-private:
-	/// called when d3d9 device is lost
-	virtual void OnLostDevice();
-	/// called when d3d9 devcie is reset
-	virtual void OnResetDevice();
 
 private:
     IDirect3DVertexBuffer9* d3d9VertexBuffer;
@@ -49,6 +39,19 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
+inline void
+D3D9VertexBuffer::SetD3D9VertexBuffer(IDirect3DVertexBuffer9* ptr)
+{
+    n_assert(0 != ptr);
+    n_assert(0 == this->d3d9VertexBuffer);
+    this->d3d9VertexBuffer = ptr;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DVertexBuffer9*
 D3D9VertexBuffer::GetD3D9VertexBuffer() const
 {

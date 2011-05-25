@@ -45,6 +45,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline BatchType::Code
 BatchType::FromString(const Util::String& str)
 {
@@ -70,6 +72,8 @@ BatchType::FromString(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 BatchType::ToString(BatchType::Code c)
 {

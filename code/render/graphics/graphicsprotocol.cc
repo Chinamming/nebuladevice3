@@ -18,8 +18,6 @@ namespace Graphics
     __ImplementMsgId(GetAvailableDisplayModes);
     __ImplementClass(Graphics::SupportsDisplayMode, 'spdm', Messaging::Message);
     __ImplementMsgId(SupportsDisplayMode);
-    __ImplementClass(Graphics::AdjustDisplaySize, 'adds', Messaging::Message);
-    __ImplementMsgId(AdjustDisplaySize);
     __ImplementClass(Graphics::GetCurrentAdapterDisplayMode, 'gcdm', Messaging::Message);
     __ImplementMsgId(GetCurrentAdapterDisplayMode);
     __ImplementClass(Graphics::GetAdapterInfo, 'gadi', Messaging::Message);

@@ -27,6 +27,8 @@ using namespace Core;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 IoServer::IoServer() :
     archiveFileSystemEnabled(true)
 {
@@ -74,6 +76,8 @@ IoServer::IoServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IoServer::~IoServer()
 {
     // unmount standard archives if this is the last instance
@@ -89,6 +93,8 @@ IoServer::~IoServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Stream>
 IoServer::CreateStream(const URI& uri) const
 {
@@ -113,6 +119,8 @@ IoServer::CreateStream(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::MountArchive(const URI& uri)
 {
@@ -121,6 +129,8 @@ IoServer::MountArchive(const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoServer::UnmountArchive(const URI& uri)
 {
@@ -128,6 +138,8 @@ IoServer::UnmountArchive(const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::IsArchiveMounted(const URI& uri) const
 {
@@ -135,6 +147,8 @@ IoServer::IsArchiveMounted(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoServer::MountStandardArchives()
 {
@@ -155,6 +169,8 @@ IoServer::MountStandardArchives()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoServer::UnmountStandardArchives()
 {
@@ -311,6 +327,8 @@ IoServer::ComputeFileCrc(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::DeleteFile(const URI& uri) const
 {
@@ -321,6 +339,8 @@ IoServer::DeleteFile(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::DeleteDirectory(const URI& uri) const
 {
@@ -331,6 +351,8 @@ IoServer::DeleteDirectory(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::FileExists(const URI& uri) const
 {
@@ -351,6 +373,8 @@ IoServer::FileExists(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::DirectoryExists(const URI& uri) const
 {
@@ -374,6 +398,8 @@ IoServer::DirectoryExists(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoServer::SetReadOnly(const URI& uri, bool readOnly) const
 {
@@ -384,6 +410,8 @@ IoServer::SetReadOnly(const URI& uri, bool readOnly) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 IoServer::IsReadOnly(const URI& uri) const
 {
@@ -407,6 +435,8 @@ IoServer::IsReadOnly(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoServer::SetFileWriteTime(const URI& uri, FileTime fileTime)
 {
@@ -417,6 +447,8 @@ IoServer::SetFileWriteTime(const URI& uri, FileTime fileTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FileTime
 IoServer::GetFileWriteTime(const URI& uri) const
 {
@@ -427,6 +459,8 @@ IoServer::GetFileWriteTime(const URI& uri) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 IoServer::ListFiles(const URI& uri, const String& pattern, bool asFullPath) const
 {
@@ -459,6 +493,8 @@ IoServer::ListFiles(const URI& uri, const String& pattern, bool asFullPath) cons
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 IoServer::ListDirectories(const URI& uri, const String& pattern, bool asFullPath) const
 {
@@ -491,6 +527,8 @@ IoServer::ListDirectories(const URI& uri, const String& pattern, bool asFullPath
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 IoServer::AddPathPrefixToArray(const String& prefix, const Array<String>& filenames) const
 {

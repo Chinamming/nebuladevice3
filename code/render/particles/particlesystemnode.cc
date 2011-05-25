@@ -19,6 +19,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystemNode::ParticleSystemNode() :
     primGroupIndex(InvalidIndex)
 {
@@ -26,6 +28,8 @@ ParticleSystemNode::ParticleSystemNode() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystemNode::~ParticleSystemNode()
 {
     n_assert(!this->managedMesh.isvalid());
@@ -33,6 +37,8 @@ ParticleSystemNode::~ParticleSystemNode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 ParticleSystemNode::CreateNodeInstance() const
 {
@@ -41,6 +47,8 @@ ParticleSystemNode::CreateNodeInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNode::OnAttachToModel(const Ptr<Model>& m)
 {
@@ -54,6 +62,8 @@ ParticleSystemNode::OnAttachToModel(const Ptr<Model>& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNode::OnRemoveFromModel()
 {
@@ -71,6 +81,8 @@ ParticleSystemNode::OnRemoveFromModel()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNode::LoadResources()
 {
@@ -94,6 +106,8 @@ ParticleSystemNode::LoadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNode::UnloadResources()
 {
@@ -111,6 +125,8 @@ ParticleSystemNode::UnloadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::State
 ParticleSystemNode::GetResourceState() const
 {
@@ -123,6 +139,8 @@ ParticleSystemNode::GetResourceState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemNode::OnResourcesLoaded()
 {
@@ -160,6 +178,8 @@ ParticleSystemNode::ParseEnvelopeCurveData(const Ptr<BinaryReader>& reader) cons
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ParticleSystemNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 {

@@ -58,6 +58,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<typename TYPE> inline TYPE&
 FrameSyncSharedData::Owner()
 {
@@ -68,6 +70,8 @@ FrameSyncSharedData::Owner()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<typename TYPE> inline TYPE&
 FrameSyncSharedData::Client()
 {
@@ -156,6 +160,8 @@ FrameSyncSharedData::ClientDiscard(TYPE* ignoreMe)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<typename TYPE> inline void
 FrameSyncSharedData::CreateDataObjects(TYPE* ignoreMe)
 {
@@ -167,6 +173,8 @@ FrameSyncSharedData::CreateDataObjects(TYPE* ignoreMe)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<typename TYPE> inline void
 FrameSyncSharedData::DestroyDataObjects(TYPE* ignoreMe)
 {

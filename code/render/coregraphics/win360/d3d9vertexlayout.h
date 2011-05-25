@@ -35,6 +35,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 D3D9VertexLayout::SetD3D9VertexDeclaration(IDirect3DVertexDeclaration9* ptr)
 {
@@ -44,6 +46,8 @@ D3D9VertexLayout::SetD3D9VertexDeclaration(IDirect3DVertexDeclaration9* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DVertexDeclaration9*
 D3D9VertexLayout::GetD3D9VertexDeclaration() const
 {

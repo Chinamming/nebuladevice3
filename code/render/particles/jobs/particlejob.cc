@@ -56,6 +56,8 @@ matrix44 operator*(const matrix44 &a, const matrix44 &b);
 #endif // __PS3__
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline 
 const float*
 LookupEnvelopeSamples(const float sampleBuffer[ParticleSystemNumEnvelopeSamples*EmitterAttrs::NumEnvelopeAttrs], IndexT sampleIndex)
@@ -66,6 +68,8 @@ LookupEnvelopeSamples(const float sampleBuffer[ParticleSystemNumEnvelopeSamples*
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline 
 void
 UpdateBbox(__Float4Arg v, float4 &min, float4 &max)
@@ -75,6 +79,8 @@ UpdateBbox(__Float4Arg v, float4 &min, float4 &max)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 void ParticleUpdateAge(const JobUniformData *uniform, const Particle &in, Particle &out)
 {
@@ -85,6 +91,8 @@ void ParticleUpdateAge(const JobUniformData *uniform, const Particle &in, Partic
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 void ParticleStep(const JobUniformData *uniform, const Particle &in, Particle &out, JobSliceOutputData *sliceOutput)
 {
@@ -148,6 +156,8 @@ void ParticleStep(const JobUniformData *uniform, const Particle &in, Particle &o
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if __PS3__
 __forceinline
 matrix44 
@@ -158,6 +168,8 @@ operator*(const matrix44 &a, const matrix44 &b)
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if __PS3__
 __forceinline
 void ParticleGenerateVertexList(const JobUniformData *uniform, Particle &out, ParticleQuadRenderVertex *&currentVertex)
@@ -218,6 +230,8 @@ void ParticleGenerateVertexList(const JobUniformData *uniform, Particle &out, Pa
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if __PS3__
 void JobStepAndVlist(const JobUniformData *uniform, unsigned int numParticles,
                      const Particle *particles_input, Particle *particles_output,
@@ -241,6 +255,8 @@ void JobStepAndVlist(const JobUniformData *uniform, unsigned int numParticles,
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 void JobStep(const JobUniformData *uniform, unsigned int numParticles,
              const Particle *particles_input, Particle *particles_output, 
              JobSliceOutputData *sliceOutput)
@@ -259,6 +275,8 @@ void JobStep(const JobUniformData *uniform, unsigned int numParticles,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleJobFunc(const JobFuncContext& ctx)
 {

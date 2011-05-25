@@ -13,6 +13,8 @@ __ImplementMsgId(BatchMessage);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 BatchMessage::BatchMessage() :
     messages(256, 256)
 {
@@ -20,6 +22,8 @@ BatchMessage::BatchMessage() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BatchMessage::AddMessage(const Ptr<Message>& msg)
 {
@@ -27,6 +31,8 @@ BatchMessage::AddMessage(const Ptr<Message>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<Message> >&
 BatchMessage::GetMessages() const
 {

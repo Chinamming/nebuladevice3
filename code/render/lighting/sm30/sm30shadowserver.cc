@@ -25,18 +25,24 @@ using namespace InternalGraphics;
 using namespace Models;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SM30ShadowServer::SM30ShadowServer()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SM30ShadowServer::~SM30ShadowServer()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SM30ShadowServer::Open()
 {
@@ -86,6 +92,8 @@ SM30ShadowServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SM30ShadowServer::Close()
 {
@@ -300,6 +308,8 @@ SM30ShadowServer::GetPSSMSplitLightProjTransforms() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 SM30ShadowServer::SortLights()
 {

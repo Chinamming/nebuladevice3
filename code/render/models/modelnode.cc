@@ -18,6 +18,8 @@ using namespace IO;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelNode::ModelNode() :
     inLoadResources(false),
     resourceStreamingLevelOfDetail(0.0f)
@@ -26,6 +28,8 @@ ModelNode::ModelNode() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelNode::~ModelNode()
 {
     n_assert(!this->IsAttachedToModel());
@@ -33,6 +37,8 @@ ModelNode::~ModelNode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ModelNode::IsAttachedToModel() const
 {
@@ -40,6 +46,8 @@ ModelNode::IsAttachedToModel() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Model>&
 ModelNode::GetModel() const
 {
@@ -47,6 +55,8 @@ ModelNode::GetModel() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 ModelNode::CreateNodeInstance() const
 {
@@ -86,6 +96,8 @@ ModelNode::RecurseCreateNodeInstanceHierarchy(const Ptr<ModelInstance>& modelIns
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNode::OnAttachToModel(const Ptr<Model>& m)
 {
@@ -94,6 +106,8 @@ ModelNode::OnAttachToModel(const Ptr<Model>& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNode::OnRemoveFromModel()
 {
@@ -173,6 +187,8 @@ ModelNode::ApplySharedState(IndexT frameIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNode::AddVisibleNodeInstance(IndexT frameIndex, const Ptr<ModelNodeInstance>& nodeInst)
 {
@@ -246,6 +262,8 @@ ModelNode::EndParseDataTags()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNode::AddChild(const Ptr<ModelNode>& c)
 {
@@ -255,6 +273,8 @@ ModelNode::AddChild(const Ptr<ModelNode>& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ModelNode::HasChild(const StringAtom& name) const
 {
@@ -262,6 +282,8 @@ ModelNode::HasChild(const StringAtom& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ModelNode>&
 ModelNode::LookupChild(const StringAtom& name) const
 {

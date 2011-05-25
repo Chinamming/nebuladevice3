@@ -82,6 +82,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 JobBase::IsValid() const
 {
@@ -89,6 +91,8 @@ JobBase::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Jobs::JobUniformDesc&
 JobBase::GetUniformDesc() const
 {
@@ -96,6 +100,8 @@ JobBase::GetUniformDesc() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Jobs::JobDataDesc&
 JobBase::GetInputDesc() const
 {
@@ -103,6 +109,8 @@ JobBase::GetInputDesc() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Jobs::JobDataDesc&
 JobBase::GetOutputDesc() const
 {
@@ -110,6 +118,8 @@ JobBase::GetOutputDesc() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Jobs::JobFuncDesc&
 JobBase::GetFuncDesc() const
 {
@@ -117,6 +127,8 @@ JobBase::GetFuncDesc() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 JobBase::GetPrivateBuffer() const
 {
@@ -124,6 +136,8 @@ JobBase::GetPrivateBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 JobBase::GetPrivateBufferSize() const
 {

@@ -10,6 +10,8 @@ namespace Base
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SystemInfoBase::SystemInfoBase() :
     platform(UnknownPlatform),
     cpuType(UnknownCpuType),
@@ -20,6 +22,8 @@ SystemInfoBase::SystemInfoBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 SystemInfoBase::PlatformAsString(Platform p)
 {
@@ -34,6 +38,8 @@ SystemInfoBase::PlatformAsString(Platform p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 SystemInfoBase::CpuTypeAsString(CpuType c)
 {

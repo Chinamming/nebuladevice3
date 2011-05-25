@@ -21,6 +21,8 @@ using namespace Messaging;
 const Time VibrationHandler::VibrationTriggerInterval = 0.1;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VibrationHandler::VibrationHandler() : curHiFreqValues(NEBULA3_MAX_LOCAL_PLAYERS),
                                        curLowFreqValues(NEBULA3_MAX_LOCAL_PLAYERS), 
                                        targetVibratos(NEBULA3_MAX_LOCAL_PLAYERS),
@@ -38,12 +40,16 @@ VibrationHandler::VibrationHandler() : curHiFreqValues(NEBULA3_MAX_LOCAL_PLAYERS
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VibrationHandler::~VibrationHandler()
 {
     // empty
 }            
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationHandler::Open()
 {
@@ -56,6 +62,8 @@ VibrationHandler::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationHandler::Close()
 {
@@ -68,6 +76,8 @@ VibrationHandler::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationHandler::DoWork()
 {
@@ -101,6 +111,8 @@ VibrationHandler::DoWork()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationHandler::ApplyValues()
 {
@@ -115,6 +127,8 @@ VibrationHandler::ApplyValues()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 VibrationHandler::CalculateValues()
 {
@@ -208,6 +222,8 @@ VibrationHandler::CalculateValues()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VibrationHandler::OnAddEnvelopeVibration(const Ptr<AddEnvelopeVibration>& msg)
 {
@@ -282,6 +298,8 @@ VibrationHandler::OnClearVibration(const Ptr<ClearVibration>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 VibrationHandler::HandleMessage(const Ptr<Message>& msg)
 {

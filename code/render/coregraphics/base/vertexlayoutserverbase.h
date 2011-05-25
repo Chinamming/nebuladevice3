@@ -53,6 +53,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VertexLayoutServerBase::IsOpen() const
 {

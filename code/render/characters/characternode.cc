@@ -20,12 +20,16 @@ using namespace Resources;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterNode::CharacterNode()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterNode::~CharacterNode()
 {
     n_assert(!this->managedAnimResource.isvalid());
@@ -34,6 +38,8 @@ CharacterNode::~CharacterNode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 CharacterNode::CreateNodeInstance() const
 {
@@ -61,6 +67,8 @@ CharacterNode::RecurseCreateNodeInstanceHierarchy(const Ptr<ModelInstance>& mode
     return myNodeInst;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNode::OnAttachToModel(const Ptr<Model>& m)
 {
@@ -73,6 +81,8 @@ CharacterNode::OnAttachToModel(const Ptr<Model>& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNode::OnRemoveFromModel()
 {
@@ -87,6 +97,8 @@ CharacterNode::OnRemoveFromModel()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNode::LoadResources()
 {
@@ -123,6 +135,8 @@ CharacterNode::LoadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNode::UnloadResources()
 {
@@ -144,6 +158,8 @@ CharacterNode::UnloadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::State
 CharacterNode::GetResourceState() const
 {
@@ -185,6 +201,8 @@ CharacterNode::OnResourcesLoaded()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 CharacterNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 {

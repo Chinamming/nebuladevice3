@@ -15,6 +15,8 @@ __ImplementInterfaceSingleton(Debug::DebugServer);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugServer::DebugServer() :
     isOpen(false)
 {
@@ -22,6 +24,8 @@ DebugServer::DebugServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugServer::~DebugServer()
 {
     n_assert(!this->isOpen);
@@ -29,6 +33,8 @@ DebugServer::~DebugServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugServer::Open()
 {
@@ -39,6 +45,8 @@ DebugServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugServer::Close()
 {
@@ -51,6 +59,8 @@ DebugServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugServer::RegisterDebugTimer(const Ptr<DebugTimer>& timer)
 {
@@ -62,6 +72,8 @@ DebugServer::RegisterDebugTimer(const Ptr<DebugTimer>& timer)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugServer::UnregisterDebugTimer(const Ptr<DebugTimer>& timer)
 {
@@ -73,6 +85,8 @@ DebugServer::UnregisterDebugTimer(const Ptr<DebugTimer>& timer)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugServer::RegisterDebugCounter(const Ptr<DebugCounter>& counter)
 {
@@ -84,6 +98,8 @@ DebugServer::RegisterDebugCounter(const Ptr<DebugCounter>& counter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugServer::UnregisterDebugCounter(const Ptr<DebugCounter>& counter)
 {
@@ -95,6 +111,8 @@ DebugServer::UnregisterDebugCounter(const Ptr<DebugCounter>& counter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Ptr<DebugTimer> >
 DebugServer::GetDebugTimers() const
 {
@@ -105,6 +123,8 @@ DebugServer::GetDebugTimers() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Ptr<DebugCounter> >
 DebugServer::GetDebugCounters() const
 {
@@ -115,6 +135,8 @@ DebugServer::GetDebugCounters() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<DebugTimer>
 DebugServer::GetDebugTimerByName(const StringAtom& name) const
 {
@@ -129,6 +151,8 @@ DebugServer::GetDebugTimerByName(const StringAtom& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<DebugCounter>
 DebugServer::GetDebugCounterByName(const StringAtom& name) const
 {

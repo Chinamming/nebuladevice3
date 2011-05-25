@@ -134,6 +134,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::Node::Node(const TYPE& val) :
     next(0),
@@ -144,6 +146,8 @@ List<TYPE>::Node::Node(const TYPE& val) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::Node::~Node()
 {
@@ -154,6 +158,8 @@ List<TYPE>::Node::~Node()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 List<TYPE>::Node::SetNext(Node* n)
@@ -162,6 +168,8 @@ List<TYPE>::Node::SetNext(Node* n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Node*
 List<TYPE>::Node::GetNext() const
@@ -170,6 +178,8 @@ List<TYPE>::Node::GetNext() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 List<TYPE>::Node::SetPrev(Node* p)
@@ -178,6 +188,8 @@ List<TYPE>::Node::SetPrev(Node* p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Node*
 List<TYPE>::Node::GetPrev() const
@@ -186,6 +198,8 @@ List<TYPE>::Node::GetPrev() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 List<TYPE>::Node::Value()
@@ -194,6 +208,8 @@ List<TYPE>::Node::Value()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::Iterator::Iterator() :
     node(0)
@@ -202,6 +218,8 @@ List<TYPE>::Iterator::Iterator() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::Iterator::Iterator(Node* n) :
     node(n)
@@ -210,6 +228,8 @@ List<TYPE>::Iterator::Iterator(Node* n) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::Iterator::Iterator(const Iterator& rhs) :
     node(rhs.node)
@@ -218,6 +238,8 @@ List<TYPE>::Iterator::Iterator(const Iterator& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 const typename List<TYPE>::Iterator&
 List<TYPE>::Iterator::operator=(const Iterator& rhs)
@@ -230,6 +252,8 @@ List<TYPE>::Iterator::operator=(const Iterator& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 List<TYPE>::Iterator::operator==(const Iterator& rhs) const
@@ -238,6 +262,8 @@ List<TYPE>::Iterator::operator==(const Iterator& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 List<TYPE>::Iterator::operator!=(const Iterator& rhs) const
@@ -246,6 +272,8 @@ List<TYPE>::Iterator::operator!=(const Iterator& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 const typename List<TYPE>::Iterator&
 List<TYPE>::Iterator::operator++()
@@ -258,6 +286,8 @@ List<TYPE>::Iterator::operator++()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::Iterator::operator++(int)
@@ -271,6 +301,8 @@ List<TYPE>::Iterator::operator++(int)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 const typename List<TYPE>::Iterator&
 List<TYPE>::Iterator::operator--()
@@ -283,6 +315,8 @@ List<TYPE>::Iterator::operator--()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::Iterator::operator--(int)
@@ -296,6 +330,8 @@ List<TYPE>::Iterator::operator--(int)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::Iterator::operator bool() const
 {
@@ -303,6 +339,8 @@ List<TYPE>::Iterator::operator bool() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 List<TYPE>::Iterator::operator->() const
@@ -314,6 +352,8 @@ List<TYPE>::Iterator::operator->() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 List<TYPE>::Iterator::operator*() const
@@ -325,6 +365,8 @@ List<TYPE>::Iterator::operator*() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Node*
 List<TYPE>::Iterator::GetNode() const
@@ -333,6 +375,8 @@ List<TYPE>::Iterator::GetNode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::List() :
     front(0),
@@ -342,6 +386,8 @@ List<TYPE>::List() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::List(const List<TYPE>& rhs) :
     front(0),
@@ -351,6 +397,8 @@ List<TYPE>::List(const List<TYPE>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 List<TYPE>::~List()
 {
@@ -358,6 +406,8 @@ List<TYPE>::~List()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 List<TYPE>::operator=(const List<TYPE>& rhs)
@@ -367,6 +417,8 @@ List<TYPE>::operator=(const List<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 List<TYPE>::IsEmpty() const
@@ -375,6 +427,8 @@ List<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SizeT
 List<TYPE>::Size() const
@@ -389,6 +443,8 @@ List<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 List<TYPE>::Clear()
@@ -400,6 +456,8 @@ List<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 List<TYPE>::AddList(const List<TYPE>& rhs)
@@ -412,6 +470,8 @@ List<TYPE>::AddList(const List<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::AddAfter(Iterator iter, const TYPE& e)
@@ -443,6 +503,8 @@ List<TYPE>::AddAfter(Iterator iter, const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::AddBefore(Iterator iter, const TYPE& e)
@@ -474,6 +536,8 @@ List<TYPE>::AddBefore(Iterator iter, const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::AddFront(const TYPE& e)
@@ -482,6 +546,8 @@ List<TYPE>::AddFront(const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::AddBack(const TYPE& e)
@@ -490,6 +556,8 @@ List<TYPE>::AddBack(const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE
 List<TYPE>::Remove(Iterator iter)
@@ -522,6 +590,8 @@ List<TYPE>::Remove(Iterator iter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE
 List<TYPE>::RemoveFront()
@@ -533,6 +603,8 @@ List<TYPE>::RemoveFront()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE
 List<TYPE>::RemoveBack()
@@ -544,6 +616,8 @@ List<TYPE>::RemoveBack()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 List<TYPE>::Front() const
@@ -555,6 +629,8 @@ List<TYPE>::Front() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 List<TYPE>::Back() const
@@ -566,6 +642,8 @@ List<TYPE>::Back() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::Begin() const
@@ -574,6 +652,8 @@ List<TYPE>::Begin() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::End() const
@@ -582,6 +662,8 @@ List<TYPE>::End() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 typename List<TYPE>::Iterator
 List<TYPE>::Find(const TYPE& e, Iterator start) const

@@ -64,6 +64,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 transform44::transform44() :
     position(0.0f, 0.0f, 0.0f),
@@ -79,6 +81,8 @@ transform44::transform44() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 transform44::setposition(const point& p)
 {
@@ -87,6 +91,8 @@ transform44::setposition(const point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const point&
 transform44::getposition() const
 {
@@ -94,6 +100,8 @@ transform44::getposition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 transform44::setrotate(const quaternion& r)
 {
@@ -102,6 +110,8 @@ transform44::setrotate(const quaternion& r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const quaternion&
 transform44::getrotate() const
 {
@@ -109,6 +119,8 @@ transform44::getrotate() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 transform44::setscale(const vector& s)
 {
@@ -117,6 +129,8 @@ transform44::setscale(const vector& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const vector&
 transform44::getscale() const
 {
@@ -124,6 +138,8 @@ transform44::getscale() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 transform44::setrotatepivot(const point& p)
 {
@@ -132,6 +148,8 @@ transform44::setrotatepivot(const point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const point& 
 transform44::getrotatepivot() const
 {
@@ -139,6 +157,8 @@ transform44::getrotatepivot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 transform44::setscalepivot(const point& p)
 {
@@ -147,6 +167,8 @@ transform44::setscalepivot(const point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const point&
 transform44::getscalepivot() const
 {
@@ -154,6 +176,8 @@ transform44::getscalepivot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 transform44::setoffset(const matrix44& m)
 {
@@ -163,6 +187,8 @@ transform44::setoffset(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const matrix44&
 transform44::getoffset() const
 {
@@ -170,6 +196,8 @@ transform44::getoffset() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const matrix44&
 transform44::getmatrix()
 {
@@ -187,6 +215,8 @@ transform44::getmatrix()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 transform44::isdirty() const
 {

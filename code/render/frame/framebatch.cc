@@ -31,6 +31,8 @@ using namespace Lighting;
 using namespace FrameSync;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameBatch::FrameBatch() :
     batchType(BatchType::InvalidBatchType),
     nodeFilter(ModelNodeType::InvalidModelNodeType),
@@ -42,6 +44,8 @@ FrameBatch::FrameBatch() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameBatch::~FrameBatch()
 {
     // make sure Discard() has been called
@@ -50,6 +54,8 @@ FrameBatch::~FrameBatch()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameBatch::Discard()
 {
@@ -64,6 +70,8 @@ FrameBatch::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameBatch::Render()
 {
@@ -83,6 +91,8 @@ FrameBatch::Render()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameBatch::RenderBatch()
 {
@@ -113,7 +123,7 @@ FrameBatch::RenderBatch()
     }
     else if (BatchType::Shapes == this->batchType)
     {
-        ShapeRenderer::Instance()->DrawShapes();
+        ShapeRenderer::Instance()->DrawShapes();		
     }
     else if (BatchType::Text == this->batchType)
     {
@@ -234,6 +244,8 @@ FrameBatch::RenderBatch()
 
 #if NEBULA3_ENABLE_PROFILING
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 FrameBatch::SetBatchDebugTimer(const Util::String& name)
 {

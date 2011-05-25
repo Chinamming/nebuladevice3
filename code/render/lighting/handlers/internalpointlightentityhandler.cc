@@ -19,6 +19,8 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreatePointLightEntity)
 {
     // create a new spotlight entity
@@ -39,6 +41,8 @@ __StaticHandler(CreatePointLightEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Dispatcher(InternalPointLightEntity)
 {
     __HandleUnknown(InternalAbstractLightEntity);

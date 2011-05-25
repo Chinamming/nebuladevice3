@@ -10,6 +10,8 @@ namespace Util
 __ImplementInterfaceSingleton(Util::GlobalStringAtomTable);
 
 //------------------------------------------------------------------------------
+/**
+*/
 GlobalStringAtomTable::GlobalStringAtomTable()
 {
     __ConstructInterfaceSingleton;
@@ -19,6 +21,8 @@ GlobalStringAtomTable::GlobalStringAtomTable()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GlobalStringAtomTable::~GlobalStringAtomTable()
 {
     this->critSect.Enter();
@@ -28,6 +32,8 @@ GlobalStringAtomTable::~GlobalStringAtomTable()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GlobalStringAtomTable::Lock()
 {
@@ -35,6 +41,8 @@ GlobalStringAtomTable::Lock()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GlobalStringAtomTable::Unlock()
 {

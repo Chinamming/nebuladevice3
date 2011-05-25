@@ -20,6 +20,8 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGraphicsEntity, DiscardGraphicsEntity)
 {
     Ptr<InternalStage> stage = obj->GetStage();
@@ -29,12 +31,16 @@ __Handler(InternalGraphicsEntity, DiscardGraphicsEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGraphicsEntity, UpdateTransform)
 {
     obj->SetTransform(msg->GetTransform());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGraphicsEntity, SetVisibility)
 {
     obj->SetVisible(msg->GetVisible());

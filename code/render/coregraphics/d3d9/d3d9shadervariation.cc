@@ -13,6 +13,8 @@ __ImplementClass(Direct3D9::D3D9ShaderVariation, 'D9SV', Base::ShaderVariationBa
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderVariation::D3D9ShaderVariation() :
     d3d9Effect(0),
     hTechnique(0)
@@ -21,12 +23,16 @@ D3D9ShaderVariation::D3D9ShaderVariation() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderVariation::~D3D9ShaderVariation()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderVariation::Setup(ID3DXEffect* effect, D3DXHANDLE handle)
 {

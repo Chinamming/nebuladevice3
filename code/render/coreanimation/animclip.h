@@ -131,6 +131,8 @@ AnimClip::GetKeySliceByteSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimClip::AreKeySliceValuesValid() const
 {
@@ -138,6 +140,8 @@ AnimClip::AreKeySliceValuesValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetName(const Util::StringAtom& n)
 {
@@ -145,6 +149,8 @@ AnimClip::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 AnimClip::GetName() const
 {
@@ -152,6 +158,8 @@ AnimClip::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetNumKeys(SizeT n)
 {
@@ -159,6 +167,8 @@ AnimClip::SetNumKeys(SizeT n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimClip::GetNumKeys() const
 {
@@ -166,6 +176,8 @@ AnimClip::GetNumKeys() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetKeyStride(SizeT s)
 {
@@ -173,6 +185,8 @@ AnimClip::SetKeyStride(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimClip::GetKeyStride() const
 {
@@ -180,6 +194,8 @@ AnimClip::GetKeyStride() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetKeyDuration(Timing::Tick d)
 {
@@ -187,6 +203,8 @@ AnimClip::SetKeyDuration(Timing::Tick d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimClip::GetKeyDuration() const
 {
@@ -194,6 +212,8 @@ AnimClip::GetKeyDuration() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimClip::GetClipDuration() const
 {
@@ -201,6 +221,8 @@ AnimClip::GetClipDuration() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetPreInfinityType(InfinityType::Code t)
 {
@@ -208,6 +230,8 @@ AnimClip::SetPreInfinityType(InfinityType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline InfinityType::Code
 AnimClip::GetPreInfinityType() const
 {
@@ -215,6 +239,8 @@ AnimClip::GetPreInfinityType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetPostInfinityType(InfinityType::Code t)
 {
@@ -222,6 +248,8 @@ AnimClip::SetPostInfinityType(InfinityType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline InfinityType::Code
 AnimClip::GetPostInfinityType() const
 {
@@ -229,6 +257,8 @@ AnimClip::GetPostInfinityType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 AnimClip::GetNumEvents() const
 {
@@ -236,6 +266,8 @@ AnimClip::GetNumEvents() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const AnimEvent&
 AnimClip::GetEventByIndex(IndexT i) const
 {
@@ -243,6 +275,8 @@ AnimClip::GetEventByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimClip::SetStartKeyIndex(IndexT i)
 {
@@ -250,6 +284,8 @@ AnimClip::SetStartKeyIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 AnimClip::GetStartKeyIndex() const
 {
@@ -257,6 +293,8 @@ AnimClip::GetStartKeyIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimClip::GetStartTime() const
 {

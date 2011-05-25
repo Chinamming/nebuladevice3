@@ -66,6 +66,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterAnimationController::IsValid() const
 {
@@ -73,6 +75,8 @@ CharacterAnimationController::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Animation::AnimSequencer&
 CharacterAnimationController::AnimSequencer()
 {
@@ -80,6 +84,8 @@ CharacterAnimationController::AnimSequencer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 CharacterAnimationController::GetTime() const
 {
@@ -102,6 +108,8 @@ CharacterAnimationController::GetAnimDrivenMotionVector()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterAnimationController::IsAnimDrivenMotionEnabled() const
 {

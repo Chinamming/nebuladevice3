@@ -37,6 +37,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Characters::SkinningTechnique::Code
 Win32SkinnedMeshRenderer::GetSkinningTechnique() const
 {

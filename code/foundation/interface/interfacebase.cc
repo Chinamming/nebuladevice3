@@ -14,6 +14,8 @@ __ImplementClass(Interface::InterfaceBase, 'INBS', Messaging::AsyncPort);
 using namespace Core;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InterfaceBase::InterfaceBase() :
     rootDirectory("home:")
 {
@@ -21,12 +23,16 @@ InterfaceBase::InterfaceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InterfaceBase::~InterfaceBase()        
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InterfaceBase::Open()
 {
@@ -41,6 +47,8 @@ InterfaceBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InterfaceBase::AttachHandler(const Ptr<Messaging::Handler>& handler)
 {

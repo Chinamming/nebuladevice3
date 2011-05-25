@@ -17,6 +17,8 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TransformDevice::D3D9TransformDevice() :
     mvpSemantic(NEBULA3_SEMANTIC_MODELVIEWPROJECTION),
     modelSemantic(NEBULA3_SEMANTIC_MODEL),
@@ -33,12 +35,16 @@ D3D9TransformDevice::D3D9TransformDevice() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TransformDevice::~D3D9TransformDevice()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9TransformDevice::Open()
 {
@@ -53,6 +59,8 @@ D3D9TransformDevice::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TransformDevice::Close()
 {
@@ -64,6 +72,8 @@ D3D9TransformDevice::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TransformDevice::ApplyViewSettings()
 {
@@ -85,6 +95,8 @@ D3D9TransformDevice::ApplyViewSettings()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TransformDevice::ApplyModelTransforms(const Ptr<ShaderInstance>& shdInst)
 {    

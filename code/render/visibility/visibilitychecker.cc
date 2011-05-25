@@ -14,6 +14,8 @@ using namespace InternalGraphics;
 
 #define NUM_JOBS_PERFRAME 64
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityChecker::VisibilityChecker():
     isOpen(false),
     lastFrameId(0),
@@ -24,12 +26,16 @@ VisibilityChecker::VisibilityChecker():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityChecker::~VisibilityChecker()
 {
 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::RegisterEntity(const Ptr<InternalGraphics::InternalGraphicsEntity>& entity)
 {
@@ -49,6 +55,8 @@ VisibilityChecker::RegisterEntity(const Ptr<InternalGraphics::InternalGraphicsEn
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::UnregisterEntity(const Ptr<InternalGraphics::InternalGraphicsEntity>& entity)
 {
@@ -64,6 +72,8 @@ VisibilityChecker::UnregisterEntity(const Ptr<InternalGraphics::InternalGraphics
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::AttachVisibilitySystem(const Ptr<VisibilitySystemBase>& system)
 {
@@ -72,6 +82,8 @@ VisibilityChecker::AttachVisibilitySystem(const Ptr<VisibilitySystemBase>& syste
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::RemoveVisibilitySystem(const Ptr<VisibilitySystemBase>& system)
 {
@@ -81,6 +93,8 @@ VisibilityChecker::RemoveVisibilitySystem(const Ptr<VisibilitySystemBase>& syste
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::UpdateVisibilityContext(const Ptr<InternalGraphics::InternalGraphicsEntity>& entity)
 {         
@@ -96,6 +110,8 @@ VisibilityChecker::UpdateVisibilityContext(const Ptr<InternalGraphics::InternalG
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::PerformVisibilityQuery(IndexT frameId, const Ptr<InternalGraphics::InternalGraphicsEntity>& observerEntity, uint entityMask)
 {      
@@ -134,6 +150,8 @@ VisibilityChecker::PerformVisibilityQuery(IndexT frameId, const Ptr<InternalGrap
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::ApplyLastVisibilityResults(IndexT frameId, IndexT slot)
 {   
@@ -183,6 +201,8 @@ VisibilityChecker::ApplyLastVisibilityResults(IndexT frameId, IndexT slot)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::Open()
 {
@@ -196,6 +216,8 @@ VisibilityChecker::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::Close()
 {
@@ -209,6 +231,8 @@ VisibilityChecker::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::AttachVisibilitySystems(const Util::Array<Ptr<VisibilitySystemBase> >& systems)
 {
@@ -216,6 +240,8 @@ VisibilityChecker::AttachVisibilitySystems(const Util::Array<Ptr<VisibilitySyste
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::OnRenderDebug()
 {
@@ -227,6 +253,8 @@ VisibilityChecker::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::ClearVisibilityLinks(InternalGraphicsEntity::LinkType linkType)
 {
@@ -239,6 +267,8 @@ VisibilityChecker::ClearVisibilityLinks(InternalGraphicsEntity::LinkType linkTyp
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::AttachVisibilityContainer(const Ptr<VisibilityContainer>& container)
 {
@@ -275,6 +305,8 @@ VisibilityChecker::AttachVisibilityContainer(const Ptr<VisibilityContainer>& con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::BeginAttachVisibilityContainer()
 {
@@ -286,6 +318,8 @@ VisibilityChecker::BeginAttachVisibilityContainer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityChecker::EndAttachVisibilityContainer()
 {

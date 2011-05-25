@@ -18,6 +18,8 @@ RefCountedList RefCounted::list;
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 RefCounted::~RefCounted()
 {
     n_assert(0 == this->refCount);

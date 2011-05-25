@@ -52,6 +52,8 @@ private:
 __RegisterClass(AnimatorNodeInstance);
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimatorNodeInstance::OverwriteAnimationTime(Timing::Time time)
 {

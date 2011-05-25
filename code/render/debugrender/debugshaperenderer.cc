@@ -21,18 +21,24 @@ using namespace IO;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugShapeRenderer::DebugShapeRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugShapeRenderer::~DebugShapeRenderer()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugShapeRenderer::DrawBox(const matrix44& modelTransform, const float4& color)
 {
@@ -40,6 +46,8 @@ DebugShapeRenderer::DrawBox(const matrix44& modelTransform, const float4& color)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugShapeRenderer::DrawSphere(const matrix44& modelTransform, const float4& color)
 {
@@ -47,6 +55,8 @@ DebugShapeRenderer::DrawSphere(const matrix44& modelTransform, const float4& col
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugShapeRenderer::DrawCylinder(const matrix44& modelTransform, const float4& color)
 {
@@ -54,6 +64,8 @@ DebugShapeRenderer::DrawCylinder(const matrix44& modelTransform, const float4& c
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugShapeRenderer::DrawTorus(const matrix44& modelTransform, const float4& color)
 {

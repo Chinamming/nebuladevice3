@@ -10,6 +10,8 @@ namespace IO
 __ImplementClass(IO::StreamWriter, 'STWR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamWriter::StreamWriter() :
     isOpen(false),
     streamWasOpen(false)
@@ -18,6 +20,8 @@ StreamWriter::StreamWriter() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamWriter::~StreamWriter()
 {
     n_assert(!this->IsOpen());
@@ -57,6 +61,8 @@ StreamWriter::HasStream() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamWriter::Open()
 {
@@ -79,6 +85,8 @@ StreamWriter::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamWriter::Close()
 {

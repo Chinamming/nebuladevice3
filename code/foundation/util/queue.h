@@ -52,6 +52,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Queue<TYPE>::Queue()
 {
@@ -59,6 +61,8 @@ Queue<TYPE>::Queue()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Queue<TYPE>::Queue(const Queue<TYPE>& rhs)
 {
@@ -66,6 +70,8 @@ Queue<TYPE>::Queue(const Queue<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Queue<TYPE>::operator=(const Queue<TYPE>& rhs)
@@ -74,6 +80,8 @@ Queue<TYPE>::operator=(const Queue<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 Queue<TYPE>::operator[](IndexT index) const
@@ -82,6 +90,8 @@ Queue<TYPE>::operator[](IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Queue<TYPE>::operator==(const Queue<TYPE>& rhs) const
@@ -90,6 +100,8 @@ Queue<TYPE>::operator==(const Queue<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Queue<TYPE>::operator!=(const Queue<TYPE>& rhs) const
@@ -98,6 +110,8 @@ Queue<TYPE>::operator!=(const Queue<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Queue<TYPE>::Contains(const TYPE& e) const
@@ -106,6 +120,8 @@ Queue<TYPE>::Contains(const TYPE& e) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Queue<TYPE>::Clear()
@@ -114,6 +130,8 @@ Queue<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Queue<TYPE>::Reserve(SizeT num)
@@ -122,6 +140,8 @@ Queue<TYPE>::Reserve(SizeT num)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SizeT
 Queue<TYPE>::Size() const
@@ -130,6 +150,8 @@ Queue<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Queue<TYPE>::IsEmpty() const
@@ -138,6 +160,8 @@ Queue<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Queue<TYPE>::Enqueue(const TYPE& e)
@@ -146,6 +170,8 @@ Queue<TYPE>::Enqueue(const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE
 Queue<TYPE>::Dequeue()
@@ -156,6 +182,8 @@ Queue<TYPE>::Dequeue()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 Queue<TYPE>::Peek() const

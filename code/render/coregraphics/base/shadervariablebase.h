@@ -105,6 +105,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableBase::SetType(Type t)
 {
@@ -112,6 +114,8 @@ ShaderVariableBase::SetType(Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ShaderVariableBase::Type
 ShaderVariableBase::GetType() const
 {
@@ -119,6 +123,8 @@ ShaderVariableBase::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableBase::SetName(const Name& n)
 {
@@ -126,6 +132,8 @@ ShaderVariableBase::SetName(const Name& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ShaderVariableBase::Name&
 ShaderVariableBase::GetName() const
 {
@@ -133,6 +141,8 @@ ShaderVariableBase::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableBase::SetSemantic(const Semantic& s)
 {
@@ -140,6 +150,8 @@ ShaderVariableBase::SetSemantic(const Semantic& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ShaderVariableBase::Semantic&
 ShaderVariableBase::GetSemantic() const
 {

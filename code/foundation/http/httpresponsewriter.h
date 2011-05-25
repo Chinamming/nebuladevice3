@@ -32,6 +32,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpResponseWriter::SetStatusCode(HttpStatus::Code c)
 {
@@ -39,6 +41,8 @@ HttpResponseWriter::SetStatusCode(HttpStatus::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpResponseWriter::SetContent(const Ptr<IO::Stream>& s)
 {

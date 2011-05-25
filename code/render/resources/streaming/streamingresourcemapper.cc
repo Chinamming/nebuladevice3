@@ -23,6 +23,8 @@ namespace Resources
     __ImplementClass(Resources::StreamingResourceMapper, 'SRMP', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamingResourceMapper::StreamingResourceMapper(void) :
     maxSize(-1),
     frameIdx(-1),
@@ -33,11 +35,15 @@ StreamingResourceMapper::StreamingResourceMapper(void) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamingResourceMapper::~StreamingResourceMapper(void)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::SetScheduler(Ptr<ResourceScheduler> scheduler)
 {
@@ -53,6 +59,8 @@ StreamingResourceMapper::SetScheduler(Ptr<ResourceScheduler> scheduler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 StreamingResourceMapper::GetNumPendingResources() const
 {
@@ -60,6 +68,8 @@ StreamingResourceMapper::GetNumPendingResources() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::OnAttachToResourceManager()
 {
@@ -88,6 +98,8 @@ StreamingResourceMapper::OnAttachToResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::OnRemoveFromResourceManager()
 {
@@ -103,6 +115,8 @@ StreamingResourceMapper::OnRemoveFromResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ManagedResource>
 StreamingResourceMapper::OnCreateManagedResource(const ResourceRequestInfo* requestInfo, const Ptr<ResourceLoader>& optResourceLoader)
 {
@@ -143,6 +157,8 @@ StreamingResourceMapper::OnCreateManagedResource(const ResourceRequestInfo* requ
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ManagedResource>
 StreamingResourceMapper::OnCreateManagedResource(const Core::Rtti& resType, const ResourceId& id, const Ptr<ResourceLoader>& optResourceLoader)
 {
@@ -161,6 +177,8 @@ StreamingResourceMapper::OnRequestManagedResource(const Ptr<ManagedResource>& ma
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamingResourceMapper::OnRequestManagedResource(const Ptr<ManagedResource>& managedResource)
 {
@@ -169,6 +187,8 @@ StreamingResourceMapper::OnRequestManagedResource(const Ptr<ManagedResource>& ma
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::OnAutoManageResource(const ResourceId& resourceId, bool autoManage)
 {
@@ -180,6 +200,8 @@ StreamingResourceMapper::OnAutoManageResource(const ResourceId& resourceId, bool
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::OnDiscardManagedResource(const Ptr<ManagedResource>& managedResource)
 {
@@ -218,6 +240,8 @@ StreamingResourceMapper::OnDiscardManagedResource(const Ptr<ManagedResource>& ma
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::InitResourceDict(const IO::URI& fileName)
 {
@@ -250,6 +274,8 @@ StreamingResourceMapper::OnPrepare(bool waiting)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::OnUpdate(IndexT frameIndex)
 {
@@ -284,6 +310,8 @@ StreamingResourceMapper::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 StreamingResourceMapper::GetAllocatedMemory()
 {
@@ -292,6 +320,8 @@ StreamingResourceMapper::GetAllocatedMemory()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 StreamingResourceMapper::GetUsedMemory()
 {
@@ -301,6 +331,8 @@ StreamingResourceMapper::GetUsedMemory()
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 const ResourceInfo*
 StreamingResourceMapper::GetResourceInfo(const ResourceId& resourceId)
 {
@@ -341,6 +373,8 @@ StreamingResourceMapper::LoadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::ResourceLoadException(const Ptr<ManagedResource>& resource) const
 {
@@ -351,6 +385,8 @@ StreamingResourceMapper::ResourceLoadException(const Ptr<ManagedResource>& resou
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<LoadingResource>&
 StreamingResourceMapper::AppendLoadingResource(const Core::Rtti& loadingType, const Ptr<ManagedResource>& managedResource, const Ptr<Resource>& resourceToLoad)
 {
@@ -358,6 +394,8 @@ StreamingResourceMapper::AppendLoadingResource(const Core::Rtti& loadingType, co
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::CleanUpLoadingQueue()
 {
@@ -365,6 +403,8 @@ StreamingResourceMapper::CleanUpLoadingQueue()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingResourceMapper::IncreaseLoadingPriority(const ResourceId& resourceId)
 {

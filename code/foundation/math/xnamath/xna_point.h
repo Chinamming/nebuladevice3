@@ -69,6 +69,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 point::point() :
     float4(0.0f, 0.0f, 0.0f, 1.0f)
@@ -77,6 +79,8 @@ point::point() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 point::point(scalar x, scalar y, scalar z) :
     float4(x, y, z, 1.0f)
@@ -85,6 +89,8 @@ point::point(scalar x, scalar y, scalar z) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 point::point(const float4& rhs) :
     float4(rhs)
@@ -93,6 +99,8 @@ point::point(const float4& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 point::point(XMVECTOR rhs) :
     float4(rhs)
@@ -101,6 +109,8 @@ point::point(XMVECTOR rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline point
 point::origin()
 {
@@ -108,6 +118,8 @@ point::origin()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 point::operator=(const point& rhs)
 {
@@ -115,6 +127,8 @@ point::operator=(const point& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 point::operator+=(const vector& rhs)
 {
@@ -122,6 +136,8 @@ point::operator+=(const vector& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 point::operator-=(const vector& rhs)
 {
@@ -129,6 +145,8 @@ point::operator-=(const vector& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline point
 point::operator+(const vector& rhs) const
 {
@@ -136,6 +154,8 @@ point::operator+(const vector& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline point
 point::operator-(const vector& rhs) const
 {
@@ -143,6 +163,8 @@ point::operator-(const vector& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 point::operator-(const point& rhs) const
 {
@@ -150,6 +172,8 @@ point::operator-(const point& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 point::operator==(const point& rhs) const
 {
@@ -157,6 +181,8 @@ point::operator==(const point& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 point::operator!=(const point& rhs) const
 {
@@ -164,6 +190,8 @@ point::operator!=(const point& rhs) const
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 point::set(scalar x, scalar y, scalar z)
 {

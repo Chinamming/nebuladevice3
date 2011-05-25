@@ -11,6 +11,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimClip::AnimClip() :
     startKeyIndex(0),
     numKeys(0),
@@ -27,6 +29,8 @@ AnimClip::AnimClip() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimClip::SetNumCurves(SizeT numCurves)
 {
@@ -34,6 +38,8 @@ AnimClip::SetNumCurves(SizeT numCurves)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 AnimClip::GetNumCurves() const
 {
@@ -41,6 +47,8 @@ AnimClip::GetNumCurves() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimCurve&
 AnimClip::CurveByIndex(IndexT curveIndex) const
 {
@@ -48,6 +56,8 @@ AnimClip::CurveByIndex(IndexT curveIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimClip::BeginEvents(SizeT numEvents)
 {
@@ -62,6 +72,8 @@ AnimClip::BeginEvents(SizeT numEvents)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimClip::AddEvent(const AnimEvent& animEvent)
 {
@@ -71,6 +83,8 @@ AnimClip::AddEvent(const AnimEvent& animEvent)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimClip::EndEvents()
 {
@@ -93,6 +107,8 @@ AnimClip::EndEvents()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AnimClip::HasEvent(const StringAtom& name) const
 {
@@ -100,6 +116,8 @@ AnimClip::HasEvent(const StringAtom& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const AnimEvent&
 AnimClip::GetEventByName(const StringAtom& name) const
 {

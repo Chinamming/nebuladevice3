@@ -88,6 +88,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShaderServerBase::IsOpen() const
 {
@@ -95,6 +97,8 @@ ShaderServerBase::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShaderServerBase::HasShader(const Resources::ResourceId& resId) const
 {
@@ -102,6 +106,8 @@ ShaderServerBase::HasShader(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Dictionary<Resources::ResourceId, Ptr<CoreGraphics::Shader> >&
 ShaderServerBase::GetAllShaders() const
 {
@@ -109,6 +115,8 @@ ShaderServerBase::GetAllShaders() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::ShaderFeature::Mask
 ShaderServerBase::FeatureStringToMask(const Util::String& str)
 {
@@ -116,6 +124,8 @@ ShaderServerBase::FeatureStringToMask(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 ShaderServerBase::FeatureMaskToString(CoreGraphics::ShaderFeature::Mask mask)
 {
@@ -123,6 +133,8 @@ ShaderServerBase::FeatureMaskToString(CoreGraphics::ShaderFeature::Mask mask)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderServerBase::ResetFeatureBits()
 {
@@ -130,6 +142,8 @@ ShaderServerBase::ResetFeatureBits()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderServerBase::SetFeatureBits(CoreGraphics::ShaderFeature::Mask m)
 {
@@ -137,6 +151,8 @@ ShaderServerBase::SetFeatureBits(CoreGraphics::ShaderFeature::Mask m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderServerBase::ClearFeatureBits(CoreGraphics::ShaderFeature::Mask m)
 {
@@ -144,6 +160,8 @@ ShaderServerBase::ClearFeatureBits(CoreGraphics::ShaderFeature::Mask m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::ShaderFeature::Mask
 ShaderServerBase::GetFeatureBits() const
 {
@@ -151,6 +169,8 @@ ShaderServerBase::GetFeatureBits() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderServerBase::SetActiveShaderInstance(const Ptr<CoreGraphics::ShaderInstance>& shaderInst)
 {
@@ -158,6 +178,8 @@ ShaderServerBase::SetActiveShaderInstance(const Ptr<CoreGraphics::ShaderInstance
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderInstance>&
 ShaderServerBase::GetActiveShaderInstance() const
 {
@@ -165,6 +187,8 @@ ShaderServerBase::GetActiveShaderInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShaderServerBase::HasSharedVariableBySemantic(const CoreGraphics::ShaderVariable::Semantic& sem) const
 {
@@ -179,6 +203,8 @@ ShaderServerBase::HasSharedVariableBySemantic(const CoreGraphics::ShaderVariable
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ShaderServerBase::GetNumSharedVariables() const
 {
@@ -193,6 +219,8 @@ ShaderServerBase::GetNumSharedVariables() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariable>&
 ShaderServerBase::GetSharedVariableByIndex(IndexT i) const
 {
@@ -201,6 +229,8 @@ ShaderServerBase::GetSharedVariableByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariable>&
 ShaderServerBase::GetSharedVariableBySemantic(const CoreGraphics::ShaderVariable::Semantic& sem) const
 {

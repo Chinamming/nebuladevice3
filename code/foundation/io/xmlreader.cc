@@ -20,6 +20,8 @@ using namespace Math;
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 XmlReader::XmlReader() :
     xmlDocument(0),
     curNode(0)
@@ -28,6 +30,8 @@ XmlReader::XmlReader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 XmlReader::~XmlReader()
 {
     if (this->IsOpen())
@@ -82,6 +86,8 @@ XmlReader::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 XmlReader::Close()
 {
@@ -597,6 +603,8 @@ XmlReader::GetOptMatrix44(const char* name, const matrix44& defaultValue) const
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 XmlReader::HasContent() const
 {
@@ -607,6 +615,8 @@ XmlReader::HasContent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 XmlReader::GetContent() const
 {

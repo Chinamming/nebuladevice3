@@ -54,6 +54,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpClient::SetUserAgent(const Util::String& agent)
 {
@@ -61,6 +63,8 @@ HttpClient::SetUserAgent(const Util::String& agent)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 HttpClient::GetUserAgent() const
 {
@@ -69,4 +73,4 @@ HttpClient::GetUserAgent() const
 
 } // namespace Http
 //------------------------------------------------------------------------------
-#endif // __NEBULA3_HTTP_FILESYSTEM__
+#endif // __WII__

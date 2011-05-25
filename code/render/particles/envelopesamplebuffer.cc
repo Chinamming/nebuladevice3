@@ -9,6 +9,8 @@ namespace Particles
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 EnvelopeSampleBuffer::EnvelopeSampleBuffer() :
     numSamples(0),
     buffer(0)
@@ -17,6 +19,8 @@ EnvelopeSampleBuffer::EnvelopeSampleBuffer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 EnvelopeSampleBuffer::~EnvelopeSampleBuffer()
 {
     if (this->IsValid())
@@ -26,6 +30,8 @@ EnvelopeSampleBuffer::~EnvelopeSampleBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 EnvelopeSampleBuffer::Setup(const EmitterAttrs& emitterAttrs, SizeT numSamp)
 {
@@ -46,6 +52,8 @@ EnvelopeSampleBuffer::Setup(const EmitterAttrs& emitterAttrs, SizeT numSamp)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 EnvelopeSampleBuffer::Discard()
 {

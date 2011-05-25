@@ -21,12 +21,16 @@ using namespace Resources;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StateNode::StateNode()
 {
     // empty    
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StateNode::~StateNode()
 {
     n_assert(!this->shaderInstance.isvalid());
@@ -34,6 +38,8 @@ StateNode::~StateNode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 StateNode::CreateNodeInstance() const
 {
@@ -42,6 +48,8 @@ StateNode::CreateNodeInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StateNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 {
@@ -108,6 +116,8 @@ StateNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::State
 StateNode::GetResourceState() const
 {
@@ -128,6 +138,8 @@ StateNode::GetResourceState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StateNode::LoadResources()
 {
@@ -194,6 +206,8 @@ StateNode::LoadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StateNode::UnloadResources()
 {
@@ -263,6 +277,8 @@ StateNode::UpdateManagedTextureVariables(IndexT frameIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StateNode::ApplySharedState(IndexT frameIndex)
 {

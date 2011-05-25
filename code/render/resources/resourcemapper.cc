@@ -14,6 +14,8 @@ using namespace Core;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceMapper::ResourceMapper() :
     asyncEnabled(true),
     isAttached(false)
@@ -22,12 +24,16 @@ ResourceMapper::ResourceMapper() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceMapper::~ResourceMapper()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Rtti&
 ResourceMapper::GetResourceType() const
 {
@@ -36,6 +42,8 @@ ResourceMapper::GetResourceType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceMapper::OnAttachToResourceManager()
 {
@@ -44,6 +52,8 @@ ResourceMapper::OnAttachToResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceMapper::OnRemoveFromResourceManager()
 {
@@ -52,6 +62,8 @@ ResourceMapper::OnRemoveFromResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ManagedResource>
 ResourceMapper::OnCreateManagedResource(const Rtti& resType, const ResourceId& id, const Ptr<ResourceLoader>& optResourceLoader)
 {
@@ -60,6 +72,8 @@ ResourceMapper::OnCreateManagedResource(const Rtti& resType, const ResourceId& i
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceMapper::OnDiscardManagedResource(const Ptr<ManagedResource>& managedResource)
 {
@@ -67,6 +81,8 @@ ResourceMapper::OnDiscardManagedResource(const Ptr<ManagedResource>& managedReso
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceMapper::OnPrepare(bool waiting)
 {
@@ -74,6 +90,8 @@ ResourceMapper::OnPrepare(bool waiting)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceMapper::OnUpdate(IndexT frameIndex)
 {

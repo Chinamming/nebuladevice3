@@ -63,6 +63,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayMode::DisplayMode() :
     xPos(0),
@@ -108,6 +110,8 @@ DisplayMode::DisplayMode(uint w, uint h, PixelFormat::Code p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DisplayMode::DisplayMode(uint x, uint y, uint w, uint h, PixelFormat::Code p) :
     xPos(x),
@@ -121,6 +125,8 @@ DisplayMode::DisplayMode(uint x, uint y, uint w, uint h, PixelFormat::Code p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayMode::operator==(const DisplayMode& rhs) const
 {
@@ -133,6 +139,8 @@ DisplayMode::operator==(const DisplayMode& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplayMode::operator!=(const DisplayMode& rhs) const
 {
@@ -140,6 +148,8 @@ DisplayMode::operator!=(const DisplayMode& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayMode::SetXPos(uint x)
 {
@@ -147,6 +157,8 @@ DisplayMode::SetXPos(uint x)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 DisplayMode::GetXPos() const
 {
@@ -154,6 +166,8 @@ DisplayMode::GetXPos() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayMode::SetYPos(uint y)
 {
@@ -161,6 +175,8 @@ DisplayMode::SetYPos(uint y)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 DisplayMode::GetYPos() const
 {
@@ -168,6 +184,8 @@ DisplayMode::GetYPos() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayMode::SetWidth(uint w)
 {
@@ -175,6 +193,8 @@ DisplayMode::SetWidth(uint w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 DisplayMode::GetWidth() const
 {
@@ -182,6 +202,8 @@ DisplayMode::GetWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayMode::SetHeight(uint h)
 {
@@ -189,6 +211,8 @@ DisplayMode::SetHeight(uint h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 DisplayMode::GetHeight() const
 {
@@ -196,6 +220,8 @@ DisplayMode::GetHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayMode::SetPixelFormat(PixelFormat::Code p)
 {
@@ -203,6 +229,8 @@ DisplayMode::SetPixelFormat(PixelFormat::Code p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline PixelFormat::Code
 DisplayMode::GetPixelFormat() const
 {
@@ -210,6 +238,8 @@ DisplayMode::GetPixelFormat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplayMode::SetAspectRatio(float a)
 {
@@ -217,6 +247,8 @@ DisplayMode::SetAspectRatio(float a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 DisplayMode::GetAspectRatio() const
 {

@@ -17,12 +17,16 @@ __ImplementClass(IO::GameContentServer, 'IGCS', PS3::PS3GameContentServer);
 __ImplementInterfaceSingleton(IO::GameContentServer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 GameContentServer::GameContentServer()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GameContentServer::~GameContentServer()
 {
     __DestructInterfaceSingleton;

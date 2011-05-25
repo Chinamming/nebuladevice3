@@ -102,6 +102,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalAbstractLightEntity::SetLightType(LightType::Code c)
 {
@@ -109,6 +111,8 @@ InternalAbstractLightEntity::SetLightType(LightType::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline LightType::Code
 InternalAbstractLightEntity::GetLightType() const
 {
@@ -116,6 +120,8 @@ InternalAbstractLightEntity::GetLightType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalAbstractLightEntity::SetColor(const Math::float4& c)
 {
@@ -123,6 +129,8 @@ InternalAbstractLightEntity::SetColor(const Math::float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 InternalAbstractLightEntity::GetColor() const
 {
@@ -130,6 +138,8 @@ InternalAbstractLightEntity::GetColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalAbstractLightEntity::SetProjMapUvOffsetAndScale(const Math::float4& v)
 {
@@ -137,6 +147,8 @@ InternalAbstractLightEntity::SetProjMapUvOffsetAndScale(const Math::float4& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 InternalAbstractLightEntity::GetProjMapUvOffsetAndScale() const
 {
@@ -144,6 +156,8 @@ InternalAbstractLightEntity::GetProjMapUvOffsetAndScale() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalAbstractLightEntity::SetShadowBufferUvOffsetAndScale(const Math::float4& v)
 {
@@ -151,6 +165,8 @@ InternalAbstractLightEntity::SetShadowBufferUvOffsetAndScale(const Math::float4&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 InternalAbstractLightEntity::GetShadowBufferUvOffsetAndScale() const
 {
@@ -158,6 +174,8 @@ InternalAbstractLightEntity::GetShadowBufferUvOffsetAndScale() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalAbstractLightEntity::SetCastShadows(bool b)
 {
@@ -165,6 +183,8 @@ InternalAbstractLightEntity::SetCastShadows(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalAbstractLightEntity::GetCastShadows() const
 {
@@ -172,6 +192,8 @@ InternalAbstractLightEntity::GetCastShadows() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalAbstractLightEntity::GetInvTransform() const
 {
@@ -179,6 +201,8 @@ InternalAbstractLightEntity::GetInvTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalAbstractLightEntity::GetProjTransform() const
 {
@@ -186,6 +210,8 @@ InternalAbstractLightEntity::GetProjTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalAbstractLightEntity::GetInvLightProjTransform() const
 {
@@ -193,6 +219,8 @@ InternalAbstractLightEntity::GetInvLightProjTransform() const
 }       
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 InternalAbstractLightEntity::GetCastShadowsThisFrame() const
 {
@@ -200,6 +228,8 @@ InternalAbstractLightEntity::GetCastShadowsThisFrame() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 InternalAbstractLightEntity::SetCastShadowsThisFrame(bool val)
 {
@@ -207,6 +237,8 @@ InternalAbstractLightEntity::SetCastShadowsThisFrame(bool val)
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 InternalAbstractLightEntity::SetShadowTransform(const Math::matrix44& val)
 {
@@ -215,6 +247,8 @@ InternalAbstractLightEntity::SetShadowTransform(const Math::matrix44& val)
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float 
 InternalAbstractLightEntity::GetShadowIntensity() const
 {
@@ -222,6 +256,8 @@ InternalAbstractLightEntity::GetShadowIntensity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 InternalAbstractLightEntity::SetShadowIntensity(float val)
 {

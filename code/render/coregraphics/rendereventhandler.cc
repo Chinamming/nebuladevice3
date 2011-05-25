@@ -10,18 +10,24 @@ namespace CoreGraphics
 __ImplementClass(CoreGraphics::RenderEventHandler, 'RDEH', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderEventHandler::RenderEventHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderEventHandler::~RenderEventHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderEventHandler::OnAttach()
 {
@@ -29,6 +35,8 @@ RenderEventHandler::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderEventHandler::OnRemove()
 {

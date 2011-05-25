@@ -54,6 +54,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceLoader::SetState(Resource::State s)
 {
@@ -61,6 +63,8 @@ ResourceLoader::SetState(Resource::State s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Resource::State
 ResourceLoader::GetState() const
 {

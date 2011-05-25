@@ -11,6 +11,8 @@ namespace Win360
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360MemoryPool::Win360MemoryPool() :
     heapType(Memory::InvalidHeapType),
     blockSize(0),
@@ -27,6 +29,8 @@ Win360MemoryPool::Win360MemoryPool() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360MemoryPool::~Win360MemoryPool()
 {
     #if NEBULA3_MEMORY_STATS
@@ -83,6 +87,8 @@ Win360MemoryPool::Setup(Memory::HeapType heapType_, uint blockSize_, uint numBlo
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 Win360MemoryPool::Alloc()
 {
@@ -106,6 +112,8 @@ Win360MemoryPool::Alloc()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win360MemoryPool::Free(void* ptr)
 {

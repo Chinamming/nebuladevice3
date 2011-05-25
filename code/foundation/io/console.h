@@ -82,6 +82,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Console::IsOpen() const
 {
@@ -89,6 +91,8 @@ Console::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::Array<Ptr<ConsoleHandler> >
 Console::GetHandlers() const
 {

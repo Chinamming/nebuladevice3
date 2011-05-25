@@ -35,6 +35,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ID3DXEffectPool* 
 D3D9ShaderServer::GetD3D9EffectPool() const
 {

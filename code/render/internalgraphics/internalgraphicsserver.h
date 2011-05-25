@@ -125,6 +125,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalGraphicsServer::IsOpen() const
 {
@@ -132,6 +134,8 @@ InternalGraphicsServer::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 InternalGraphicsServer::SetRenderDebug(bool b)
 {
@@ -139,6 +143,8 @@ InternalGraphicsServer::SetRenderDebug(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 InternalGraphicsServer::GetRenderDebug() const
 {

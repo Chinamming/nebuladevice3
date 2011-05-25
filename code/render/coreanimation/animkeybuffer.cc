@@ -13,6 +13,8 @@ __ImplementClass(CoreAnimation::AnimKeyBuffer, 'ANKB', Core::RefCounted);
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimKeyBuffer::AnimKeyBuffer() :
     numKeys(0),
     mapCount(0),
@@ -22,6 +24,8 @@ AnimKeyBuffer::AnimKeyBuffer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimKeyBuffer::~AnimKeyBuffer()
 {
     if (this->IsValid())
@@ -31,6 +35,8 @@ AnimKeyBuffer::~AnimKeyBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimKeyBuffer::Setup(SizeT numKeys_)
 {
@@ -42,6 +48,8 @@ AnimKeyBuffer::Setup(SizeT numKeys_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimKeyBuffer::Discard()
 {
@@ -53,6 +61,8 @@ AnimKeyBuffer::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 AnimKeyBuffer::Map()
 {
@@ -62,6 +72,8 @@ AnimKeyBuffer::Map()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimKeyBuffer::Unmap()
 {

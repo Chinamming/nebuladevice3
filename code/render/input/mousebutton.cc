@@ -9,6 +9,8 @@ namespace Input
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String
 MouseButton::ToString(Code code)
 {
@@ -25,6 +27,8 @@ MouseButton::ToString(Code code)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseButton::Code
 MouseButton::FromString(const Util::String& str)
 {

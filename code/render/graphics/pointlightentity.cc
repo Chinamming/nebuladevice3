@@ -13,12 +13,16 @@ __ImplementClass(Graphics::PointLightEntity, 'ASLP', Graphics::AbstractLightEnti
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 PointLightEntity::PointLightEntity()
 {
     this->SetLightType(Lighting::LightType::Point);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PointLightEntity::Setup(const Ptr<Stage>& stage_)
 {
@@ -37,6 +41,8 @@ PointLightEntity::Setup(const Ptr<Stage>& stage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PointLightEntity::SetTransformFromPosDirAndRange(const point& pos, const vector& dir, float range)
 {

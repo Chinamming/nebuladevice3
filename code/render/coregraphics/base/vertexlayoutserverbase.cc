@@ -15,6 +15,8 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VertexLayoutServerBase::VertexLayoutServerBase() :
     isOpen(false)
 {
@@ -22,12 +24,16 @@ VertexLayoutServerBase::VertexLayoutServerBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VertexLayoutServerBase::~VertexLayoutServerBase()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VertexLayoutServerBase::Open()
 {
@@ -37,6 +43,8 @@ VertexLayoutServerBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VertexLayoutServerBase::Close()
 {
@@ -51,6 +59,8 @@ VertexLayoutServerBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<VertexLayout>
 VertexLayoutServerBase::CreateSharedVertexLayout(const Util::Array<VertexComponent>& vertexComponents)
 {

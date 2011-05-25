@@ -71,6 +71,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Message::CheckId(const Messaging::Id& id) const
 {
@@ -78,6 +80,8 @@ Message::CheckId(const Messaging::Id& id) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Message::SetHandled(bool b)
 {
@@ -85,6 +89,8 @@ Message::SetHandled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Message::Handled() const
 {
@@ -92,6 +98,8 @@ Message::Handled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Message::SetDeferred(bool b)
 {
@@ -99,6 +107,8 @@ Message::SetDeferred(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Message::IsDeferred() const
 {
@@ -106,6 +116,8 @@ Message::IsDeferred() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Message::SetDeferredHandled(bool b)
 {
@@ -113,6 +125,8 @@ Message::SetDeferredHandled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Message::DeferredHandled() const
 {

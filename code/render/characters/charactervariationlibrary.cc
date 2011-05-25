@@ -12,18 +12,24 @@ using namespace CoreAnimation;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterVariationLibrary::CharacterVariationLibrary()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterVariationLibrary::~CharacterVariationLibrary()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterVariationLibrary::Setup(const Ptr<AnimResource>& animRes, const CharacterSkeleton& skeleton)
 {
@@ -93,6 +99,8 @@ CharacterVariationLibrary::Setup(const Ptr<AnimResource>& animRes, const Charact
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterVariationLibrary::Discard()
 {
@@ -101,6 +109,8 @@ CharacterVariationLibrary::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<AnimResource>&
 CharacterVariationLibrary::GetAnimResource() const
 {
@@ -108,6 +118,8 @@ CharacterVariationLibrary::GetAnimResource() const
 }                                    
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 CharacterVariationLibrary::HasVariation(const Util::StringAtom& name) const
 {

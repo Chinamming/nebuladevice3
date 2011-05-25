@@ -25,6 +25,8 @@ using namespace Characters;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalView::InternalView() :
     isAttachedToServer(false)
 {
@@ -32,6 +34,8 @@ InternalView::InternalView() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalView::~InternalView()
 {
     // check that we've been properly cleaned up
@@ -44,6 +48,8 @@ InternalView::~InternalView()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalView::OnAttachToServer()
 {
@@ -62,6 +68,8 @@ InternalView::OnAttachToServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalView::OnRemoveFromServer()
 {
@@ -235,6 +243,8 @@ InternalView::RenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalView::SetCameraEntity(const Ptr<InternalCameraEntity>& newCameraEntity)
 {

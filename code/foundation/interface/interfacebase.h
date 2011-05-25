@@ -51,6 +51,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InterfaceBase::SetCompanyName(const Util::StringAtom& n)
 {
@@ -58,6 +60,8 @@ InterfaceBase::SetCompanyName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InterfaceBase::GetCompanyName() const
 {
@@ -65,6 +69,8 @@ InterfaceBase::GetCompanyName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InterfaceBase::SetAppName(const Util::StringAtom& n)
 {
@@ -72,6 +78,8 @@ InterfaceBase::SetAppName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InterfaceBase::GetAppName() const
 {
@@ -79,6 +87,8 @@ InterfaceBase::GetAppName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InterfaceBase::SetRootDirectory(const Util::StringAtom& d)
 {
@@ -86,6 +96,8 @@ InterfaceBase::SetRootDirectory(const Util::StringAtom& d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InterfaceBase::GetRootDirectory() const
 {
