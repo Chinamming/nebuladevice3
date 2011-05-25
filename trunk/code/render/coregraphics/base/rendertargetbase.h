@@ -48,18 +48,14 @@ public:
     void SetDefaultRenderTarget(bool b);
     /// get default render target flag
     bool IsDefaultRenderTarget() const;
-	/// set render target width
-	void SetWidth(SizeT w);
-	/// get width of render target in pixels
-	SizeT GetWidth() const;
-	/// set render target height
-	void SetHeight(SizeT h);
-	/// get height of render target in pixels
-	SizeT GetHeight() const;
-	/// set render target relative width
-	void SetRelativeWidth(float w);
-	/// set render target relative height
-	void SetRelativeHeight(float h);
+    /// set render target width
+    void SetWidth(SizeT w);
+    /// get width of render target in pixels
+    SizeT GetWidth() const;
+    /// set render target height
+    void SetHeight(SizeT h);
+    /// get height of render target in pixels
+    SizeT GetHeight() const;
     /// set antialias quality
     void SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code c);
     /// get anti-alias-quality
@@ -167,8 +163,6 @@ protected:
     CoreGraphics::BatchType::Code batchType;
     SizeT width;
     SizeT height;
-	float relWidth;
-	float relHeight;
     bool resolveTextureDimensionsValid;
     bool resolveRectValid;
     SizeT resolveTextureWidth;
@@ -195,6 +189,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::IsValid() const
 {
@@ -202,6 +198,8 @@ RenderTargetBase::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetDefaultRenderTarget(bool b)
 {
@@ -209,6 +207,8 @@ RenderTargetBase::SetDefaultRenderTarget(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::IsDefaultRenderTarget() const
 {
@@ -216,6 +216,8 @@ RenderTargetBase::IsDefaultRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetWidth(SizeT w)
 {
@@ -223,6 +225,8 @@ RenderTargetBase::SetWidth(SizeT w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderTargetBase::GetWidth() const
 {
@@ -230,6 +234,8 @@ RenderTargetBase::GetWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetHeight(SizeT h)
 {
@@ -237,6 +243,8 @@ RenderTargetBase::SetHeight(SizeT h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderTargetBase::GetHeight() const
 {
@@ -244,20 +252,8 @@ RenderTargetBase::GetHeight() const
 }
 
 //------------------------------------------------------------------------------
-inline void
-RenderTargetBase::SetRelativeWidth(float w)
-{
-	this->relWidth = w;
-}
-
-//------------------------------------------------------------------------------
-inline void
-RenderTargetBase::SetRelativeHeight(float h)
-{
-	this->relHeight = h;
-}
-
-//------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aaq)
 {
@@ -265,6 +261,8 @@ RenderTargetBase::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aaq)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::AntiAliasQuality::Code
 RenderTargetBase::GetAntiAliasQuality() const
 {
@@ -272,6 +270,8 @@ RenderTargetBase::GetAntiAliasQuality() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetColorBufferFormat(CoreGraphics::PixelFormat::Code colorFormat)
 {
@@ -279,6 +279,8 @@ RenderTargetBase::SetColorBufferFormat(CoreGraphics::PixelFormat::Code colorForm
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::PixelFormat::Code
 RenderTargetBase::GetColorBufferFormat() const
 {
@@ -286,6 +288,8 @@ RenderTargetBase::GetColorBufferFormat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::HasDepthStencilBuffer() const
 {
@@ -293,6 +297,8 @@ RenderTargetBase::HasDepthStencilBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetClearColor(const Math::float4& c)
 {
@@ -300,6 +306,8 @@ RenderTargetBase::SetClearColor(const Math::float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 RenderTargetBase::GetClearColor() const
 {
@@ -307,6 +315,8 @@ RenderTargetBase::GetClearColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetClearDepth(float d)
 {
@@ -314,6 +324,8 @@ RenderTargetBase::SetClearDepth(float d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 RenderTargetBase::GetClearDepth() const
 {
@@ -321,6 +333,8 @@ RenderTargetBase::GetClearDepth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetClearStencil(uchar s)
 {
@@ -328,6 +342,8 @@ RenderTargetBase::SetClearStencil(uchar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uchar
 RenderTargetBase::GetClearStencil() const
 {
@@ -335,6 +351,8 @@ RenderTargetBase::GetClearStencil() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetResolveTextureResourceId(const Resources::ResourceId& resId)
 {
@@ -342,6 +360,8 @@ RenderTargetBase::SetResolveTextureResourceId(const Resources::ResourceId& resId
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 RenderTargetBase::GetResolveTextureResourceId() const
 {
@@ -349,6 +369,8 @@ RenderTargetBase::GetResolveTextureResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetResolveDepthTextureResourceId(const Resources::ResourceId& resId)
 {
@@ -356,6 +378,8 @@ RenderTargetBase::SetResolveDepthTextureResourceId(const Resources::ResourceId& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 RenderTargetBase::GetResolveDepthTextureResourceId() const
 {
@@ -363,6 +387,8 @@ RenderTargetBase::GetResolveDepthTextureResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::HasResolveTexture() const
 {
@@ -370,6 +396,8 @@ RenderTargetBase::HasResolveTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 RenderTargetBase::GetResolveTexture() const
 {
@@ -378,6 +406,8 @@ RenderTargetBase::GetResolveTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::HasCPUResolveTexture() const
 {
@@ -385,6 +415,8 @@ RenderTargetBase::HasCPUResolveTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>&
 RenderTargetBase::GetCPUResolveTexture() const
 {
@@ -393,6 +425,8 @@ RenderTargetBase::GetCPUResolveTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::HasDepthResolveTexture() const
 {
@@ -400,6 +434,8 @@ RenderTargetBase::HasDepthResolveTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Texture>& 
 RenderTargetBase::GetDepthResolveTexture() const
 {
@@ -408,6 +444,8 @@ RenderTargetBase::GetDepthResolveTexture() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetMipMapsEnabled(bool b)
 {
@@ -415,6 +453,8 @@ RenderTargetBase::SetMipMapsEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::AreMipMapsEnabled() const
 {
@@ -422,6 +462,8 @@ RenderTargetBase::AreMipMapsEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetResolveTextureWidth(SizeT w)
 {
@@ -430,6 +472,8 @@ RenderTargetBase::SetResolveTextureWidth(SizeT w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderTargetBase::GetResolveTextureWidth() const
 {
@@ -437,6 +481,8 @@ RenderTargetBase::GetResolveTextureWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetResolveTextureHeight(SizeT h)
 {
@@ -445,6 +491,8 @@ RenderTargetBase::SetResolveTextureHeight(SizeT h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderTargetBase::GetResolveTextureHeight() const
 {
@@ -452,6 +500,8 @@ RenderTargetBase::GetResolveTextureHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetResolveRect(const Math::rectangle<int>& r)
 {
@@ -460,6 +510,8 @@ RenderTargetBase::SetResolveRect(const Math::rectangle<int>& r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::rectangle<int>&
 RenderTargetBase::GetResolveRect() const
 {
@@ -467,6 +519,8 @@ RenderTargetBase::GetResolveRect() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetResolveTargetCpuAccess(bool b)
 {
@@ -474,6 +528,8 @@ RenderTargetBase::SetResolveTargetCpuAccess(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderTargetBase::GetResolveTargetCpuAccess() const
 {
@@ -481,6 +537,8 @@ RenderTargetBase::GetResolveTargetCpuAccess() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetMRTIndex(IndexT i)
 {
@@ -488,6 +546,8 @@ RenderTargetBase::SetMRTIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 RenderTargetBase::GetMRTIndex() const
 {
@@ -495,6 +555,8 @@ RenderTargetBase::GetMRTIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetClearFlags(uint f)
 {
@@ -502,6 +564,8 @@ RenderTargetBase::SetClearFlags(uint f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 RenderTargetBase::GetClearFlags() const
 {

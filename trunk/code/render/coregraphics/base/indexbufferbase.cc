@@ -12,6 +12,8 @@ __ImplementClass(Base::IndexBufferBase, 'IXBB', Base::ResourceBase);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexBufferBase::IndexBufferBase() :
     indexType(IndexType::None),
     numIndices(0)
@@ -20,6 +22,8 @@ IndexBufferBase::IndexBufferBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexBufferBase::~IndexBufferBase()
 {
     // empty

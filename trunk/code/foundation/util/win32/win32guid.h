@@ -68,6 +68,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void*
 Win32Guid::operator new(size_t size)
 {
@@ -83,6 +85,8 @@ Win32Guid::operator new(size_t size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 Win32Guid::operator delete(void* ptr)
 {
@@ -94,6 +98,8 @@ Win32Guid::operator delete(void* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win32Guid::Win32Guid()
 {
@@ -101,6 +107,8 @@ Win32Guid::Win32Guid()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win32Guid::Win32Guid(const Win32Guid& rhs)
 {
@@ -108,6 +116,8 @@ Win32Guid::Win32Guid(const Win32Guid& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win32Guid::Win32Guid(const unsigned char* ptr, SizeT size)
 {
@@ -116,6 +126,8 @@ Win32Guid::Win32Guid(const unsigned char* ptr, SizeT size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Win32Guid::BinarySize()
 {

@@ -66,6 +66,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>& 
 MultipleRenderTargetBase::GetRenderTarget(IndexT i) const
 {
@@ -74,6 +76,8 @@ MultipleRenderTargetBase::GetRenderTarget(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT 
 MultipleRenderTargetBase::GetNumRendertargets() const
 {
@@ -81,6 +85,8 @@ MultipleRenderTargetBase::GetNumRendertargets() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MultipleRenderTargetBase::SetClearDepth(float d)
 {
@@ -89,6 +95,8 @@ MultipleRenderTargetBase::SetClearDepth(float d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 MultipleRenderTargetBase::GetClearDepth() const
 {
@@ -96,6 +104,8 @@ MultipleRenderTargetBase::GetClearDepth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MultipleRenderTargetBase::SetClearStencil(uchar s)
 {
@@ -104,6 +114,8 @@ MultipleRenderTargetBase::SetClearStencil(uchar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uchar
 MultipleRenderTargetBase::GetClearStencil() const
 {

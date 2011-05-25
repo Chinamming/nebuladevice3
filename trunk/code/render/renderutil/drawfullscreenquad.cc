@@ -14,6 +14,8 @@ using namespace CoreGraphics;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DrawFullScreenQuad::DrawFullScreenQuad() :
     isValid(false)
 {
@@ -21,6 +23,8 @@ DrawFullScreenQuad::DrawFullScreenQuad() :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 DrawFullScreenQuad::~DrawFullScreenQuad()
 {
     if (this->IsValid())
@@ -30,6 +34,8 @@ DrawFullScreenQuad::~DrawFullScreenQuad()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DrawFullScreenQuad::Setup(SizeT rtWidth, SizeT rtHeight)
 {
@@ -88,6 +94,8 @@ DrawFullScreenQuad::Setup(SizeT rtWidth, SizeT rtHeight)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DrawFullScreenQuad::Discard()
 {
@@ -98,6 +106,8 @@ DrawFullScreenQuad::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DrawFullScreenQuad::Draw()
 {

@@ -11,6 +11,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterJoint::CharacterJoint() :
     poseTranslation(vector::nullvec()),
     poseRotation(quaternion::identity()),
@@ -24,6 +26,8 @@ CharacterJoint::CharacterJoint() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterJoint::~CharacterJoint()
 {
     this->parentJointIndex = InvalidIndex;
@@ -32,6 +36,8 @@ CharacterJoint::~CharacterJoint()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterJoint::Setup(IndexT parentIndex, const CharacterJoint* parent, const vector& t, const quaternion& r, const vector& s, const StringAtom& n, matrix44* invPoseMatrixPtr_)
 {

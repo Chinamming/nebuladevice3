@@ -52,6 +52,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 sphere::sphere() :
     r(1.0f)
@@ -60,6 +62,8 @@ sphere::sphere() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 sphere::sphere(const point& _p, scalar _r) :
     p(_p),
@@ -69,6 +73,8 @@ sphere::sphere(const point& _p, scalar _r) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 sphere::sphere(scalar _x, scalar _y, scalar _z, scalar _r) :
     p(_x, _y, _z),
@@ -78,6 +84,8 @@ sphere::sphere(scalar _x, scalar _y, scalar _z, scalar _r) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 sphere::sphere(const sphere& rhs) :
     p(rhs.p),
@@ -87,6 +95,8 @@ sphere::sphere(const sphere& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 sphere::set(const point& _p, scalar _r)
 {
@@ -95,6 +105,8 @@ sphere::set(const point& _p, scalar _r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 sphere::set(scalar _x, scalar _y, scalar _z, scalar _r)
 {
@@ -103,6 +115,8 @@ sphere::set(scalar _x, scalar _y, scalar _z, scalar _r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 sphere::intersects(const sphere& s) const 
 {

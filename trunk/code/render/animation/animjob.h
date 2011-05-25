@@ -151,6 +151,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetEnqueueMode(AnimJobEnqueueMode::Code m)
 {
@@ -158,6 +160,8 @@ AnimJob::SetEnqueueMode(AnimJobEnqueueMode::Code m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline AnimJobEnqueueMode::Code
 AnimJob::GetEnqueueMode() const
 {
@@ -165,6 +169,8 @@ AnimJob::GetEnqueueMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetName(const Util::StringAtom& n)
 {
@@ -172,6 +178,8 @@ AnimJob::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 AnimJob::GetName() const
 {
@@ -179,6 +187,8 @@ AnimJob::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetExclusiveTag(IndexT i)
 {
@@ -186,6 +196,8 @@ AnimJob::SetExclusiveTag(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 AnimJob::GetExclusiveTag() const
 {
@@ -193,6 +205,8 @@ AnimJob::GetExclusiveTag() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetTrackIndex(IndexT i)
 {
@@ -200,6 +214,8 @@ AnimJob::SetTrackIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 AnimJob::GetTrackIndex() const
 {
@@ -207,6 +223,8 @@ AnimJob::GetTrackIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetBaseTime(Timing::Tick t)
 {
@@ -214,6 +232,8 @@ AnimJob::SetBaseTime(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimJob::GetBaseTime() const
 {
@@ -221,6 +241,8 @@ AnimJob::GetBaseTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetStartTime(Timing::Tick t)
 {
@@ -229,6 +251,8 @@ AnimJob::SetStartTime(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimJob::GetStartTime() const
 {
@@ -236,6 +260,8 @@ AnimJob::GetStartTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetDuration(Timing::Tick t)
 {
@@ -243,6 +269,8 @@ AnimJob::SetDuration(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimJob::GetDuration() const
 {
@@ -250,6 +278,8 @@ AnimJob::GetDuration() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimJob::IsInfinite() const
 {
@@ -257,6 +287,8 @@ AnimJob::IsInfinite() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetFadeInTime(Timing::Tick t)
 {
@@ -264,6 +296,8 @@ AnimJob::SetFadeInTime(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimJob::GetFadeInTime() const
 {
@@ -271,12 +305,16 @@ AnimJob::GetFadeInTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetFadeOutTime(Timing::Tick t)
 {
     this->fadeOutTime = t;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimJob::GetFadeOutTime() const
 {
@@ -284,6 +322,8 @@ AnimJob::GetFadeOutTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetBlendWeight(float w)
 {
@@ -291,6 +331,8 @@ AnimJob::SetBlendWeight(float w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 AnimJob::GetBlendWeight() const
 {
@@ -298,6 +340,8 @@ AnimJob::GetBlendWeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 AnimJob::SetTimeFactor(float f)
 {
@@ -305,6 +349,8 @@ AnimJob::SetTimeFactor(float f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 AnimJob::GetTimeFactor() const
 {
@@ -312,6 +358,8 @@ AnimJob::GetTimeFactor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimJob::SetTimeOffset(Timing::Tick t)
 {
@@ -319,6 +367,8 @@ AnimJob::SetTimeOffset(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimJob::GetTimeOffset() const
 {

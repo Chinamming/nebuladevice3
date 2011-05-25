@@ -73,6 +73,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceLump::IsValid() const
 {
@@ -80,6 +82,8 @@ ResourceLump::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceLump::IsLocked() const
 {
@@ -87,6 +91,8 @@ ResourceLump::IsLocked() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourceLump::GetFirstBlockIndex() const
 {
@@ -95,6 +101,8 @@ ResourceLump::GetFirstBlockIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourceLump::GetNumBlocks() const
 {
@@ -103,6 +111,8 @@ ResourceLump::GetNumBlocks() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourceLump::GetBlockSize() const
 {
@@ -111,6 +121,8 @@ ResourceLump::GetBlockSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 ResourceLump::GetStartAddress() const
 {
@@ -119,6 +131,8 @@ ResourceLump::GetStartAddress() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourceLump::GetByteSize() const
 {

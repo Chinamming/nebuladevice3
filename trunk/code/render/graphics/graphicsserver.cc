@@ -16,6 +16,8 @@ using namespace RenderModules;
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsServer::GraphicsServer() :
     isOpen(false),
     frameCount(0)
@@ -24,6 +26,8 @@ GraphicsServer::GraphicsServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsServer::~GraphicsServer()
 {
     n_assert(!this->isOpen);
@@ -35,6 +39,8 @@ GraphicsServer::~GraphicsServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::Open()
 {
@@ -44,6 +50,8 @@ GraphicsServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::Close()
 {
@@ -55,6 +63,8 @@ GraphicsServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Stage>
 GraphicsServer::CreateStage(const Util::StringAtom& name, const Util::Array<Ptr<Visibility::VisibilitySystemBase> >& visSystems)
 {
@@ -86,6 +96,8 @@ GraphicsServer::DiscardStage(const Ptr<Stage>& stage)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::DiscardAllStages()
 {
@@ -99,6 +111,8 @@ GraphicsServer::DiscardAllStages()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 GraphicsServer::HasStage(const StringAtom& stageName) const
 {
@@ -106,6 +120,8 @@ GraphicsServer::HasStage(const StringAtom& stageName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Stage>&
 GraphicsServer::GetStageByName(const StringAtom& stageName) const
 {
@@ -113,6 +129,8 @@ GraphicsServer::GetStageByName(const StringAtom& stageName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<Stage> >&
 GraphicsServer::GetStages() const
 {
@@ -120,6 +138,8 @@ GraphicsServer::GetStages() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<View>
 GraphicsServer::CreateView(const Core::Rtti& viewClass, const Util::StringAtom& viewName, const Util::StringAtom& stageName, const Resources::ResourceId& frameShaderName, bool isDefaultView)
 {
@@ -164,6 +184,8 @@ GraphicsServer::DiscardView(const Ptr<View>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 GraphicsServer::SetDefaultView(const Ptr<View>& view)
 {
@@ -179,6 +201,8 @@ GraphicsServer::SetDefaultView(const Ptr<View>& view)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::DiscardAllViews()
 {
@@ -194,6 +218,8 @@ GraphicsServer::DiscardAllViews()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 GraphicsServer::HasView(const StringAtom& viewName) const
 {
@@ -201,6 +227,8 @@ GraphicsServer::HasView(const StringAtom& viewName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<View>&
 GraphicsServer::GetViewByName(const StringAtom& viewName) const
 {
@@ -208,6 +236,8 @@ GraphicsServer::GetViewByName(const StringAtom& viewName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<View> >&
 GraphicsServer::GetViews() const
 {
@@ -215,6 +245,8 @@ GraphicsServer::GetViews() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<View>&
 GraphicsServer::GetDefaultView() const
 {
@@ -222,6 +254,8 @@ GraphicsServer::GetDefaultView() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::OnFrame()
 {
@@ -242,6 +276,8 @@ GraphicsServer::OnFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::RegisterRenderModule(const Ptr<RenderModule>& renderModule)
 {
@@ -250,6 +286,8 @@ GraphicsServer::RegisterRenderModule(const Ptr<RenderModule>& renderModule)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsServer::UnregisterRenderModule(const Ptr<RenderModule>& renderModule)
 {
@@ -259,6 +297,8 @@ GraphicsServer::UnregisterRenderModule(const Ptr<RenderModule>& renderModule)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Ptr<RenderModule> >&
 GraphicsServer::GetRenderModules() const
 {

@@ -162,6 +162,8 @@ Factory::ClassExists(const FourCC fourCC) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Rtti*
 Factory::GetClassRtti(const String& className) const
 {
@@ -171,6 +173,8 @@ Factory::GetClassRtti(const String& className) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Rtti*
 Factory::GetClassRtti(const FourCC& classFourCC) const
 {

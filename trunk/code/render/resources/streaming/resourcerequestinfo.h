@@ -50,6 +50,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ResourceId&
 ResourceRequestInfo::GetResourceId() const
 {
@@ -57,6 +59,8 @@ ResourceRequestInfo::GetResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceRequestInfo::SetResourceId(const ResourceId& resourceId)
 {
@@ -64,6 +68,8 @@ ResourceRequestInfo::SetResourceId(const ResourceId& resourceId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Core::Rtti*
 ResourceRequestInfo::GetResType() const
 {
@@ -71,6 +77,8 @@ ResourceRequestInfo::GetResType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceRequestInfo::SetResType(const Core::Rtti* resType)
 {
@@ -84,6 +92,8 @@ ResourceRequestInfo::IsAutoManaged() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceRequestInfo::SetAutoManaged(bool autoManaged)
 {

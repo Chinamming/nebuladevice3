@@ -10,6 +10,7 @@
 #include "mayalegacy/mayaenvcmd.h"
 #include "mayalegacy/mayaqueryshadercmd.h"
 #include "mayalegacy/mayaremotecontrolcmd.h"
+#include "mayacommands/nebula3exporter.h"
 
 #define MNoPluginEntry
 #define MNoVersionString
@@ -56,6 +57,8 @@ MayaCommandRegistry::Setup(MFnPlugin& fnPlugin)
     fnPlugin.registerCommand("queryShader", MayaQueryShaderCmd::creator, MayaQueryShaderCmd::getSyntax);
     fnPlugin.registerCommand("remoteControl", MayaRemoteControlCmd::creator, MayaRemoteControlCmd::getSyntax);
 
+	fnPlugin.registerFileTranslator( "N3Binary", "none",Nebula3Exporter::creator);  
+
     this->isValid = true;
 }
 
@@ -66,6 +69,7 @@ void
 MayaCommandRegistry::Discard(MFnPlugin& fnPlugin)
 {
     n_assert(this->IsValid());
+	fnPlugin.deregisterFileTranslator( "N3Binary" );
 
     // unregister legacy commands
     fnPlugin.deregisterCommand("remoteControl");

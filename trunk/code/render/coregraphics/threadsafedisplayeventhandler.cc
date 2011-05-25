@@ -12,12 +12,16 @@ __ImplementClass(CoreGraphics::ThreadSafeDisplayEventHandler, 'TDEH', CoreGraphi
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ThreadSafeDisplayEventHandler::ThreadSafeDisplayEventHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ThreadSafeDisplayEventHandler::~ThreadSafeDisplayEventHandler()
 {
     // empty

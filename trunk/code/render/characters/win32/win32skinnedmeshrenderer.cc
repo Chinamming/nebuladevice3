@@ -22,12 +22,16 @@ using namespace Win360;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32SkinnedMeshRenderer::Win32SkinnedMeshRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32SkinnedMeshRenderer::~Win32SkinnedMeshRenderer()
 {
     __DestructSingleton;    

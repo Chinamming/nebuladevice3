@@ -73,6 +73,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityClusterSystem::IncrAcceptedVisChecks()
 {
@@ -80,6 +82,8 @@ VisibilityClusterSystem::IncrAcceptedVisChecks()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityClusterSystem::IncrRejectedVisChecks()
 {
@@ -87,12 +91,16 @@ VisibilityClusterSystem::IncrRejectedVisChecks()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::BitField<64>&
 VisibilityClusterSystem::GetVisibilityClusterBitMask() const
 {
     return this->visibilityClusterBitMask;
 }     
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint 
 VisibilityClusterSystem::GetObserverBitMask() const
 {

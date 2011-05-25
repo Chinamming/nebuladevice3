@@ -93,6 +93,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderShape::IsValid() const
 {
@@ -100,6 +102,8 @@ RenderShape::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Threading::ThreadId
 RenderShape::GetThreadId() const
 {
@@ -107,6 +111,8 @@ RenderShape::GetThreadId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline RenderShape::Type
 RenderShape::GetShapeType() const
 {
@@ -114,6 +120,8 @@ RenderShape::GetShapeType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 RenderShape::GetModelTransform() const
 {
@@ -121,6 +129,8 @@ RenderShape::GetModelTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline PrimitiveTopology::Code
 RenderShape::GetTopology() const
 {
@@ -129,6 +139,8 @@ RenderShape::GetTopology() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderShape::GetNumPrimitives() const
 {
@@ -137,6 +149,8 @@ RenderShape::GetNumPrimitives() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const void*
 RenderShape::GetVertexData() const
 {
@@ -146,6 +160,8 @@ RenderShape::GetVertexData() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderShape::GetVertexWidth() const
 {
@@ -154,6 +170,8 @@ RenderShape::GetVertexWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 RenderShape::GetNumVertices() const
 {
@@ -162,6 +180,8 @@ RenderShape::GetNumVertices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const void*
 RenderShape::GetIndexData() const
 {
@@ -171,6 +191,8 @@ RenderShape::GetIndexData() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexType::Code
 RenderShape::GetIndexType() const
 {
@@ -179,6 +201,8 @@ RenderShape::GetIndexType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 RenderShape::GetColor() const
 {

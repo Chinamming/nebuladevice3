@@ -10,18 +10,24 @@ namespace Characters
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinList::CharacterSkinList()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinList::~CharacterSkinList()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinList::SetName(const StringAtom& n)
 {
@@ -29,6 +35,8 @@ CharacterSkinList::SetName(const StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const StringAtom&
 CharacterSkinList::GetName() const
 {
@@ -36,6 +44,8 @@ CharacterSkinList::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinList::SetSkins(const Array<StringAtom>& s)
 {
@@ -43,6 +53,8 @@ CharacterSkinList::SetSkins(const Array<StringAtom>& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Array<Util::StringAtom>&
 CharacterSkinList::GetSkins() const
 {

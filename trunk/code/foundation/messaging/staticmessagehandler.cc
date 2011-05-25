@@ -8,6 +8,8 @@
 namespace Messaging
 {
 //------------------------------------------------------------------------------
+/**
+*/
 template<> void
 StaticMessageHandler::Dispatch(const Ptr<Core::RefCounted>& obj, const Ptr<Message>& msg)
 {

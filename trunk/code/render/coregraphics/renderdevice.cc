@@ -22,12 +22,16 @@ __ImplementClass(CoreGraphics::RenderDevice, 'RDVC', PS3::PS3RenderDevice);
 __ImplementSingleton(CoreGraphics::RenderDevice);
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderDevice::RenderDevice()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderDevice::~RenderDevice()
 {
     __DestructSingleton;

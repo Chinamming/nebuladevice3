@@ -19,12 +19,16 @@ __ImplementClass(CoreGraphics::ShapeRenderer, 'SHPR', PS3::PS3ShapeRenderer);
 __ImplementSingleton(CoreGraphics::ShapeRenderer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeRenderer::ShapeRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeRenderer::~ShapeRenderer()
 {
     __DestructSingleton;

@@ -10,6 +10,8 @@ namespace Animation
 __ImplementClass(Animation::AnimEventHandlerBase, 'AEHB', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimEventHandlerBase::AnimEventHandlerBase():
     isOpen(false)
 {
@@ -17,12 +19,16 @@ AnimEventHandlerBase::AnimEventHandlerBase():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimEventHandlerBase::~AnimEventHandlerBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AnimEventHandlerBase::HandleEvent(const Animation::AnimEventInfo& event)
 {
@@ -33,6 +39,8 @@ AnimEventHandlerBase::HandleEvent(const Animation::AnimEventInfo& event)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimEventHandlerBase::OnFrame(Timing::Time time)
 {

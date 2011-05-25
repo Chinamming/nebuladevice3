@@ -17,6 +17,8 @@ using namespace Util;
 using namespace CoreGraphics;
 using namespace Threading;
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityCluster::VisibilityCluster() :
     cameraInside(false),
     bitIndex(0)
@@ -25,6 +27,8 @@ VisibilityCluster::VisibilityCluster() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityCluster::~VisibilityCluster()
 {
     this->Discard();    
@@ -65,6 +69,8 @@ VisibilityCluster::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityCluster::Discard()
 {
@@ -72,6 +78,8 @@ VisibilityCluster::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 VisibilityCluster::IsPointInside(const point& p) const
 {
@@ -92,6 +100,8 @@ VisibilityCluster::IsPointInside(const point& p) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityCluster::RenderDebug()
 {        
@@ -112,6 +122,8 @@ VisibilityCluster::RenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityCluster::SetBoxTransforms(const Util::Array<Math::matrix44>& transforms)
 {

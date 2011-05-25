@@ -15,6 +15,8 @@ __ImplementClass(Jobs::TPWorkerThread, 'TPWT', Threading::Thread);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPWorkerThread::TPWorkerThread() :
     scratchBuffer(0)
 {
@@ -22,12 +24,16 @@ TPWorkerThread::TPWorkerThread() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPWorkerThread::~TPWorkerThread()
 {
     n_assert(this->jobQueue.IsEmpty());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPWorkerThread::EmitWakeupSignal()
 {
@@ -35,6 +41,8 @@ TPWorkerThread::EmitWakeupSignal()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPWorkerThread::PushJobCommand(const TPJobCommand& cmd)
 {
@@ -42,6 +50,8 @@ TPWorkerThread::PushJobCommand(const TPJobCommand& cmd)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPWorkerThread::DoWork()
 {
@@ -82,6 +92,8 @@ TPWorkerThread::DoWork()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPWorkerThread::ProcessJobSlices(TPJobSlice* firstSlice, ushort numSlices, ushort stride)
 {
@@ -168,6 +180,8 @@ TPWorkerThread::ProcessJobSlices(TPJobSlice* firstSlice, ushort numSlices, ushor
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 TPWorkerThread::Stop()
 {     

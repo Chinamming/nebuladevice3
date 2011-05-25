@@ -12,6 +12,8 @@ namespace Resources
 __ImplementClass(Resources::ResourceLoader, 'RSLD', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceLoader::ResourceLoader() :
     state(Resource::Initial)
 {
@@ -19,12 +21,16 @@ ResourceLoader::ResourceLoader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceLoader::~ResourceLoader()
 {
     n_assert(!this->IsAttachedToResource());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceLoader::OnAttachToResource(const Ptr<Resource>& res)
 {
@@ -33,6 +39,8 @@ ResourceLoader::OnAttachToResource(const Ptr<Resource>& res)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceLoader::OnRemoveFromResource()
 {
@@ -45,6 +53,8 @@ ResourceLoader::OnRemoveFromResource()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourceLoader::IsAttachedToResource() const
 {
@@ -52,6 +62,8 @@ ResourceLoader::IsAttachedToResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Resource>&
 ResourceLoader::GetResource() const
 {
@@ -117,6 +129,8 @@ ResourceLoader::OnPending()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceLoader::Reset()
 {

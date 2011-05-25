@@ -17,6 +17,8 @@ using namespace Messaging;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsEntity::GraphicsEntity() :
     transform(matrix44::identity()),
     type(GraphicsEntityType::InvalidType),
@@ -26,12 +28,16 @@ GraphicsEntity::GraphicsEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsEntity::~GraphicsEntity()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 GraphicsEntity::IsValid() const
 {
@@ -39,6 +45,8 @@ GraphicsEntity::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Stage>&
 GraphicsEntity::GetStage() const
 {
@@ -147,6 +155,8 @@ GraphicsEntity::SendCreateMsg(const Ptr<CreateGraphicsEntity>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsEntity::SetTransform(const matrix44& m)
 {
@@ -172,6 +182,8 @@ GraphicsEntity::OnTransformChanged()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsEntity::SetVisible(bool b)
 {

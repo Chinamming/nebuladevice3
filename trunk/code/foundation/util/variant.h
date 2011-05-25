@@ -286,6 +286,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant() :
     type(Void),
@@ -295,6 +297,8 @@ Variant::Variant() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::Delete()
 {
@@ -382,6 +386,8 @@ Variant::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::Clear()
 {
@@ -389,6 +395,8 @@ Variant::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::Copy(const Variant& rhs)
 {
@@ -463,6 +471,8 @@ Variant::Copy(const Variant& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Variant& rhs) :
     type(Void)
@@ -471,6 +481,8 @@ Variant::Variant(const Variant& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(int rhs) :
     type(Int),
@@ -480,6 +492,8 @@ Variant::Variant(int rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(float rhs) :
     type(Float)
@@ -488,6 +502,8 @@ Variant::Variant(float rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(bool rhs) :
     type(Bool),
@@ -497,6 +513,8 @@ Variant::Variant(bool rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Math::float4& rhs) :
     type(Float4)
@@ -505,6 +523,8 @@ Variant::Variant(const Math::float4& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::String& rhs) :
     type(String)
@@ -513,6 +533,8 @@ Variant::Variant(const Util::String& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const char* chrPtr) :
     type(String)
@@ -521,6 +543,8 @@ Variant::Variant(const char* chrPtr) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(Core::RefCounted* ptr) :
     type(Object)
@@ -533,6 +557,8 @@ Variant::Variant(Core::RefCounted* ptr) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Math::matrix44& rhs) :
     type(Matrix44)
@@ -541,6 +567,8 @@ Variant::Variant(const Math::matrix44& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Blob& rhs) :
     type(Blob)
@@ -549,6 +577,8 @@ Variant::Variant(const Util::Blob& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Guid& rhs) :
     type(Guid)
@@ -557,6 +587,8 @@ Variant::Variant(const Util::Guid& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<int>& rhs) :
     type(IntArray)
@@ -565,6 +597,8 @@ Variant::Variant(const Util::Array<int>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<float>& rhs) :
     type(FloatArray)
@@ -573,6 +607,8 @@ Variant::Variant(const Util::Array<float>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<bool>& rhs) :
     type(BoolArray)
@@ -581,6 +617,8 @@ Variant::Variant(const Util::Array<bool>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<Math::float4>& rhs) :
     type(Float4Array)
@@ -589,6 +627,8 @@ Variant::Variant(const Util::Array<Math::float4>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<Math::matrix44>& rhs) :
     type(Matrix44Array)
@@ -597,6 +637,8 @@ Variant::Variant(const Util::Array<Math::matrix44>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<Util::String>& rhs) :
     type(StringArray)
@@ -605,6 +647,8 @@ Variant::Variant(const Util::Array<Util::String>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<Util::Guid>& rhs) :
     type(GuidArray)
@@ -613,6 +657,8 @@ Variant::Variant(const Util::Array<Util::Guid>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::Variant(const Util::Array<Util::Blob>& rhs) :
     type(BlobArray)
@@ -621,6 +667,8 @@ Variant::Variant(const Util::Array<Util::Blob>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Variant::~Variant()
 {
@@ -628,6 +676,8 @@ Variant::~Variant()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetType(Type t)
 {
@@ -680,6 +730,8 @@ Variant::SetType(Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Variant::Type
 Variant::GetType() const
 {
@@ -687,6 +739,8 @@ Variant::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Variant& rhs)
 {
@@ -695,6 +749,8 @@ Variant::operator=(const Variant& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(int val)
 {
@@ -704,6 +760,8 @@ Variant::operator=(int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(float val)
 {
@@ -713,6 +771,8 @@ Variant::operator=(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(bool val)
 {
@@ -722,6 +782,8 @@ Variant::operator=(bool val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Math::float4& val)
 {
@@ -731,6 +793,8 @@ Variant::operator=(const Math::float4& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::String& s)
 {
@@ -747,6 +811,8 @@ Variant::operator=(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const char* chrPtr)
 {
@@ -754,6 +820,8 @@ Variant::operator=(const char* chrPtr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Math::matrix44& val)
 {
@@ -770,6 +838,8 @@ Variant::operator=(const Math::matrix44& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Guid& val)
 {
@@ -786,6 +856,8 @@ Variant::operator=(const Util::Guid& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Blob& val)
 {
@@ -802,6 +874,8 @@ Variant::operator=(const Util::Blob& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(Core::RefCounted* ptr)
 {
@@ -815,6 +889,8 @@ Variant::operator=(Core::RefCounted* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<int>& val)
 {
@@ -831,6 +907,8 @@ Variant::operator=(const Util::Array<int>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<float>& val)
 {
@@ -847,6 +925,8 @@ Variant::operator=(const Util::Array<float>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<bool>& val)
 {
@@ -863,6 +943,8 @@ Variant::operator=(const Util::Array<bool>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<Math::float4>& val)
 {
@@ -879,6 +961,8 @@ Variant::operator=(const Util::Array<Math::float4>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<Math::matrix44>& val)
 {
@@ -895,6 +979,8 @@ Variant::operator=(const Util::Array<Math::matrix44>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<Util::String>& val)
 {
@@ -911,6 +997,8 @@ Variant::operator=(const Util::Array<Util::String>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<Util::Guid>& val)
 {
@@ -927,6 +1015,8 @@ Variant::operator=(const Util::Array<Util::Guid>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::operator=(const Util::Array<Util::Blob>& val)
 {
@@ -943,6 +1033,8 @@ Variant::operator=(const Util::Array<Util::Blob>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(const Variant& rhs) const
 {
@@ -982,6 +1074,8 @@ Variant::operator==(const Variant& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator>(const Variant& rhs) const
 {
@@ -1019,6 +1113,8 @@ Variant::operator>(const Variant& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator<(const Variant& rhs) const
 {
@@ -1057,6 +1153,8 @@ Variant::operator<(const Variant& rhs) const
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator>=(const Variant& rhs) const
 {
@@ -1094,6 +1192,8 @@ Variant::operator>=(const Variant& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator<=(const Variant& rhs) const
 {
@@ -1131,6 +1231,8 @@ Variant::operator<=(const Variant& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(const Variant& rhs) const
 {
@@ -1138,6 +1240,8 @@ Variant::operator!=(const Variant& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(int rhs) const
 {
@@ -1146,6 +1250,8 @@ Variant::operator==(int rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(float rhs) const
 {
@@ -1154,6 +1260,8 @@ Variant::operator==(float rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(bool rhs) const
 {
@@ -1162,6 +1270,8 @@ Variant::operator==(bool rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(const Util::String& rhs) const
 {
@@ -1170,6 +1280,8 @@ Variant::operator==(const Util::String& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(const char* chrPtr) const
 {
@@ -1177,6 +1289,8 @@ Variant::operator==(const char* chrPtr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(const Math::float4& rhs) const
 {
@@ -1188,6 +1302,8 @@ Variant::operator==(const Math::float4& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(const Util::Guid& rhs) const
 {
@@ -1196,6 +1312,8 @@ Variant::operator==(const Util::Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator==(Core::RefCounted* ptr) const
 {
@@ -1204,6 +1322,8 @@ Variant::operator==(Core::RefCounted* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(int rhs) const
 {
@@ -1212,6 +1332,8 @@ Variant::operator!=(int rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(float rhs) const
 {
@@ -1220,6 +1342,8 @@ Variant::operator!=(float rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(bool rhs) const
 {
@@ -1228,6 +1352,8 @@ Variant::operator!=(bool rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(const Util::String& rhs) const
 {
@@ -1236,6 +1362,8 @@ Variant::operator!=(const Util::String& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(const char* chrPtr) const
 {
@@ -1243,6 +1371,8 @@ Variant::operator!=(const char* chrPtr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(const Math::float4& rhs) const
 {
@@ -1254,6 +1384,8 @@ Variant::operator!=(const Math::float4& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(const Util::Guid& rhs) const
 {
@@ -1262,6 +1394,8 @@ Variant::operator!=(const Util::Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::operator!=(Core::RefCounted* ptr) const
 {
@@ -1270,6 +1404,8 @@ Variant::operator!=(Core::RefCounted* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetInt(int val)
 {
@@ -1277,6 +1413,8 @@ Variant::SetInt(int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline int
 Variant::GetInt() const
 {
@@ -1285,6 +1423,8 @@ Variant::GetInt() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetFloat(float val)
 {
@@ -1292,6 +1432,8 @@ Variant::SetFloat(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 Variant::GetFloat() const
 {
@@ -1300,6 +1442,8 @@ Variant::GetFloat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetBool(bool val)
 {
@@ -1307,6 +1451,8 @@ Variant::SetBool(bool val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Variant::GetBool() const
 {
@@ -1315,6 +1461,8 @@ Variant::GetBool() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetString(const Util::String& val)
 {
@@ -1322,6 +1470,8 @@ Variant::SetString(const Util::String& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 Variant::GetString() const
 {
@@ -1330,6 +1480,8 @@ Variant::GetString() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetFloat4(const Math::float4& val)
 {
@@ -1337,6 +1489,8 @@ Variant::SetFloat4(const Math::float4& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Math::float4
 Variant::GetFloat4() const
 {
@@ -1345,6 +1499,8 @@ Variant::GetFloat4() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetMatrix44(const Math::matrix44& val)
 {
@@ -1352,6 +1508,8 @@ Variant::SetMatrix44(const Math::matrix44& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 Variant::GetMatrix44() const
 {
@@ -1360,6 +1518,8 @@ Variant::GetMatrix44() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetGuid(const Util::Guid& val)
 {
@@ -1367,6 +1527,8 @@ Variant::SetGuid(const Util::Guid& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Guid&
 Variant::GetGuid() const
 {
@@ -1375,6 +1537,8 @@ Variant::GetGuid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetBlob(const Util::Blob& val)
 {
@@ -1382,6 +1546,8 @@ Variant::SetBlob(const Util::Blob& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Blob&
 Variant::GetBlob() const
 {
@@ -1390,6 +1556,8 @@ Variant::GetBlob() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetObject(Core::RefCounted* ptr)
 {
@@ -1397,6 +1565,8 @@ Variant::SetObject(Core::RefCounted* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Core::RefCounted*
 Variant::GetObject() const
 {
@@ -1405,6 +1575,8 @@ Variant::GetObject() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetIntArray(const Util::Array<int>& val)
 {
@@ -1412,6 +1584,8 @@ Variant::SetIntArray(const Util::Array<int>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<int>&
 Variant::GetIntArray() const
 {
@@ -1420,6 +1594,8 @@ Variant::GetIntArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetFloatArray(const Util::Array<float>& val)
 {
@@ -1427,6 +1603,8 @@ Variant::SetFloatArray(const Util::Array<float>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<float>&
 Variant::GetFloatArray() const
 {
@@ -1435,6 +1613,8 @@ Variant::GetFloatArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetBoolArray(const Util::Array<bool>& val)
 {
@@ -1442,6 +1622,8 @@ Variant::SetBoolArray(const Util::Array<bool>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<bool>&
 Variant::GetBoolArray() const
 {
@@ -1450,6 +1632,8 @@ Variant::GetBoolArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetFloat4Array(const Util::Array<Math::float4>& val)
 {
@@ -1457,6 +1641,8 @@ Variant::SetFloat4Array(const Util::Array<Math::float4>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Math::float4>&
 Variant::GetFloat4Array() const
 {
@@ -1465,6 +1651,8 @@ Variant::GetFloat4Array() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetMatrix44Array(const Util::Array<Math::matrix44>& val)
 {
@@ -1472,6 +1660,8 @@ Variant::SetMatrix44Array(const Util::Array<Math::matrix44>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Math::matrix44>&
 Variant::GetMatrix44Array() const
 {
@@ -1480,6 +1670,8 @@ Variant::GetMatrix44Array() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetStringArray(const Util::Array<Util::String>& val)
 {
@@ -1487,6 +1679,8 @@ Variant::SetStringArray(const Util::Array<Util::String>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Util::String>&
 Variant::GetStringArray() const
 {
@@ -1495,6 +1689,8 @@ Variant::GetStringArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetGuidArray(const Util::Array<Util::Guid>& val)
 {
@@ -1502,6 +1698,8 @@ Variant::SetGuidArray(const Util::Array<Util::Guid>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Util::Guid>&
 Variant::GetGuidArray() const
 {
@@ -1510,6 +1708,8 @@ Variant::GetGuidArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Variant::SetBlobArray(const Util::Array<Util::Blob>& val)
 {
@@ -1517,6 +1717,8 @@ Variant::SetBlobArray(const Util::Array<Util::Blob>& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Util::Blob>&
 Variant::GetBlobArray() const
 {
@@ -1525,6 +1727,8 @@ Variant::GetBlobArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 Variant::TypeToString(Type t)
 {
@@ -1555,6 +1759,8 @@ Variant::TypeToString(Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Variant::Type
 Variant::StringToType(const Util::String& str)
 {

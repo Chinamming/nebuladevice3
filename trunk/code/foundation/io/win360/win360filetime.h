@@ -35,6 +35,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Win360FileTime::Win360FileTime()
 {
@@ -43,6 +45,8 @@ Win360FileTime::Win360FileTime()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 operator==(const Win360FileTime& a, const Win360FileTime& b)
 {
@@ -50,6 +54,8 @@ operator==(const Win360FileTime& a, const Win360FileTime& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 operator!=(const Win360FileTime& a, const Win360FileTime& b)
 {
@@ -57,6 +63,8 @@ operator!=(const Win360FileTime& a, const Win360FileTime& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator>(const Win360FileTime& a, const Win360FileTime& b)
 {
@@ -64,6 +72,8 @@ operator>(const Win360FileTime& a, const Win360FileTime& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator <(const Win360FileTime& a, const Win360FileTime& b)
 {

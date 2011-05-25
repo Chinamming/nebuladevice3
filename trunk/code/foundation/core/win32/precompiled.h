@@ -13,6 +13,9 @@
 
 #define _WIN32_WINNT 0x500
 
+#if( NEBULA3_EDITOR == 1 )
+#include "mfcconfig.h"
+#else
 #define NOGDICAPMASKS
 #define OEMRESOURCE
 #define NOATOM
@@ -28,6 +31,7 @@
 #define NOPROFILER
 #define NODEFERWINDOWPOS
 #define NOMCX
+#endif
 
 // Windows headers
 #include <windows.h>
@@ -45,7 +49,9 @@
 
 // compile xna-math with sse/sse2 support for win32, to disable
 // it and run completely in floating point unit, uncomment the following line 
-// #define _XM_NO_INTRINSICS_ 
+#if( NEBULA3_EDITOR == 1 )
+  #define _XM_NO_INTRINSICS_ 
+#endif
 #include <xnamath.h>
 
 // crt headers

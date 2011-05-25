@@ -16,12 +16,16 @@ using namespace Util;
 using namespace Timing;
 
 //------------------------------------------------------------------------------
+/**
+*/
 LogFileConsoleHandler::LogFileConsoleHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 LogFileConsoleHandler::~LogFileConsoleHandler()
 {
     if (this->IsOpen())
@@ -31,6 +35,8 @@ LogFileConsoleHandler::~LogFileConsoleHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LogFileConsoleHandler::Open()
 {
@@ -53,6 +59,8 @@ LogFileConsoleHandler::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LogFileConsoleHandler::Close()
 {
@@ -69,6 +77,8 @@ LogFileConsoleHandler::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LogFileConsoleHandler::Print(const String& s)
 {
@@ -79,6 +89,8 @@ LogFileConsoleHandler::Print(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LogFileConsoleHandler::Error(const String& s)
 {
@@ -92,6 +104,8 @@ LogFileConsoleHandler::Error(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LogFileConsoleHandler::Warning(const String& s)
 {
@@ -104,6 +118,8 @@ LogFileConsoleHandler::Warning(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LogFileConsoleHandler::DebugOut(const String& s)
 {

@@ -267,11 +267,17 @@ N2Converter::PerformConversion(const String& curModelName, const Ptr<BinaryReade
     {  
         // recursively read nodes
         writer->BeginModel("Models::Model", FourCC('MODL'), curModelName);
+		//writer->BeginModelNode("Models::TransformNode", FourCC('TRFN'), "model");
+		//writer->BeginTag("LocalBox", FourCC('LBOX'));
+		//writer->WriteFloat4(boundingBox.center());
+		//writer->WriteFloat4(boundingBox.extents());
+		//writer->EndTag();
         if (!this->ParseNodes(reader, writer))
         {
             n_printf("Conversion error in RecurseReadNodes() ('%s')!\n", this->srcPath.AsCharPtr());
             return false;
         }
+		//writer->EndModelNode();
         writer->EndModel();
         n_assert(this->nodeTypeStack.IsEmpty());      
     }

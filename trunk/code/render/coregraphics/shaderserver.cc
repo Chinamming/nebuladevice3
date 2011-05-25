@@ -25,12 +25,16 @@ __ImplementSingleton(CoreGraphics::ShaderServer);
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderServer::ShaderServer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderServer::~ShaderServer()
 {
     __DestructSingleton;

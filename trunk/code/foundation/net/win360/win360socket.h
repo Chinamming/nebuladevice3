@@ -209,6 +209,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::IsOpen() const
 {
@@ -216,6 +218,8 @@ Win360Socket::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::IsBound() const
 {
@@ -243,6 +247,8 @@ Win360Socket::GetAddress() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Socket::SetBroadcast(bool b)
 {
@@ -250,6 +256,8 @@ Win360Socket::SetBroadcast(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::GetBroadcast()
 {
@@ -257,6 +265,8 @@ Win360Socket::GetBroadcast()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Socket::SetKeepAlive(bool b)
 {
@@ -267,6 +277,8 @@ Win360Socket::SetKeepAlive(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::GetKeepAlive()
 {
@@ -279,6 +291,8 @@ Win360Socket::GetKeepAlive()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Socket::SetReUseAddr(bool b)
 {
@@ -286,6 +300,8 @@ Win360Socket::SetReUseAddr(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::GetReUseAddr()
 {
@@ -293,6 +309,8 @@ Win360Socket::GetReUseAddr()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Socket::SetNoDelay(bool b)
 {
@@ -300,6 +318,8 @@ Win360Socket::SetNoDelay(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::GetNoDelay()
 {
@@ -307,6 +327,8 @@ Win360Socket::GetNoDelay()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Socket::SetRecvBufSize(SizeT s)
 {
@@ -314,6 +336,8 @@ Win360Socket::SetRecvBufSize(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Win360Socket::GetRecvBufSize()
 {
@@ -321,6 +345,8 @@ Win360Socket::GetRecvBufSize()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Win360Socket::SetSendBufSize(SizeT s)
 {
@@ -328,6 +354,8 @@ Win360Socket::SetSendBufSize(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Win360Socket::GetSendBufSize()
 {
@@ -335,6 +363,8 @@ Win360Socket::GetSendBufSize()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Win360Socket::GetMaxMsgSize()
 {
@@ -347,6 +377,8 @@ Win360Socket::GetMaxMsgSize()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360Socket::GetBlocking() const
 {

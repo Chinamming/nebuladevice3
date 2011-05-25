@@ -11,6 +11,8 @@ using namespace Base;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DFORMAT
 D3D9Types::AsD3D9PixelFormat(PixelFormat::Code p)
 {
@@ -58,6 +60,8 @@ D3D9Types::AsD3D9PixelFormat(PixelFormat::Code p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 PixelFormat::Code
 D3D9Types::AsNebulaPixelFormat(D3DFORMAT f)
 {
@@ -105,6 +109,8 @@ D3D9Types::AsNebulaPixelFormat(D3DFORMAT f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DDECLTYPE
 D3D9Types::AsD3D9VertexDeclarationType(VertexComponent::Format f)
 {
@@ -127,6 +133,8 @@ D3D9Types::AsD3D9VertexDeclarationType(VertexComponent::Format f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DDECLUSAGE
 D3D9Types::AsD3D9VertexDeclarationUsage(VertexComponent::SemanticName n)
 {
@@ -147,6 +155,8 @@ D3D9Types::AsD3D9VertexDeclarationUsage(VertexComponent::SemanticName n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DPRIMITIVETYPE
 D3D9Types::AsD3D9PrimitiveType(PrimitiveTopology::Code t)
 {
@@ -169,6 +179,8 @@ D3D9Types::AsD3D9PrimitiveType(PrimitiveTopology::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DMULTISAMPLE_TYPE
 D3D9Types::AsD3D9MultiSampleType(AntiAliasQuality::Code c)
 {
@@ -197,6 +209,8 @@ D3D9Types::AsD3D9MultiSampleType(AntiAliasQuality::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DXIMAGE_FILEFORMAT
 D3D9Types::AsD3DXImageFileFormat(ImageFileFormat::Code c)
 {
@@ -213,6 +227,8 @@ D3D9Types::AsD3DXImageFileFormat(ImageFileFormat::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DPOOL
 D3D9Types::AsD3D9Pool(ResourceBase::Usage usage, ResourceBase::Access access)
 {
@@ -259,6 +275,8 @@ D3D9Types::AsD3D9Pool(ResourceBase::Usage usage, ResourceBase::Access access)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DWORD
 D3D9Types::AsD3D9Usage(ResourceBase::Usage usage, ResourceBase::Access access)
 {
@@ -305,6 +323,8 @@ D3D9Types::AsD3D9Usage(ResourceBase::Usage usage, ResourceBase::Access access)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3DFORMAT
 D3D9Types::IndexTypeAsD3D9Format(IndexType::Code indexType)
 {

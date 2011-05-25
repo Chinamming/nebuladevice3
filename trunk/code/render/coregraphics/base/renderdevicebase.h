@@ -143,6 +143,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderDeviceBase::SetPrimitiveGroup(const CoreGraphics::PrimitiveGroup& pg)
 {
@@ -150,6 +152,8 @@ RenderDeviceBase::SetPrimitiveGroup(const CoreGraphics::PrimitiveGroup& pg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CoreGraphics::PrimitiveGroup&
 RenderDeviceBase::GetPrimitiveGroup() const
 {
@@ -157,6 +161,8 @@ RenderDeviceBase::GetPrimitiveGroup() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>&
 RenderDeviceBase::GetDefaultRenderTarget() const
 {
@@ -165,6 +171,8 @@ RenderDeviceBase::GetDefaultRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 RenderDeviceBase::HasPassRenderTarget() const
 {
@@ -172,6 +180,8 @@ RenderDeviceBase::HasPassRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>&
 RenderDeviceBase::GetPassRenderTarget() const
 {
@@ -180,6 +190,8 @@ RenderDeviceBase::GetPassRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 RenderDeviceBase::IsInBeginFrame() const
 {
@@ -187,6 +199,8 @@ RenderDeviceBase::IsInBeginFrame() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 RenderDeviceBase::GetVisualizeMipMaps() const
 {
@@ -194,6 +208,8 @@ RenderDeviceBase::GetVisualizeMipMaps() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 RenderDeviceBase::SetVisualizeMipMaps(bool val)
 {

@@ -19,12 +19,16 @@ __ImplementClass(Jobs::JobSystem, 'JOBS', Jobs::TPJobSystem);
 __ImplementInterfaceSingleton(Jobs::JobSystem);
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobSystem::JobSystem()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobSystem::~JobSystem()
 {
     __DestructInterfaceSingleton;

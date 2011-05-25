@@ -17,6 +17,8 @@ using namespace CoreGraphics;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseRenderDeviceBase::MouseRenderDeviceBase() :
     isValid(false)
 {
@@ -24,6 +26,8 @@ MouseRenderDeviceBase::MouseRenderDeviceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MouseRenderDeviceBase::~MouseRenderDeviceBase()
 {
     n_assert(!this->IsValid());
@@ -31,6 +35,8 @@ MouseRenderDeviceBase::~MouseRenderDeviceBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseRenderDeviceBase::Setup()
 {
@@ -39,6 +45,8 @@ MouseRenderDeviceBase::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MouseRenderDeviceBase::Discard()
 {

@@ -77,6 +77,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Ptr<TYPE>::Ptr() :
     ptr(0)
@@ -85,6 +87,8 @@ Ptr<TYPE>::Ptr() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Ptr<TYPE>::Ptr(TYPE* p) :
     ptr(p)
@@ -96,6 +100,8 @@ Ptr<TYPE>::Ptr(TYPE* p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Ptr<TYPE>::Ptr(const Ptr<TYPE>& p) :
     ptr(p.ptr)
@@ -107,6 +113,8 @@ Ptr<TYPE>::Ptr(const Ptr<TYPE>& p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Ptr<TYPE>::~Ptr()
 {
@@ -118,6 +126,8 @@ Ptr<TYPE>::~Ptr()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Ptr<TYPE>::operator=(const Ptr<TYPE>& rhs)
@@ -137,6 +147,8 @@ Ptr<TYPE>::operator=(const Ptr<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Ptr<TYPE>::operator=(TYPE* rhs)
@@ -156,6 +168,8 @@ Ptr<TYPE>::operator=(TYPE* rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Ptr<TYPE>::operator==(const Ptr<TYPE>& rhs) const
@@ -164,6 +178,8 @@ Ptr<TYPE>::operator==(const Ptr<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Ptr<TYPE>::operator!=(const Ptr<TYPE>& rhs) const
@@ -172,6 +188,8 @@ Ptr<TYPE>::operator!=(const Ptr<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Ptr<TYPE>::operator==(const TYPE* rhs) const
@@ -180,6 +198,8 @@ Ptr<TYPE>::operator==(const TYPE* rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Ptr<TYPE>::operator!=(const TYPE* rhs) const
@@ -188,6 +208,8 @@ Ptr<TYPE>::operator!=(const TYPE* rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 Ptr<TYPE>::operator->() const
@@ -197,6 +219,8 @@ Ptr<TYPE>::operator->() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 Ptr<TYPE>::operator*() const
@@ -206,6 +230,8 @@ Ptr<TYPE>::operator*() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Ptr<TYPE>::operator TYPE*() const
 {
@@ -214,6 +240,8 @@ Ptr<TYPE>::operator TYPE*() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 template<class DERIVED> const Ptr<DERIVED>&
 Ptr<TYPE>::downcast() const
@@ -227,6 +255,8 @@ Ptr<TYPE>::downcast() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 template<class BASE> const Ptr<BASE>&
 Ptr<TYPE>::upcast() const
@@ -240,6 +270,8 @@ Ptr<TYPE>::upcast() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 template<class OTHERTYPE> const Ptr<OTHERTYPE>&
 Ptr<TYPE>::cast() const
@@ -249,6 +281,8 @@ Ptr<TYPE>::cast() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Ptr<TYPE>::isvalid() const
@@ -257,6 +291,8 @@ Ptr<TYPE>::isvalid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 Ptr<TYPE>::get() const
@@ -266,6 +302,8 @@ Ptr<TYPE>::get() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 Ptr<TYPE>::get_unsafe() const

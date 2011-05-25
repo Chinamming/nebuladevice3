@@ -43,6 +43,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 GlobalLightEntity::GetBackLightColor() const
 {
@@ -50,6 +52,8 @@ GlobalLightEntity::GetBackLightColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4& 
 GlobalLightEntity::GetAmbientLightColor() const
 {
@@ -57,6 +61,8 @@ GlobalLightEntity::GetAmbientLightColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 GlobalLightEntity::GetBackLightOffset() const
 {

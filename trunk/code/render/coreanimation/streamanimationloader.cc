@@ -18,6 +18,8 @@ using namespace System;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamAnimationLoader::SetupResourceFromStream(const Ptr<Stream>& stream)
 {
@@ -27,6 +29,8 @@ StreamAnimationLoader::SetupResourceFromStream(const Ptr<Stream>& stream)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamAnimationLoader::SetupFromNax3(const Ptr<Stream>& stream)
 {

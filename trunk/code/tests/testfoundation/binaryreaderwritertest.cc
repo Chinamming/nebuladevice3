@@ -52,7 +52,7 @@ BinaryReaderWriterTest::Run()
     writer->SetMemoryMappingEnabled(false);
     this->Verify(writer->Open());
     writer->WriteChar('a');
-    writer->WriteUChar(uchar('?'));
+    writer->WriteUChar(uchar('ü'));
     writer->WriteShort(-12);
     writer->WriteUShort(13);
     writer->WriteInt(-123);
@@ -75,7 +75,7 @@ BinaryReaderWriterTest::Run()
     reader->SetMemoryMappingEnabled(true);
     this->Verify(reader->Open());
     this->Verify(reader->ReadChar() == 'a');
-    this->Verify(reader->ReadUChar() == (uchar)'?');
+    this->Verify(reader->ReadUChar() == (unsigned char) 'ü');
     this->Verify(reader->ReadShort() == -12);
     this->Verify(reader->ReadUShort() == 13);
     this->Verify(reader->ReadInt() == -123);
@@ -98,7 +98,7 @@ BinaryReaderWriterTest::Run()
     writer->SetMemoryMappingEnabled(true);
     this->Verify(writer->Open());
     writer->WriteChar('a');
-    writer->WriteUChar(uchar('?'));
+    writer->WriteUChar(uchar('ü'));
     writer->WriteShort(-12);
     writer->WriteUShort(13);
     writer->WriteInt(-123);
@@ -121,7 +121,7 @@ BinaryReaderWriterTest::Run()
     reader->SetMemoryMappingEnabled(false);
     this->Verify(reader->Open());
     this->Verify(reader->ReadChar() == 'a');
-    this->Verify(reader->ReadUChar() == (uchar)'?');
+    this->Verify(reader->ReadUChar() == (unsigned char) 'ü');
     this->Verify(reader->ReadShort() == -12);
     this->Verify(reader->ReadUShort() == 13);
     this->Verify(reader->ReadInt() == -123);

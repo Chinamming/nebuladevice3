@@ -108,6 +108,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 VertexComponentBase::VertexComponentBase() :
     semName(Invalid),
@@ -121,6 +123,8 @@ VertexComponentBase::VertexComponentBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 VertexComponentBase::VertexComponentBase(SemanticName semName_, IndexT semIndex_, Format format_, IndexT streamIndex_) :
     semName(semName_),
@@ -134,6 +138,8 @@ VertexComponentBase::VertexComponentBase(SemanticName semName_, IndexT semIndex_
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline VertexComponentBase::SemanticName
 VertexComponentBase::GetSemanticName() const
 {
@@ -141,6 +147,8 @@ VertexComponentBase::GetSemanticName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline VertexComponentBase::AccessType
 VertexComponentBase::GetAccessType() const
 {
@@ -148,6 +156,8 @@ VertexComponentBase::GetAccessType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 VertexComponentBase::GetSemanticIndex() const
 {
@@ -155,6 +165,8 @@ VertexComponentBase::GetSemanticIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline VertexComponentBase::Format
 VertexComponentBase::GetFormat() const
 {
@@ -162,6 +174,8 @@ VertexComponentBase::GetFormat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 VertexComponentBase::GetStreamIndex() const
 {
@@ -169,6 +183,8 @@ VertexComponentBase::GetStreamIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VertexComponentBase::GetByteSize() const
 {
@@ -196,6 +212,8 @@ VertexComponentBase::GetByteSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 VertexComponentBase::SemanticNameToString(SemanticName n)
 {
@@ -216,6 +234,8 @@ VertexComponentBase::SemanticNameToString(SemanticName n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline VertexComponentBase::SemanticName
 VertexComponentBase::StringToSemanticName(const Util::String& str)
 {
@@ -235,6 +255,8 @@ VertexComponentBase::StringToSemanticName(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 VertexComponentBase::FormatToString(Format f)
 {
@@ -264,6 +286,8 @@ VertexComponentBase::FormatToString(Format f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline VertexComponentBase::Format
 VertexComponentBase::StringToFormat(const Util::String& str)
 {
@@ -289,6 +313,8 @@ VertexComponentBase::StringToFormat(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 VertexComponentBase::GetSignature() const
 {
@@ -313,6 +339,8 @@ VertexComponentBase::GetSignature() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VertexComponentBase::SetByteOffset(IndexT offset)
 {
@@ -320,6 +348,8 @@ VertexComponentBase::SetByteOffset(IndexT offset)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 VertexComponentBase::GetByteOffset() const
 {

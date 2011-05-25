@@ -12,18 +12,24 @@ namespace Resources
 __ImplementClass(Resources::ResourceSaver, 'RSSR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceSaver::ResourceSaver()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceSaver::~ResourceSaver()
 {
     n_assert(!this->IsAttachedToResource());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSaver::OnAttachToResource(const Ptr<Resource>& res)
 {
@@ -32,6 +38,8 @@ ResourceSaver::OnAttachToResource(const Ptr<Resource>& res)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceSaver::OnRemoveFromResource()
 {
@@ -40,6 +48,8 @@ ResourceSaver::OnRemoveFromResource()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourceSaver::IsAttachedToResource() const
 {
@@ -47,6 +57,8 @@ ResourceSaver::IsAttachedToResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Resource>&
 ResourceSaver::GetResource() const
 {
@@ -54,6 +66,8 @@ ResourceSaver::GetResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ResourceSaver::OnSave()
 {

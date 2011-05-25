@@ -17,18 +17,24 @@ using namespace IO;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinNode::CharacterSkinNode()
 {
     this->skinnedShaderFeatureBits = ShaderServer::Instance()->FeatureStringToMask("Skinned");
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinNode::~CharacterSkinNode()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 CharacterSkinNode::CreateNodeInstance() const
 {
@@ -37,6 +43,8 @@ CharacterSkinNode::CreateNodeInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 CharacterSkinNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 {
@@ -68,6 +76,8 @@ CharacterSkinNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& r
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNode::ReserveFragments(SizeT numFragments)
 {
@@ -76,6 +86,8 @@ CharacterSkinNode::ReserveFragments(SizeT numFragments)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNode::AddFragment(IndexT primGroupIndex, const Util::Array<IndexT>& jointPalette)
 {
@@ -86,6 +98,8 @@ CharacterSkinNode::AddFragment(IndexT primGroupIndex, const Util::Array<IndexT>&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinNode::ApplySharedState(IndexT frameIndex)
 {

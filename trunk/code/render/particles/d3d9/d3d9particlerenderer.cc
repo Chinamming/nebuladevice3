@@ -23,6 +23,8 @@ using namespace Particles;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ParticleRenderer::D3D9ParticleRenderer() :
     curParticleVertexIndex(0),
     mappedVertices(0),
@@ -32,6 +34,8 @@ D3D9ParticleRenderer::D3D9ParticleRenderer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ParticleRenderer::~D3D9ParticleRenderer()
 {
     if (this->IsValid())
@@ -42,6 +46,8 @@ D3D9ParticleRenderer::~D3D9ParticleRenderer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ParticleRenderer::Setup()
 {
@@ -128,6 +134,8 @@ D3D9ParticleRenderer::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ParticleRenderer::Discard()
 {

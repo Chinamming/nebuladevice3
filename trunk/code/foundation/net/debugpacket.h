@@ -96,6 +96,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugPacket::SetDataValid(bool b)
 {
@@ -103,6 +105,8 @@ DebugPacket::SetDataValid(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DebugPacket::HasData() const
 {    

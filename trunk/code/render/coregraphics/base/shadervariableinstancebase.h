@@ -64,6 +64,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariable>&
 ShaderVariableInstanceBase::GetShaderVariable() const
 {
@@ -71,6 +73,8 @@ ShaderVariableInstanceBase::GetShaderVariable() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetInt(int val)
 {
@@ -79,6 +83,8 @@ ShaderVariableInstanceBase::SetInt(int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetFloat(float val)
 {
@@ -87,6 +93,8 @@ ShaderVariableInstanceBase::SetFloat(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetFloat4(const Math::float4& val)
 {
@@ -95,6 +103,8 @@ ShaderVariableInstanceBase::SetFloat4(const Math::float4& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetMatrix(const Math::matrix44& val)
 {
@@ -103,6 +113,8 @@ ShaderVariableInstanceBase::SetMatrix(const Math::matrix44& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetBool(bool val)
 {
@@ -111,6 +123,8 @@ ShaderVariableInstanceBase::SetBool(bool val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetTexture(const Ptr<CoreGraphics::Texture>& value)
 {
@@ -119,6 +133,8 @@ ShaderVariableInstanceBase::SetTexture(const Ptr<CoreGraphics::Texture>& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ShaderVariableInstanceBase::SetValue(const Util::Variant& v)
 {

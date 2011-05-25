@@ -71,6 +71,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 Application::IsOpen() const
@@ -79,6 +81,8 @@ Application::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 Application::SetCompanyName(const Util::String& n)
@@ -87,6 +91,8 @@ Application::SetCompanyName(const Util::String& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 Application::GetCompanyName() const
@@ -95,6 +101,8 @@ Application::GetCompanyName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 Application::SetAppTitle(const Util::String& n)
@@ -103,6 +111,8 @@ Application::SetAppTitle(const Util::String& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 Application::GetAppTitle() const
@@ -111,6 +121,8 @@ Application::GetAppTitle() const
 }     
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 Application::SetAppID(const Util::String& n)
@@ -119,6 +131,8 @@ Application::SetAppID(const Util::String& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 Application::GetAppID() const
@@ -127,6 +141,8 @@ Application::GetAppID() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 Application::SetAppVersion(const Util::String& n)
@@ -135,6 +151,8 @@ Application::SetAppVersion(const Util::String& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 Application::GetAppVersion() const
@@ -143,6 +161,8 @@ Application::GetAppVersion() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 Application::SetCmdLineArgs(const Util::CommandLineArgs& a)
@@ -151,6 +171,8 @@ Application::SetCmdLineArgs(const Util::CommandLineArgs& a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::CommandLineArgs&
 Application::GetCmdLineArgs() const
@@ -159,6 +181,8 @@ Application::GetCmdLineArgs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Application::SetReturnCode(int c)
 {
@@ -166,6 +190,8 @@ Application::SetReturnCode(int c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline int
 Application::GetReturnCode() const
 {

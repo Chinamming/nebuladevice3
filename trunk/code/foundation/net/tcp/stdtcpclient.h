@@ -76,6 +76,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StdTcpClient::SetBlocking(bool b)
 {
@@ -87,6 +89,8 @@ StdTcpClient::SetBlocking(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 StdTcpClient::IsBlocking() const
 {
@@ -94,6 +98,8 @@ StdTcpClient::IsBlocking() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StdTcpClient::SetServerAddress(const IpAddress& addr)
 {
@@ -101,6 +107,8 @@ StdTcpClient::SetServerAddress(const IpAddress& addr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const IpAddress&
 StdTcpClient::GetServerAddress() const
 {

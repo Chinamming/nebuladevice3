@@ -16,6 +16,8 @@ using namespace Util;
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityCell::VisibilityCell() :
     numEntitiesInHierarchyAllTypes(0)
 {
@@ -23,6 +25,8 @@ VisibilityCell::VisibilityCell() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityCell::~VisibilityCell()
 {
     // make sure we've been properly cleaned up
@@ -37,6 +41,8 @@ VisibilityCell::~VisibilityCell()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityCell::OnAttach()
 {
@@ -54,6 +60,8 @@ VisibilityCell::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityCell::OnRemove()
 {
@@ -109,6 +117,8 @@ VisibilityCell::AttachContext(const Ptr<VisibilityContext>& context)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityCell::RemoveContext(const Ptr<VisibilityContext>& context)
 {

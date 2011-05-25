@@ -41,6 +41,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 HttpResponseReader::IsValidHttpResponse() const
 {
@@ -48,6 +50,8 @@ HttpResponseReader::IsValidHttpResponse() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline HttpStatus::Code
 HttpResponseReader::GetStatusCode() const
 {
@@ -55,6 +59,8 @@ HttpResponseReader::GetStatusCode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const IO::MediaType&
 HttpResponseReader::GetContentType() const
 {
@@ -62,6 +68,8 @@ HttpResponseReader::GetContentType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 HttpResponseReader::GetContentLength() const
 {

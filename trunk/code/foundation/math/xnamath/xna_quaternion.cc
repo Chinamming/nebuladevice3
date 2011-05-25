@@ -11,6 +11,8 @@ namespace Math
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 quaternion
 quaternion::rotationmatrix(const matrix44& m)
 {

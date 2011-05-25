@@ -10,6 +10,8 @@ namespace System
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Environment::Exists(const String& envVarName)
 {
@@ -23,6 +25,8 @@ Win32Environment::Exists(const String& envVarName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win32Environment::Read(const String& envVarName)
 {

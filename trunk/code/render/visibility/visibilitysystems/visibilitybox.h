@@ -83,6 +83,8 @@ private:
 };
        
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 VisibilityBox::GetTransform() const
 {
@@ -90,6 +92,8 @@ VisibilityBox::GetTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityBox::SetVisible(bool b)
 {
@@ -97,6 +101,8 @@ VisibilityBox::SetVisible(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VisibilityBox::IsVisible() const
 {
@@ -104,6 +110,8 @@ VisibilityBox::IsVisible() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityBox::SetCameraBox(bool b)
 {
@@ -111,6 +119,8 @@ VisibilityBox::SetCameraBox(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VisibilityBox::IsCameraBox() const
 {
@@ -118,6 +128,8 @@ VisibilityBox::IsCameraBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<IndexT>&
 VisibilityBox::GetNeighbours() const
 {
@@ -125,6 +137,8 @@ VisibilityBox::GetNeighbours() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityBox::SetProcessed(bool b)
 {
@@ -132,6 +146,8 @@ VisibilityBox::SetProcessed(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VisibilityBox::IsProcessed() const
 {

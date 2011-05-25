@@ -10,6 +10,8 @@ namespace Threading
 __ImplementClass(Threading::ObjectRef, 'OBJR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ObjectRef::ObjectRef() :
     ref(0)
 {
@@ -17,6 +19,8 @@ ObjectRef::ObjectRef() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ObjectRef::~ObjectRef()
 {
     if (this->IsValid())

@@ -61,6 +61,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugGraphicsHandler::SetPerfHUDEnabled(bool b)
 {
@@ -68,6 +70,8 @@ DebugGraphicsHandler::SetPerfHUDEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DebugGraphicsHandler::IsPerfHUDEnabled() const
 {
@@ -75,6 +79,8 @@ DebugGraphicsHandler::IsPerfHUDEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DebugGraphicsHandler::TogglePerfHUD()
 {

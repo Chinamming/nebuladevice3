@@ -31,6 +31,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 TPJobFuncDesc::TPJobFuncDesc() :
     funcPtr(0)
@@ -39,6 +41,8 @@ TPJobFuncDesc::TPJobFuncDesc() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 TPJobFuncDesc::TPJobFuncDesc(FuncPtr funcPtr_) :
     funcPtr(funcPtr_)
@@ -47,6 +51,8 @@ TPJobFuncDesc::TPJobFuncDesc(FuncPtr funcPtr_) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline TPJobFuncDesc::FuncPtr
 TPJobFuncDesc::GetFunctionPointer() const
 {

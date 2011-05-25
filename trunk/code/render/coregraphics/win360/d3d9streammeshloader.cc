@@ -16,6 +16,8 @@ using namespace CoreGraphics;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9StreamMeshLoader::D3D9StreamMeshLoader() :
     usage(Base::ResourceBase::UsageImmutable),
     access(Base::ResourceBase::AccessNone)
@@ -24,6 +26,8 @@ D3D9StreamMeshLoader::D3D9StreamMeshLoader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9StreamMeshLoader::SetupResourceFromStream(const Ptr<Stream>& stream)
 {

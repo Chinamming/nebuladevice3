@@ -15,6 +15,8 @@ __ImplementClass(Models::ModelNodeInstance, 'MNDI', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelNodeInstance::ModelNodeInstance():
     isVisible(true),
     frameInstanceIndex(InvalidIndex)
@@ -23,12 +25,16 @@ ModelNodeInstance::ModelNodeInstance():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelNodeInstance::~ModelNodeInstance()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ModelInstance>&
 ModelNodeInstance::GetModelInstance() const
 {
@@ -36,6 +42,8 @@ ModelNodeInstance::GetModelInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ModelNode>&
 ModelNodeInstance::GetModelNode() const
 {
@@ -43,6 +51,8 @@ ModelNodeInstance::GetModelNode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode>& node, const Ptr<ModelNodeInstance>& parentNodeInst)
 {
@@ -69,6 +79,8 @@ ModelNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode>& n
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNodeInstance::Discard()
 {
@@ -113,6 +125,8 @@ ModelNodeInstance::DiscardHierarchy()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time time)
 {
@@ -120,6 +134,8 @@ ModelNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNodeInstance::OnRenderBefore(IndexT frameIndex, Timing::Time time)
 {
@@ -127,6 +143,8 @@ ModelNodeInstance::OnRenderBefore(IndexT frameIndex, Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelNodeInstance::OnVisibilityResolve(IndexT resolveIndex, float distanceToViewer)
 {
@@ -162,6 +180,8 @@ ModelNodeInstance::Render()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelNodeInstance::RenderDebug()
 {
@@ -169,6 +189,8 @@ ModelNodeInstance::RenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNodeInstance::AddChild(const Ptr<ModelNodeInstance>& c)
 {
@@ -177,6 +199,8 @@ ModelNodeInstance::AddChild(const Ptr<ModelNodeInstance>& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ModelNodeInstance::HasChild(const StringAtom& name) const
 {
@@ -184,6 +208,8 @@ ModelNodeInstance::HasChild(const StringAtom& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ModelNodeInstance>&
 ModelNodeInstance::LookupChild(const StringAtom& name) const
 {
@@ -191,6 +217,8 @@ ModelNodeInstance::LookupChild(const StringAtom& name) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 ModelNodeInstance::LookupPath(const String& path)
 {
@@ -226,6 +254,8 @@ ModelNodeInstance::LookupPath(const String& path)
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelNodeInstance::SetVisible(bool b, Timing::Time time, bool recursive)
 {
@@ -266,6 +296,8 @@ ModelNodeInstance::IsVisible() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelNodeInstance::OnShow(Timing::Time time)
 {
@@ -273,6 +305,8 @@ ModelNodeInstance::OnShow(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelNodeInstance::OnHide(Timing::Time time)
 {

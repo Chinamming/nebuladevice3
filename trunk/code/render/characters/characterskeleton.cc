@@ -11,6 +11,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkeleton::CharacterSkeleton() :
     isValid(false)    
 {
@@ -18,12 +20,16 @@ CharacterSkeleton::CharacterSkeleton() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkeleton::~CharacterSkeleton()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkeleton::Setup(SizeT numJoints)
 {
@@ -37,6 +43,8 @@ CharacterSkeleton::Setup(SizeT numJoints)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkeleton::Discard()
 {
@@ -48,6 +56,8 @@ CharacterSkeleton::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkeleton::SetupJoint(IndexT jointIndex, IndexT parentJointIndex, const point& poseTranslation, const quaternion& poseRotation, const vector& poseScale, const StringAtom& name)
 {

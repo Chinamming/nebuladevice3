@@ -9,6 +9,8 @@ namespace CoreGraphics
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 AntiAliasQuality::Code
 AntiAliasQuality::FromString(const Util::String& str)
 {
@@ -24,6 +26,8 @@ AntiAliasQuality::FromString(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String
 AntiAliasQuality::ToString(Code code)
 {

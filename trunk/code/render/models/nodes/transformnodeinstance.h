@@ -84,6 +84,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNodeInstance::SetPosition(const Math::point& p)
 {
@@ -91,6 +93,8 @@ TransformNodeInstance::SetPosition(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 TransformNodeInstance::GetPosition() const
 {
@@ -98,6 +102,8 @@ TransformNodeInstance::GetPosition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNodeInstance::SetRotate(const Math::quaternion& r)
 {
@@ -105,6 +111,8 @@ TransformNodeInstance::SetRotate(const Math::quaternion& r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::quaternion&
 TransformNodeInstance::GetRotate() const
 {
@@ -112,6 +120,8 @@ TransformNodeInstance::GetRotate() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNodeInstance::SetScale(const Math::vector& s)
 {
@@ -119,6 +129,8 @@ TransformNodeInstance::SetScale(const Math::vector& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 TransformNodeInstance::GetScale() const
 {
@@ -126,6 +138,8 @@ TransformNodeInstance::GetScale() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNodeInstance::SetRotatePivot(const Math::point& p)
 {
@@ -133,6 +147,8 @@ TransformNodeInstance::SetRotatePivot(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 TransformNodeInstance::GetRotatePivot() const
 {
@@ -140,6 +156,8 @@ TransformNodeInstance::GetRotatePivot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNodeInstance::SetScalePivot(const Math::point& p)
 {
@@ -147,6 +165,8 @@ TransformNodeInstance::SetScalePivot(const Math::point& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::point&
 TransformNodeInstance::GetScalePivot() const
 {
@@ -154,6 +174,8 @@ TransformNodeInstance::GetScalePivot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformNodeInstance::SetOffsetMatrix(const Math::matrix44& m)
 {
@@ -161,6 +183,8 @@ TransformNodeInstance::SetOffsetMatrix(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformNodeInstance::GetOffsetMatrix() const
 {
@@ -168,6 +192,8 @@ TransformNodeInstance::GetOffsetMatrix() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformNodeInstance::GetLocalTransform()
 {
@@ -175,6 +201,8 @@ TransformNodeInstance::GetLocalTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformNodeInstance::GetModelTransform() const
 {
@@ -182,6 +210,8 @@ TransformNodeInstance::GetModelTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 TransformNodeInstance::IsInViewSpace() const
 {
@@ -189,6 +219,8 @@ TransformNodeInstance::IsInViewSpace() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformNodeInstance::SetInViewSpace(bool b)
 {
@@ -196,6 +228,8 @@ TransformNodeInstance::SetInViewSpace(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 TransformNodeInstance::GetLockedToViewer() const
 {
@@ -203,6 +237,8 @@ TransformNodeInstance::GetLockedToViewer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformNodeInstance::SetLockedToViewer(bool val)
 {

@@ -15,18 +15,24 @@ using namespace Models;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterNodeInstance::CharacterNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterNodeInstance::~CharacterNodeInstance()
 {
     n_assert(!this->charInstance.isvalid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode>& node, const Ptr<ModelNodeInstance>& parentNodeInst)
 {
@@ -43,6 +49,8 @@ CharacterNodeInstance::Setup(const Ptr<ModelInstance>& inst, const Ptr<ModelNode
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNodeInstance::Discard()
 {
@@ -57,6 +65,8 @@ CharacterNodeInstance::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time time)
 {
@@ -68,6 +78,8 @@ CharacterNodeInstance::OnNotifyCullingVisible(IndexT frameIndex, Timing::Time ti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterNodeInstance::RenderDebug()
 {

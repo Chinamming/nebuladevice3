@@ -50,6 +50,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ZipFileEntry::GetName() const
 {
@@ -57,6 +59,8 @@ ZipFileEntry::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IO::Stream::Size
 ZipFileEntry::GetFileSize() const
 {

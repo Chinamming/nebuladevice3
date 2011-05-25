@@ -93,6 +93,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::SetType(CoreGraphics::BatchType::Code t)
 {
@@ -100,6 +102,8 @@ FrameBatch::SetType(CoreGraphics::BatchType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::BatchType::Code
 FrameBatch::GetType() const
 {
@@ -107,6 +111,8 @@ FrameBatch::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::SetShader(const Ptr<CoreGraphics::ShaderInstance>& shd)
 {
@@ -114,6 +120,8 @@ FrameBatch::SetShader(const Ptr<CoreGraphics::ShaderInstance>& shd)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderInstance>&
 FrameBatch::GetShader() const
 {
@@ -121,6 +129,8 @@ FrameBatch::GetShader() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::SetNodeFilter(Models::ModelNodeType::Code f)
 {
@@ -128,6 +138,8 @@ FrameBatch::SetNodeFilter(Models::ModelNodeType::Code f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Models::ModelNodeType::Code
 FrameBatch::GetNodeFilter() const
 {
@@ -135,6 +147,8 @@ FrameBatch::GetNodeFilter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::SetLightingMode(LightingMode::Code c)
 {
@@ -142,6 +156,8 @@ FrameBatch::SetLightingMode(LightingMode::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline LightingMode::Code
 FrameBatch::GetLightingMode() const
 {
@@ -149,6 +165,8 @@ FrameBatch::GetLightingMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::SetSortingMode(SortingMode::Code c)
 {
@@ -156,6 +174,8 @@ FrameBatch::SetSortingMode(SortingMode::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SortingMode::Code
 FrameBatch::GetSortingMode() const
 {
@@ -163,6 +183,8 @@ FrameBatch::GetSortingMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::AddVariable(const Ptr<CoreGraphics::ShaderVariableInstance>& var)
 {
@@ -170,6 +192,8 @@ FrameBatch::AddVariable(const Ptr<CoreGraphics::ShaderVariableInstance>& var)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FrameBatch::GetNumVariables() const
 {
@@ -177,6 +201,8 @@ FrameBatch::GetNumVariables() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariableInstance>&
 FrameBatch::GetVariableByIndex(IndexT i) const
 {
@@ -184,6 +210,8 @@ FrameBatch::GetVariableByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameBatch::SetShaderFeatures(CoreGraphics::ShaderFeature::Mask m)
 {
@@ -191,6 +219,8 @@ FrameBatch::SetShaderFeatures(CoreGraphics::ShaderFeature::Mask m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::ShaderFeature::Mask
 FrameBatch::GetShaderFeatures() const
 {

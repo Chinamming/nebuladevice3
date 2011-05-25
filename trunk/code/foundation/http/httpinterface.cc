@@ -16,18 +16,24 @@ using namespace Interface;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpInterface::HttpInterface()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpInterface::~HttpInterface()
 {
     __DestructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpInterface::Open()
 {

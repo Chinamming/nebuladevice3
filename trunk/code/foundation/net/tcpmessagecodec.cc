@@ -16,6 +16,8 @@ namespace Net
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 TcpMessageCodec::TcpMessageCodec():
     receiveState(HeaderData),
     messageSize(0),
@@ -26,6 +28,8 @@ TcpMessageCodec::TcpMessageCodec():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TcpMessageCodec::~TcpMessageCodec()
 {
     // closes and discards header and message streams if they exists...

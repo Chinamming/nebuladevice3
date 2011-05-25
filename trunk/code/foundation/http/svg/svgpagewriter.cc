@@ -14,6 +14,8 @@ using namespace IO;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SvgPageWriter::SvgPageWriter() :
     canvasWidth(100),
     canvasHeight(100),
@@ -24,12 +26,16 @@ SvgPageWriter::SvgPageWriter() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SvgPageWriter::~SvgPageWriter()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 SvgPageWriter::Open()
 {
@@ -56,6 +62,8 @@ SvgPageWriter::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::Close()
 {
@@ -76,6 +84,8 @@ SvgPageWriter::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::BeginNode(const Util::String& nodeName)
 {
@@ -83,6 +93,8 @@ SvgPageWriter::BeginNode(const Util::String& nodeName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::EndNode()
 {
@@ -90,6 +102,8 @@ SvgPageWriter::EndNode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::SetString(const Util::String& name, const Util::String& value)
 {
@@ -97,6 +111,8 @@ SvgPageWriter::SetString(const Util::String& name, const Util::String& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::BeginTransformGroup(const float2& translate, float rotate, const float2& scale)
 {
@@ -113,6 +129,8 @@ SvgPageWriter::BeginTransformGroup(const float2& translate, float rotate, const 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::BeginPaintGroup(const Util::String& fillColor, const Util::String& strokeColor, int strokeWidth)
 {
@@ -126,6 +144,8 @@ SvgPageWriter::BeginPaintGroup(const Util::String& fillColor, const Util::String
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::BeginTextGroup(int fontSize, const Util::String& textColor)
 {
@@ -135,6 +155,8 @@ SvgPageWriter::BeginTextGroup(int fontSize, const Util::String& textColor)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::EndGroup()
 {
@@ -142,6 +164,8 @@ SvgPageWriter::EndGroup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::Rect(float x, float y, float w, float h)
 {
@@ -154,6 +178,8 @@ SvgPageWriter::Rect(float x, float y, float w, float h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::Circle(float x, float y, float r)
 {
@@ -165,6 +191,8 @@ SvgPageWriter::Circle(float x, float y, float r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::Ellipse(float x, float y, float rx, float ry)
 {
@@ -177,6 +205,8 @@ SvgPageWriter::Ellipse(float x, float y, float rx, float ry)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::Line(float x1, float y1, float x2, float y2)
 {
@@ -241,6 +271,8 @@ SvgPageWriter::Polygon(const Array<float2>& points)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::Text(float x, float y, const String& text)
 {
@@ -252,6 +284,8 @@ SvgPageWriter::Text(float x, float y, const String& text)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgPageWriter::WriteContent(const Util::String& text)
 {

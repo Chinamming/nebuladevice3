@@ -36,6 +36,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline D3DXHANDLE
 D3D9ShaderVariation::GetD3D9Technique() const
 {
@@ -44,6 +46,8 @@ D3D9ShaderVariation::GetD3D9Technique() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ID3DXEffect*
 D3D9ShaderVariation::GetD3D9Effect() const
 {

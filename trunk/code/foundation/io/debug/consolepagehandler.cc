@@ -16,6 +16,8 @@ using namespace IO;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ConsolePageHandler::ConsolePageHandler()
 {
     // setup request handler
@@ -29,12 +31,16 @@ ConsolePageHandler::ConsolePageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ConsolePageHandler::~ConsolePageHandler()
 {
     this->historyConsoleHandler = 0;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsolePageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {

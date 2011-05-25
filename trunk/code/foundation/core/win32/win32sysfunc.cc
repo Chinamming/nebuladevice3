@@ -200,6 +200,8 @@ SysFunc::RegisterExitHandler(const Core::ExitHandler* exitHandler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const System::SystemInfo*
 SysFunc::GetSystemInfo()
 {

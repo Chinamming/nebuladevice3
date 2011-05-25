@@ -19,6 +19,8 @@ using namespace Http;
 using namespace Graphics;
 using namespace CoreGraphics;
 //------------------------------------------------------------------------------
+/**
+*/
 FrameCapturePageHandler::FrameCapturePageHandler()
 {
     this->SetName("Capture Frames");
@@ -27,6 +29,8 @@ FrameCapturePageHandler::FrameCapturePageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameCapturePageHandler::HandleRequest(const Ptr<HttpRequest>& request) 
 {

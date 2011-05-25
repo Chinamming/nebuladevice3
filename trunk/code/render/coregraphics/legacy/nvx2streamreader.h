@@ -150,6 +150,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Nvx2StreamReader::SetVertexBuffer(const Ptr<Base::VertexBufferBase>& vBuf)
 {
@@ -157,6 +159,8 @@ Nvx2StreamReader::SetVertexBuffer(const Ptr<Base::VertexBufferBase>& vBuf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Nvx2StreamReader::SetVertexBufferLoader(const Ptr<Base::MemoryVertexBufferLoaderBase>& vBufLoader)
 {
@@ -164,6 +168,8 @@ Nvx2StreamReader::SetVertexBufferLoader(const Ptr<Base::MemoryVertexBufferLoader
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Nvx2StreamReader::SetRawMode(bool b)
 {
@@ -171,6 +177,8 @@ Nvx2StreamReader::SetRawMode(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Nvx2StreamReader::IsRawMode() const
 {
@@ -178,6 +186,8 @@ Nvx2StreamReader::IsRawMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Base::VertexBufferBase>&
 Nvx2StreamReader::GetVertexBuffer() const
 {
@@ -186,6 +196,8 @@ Nvx2StreamReader::GetVertexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Base::IndexBufferBase>&
 Nvx2StreamReader::GetIndexBuffer() const
 {
@@ -194,6 +206,8 @@ Nvx2StreamReader::GetIndexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<CoreGraphics::PrimitiveGroup>&
 Nvx2StreamReader::GetPrimitiveGroups() const
 {
@@ -201,6 +215,8 @@ Nvx2StreamReader::GetPrimitiveGroups() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float*
 Nvx2StreamReader::GetVertexData() const
 {
@@ -208,6 +224,8 @@ Nvx2StreamReader::GetVertexData() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ushort*
 Nvx2StreamReader::GetIndexData() const
 {
@@ -215,6 +233,8 @@ Nvx2StreamReader::GetIndexData() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Nvx2StreamReader::GetNumVertices() const
 {
@@ -222,6 +242,8 @@ Nvx2StreamReader::GetNumVertices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Nvx2StreamReader::GetNumIndices() const
 {
@@ -229,6 +251,8 @@ Nvx2StreamReader::GetNumIndices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Nvx2StreamReader::GetVertexWidth() const
 {
@@ -236,6 +260,8 @@ Nvx2StreamReader::GetVertexWidth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Nvx2StreamReader::GetNumEdges() const
 {
@@ -243,6 +269,8 @@ Nvx2StreamReader::GetNumEdges() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<CoreGraphics::VertexComponent>&
 Nvx2StreamReader::GetVertexComponents() const
 {
@@ -250,6 +278,8 @@ Nvx2StreamReader::GetVertexComponents() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Nvx2StreamReader::SetUsage(Base::ResourceBase::Usage usage_)
 {
@@ -257,6 +287,8 @@ Nvx2StreamReader::SetUsage(Base::ResourceBase::Usage usage_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Base::ResourceBase::Usage
 Nvx2StreamReader::GetUsage() const
 {
@@ -264,6 +296,8 @@ Nvx2StreamReader::GetUsage() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Nvx2StreamReader::SetAccess(Base::ResourceBase::Access access_)
 {
@@ -271,6 +305,8 @@ Nvx2StreamReader::SetAccess(Base::ResourceBase::Access access_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Base::ResourceBase::Access
 Nvx2StreamReader::GetAccess() const
 {

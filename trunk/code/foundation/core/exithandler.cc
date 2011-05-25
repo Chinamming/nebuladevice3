@@ -10,18 +10,24 @@ namespace Core
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 ExitHandler::ExitHandler()
 {
     this->nextExitHandler = SysFunc::RegisterExitHandler(this);
 }        
 
 //------------------------------------------------------------------------------
+/**
+*/
 ExitHandler::~ExitHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const ExitHandler*
 ExitHandler::Next() const
 {
@@ -29,6 +35,8 @@ ExitHandler::Next() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ExitHandler::OnExit() const
 {

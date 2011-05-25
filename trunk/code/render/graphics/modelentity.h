@@ -91,6 +91,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelEntity::SetResourceId(const Resources::ResourceId& id)
 {
@@ -98,6 +100,8 @@ ModelEntity::SetResourceId(const Resources::ResourceId& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 ModelEntity::GetResourceId() const
 {
@@ -105,6 +109,8 @@ ModelEntity::GetResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelEntity::SetRootNodePath(const Util::StringAtom& p)
 {
@@ -112,6 +118,8 @@ ModelEntity::SetRootNodePath(const Util::StringAtom& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ModelEntity::GetRootNodePath() const
 {
@@ -119,6 +127,8 @@ ModelEntity::GetRootNodePath() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelEntity::SetRootNodeOffsetMatrix(const Math::matrix44& m)
 {
@@ -126,6 +136,8 @@ ModelEntity::SetRootNodeOffsetMatrix(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 ModelEntity::GetRootNodeOffsetMatrix() const
 {
@@ -133,6 +145,8 @@ ModelEntity::GetRootNodeOffsetMatrix() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelEntity::IsAnimDrivenMotionTrackingEnabled() const
 {
@@ -140,6 +154,8 @@ ModelEntity::IsAnimDrivenMotionTrackingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ModelEntity::GetAnimDrivenMotionJointName() const
 {
@@ -147,6 +163,8 @@ ModelEntity::GetAnimDrivenMotionJointName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 ModelEntity::GetAnimDrivenMotionVector() const
 {
@@ -154,6 +172,8 @@ ModelEntity::GetAnimDrivenMotionVector() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelEntity::IsAnimEventTrackingEnabled() const
 {
@@ -161,6 +181,8 @@ ModelEntity::IsAnimEventTrackingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Animation::AnimEventInfo>&
 ModelEntity::GetAnimEvents() const
 {
@@ -168,6 +190,8 @@ ModelEntity::GetAnimEvents() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelEntity::IsCharJointTrackingEnabled() const
 {
@@ -175,6 +199,8 @@ ModelEntity::IsCharJointTrackingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelEntity::IsCharJointDataValid() const
 {

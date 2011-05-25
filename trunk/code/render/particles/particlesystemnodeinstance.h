@@ -57,6 +57,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ParticleSystemInstance>&
 ParticleSystemNodeInstance::GetParticleSystemInstance() const
 {

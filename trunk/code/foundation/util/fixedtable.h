@@ -60,6 +60,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedTable<TYPE>::FixedTable() :
     width(0),
@@ -70,6 +72,8 @@ FixedTable<TYPE>::FixedTable() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 FixedTable<TYPE>::Delete()
@@ -84,6 +88,8 @@ FixedTable<TYPE>::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 FixedTable<TYPE>::Allocate(SizeT w, SizeT h)
@@ -124,6 +130,8 @@ FixedTable<TYPE>::Copy(const FixedTable<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 FixedTable<TYPE>::Clear(const TYPE& val)
@@ -141,6 +149,8 @@ FixedTable<TYPE>::Clear(const TYPE& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedTable<TYPE>::FixedTable(SizeT w, SizeT h) :
     width(0),
@@ -151,6 +161,8 @@ FixedTable<TYPE>::FixedTable(SizeT w, SizeT h) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedTable<TYPE>::FixedTable(SizeT w, SizeT h, const TYPE& val) :
     width(0),
@@ -162,6 +174,8 @@ FixedTable<TYPE>::FixedTable(SizeT w, SizeT h, const TYPE& val) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedTable<TYPE>::FixedTable(const FixedTable<TYPE>& rhs) :
     width(0),
@@ -172,6 +186,8 @@ FixedTable<TYPE>::FixedTable(const FixedTable<TYPE>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 FixedTable<TYPE>::~FixedTable()
 {
@@ -179,6 +195,8 @@ FixedTable<TYPE>::~FixedTable()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 FixedTable<TYPE>::operator=(const FixedTable<TYPE>& rhs)
@@ -188,6 +206,8 @@ FixedTable<TYPE>::operator=(const FixedTable<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 FixedTable<TYPE>::operator==(const FixedTable<TYPE>& rhs) const
@@ -218,6 +238,8 @@ FixedTable<TYPE>::operator==(const FixedTable<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 FixedTable<TYPE>::operator!=(const FixedTable<TYPE>& rhs) const
@@ -226,6 +248,8 @@ FixedTable<TYPE>::operator!=(const FixedTable<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 FixedTable<TYPE>::SetSize(SizeT w, SizeT h)
@@ -235,6 +259,8 @@ FixedTable<TYPE>::SetSize(SizeT w, SizeT h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SizeT
 FixedTable<TYPE>::Width() const
@@ -243,6 +269,8 @@ FixedTable<TYPE>::Width() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SizeT
 FixedTable<TYPE>::Height() const
@@ -251,6 +279,8 @@ FixedTable<TYPE>::Height() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 FixedTable<TYPE>::Set(IndexT x, IndexT y, const TYPE& val)
@@ -265,6 +295,8 @@ FixedTable<TYPE>::Set(IndexT x, IndexT y, const TYPE& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 FixedTable<TYPE>::At(IndexT x, IndexT y) const

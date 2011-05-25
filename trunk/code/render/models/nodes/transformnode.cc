@@ -16,6 +16,8 @@ using namespace Util;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformNode::TransformNode() :
     position(0.0f, 0.0f, 0.0f),
     rotate(0.0f, 0.0f, 0.0f, 1.0f),
@@ -32,12 +34,16 @@ TransformNode::TransformNode() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformNode::~TransformNode()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 TransformNode::CreateNodeInstance() const
 {
@@ -46,6 +52,8 @@ TransformNode::CreateNodeInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::State
 TransformNode::GetResourceState() const
 {
@@ -53,6 +61,8 @@ TransformNode::GetResourceState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 TransformNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 {
@@ -104,6 +114,8 @@ TransformNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reade
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 TransformNode::OnAttachToModel(const Ptr<Model>& model)
 {

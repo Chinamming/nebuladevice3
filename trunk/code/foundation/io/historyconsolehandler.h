@@ -42,6 +42,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HistoryConsoleHandler::SetHistorySize(SizeT numLines)
 {
@@ -49,6 +51,8 @@ HistoryConsoleHandler::SetHistorySize(SizeT numLines)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 HistoryConsoleHandler::GetHistorySize() const
 {
@@ -56,6 +60,8 @@ HistoryConsoleHandler::GetHistorySize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::RingBuffer<Util::String>&
 HistoryConsoleHandler::GetHistory() const
 {

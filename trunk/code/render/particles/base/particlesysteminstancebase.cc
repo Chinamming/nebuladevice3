@@ -37,6 +37,8 @@ extern void ParticleJobFunc(const JobFuncContext& ctx);
 Particles::JOB_ID ParticleSystemInstanceBase::jobIdCounter = 0;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystemInstanceBase::ParticleSystemInstanceBase() :
     transform(Math::matrix44::identity()),
     velocity(vector::nullvec()),
@@ -63,12 +65,16 @@ ParticleSystemInstanceBase::ParticleSystemInstanceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystemInstanceBase::~ParticleSystemInstanceBase()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::Setup(const Ptr<ParticleSystem>& psys)
 {
@@ -107,6 +113,8 @@ ParticleSystemInstanceBase::Setup(const Ptr<ParticleSystem>& psys)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::Discard()
 {
@@ -125,6 +133,8 @@ ParticleSystemInstanceBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::Start()
 {
@@ -133,6 +143,8 @@ ParticleSystemInstanceBase::Start()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::Stop()
 {
@@ -141,6 +153,8 @@ ParticleSystemInstanceBase::Stop()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::OnRenderBefore()
 {
@@ -452,6 +466,8 @@ ParticleSystemInstanceBase::EmitParticle(IndexT emissionSampleIndex, float initi
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::FinalizeJobs()
 {
@@ -485,6 +501,8 @@ ParticleSystemInstanceBase::FinalizeJobs()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::PrepareJobUniformData(float stepTime, bool generateVertexList, Jobs::JobUniformDesc &uniformDesc)
 {
@@ -496,6 +514,8 @@ ParticleSystemInstanceBase::PrepareJobUniformData(float stepTime, bool generateV
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::PrepareJobOutputData(bool generateVertexList, int inputBufferSize, Jobs::JobDataDesc &outputDesc)
 {
@@ -510,6 +530,8 @@ ParticleSystemInstanceBase::PrepareJobOutputData(bool generateVertexList, int in
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystemInstanceBase::StartJobStepParticles(float stepTime, bool generateVertexList)
 {
@@ -644,7 +666,7 @@ ParticleSystemInstanceBase::RenderDebug()
             ShapeRenderer::Instance()->AddShape(boxShape); 
 
             RenderShape centerShape;
-            matrix44 centerPoint = matrix44::scaling(vector(0.1,0.1,0.1));
+            matrix44 centerPoint = matrix44::scaling(vector(0.1f,0.1f,0.1f));
             centerPoint.set_position(this->boundingBox.center());
             centerShape.SetupSimpleShape(Threading::Thread::GetMyThreadId(),
                                          RenderShape::Box,
@@ -656,6 +678,8 @@ ParticleSystemInstanceBase::RenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void ParticleSystemInstanceBase::UpdateVertexStreams()
 {
     n_assert(ParticleRenderer::Instance()->IsInAttach());

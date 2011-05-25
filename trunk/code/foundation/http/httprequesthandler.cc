@@ -13,12 +13,16 @@ using namespace IO;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpRequestHandler::HttpRequestHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpRequestHandler::~HttpRequestHandler()
 {
     this->pendingRequests.SetSignalOnEnqueueEnabled(false);

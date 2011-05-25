@@ -14,6 +14,8 @@ using namespace Util;
 using namespace Models;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinSet::CharacterSkinSet() :
     skinLibrary(0)
 {
@@ -21,12 +23,16 @@ CharacterSkinSet::CharacterSkinSet() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkinSet::~CharacterSkinSet()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::Setup(const CharacterSkinLibrary& skinLib, const Ptr<ModelInstance>& modelInst)
 {
@@ -36,6 +42,8 @@ CharacterSkinSet::Setup(const CharacterSkinLibrary& skinLib, const Ptr<ModelInst
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::Discard()
 {
@@ -46,6 +54,8 @@ CharacterSkinSet::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::AddSkin(const StringAtom& skinName)
 {
@@ -61,6 +71,8 @@ CharacterSkinSet::AddSkin(const StringAtom& skinName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::RemoveSkin(const StringAtom& skinName)
 {
@@ -74,6 +86,8 @@ CharacterSkinSet::RemoveSkin(const StringAtom& skinName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::ToggleSkin(const StringAtom& skinName)
 {
@@ -89,6 +103,8 @@ CharacterSkinSet::ToggleSkin(const StringAtom& skinName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::Clear()
 {
@@ -102,6 +118,8 @@ CharacterSkinSet::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkinSet::ApplySkinList(const StringAtom& skinListName)
 {
@@ -121,6 +139,8 @@ CharacterSkinSet::ApplySkinList(const StringAtom& skinListName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 CharacterSkinSet::HasSkin(const StringAtom& skinName) const
 {
@@ -129,6 +149,8 @@ CharacterSkinSet::HasSkin(const StringAtom& skinName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 CharacterSkinSet::GetNumSkins() const
 {
@@ -136,6 +158,8 @@ CharacterSkinSet::GetNumSkins() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const StringAtom&
 CharacterSkinSet::GetSkin(IndexT i) const
 {
@@ -143,6 +167,8 @@ CharacterSkinSet::GetSkin(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Models::ModelNodeInstance>&
 CharacterSkinSet::GetSkinNodeInstanceByIndex(IndexT i) const
 {
@@ -150,6 +176,8 @@ CharacterSkinSet::GetSkinNodeInstanceByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Models::ModelNodeInstance>&
 CharacterSkinSet::GetSkinNodeInstanceByName(const StringAtom& name) const
 {

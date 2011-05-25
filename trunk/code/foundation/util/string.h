@@ -313,6 +313,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void*
 String::operator new(size_t size)
 {
@@ -328,6 +330,8 @@ String::operator new(size_t size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 String::operator delete(void* ptr)
 {
@@ -339,6 +343,8 @@ String::operator delete(void* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 String::String() :
     heapBuffer(0),
@@ -349,6 +355,8 @@ String::String() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::Delete()
 {
@@ -363,6 +371,8 @@ String::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline 
 String::~String()
 {
@@ -439,6 +449,8 @@ String::Reserve(SizeT newSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::SetInt(int val)
 {
@@ -446,6 +458,8 @@ String::SetInt(int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::SetFloat(float val)
 {
@@ -453,6 +467,8 @@ String::SetFloat(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::SetBool(bool val)
 {
@@ -468,6 +484,8 @@ String::SetBool(bool val)
 
 #if !__OSX__
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::SetFloat2(const Math::float2& v)
 {
@@ -475,6 +493,8 @@ String::SetFloat2(const Math::float2& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::SetFloat4(const Math::float4& v)
 {
@@ -482,6 +502,8 @@ String::SetFloat4(const Math::float4& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::SetMatrix44(const Math::matrix44& m)
 {
@@ -497,6 +519,8 @@ String::SetMatrix44(const Math::matrix44& m)
 #endif // __OSX__
     
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 String::String(const char* str) :
     heapBuffer(0),
@@ -508,6 +532,8 @@ String::String(const char* str) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 String::String(const String& rhs) :
     heapBuffer(0),
@@ -519,6 +545,8 @@ String::String(const String& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const char*
 String::AsCharPtr() const
 {
@@ -533,6 +561,8 @@ String::AsCharPtr() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const char*
 String::Get() const
 {
@@ -540,6 +570,8 @@ String::Get() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::operator=(const String& rhs)
 {
@@ -550,6 +582,8 @@ String::operator=(const String& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::operator=(const char* cStr)
 {
@@ -557,6 +591,8 @@ String::operator=(const char* cStr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::Append(const String& str)
 {
@@ -564,6 +600,8 @@ String::Append(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::operator += (const String& rhs)
 {
@@ -571,6 +609,8 @@ String::operator += (const String& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline char
 String::operator[](IndexT i) const
 {
@@ -591,6 +631,8 @@ String::operator[](IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 String::Length() const
 {
@@ -598,6 +640,8 @@ String::Length() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::Clear()
 {
@@ -605,6 +649,8 @@ String::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 String::IsEmpty() const
 {
@@ -612,6 +658,8 @@ String::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 String::IsValid() const
 {
@@ -644,6 +692,8 @@ String::HashCode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 static inline String
 operator+(const String& s0, const String& s1)
 {
@@ -681,6 +731,8 @@ String::ConvertBackslashes()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 String::CheckFileExtension(const String& ext) const
 {
@@ -750,6 +802,8 @@ String::CheckValidCharSet(const String& charSet) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 String::IsValidInt() const
 {
@@ -831,6 +885,8 @@ String::AsFloat4() const
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::ReplaceIllegalFilenameChars(char replacement)
 {
@@ -838,6 +894,8 @@ String::ReplaceIllegalFilenameChars(char replacement)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 String::FromInt(int i)
 {	
@@ -847,6 +905,8 @@ String::FromInt(int i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 String::FromFloat(float f)
 {
@@ -856,6 +916,8 @@ String::FromFloat(float f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 String::FromBool(bool b)
 {
@@ -866,6 +928,8 @@ String::FromBool(bool b)
 
 #if !__OSX__
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 String::FromFloat2(const Math::float2& v)
 {
@@ -875,6 +939,8 @@ String::FromFloat2(const Math::float2& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 String::FromFloat4(const Math::float4& v)
 {
@@ -884,6 +950,8 @@ String::FromFloat4(const Math::float4& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 String::FromMatrix44(const Math::matrix44& m)
 {
@@ -894,6 +962,8 @@ String::FromMatrix44(const Math::matrix44& m)
 #endif
     
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::AppendInt(int val)
 {
@@ -901,6 +971,8 @@ String::AppendInt(int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::AppendFloat(float val)
 {
@@ -908,6 +980,8 @@ String::AppendFloat(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::AppendBool(bool val)
 {
@@ -916,6 +990,8 @@ String::AppendBool(bool val)
 
 #if !__OSX__    
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::AppendFloat2(const Math::float2& val)
 {
@@ -923,6 +999,8 @@ String::AppendFloat2(const Math::float2& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::AppendFloat4(const Math::float4& val)
 {
@@ -930,6 +1008,8 @@ String::AppendFloat4(const Math::float4& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 String::AppendMatrix44(const Math::matrix44& val)
 {

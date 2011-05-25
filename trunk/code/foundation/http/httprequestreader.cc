@@ -14,6 +14,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpRequestReader::HttpRequestReader() :
     isValidHttpRequest(false),
     httpMethod(HttpMethod::InvalidHttpMethod)
@@ -22,6 +24,8 @@ HttpRequestReader::HttpRequestReader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpRequestReader::ReadRequest()
 {

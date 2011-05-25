@@ -13,12 +13,16 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimResource::AnimResource()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimResource::~AnimResource()
 {
     // make sure we've been unloaded

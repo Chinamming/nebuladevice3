@@ -40,6 +40,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CharacterInstance>&
 CharacterNodeInstance::GetCharacterInstance() const
 {

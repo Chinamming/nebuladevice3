@@ -19,6 +19,8 @@ using namespace Input;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32InputServer::Win32InputServer() :
     di8(0),
     di8Mouse(0)
@@ -27,6 +29,8 @@ Win32InputServer::Win32InputServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32InputServer::~Win32InputServer()
 {
     if (this->IsOpen())

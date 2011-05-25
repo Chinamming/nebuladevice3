@@ -85,6 +85,8 @@ protected:
 }; 
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Math::ClipStatus::Type
 GraphicsEntity::GetClipStatus() const
 {
@@ -92,6 +94,8 @@ GraphicsEntity::GetClipStatus() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 GraphicsEntity::GetLocalBoundingBox() const
 {
@@ -99,6 +103,8 @@ GraphicsEntity::GetLocalBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 GraphicsEntity::GetGlobalBoundingBox() const
 {
@@ -106,6 +112,8 @@ GraphicsEntity::GetGlobalBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 GraphicsEntity::GetEntityTime() const
 {
@@ -113,6 +121,8 @@ GraphicsEntity::GetEntityTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 GraphicsEntity::GetTransform() const
 {
@@ -120,6 +130,8 @@ GraphicsEntity::GetTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GraphicsEntity::IsVisible() const
 {
@@ -127,6 +139,8 @@ GraphicsEntity::IsVisible() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GraphicsEntity::IsObjectRefValid() const
 {
@@ -134,6 +148,8 @@ GraphicsEntity::IsObjectRefValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Threading::ObjectRef>&
 GraphicsEntity::GetObjectRef() const
 {
@@ -141,6 +157,8 @@ GraphicsEntity::GetObjectRef() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GraphicsEntity::SetType(GraphicsEntityType::Code t)
 {
@@ -148,6 +166,8 @@ GraphicsEntity::SetType(GraphicsEntityType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline GraphicsEntityType::Code
 GraphicsEntity::GetType() const
 {

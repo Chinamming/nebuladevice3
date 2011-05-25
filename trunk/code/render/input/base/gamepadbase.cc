@@ -13,6 +13,8 @@ using namespace Input;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 GamePadBase::GamePadBase() :
     playerIndex(0),
     isConnected(false),
@@ -27,12 +29,16 @@ GamePadBase::GamePadBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GamePadBase::~GamePadBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GamePadBase::OnAttach()
 {
@@ -45,6 +51,8 @@ GamePadBase::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GamePadBase::OnReset()
 {
@@ -71,6 +79,8 @@ GamePadBase::OnReset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 GamePadBase::ButtonAsString(Button btn)
 {
@@ -105,6 +115,8 @@ GamePadBase::ButtonAsString(Button btn)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 GamePadBase::AxisAsString(Axis axis)
 {

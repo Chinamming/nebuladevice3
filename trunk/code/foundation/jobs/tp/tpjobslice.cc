@@ -10,6 +10,8 @@ namespace Jobs
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJobSlice::TPJobSlice() :
     job(0),
     sliceIndex(InvalidIndex)
@@ -18,12 +20,16 @@ TPJobSlice::TPJobSlice() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJobSlice::~TPJobSlice()
 {
     this->job = 0;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobSlice::Setup(TPJob* job_, IndexT sliceIndex_)
 {

@@ -12,6 +12,8 @@ __ImplementClass(Base::StreamTextureSaverBase, 'STSB', Resources::ResourceSaver)
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamTextureSaverBase::StreamTextureSaverBase() :
     format(ImageFileFormat::JPG),
     mipLevel(0)
@@ -20,12 +22,16 @@ StreamTextureSaverBase::StreamTextureSaverBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamTextureSaverBase::~StreamTextureSaverBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamTextureSaverBase::OnSave()
 {

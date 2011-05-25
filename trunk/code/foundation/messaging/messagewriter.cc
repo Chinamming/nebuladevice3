@@ -15,12 +15,16 @@ using namespace Util;
 using namespace Core;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MessageWriter::MessageWriter()
 {
     this->binaryWriter = BinaryWriter::Create();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MessageWriter::SetStream(const Ptr<IO::Stream>& s)
 {

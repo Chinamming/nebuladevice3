@@ -19,6 +19,8 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderDeviceBase::RenderDeviceBase() :
     isOpen(false),
     inNotifyEventHandlers(false),
@@ -34,6 +36,8 @@ RenderDeviceBase::RenderDeviceBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RenderDeviceBase::~RenderDeviceBase()
 {
     n_assert(!this->IsOpen());
@@ -74,6 +78,8 @@ RenderDeviceBase::SetOverrideDefaultRenderTarget(const Ptr<CoreGraphics::RenderT
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 RenderDeviceBase::Open()
 {
@@ -99,6 +105,8 @@ RenderDeviceBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::Close()
 {
@@ -122,6 +130,8 @@ RenderDeviceBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 RenderDeviceBase::IsOpen() const
 {
@@ -129,6 +139,8 @@ RenderDeviceBase::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::SetStreamSource(IndexT streamIndex, const Ptr<VertexBuffer>& vb, IndexT offsetVertexIndex)
 {
@@ -138,6 +150,8 @@ RenderDeviceBase::SetStreamSource(IndexT streamIndex, const Ptr<VertexBuffer>& v
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<VertexBuffer>&
 RenderDeviceBase::GetStreamVertexBuffer(IndexT streamIndex) const
 {
@@ -146,6 +160,8 @@ RenderDeviceBase::GetStreamVertexBuffer(IndexT streamIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT
 RenderDeviceBase::GetStreamVertexOffset(IndexT streamIndex) const
 {
@@ -154,6 +170,8 @@ RenderDeviceBase::GetStreamVertexOffset(IndexT streamIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::SetVertexLayout(const Ptr<VertexLayout>& vl)
 {
@@ -161,6 +179,8 @@ RenderDeviceBase::SetVertexLayout(const Ptr<VertexLayout>& vl)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<VertexLayout>&
 RenderDeviceBase::GetVertexLayout() const
 {
@@ -168,6 +188,8 @@ RenderDeviceBase::GetVertexLayout() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::SetIndexBuffer(const Ptr<IndexBuffer>& ib)
 {
@@ -175,6 +197,8 @@ RenderDeviceBase::SetIndexBuffer(const Ptr<IndexBuffer>& ib)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<IndexBuffer>&
 RenderDeviceBase::GetIndexBuffer() const
 {
@@ -230,6 +254,8 @@ RenderDeviceBase::NotifyEventHandlers(const RenderEvent& event)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 RenderDeviceBase::BeginFrame()
 {
@@ -252,6 +278,8 @@ RenderDeviceBase::BeginFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::BeginPass(const Ptr<RenderTarget>& rt, const Ptr<ShaderInstance>& shd)
 {
@@ -277,6 +305,8 @@ RenderDeviceBase::BeginPass(const Ptr<RenderTarget>& rt, const Ptr<ShaderInstanc
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 RenderDeviceBase::BeginPass(const Ptr<CoreGraphics::MultipleRenderTarget>& mrt, const Ptr<CoreGraphics::ShaderInstance>& shd)
 {
@@ -302,6 +332,8 @@ RenderDeviceBase::BeginPass(const Ptr<CoreGraphics::MultipleRenderTarget>& mrt, 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::BeginBatch(BatchType::Code batchType, const Ptr<ShaderInstance>& shd)
 {
@@ -332,6 +364,8 @@ RenderDeviceBase::BeginBatch(BatchType::Code batchType, const Ptr<ShaderInstance
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::EndBatch()
 {
@@ -356,6 +390,8 @@ RenderDeviceBase::EndBatch()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::EndPass()
 {
@@ -385,6 +421,8 @@ RenderDeviceBase::EndPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::EndFrame()
 {
@@ -404,6 +442,8 @@ RenderDeviceBase::EndFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::Present()
 {
@@ -411,6 +451,8 @@ RenderDeviceBase::Present()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::Draw()
 {
@@ -419,6 +461,8 @@ RenderDeviceBase::Draw()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RenderDeviceBase::DrawIndexedInstanced(SizeT numInstances)
 {
@@ -427,6 +471,8 @@ RenderDeviceBase::DrawIndexedInstanced(SizeT numInstances)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ImageFileFormat::Code
 RenderDeviceBase::SaveScreenshot(ImageFileFormat::Code fmt, const Ptr<IO::Stream>& outStream)
 {

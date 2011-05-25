@@ -11,6 +11,8 @@ namespace RenderUtil
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MayaCameraUtil::MayaCameraUtil() :
     defaultCenterOfInterest(0.0f, 0.0f, 0.0f),
     defaultEyePos(0.0f, 0.0f, 10.0f),
@@ -33,6 +35,8 @@ MayaCameraUtil::MayaCameraUtil() :
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MayaCameraUtil::Setup(const point& defCoi, const point& defEyePos, const vector& defUpVec)
 {
@@ -43,6 +47,8 @@ MayaCameraUtil::Setup(const point& defCoi, const point& defEyePos, const vector&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MayaCameraUtil::Reset()
 {
@@ -55,6 +61,8 @@ MayaCameraUtil::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MayaCameraUtil::Update()
 {

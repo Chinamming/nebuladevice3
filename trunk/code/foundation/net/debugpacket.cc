@@ -14,6 +14,8 @@ using namespace IO;
 using namespace System;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugPacket::DebugPacket() :
     hasData(false)
 {
@@ -21,6 +23,8 @@ DebugPacket::DebugPacket() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugPacket::~DebugPacket()
 {
     // empty
@@ -195,6 +199,8 @@ DebugPacket::GetRawBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<DebugPacket>
 DebugPacket::EncodeStream(ushort portNum, uint packetCounter, const Ptr<Stream>& stream)
 {
@@ -225,6 +231,8 @@ DebugPacket::EncodeStream(ushort portNum, uint packetCounter, const Ptr<Stream>&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugPacket::DecodePackets(const Array<DebugPacket>& packets,
                            const Ptr<Stream>& stream,

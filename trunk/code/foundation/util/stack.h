@@ -50,6 +50,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Stack<TYPE>::Stack()
 {
@@ -57,6 +59,8 @@ Stack<TYPE>::Stack()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Stack<TYPE>::Stack(const Stack<TYPE>& rhs)
 {
@@ -64,6 +68,8 @@ Stack<TYPE>::Stack(const Stack<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Stack<TYPE>::operator=(const Stack<TYPE>& rhs)
@@ -72,6 +78,8 @@ Stack<TYPE>::operator=(const Stack<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 Stack<TYPE>::operator[](IndexT index) const
@@ -80,6 +88,8 @@ Stack<TYPE>::operator[](IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Stack<TYPE>::operator==(const Stack<TYPE>& rhs) const
@@ -88,6 +98,8 @@ Stack<TYPE>::operator==(const Stack<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Stack<TYPE>::operator!=(const Stack<TYPE>& rhs) const
@@ -96,6 +108,8 @@ Stack<TYPE>::operator!=(const Stack<TYPE>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Stack<TYPE>::Contains(const TYPE& e) const
@@ -104,6 +118,8 @@ Stack<TYPE>::Contains(const TYPE& e) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Stack<TYPE>::Clear()
@@ -112,6 +128,8 @@ Stack<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SizeT
 Stack<TYPE>::Size() const
@@ -120,6 +138,8 @@ Stack<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool
 Stack<TYPE>::IsEmpty() const
@@ -128,6 +148,8 @@ Stack<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 Stack<TYPE>::Push(const TYPE& e)
@@ -136,6 +158,8 @@ Stack<TYPE>::Push(const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 Stack<TYPE>::Peek() const
@@ -144,6 +168,8 @@ Stack<TYPE>::Peek() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE
 Stack<TYPE>::Pop()

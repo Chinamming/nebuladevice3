@@ -9,8 +9,6 @@
 #include "coregraphics/vertexbuffer.h"
 #include "coregraphics/indexbuffer.h"
 #include "coregraphics/win360/d3d9types.h"
-#include "coregraphics/d3d9/d3d9resourceeventhandler.h"
-#include "timing/time.h"
 
 #include <dxerr.h>
 
@@ -25,6 +23,8 @@ using namespace CoreGraphics;
 IDirect3D9* D3D9RenderDevice::d3d9 = 0;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9RenderDevice::D3D9RenderDevice() :
     d3d9Device(0),
     adapter(0),
@@ -39,6 +39,8 @@ D3D9RenderDevice::D3D9RenderDevice() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9RenderDevice::~D3D9RenderDevice()
 {
     if (this->IsOpen())
@@ -126,8 +128,6 @@ bool
 D3D9RenderDevice::Open()
 {
     n_assert(!this->IsOpen());
-
-	this->AttachEventHandler(D3D9ResourceEventHandler::Create());
     bool success = false;
     if (this->OpenDirect3DDevice())
     {
@@ -148,7 +148,6 @@ D3D9RenderDevice::Close()
     n_assert(this->IsOpen());
     RenderDeviceBase::Close();
     this->CloseDirect3DDevice();
-	this->RemoveEventHandler(D3D9ResourceEventHandler::Instance());
 }
 
 //------------------------------------------------------------------------------
@@ -377,8 +376,12 @@ D3D9RenderDevice::OpenDirect3DDevice()
     // set initial device state
     this->SetInitialDeviceState();
 
-	// create queries
-	this->SetupQueries();
+    // create double buffer query to avoid gpu to render more than 1 frame ahead
+    IndexT i;
+    for (i = 0; i < numSyncQueries; ++i)
+    {
+        this->d3d9Device->CreateQuery(D3DQUERYTYPE_EVENT, &this->gpuSyncQuery[i]);  	
+    }         
 
     return true;
 }
@@ -394,14 +397,18 @@ D3D9RenderDevice::CloseDirect3DDevice()
     n_assert(0 != this->d3d9Device);
 
     this->UnbindD3D9Resources();   
-    for (IndexT i = 1; i < 4; i++)
+    IndexT i;
+    for (i = 1; i < 4; i++)
     {
         this->d3d9Device->SetRenderTarget(i, NULL);
     }
     this->d3d9Device->SetDepthStencilSurface(NULL);
 
     // release queries
-	this->DiscardQueries();
+    for (i = 0; i < numSyncQueries; ++i)
+    {
+        this->gpuSyncQuery[i]->Release();  	
+    }
 
     // release the Direct3D device
     this->d3d9Device->Release();
@@ -412,51 +419,47 @@ D3D9RenderDevice::CloseDirect3DDevice()
 /**
     This catches the lost device state, and tries to restore a lost device.
     The method will send out the events DeviceLost and DeviceRestored.
-    Resources should react to these events accordingly. 
+    Resources should react to these events accordingly. As long as
+    the device is in an invalid state, the method will return false.
+    This method is called by BeginFrame().
 */
-void
-D3D9RenderDevice::ResetDevice()
+bool
+D3D9RenderDevice::TestResetDevice()
 {
     n_assert(0 != this->d3d9Device);
 
-    // notify event handlers that the device was lost
-    this->NotifyEventHandlers(RenderEvent(RenderEvent::DeviceLost));
-	this->DiscardQueries();
-
-    // if we are in windowed mode, the cause for the lost
-    // device may be a desktop display mode switch, in this
-    // case we need to find new buffer formats
-    if (this->presentParams.Windowed)
-    {
-        this->SetupBufferFormats();
-    }
-
-#if 0
     HRESULT hr = this->d3d9Device->TestCooperativeLevel();
-	while ((hr != S_OK) && (hr != D3DERR_DEVICENOTRESET))
-	{
-		Timing::Sleep(0.01);
-	}
+    if (SUCCEEDED(hr))
+    {
+        // everything is ok
+        return true;
+    }
+    else if (D3DERR_DEVICENOTRESET == hr)
+    {
+        // notify event handlers that the device was lost
+        this->NotifyEventHandlers(RenderEvent(RenderEvent::DeviceLost));
 
-    // try to reset the device
-	hr = this->d3d9Device->Reset(&this->presentParams);
-	n_assert(SUCCEEDED(hr));
-#else
-	// it seems that the TestCooperativeLevel() always return D3DERR_DEVICELOST on Win7?
-	HRESULT hr = E_FAIL;
-	while (S_OK != hr)
-	{
-		hr = this->d3d9Device->Reset(&this->presentParams);
-		Timing::Sleep(0.01);
-	}
-#endif
+        // if we are in windowed mode, the cause for the lost
+        // device may be a desktop display mode switch, in this
+        // case we need to find new buffer formats
+        if (this->presentParams.Windowed)
+        {
+            this->SetupBufferFormats();
+        }
 
-    // set initial device state
-    this->SetInitialDeviceState();
+        // try to reset the device
+        hr = this->d3d9Device->Reset(&this->presentParams);
+        if (SUCCEEDED(hr))
+        {
+            // set initial device state
+            this->SetInitialDeviceState();
 
-    // send the DeviceRestored event
-    this->NotifyEventHandlers(RenderEvent(RenderEvent::DeviceRestored));
-	this->SetupQueries();
+            // send the DeviceRestored event
+            this->NotifyEventHandlers(RenderEvent(RenderEvent::DeviceRestored));
+        }
+    }
+    // the device cannot be restored at this time
+    return false;
 }
 
 //------------------------------------------------------------------------------
@@ -473,6 +476,12 @@ D3D9RenderDevice::BeginFrame()
     n_assert(this->d3d9Device);
     if (RenderDeviceBase::BeginFrame())
     {
+        // check for and handle lost device
+        if (!this->TestResetDevice())
+        {
+            this->inBeginFrame = false;
+            return false;
+        }
         HRESULT hr = this->d3d9Device->BeginScene();
         n_assert(SUCCEEDED(hr));
         return true;
@@ -522,14 +531,7 @@ D3D9RenderDevice::Present()
     if (0 != D3D9DisplayDevice::Instance()->GetHwnd())
     {
         HRESULT hr = this->d3d9Device->Present(NULL, NULL, 0, NULL);
-		if (D3DERR_DEVICELOST == hr)
-		{
-			this->ResetDevice();
-		}
-		else
-		{
-	        n_assert(SUCCEEDED(hr));
-		}
+        n_assert(SUCCEEDED(hr));
     }    
 
     // sync cpu thread with gpu
@@ -771,6 +773,8 @@ D3D9RenderDevice::UnbindD3D9Resources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 D3D9RenderDevice::SyncGPU()
 {
@@ -783,28 +787,4 @@ D3D9RenderDevice::SyncGPU()
         // wait till gpu has finsihed rendering the previous frame        
     }
 }
-
-//------------------------------------------------------------------------------
-void
-D3D9RenderDevice::DiscardQueries()
-{
-	for (IndexT i = 0; i < numSyncQueries; ++i)
-	{
-		this->gpuSyncQuery[i]->Release();  	
-		this->gpuSyncQuery[i] = NULL;
-	}
-}
-
-//------------------------------------------------------------------------------
-void
-D3D9RenderDevice::SetupQueries()
-{
-	// create double buffer query to avoid gpu to render more than 1 frame ahead
-	IndexT i;
-	for (i = 0; i < numSyncQueries; ++i)
-	{
-		this->d3d9Device->CreateQuery(D3DQUERYTYPE_EVENT, &this->gpuSyncQuery[i]);  	
-	}
-}
-
 } // namespace CoreGraphics

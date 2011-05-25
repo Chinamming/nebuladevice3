@@ -17,6 +17,8 @@ using namespace CoreGraphics;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Display::Display() :
     isOpen(false),
     parentWindow(0)
@@ -25,6 +27,8 @@ Display::Display() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Display::~Display()
 {
     n_assert(!this->isOpen);
@@ -32,6 +36,8 @@ Display::~Display()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Display::Open()
 {
@@ -43,7 +49,6 @@ Display::Open()
     msg->SetDisplayMode(this->settings.DisplayMode());
     msg->SetAntiAliasQuality(this->settings.GetAntiAliasQuality());
     msg->SetFullscreen(this->settings.IsFullscreen());
-	msg->SetAutoAdjustSize(this->settings.IsAutoAdjustSize());
     msg->SetDisplayModeSwitchEnabled(this->settings.IsDisplayModeSwitchEnabled());
     msg->SetTripleBufferingEnabled(this->settings.IsTripleBufferingEnabled());
     msg->SetAlwaysOnTop(this->settings.IsAlwaysOnTop());
@@ -69,6 +74,8 @@ Display::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Display::Close()
 {
@@ -79,6 +86,8 @@ Display::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Display::AdapterExists(CoreGraphics::Adapter::Code adapter)
 {
@@ -90,6 +99,8 @@ Display::AdapterExists(CoreGraphics::Adapter::Code adapter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<DisplayMode>
 Display::GetAvailableDisplayModes(Adapter::Code adapter, PixelFormat::Code pixelFormat)
 {
@@ -102,6 +113,8 @@ Display::GetAvailableDisplayModes(Adapter::Code adapter, PixelFormat::Code pixel
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Display::SupportsDisplayMode(Adapter::Code adapter, const DisplayMode& requestedMode)
 {
@@ -114,14 +127,8 @@ Display::SupportsDisplayMode(Adapter::Code adapter, const DisplayMode& requested
 }
 
 //------------------------------------------------------------------------------
-void
-Display::AdjustSize()
-{
-	Ptr<Graphics::AdjustDisplaySize> msg = Graphics::AdjustDisplaySize::Create();
-	GraphicsInterface::Instance()->Send(msg.cast<Message>());
-}
-
-//------------------------------------------------------------------------------
+/**
+*/
 DisplayMode
 Display::GetCurrentAdapterDisplayMode(Adapter::Code adapter)
 {
@@ -133,6 +140,8 @@ Display::GetCurrentAdapterDisplayMode(Adapter::Code adapter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AdapterInfo
 Display::GetAdapterInfo(Adapter::Code adapter)
 {
@@ -144,6 +153,8 @@ Display::GetAdapterInfo(Adapter::Code adapter)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Display::AttachDisplayEventHandler(const Ptr<ThreadSafeDisplayEventHandler>& handler)
 {
@@ -154,6 +165,8 @@ Display::AttachDisplayEventHandler(const Ptr<ThreadSafeDisplayEventHandler>& han
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Display::RemoveDisplayEventHandler(const Ptr<ThreadSafeDisplayEventHandler>& handler)
 {
@@ -164,6 +177,8 @@ Display::RemoveDisplayEventHandler(const Ptr<ThreadSafeDisplayEventHandler>& han
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Display::AttachRenderEventHandler(const Ptr<ThreadSafeRenderEventHandler>& handler)
 {
@@ -174,6 +189,8 @@ Display::AttachRenderEventHandler(const Ptr<ThreadSafeRenderEventHandler>& handl
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Display::RemoveRenderEventHandler(const Ptr<ThreadSafeRenderEventHandler>& handler)
 {

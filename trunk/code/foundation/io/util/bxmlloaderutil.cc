@@ -11,6 +11,8 @@ namespace IO
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 BXmlLoaderUtil::BXmlLoaderUtil() :
     buffer(0),
     bufSize(0),
@@ -23,12 +25,16 @@ BXmlLoaderUtil::BXmlLoaderUtil() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 BXmlLoaderUtil::~BXmlLoaderUtil()
 {
     // we don't own the buffer memory, so we don't free anything
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BXmlLoaderUtil::SetupFromFileInMemory(void* buf, SizeT size)
 {
@@ -66,6 +72,8 @@ BXmlLoaderUtil::SetupFromFileInMemory(void* buf, SizeT size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BXmlLoaderUtil::Discard()
 {
@@ -130,6 +138,8 @@ BXmlLoaderUtil::FindSiblingNodeIndex(ushort nodeIndex, const char* sibName) cons
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ushort
 BXmlLoaderUtil::GetParentNodeIndex(ushort nodeIndex) const
 {
@@ -138,6 +148,8 @@ BXmlLoaderUtil::GetParentNodeIndex(ushort nodeIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const char*
 BXmlLoaderUtil::GetNodeName(ushort nodeIndex) const
 {
@@ -146,6 +158,8 @@ BXmlLoaderUtil::GetNodeName(ushort nodeIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ushort
 BXmlLoaderUtil::FindNodeIndex(const char* path) const
 {
@@ -211,6 +225,8 @@ BXmlLoaderUtil::FindNodeIndex(const char* path) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlLoaderUtil::SetToFirstChild(const char* name)
 {
@@ -228,6 +244,8 @@ BXmlLoaderUtil::SetToFirstChild(const char* name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlLoaderUtil::SetToNextChild(const char* name)
 {
@@ -246,6 +264,8 @@ BXmlLoaderUtil::SetToNextChild(const char* name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BXmlLoaderUtil::SetToParent()
 {
@@ -287,6 +307,8 @@ BXmlLoaderUtil::FindAttrIndex(const char* attrName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 BXmlLoaderUtil::GetNumAttrs() const
 {
@@ -295,6 +317,8 @@ BXmlLoaderUtil::GetNumAttrs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const char*
 BXmlLoaderUtil::GetAttrName(uint attrIndex) const
 {
@@ -304,6 +328,8 @@ BXmlLoaderUtil::GetAttrName(uint attrIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const char*
 BXmlLoaderUtil::GetAttrValue(uint attrIndex) const
 {

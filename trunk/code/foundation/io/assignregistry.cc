@@ -15,6 +15,8 @@ __ImplementInterfaceSingleton(IO::AssignRegistry);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AssignRegistry::AssignRegistry() :
     isValid(false)
 {
@@ -22,6 +24,8 @@ AssignRegistry::AssignRegistry() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AssignRegistry::~AssignRegistry()
 {
     if (this->IsValid())
@@ -32,6 +36,8 @@ AssignRegistry::~AssignRegistry()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AssignRegistry::Setup()
 {
@@ -46,6 +52,8 @@ AssignRegistry::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AssignRegistry::Discard()
 {
@@ -59,6 +67,8 @@ AssignRegistry::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AssignRegistry::IsValid() const
 {
@@ -66,6 +76,8 @@ AssignRegistry::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AssignRegistry::SetupSystemAssigns()
 {
@@ -113,6 +125,8 @@ AssignRegistry::SetupSystemAssigns()
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AssignRegistry::SetupProjectAssigns()
 {
@@ -165,6 +179,8 @@ AssignRegistry::SetupProjectAssigns()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AssignRegistry::SetAssign(const Assign& assign)
 {
@@ -181,6 +197,8 @@ AssignRegistry::SetAssign(const Assign& assign)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AssignRegistry::HasAssign(const String& assignName) const
 {
@@ -192,6 +210,8 @@ AssignRegistry::HasAssign(const String& assignName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 AssignRegistry::GetAssign(const String& assignName) const
 {
@@ -206,6 +226,8 @@ AssignRegistry::GetAssign(const String& assignName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AssignRegistry::ClearAssign(const String& assignName)
 {
@@ -219,6 +241,8 @@ AssignRegistry::ClearAssign(const String& assignName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Assign>
 AssignRegistry::GetAllAssigns() const
 {

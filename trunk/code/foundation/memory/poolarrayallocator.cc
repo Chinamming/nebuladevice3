@@ -10,6 +10,8 @@ namespace Memory
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 PoolArrayAllocator::PoolArrayAllocator() :
     heapType(InvalidHeapType),
     name(0)
@@ -18,6 +20,8 @@ PoolArrayAllocator::PoolArrayAllocator() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 PoolArrayAllocator::~PoolArrayAllocator()
 {
     // check for mem leaks
@@ -27,6 +31,8 @@ PoolArrayAllocator::~PoolArrayAllocator()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PoolArrayAllocator::Setup(const char* name_, Memory::HeapType heapType_, uint poolSizes[NumPools])
 {
@@ -61,6 +67,8 @@ PoolArrayAllocator::Setup(const char* name_, Memory::HeapType heapType_, uint po
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 PoolArrayAllocator::Alloc(SizeT size)
 {
@@ -134,6 +142,8 @@ PoolArrayAllocator::Free(void* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const MemoryPool&
 PoolArrayAllocator::GetMemoryPool(IndexT index) const
 {
@@ -142,6 +152,8 @@ PoolArrayAllocator::GetMemoryPool(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if NEBULA3_MEMORY_STATS
 void
 PoolArrayAllocator::Dump()

@@ -19,18 +19,24 @@ using namespace InternalGraphics;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stage::Stage()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stage::~Stage()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Stage::Setup(const Util::Array<Ptr<Visibility::VisibilitySystemBase> >& visSystems)
 {
@@ -51,6 +57,8 @@ Stage::Setup(const Util::Array<Ptr<Visibility::VisibilitySystemBase> >& visSyste
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Stage::Discard()
 {
@@ -71,6 +79,8 @@ Stage::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Stage::AttachEntity(const Ptr<GraphicsEntity>& entity)
 {
@@ -83,6 +93,8 @@ Stage::AttachEntity(const Ptr<GraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Stage::RemoveEntity(const Ptr<GraphicsEntity>& entity)
 {
@@ -103,6 +115,8 @@ Stage::RemoveEntity(const Ptr<GraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Stage::OnFrame()
 {

@@ -14,6 +14,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StdTcpClient::StdTcpClient() :
     blocking(true),
     inConnectionState(false)
@@ -24,6 +26,8 @@ StdTcpClient::StdTcpClient() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StdTcpClient::~StdTcpClient()
 {
     if (this->IsConnected())
@@ -136,6 +140,8 @@ StdTcpClient::Disconnect()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StdTcpClient::Send()
 {
@@ -220,6 +226,8 @@ StdTcpClient::Send()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StdTcpClient::Recv()
 {
@@ -249,6 +257,8 @@ StdTcpClient::Recv()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Stream>&
 StdTcpClient::GetSendStream()
 {
@@ -256,6 +266,8 @@ StdTcpClient::GetSendStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<Stream>&
 StdTcpClient::GetRecvStream()
 {

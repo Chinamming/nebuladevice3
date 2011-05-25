@@ -14,12 +14,16 @@ using namespace IO;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MessageClient::MessageClient()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MessageClient::~MessageClient()
 {
     if (this->IsConnected())
@@ -46,6 +50,8 @@ MessageClient::Connect()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MessageClient::Disconnect()
 {
@@ -55,6 +61,8 @@ MessageClient::Disconnect()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MessageClient::Send()
 {
@@ -72,6 +80,8 @@ MessageClient::Send()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<IO::Stream>&
 MessageClient::GetSendStream()
 {
@@ -79,6 +89,8 @@ MessageClient::GetSendStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 MessageClient::Recv()
 {
@@ -115,6 +127,8 @@ MessageClient::Recv()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<IO::Stream>&
 MessageClient::GetRecvStream()
 {

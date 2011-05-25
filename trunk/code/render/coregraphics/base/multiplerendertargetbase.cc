@@ -13,6 +13,8 @@ using namespace CoreGraphics;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MultipleRenderTargetBase::MultipleRenderTargetBase():
     clearDepthStencil(false),
     clearDepth(1.0f),
@@ -27,12 +29,16 @@ MultipleRenderTargetBase::MultipleRenderTargetBase():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 MultipleRenderTargetBase::~MultipleRenderTargetBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MultipleRenderTargetBase::AddRenderTarget(const Ptr<RenderTarget>& rt)
 {
@@ -44,6 +50,8 @@ MultipleRenderTargetBase::AddRenderTarget(const Ptr<RenderTarget>& rt)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MultipleRenderTargetBase::SetClearColor(IndexT i, const Math::float4& color)
 {
@@ -52,6 +60,8 @@ MultipleRenderTargetBase::SetClearColor(IndexT i, const Math::float4& color)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MultipleRenderTargetBase::BeginPass()
 {
@@ -75,6 +85,8 @@ MultipleRenderTargetBase::BeginPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MultipleRenderTargetBase::BeginBatch(CoreGraphics::BatchType::Code batchType)
 {
@@ -86,6 +98,8 @@ MultipleRenderTargetBase::BeginBatch(CoreGraphics::BatchType::Code batchType)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MultipleRenderTargetBase::EndBatch()
 {
@@ -97,6 +111,8 @@ MultipleRenderTargetBase::EndBatch()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 MultipleRenderTargetBase::EndPass()
 {

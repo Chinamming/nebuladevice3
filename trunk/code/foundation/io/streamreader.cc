@@ -10,6 +10,8 @@ namespace IO
 __ImplementClass(IO::StreamReader, 'STRR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamReader::StreamReader() :
     isOpen(false),
     streamWasOpen(false)
@@ -18,6 +20,8 @@ StreamReader::StreamReader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StreamReader::~StreamReader()
 {
     n_assert(!this->IsOpen());
@@ -57,6 +61,8 @@ StreamReader::HasStream() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamReader::Eof() const
 {
@@ -65,6 +71,8 @@ StreamReader::Eof() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StreamReader::Open()
 {
@@ -87,6 +95,8 @@ StreamReader::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamReader::Close()
 {

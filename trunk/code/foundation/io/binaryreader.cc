@@ -13,6 +13,8 @@ using namespace Util;
 using namespace System;
 
 //------------------------------------------------------------------------------
+/**
+*/
 BinaryReader::BinaryReader() :
     enableMapping(false),
     isMapped(false),
@@ -23,6 +25,8 @@ BinaryReader::BinaryReader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 BinaryReader::~BinaryReader()
 {
     if (this->IsOpen())
@@ -32,6 +36,8 @@ BinaryReader::~BinaryReader()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BinaryReader::Open()
 {
@@ -55,6 +61,8 @@ BinaryReader::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 BinaryReader::Close()
 {
@@ -65,6 +73,8 @@ BinaryReader::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 char
 BinaryReader::ReadChar()
 {
@@ -82,6 +92,8 @@ BinaryReader::ReadChar()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 unsigned char
 BinaryReader::ReadUChar()
 {
@@ -99,6 +111,8 @@ BinaryReader::ReadUChar()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 short
 BinaryReader::ReadShort()
 {
@@ -139,6 +153,8 @@ BinaryReader::ReadUShort()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int
 BinaryReader::ReadInt()
 {
@@ -158,6 +174,8 @@ BinaryReader::ReadInt()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 unsigned int
 BinaryReader::ReadUInt()
 {
@@ -177,6 +195,8 @@ BinaryReader::ReadUInt()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 BinaryReader::ReadFloat()
 {
@@ -196,6 +216,8 @@ BinaryReader::ReadFloat()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 BinaryReader::ReadFloatFromNormalizedUByte2()
 {
@@ -205,6 +227,8 @@ BinaryReader::ReadFloatFromNormalizedUByte2()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 float
 BinaryReader::ReadFloatFromUnsignedNormalizedUByte2()
 {
@@ -214,6 +238,8 @@ BinaryReader::ReadFloatFromUnsignedNormalizedUByte2()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 double
 BinaryReader::ReadDouble()
 {
@@ -233,6 +259,8 @@ BinaryReader::ReadDouble()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 BinaryReader::ReadBool()
 {
@@ -252,6 +280,8 @@ BinaryReader::ReadBool()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String
 BinaryReader::ReadString()
 {
@@ -286,6 +316,8 @@ BinaryReader::ReadString()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::Blob
 BinaryReader::ReadBlob()
 {
@@ -306,6 +338,8 @@ BinaryReader::ReadBlob()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::Guid
 BinaryReader::ReadGuid()
 {
@@ -315,6 +349,8 @@ BinaryReader::ReadGuid()
      
 #if !__OSX__
 //------------------------------------------------------------------------------
+/**
+*/
 Math::float2 
 BinaryReader::ReadFloat2()
 {
@@ -359,6 +395,8 @@ BinaryReader::ReadFloat4()
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::point 
 BinaryReader::ReadPoint()
 {
@@ -384,6 +422,8 @@ BinaryReader::ReadPoint()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::vector 
 BinaryReader::ReadVector()
 {

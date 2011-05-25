@@ -14,11 +14,15 @@ namespace Resources {
 __ImplementClass(Resources::PoolScheduler, 'POSC', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 PoolScheduler::PoolScheduler()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 PoolScheduler::~PoolScheduler(void)
 {
 }

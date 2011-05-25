@@ -15,6 +15,8 @@ using namespace Input;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32InputDisplayEventHandler::HandleEvent(const DisplayEvent& displayEvent)
 {

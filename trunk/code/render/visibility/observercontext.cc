@@ -15,17 +15,23 @@ __ImplementClass(Visibility::ObserverContext, 'OBCO', Core::RefCounted);
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ObserverContext::ObserverContext():
     type(InvalidObserverType)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ObserverContext::~ObserverContext()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ObserverContext::SetMatrix(const Math::matrix44& projView)
 {
@@ -35,6 +41,8 @@ ObserverContext::SetMatrix(const Math::matrix44& projView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ObserverContext::SetBoundingBox(const Math::bbox& box)
 {
@@ -44,6 +52,8 @@ ObserverContext::SetBoundingBox(const Math::bbox& box)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ObserverContext::SetSeeAll()
 {
@@ -52,6 +62,8 @@ ObserverContext::SetSeeAll()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::ClipStatus::Type 
 ObserverContext::ComputeClipStatus(const Math::bbox& boundingBox)
 {
@@ -70,6 +82,8 @@ ObserverContext::ComputeClipStatus(const Math::bbox& boundingBox)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ObserverContext::Setup(const Ptr<InternalGraphics::InternalGraphicsEntity>& entity)
 {
@@ -94,6 +108,8 @@ ObserverContext::Setup(const Ptr<InternalGraphics::InternalGraphicsEntity>& enti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::matrix44& 
 ObserverContext::GetProjectionMatrix()
 {
@@ -102,6 +118,8 @@ ObserverContext::GetProjectionMatrix()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::bbox& 
 ObserverContext::GetBoundingBox()
 {
@@ -110,6 +128,8 @@ ObserverContext::GetBoundingBox()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ObserverContext::ObserverCullingType 
 ObserverContext::GetType() const
 {
@@ -117,6 +137,8 @@ ObserverContext::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ObserverContext::ObserverCullingType* 
 ObserverContext::GetTypeRef()
 {
@@ -124,6 +146,8 @@ ObserverContext::GetTypeRef()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::point& 
 ObserverContext::GetPosition()
 {

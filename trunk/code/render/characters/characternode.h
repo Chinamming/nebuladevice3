@@ -66,6 +66,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 CharacterNode::SetAnimationResourceId(const Resources::ResourceId& resId)
 {
@@ -73,6 +75,8 @@ CharacterNode::SetAnimationResourceId(const Resources::ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 CharacterNode::GetAnimationResourceId() const
 {
@@ -80,6 +84,8 @@ CharacterNode::GetAnimationResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Character>&
 CharacterNode::GetCharacter() const
 {
@@ -87,6 +93,8 @@ CharacterNode::GetCharacter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreAnimation::ManagedAnimResource>& 
 CharacterNode::GetManagedAnimResource() const
 {

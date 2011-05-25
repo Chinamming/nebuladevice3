@@ -16,6 +16,8 @@ using namespace Math;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariableBase::ShaderVariableBase() :
     type(UnknownType)
 {
@@ -23,12 +25,16 @@ ShaderVariableBase::ShaderVariableBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariableBase::~ShaderVariableBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ShaderVariableInstance>
 ShaderVariableBase::CreateInstance() 
 {
@@ -39,6 +45,8 @@ ShaderVariableBase::CreateInstance()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 ShaderVariableBase::TypeToString(Type t)
 {
@@ -58,6 +66,8 @@ ShaderVariableBase::TypeToString(Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariableBase::Type
 ShaderVariableBase::StringToType(const String& str)
 {
@@ -75,6 +85,8 @@ ShaderVariableBase::StringToType(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetInt(int value)
 {
@@ -82,6 +94,8 @@ ShaderVariableBase::SetInt(int value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetIntArray(const int* values, SizeT count)
 {
@@ -89,6 +103,8 @@ ShaderVariableBase::SetIntArray(const int* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetFloat(float value)
 {
@@ -96,6 +112,8 @@ ShaderVariableBase::SetFloat(float value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetFloatArray(const float* values, SizeT count)
 {
@@ -103,6 +121,8 @@ ShaderVariableBase::SetFloatArray(const float* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetFloat4(const float4& value)
 {
@@ -110,6 +130,8 @@ ShaderVariableBase::SetFloat4(const float4& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetFloat4Array(const float4* values, SizeT count)
 {
@@ -117,6 +139,8 @@ ShaderVariableBase::SetFloat4Array(const float4* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetMatrix(const matrix44& value)
 {
@@ -124,6 +148,8 @@ ShaderVariableBase::SetMatrix(const matrix44& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetMatrixArray(const matrix44* values, SizeT count)
 {
@@ -131,6 +157,8 @@ ShaderVariableBase::SetMatrixArray(const matrix44* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetBool(bool value)
 {
@@ -138,6 +166,8 @@ ShaderVariableBase::SetBool(bool value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetBoolArray(const bool* values, SizeT count)
 {
@@ -145,6 +175,8 @@ ShaderVariableBase::SetBoolArray(const bool* values, SizeT count)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableBase::SetTexture(const Ptr<Texture>& value)
 {

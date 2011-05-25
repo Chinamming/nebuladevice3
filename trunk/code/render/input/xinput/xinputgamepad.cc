@@ -14,6 +14,8 @@ using namespace Math;
 using namespace FrameSync;
 
 //------------------------------------------------------------------------------
+/**
+*/
 XInputGamePad::XInputGamePad() :
     lastPacketNumber(0xffffffff),
     lastCheckConnectedTime(0)
@@ -22,12 +24,16 @@ XInputGamePad::XInputGamePad() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 XInputGamePad::~XInputGamePad()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 XInputGamePad::OnAttach()
 {
@@ -187,6 +193,8 @@ XInputGamePad::UpdateButtonState(const XINPUT_GAMEPAD& curState, WORD xiBtn, But
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 XInputGamePad::UpdateTriggerAxis(const XINPUT_GAMEPAD& curState, Axis axis)
 {
@@ -205,6 +213,8 @@ XInputGamePad::UpdateTriggerAxis(const XINPUT_GAMEPAD& curState, Axis axis)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 XInputGamePad::UpdateThumbAxis(const XINPUT_GAMEPAD& curState, Axis axis)
 {

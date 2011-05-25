@@ -96,6 +96,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Model::SetBoundingBox(const Math::bbox& b)
 {
@@ -103,6 +105,8 @@ Model::SetBoundingBox(const Math::bbox& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 Model::GetBoundingBox() const
 {
@@ -123,6 +127,8 @@ Model::GetRootNode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelNode> >&
 Model::GetNodes() const
 {
@@ -130,6 +136,8 @@ Model::GetNodes() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelNode> >&
 Model::GetVisibleModelNodes(ModelNodeType::Code t) const
 {
@@ -137,6 +145,8 @@ Model::GetVisibleModelNodes(ModelNodeType::Code t) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<ModelInstance> >&
 Model::GetInstances() const
 {

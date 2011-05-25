@@ -49,6 +49,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AngularPFeedbackLoop::AngularPFeedbackLoop() :
     time(0.0),
@@ -61,6 +63,8 @@ AngularPFeedbackLoop::AngularPFeedbackLoop() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 AngularPFeedbackLoop::Reset(Timing::Time t, float s, float g, float curState)
@@ -72,6 +76,8 @@ AngularPFeedbackLoop::Reset(Timing::Time t, float s, float g, float curState)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 AngularPFeedbackLoop::SetGain(float g)
@@ -80,6 +86,8 @@ AngularPFeedbackLoop::SetGain(float g)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 AngularPFeedbackLoop::GetGain() const
@@ -88,6 +96,8 @@ AngularPFeedbackLoop::GetGain() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 AngularPFeedbackLoop::SetGoal(float g)
@@ -96,6 +106,8 @@ AngularPFeedbackLoop::SetGoal(float g)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 AngularPFeedbackLoop::GetGoal() const
@@ -104,6 +116,8 @@ AngularPFeedbackLoop::GetGoal() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 AngularPFeedbackLoop::SetState(float s)
@@ -112,6 +126,8 @@ AngularPFeedbackLoop::SetState(float s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 AngularPFeedbackLoop::GetState() const
@@ -120,6 +136,8 @@ AngularPFeedbackLoop::GetState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Timing::Time 
 AngularPFeedbackLoop::GetTime() const
@@ -128,6 +146,8 @@ AngularPFeedbackLoop::GetTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 AngularPFeedbackLoop::Update(Timing::Time curTime)

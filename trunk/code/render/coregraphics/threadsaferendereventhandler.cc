@@ -12,12 +12,16 @@ __ImplementClass(CoreGraphics::ThreadSafeRenderEventHandler, 'TREH', CoreGraphic
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ThreadSafeRenderEventHandler::ThreadSafeRenderEventHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ThreadSafeRenderEventHandler::~ThreadSafeRenderEventHandler()
 {
     // empty

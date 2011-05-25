@@ -26,12 +26,16 @@ __ImplementClass(CoreGraphics::TextRenderer, 'TXRR', Base::TextRendererBase);
 __ImplementSingleton(CoreGraphics::TextRenderer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextRenderer::TextRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextRenderer::~TextRenderer()
 {
     __DestructSingleton;

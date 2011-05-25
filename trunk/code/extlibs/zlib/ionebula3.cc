@@ -48,6 +48,8 @@ int ZCALLBACK nebula3_error_file_func OF((
    voidpf stream));
 
 //------------------------------------------------------------------------------
+/**
+*/
 voidpf ZCALLBACK nebula3_open_file_func (voidpf opaque, const char* filename, int mode)
 {
     n_assert(mode == (ZLIB_FILEFUNC_MODE_READ | ZLIB_FILEFUNC_MODE_EXISTING));
@@ -66,6 +68,8 @@ voidpf ZCALLBACK nebula3_open_file_func (voidpf opaque, const char* filename, in
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uLong ZCALLBACK nebula3_read_file_func (voidpf opaque, voidpf stream, void* buf, uLong size)
 {
     uLong ret = 0;
@@ -78,6 +82,8 @@ uLong ZCALLBACK nebula3_read_file_func (voidpf opaque, voidpf stream, void* buf,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uLong ZCALLBACK nebula3_write_file_func (voidpf opaque, voidpf stream, const void* buf, uLong size)
 {
     n_error("nebula3_write_file_func(): Writing to ZIP archives not supported!");
@@ -85,6 +91,8 @@ uLong ZCALLBACK nebula3_write_file_func (voidpf opaque, voidpf stream, const voi
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 long ZCALLBACK nebula3_tell_file_func (voidpf opaque, voidpf stream)
 {
     long ret = -1;
@@ -97,6 +105,8 @@ long ZCALLBACK nebula3_tell_file_func (voidpf opaque, voidpf stream)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 long ZCALLBACK nebula3_seek_file_func (voidpf opaque, voidpf stream, uLong offset, int origin)
 {
     long ret = -1;
@@ -126,6 +136,8 @@ long ZCALLBACK nebula3_seek_file_func (voidpf opaque, voidpf stream, uLong offse
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int ZCALLBACK nebula3_close_file_func (voidpf opaque, voidpf stream)
 {
     int ret = -1;
@@ -141,12 +153,16 @@ int ZCALLBACK nebula3_close_file_func (voidpf opaque, voidpf stream)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 int ZCALLBACK nebula3_error_file_func (voidpf opaque, voidpf stream)
 {
     return 0;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void fill_nebula3_filefunc (zlib_filefunc_def* pzlib_filefunc_def)
 {
     pzlib_filefunc_def->zopen_file = nebula3_open_file_func;

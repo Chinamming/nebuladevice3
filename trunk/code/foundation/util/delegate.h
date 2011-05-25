@@ -41,6 +41,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class ARGTYPE>
 Delegate<ARGTYPE>::Delegate() :
     objPtr(0),
@@ -50,6 +52,8 @@ Delegate<ARGTYPE>::Delegate() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class ARGTYPE> void
 Delegate<ARGTYPE>::operator()(ARGTYPE arg) const
 {
@@ -57,6 +61,8 @@ Delegate<ARGTYPE>::operator()(ARGTYPE arg) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class ARGTYPE>
 template<class CLASS, void (CLASS::*METHOD)(ARGTYPE)>
 static Delegate<ARGTYPE>
@@ -69,6 +75,8 @@ Delegate<ARGTYPE>::FromMethod(CLASS* objPtr_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class ARGTYPE>
 template<void(*FUNCTION)(ARGTYPE)>
 static Delegate<ARGTYPE>
@@ -81,6 +89,8 @@ Delegate<ARGTYPE>::FromFunction()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class ARGTYPE>
 template<class CLASS, void (CLASS::*METHOD)(ARGTYPE)>
 static void
@@ -91,6 +101,8 @@ Delegate<ARGTYPE>::MethodStub(void* objPtr_, ARGTYPE arg_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class ARGTYPE>
 template<void(*FUNCTION)(ARGTYPE)>
 static void

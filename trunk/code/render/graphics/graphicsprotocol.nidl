@@ -44,7 +44,6 @@
             <InArg name="DisplayMode" type="CoreGraphics::DisplayMode"/>
             <InArg name="AntiAliasQuality" type="CoreGraphics::AntiAliasQuality::Code"/>
             <InArg name="Fullscreen" type="bool"/>
-            <InArg name="AutoAdjustSize" type="bool"/>
             <InArg name="DisplayModeSwitchEnabled" type="bool"/>
             <InArg name="TripleBufferingEnabled" type="bool"/>
             <InArg name="AlwaysOnTop" type="bool"/>
@@ -78,12 +77,7 @@
             <InArg name="DisplayMode" type="CoreGraphics::DisplayMode"/>
             <OutArg name="Result" type="bool"/>
         </Message>
-
-        <!-- adjust the display mode's size to the window's size -->
-        <Message name="AdjustDisplaySize" fourcc="adds">
-        </Message>
-
-
+        
         <!-- get current adapter display mode -->
         <Message name="GetCurrentAdapterDisplayMode" fourcc="gcdm">
             <InArg name="Adapter" type="CoreGraphics::Adapter::Code"/>

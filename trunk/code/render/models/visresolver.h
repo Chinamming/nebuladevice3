@@ -69,6 +69,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VisResolver::IsOpen() const
 {
@@ -76,6 +78,8 @@ VisResolver::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisResolver::AddVisibleModel(IndexT frameIndex, ModelNodeType::Code nodeType, const Ptr<Model>& model)
 {

@@ -144,6 +144,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 URI::URI() :
     isEmpty(true)
@@ -152,6 +154,8 @@ URI::URI() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 URI::URI(const Util::String& s) :
     isEmpty(true)
@@ -161,6 +165,8 @@ URI::URI(const Util::String& s) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 URI::URI(const char* s) :
     isEmpty(true)
@@ -170,6 +176,8 @@ URI::URI(const char* s) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 URI::URI(const URI& rhs) :
     isEmpty(rhs.isEmpty),
@@ -185,6 +193,8 @@ URI::URI(const URI& rhs) :
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::operator=(const URI& rhs)
@@ -200,6 +210,8 @@ URI::operator=(const URI& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 URI::operator==(const URI& rhs) const
@@ -221,6 +233,8 @@ URI::operator==(const URI& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 URI::operator!=(const URI& rhs) const
@@ -229,6 +243,8 @@ URI::operator!=(const URI& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 URI::IsEmpty() const
@@ -237,6 +253,8 @@ URI::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool
 URI::IsValid() const
@@ -245,6 +263,8 @@ URI::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::Clear() 
@@ -260,6 +280,8 @@ URI::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::Set(const Util::String& s)
@@ -268,6 +290,8 @@ URI::Set(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Util::String
 URI::AsString() const
@@ -276,6 +300,8 @@ URI::AsString() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetScheme(const Util::String& s)
@@ -285,6 +311,8 @@ URI::SetScheme(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::Scheme() const
@@ -293,6 +321,8 @@ URI::Scheme() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetUserInfo(const Util::String& s)
@@ -302,6 +332,8 @@ URI::SetUserInfo(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::UserInfo() const
@@ -310,6 +342,8 @@ URI::UserInfo() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetHost(const Util::String& s)
@@ -319,6 +353,8 @@ URI::SetHost(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::Host() const
@@ -327,6 +363,8 @@ URI::Host() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetPort(const Util::String& s)
@@ -336,6 +374,8 @@ URI::SetPort(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::Port() const
@@ -344,6 +384,8 @@ URI::Port() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetLocalPath(const Util::String& s)
@@ -353,6 +395,8 @@ URI::SetLocalPath(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::LocalPath() const
@@ -361,6 +405,8 @@ URI::LocalPath() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetFragment(const Util::String& s)
@@ -370,6 +416,8 @@ URI::SetFragment(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::Fragment() const
@@ -378,6 +426,8 @@ URI::Fragment() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 URI::SetQuery(const Util::String& s)
@@ -387,6 +437,8 @@ URI::SetQuery(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 URI::Query() const

@@ -58,6 +58,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 SimpleResourceMapper::SetResourceClass(const Core::Rtti& resClass)
 {
@@ -66,6 +68,8 @@ SimpleResourceMapper::SetResourceClass(const Core::Rtti& resClass)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 SimpleResourceMapper::SetResourceLoaderClass(const Core::Rtti& loaderClass)
 {
@@ -74,6 +78,8 @@ SimpleResourceMapper::SetResourceLoaderClass(const Core::Rtti& loaderClass)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 SimpleResourceMapper::SetManagedResourceClass(const Core::Rtti& managedResClass)
 {

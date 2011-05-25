@@ -22,6 +22,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Model>&
 ManagedModel::GetModel() const
 {

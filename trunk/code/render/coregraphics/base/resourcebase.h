@@ -63,6 +63,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceBase::SetUsage(Usage u)
 {
@@ -70,6 +72,8 @@ ResourceBase::SetUsage(Usage u)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ResourceBase::Usage
 ResourceBase::GetUsage() const
 {
@@ -77,6 +81,8 @@ ResourceBase::GetUsage() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceBase::SetAccess(Access a)
 {
@@ -84,6 +90,8 @@ ResourceBase::SetAccess(Access a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ResourceBase::Access
 ResourceBase::GetAccess() const
 {

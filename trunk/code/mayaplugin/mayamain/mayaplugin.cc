@@ -73,10 +73,10 @@ MayaPlugin::Setup(MObject pluginObject)
     this->mayaMaterialGroupRegistry->Setup();
 
     // execute the MEL startup function
-    if (!this->MELStartup())
-    {
-        return false;
-    }
+    //if (!this->MELStartup())
+    //{
+    //    return false;
+    //}
 
     return true;
 }

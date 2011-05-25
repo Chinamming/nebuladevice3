@@ -10,6 +10,8 @@ namespace CoreAnimation
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SampleType::Code
 SampleType::FromString(const String& str)
 {
@@ -24,6 +26,8 @@ SampleType::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 SampleType::ToString(Code c)
 {

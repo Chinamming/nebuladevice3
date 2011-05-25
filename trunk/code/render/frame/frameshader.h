@@ -99,6 +99,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameShader::SetName(const Resources::ResourceId& resId)
 {
@@ -106,6 +108,8 @@ FrameShader::SetName(const Resources::ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 FrameShader::GetName() const
 {
@@ -113,6 +117,8 @@ FrameShader::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameShader::SetMainRenderTarget(const Ptr<CoreGraphics::RenderTarget>& rt)
 {
@@ -120,6 +126,8 @@ FrameShader::SetMainRenderTarget(const Ptr<CoreGraphics::RenderTarget>& rt)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>&
 FrameShader::GetMainRenderTarget() const
 {
@@ -127,6 +135,8 @@ FrameShader::GetMainRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameShader::AddRenderTarget(const Resources::ResourceId& resId, const Ptr<CoreGraphics::RenderTarget>& rt)
 {
@@ -135,6 +145,8 @@ FrameShader::AddRenderTarget(const Resources::ResourceId& resId, const Ptr<CoreG
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FrameShader::GetNumRenderTargets() const
 {
@@ -142,6 +154,8 @@ FrameShader::GetNumRenderTargets() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>& 
 FrameShader::GetRenderTargetByIndex(IndexT i) const
 {
@@ -149,6 +163,8 @@ FrameShader::GetRenderTargetByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameShader::HasRenderTarget(const Resources::ResourceId& resId) const
 {
@@ -156,6 +172,8 @@ FrameShader::HasRenderTarget(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>&
 FrameShader::GetRenderTargetByName(const Resources::ResourceId& resId) const
 {
@@ -163,6 +181,8 @@ FrameShader::GetRenderTargetByName(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameShader::AddMultipleRenderTarget(const Resources::ResourceId& resId, const Ptr<CoreGraphics::MultipleRenderTarget>& rt)
 {
@@ -171,6 +191,8 @@ FrameShader::AddMultipleRenderTarget(const Resources::ResourceId& resId, const P
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FrameShader::GetNumMultipleRenderTargets() const
 {
@@ -178,6 +200,8 @@ FrameShader::GetNumMultipleRenderTargets() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::MultipleRenderTarget>& 
 FrameShader::GetMultipleRenderTargetByIndex(IndexT i) const
 {
@@ -185,6 +209,8 @@ FrameShader::GetMultipleRenderTargetByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameShader::HasMultipleRenderTarget(const Resources::ResourceId& resId) const
 {
@@ -192,6 +218,8 @@ FrameShader::HasMultipleRenderTarget(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::MultipleRenderTarget>&
 FrameShader::GetMultipleRenderTargetByName(const Resources::ResourceId& resId) const
 {
@@ -199,6 +227,8 @@ FrameShader::GetMultipleRenderTargetByName(const Resources::ResourceId& resId) c
 }
   
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameShader::AddTexture(const Resources::ResourceId& resId, const Ptr<Resources::ManagedTexture>& t)
 {
@@ -207,6 +237,8 @@ FrameShader::AddTexture(const Resources::ResourceId& resId, const Ptr<Resources:
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FrameShader::GetNumTextures() const
 {
@@ -214,6 +246,8 @@ FrameShader::GetNumTextures() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resources::ManagedTexture>& 
 FrameShader::GetTextureByIndex(IndexT i) const
 {
@@ -221,6 +255,8 @@ FrameShader::GetTextureByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameShader::HasTexture(const Resources::ResourceId& resId) const
 {
@@ -228,6 +264,8 @@ FrameShader::HasTexture(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resources::ManagedTexture>&
 FrameShader::GetTextureByName(const Resources::ResourceId& resId) const
 {
@@ -235,6 +273,8 @@ FrameShader::GetTextureByName(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FrameShader::AddFramePassBase(const Ptr<FramePassBase>& framePass)
 {
@@ -243,6 +283,8 @@ FrameShader::AddFramePassBase(const Ptr<FramePassBase>& framePass)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FrameShader::GetNumFramePassBases() const
 {
@@ -250,6 +292,8 @@ FrameShader::GetNumFramePassBases() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<FramePassBase>&
 FrameShader::GetFramePassBaseByIndex(IndexT i) const
 {
@@ -257,6 +301,8 @@ FrameShader::GetFramePassBaseByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameShader::HasFramePassBase(const Resources::ResourceId& resId) const
 {
@@ -264,6 +310,8 @@ FrameShader::HasFramePassBase(const Resources::ResourceId& resId) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<FramePassBase>&
 FrameShader::GetFramePassBaseByName(const Resources::ResourceId& resId) const
 {

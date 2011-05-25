@@ -16,6 +16,8 @@ const Timing::Time ParticleSystem::DefaultStepTime = 1.0f / 60.0f;
 Timing::Time ParticleSystem::StepTime = 1.0f / 60.0f;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystem::ParticleSystem() :
     isValid(false)
 {
@@ -23,6 +25,8 @@ ParticleSystem::ParticleSystem() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleSystem::~ParticleSystem()
 {
     if (this->IsValid())
@@ -32,6 +36,8 @@ ParticleSystem::~ParticleSystem()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystem::Setup(const Ptr<Mesh>& mesh, IndexT primGrpIndex, const EmitterAttrs& attrs)
 {
@@ -44,6 +50,8 @@ ParticleSystem::Setup(const Ptr<Mesh>& mesh, IndexT primGrpIndex, const EmitterA
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleSystem::Discard()
 {
@@ -54,6 +62,8 @@ ParticleSystem::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 ParticleSystem::GetMaxNumParticles() const
 {
@@ -63,6 +73,8 @@ ParticleSystem::GetMaxNumParticles() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ParticleSystem::ModulateStepTime(float val)
 {

@@ -96,6 +96,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::Shader>&
 ShaderInstanceBase::GetOriginalShader() const
 {
@@ -103,6 +105,8 @@ ShaderInstanceBase::GetOriginalShader() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShaderInstanceBase::HasVariableByName(const CoreGraphics::ShaderVariable::Name& n) const
 {
@@ -110,6 +114,8 @@ ShaderInstanceBase::HasVariableByName(const CoreGraphics::ShaderVariable::Name& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShaderInstanceBase::HasVariableBySemantic(const CoreGraphics::ShaderVariable::Semantic& s) const
 {
@@ -117,6 +123,8 @@ ShaderInstanceBase::HasVariableBySemantic(const CoreGraphics::ShaderVariable::Se
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ShaderInstanceBase::GetNumVariables() const
 {
@@ -124,6 +132,8 @@ ShaderInstanceBase::GetNumVariables() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariable>&
 ShaderInstanceBase::GetVariableByIndex(IndexT i) const
 {
@@ -131,6 +141,8 @@ ShaderInstanceBase::GetVariableByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ShaderInstanceBase::GetNumVariations() const
 {
@@ -138,6 +150,8 @@ ShaderInstanceBase::GetNumVariations() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariation>& 
 ShaderInstanceBase::GetVariationByIndex(IndexT i) const
 {
@@ -145,6 +159,8 @@ ShaderInstanceBase::GetVariationByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShaderInstanceBase::HasVariation(CoreGraphics::ShaderFeature::Mask featureMask) const
 {
@@ -152,6 +168,8 @@ ShaderInstanceBase::HasVariation(CoreGraphics::ShaderFeature::Mask featureMask) 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariation>&
 ShaderInstanceBase::GetVariationByFeatureMask(CoreGraphics::ShaderFeature::Mask featureMask) const
 {
@@ -159,6 +177,8 @@ ShaderInstanceBase::GetVariationByFeatureMask(CoreGraphics::ShaderFeature::Mask 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariation>&
 ShaderInstanceBase::GetActiveVariation() const
 {

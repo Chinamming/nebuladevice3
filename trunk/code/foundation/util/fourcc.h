@@ -54,6 +54,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 FourCC::FourCC() :
     fourCC(0)
@@ -62,6 +64,8 @@ FourCC::FourCC() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 FourCC::FourCC(uint f) :
     fourCC(f)
@@ -70,6 +74,8 @@ FourCC::FourCC(uint f) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 FourCC::FourCC(const String& s)
 {
@@ -77,6 +83,8 @@ FourCC::FourCC(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::operator==(const FourCC& rhs) const
 {
@@ -84,6 +92,8 @@ FourCC::operator==(const FourCC& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::operator!=(const FourCC& rhs) const
 {
@@ -91,6 +101,8 @@ FourCC::operator!=(const FourCC& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::operator>(const FourCC& rhs) const
 {
@@ -98,6 +110,8 @@ FourCC::operator>(const FourCC& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::operator>=(const FourCC& rhs) const
 {
@@ -105,6 +119,8 @@ FourCC::operator>=(const FourCC& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::operator<(const FourCC& rhs) const
 {
@@ -112,6 +128,8 @@ FourCC::operator<(const FourCC& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::operator<=(const FourCC& rhs) const
 {
@@ -119,6 +137,8 @@ FourCC::operator<=(const FourCC& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FourCC::IsValid() const
 {
@@ -126,6 +146,8 @@ FourCC::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FourCC::SetFromUInt(uint f)
 {
@@ -134,6 +156,8 @@ FourCC::SetFromUInt(uint f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 FourCC::AsUInt() const
 {
@@ -141,6 +165,8 @@ FourCC::AsUInt() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FourCC::SetFromString(const String& s)
 {
@@ -148,6 +174,8 @@ FourCC::SetFromString(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 FourCC::AsString() const
 {
@@ -155,6 +183,8 @@ FourCC::AsString() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline String
 FourCC::ToString(const FourCC& f)
 {
@@ -168,6 +198,8 @@ FourCC::ToString(const FourCC& f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline FourCC
 FourCC::FromString(const String& s)
 {

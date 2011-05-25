@@ -14,6 +14,8 @@ using namespace Math;
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilitySystemBase::VisibilitySystemBase() :
     isOpen(false),
     inAttachContainer(false)
@@ -21,12 +23,16 @@ VisibilitySystemBase::VisibilitySystemBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilitySystemBase::~VisibilitySystemBase()
 {
     n_assert(!this->isOpen);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilitySystemBase::Open(IndexT orderIndex)
 {
@@ -35,6 +41,8 @@ VisibilitySystemBase::Open(IndexT orderIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilitySystemBase::Close()
 {
@@ -43,6 +51,8 @@ VisibilitySystemBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::InsertVisibilityContext(const Ptr<VisibilityContext>& entityVis)
 {
@@ -51,6 +61,8 @@ VisibilitySystemBase::InsertVisibilityContext(const Ptr<VisibilityContext>& enti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::RemoveVisibilityContext(const Ptr<VisibilityContext>& entityVis)
 {
@@ -59,6 +71,8 @@ VisibilitySystemBase::RemoveVisibilityContext(const Ptr<VisibilityContext>& enti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::UpdateVisibilityContext(const Ptr<VisibilityContext>& entityVis)
 {       
@@ -67,6 +81,8 @@ VisibilitySystemBase::UpdateVisibilityContext(const Ptr<VisibilityContext>& enti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::OnRenderDebug()
 {       
@@ -75,6 +91,8 @@ VisibilitySystemBase::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::InsertVisibilityContainer(const Ptr<VisibilityContainer>& container)
 {        
@@ -83,6 +101,8 @@ VisibilitySystemBase::InsertVisibilityContainer(const Ptr<VisibilityContainer>& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::BeginAttachVisibilityContainer()
 {
@@ -91,6 +111,8 @@ VisibilitySystemBase::BeginAttachVisibilityContainer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilitySystemBase::EndAttachVisibilityContainer()
 {
@@ -99,6 +121,8 @@ VisibilitySystemBase::EndAttachVisibilityContainer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Jobs::Job>
 VisibilitySystemBase::CreateVisibilityJob(IndexT frameId, const Ptr<ObserverContext>& observer, Util::FixedArray<Ptr<VisibilityContext> >& outEntitiyArray, uint& entityMask)
 {

@@ -17,6 +17,8 @@ using namespace Util;
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void  
 CheckCell(QuadTree<VisibilityQuadtree::CellInfo>::Node* node,
           VisibilityQuadtree::EntityInfo* entityInfos,
@@ -122,6 +124,8 @@ CheckCell(QuadTree<VisibilityQuadtree::CellInfo>::Node* node,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityQuadtreeJobFunc(const JobFuncContext& ctx)
 {

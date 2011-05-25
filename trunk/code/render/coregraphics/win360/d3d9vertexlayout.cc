@@ -15,6 +15,8 @@ using namespace CoreGraphics;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9VertexLayout::D3D9VertexLayout() :
     d3d9VertexDeclaration(0)
 {
@@ -22,12 +24,16 @@ D3D9VertexLayout::D3D9VertexLayout() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9VertexLayout::~D3D9VertexLayout()
 {
     n_assert(0 == this->d3d9VertexDeclaration);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9VertexLayout::Setup(const Array<VertexComponent>& c)
 {
@@ -65,6 +71,8 @@ D3D9VertexLayout::Setup(const Array<VertexComponent>& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9VertexLayout::Discard()
 {

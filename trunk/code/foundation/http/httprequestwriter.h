@@ -36,6 +36,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequestWriter::SetMethod(HttpMethod::Code m)
 {
@@ -43,6 +45,8 @@ HttpRequestWriter::SetMethod(HttpMethod::Code m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequestWriter::SetURI(const IO::URI& u)
 {
@@ -50,6 +54,8 @@ HttpRequestWriter::SetURI(const IO::URI& u)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequestWriter::SetUserAgent(const Util::String& agent)
 {

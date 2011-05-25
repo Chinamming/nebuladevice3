@@ -11,6 +11,8 @@ __ImplementClass(Particles::ParticleServer, 'PRSV', Core::RefCounted);
 __ImplementSingleton(Particles::ParticleServer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleServer::ParticleServer() :
     isOpen(false)
 {
@@ -18,12 +20,16 @@ ParticleServer::ParticleServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleServer::~ParticleServer()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleServer::Open()
 {
@@ -36,6 +42,8 @@ ParticleServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleServer::Close()
 {

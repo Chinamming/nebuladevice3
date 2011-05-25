@@ -25,6 +25,8 @@ using namespace Debug;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugGraphicsHandler::DebugGraphicsHandler():
     shaderDebugLayer(0),
     perfHudEnabled(false)
@@ -33,12 +35,16 @@ DebugGraphicsHandler::DebugGraphicsHandler():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugGraphicsHandler::~DebugGraphicsHandler()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 DebugGraphicsHandler::HandleMessage(const Ptr<Message>& msg)
 {
@@ -77,6 +83,8 @@ DebugGraphicsHandler::HandleMessage(const Ptr<Message>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugGraphicsHandler::DoWork()
 {
@@ -109,6 +117,8 @@ DebugGraphicsHandler::DoWork()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugGraphicsHandler::OnRenderDebugText(const Ptr<RenderDebugText>& msg)
 {
@@ -117,6 +127,8 @@ DebugGraphicsHandler::OnRenderDebugText(const Ptr<RenderDebugText>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugGraphicsHandler::OnRenderDebugShapes(const Ptr<RenderDebugShapes>& msg)
 {
@@ -125,6 +137,8 @@ DebugGraphicsHandler::OnRenderDebugShapes(const Ptr<RenderDebugShapes>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugGraphicsHandler::OnRenderDebugView(const Ptr<Debug::RenderDebugView>& msg)
 {
@@ -132,6 +146,8 @@ DebugGraphicsHandler::OnRenderDebugView(const Ptr<Debug::RenderDebugView>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 DebugGraphicsHandler::OnIncrDebugShaderLayer(const Ptr<Debug::IncrDebugShaderLayer>& msg)
 {
@@ -143,6 +159,8 @@ DebugGraphicsHandler::OnIncrDebugShaderLayer(const Ptr<Debug::IncrDebugShaderLay
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 DebugGraphicsHandler::OnSetFloatShaderVariable(const Ptr<Debug::SetFloatShaderVariable> &msg)
 {
@@ -152,6 +170,8 @@ DebugGraphicsHandler::OnSetFloatShaderVariable(const Ptr<Debug::SetFloatShaderVa
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugGraphicsHandler::OnControlPerfHUD(const Ptr<ControlPerfHUD>& msg)
 {

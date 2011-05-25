@@ -20,6 +20,8 @@ using namespace Shared;
 InternalGraphicsEntity::Id InternalGraphicsEntity::UniqueIdCounter = 0;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalGraphicsEntity::InternalGraphicsEntity() :
     transform(matrix44::identity()),
     globalBoxDirty(true),
@@ -40,6 +42,8 @@ InternalGraphicsEntity::InternalGraphicsEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalGraphicsEntity::~InternalGraphicsEntity()
 {
     n_assert(!this->IsActive());
@@ -245,6 +249,8 @@ InternalGraphicsEntity::OnRenderBefore(IndexT frameIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsEntity::SetTransform(const Math::matrix44& m)
 {
@@ -292,6 +298,8 @@ InternalGraphicsEntity::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsEntity::ClearLinks(LinkType linkType)
 {
@@ -299,6 +307,8 @@ InternalGraphicsEntity::ClearLinks(LinkType linkType)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsEntity::UpdateGlobalBoundingBox()
 {
@@ -309,6 +319,8 @@ InternalGraphicsEntity::UpdateGlobalBoundingBox()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InternalStage>&
 InternalGraphicsEntity::GetStage() const
 {
@@ -316,6 +328,8 @@ InternalGraphicsEntity::GetStage() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 InternalGraphicsEntity::IsAttachedToStage() const
 {
@@ -334,6 +348,8 @@ InternalGraphicsEntity::ComputeClipStatus(const bbox& box)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGraphicsEntity::SetVisible(bool b)
 {

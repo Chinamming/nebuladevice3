@@ -48,6 +48,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 TPJobThreadPool::IsValid() const
 {
@@ -55,6 +57,8 @@ TPJobThreadPool::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 TPJobThreadPool::GetNextThreadIndex() const
 {

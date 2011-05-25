@@ -41,6 +41,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 CharJointInfo::CharJointInfo() :
     localMatrix(Math::matrix44::identity()),
@@ -50,6 +52,8 @@ CharJointInfo::CharJointInfo() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 CharJointInfo::CharJointInfo(const Util::StringAtom& n, const Math::matrix44& l, const Math::matrix44& g) :
     localMatrix(l),
@@ -60,6 +64,8 @@ CharJointInfo::CharJointInfo(const Util::StringAtom& n, const Math::matrix44& l,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 CharJointInfo::SetJointName(const Util::StringAtom& n)
 {
@@ -67,6 +73,8 @@ CharJointInfo::SetJointName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 CharJointInfo::GetJointName() const
 {
@@ -74,6 +82,8 @@ CharJointInfo::GetJointName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 CharJointInfo::SetLocalMatrix(const Math::matrix44& m)
 {
@@ -81,6 +91,8 @@ CharJointInfo::SetLocalMatrix(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CharJointInfo::GetLocalMatrix() const
 {
@@ -88,6 +100,8 @@ CharJointInfo::GetLocalMatrix() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 CharJointInfo::SetGlobalMatrix(const Math::matrix44& m)
 {
@@ -95,6 +109,8 @@ CharJointInfo::SetGlobalMatrix(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CharJointInfo::GetGlobalMatrix() const
 {

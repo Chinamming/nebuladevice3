@@ -48,6 +48,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::FixedArray<TPJobSlice>&
 TPJob::GetJobSlices() const
 {
@@ -55,6 +57,8 @@ TPJob::GetJobSlices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Threading::Event*
 TPJob::GetCompletionEvent() const
 {

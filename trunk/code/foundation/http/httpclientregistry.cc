@@ -17,6 +17,8 @@ using namespace IO;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpClientRegistry::HttpClientRegistry() :
     isValid(false)
 {
@@ -24,6 +26,8 @@ HttpClientRegistry::HttpClientRegistry() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpClientRegistry::~HttpClientRegistry()
 {
     if (this->IsValid())
@@ -34,6 +38,8 @@ HttpClientRegistry::~HttpClientRegistry()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpClientRegistry::Setup()
 {
@@ -42,6 +48,8 @@ HttpClientRegistry::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpClientRegistry::Discard()
 {
@@ -82,6 +90,8 @@ HttpClientRegistry::DisconnectIdle()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<HttpClient>
 HttpClientRegistry::ObtainConnection(const URI& uri)
 {
@@ -113,6 +123,8 @@ HttpClientRegistry::ObtainConnection(const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpClientRegistry::ReleaseConnection(const URI& uri)
 {
@@ -127,6 +139,8 @@ HttpClientRegistry::ReleaseConnection(const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpClientRegistry::IsConnected(const URI& uri) const
 {

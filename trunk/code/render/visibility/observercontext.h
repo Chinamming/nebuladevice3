@@ -62,6 +62,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<InternalGraphics::InternalGraphicsEntity>& 
 ObserverContext::GetObserverEntity() const
 {

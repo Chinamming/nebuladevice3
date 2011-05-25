@@ -21,6 +21,8 @@ using namespace Timing;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugPageHandler::DebugPageHandler():
 sortByColumn("Name")
 {
@@ -30,6 +32,8 @@ sortByColumn("Name")
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {
@@ -400,6 +404,8 @@ DebugPageHandler::HandleCounterChartRequest(const String& counterName, const Ptr
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 DebugPageHandler::HandleTableSortRequest(const Util::String& columnName, const Ptr<Http::HttpRequest>& request)
 {

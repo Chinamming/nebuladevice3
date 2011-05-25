@@ -51,6 +51,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 line::line()
 {
@@ -58,6 +60,8 @@ line::line()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 line::line(const point& startPoint, const point& endPoint) :
     b(startPoint),
@@ -67,6 +71,8 @@ line::line(const point& startPoint, const point& endPoint) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 line::line(const line& rhs) :
     b(rhs.b),
@@ -76,6 +82,8 @@ line::line(const line& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 line::set(const point& startPoint, const point& endPoint)
 {
@@ -84,6 +92,8 @@ line::set(const point& startPoint, const point& endPoint)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const point&
 line::start() const
 {
@@ -91,6 +101,8 @@ line::start() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline point
 line::end() const
 {
@@ -98,6 +110,8 @@ line::end() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const vector&
 line::vec() const
 {
@@ -105,6 +119,8 @@ line::vec() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 line::length() const
 {
@@ -112,6 +128,8 @@ line::length() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 line::lengthsq() const
 {
@@ -144,6 +162,8 @@ line::closestpoint(const point& p) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline scalar
 line::distance(const point& p) const
 {

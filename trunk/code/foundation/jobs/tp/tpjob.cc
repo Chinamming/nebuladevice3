@@ -17,6 +17,8 @@ using namespace Base;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJob::TPJob() :
     completionCounter(0),
     completionEvent(true)  // configure as manual reset event
@@ -25,6 +27,8 @@ TPJob::TPJob() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJob::~TPJob()
 {
     if (this->IsValid())
@@ -34,6 +38,8 @@ TPJob::~TPJob()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJob::Setup(const JobUniformDesc& uniform, const JobDataDesc& input, const JobDataDesc& output, const JobFuncDesc& func)
 {
@@ -56,6 +62,8 @@ TPJob::Setup(const JobUniformDesc& uniform, const JobDataDesc& input, const JobD
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJob::Discard()
 {

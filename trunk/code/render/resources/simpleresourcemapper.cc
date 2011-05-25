@@ -14,6 +14,8 @@ using namespace Core;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SimpleResourceMapper::SimpleResourceMapper() :
     resourceClass(0),
     resLoaderClass(0),
@@ -24,12 +26,16 @@ SimpleResourceMapper::SimpleResourceMapper() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SimpleResourceMapper::~SimpleResourceMapper()
 {
     n_assert(!this->IsAttachedToResourceManager());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Rtti&
 SimpleResourceMapper::GetResourceType() const
 {
@@ -38,6 +44,8 @@ SimpleResourceMapper::GetResourceType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SimpleResourceMapper::OnAttachToResourceManager()
 {
@@ -69,6 +77,8 @@ SimpleResourceMapper::OnAttachToResourceManager()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SimpleResourceMapper::OnRemoveFromResourceManager()
 {
@@ -262,6 +272,8 @@ SimpleResourceMapper::OnPrepare(bool waiting)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SimpleResourceMapper::OnUpdate(IndexT frameIndex)
 {
@@ -269,6 +281,8 @@ SimpleResourceMapper::OnUpdate(IndexT frameIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 SimpleResourceMapper::GetNumPendingResources() const
 {

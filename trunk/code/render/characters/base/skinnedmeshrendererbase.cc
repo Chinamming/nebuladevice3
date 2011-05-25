@@ -15,6 +15,8 @@ using namespace Characters;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SkinnedMeshRendererBase::SkinnedMeshRendererBase() :
     inFrame(false),
     isValid(false),
@@ -25,6 +27,8 @@ SkinnedMeshRendererBase::SkinnedMeshRendererBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SkinnedMeshRendererBase::~SkinnedMeshRendererBase()
 {
     if (this->IsValid())
@@ -35,6 +39,8 @@ SkinnedMeshRendererBase::~SkinnedMeshRendererBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SkinnedMeshRendererBase::Setup()
 {
@@ -46,6 +52,8 @@ SkinnedMeshRendererBase::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SkinnedMeshRendererBase::Discard()
 {
@@ -55,6 +63,8 @@ SkinnedMeshRendererBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SkinnedMeshRendererBase::OnBeginFrame()
 {
@@ -64,6 +74,8 @@ SkinnedMeshRendererBase::OnBeginFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SkinnedMeshRendererBase::OnEndFrame()
 {
@@ -75,6 +87,8 @@ SkinnedMeshRendererBase::OnEndFrame()
 }   
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SkinnedMeshRendererBase::BeginGatherSkins()
 {
@@ -123,6 +137,8 @@ SkinnedMeshRendererBase::RegisterSoftwareSkinnedMesh(const Ptr<Characters::Chara
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SkinnedMeshRendererBase::EndGatherSkins()
 {
@@ -171,6 +187,8 @@ SkinnedMeshRendererBase::DrawGPUSkinnedMesh(const Ptr<Characters::CharacterInsta
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 SkinnedMeshRendererBase::AcquireJointTextureRowPointer(const Ptr<CharacterInstance>& charInst, SizeT& outRowPitch)
 {
@@ -178,6 +196,8 @@ SkinnedMeshRendererBase::AcquireJointTextureRowPointer(const Ptr<CharacterInstan
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT 
 SkinnedMeshRendererBase::AllocJointTextureRow()
 {
@@ -186,6 +206,8 @@ SkinnedMeshRendererBase::AllocJointTextureRow()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 SkinnedMeshRendererBase::FreeJointTextureRow(IndexT characterIndex)
 {
@@ -193,6 +215,8 @@ SkinnedMeshRendererBase::FreeJointTextureRow(IndexT characterIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 SkinnedMeshRendererBase::DrawGPUTextureSkinnedMesh(const Ptr<Characters::CharacterInstance>& charInst, const Ptr<CoreGraphics::Mesh>& mesh, IndexT primGroupIndex, const Ptr<CoreGraphics::ShaderVariable>& charInstShaderVar)
 {

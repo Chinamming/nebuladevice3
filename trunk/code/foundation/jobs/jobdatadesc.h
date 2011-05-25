@@ -52,6 +52,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobDataDesc::JobDataDesc() :
     numBuffers(0)
@@ -66,6 +68,8 @@ JobDataDesc::JobDataDesc() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobDataDesc::JobDataDesc(void* ptr_, SizeT bufSize_, SizeT sliceSize_) :
     numBuffers(1)
@@ -85,6 +89,8 @@ JobDataDesc::JobDataDesc(void* ptr_, SizeT bufSize_, SizeT sliceSize_) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobDataDesc::JobDataDesc(void* ptr0_, SizeT bufSize0_, SizeT sliceSize0_, void* ptr1_, SizeT bufSize1_, SizeT sliceSize1_) :
     numBuffers(2)
@@ -109,6 +115,8 @@ JobDataDesc::JobDataDesc(void* ptr0_, SizeT bufSize0_, SizeT sliceSize0_, void* 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobDataDesc::JobDataDesc(void* ptr0_, SizeT bufSize0_, SizeT sliceSize0_, void* ptr1_, SizeT bufSize1_, SizeT sliceSize1_, void* ptr2_, SizeT bufSize2_, SizeT sliceSize2_) :
     numBuffers(3)
@@ -134,6 +142,8 @@ JobDataDesc::JobDataDesc(void* ptr0_, SizeT bufSize0_, SizeT sliceSize0_, void* 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 JobDataDesc::JobDataDesc(void* ptr0_, SizeT bufSize0_, SizeT sliceSize0_, void* ptr1_, SizeT bufSize1_, SizeT sliceSize1_, void* ptr2_, SizeT bufSize2_, SizeT sliceSize2_, void* ptr3_, SizeT bufSize3_, SizeT sliceSize3_) :
     numBuffers(4)
@@ -160,6 +170,8 @@ JobDataDesc::JobDataDesc(void* ptr0_, SizeT bufSize0_, SizeT sliceSize0_, void* 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 JobDataDesc::Update(IndexT index, void* ptr_, SizeT bufSize_, SizeT sliceSize_)
 {
@@ -171,6 +183,8 @@ JobDataDesc::Update(IndexT index, void* ptr_, SizeT bufSize_, SizeT sliceSize_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 JobDataDesc::GetNumBuffers() const
 {
@@ -178,6 +192,8 @@ JobDataDesc::GetNumBuffers() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 JobDataDesc::GetPointer(IndexT i) const
 {
@@ -186,6 +202,8 @@ JobDataDesc::GetPointer(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 JobDataDesc::GetBufferSize(IndexT i) const
 {
@@ -194,6 +212,8 @@ JobDataDesc::GetBufferSize(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 JobDataDesc::GetSliceSize(IndexT i) const
 {

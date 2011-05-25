@@ -21,6 +21,8 @@ using namespace Resources;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightPrePassServer::LightPrePassServer() :
     globalLightFeatureBits(0),
     renderBuffersAssigned(false)
@@ -32,6 +34,8 @@ LightPrePassServer::LightPrePassServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightPrePassServer::~LightPrePassServer()
 {
     n_assert(!this->IsOpen());
@@ -50,6 +54,8 @@ LightPrePassServer::NeedsLightModelLinking() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightPrePassServer::Open()
 {
@@ -99,6 +105,8 @@ LightPrePassServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightPrePassServer::Close()
 {
@@ -142,6 +150,8 @@ LightPrePassServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightPrePassServer::AttachVisibleLight(const Ptr<InternalAbstractLightEntity>& lightEntity)
 {
@@ -176,6 +186,8 @@ LightPrePassServer::AttachVisibleLight(const Ptr<InternalAbstractLightEntity>& l
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightPrePassServer::EndFrame()
 {
@@ -229,6 +241,8 @@ LightPrePassServer::AssignRenderBufferTextures()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightPrePassServer::RenderLights()
 {
@@ -358,6 +372,8 @@ LightPrePassServer::RenderPointLights()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 LightPrePassServer::RenderSpotLights()
 {

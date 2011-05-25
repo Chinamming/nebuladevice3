@@ -10,6 +10,8 @@ namespace Http
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 HttpStatus::FromString(const Util::String& str)
 {
@@ -29,6 +31,8 @@ HttpStatus::FromString(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 HttpStatus::ToString(Code c)
 {
@@ -49,6 +53,8 @@ HttpStatus::ToString(Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 HttpStatus::ToHumanReadableString(Code c)
 {

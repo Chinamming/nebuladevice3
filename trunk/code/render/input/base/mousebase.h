@@ -88,6 +88,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 MouseBase::ButtonPressed(Input::MouseButton::Code btn) const
 {
@@ -95,6 +97,8 @@ MouseBase::ButtonPressed(Input::MouseButton::Code btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MouseBase::ButtonDown(Input::MouseButton::Code btn) const
 {
@@ -102,6 +106,8 @@ MouseBase::ButtonDown(Input::MouseButton::Code btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MouseBase::ButtonUp(Input::MouseButton::Code btn) const
 {
@@ -109,6 +115,8 @@ MouseBase::ButtonUp(Input::MouseButton::Code btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MouseBase::ButtonDoubleClicked(Input::MouseButton::Code btn) const
 {
@@ -116,6 +124,8 @@ MouseBase::ButtonDoubleClicked(Input::MouseButton::Code btn) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 MouseBase::GetPixelPosition() const
 {
@@ -123,6 +133,8 @@ MouseBase::GetPixelPosition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 MouseBase::GetScreenPosition() const
 {
@@ -130,6 +142,8 @@ MouseBase::GetScreenPosition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 MouseBase::GetMovement() const
 {
@@ -137,6 +151,8 @@ MouseBase::GetMovement() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MouseBase::WheelForward() const
 {
@@ -144,6 +160,8 @@ MouseBase::WheelForward() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 MouseBase::WheelBackward() const
 {

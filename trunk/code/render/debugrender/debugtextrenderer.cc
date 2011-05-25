@@ -23,18 +23,24 @@ using namespace Graphics;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugTextRenderer::DebugTextRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugTextRenderer::~DebugTextRenderer()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugTextRenderer::DrawText(const String& text, const float4& color, const float2& pos)
 {
@@ -42,6 +48,8 @@ DebugTextRenderer::DrawText(const String& text, const float4& color, const float
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugTextRenderer::DrawText3D(const String& text, const float4& color, const point& pos)
 {
@@ -59,6 +67,8 @@ DebugTextRenderer::DrawText3D(const String& text, const float4& color, const poi
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugTextRenderer::OnFrame()
 {

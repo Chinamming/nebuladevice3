@@ -53,9 +53,12 @@ public:
     /// run the application
     virtual void Run();
 
-protected:
+private:
+public:
     /// update the current time values
     void UpdateTime();
+
+protected:
     /// lookup the toolkit project key in the registry (Win32 only!)
     Util::String LookupProjectDirectory();
     /// set quit requested flag
@@ -75,7 +78,6 @@ protected:
     /// get current frame time
     Timing::Time GetFrameTime() const;
 
-protected:
     Ptr<Core::CoreServer> coreServer;
     Ptr<Jobs::JobSystem> jobSystem;
     Ptr<IO::GameContentServer> gameContentServer;
@@ -107,6 +109,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderApplication::SetLogFileEnabled(bool b)
 {
@@ -114,6 +118,8 @@ RenderApplication::SetLogFileEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderApplication::SetMountStandardArchivesEnabled(bool b)
 {
@@ -121,6 +127,8 @@ RenderApplication::SetMountStandardArchivesEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderApplication::SetQuitRequested(bool b)
 {
@@ -128,6 +136,8 @@ RenderApplication::SetQuitRequested(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RenderApplication::IsQuitRequested() const
 {
@@ -135,6 +145,8 @@ RenderApplication::IsQuitRequested() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 RenderApplication::GetTime() const
 {
@@ -142,6 +154,8 @@ RenderApplication::GetTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 RenderApplication::GetFrameTime() const
 {
@@ -149,6 +163,8 @@ RenderApplication::GetFrameTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderApplication::SetOverrideRootDirectory(const Util::String& d)
 {

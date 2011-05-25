@@ -22,6 +22,8 @@ using namespace Visibility;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalStage::InternalStage() :
     isAttachedToServer(false),
     curFrameIndex(InvalidIndex)
@@ -30,6 +32,8 @@ InternalStage::InternalStage() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalStage::~InternalStage()
 {
     // make sure we've been properly cleaned up
@@ -43,6 +47,8 @@ InternalStage::~InternalStage()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalStage::OnAttachToServer()
 {
@@ -54,6 +60,8 @@ InternalStage::OnAttachToServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalStage::OnRemoveFromServer()
 {
@@ -137,6 +145,8 @@ InternalStage::RemoveEntity(const Ptr<InternalGraphicsEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalStage::RemoveAllEntities()
 {
@@ -237,6 +247,8 @@ InternalStage::UpdateLightLinks()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalStage::NotifyOfEntityTransformChange(const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -244,6 +256,8 @@ InternalStage::NotifyOfEntityTransformChange(const Ptr<InternalGraphicsEntity>& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalStage::AttachVisibilitySystems(const Util::Array<Ptr<Visibility::VisibilitySystemBase> >& systems)
 {
@@ -251,6 +265,8 @@ InternalStage::AttachVisibilitySystems(const Util::Array<Ptr<Visibility::Visibil
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalStage::OnRenderDebug()
 {
@@ -294,6 +310,8 @@ InternalStage::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Visibility::VisibilityChecker& 
 InternalStage::GetVisibilityChecker()
 {

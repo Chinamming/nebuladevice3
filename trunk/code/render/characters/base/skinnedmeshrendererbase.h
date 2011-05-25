@@ -132,6 +132,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 SkinnedMeshRendererBase::IsValid() const
 {

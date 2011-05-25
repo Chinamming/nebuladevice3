@@ -62,6 +62,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AnimEvent::AnimEvent() :
     time(0)
@@ -70,6 +72,8 @@ AnimEvent::AnimEvent() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AnimEvent::AnimEvent(const Util::StringAtom& n, Timing::Tick t) :
     name(n),
@@ -79,6 +83,8 @@ AnimEvent::AnimEvent(const Util::StringAtom& n, Timing::Tick t) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AnimEvent::AnimEvent(const Util::StringAtom& n, const Util::StringAtom& c, Timing::Tick t) :
     name(n),
@@ -89,6 +95,8 @@ AnimEvent::AnimEvent(const Util::StringAtom& n, const Util::StringAtom& c, Timin
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimEvent::SetName(const Util::StringAtom& n)
 {
@@ -96,6 +104,8 @@ AnimEvent::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 AnimEvent::GetName() const
 {
@@ -103,6 +113,8 @@ AnimEvent::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimEvent::SetCategory(const Util::StringAtom& str)
 {
@@ -110,6 +122,8 @@ AnimEvent::SetCategory(const Util::StringAtom& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 AnimEvent::GetCategory() const
 {
@@ -117,6 +131,8 @@ AnimEvent::GetCategory() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AnimEvent::HasCategory() const
 {
@@ -124,6 +140,8 @@ AnimEvent::HasCategory() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AnimEvent::SetTime(Timing::Tick t)
 {
@@ -131,6 +149,8 @@ AnimEvent::SetTime(Timing::Tick t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Tick
 AnimEvent::GetTime() const
 {
@@ -138,6 +158,8 @@ AnimEvent::GetTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator==(const AnimEvent& a, const AnimEvent& b)
 {
@@ -145,6 +167,8 @@ operator==(const AnimEvent& a, const AnimEvent& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator!=(const AnimEvent& a, const AnimEvent& b)
 {
@@ -152,6 +176,8 @@ operator!=(const AnimEvent& a, const AnimEvent& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator<(const AnimEvent& a, const AnimEvent& b)
 {
@@ -159,6 +185,8 @@ operator<(const AnimEvent& a, const AnimEvent& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator>(const AnimEvent& a, const AnimEvent& b)
 {
@@ -166,6 +194,8 @@ operator>(const AnimEvent& a, const AnimEvent& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator<=(const AnimEvent& a, const AnimEvent& b)
 {
@@ -173,6 +203,8 @@ operator<=(const AnimEvent& a, const AnimEvent& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator>=(const AnimEvent& a, const AnimEvent& b)
 {

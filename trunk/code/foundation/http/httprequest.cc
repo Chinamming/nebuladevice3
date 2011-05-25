@@ -11,6 +11,8 @@ __ImplementClass(Http::HttpRequest, 'HTRQ', Messaging::Message);
 __ImplementMsgId(HttpRequest);
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpRequest::HttpRequest() :
     method(HttpMethod::InvalidHttpMethod),
     status(HttpStatus::InvalidHttpStatus)
@@ -19,6 +21,8 @@ HttpRequest::HttpRequest() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpRequest::~HttpRequest()
 {
     // empty

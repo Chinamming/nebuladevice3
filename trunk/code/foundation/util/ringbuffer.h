@@ -69,6 +69,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::Allocate(SizeT c)
 {
@@ -84,6 +86,8 @@ RingBuffer<TYPE>::Allocate(SizeT c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::Delete()
 {
@@ -99,6 +103,8 @@ RingBuffer<TYPE>::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::Copy(const RingBuffer<TYPE>& rhs)
 {
@@ -117,6 +123,8 @@ RingBuffer<TYPE>::Copy(const RingBuffer<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 RingBuffer<TYPE>::RingBuffer() :
     capacity(0),
@@ -129,6 +137,8 @@ RingBuffer<TYPE>::RingBuffer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 RingBuffer<TYPE>::RingBuffer(SizeT c) :
     elements(0)
@@ -137,6 +147,8 @@ RingBuffer<TYPE>::RingBuffer(SizeT c) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 RingBuffer<TYPE>::RingBuffer(const RingBuffer<TYPE>& rhs) :
     elements(0)
@@ -145,6 +157,8 @@ RingBuffer<TYPE>::RingBuffer(const RingBuffer<TYPE>& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 RingBuffer<TYPE>::~RingBuffer()
 {
@@ -152,6 +166,8 @@ RingBuffer<TYPE>::~RingBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::operator=(const RingBuffer<TYPE>& rhs)
 {
@@ -160,6 +176,8 @@ RingBuffer<TYPE>::operator=(const RingBuffer<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE&
 RingBuffer<TYPE>::operator[](IndexT index) const
 {
@@ -176,6 +194,8 @@ RingBuffer<TYPE>::operator[](IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE&
 RingBuffer<TYPE>::Front() const
 {
@@ -183,6 +203,8 @@ RingBuffer<TYPE>::Front() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE&
 RingBuffer<TYPE>::Back() const
 {
@@ -193,6 +215,8 @@ RingBuffer<TYPE>::Back() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 RingBuffer<TYPE>::IsEmpty() const
 {
@@ -200,6 +224,8 @@ RingBuffer<TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::Reset()
 {
@@ -209,6 +235,8 @@ RingBuffer<TYPE>::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::SetCapacity(SizeT newCapacity)
 {
@@ -217,6 +245,8 @@ RingBuffer<TYPE>::SetCapacity(SizeT newCapacity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 RingBuffer<TYPE>::Capacity() const
 {
@@ -224,6 +254,8 @@ RingBuffer<TYPE>::Capacity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 RingBuffer<TYPE>::Size() const
 {
@@ -231,6 +263,8 @@ RingBuffer<TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 RingBuffer<TYPE>::Add(const TYPE& elm)
 {
@@ -265,6 +299,8 @@ RingBuffer<TYPE>::Add(const TYPE& elm)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> Array<TYPE>
 RingBuffer<TYPE>::AsArray() const
 {
@@ -278,6 +314,8 @@ RingBuffer<TYPE>::AsArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE* 
 RingBuffer<TYPE>::GetBuffer()
@@ -287,6 +325,8 @@ RingBuffer<TYPE>::GetBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 const TYPE* 
 RingBuffer<TYPE>::GetBuffer() const

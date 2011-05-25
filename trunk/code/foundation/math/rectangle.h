@@ -41,6 +41,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 rectangle<TYPE>::rectangle()
 {
@@ -48,6 +50,8 @@ rectangle<TYPE>::rectangle()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 rectangle<TYPE>::rectangle(TYPE l, TYPE t, TYPE r, TYPE b) :
     left(l),
@@ -60,6 +64,8 @@ rectangle<TYPE>::rectangle(TYPE l, TYPE t, TYPE r, TYPE b) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 rectangle<TYPE>::set(TYPE l, TYPE t, TYPE r, TYPE b)
 {
@@ -72,6 +78,8 @@ rectangle<TYPE>::set(TYPE l, TYPE t, TYPE r, TYPE b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 rectangle<TYPE>::inside(TYPE x, TYPE y) const
 {
@@ -79,6 +87,8 @@ rectangle<TYPE>::inside(TYPE x, TYPE y) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE
 rectangle<TYPE>::width() const
 {
@@ -86,6 +96,8 @@ rectangle<TYPE>::width() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE
 rectangle<TYPE>::height() const
 {
@@ -93,6 +105,8 @@ rectangle<TYPE>::height() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE
 rectangle<TYPE>::centerX() const
 {
@@ -100,6 +114,8 @@ rectangle<TYPE>::centerX() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> TYPE
 rectangle<TYPE>::centerY() const
 {

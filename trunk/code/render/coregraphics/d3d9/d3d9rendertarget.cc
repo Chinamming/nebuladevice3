@@ -21,6 +21,8 @@ using namespace CoreGraphics;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9RenderTarget::D3D9RenderTarget() :
     d3d9RenderTarget(0),
     d3d9DepthStencil(0),
@@ -35,6 +37,8 @@ D3D9RenderTarget::D3D9RenderTarget() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9RenderTarget::~D3D9RenderTarget()
 {
     n_assert(!this->isValid);
@@ -44,6 +48,8 @@ D3D9RenderTarget::~D3D9RenderTarget()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9RenderTarget::Setup()
 {
@@ -182,13 +188,13 @@ D3D9RenderTarget::Setup()
             usage = D3DUSAGE_DYNAMIC;        
             pool = D3DPOOL_SYSTEMMEM;
             hr = d3d9Dev->CreateTexture(resolveWidth,                   // Width
-										resolveHeight,                  // Height
-										1,                              // Levels
-										usage,                          // Usage
-										this->d3d9ColorBufferFormat,    // Format
-										pool,                           // Pool
-										&(this->d3d9CPUResolveTexture), // ppTexture
-										NULL);                          // pSharedHandle
+                resolveHeight,                  // Height
+                1,                              // Levels
+                usage,                          // Usage
+                this->d3d9ColorBufferFormat,    // Format
+                pool,                           // Pool
+                &(this->d3d9CPUResolveTexture),    // ppTexture
+                NULL);                          // pSharedHandle
 
             n_assert(SUCCEEDED(hr));
             n_assert(0 != this->d3d9CPUResolveTexture);
@@ -226,11 +232,7 @@ D3D9RenderTarget::Setup()
     // the texture is publicly visible
     if ((0 != this->d3d9ResolveTexture) && this->resolveTextureResId.IsValid())
     {
-		// recreate d3d9 texture object inside of Texture object only
-		if (!this->resolveTexture.isvalid())
-		{
-	        this->resolveTexture = ResourceManager::Instance()->CreateUnmanagedResource(this->resolveTextureResId, Texture::RTTI).downcast<Texture>();  
-		}
+        this->resolveTexture = ResourceManager::Instance()->CreateUnmanagedResource(this->resolveTextureResId, Texture::RTTI).downcast<Texture>();  
         this->resolveTexture->SetupFromD3D9Texture(this->d3d9ResolveTexture);
         this->d3d9ResolveTexture->AddRef();
     }
@@ -239,35 +241,21 @@ D3D9RenderTarget::Setup()
     if ((0 != this->d3d9CPUResolveTexture) && this->resolveTextureResId.IsValid())
     {
         Resources::ResourceId resolveCPUTextureResId = Util::String(this->resolveTextureResId.AsString() + "_CPU_ReadOnly");
-		if (!this->resolveCPUTexture.isvalid())
-		{
-			this->resolveCPUTexture = ResourceManager::Instance()->CreateUnmanagedResource(resolveCPUTextureResId, Texture::RTTI).downcast<Texture>();  
-		}
+        this->resolveTexture = ResourceManager::Instance()->CreateUnmanagedResource(resolveCPUTextureResId, Texture::RTTI).downcast<Texture>();  
         this->resolveCPUTexture->SetUsage(Texture::UsageDynamic);
         this->resolveCPUTexture->SetAccess(Texture::AccessRead);               
         this->resolveCPUTexture->SetupFromD3D9Texture(this->d3d9CPUResolveTexture);
         this->d3d9CPUResolveTexture->AddRef();
     }
-
-	this->AddToResourceEventHandler();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9RenderTarget::Discard()
 {
-	if (!this->isLosted)
-	{
-	    RenderTargetBase::Discard();
-	}
-	else
-	{
-		if (this->resolveTexture.isvalid())
-			this->resolveTexture->Unload();
-		if (this->resolveCPUTexture.isvalid())
-			this->resolveCPUTexture->Unload();
-		this->isValid = false;
-	}
+    RenderTargetBase::Discard();
     if (0 != this->d3d9RenderTarget)
     {
         this->d3d9RenderTarget->Release();
@@ -349,6 +337,8 @@ D3D9RenderTarget::SetupMultiSampleType()
 }  
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9RenderTarget::BeginPass()
 {
@@ -450,6 +440,8 @@ D3D9RenderTarget::BeginPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9RenderTarget::EndPass()
 {
@@ -513,34 +505,14 @@ D3D9RenderTarget::EndPass()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9RenderTarget::GenerateMipLevels()
 {
     n_assert(0 != this->d3d9ResolveTexture);
     n_assert(this->mipMapsEnabled);
     this->d3d9ResolveTexture->GenerateMipSubLevels();
-}
-
-//------------------------------------------------------------------------------
-void
-D3D9RenderTarget::OnLostDevice()
-{
-	if (!this->isLosted)
-	{
-		this->isLosted = true;
-		this->Discard();
-	}
-}
-
-//------------------------------------------------------------------------------
-void
-D3D9RenderTarget::OnResetDevice()
-{
-	if (this->isLosted)
-	{
-		this->Setup();
-		this->isLosted = false;
-	}
 }
 
 } // namespace Direct3D9

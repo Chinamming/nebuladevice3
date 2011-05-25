@@ -13,6 +13,8 @@ namespace Resources
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceScheduler::SetMapper(const Ptr<StreamingResourceMapper>& mapper)
 {
@@ -20,6 +22,8 @@ ResourceScheduler::SetMapper(const Ptr<StreamingResourceMapper>& mapper)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<LoadingResource>&
 ResourceScheduler::AppendLoadingResource(const Core::Rtti& loadingType, const Ptr<ManagedResource>& managedResource, const Ptr<Resource>& resourceToLoad)
 {
@@ -106,6 +110,8 @@ ResourceScheduler::OnRequestManagedResource(const Ptr<ManagedResource>& managedR
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceScheduler::OnRemoveFromMapper()
 {

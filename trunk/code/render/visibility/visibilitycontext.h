@@ -45,6 +45,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT 
 VisibilityContext::GetVisibleFrameId() const
 {
@@ -52,6 +54,8 @@ VisibilityContext::GetVisibleFrameId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 VisibilityContext::SetVisibleFrameId(IndexT val)
 {
@@ -59,6 +63,8 @@ VisibilityContext::SetVisibleFrameId(IndexT val)
 }  
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<InternalGraphics::InternalGraphicsEntity>& 
 VisibilityContext::GetGfxEntity() const
 {
@@ -66,6 +72,8 @@ VisibilityContext::GetGfxEntity() const
 }        
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox& 
 VisibilityContext::GetBoundingBox() const
 {

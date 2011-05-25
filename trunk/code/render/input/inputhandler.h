@@ -66,6 +66,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InputHandler::IsAttached() const
 {
@@ -73,6 +75,8 @@ InputHandler::IsAttached() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InputHandler::IsCapturing() const
 {

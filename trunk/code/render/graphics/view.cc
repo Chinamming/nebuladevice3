@@ -18,6 +18,8 @@ using namespace Util;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 View::View() :
     viewClass(&InternalGraphics::InternalView::RTTI),
     isDefaultView(false)
@@ -26,6 +28,8 @@ View::View() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 View::~View()
 {
     n_assert(!this->IsValid());
@@ -33,6 +37,8 @@ View::~View()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 View::Setup()
 {
@@ -59,6 +65,8 @@ View::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 View::Discard()
 {
@@ -79,6 +87,8 @@ View::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 View::SetCameraEntity(const Ptr<CameraEntity>& entity)
 {
@@ -95,6 +105,8 @@ View::SetCameraEntity(const Ptr<CameraEntity>& entity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<CameraEntity>&
 View::GetCameraEntity() const
 {
@@ -102,6 +114,8 @@ View::GetCameraEntity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 View::SetDefaultView(bool b)
 {

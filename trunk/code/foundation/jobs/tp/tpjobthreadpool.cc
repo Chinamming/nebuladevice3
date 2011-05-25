@@ -13,6 +13,8 @@ using namespace System;
 using namespace Threading;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJobThreadPool::TPJobThreadPool() :
     isValid(false),
     nextThreadIndex(0)
@@ -21,12 +23,16 @@ TPJobThreadPool::TPJobThreadPool() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJobThreadPool::~TPJobThreadPool()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobThreadPool::Setup()
 {
@@ -51,6 +57,8 @@ TPJobThreadPool::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobThreadPool::Discard()
 {
@@ -65,6 +73,8 @@ TPJobThreadPool::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobThreadPool::PushJobSlices(TPJobSlice* firstSlice, SizeT numSlices, IndexT threadIndex)
 {
@@ -106,6 +116,8 @@ TPJobThreadPool::PushJobSlices(TPJobSlice* firstSlice, SizeT numSlices, IndexT t
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobThreadPool::PushSync(const Threading::Event* syncEvent)
 {

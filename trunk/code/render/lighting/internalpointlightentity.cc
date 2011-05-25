@@ -17,6 +17,8 @@ using namespace CoreGraphics;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalPointLightEntity::InternalPointLightEntity()
 {
     this->SetLightType(LightType::Point);
@@ -25,6 +27,8 @@ InternalPointLightEntity::InternalPointLightEntity()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Math::ClipStatus::Type
 InternalPointLightEntity::ComputeClipStatus(const Math::bbox& box)
 {
@@ -35,6 +39,8 @@ InternalPointLightEntity::ComputeClipStatus(const Math::bbox& box)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalPointLightEntity::OnTransformChanged()
 {
@@ -68,6 +74,8 @@ InternalPointLightEntity::OnTransformChanged()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalPointLightEntity::OnRenderDebug()
 {
@@ -76,7 +84,7 @@ InternalPointLightEntity::OnRenderDebug()
     ShapeRenderer::Instance()->AddShape(RenderShape(Thread::GetMyThreadId(), RenderShape::Sphere, this->GetTransform(), color));
     // mark position
     color.w() = 1.0f;
-    matrix44 centerTransform = matrix44::scaling(0.1, 0.1, 0.1);
+    matrix44 centerTransform = matrix44::scaling(0.1f, 0.1f, 0.1f);
     centerTransform.set_position(this->GetTransform().get_position());
     ShapeRenderer::Instance()->AddShape(RenderShape(Thread::GetMyThreadId(), RenderShape::Sphere, centerTransform, color));
 

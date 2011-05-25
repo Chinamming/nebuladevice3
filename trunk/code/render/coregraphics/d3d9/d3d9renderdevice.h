@@ -74,9 +74,6 @@ public:
     /// get the present parameters
     D3DPRESENT_PARAMETERS GetPresentParams() const;
 
-    /// reset d3d device for device lost or size changing
-    void ResetDevice();
-
 private:
     /// open Direct3D
     static void OpenDirect3D();
@@ -84,11 +81,9 @@ private:
     void CloseDirect3D();
     /// open the Direct3D device
     bool OpenDirect3DDevice();
-
-	/// close the Direct3D device
+    /// close the Direct3D device
     void CloseDirect3DDevice();
-
-	/// setup the requested adapter for the Direct3D device
+    /// setup the requested adapter for the Direct3D device
     void SetupAdapter();
     /// select the requested buffer formats for the Direct3D device
     void SetupBufferFormats();
@@ -98,12 +93,10 @@ private:
     void SetupPresentParams();
     /// set the initial Direct3D device state
     void SetInitialDeviceState();
+    /// test for and handle lost device 
+    bool TestResetDevice();
     /// unbind D3D resources in the device
     void UnbindD3D9Resources();
-	/// setup d3d queries
-	void SetupQueries();
-	/// release d3d9 queries
-	void DiscardQueries();
     /// sync with gpu
     void SyncGPU();
 
@@ -116,10 +109,12 @@ private:
     DWORD deviceBehaviourFlags;
     static const int numSyncQueries = 1;
     uint frameId;
-    IDirect3DQuery9* gpuSyncQuery[numSyncQueries];
+    IDirect3DQuery9* gpuSyncQuery[numSyncQueries];       
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline D3DPRESENT_PARAMETERS
 D3D9RenderDevice::GetPresentParams() const
 {

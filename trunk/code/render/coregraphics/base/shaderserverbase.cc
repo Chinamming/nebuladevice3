@@ -20,6 +20,8 @@ using namespace Util;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderServerBase::ShaderServerBase() :
     curShaderFeatureBits(0),        
     isOpen(false)
@@ -28,6 +30,8 @@ ShaderServerBase::ShaderServerBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderServerBase::~ShaderServerBase()
 {
     n_assert(!this->IsOpen());
@@ -35,6 +39,8 @@ ShaderServerBase::~ShaderServerBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ShaderServerBase::Open()
 {
@@ -94,6 +100,8 @@ ShaderServerBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderServerBase::Close()
 {
@@ -140,6 +148,8 @@ ShaderServerBase::CreateShaderInstance(const ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ShaderServerBase::ApplyObjectId(IndexT i)
 {   

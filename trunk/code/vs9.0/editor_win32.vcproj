@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="editor_win32"
-	ProjectGUID="{9F13EA2A-BDD5-46D1-9B9B-E00F4DD3EF39}"
-	RootNamespace="editor_win32"
-	TargetFrameworkVersion="0"
+	ProjectGUID="{A742EE82-5467-4E6A-ACC5-88F607C98D2A}"
+	RootNamespace="xtremetools2"
+	Keyword="MFCProj"
+	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
 		<Platform
@@ -13,29 +14,21 @@
 		/>
 	</Platforms>
 	<ToolFiles>
-		<ToolFile
-			RelativePath="..\nidl.rules"
-		/>
 	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory=".\Win32\Debug"
-			IntermediateDirectory=".\Win32\Debug\editor_win32"
-			ConfigurationType="2"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			ManagedExtensions="1"
-			WholeProgramOptimization="0"
+			OutputDirectory=".\Win32\Editor_Debug"
+			IntermediateDirectory=".\Win32\Editor_Debug"
+			ConfigurationType="1"
+			UseOfMFC="1"
+			CharacterSet="2"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -45,34 +38,30 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+				ValidateParameters="false"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalOptions=""
 				Optimization="0"
-				AdditionalIncludeDirectories="..;../foundation;../render;../extlibs;../addons;../application;../editors"
-				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
+				AdditionalIncludeDirectories="..\foundation;..\render;..\tools\editor"
+				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0"
 				StringPooling="true"
-				MinimalRebuild="false"
-				ExceptionHandling="0"
-				BasicRuntimeChecks="0"
-				RuntimeLibrary="3"
-				BufferSecurityCheck="true"
+				MinimalRebuild="true"
+				ExceptionHandling="1"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="1"
 				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
-				RuntimeTypeInfo="true"
-				UsePrecompiledHeader="2"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="1"
 				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
+				WarnAsError="false"
+				DebugInformationFormat="4"
 				CallingConvention="0"
 				CompileAs="0"
-				DisableSpecificWarnings="4793"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -81,21 +70,24 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9d.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib"
-				OutputFile="..\..\bin\win32\$(ProjectName).dll"
-				AdditionalLibraryDirectories=".\Win32\Debug,..\..\bin\win32,..\lib\win32_vc9_i386;"
+				AdditionalOptions="/verbose:lib"
+				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib"
+				OutputFile="..\..\bin\win32\nebula3_editor.debug.exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories=".\Win32"
+				GenerateManifest="false"
+				IgnoreAllDefaultLibraries="false"
+				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
-				AssemblyDebug="0"
-				ProgramDatabaseFile="..\..\bin\win32\editor_win32.debug.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\editor_win32.debug.map"
-				MapExports="true"
+				SubSystem="2"
+				TargetMachine="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -121,12 +113,11 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\Win32\Release"
-			IntermediateDirectory=".\Win32\Release\editor_win32"
-			ConfigurationType="2"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			ManagedExtensions="1"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			UseOfMFC="1"
+			CharacterSet="2"
 			WholeProgramOptimization="1"
 			>
 			<Tool
@@ -136,9 +127,6 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
-				Name="Nebula3 Interface Definition"
-			/>
-			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -146,37 +134,22 @@
 			/>
 			<Tool
 				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+				ValidateParameters="false"
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
+				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../foundation;../render;../extlibs;../addons;../application;../editors"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="2"
-				BufferSecurityCheck="false"
+				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
+				MinimalRebuild="false"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="true"
+				TreatWChar_tAsBuiltInType="true"
 				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
 				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				DisableSpecificWarnings="4793"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -185,15 +158,20 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib"
-				OutputFile="..\..\bin\win32\$(ProjectName).dll"
-				AdditionalLibraryDirectories=".\Win32\Release;..\..\bin\win32;..\lib\win32_vc9_i386"
+				LinkIncremental="1"
+				IgnoreDefaultLibraryNames="libcd.lib"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -219,127 +197,93 @@
 		</Configuration>
 	</Configurations>
 	<References>
-		<AssemblyReference
-			RelativePath="PresentationCore.dll"
-			AssemblyName="PresentationCore, Version=3.0.0.0, PublicKeyToken=31bf3856ad364e35, processorArchitecture=IA64"
-			MinFrameworkVersion="196608"
-		/>
-		<AssemblyReference
-			RelativePath="PresentationFramework.dll"
-			AssemblyName="PresentationFramework, Version=3.0.0.0, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-			MinFrameworkVersion="196608"
-		/>
-		<AssemblyReference
-			RelativePath="System.dll"
-			AssemblyName="System, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
-			MinFrameworkVersion="131072"
-		/>
-		<AssemblyReference
-			RelativePath="System.Windows.Presentation.dll"
-			AssemblyName="System.Windows.Presentation, Version=3.5.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
-			MinFrameworkVersion="196613"
-		/>
-		<AssemblyReference
-			RelativePath="WindowsBase.dll"
-			AssemblyName="WindowsBase, Version=3.0.0.0, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-			MinFrameworkVersion="196608"
-		/>
 	</References>
 	<Files>
 		<Filter
-			Name="editor"
-			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
-			<Filter
-				Name="app"
+			<File
+				RelativePath="..\tools\editor\ChildView.cc"
 				>
-				<File
-					RelativePath="..\editors\editor\app\editorapplication.cc"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\app\editorapplication.h"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\app\modeleditor.cc"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\app\modeleditor.h"
-					>
-				</File>
-			</Filter>
-			<Filter
-				Name="control"
+			</File>
+			<File
+				RelativePath="..\tools\editor\editorApp.cc"
 				>
-				<File
-					RelativePath="..\editors\editor\control\hostwindow.cc"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\control\hostwindow.h"
-					>
-				</File>
-				<Filter
-					Name="internal"
-					>
-					<File
-						RelativePath="..\editors\editor\control\windowmessagehandler.cc"
-						>
-					</File>
-					<File
-						RelativePath="..\editors\editor\control\windowmessagehandler.h"
-						>
-					</File>
-				</Filter>
-			</Filter>
-			<Filter
-				Name="io"
+			</File>
+			<File
+				RelativePath="..\tools\editor\MainFrm.cc"
 				>
-				<File
-					RelativePath="..\editors\editor\io\directoryinfo.cc"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\io\directoryinfo.h"
-					>
-				</File>
-			</Filter>
-			<Filter
-				Name="util"
+			</File>
+			<File
+				RelativePath="..\tools\editor\n3viewerapp.cc"
 				>
-				<File
-					RelativePath="..\editors\editor\util\typeconvert.cc"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\util\typeconvert.h"
-					>
-				</File>
-			</Filter>
+			</File>
+			<File
+				RelativePath="..\foundation\stdneb.cc"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath="..\tools\editor\ChildView.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\editorApp.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\MainFrm.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\n3viewerapp.h"
+				>
+			</File>
+			<File
+				RelativePath=".\resource.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource"
+			>
+			<File
+				RelativePath=".\res\editor.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\res\editor2.rc2"
+				>
+			</File>
+			<File
+				RelativePath=".\editor_win32.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\res\paneicons.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\Toolbar.bmp"
+				>
+			</File>
 		</Filter>
 		<File
-			RelativePath="..\addons\stdneb.cc"
+			RelativePath=".\ReadMe.txt"
 			>
-			<FileConfiguration
-				Name="Debug|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Release|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
 		</File>
 	</Files>
 	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="xtremetools2.rc"
+		/>
 	</Globals>
 </VisualStudioProject>

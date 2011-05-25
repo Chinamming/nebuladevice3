@@ -93,6 +93,8 @@ UpdateBoundingBoxes(const matrix44* observerFrustum,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBoxSystemJobFunc(const JobFuncContext& ctx)
 {

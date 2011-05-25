@@ -10,6 +10,8 @@ namespace CoreAnimation
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InfinityType::Code
 InfinityType::FromString(const String& str)
 {
@@ -22,6 +24,8 @@ InfinityType::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 InfinityType::ToString(Code c)
 {

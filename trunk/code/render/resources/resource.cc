@@ -12,6 +12,8 @@ namespace Resources
 __ImplementClass(Resources::Resource, 'RSRC', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::Resource() :
     state(Initial),
     useCount(0),
@@ -22,6 +24,8 @@ Resource::Resource() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::~Resource()    
 {
     n_assert(!this->IsLoaded());
@@ -98,6 +102,8 @@ Resource::Save()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Resource::SetLoader(const Ptr<ResourceLoader>& l)
 {
@@ -114,6 +120,8 @@ Resource::SetLoader(const Ptr<ResourceLoader>& l)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ResourceLoader>&
 Resource::GetLoader() const
 {
@@ -121,6 +129,8 @@ Resource::GetLoader() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Resource::SetSaver(const Ptr<ResourceSaver>& s)
 {
@@ -137,6 +147,8 @@ Resource::SetSaver(const Ptr<ResourceSaver>& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ResourceSaver>&
 Resource::GetSaver() const
 {

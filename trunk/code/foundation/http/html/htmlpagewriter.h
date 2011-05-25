@@ -59,6 +59,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HtmlPageWriter::SetTitle(const Util::String& t)
 {

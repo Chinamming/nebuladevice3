@@ -36,6 +36,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InterfaceHandlerBase::SetCompanyName(const Util::StringAtom& n)
 {
@@ -43,6 +45,8 @@ InterfaceHandlerBase::SetCompanyName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InterfaceHandlerBase::GetCompanyName() const
 {
@@ -50,6 +54,8 @@ InterfaceHandlerBase::GetCompanyName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InterfaceHandlerBase::SetAppName(const Util::StringAtom& n)
 {
@@ -57,6 +63,8 @@ InterfaceHandlerBase::SetAppName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InterfaceHandlerBase::GetAppName() const
 {

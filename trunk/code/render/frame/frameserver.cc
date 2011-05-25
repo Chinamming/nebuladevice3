@@ -18,6 +18,8 @@ using namespace IO;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameServer::FrameServer() :
     isOpen(false)
 {
@@ -25,6 +27,8 @@ FrameServer::FrameServer() :
 }        
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameServer::~FrameServer()
 {
     if (this->IsOpen())
@@ -35,6 +39,8 @@ FrameServer::~FrameServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FrameServer::Open()
 {
@@ -44,6 +50,8 @@ FrameServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameServer::Close()
 {
@@ -60,6 +68,8 @@ FrameServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameServer::LoadFrameShader(const ResourceId& name)
 {
@@ -73,6 +83,8 @@ FrameServer::LoadFrameShader(const ResourceId& name)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<FrameShader>
 FrameServer::LookupFrameShader(const ResourceId& resId)
 {

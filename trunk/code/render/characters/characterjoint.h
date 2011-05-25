@@ -58,6 +58,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 CharacterJoint::GetName() const
 {
@@ -65,6 +67,8 @@ CharacterJoint::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterJoint::HasParentJoint() const
 {
@@ -72,6 +76,8 @@ CharacterJoint::HasParentJoint() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 CharacterJoint::GetParentJointIndex() const
 {
@@ -79,6 +85,8 @@ CharacterJoint::GetParentJointIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CharacterJoint*
 CharacterJoint::GetParentJoint() const
 {
@@ -86,6 +94,8 @@ CharacterJoint::GetParentJoint() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 CharacterJoint::GetPoseTranslation() const
 {
@@ -93,6 +103,8 @@ CharacterJoint::GetPoseTranslation() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::quaternion&
 CharacterJoint::GetPoseRotation() const
 {
@@ -100,6 +112,8 @@ CharacterJoint::GetPoseRotation() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 CharacterJoint::GetPoseScale() const
 {
@@ -107,6 +121,8 @@ CharacterJoint::GetPoseScale() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CharacterJoint::GetPoseMatrix() const
 {
@@ -114,6 +130,8 @@ CharacterJoint::GetPoseMatrix() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CharacterJoint::GetInvPoseMatrix() const
 {

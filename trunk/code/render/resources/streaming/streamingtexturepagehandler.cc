@@ -33,6 +33,8 @@ using namespace CoreGraphics;
 using namespace Util;
 using namespace IO;
 //------------------------------------------------------------------------------
+/**
+*/
 StreamingTexturePageHandler::StreamingTexturePageHandler() :
     defaultPoolName("tex:default_pool.xml"),
     modifiedPoolName("tex:modified_pool.xml")
@@ -43,6 +45,8 @@ StreamingTexturePageHandler::StreamingTexturePageHandler() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingTexturePageHandler::HandleRequest(const Ptr<HttpRequest>& request) 
 {
@@ -273,6 +277,8 @@ StreamingTexturePageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if __WIN32__
 void
 StreamingTexturePageHandler::HandlePoolRequest(const Util::String& poolName, const Ptr<Http::HttpRequest>& request)
@@ -469,6 +475,8 @@ StreamingTexturePageHandler::HandlePoolRequest(const Util::String& poolName, con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingTexturePageHandler::HandleSlotRequest(const Util::String& poolName, const Util::String& slotName, const Ptr<Http::HttpRequest>& request)
 {
@@ -693,6 +701,8 @@ StreamingTexturePageHandler::SVGChart(const Dictionary<String,String>& query, co
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String StreamingTexturePageHandler::GetHexColorCode(float colorValue)
 {
     // normalize
@@ -929,6 +939,8 @@ StreamingTexturePageHandler::AddPoolData(const Ptr<ResourcePool>& pool, const Pt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StreamingTexturePageHandler::LoadPoolXML()
 {

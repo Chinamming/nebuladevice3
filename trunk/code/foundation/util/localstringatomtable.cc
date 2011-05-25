@@ -10,12 +10,16 @@ namespace Util
 __ImplementSingleton(Util::LocalStringAtomTable);
 
 //------------------------------------------------------------------------------
+/**
+*/
 LocalStringAtomTable::LocalStringAtomTable()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 LocalStringAtomTable::~LocalStringAtomTable()
 {
     __DestructSingleton;

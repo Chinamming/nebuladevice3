@@ -65,12 +65,16 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ShadowServerBase::IsOpen() const
 {
     return this->isOpen;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 ShadowServerBase::SetPointOfInterest(const Math::point& val)
 {

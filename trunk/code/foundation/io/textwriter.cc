@@ -12,12 +12,16 @@ __ImplementClass(IO::TextWriter, 'TXTW', IO::StreamWriter);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextWriter::TextWriter()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextWriter::~TextWriter()
 {
     if (this->IsOpen())
@@ -27,6 +31,8 @@ TextWriter::~TextWriter()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextWriter::WriteChar(unsigned char c)
 {
@@ -34,6 +40,8 @@ TextWriter::WriteChar(unsigned char c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextWriter::WriteString(const String& str)
 {
@@ -41,6 +49,8 @@ TextWriter::WriteString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void __cdecl
 TextWriter::WriteFormatted(const char* fmtString, ...)
 {
@@ -53,6 +63,8 @@ TextWriter::WriteFormatted(const char* fmtString, ...)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextWriter::WriteLine(const String& line)
 {
@@ -61,6 +73,8 @@ TextWriter::WriteLine(const String& line)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextWriter::WriteLines(const Array<String>& lines)
 {

@@ -15,18 +15,24 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelInstance::ModelInstance()
 {
     this->transform = matrix44::identity();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ModelInstance::~ModelInstance()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelInstance::Setup(const Ptr<Model>& m, const Ptr<ModelNode>& rootNode)
 {
@@ -38,6 +44,8 @@ ModelInstance::Setup(const Ptr<Model>& m, const Ptr<ModelNode>& rootNode)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelInstance::Discard()
 {
@@ -54,6 +62,8 @@ ModelInstance::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ModelInstance::SetModelEntity(const Ptr<InternalGraphics::InternalModelEntity>& mdlEntity)
 {
@@ -61,6 +71,8 @@ ModelInstance::SetModelEntity(const Ptr<InternalGraphics::InternalModelEntity>& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InternalGraphics::InternalModelEntity>&
 ModelInstance::GetModelEntity() const
 {
@@ -253,6 +265,8 @@ ModelInstance::LookupNodeInstance(const StringAtom& path) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelInstance::OnShow(Timing::Time time)
 {
@@ -265,6 +279,8 @@ ModelInstance::OnShow(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ModelInstance::OnHide(Timing::Time time)
 {

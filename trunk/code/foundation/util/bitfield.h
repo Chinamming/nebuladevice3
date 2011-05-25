@@ -47,6 +47,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS>
 BitField<NUMBITS>::BitField()
 {
@@ -58,6 +60,8 @@ BitField<NUMBITS>::BitField()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS>
 BitField<NUMBITS>::BitField(const BitField<NUMBITS>& rhs)
 {
@@ -69,6 +73,8 @@ BitField<NUMBITS>::BitField(const BitField<NUMBITS>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> void
 BitField<NUMBITS>::operator=(const BitField<NUMBITS>& rhs)
 {
@@ -80,6 +86,8 @@ BitField<NUMBITS>::operator=(const BitField<NUMBITS>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> bool
 BitField<NUMBITS>::operator==(const BitField<NUMBITS>& rhs) const
 {
@@ -95,6 +103,8 @@ BitField<NUMBITS>::operator==(const BitField<NUMBITS>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> bool
 BitField<NUMBITS>::operator!=(const BitField<NUMBITS>& rhs) const
 {
@@ -102,6 +112,8 @@ BitField<NUMBITS>::operator!=(const BitField<NUMBITS>& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> void
 BitField<NUMBITS>::Clear()
 {
@@ -113,6 +125,8 @@ BitField<NUMBITS>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> bool
 BitField<NUMBITS>::IsNull() const
 {
@@ -128,6 +142,8 @@ BitField<NUMBITS>::IsNull() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> void
 BitField<NUMBITS>::SetBit(IndexT i)
 {
@@ -136,6 +152,8 @@ BitField<NUMBITS>::SetBit(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> void
 BitField<NUMBITS>::ClearBit(IndexT i)
 {
@@ -144,6 +162,8 @@ BitField<NUMBITS>::ClearBit(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> BitField<NUMBITS>
 BitField<NUMBITS>::Or(const BitField<NUMBITS>& b0, const BitField<NUMBITS>& b1)
 {
@@ -157,6 +177,8 @@ BitField<NUMBITS>::Or(const BitField<NUMBITS>& b0, const BitField<NUMBITS>& b1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<unsigned int NUMBITS> BitField<NUMBITS>
 BitField<NUMBITS>::And(const BitField<NUMBITS>& b0, const BitField<NUMBITS>& b1)
 {

@@ -14,6 +14,8 @@ __ImplementClass(CoreGraphics::MemoryMeshLoader, 'DMML', Resources::ResourceLoad
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MemoryMeshLoader::MemoryMeshLoader() :
     usage(Base::ResourceBase::UsageImmutable),
     access(Base::ResourceBase::AccessNone)
@@ -22,6 +24,8 @@ MemoryMeshLoader::MemoryMeshLoader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 MemoryMeshLoader::OnLoadRequested()
 {
@@ -40,6 +44,8 @@ MemoryMeshLoader::OnLoadRequested()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 MemoryMeshLoader::SetupMeshFromMemory()
 {   

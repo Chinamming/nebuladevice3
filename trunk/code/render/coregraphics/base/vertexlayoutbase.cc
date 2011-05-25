@@ -13,6 +13,8 @@ using namespace CoreGraphics;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VertexLayoutBase::VertexLayoutBase() :
     vertexByteSize(0)
 {
@@ -20,12 +22,16 @@ VertexLayoutBase::VertexLayoutBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VertexLayoutBase::~VertexLayoutBase()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 VertexLayoutBase::BuildSignature(const Array<VertexComponent>& comps)
 {
@@ -40,6 +46,8 @@ VertexLayoutBase::BuildSignature(const Array<VertexComponent>& comps)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VertexLayoutBase::Setup(const Array<VertexComponent>& comps)
 {
@@ -57,6 +65,8 @@ VertexLayoutBase::Setup(const Array<VertexComponent>& comps)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VertexLayoutBase::Discard()
 {
@@ -66,6 +76,8 @@ VertexLayoutBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT
 VertexLayoutBase::FindComponent(VertexComponent::SemanticName semName, IndexT semIndex) const
 {

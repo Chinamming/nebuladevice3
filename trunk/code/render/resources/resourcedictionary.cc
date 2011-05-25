@@ -17,12 +17,16 @@ using namespace IO;
 using namespace System;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceDictionary::ResourceDictionary()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceDictionary::~ResourceDictionary()
 {
     if (this->IsValid())
@@ -92,6 +96,8 @@ ResourceDictionary::Load()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceDictionary::Unload()
 {

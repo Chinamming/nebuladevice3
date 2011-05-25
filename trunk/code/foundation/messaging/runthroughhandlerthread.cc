@@ -10,6 +10,8 @@ namespace Messaging
 __ImplementClass(Messaging::RunThroughHandlerThread, 'RTHT', Messaging::HandlerThreadBase);
 
 //------------------------------------------------------------------------------
+/**
+*/
 RunThroughHandlerThread::RunThroughHandlerThread()
 {
     this->msgQueue.SetSignalOnEnqueueEnabled(false);

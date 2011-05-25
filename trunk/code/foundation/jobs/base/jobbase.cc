@@ -12,6 +12,8 @@ __ImplementClass(Base::JobBase, 'JBBS', Core::RefCounted);
 using namespace Jobs;
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobBase::JobBase() :
     privateBufferHeapType(Memory::InvalidHeapType),
     privateBufferSize(0),
@@ -22,6 +24,8 @@ JobBase::JobBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 JobBase::~JobBase()
 {
     if (this->IsValid())
@@ -53,6 +57,8 @@ JobBase::AllocPrivateBuffer(Memory::HeapType heapType, SizeT size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobBase::Setup(const JobUniformDesc& uniform, const JobDataDesc& input, const JobDataDesc& output, const Jobs::JobFuncDesc& func)
 {
@@ -65,6 +71,8 @@ JobBase::Setup(const JobUniformDesc& uniform, const JobDataDesc& input, const Jo
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobBase::PatchInputDesc(const JobDataDesc& input)
 {
@@ -72,6 +80,8 @@ JobBase::PatchInputDesc(const JobDataDesc& input)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobBase::PatchOutputDesc(const JobDataDesc& output)
 {
@@ -79,6 +89,8 @@ JobBase::PatchOutputDesc(const JobDataDesc& output)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobBase::PatchUniformDesc(const JobUniformDesc& uniform)
 {
@@ -86,6 +98,8 @@ JobBase::PatchUniformDesc(const JobUniformDesc& uniform)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 JobBase::Discard()
 {

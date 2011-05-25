@@ -77,6 +77,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AdapterInfo::AdapterInfo() :
     driverVersionLowPart(0),
@@ -90,6 +92,8 @@ AdapterInfo::AdapterInfo() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetDriverName(const Util::String& s)
 {
@@ -97,6 +101,8 @@ AdapterInfo::SetDriverName(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 AdapterInfo::GetDriverName() const
 {
@@ -104,6 +110,8 @@ AdapterInfo::GetDriverName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetDescription(const Util::String& s)
 {
@@ -111,6 +119,8 @@ AdapterInfo::SetDescription(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 AdapterInfo::GetDescription() const
 {
@@ -118,6 +128,8 @@ AdapterInfo::GetDescription() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetDeviceName(const Util::String& s)
 {
@@ -125,6 +137,8 @@ AdapterInfo::SetDeviceName(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 AdapterInfo::GetDeviceName() const
 {
@@ -132,6 +146,8 @@ AdapterInfo::GetDeviceName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetDriverVersionLowPart(uint v)
 {
@@ -139,6 +155,8 @@ AdapterInfo::SetDriverVersionLowPart(uint v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 AdapterInfo::GetDriverVersionLowPart() const
 {
@@ -146,6 +164,8 @@ AdapterInfo::GetDriverVersionLowPart() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetDriverVersionHighPart(uint v)
 {
@@ -153,6 +173,8 @@ AdapterInfo::SetDriverVersionHighPart(uint v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 AdapterInfo::GetDriverVersionHighPart() const
 {
@@ -160,6 +182,8 @@ AdapterInfo::GetDriverVersionHighPart() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetVendorId(uint id)
 {
@@ -167,6 +191,8 @@ AdapterInfo::SetVendorId(uint id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 AdapterInfo::GetVendorId() const
 {
@@ -174,6 +200,8 @@ AdapterInfo::GetVendorId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetDeviceId(uint id)
 {
@@ -181,6 +209,8 @@ AdapterInfo::SetDeviceId(uint id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 AdapterInfo::GetDeviceId() const
 {
@@ -188,6 +218,8 @@ AdapterInfo::GetDeviceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetSubSystemId(uint id)
 {
@@ -195,6 +227,8 @@ AdapterInfo::SetSubSystemId(uint id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 AdapterInfo::GetSubSystemId() const
 {
@@ -202,6 +236,8 @@ AdapterInfo::GetSubSystemId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetRevision(uint r)
 {
@@ -209,6 +245,8 @@ AdapterInfo::SetRevision(uint r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 AdapterInfo::GetRevision() const
 {
@@ -216,6 +254,8 @@ AdapterInfo::GetRevision() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AdapterInfo::SetGuid(const Util::Guid& g)
 {
@@ -223,6 +263,8 @@ AdapterInfo::SetGuid(const Util::Guid& g)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Guid&
 AdapterInfo::GetGuid() const
 {

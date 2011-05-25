@@ -119,6 +119,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetResourceId(const ResourceId& id)
 {
@@ -126,6 +128,8 @@ ManagedResource::SetResourceId(const ResourceId& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ResourceId&
 ManagedResource::GetResourceId() const
 {
@@ -133,6 +137,8 @@ ManagedResource::GetResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetResourceType(const Core::Rtti* rtti)
 {
@@ -141,6 +147,8 @@ ManagedResource::SetResourceType(const Core::Rtti* rtti)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Core::Rtti*
 ManagedResource::GetResourceType() const
 {
@@ -149,6 +157,8 @@ ManagedResource::GetResourceType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::IncrClientCount()
 {
@@ -156,6 +166,8 @@ ManagedResource::IncrClientCount()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::DecrClientCount()
 {
@@ -164,6 +176,8 @@ ManagedResource::DecrClientCount()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ManagedResource::GetClientCount() const
 {
@@ -171,6 +185,8 @@ ManagedResource::GetClientCount() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ManagedResource::GetRenderCount() const
 {
@@ -178,6 +194,8 @@ ManagedResource::GetRenderCount() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 ManagedResource::GetResourceStreamingLevelOfDetail() const
 {
@@ -185,6 +203,8 @@ ManagedResource::GetResourceStreamingLevelOfDetail() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 ManagedResource::GetMaxScreenSpaceSize() const
 {
@@ -192,6 +212,8 @@ ManagedResource::GetMaxScreenSpaceSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetPriority(Priority pri)
 {
@@ -199,6 +221,8 @@ ManagedResource::SetPriority(Priority pri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ManagedResource::Priority
 ManagedResource::GetPriority() const
 {
@@ -206,6 +230,8 @@ ManagedResource::GetPriority() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Resource::State
 ManagedResource::GetState() const
 {
@@ -220,6 +246,8 @@ ManagedResource::GetState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ManagedResource::GetLastFrameId() const
 {
@@ -227,6 +255,8 @@ ManagedResource::GetLastFrameId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetFrameId(const SizeT frameId)
 {
@@ -234,6 +264,8 @@ ManagedResource::SetFrameId(const SizeT frameId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetResource(const Ptr<Resource>& res)
 {
@@ -241,6 +273,8 @@ ManagedResource::SetResource(const Ptr<Resource>& res)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetPlaceholder(const Ptr<Resource>& p)
 {
@@ -248,6 +282,8 @@ ManagedResource::SetPlaceholder(const Ptr<Resource>& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ManagedResource::IsPlaceholder() const
 {
@@ -255,6 +291,8 @@ ManagedResource::IsPlaceholder() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resource>&
 ManagedResource::GetLoadedResource() const
 {
@@ -269,6 +307,8 @@ ManagedResource::GetLoadedResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resource>&
 ManagedResource::GetResource() const
 {
@@ -276,6 +316,8 @@ ManagedResource::GetResource() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::Clear()
 {
@@ -284,6 +326,8 @@ ManagedResource::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ManagedResource::IsAutoManaged() const
 {
@@ -291,6 +335,8 @@ ManagedResource::IsAutoManaged() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ManagedResource::SetAutoManaged(const bool autoManaged)
 {

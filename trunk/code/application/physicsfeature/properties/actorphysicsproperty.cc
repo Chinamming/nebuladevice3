@@ -715,7 +715,7 @@ ActorPhysicsProperty::AutoEvade(vector& targetVec)
     {
         vector evadeVec(0,0,0);
 
-        // a vector 90° to the targetVec
+        // a vector 90?to the targetVec
         vector targetVecCross = targetVec;
         targetVecCross.rotate(vector(0,1,0), 0.5f*N_PI);
         int i;
@@ -787,7 +787,7 @@ ActorPhysicsProperty::AutoEvade(vector& targetVec)
                 {
                     contactDir.y() = 0;
                     contactDir.norm();
-                    // evade direction is 90° to the collision direction
+                    // evade direction is 90?to the collision direction
                     vector evadeDir = contactDir;
                     evadeDir.rotate(vector(0,1,0), 0.5f*N_PI);
                     contactDir.norm();

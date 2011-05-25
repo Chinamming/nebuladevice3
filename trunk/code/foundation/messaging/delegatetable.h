@@ -34,6 +34,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class CLASS, void (CLASS::*METHOD)(const Ptr<Message>&)>
 void
 DelegateTable::Bind(const Id& msgId, CLASS* obj)

@@ -40,6 +40,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ObjectRef::IsValid() const
 {
@@ -47,6 +49,8 @@ ObjectRef::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> inline void
 ObjectRef::Validate(TYPE* obj)
 {
@@ -58,6 +62,8 @@ ObjectRef::Validate(TYPE* obj)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ObjectRef::Invalidate()
 {
@@ -67,6 +73,8 @@ ObjectRef::Invalidate()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> inline TYPE*
 ObjectRef::Ref() const
 {

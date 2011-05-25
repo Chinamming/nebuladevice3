@@ -10,6 +10,8 @@ namespace CoreGraphics
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ImageFileFormat::Code
 ImageFileFormat::FromString(const String& str)
 {
@@ -24,6 +26,8 @@ ImageFileFormat::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::String
 ImageFileFormat::ToString(ImageFileFormat::Code c)
 {
@@ -40,6 +44,8 @@ ImageFileFormat::ToString(ImageFileFormat::Code c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ImageFileFormat::Code
 ImageFileFormat::FromMediaType(const IO::MediaType& mediaType)
 {
@@ -63,6 +69,8 @@ ImageFileFormat::FromMediaType(const IO::MediaType& mediaType)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IO::MediaType
 ImageFileFormat::ToMediaType(Code c)
 {

@@ -140,6 +140,8 @@ AnimatorNode::GetLoopType(IndexT i) const
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline const CoreGraphics::ShaderVariable::Semantic& 
 AnimatorNode::GetShaderVariableSemantic(IndexT i) const
 {
@@ -147,6 +149,8 @@ AnimatorNode::GetShaderVariableSemantic(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 int
 AnimatorNode::GetAnimationGroup(IndexT i)
@@ -155,6 +159,8 @@ AnimatorNode::GetAnimationGroup(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 AnimatorNode::GetAnimation(IndexT i) const
@@ -163,6 +169,8 @@ AnimatorNode::GetAnimation(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Ptr<CoreAnimation::ManagedAnimResource> &
 AnimatorNode::GetManagedAnimResource(IndexT i)
@@ -171,6 +179,8 @@ AnimatorNode::GetManagedAnimResource(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimKeyArray<AnimKey<Math::float4> >&
 AnimatorNode::GetFloat4KeyArray(IndexT i)
 {
@@ -178,6 +188,8 @@ AnimatorNode::GetFloat4KeyArray(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimKeyArray<AnimKey<float> >&
 AnimatorNode::GetFloatKeyArray(IndexT i)
 {
@@ -185,6 +197,8 @@ AnimatorNode::GetFloatKeyArray(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimKeyArray<AnimKey<int> >&
 AnimatorNode::GetIntKeyArray(IndexT i)
 {
@@ -192,6 +206,8 @@ AnimatorNode::GetIntKeyArray(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimatorNode::NodeType
 AnimatorNode::GetAnimationNodeType(IndexT i)
 {
@@ -199,6 +215,8 @@ AnimatorNode::GetAnimationNodeType(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline Util::Array<Util::String>
 AnimatorNode::GetAllAnimatedNodesPaths(IndexT i)
 {
@@ -206,6 +224,8 @@ AnimatorNode::GetAllAnimatedNodesPaths(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimKeyArray<AnimKey<Math::vector> > & 
 AnimatorNode::GetPosArray(IndexT i)
 {
@@ -213,6 +233,8 @@ AnimatorNode::GetPosArray(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimKeyArray<AnimKey<Math::vector> > & 
 AnimatorNode::GetEulerArray(IndexT i)
 {
@@ -220,6 +242,8 @@ AnimatorNode::GetEulerArray(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline AnimKeyArray<AnimKey<Math::vector> > & 
 AnimatorNode::GetScaleArray(IndexT i)
 {
@@ -227,6 +251,8 @@ AnimatorNode::GetScaleArray(IndexT i)
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline SizeT 
 AnimatorNode::GetNumAnimSections() const
 {
@@ -234,6 +260,8 @@ AnimatorNode::GetNumAnimSections() const
 }
 
 //-----------------------------------------------------------------------------
+/**
+*/
 inline Util::Array<int>& 
 AnimatorNode::GetLayerArray(IndexT i)
 {

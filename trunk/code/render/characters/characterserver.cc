@@ -14,6 +14,8 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterServer::CharacterServer() :
     curFrameIndex(InvalidIndex),
     isValid(false),
@@ -25,6 +27,8 @@ CharacterServer::CharacterServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterServer::~CharacterServer()
 {
     n_assert(!this->isValid);
@@ -32,6 +36,8 @@ CharacterServer::~CharacterServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::Setup()
 {
@@ -42,6 +48,8 @@ CharacterServer::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::Discard()
 {
@@ -53,6 +61,8 @@ CharacterServer::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::BeginFrame(IndexT frameIndex)
 {
@@ -67,6 +77,8 @@ CharacterServer::BeginFrame(IndexT frameIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::EndFrame()
 {
@@ -77,6 +89,8 @@ CharacterServer::EndFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::BeginGather()
 {
@@ -89,6 +103,8 @@ CharacterServer::BeginGather()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::GatherVisibleCharacter(const Ptr<CharacterInstance>& charInst, Timing::Time time)
 {
@@ -104,6 +120,8 @@ CharacterServer::GatherVisibleCharacter(const Ptr<CharacterInstance>& charInst, 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SkinnedMeshRenderer::DrawHandle
 CharacterServer::GatherSkinMesh(const Ptr<CharacterInstance>& charInst, const Ptr<CoreGraphics::Mesh>& srcMesh)
 {
@@ -113,6 +131,8 @@ CharacterServer::GatherSkinMesh(const Ptr<CharacterInstance>& charInst, const Pt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::EndGather()
 {
@@ -138,6 +158,8 @@ CharacterServer::StartUpdateCharacterSkeletons()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::UpdateCharacterSkins()
 {
@@ -149,6 +171,8 @@ CharacterServer::UpdateCharacterSkins()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::BeginDraw()
 {
@@ -158,6 +182,8 @@ CharacterServer::BeginDraw()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::DrawSoftwareSkinnedMesh(SkinnedMeshRenderer::DrawHandle h, IndexT primGroupIndex)
 {
@@ -167,6 +193,8 @@ CharacterServer::DrawSoftwareSkinnedMesh(SkinnedMeshRenderer::DrawHandle h, Inde
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::DrawGPUSkinnedMesh(const Ptr<CharacterInstance>& charInst, const Ptr<Mesh>& mesh, IndexT primGroupIndex, const Array<IndexT>& jointPalette, const Ptr<ShaderVariable>& jointPaletteShdVar)
 {
@@ -176,6 +204,8 @@ CharacterServer::DrawGPUSkinnedMesh(const Ptr<CharacterInstance>& charInst, cons
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::DrawGPUTextureSkinnedMesh(const Ptr<CharacterInstance>& charInst, const Ptr<Mesh>& mesh, IndexT primGroupIndex, const Ptr<ShaderVariable>& charInstShaderVar)
 {
@@ -185,6 +215,8 @@ CharacterServer::DrawGPUTextureSkinnedMesh(const Ptr<CharacterInstance>& charIns
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterServer::EndDraw()
 {

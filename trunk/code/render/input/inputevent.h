@@ -93,6 +93,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 InputEvent::InputEvent() :
     type(InvalidType),
@@ -105,6 +107,8 @@ InputEvent::InputEvent() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetType(Type t)
 {
@@ -112,6 +116,8 @@ InputEvent::SetType(Type t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline InputEvent::Type
 InputEvent::GetType() const
 {
@@ -119,6 +125,8 @@ InputEvent::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetKey(Key::Code key)
 {
@@ -126,6 +134,8 @@ InputEvent::SetKey(Key::Code key)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Key::Code
 InputEvent::GetKey() const
 {
@@ -133,6 +143,8 @@ InputEvent::GetKey() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetChar(Char chr)
 {
@@ -140,6 +152,8 @@ InputEvent::SetChar(Char chr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Char
 InputEvent::GetChar() const
 {
@@ -147,6 +161,8 @@ InputEvent::GetChar() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetMouseButton(MouseButton::Code btn)
 {
@@ -154,6 +170,8 @@ InputEvent::SetMouseButton(MouseButton::Code btn)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline MouseButton::Code
 InputEvent::GetMouseButton() const
 {
@@ -161,6 +179,8 @@ InputEvent::GetMouseButton() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetAbsMousePos(const Math::float2& p)
 {
@@ -168,6 +188,8 @@ InputEvent::SetAbsMousePos(const Math::float2& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 InputEvent::GetAbsMousePos() const
 {
@@ -175,6 +197,8 @@ InputEvent::GetAbsMousePos() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetNormMousePos(const Math::float2& p)
 {
@@ -182,6 +206,8 @@ InputEvent::SetNormMousePos(const Math::float2& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 InputEvent::GetNormMousePos() const
 {
@@ -189,6 +215,8 @@ InputEvent::GetNormMousePos() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputEvent::SetDeviceIndex(IndexT i)
 {
@@ -196,6 +224,8 @@ InputEvent::SetDeviceIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 InputEvent::GetDeviceIndex() const
 {
@@ -203,6 +233,8 @@ InputEvent::GetDeviceIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const char*
 InputEvent::TypeToString(Type t)
 {

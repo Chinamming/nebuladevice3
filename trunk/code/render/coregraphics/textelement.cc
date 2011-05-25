@@ -12,6 +12,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextElement::TextElement() :
     threadId(Threading::InvalidThreadId),
     color(1.0f, 1.0f, 1.0f, 1.0f),
@@ -21,6 +23,8 @@ TextElement::TextElement() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextElement::TextElement(ThreadId threadId_, const String& text_, const float4& color_, const float2& pos_) :
     threadId(threadId_),
     text(text_),

@@ -109,6 +109,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InputServerBase::IsOpen() const
 {
@@ -116,6 +118,8 @@ InputServerBase::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 InputServerBase::GetMaxNumLocalPlayers() const
 {
@@ -123,6 +127,8 @@ InputServerBase::GetMaxNumLocalPlayers() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InputServerBase::SetQuitRequested(bool b)
 {
@@ -130,6 +136,8 @@ InputServerBase::SetQuitRequested(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InputServerBase::IsQuitRequested() const
 {
@@ -137,6 +145,8 @@ InputServerBase::IsQuitRequested() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Input::Keyboard>&
 InputServerBase::GetDefaultKeyboard() const
 {    
@@ -145,6 +155,8 @@ InputServerBase::GetDefaultKeyboard() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Input::Mouse>&
 InputServerBase::GetDefaultMouse() const
 {

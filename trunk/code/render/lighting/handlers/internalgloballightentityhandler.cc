@@ -18,6 +18,8 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreateGlobalLightEntity)
 {
     // create a new global light entity
@@ -41,24 +43,32 @@ __StaticHandler(CreateGlobalLightEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGlobalLightEntity, SetGlobalBackLightColor)
 {
     obj->SetBackLightColor(msg->GetColor());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGlobalLightEntity, SetGlobalAmbientLightColor)
 {
     obj->SetAmbientLightColor(msg->GetColor());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGlobalLightEntity, SetGlobalBackLightOffset)
 {
     obj->SetBackLightOffset(msg->GetOffset());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalGlobalLightEntity, SetGlobalLightParams)
 {
     obj->SetColor(msg->GetLightColor());
@@ -69,6 +79,8 @@ __Handler(InternalGlobalLightEntity, SetGlobalLightParams)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Dispatcher(InternalGlobalLightEntity)
 {
     __Handle(InternalGlobalLightEntity, SetGlobalBackLightColor);

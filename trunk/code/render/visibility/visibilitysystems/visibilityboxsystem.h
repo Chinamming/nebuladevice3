@@ -83,6 +83,8 @@ private:
 };
         
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint 
 VisibilityBoxSystem::GetObserverBitMask() const
 {

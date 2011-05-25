@@ -22,6 +22,8 @@ using namespace Http;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TexturePageHandler::TexturePageHandler()
 {
     this->SetName("Textures");
@@ -30,6 +32,8 @@ TexturePageHandler::TexturePageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TexturePageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {

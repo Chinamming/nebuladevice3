@@ -10,6 +10,8 @@ namespace Frame
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SortingMode::Code
 SortingMode::FromString(const String& str)
 {
@@ -24,6 +26,8 @@ SortingMode::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 SortingMode::ToString(Code c)
 {

@@ -15,18 +15,24 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariableInstanceBase::ShaderVariableInstanceBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShaderVariableInstanceBase::~ShaderVariableInstanceBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableInstanceBase::Setup(const Ptr<ShaderVariable>& var)
 {
@@ -35,6 +41,8 @@ ShaderVariableInstanceBase::Setup(const Ptr<ShaderVariable>& var)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableInstanceBase::Bind(const Ptr<ShaderVariable>& var)
 {
@@ -43,6 +51,8 @@ ShaderVariableInstanceBase::Bind(const Ptr<ShaderVariable>& var)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShaderVariableInstanceBase::Prepare(ShaderVariable::Type type)
 {

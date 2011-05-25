@@ -21,6 +21,8 @@ RunLengthCodec::GetSafeRLEBufferSize(SizeT srcBufferSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 RunLengthCodec::Encode(const uchar* srcPtr, SizeT srcNumBytes, uchar* dstPtr, SizeT dstNumBytes)
 {
@@ -48,6 +50,8 @@ RunLengthCodec::Encode(const uchar* srcPtr, SizeT srcNumBytes, uchar* dstPtr, Si
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 RunLengthCodec::ComputeDecodedSize(const uchar* srcPtr, SizeT srcNumBytes)
 {
@@ -63,6 +67,8 @@ RunLengthCodec::ComputeDecodedSize(const uchar* srcPtr, SizeT srcNumBytes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SizeT
 RunLengthCodec::Decode(const uchar* srcPtr, SizeT srcNumBytes, uchar* dstPtr, SizeT dstNumBytes)
 {

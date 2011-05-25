@@ -14,6 +14,8 @@ __ImplementSingleton(FrameSync::FrameSyncTimer);
 using namespace Timing;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameSyncTimer::FrameSyncTimer() :
     time(0.0),
     ticks(0),
@@ -27,6 +29,8 @@ FrameSyncTimer::FrameSyncTimer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FrameSyncTimer::~FrameSyncTimer()
 {
     if (this->IsValid())
@@ -57,6 +61,8 @@ FrameSyncTimer::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameSyncTimer::Discard()
 {
@@ -80,6 +86,8 @@ FrameSyncTimer::UpdateTimePolling()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameSyncTimer::StartTime()
 {
@@ -87,6 +95,8 @@ FrameSyncTimer::StartTime()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameSyncTimer::StopTime()
 {
@@ -94,6 +104,8 @@ FrameSyncTimer::StopTime()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FrameSyncTimer::ResetTime()
 {
@@ -101,6 +113,8 @@ FrameSyncTimer::ResetTime()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FrameSyncTimer::IsTimeRunning() const
 {
@@ -135,6 +149,8 @@ FrameSyncTimer::Update(Time newTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Timing::Time 
 FrameSyncTimer::GetScaledFrameTime() const
 {
@@ -142,6 +158,8 @@ FrameSyncTimer::GetScaledFrameTime() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IndexT
 FrameSyncTimer::GetFrameCount() const
 {

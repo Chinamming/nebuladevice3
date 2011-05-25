@@ -50,6 +50,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 WeakPtr<TYPE>::WeakPtr() : 
     ptr(0)
@@ -58,6 +60,8 @@ WeakPtr<TYPE>::WeakPtr() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 WeakPtr<TYPE>::WeakPtr(TYPE* p) : 
     ptr(p)
@@ -66,6 +70,8 @@ WeakPtr<TYPE>::WeakPtr(TYPE* p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 WeakPtr<TYPE>::WeakPtr(const Ptr<TYPE>& p) : 
     ptr(p.get_unsafe())
@@ -74,6 +80,8 @@ WeakPtr<TYPE>::WeakPtr(const Ptr<TYPE>& p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 WeakPtr<TYPE>::WeakPtr(const WeakPtr<TYPE>& p) : 
     ptr(p.ptr)
@@ -82,6 +90,8 @@ WeakPtr<TYPE>::WeakPtr(const WeakPtr<TYPE>& p) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 WeakPtr<TYPE>::~WeakPtr()
 {
@@ -89,6 +99,8 @@ WeakPtr<TYPE>::~WeakPtr()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 WeakPtr<TYPE>::operator=(const Ptr<TYPE>& rhs)
@@ -97,6 +109,8 @@ WeakPtr<TYPE>::operator=(const Ptr<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 WeakPtr<TYPE>::operator=(const WeakPtr<TYPE>& rhs)
@@ -105,6 +119,8 @@ WeakPtr<TYPE>::operator=(const WeakPtr<TYPE>& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 void
 WeakPtr<TYPE>::operator=(TYPE* rhs)
@@ -113,6 +129,8 @@ WeakPtr<TYPE>::operator=(TYPE* rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 WeakPtr<TYPE>::operator->() const
@@ -122,6 +140,8 @@ WeakPtr<TYPE>::operator->() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE&
 WeakPtr<TYPE>::operator*() const
@@ -131,6 +151,8 @@ WeakPtr<TYPE>::operator*() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 WeakPtr<TYPE>::operator TYPE*() const
 {
@@ -139,6 +161,8 @@ WeakPtr<TYPE>::operator TYPE*() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 bool 
 WeakPtr<TYPE>::isvalid() const
@@ -147,6 +171,8 @@ WeakPtr<TYPE>::isvalid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 WeakPtr<TYPE>::get() const
@@ -156,6 +182,8 @@ WeakPtr<TYPE>::get() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 TYPE*
 WeakPtr<TYPE>::get_unsafe() const

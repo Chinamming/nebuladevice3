@@ -10,6 +10,8 @@ namespace CoreAnimation
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CurveType::Code
 CurveType::FromString(const String& str)
 {
@@ -26,6 +28,8 @@ CurveType::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 CurveType::ToString(Code c)
 {

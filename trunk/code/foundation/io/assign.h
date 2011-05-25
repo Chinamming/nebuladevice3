@@ -27,6 +27,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Assign::Assign()
 {
@@ -34,6 +36,8 @@ Assign::Assign()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Assign::Assign(const Util::String& name, const Util::String& path) :
     Util::KeyValuePair<Util::String,Util::String>::KeyValuePair(name, path)
@@ -43,6 +47,8 @@ Assign::Assign(const Util::String& name, const Util::String& path) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 Assign::GetName() const
@@ -52,6 +58,8 @@ Assign::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::String&
 Assign::GetPath() const

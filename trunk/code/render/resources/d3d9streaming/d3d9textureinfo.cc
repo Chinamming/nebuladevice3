@@ -16,6 +16,8 @@ using namespace CoreGraphics;
 namespace Resources
 {
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextureInfo::D3D9TextureInfo(void) :
     width(0),
     height(0),
@@ -26,6 +28,8 @@ D3D9TextureInfo::D3D9TextureInfo(void) :
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextureInfo::D3D9TextureInfo(const D3D9TextureInfo* info) :
     ResourceInfo((const ResourceInfo*)(info)),
     width(info->width),
@@ -37,6 +41,8 @@ D3D9TextureInfo::D3D9TextureInfo(const D3D9TextureInfo* info) :
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TextureInfo::SetInfo(const D3DXIMAGE_INFO& imageInfo)
 {

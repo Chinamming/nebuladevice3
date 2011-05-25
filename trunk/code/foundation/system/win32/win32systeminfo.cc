@@ -9,6 +9,8 @@ namespace Win32
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32SystemInfo::Win32SystemInfo()
 {
     this->platform = Win32;

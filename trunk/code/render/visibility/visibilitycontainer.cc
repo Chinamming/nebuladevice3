@@ -13,11 +13,15 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityContainer::VisibilityContainer()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityContainer::~VisibilityContainer()
 {
 }

@@ -18,6 +18,8 @@ using namespace Util;
 using namespace Memory;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MemoryPageHandler::MemoryPageHandler()
 {
     this->SetName("Memory");
@@ -26,6 +28,8 @@ MemoryPageHandler::MemoryPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MemoryPageHandler::HandleRequest(const Ptr<HttpRequest>& request) 
 {

@@ -30,6 +30,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline uint
 Round::RoundUp2(uint val)
 {
@@ -37,6 +39,8 @@ Round::RoundUp2(uint val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline uint
 Round::RoundUp4(uint val)
 {
@@ -44,6 +48,8 @@ Round::RoundUp4(uint val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline uint
 Round::RoundUp8(uint val)
 {
@@ -51,6 +57,8 @@ Round::RoundUp8(uint val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline uint
 Round::RoundUp16(uint val)
 {
@@ -58,6 +66,8 @@ Round::RoundUp16(uint val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline uint
 Round::RoundUp32(uint val)
 {
@@ -65,6 +75,8 @@ Round::RoundUp32(uint val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline uint
 Round::RoundUp(uint val, uint boundary)
 {

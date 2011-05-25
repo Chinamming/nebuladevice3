@@ -13,6 +13,8 @@ namespace Core
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Rtti::Construct(const char* className, FourCC fcc, Creator creatorFunc, const Rtti* parentClass, SizeT instSize)
 {
@@ -77,18 +79,24 @@ Rtti::Construct(const char* className, FourCC fcc, Creator creatorFunc, const Rt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Rtti::Rtti(const char* className, FourCC fcc, Creator creatorFunc, const Rtti* parentClass, SizeT instSize)
 {
     this->Construct(className, fcc, creatorFunc, parentClass, instSize);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Rtti::Rtti(const char* className, Creator creatorFunc, const Rtti* parentClass, SizeT instSize)
 {
     this->Construct(className, 0, creatorFunc, parentClass, instSize);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 RefCounted*
 Rtti::Create() const
 {
@@ -104,6 +112,8 @@ Rtti::Create() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Rtti::IsDerivedFrom(const Rtti& other) const
 {
@@ -119,6 +129,8 @@ Rtti::IsDerivedFrom(const Rtti& other) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Rtti::IsDerivedFrom(const Util::String& otherClassName) const
 {
@@ -134,6 +146,8 @@ Rtti::IsDerivedFrom(const Util::String& otherClassName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Rtti::IsDerivedFrom(const Util::FourCC& otherClassFourCC) const
 {
@@ -149,6 +163,8 @@ Rtti::IsDerivedFrom(const Util::FourCC& otherClassFourCC) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 Rtti::AllocInstanceMemory()
 {
@@ -161,6 +177,8 @@ Rtti::AllocInstanceMemory()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Rtti::FreeInstanceMemory(void* ptr)
 {

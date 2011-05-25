@@ -127,6 +127,8 @@ SetupHeaps()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const char*
 GetHeapTypeName(HeapType heapType)
 {

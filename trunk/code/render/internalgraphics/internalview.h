@@ -101,6 +101,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalView::IsAttachedToServer() const
 {
@@ -108,6 +110,8 @@ InternalView::IsAttachedToServer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalView::SetName(const Util::StringAtom& n)
 {
@@ -115,6 +119,8 @@ InternalView::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InternalView::GetName() const
 {
@@ -122,6 +128,8 @@ InternalView::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalView::SetStage(const Ptr<InternalStage>& s)
 {
@@ -129,6 +137,8 @@ InternalView::SetStage(const Ptr<InternalStage>& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<InternalStage>&
 InternalView::GetStage() const
 {
@@ -136,6 +146,8 @@ InternalView::GetStage() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<InternalCameraEntity>&
 InternalView::GetCameraEntity() const
 {
@@ -143,6 +155,8 @@ InternalView::GetCameraEntity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalView::SetRenderTarget(const Ptr<CoreGraphics::RenderTarget>& rt)
 {
@@ -150,6 +164,8 @@ InternalView::SetRenderTarget(const Ptr<CoreGraphics::RenderTarget>& rt)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>&
 InternalView::GetRenderTarget() const
 {
@@ -157,6 +173,8 @@ InternalView::GetRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalView::SetMultipleRenderTarget(const Ptr<CoreGraphics::MultipleRenderTarget>& mrt)
 {
@@ -164,6 +182,8 @@ InternalView::SetMultipleRenderTarget(const Ptr<CoreGraphics::MultipleRenderTarg
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::MultipleRenderTarget>&
 InternalView::GetMultipleRenderTarget() const
 {
@@ -171,6 +191,8 @@ InternalView::GetMultipleRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalView::AddDependency(const Ptr<InternalView>& depView)
 {
@@ -178,6 +200,8 @@ InternalView::AddDependency(const Ptr<InternalView>& depView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<InternalView> >&
 InternalView::GetDependencies() const
 {
@@ -185,6 +209,8 @@ InternalView::GetDependencies() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalView::SetFrameShader(const Ptr<Frame::FrameShader>& shd)
 {
@@ -192,6 +218,8 @@ InternalView::SetFrameShader(const Ptr<Frame::FrameShader>& shd)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Frame::FrameShader>&
 InternalView::GetFrameShader() const
 {

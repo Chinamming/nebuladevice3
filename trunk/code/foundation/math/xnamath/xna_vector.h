@@ -73,6 +73,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 vector::vector() :
     float4(0.0f, 0.0f, 0.0f, 0.0f)
@@ -81,6 +83,8 @@ vector::vector() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 vector::vector(scalar x, scalar y, scalar z) :
     float4(x, y, z, 0.0f)
@@ -89,6 +93,8 @@ vector::vector(scalar x, scalar y, scalar z) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 vector::vector(const float4& rhs) :
     float4(rhs)
@@ -97,6 +103,8 @@ vector::vector(const float4& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 vector::vector(XMVECTOR rhs) :
     float4(rhs)
@@ -105,6 +113,8 @@ vector::vector(XMVECTOR rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 vector::nullvec()
 {
@@ -112,6 +122,8 @@ vector::nullvec()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 vector::upvec()
 {
@@ -119,6 +131,8 @@ vector::upvec()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 vector::operator=(const vector& rhs)
 {
@@ -126,6 +140,8 @@ vector::operator=(const vector& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 vector::operator=(XMVECTOR rhs)
 {
@@ -133,6 +149,8 @@ vector::operator=(XMVECTOR rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 vector::operator-() const
 {
@@ -140,6 +158,8 @@ vector::operator-() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 vector::operator+=(const vector& rhs)
 {
@@ -147,6 +167,8 @@ vector::operator+=(const vector& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 vector::operator-=(const vector& rhs)
 {
@@ -154,6 +176,8 @@ vector::operator-=(const vector& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 vector::operator*=(scalar s)
 {
@@ -161,6 +185,8 @@ vector::operator*=(scalar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 vector::operator+(const vector& rhs) const
 {
@@ -168,6 +194,8 @@ vector::operator+(const vector& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 vector::operator-(const vector& rhs) const
 {
@@ -175,6 +203,8 @@ vector::operator-(const vector& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline vector
 vector::operator*(scalar s) const
 {
@@ -182,6 +212,8 @@ vector::operator*(scalar s) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 vector::operator==(const vector& rhs) const
 {
@@ -189,6 +221,8 @@ vector::operator==(const vector& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 vector::operator!=(const vector& rhs) const
 {
@@ -196,6 +230,8 @@ vector::operator!=(const vector& rhs) const
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 vector::set(scalar x, scalar y, scalar z)
 {

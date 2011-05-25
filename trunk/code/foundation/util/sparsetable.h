@@ -75,6 +75,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 SparseTable<TYPE>::SparseTable() :
     inSetup(false)
@@ -83,6 +85,8 @@ SparseTable<TYPE>::SparseTable() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SparseTable<TYPE>::Clear()
 {
@@ -94,6 +98,8 @@ SparseTable<TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SparseTable<TYPE>::BeginSetup(const Array<StringAtom>& columnNames, const Array<StringAtom>& rowNames, SizeT numUnique)
 {
@@ -124,6 +130,8 @@ SparseTable<TYPE>::BeginSetup(const Array<StringAtom>& columnNames, const Array<
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SparseTable<TYPE>::AddSingle(IndexT colIndex, IndexT rowIndex, const TYPE& elm)
 {
@@ -135,6 +143,8 @@ SparseTable<TYPE>::AddSingle(IndexT colIndex, IndexT rowIndex, const TYPE& elm)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SparseTable<TYPE>::AddMultiple(IndexT colIndex, IndexT rowIndex, const TYPE* firstElm, SizeT numElms)
 {
@@ -163,6 +173,8 @@ SparseTable<TYPE>::AddReference(IndexT colIndex, IndexT rowIndex, IndexT refColI
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SparseTable<TYPE>::SetEntryDirect(IndexT colIndex, IndexT rowIndex, ushort startIndex, ushort numElements)
 {
@@ -173,6 +185,8 @@ SparseTable<TYPE>::SetEntryDirect(IndexT colIndex, IndexT rowIndex, ushort start
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void
 SparseTable<TYPE>::EndSetup()
 {
@@ -181,6 +195,8 @@ SparseTable<TYPE>::EndSetup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 SparseTable<TYPE>::GetNumColumns() const
 {
@@ -188,6 +204,8 @@ SparseTable<TYPE>::GetNumColumns() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> SizeT
 SparseTable<TYPE>::GetNumRows() const
 {
@@ -195,6 +213,8 @@ SparseTable<TYPE>::GetNumRows() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 SparseTable<TYPE>::HasColumn(const StringAtom& colName) const
 {
@@ -202,6 +222,8 @@ SparseTable<TYPE>::HasColumn(const StringAtom& colName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool
 SparseTable<TYPE>::HasRow(const StringAtom& rowName) const
 {
@@ -209,6 +231,8 @@ SparseTable<TYPE>::HasRow(const StringAtom& rowName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> IndexT
 SparseTable<TYPE>::GetColumnIndexByName(const StringAtom& colName) const
 {
@@ -216,6 +240,8 @@ SparseTable<TYPE>::GetColumnIndexByName(const StringAtom& colName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> IndexT
 SparseTable<TYPE>::GetRowIndexByName(const StringAtom& rowName) const
 {
@@ -223,6 +249,8 @@ SparseTable<TYPE>::GetRowIndexByName(const StringAtom& rowName) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> const TYPE*
 SparseTable<TYPE>::GetElements(IndexT colIndex, IndexT rowIndex, SizeT& outNumElements) const
 {
@@ -241,6 +269,8 @@ SparseTable<TYPE>::GetElements(IndexT colIndex, IndexT rowIndex, SizeT& outNumEl
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> const TYPE*
 SparseTable<TYPE>::LookupElements(const StringAtom& colName, const StringAtom& rowName, SizeT& outNumElements) const
 {

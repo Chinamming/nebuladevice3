@@ -16,12 +16,16 @@ using namespace Util;
 using namespace Core;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MessageReader::MessageReader()
 {
     this->binaryReader = BinaryReader::Create();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MessageReader::SetStream(const Ptr<IO::Stream>& s)
 {

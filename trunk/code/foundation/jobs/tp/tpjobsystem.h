@@ -37,6 +37,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline TPJobThreadPool*
 TPJobSystem::GetThreadPool()
 {

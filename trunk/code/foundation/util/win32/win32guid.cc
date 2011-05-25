@@ -10,6 +10,8 @@ namespace Win32
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32Guid::operator=(const Win32Guid& rhs)
 {
@@ -20,6 +22,8 @@ Win32Guid::operator=(const Win32Guid& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32Guid::operator=(const String& rhs)
 {
@@ -29,6 +33,8 @@ Win32Guid::operator=(const String& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::operator==(const Win32Guid& rhs) const
 {
@@ -38,6 +44,8 @@ Win32Guid::operator==(const Win32Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::operator!=(const Win32Guid& rhs) const
 {
@@ -47,6 +55,8 @@ Win32Guid::operator!=(const Win32Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::operator<(const Win32Guid& rhs) const
 {
@@ -56,6 +66,8 @@ Win32Guid::operator<(const Win32Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::operator<=(const Win32Guid& rhs) const
 {
@@ -65,6 +77,8 @@ Win32Guid::operator<=(const Win32Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::operator>(const Win32Guid& rhs) const
 {
@@ -74,6 +88,8 @@ Win32Guid::operator>(const Win32Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::operator>=(const Win32Guid& rhs) const
 {
@@ -83,6 +99,8 @@ Win32Guid::operator>=(const Win32Guid& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Win32Guid::IsValid() const
 {
@@ -92,6 +110,8 @@ Win32Guid::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Win32Guid::Generate()
 {
@@ -99,6 +119,8 @@ Win32Guid::Generate()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 Win32Guid::AsString() const
 {
@@ -123,6 +145,8 @@ Win32Guid::AsBinary(const unsigned char*& outPtr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win32Guid
 Win32Guid::FromString(const Util::String& str)
 {

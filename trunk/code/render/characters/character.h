@@ -57,6 +57,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Character::IsValid() const
 {
@@ -64,6 +66,8 @@ Character::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterSkeleton&
 Character::Skeleton()
 {
@@ -71,6 +75,8 @@ Character::Skeleton()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterSkinLibrary&
 Character::SkinLibrary()
 {
@@ -78,6 +84,8 @@ Character::SkinLibrary()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterAnimationLibrary&
 Character::AnimationLibrary()
 {
@@ -85,6 +93,8 @@ Character::AnimationLibrary()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterVariationLibrary& 
 Character::VariationLibrary()
 {

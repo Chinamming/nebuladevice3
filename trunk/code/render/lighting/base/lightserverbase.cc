@@ -13,6 +13,8 @@ __ImplementSingleton(Lighting::LightServerBase);
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightServerBase::LightServerBase() :
     isOpen(false),
     inBeginFrame(false),
@@ -22,6 +24,8 @@ LightServerBase::LightServerBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightServerBase::~LightServerBase()
 {
     n_assert(!this->isOpen);
@@ -33,6 +37,8 @@ LightServerBase::~LightServerBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::Open()
 {
@@ -41,6 +47,8 @@ LightServerBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::Close()
 {
@@ -66,6 +74,8 @@ LightServerBase::NeedsLightModelLinking() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::BeginFrame(const Ptr<InternalCameraEntity>& camEntity)
 {
@@ -79,6 +89,8 @@ LightServerBase::BeginFrame(const Ptr<InternalCameraEntity>& camEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::EndFrame()
 {
@@ -92,6 +104,8 @@ LightServerBase::EndFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::BeginAttachVisibleLights()
 {
@@ -104,6 +118,8 @@ LightServerBase::BeginAttachVisibleLights()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::AttachVisibleLight(const Ptr<InternalAbstractLightEntity>& lightEntity)
 {
@@ -119,6 +135,8 @@ LightServerBase::AttachVisibleLight(const Ptr<InternalAbstractLightEntity>& ligh
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 LightServerBase::EndAttachVisibleLights()
 {

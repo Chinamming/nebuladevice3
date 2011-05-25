@@ -18,6 +18,8 @@ using namespace Messaging;
 using namespace FrameSync;
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsInterface::GraphicsInterface()
 {
     __ConstructSingleton;
@@ -25,12 +27,16 @@ GraphicsInterface::GraphicsInterface()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GraphicsInterface::~GraphicsInterface()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsInterface::Open()
 {
@@ -51,6 +57,8 @@ GraphicsInterface::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsInterface::Close()
 {
@@ -61,6 +69,8 @@ GraphicsInterface::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsInterface::EnterLockStepMode()
 {
@@ -69,6 +79,8 @@ GraphicsInterface::EnterLockStepMode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsInterface::LeaveLockStepMode()
 {
@@ -77,6 +89,8 @@ GraphicsInterface::LeaveLockStepMode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GraphicsInterface::GameThreadWaitForFrameSync()
 {

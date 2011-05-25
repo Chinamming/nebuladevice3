@@ -16,6 +16,8 @@ using namespace CoreGraphics;
 using namespace Math;
 using namespace Threading;
 //------------------------------------------------------------------------------
+/**
+*/
 ShadowServerBase::ShadowServerBase() :
     isOpen(false),
     inBeginFrame(false),
@@ -25,6 +27,8 @@ ShadowServerBase::ShadowServerBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShadowServerBase::~ShadowServerBase()
 {
     n_assert(!this->isOpen);
@@ -34,6 +38,8 @@ ShadowServerBase::~ShadowServerBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::Open()
 {
@@ -42,6 +48,8 @@ ShadowServerBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::Close()
 {
@@ -52,6 +60,8 @@ ShadowServerBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::BeginFrame(const Ptr<InternalCameraEntity>& camEntity)
 {
@@ -67,6 +77,8 @@ ShadowServerBase::BeginFrame(const Ptr<InternalCameraEntity>& camEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::EndFrame()
 {
@@ -79,6 +91,8 @@ ShadowServerBase::EndFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::BeginAttachVisibleLights()
 {
@@ -91,6 +105,8 @@ ShadowServerBase::BeginAttachVisibleLights()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::AttachVisibleLight(const Ptr<InternalAbstractLightEntity>& lightEntity)
 {
@@ -106,6 +122,8 @@ ShadowServerBase::AttachVisibleLight(const Ptr<InternalAbstractLightEntity>& lig
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShadowServerBase::EndAttachVisibleLights()
 {

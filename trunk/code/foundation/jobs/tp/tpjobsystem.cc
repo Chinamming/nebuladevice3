@@ -12,12 +12,16 @@ __ImplementClass(Jobs::TPJobSystem, 'TPJS', Base::JobSystemBase);
 using namespace Base;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJobSystem::TPJobSystem()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TPJobSystem::~TPJobSystem()
 {
     if (this->IsValid())
@@ -27,6 +31,8 @@ TPJobSystem::~TPJobSystem()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobSystem::Setup()
 {
@@ -36,6 +42,8 @@ TPJobSystem::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TPJobSystem::Discard()
 {

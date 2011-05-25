@@ -39,6 +39,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 ParticleRenderInfoBase::ParticleRenderInfoBase() 
 :   baseVertexIndex(0),
@@ -48,6 +50,8 @@ ParticleRenderInfoBase::ParticleRenderInfoBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 ParticleRenderInfoBase::ParticleRenderInfoBase(IndexT base, SizeT num) :
     baseVertexIndex(base),
@@ -57,6 +61,8 @@ ParticleRenderInfoBase::ParticleRenderInfoBase(IndexT base, SizeT num) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleRenderInfoBase::Clear()
 {
@@ -65,6 +71,8 @@ ParticleRenderInfoBase::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ParticleRenderInfoBase::GetBaseVertexIndex() const
 {
@@ -72,6 +80,8 @@ ParticleRenderInfoBase::GetBaseVertexIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ParticleRenderInfoBase::GetNumVertices() const
 {
@@ -79,6 +89,8 @@ ParticleRenderInfoBase::GetNumVertices() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool 
 ParticleRenderInfoBase::IsEmpty() const
 {

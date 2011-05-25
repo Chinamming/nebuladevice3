@@ -39,10 +39,6 @@ public:
     void SetFullscreen(bool b);
     /// get windowed/fullscreen mode
     bool IsFullscreen() const;
-	/// set whether the size can be auto-adjusted to window's size
-	void SetAutoAdjustSize(bool b);
-	/// get whether the size can be auto-adjusted to window's size
-	bool IsAutoAdjustSize() const;
     /// enable display mode switch when running fullscreen (default is true);
     void SetDisplayModeSwitchEnabled(bool b);
     /// is display mode switch enabled for fullscreen?
@@ -73,7 +69,6 @@ private:
     CoreGraphics::DisplayMode displayMode;
     CoreGraphics::AntiAliasQuality::Code antiAliasQuality;
     bool fullscreen;
-	bool autoAdjustSize;
     bool modeSwitchEnabled;
     bool tripleBufferingEnabled;
     bool alwaysOnTop;
@@ -83,6 +78,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::DisplayMode&
 DisplaySettings::DisplayMode()
 {
@@ -90,6 +87,8 @@ DisplaySettings::DisplayMode()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CoreGraphics::DisplayMode&
 DisplaySettings::DisplayMode() const
 {
@@ -97,6 +96,8 @@ DisplaySettings::DisplayMode() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aa)
 {
@@ -104,6 +105,8 @@ DisplaySettings::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aa)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::AntiAliasQuality::Code
 DisplaySettings::GetAntiAliasQuality() const
 {
@@ -111,6 +114,8 @@ DisplaySettings::GetAntiAliasQuality() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetAdapter(CoreGraphics::Adapter::Code a)
 {
@@ -118,6 +123,8 @@ DisplaySettings::SetAdapter(CoreGraphics::Adapter::Code a)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::Adapter::Code
 DisplaySettings::GetAdapter() const
 {
@@ -125,6 +132,8 @@ DisplaySettings::GetAdapter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetFullscreen(bool b)
 {
@@ -132,20 +141,8 @@ DisplaySettings::SetFullscreen(bool b)
 }
 
 //------------------------------------------------------------------------------
-inline void
-DisplaySettings::SetAutoAdjustSize(bool b)
-{
-	this->autoAdjustSize = b;
-}
-
-//------------------------------------------------------------------------------
-inline bool
-DisplaySettings::IsAutoAdjustSize() const
-{
-	return this->autoAdjustSize;
-}
-
-//------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplaySettings::IsFullscreen() const
 {
@@ -153,6 +150,8 @@ DisplaySettings::IsFullscreen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetDisplayModeSwitchEnabled(bool b)
 {
@@ -160,6 +159,8 @@ DisplaySettings::SetDisplayModeSwitchEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplaySettings::IsDisplayModeSwitchEnabled() const
 {
@@ -167,6 +168,8 @@ DisplaySettings::IsDisplayModeSwitchEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetTripleBufferingEnabled(bool b)
 {
@@ -174,6 +177,8 @@ DisplaySettings::SetTripleBufferingEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplaySettings::IsTripleBufferingEnabled() const
 {
@@ -181,6 +186,8 @@ DisplaySettings::IsTripleBufferingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetAlwaysOnTop(bool b)
 {
@@ -188,6 +195,8 @@ DisplaySettings::SetAlwaysOnTop(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplaySettings::IsAlwaysOnTop() const
 {
@@ -195,6 +204,8 @@ DisplaySettings::IsAlwaysOnTop() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetVerticalSyncEnabled(bool b)
 {
@@ -202,6 +213,8 @@ DisplaySettings::SetVerticalSyncEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DisplaySettings::IsVerticalSyncEnabled() const
 {
@@ -209,6 +222,8 @@ DisplaySettings::IsVerticalSyncEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetIconName(const Util::String& s)
 {
@@ -216,6 +231,8 @@ DisplaySettings::SetIconName(const Util::String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 DisplaySettings::GetIconName() const
 {
@@ -223,6 +240,8 @@ DisplaySettings::GetIconName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 DisplaySettings::SetWindowTitle(const Util::String& t)
 {
@@ -230,6 +249,8 @@ DisplaySettings::SetWindowTitle(const Util::String& t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 DisplaySettings::GetWindowTitle() const
 {

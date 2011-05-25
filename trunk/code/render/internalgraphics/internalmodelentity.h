@@ -153,6 +153,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalModelEntity::SetResourceId(const Resources::ResourceId& id)
 {
@@ -161,6 +163,8 @@ InternalModelEntity::SetResourceId(const Resources::ResourceId& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 InternalModelEntity::GetResourceId() const
 {
@@ -168,6 +172,8 @@ InternalModelEntity::GetResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalModelEntity::SetRootNodePath(const Util::StringAtom& p)
 {
@@ -175,6 +181,8 @@ InternalModelEntity::SetRootNodePath(const Util::StringAtom& p)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InternalModelEntity::GetRootNodePath() const
 {
@@ -182,6 +190,8 @@ InternalModelEntity::GetRootNodePath() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalModelEntity::SetRootNodeOffsetMatrix(const Math::matrix44& m)
 {
@@ -189,6 +199,8 @@ InternalModelEntity::SetRootNodeOffsetMatrix(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalModelEntity::GetRootNodeOffsetMatrix() const
 {
@@ -196,6 +208,8 @@ InternalModelEntity::GetRootNodeOffsetMatrix() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Resources::Resource::State
 InternalModelEntity::GetModelResourceState() const
 {
@@ -203,6 +217,8 @@ InternalModelEntity::GetModelResourceState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Models::ModelInstance>&
 InternalModelEntity::GetModelInstance() const
 {
@@ -210,6 +226,8 @@ InternalModelEntity::GetModelInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalModelEntity::HasCharacter() const
 {
@@ -217,6 +235,8 @@ InternalModelEntity::HasCharacter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Characters::CharacterInstance>&
 InternalModelEntity::GetCharacterInstance() const
 {
@@ -224,6 +244,8 @@ InternalModelEntity::GetCharacterInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Characters::Character>&
 InternalModelEntity::GetCharacter() const
 {
@@ -231,6 +253,8 @@ InternalModelEntity::GetCharacter() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalModelEntity::IsAnimDrivenMotionTrackingEnabled() const
 {
@@ -238,6 +262,8 @@ InternalModelEntity::IsAnimDrivenMotionTrackingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 InternalModelEntity::GetAnimDrivenMotionJointName() const
 {
@@ -245,6 +271,8 @@ InternalModelEntity::GetAnimDrivenMotionJointName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 InternalModelEntity::GetAnimDrivenMotionVector() const
 {
@@ -252,6 +280,8 @@ InternalModelEntity::GetAnimDrivenMotionVector() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalModelEntity::IsAnimEventTrackingEnabled() const
 {
@@ -259,6 +289,8 @@ InternalModelEntity::IsAnimEventTrackingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Animation::AnimEventInfo>&
 InternalModelEntity::GetAnimEvents() const
 {
@@ -266,6 +298,8 @@ InternalModelEntity::GetAnimEvents() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalModelEntity::IsCharJointTrackingEnabled() const
 {
@@ -273,6 +307,8 @@ InternalModelEntity::IsCharJointTrackingEnabled() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalModelEntity::IsCharJointDataValid() const
 {
@@ -280,6 +316,8 @@ InternalModelEntity::IsCharJointDataValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Shared::CharJointInfo>&
 InternalModelEntity::GetCharJointInfos() const
 {

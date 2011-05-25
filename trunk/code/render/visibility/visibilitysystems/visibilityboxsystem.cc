@@ -30,6 +30,8 @@ extern "C" {
 extern void VisibilityBoxSystemJobFunc(const JobFuncContext& ctx);
 #endif
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityBoxSystem::VisibilityBoxSystem():
     numVisibleBoxes(0),
     numCameraBoxes(0) 
@@ -37,11 +39,15 @@ VisibilityBoxSystem::VisibilityBoxSystem():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityBoxSystem::~VisibilityBoxSystem()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBoxSystem::Open(IndexT orderIndex)
 {    
@@ -50,6 +56,8 @@ VisibilityBoxSystem::Open(IndexT orderIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBoxSystem::Close()
 {                                
@@ -58,6 +66,8 @@ VisibilityBoxSystem::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::InsertVisibilityContext(const Ptr<VisibilityContext>& context)
 {
@@ -73,6 +83,8 @@ VisibilityBoxSystem::InsertVisibilityContext(const Ptr<VisibilityContext>& conte
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::RemoveVisibilityContext(const Ptr<VisibilityContext>& context)
 {
@@ -85,6 +97,8 @@ VisibilityBoxSystem::RemoveVisibilityContext(const Ptr<VisibilityContext>& conte
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::UpdateVisibilityContext(const Ptr<VisibilityContext>& context)
 {    
@@ -105,6 +119,8 @@ VisibilityBoxSystem::UpdateVisibilityContext(const Ptr<VisibilityContext>& conte
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::CheckVisibility(const Ptr<ObserverContext>& observer, Util::Array<Ptr<VisibilityContext> >& outEntitiyArray, uint entityMask)
 {        
@@ -134,6 +150,8 @@ VisibilityBoxSystem::CheckVisibility(const Ptr<ObserverContext>& observer, Util:
 }  
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::InsertVisibilityContainer(const Ptr<VisibilityContainer>& container)
 {
@@ -148,6 +166,8 @@ VisibilityBoxSystem::InsertVisibilityContainer(const Ptr<VisibilityContainer>& c
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBoxSystem::DiscardVisibilityBoxes()
 {
@@ -160,6 +180,8 @@ VisibilityBoxSystem::DiscardVisibilityBoxes()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBoxSystem::UpdateNeighbours(const Ptr<VisibilityBox>& visBox)
 {
@@ -291,6 +313,8 @@ VisibilityBoxSystem::FindOverlappingVisibilityBoxes(const bbox& boundingBox, Uti
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::OnRenderDebug()
 {
@@ -304,6 +328,8 @@ VisibilityBoxSystem::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::EndAttachVisibilityContainer()
 {
@@ -366,6 +392,8 @@ VisibilityBoxSystem::CreateVisibilityJob(IndexT frameId, const Ptr<ObserverConte
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::CollectFlattenBoxMapping(IndexT bufferIndex)
 {
@@ -398,6 +426,8 @@ VisibilityBoxSystem::CollectFlattenBoxMapping(IndexT bufferIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBoxSystem::SetDirty()
 {

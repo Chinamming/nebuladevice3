@@ -32,12 +32,12 @@ AnimBuilderLoader::LoadNax2(const URI& uri, AnimBuilder& animBuilder, const Arra
         Nax2Header* naxHeader = (Nax2Header*) ptr;
         ptr += sizeof(Nax2Header);
 
-        // check magic value
-        if (FourCC(naxHeader->magic) != 'NAX3')
-        {
-            n_error("nMemoryAnimation::SetupFromNax2(): '%s' has obsolete file format!", stream->GetURI().AsString().AsCharPtr());        
-            return false;
-        }
+        //// check magic value
+        //if (FourCC(naxHeader->magic) != 'NAX3')
+        //{
+        //    n_error("nMemoryAnimation::SetupFromNax2(): '%s' has obsolete file format!", stream->GetURI().AsString().AsCharPtr());        
+        //    return false;
+        //}
         n_assert(0 != naxHeader->numGroups);
 
         // generate clip names if requested
@@ -89,8 +89,8 @@ AnimBuilderLoader::LoadNax2(const URI& uri, AnimBuilder& animBuilder, const Arra
                 clip.SetPreInfinityType(InfinityType::Cycle);
                 clip.SetPostInfinityType(InfinityType::Cycle);
             }
-            String metaData = naxGroup->metaData;
-            AnimBuilderLoader::ExtractAnimEventsFromNax2MetaData(clip, metaData);
+            //String metaData = naxGroup->metaData;
+            //AnimBuilderLoader::ExtractAnimEventsFromNax2MetaData(clip, metaData);
 
             // add dummy curve objects to clip
             IndexT curveIndex;
@@ -137,7 +137,7 @@ AnimBuilderLoader::LoadNax2(const URI& uri, AnimBuilder& animBuilder, const Arra
                         curve.SetCurveType(CurveType::Translation);
                         break;
                     case 1:
-                        n_assert(2 == naxCurve->ipolType);   // nAnimation::IpolType::Quat
+                        //n_assert(2 == naxCurve->ipolType);   // nAnimation::IpolType::Quat
                         curve.SetCurveType(CurveType::Rotation);
                         break;
                     case 2:

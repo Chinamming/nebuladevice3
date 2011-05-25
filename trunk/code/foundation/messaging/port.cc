@@ -12,6 +12,8 @@ __ImplementClass(Messaging::Port, 'PORT', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Port::SetupAcceptedMessages()
 {
@@ -79,6 +81,8 @@ Port::HandleMessage(const Ptr<Messaging::Message>& msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 Port::RemoveAllHandlers()
 {

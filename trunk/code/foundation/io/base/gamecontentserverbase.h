@@ -53,6 +53,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 GameContentServerBase::IsValid() const
 {
@@ -60,6 +62,8 @@ GameContentServerBase::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GameContentServerBase::SetTitle(const Util::String& t)
 {
@@ -67,6 +71,8 @@ GameContentServerBase::SetTitle(const Util::String& t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 GameContentServerBase::GetTitle() const
 {
@@ -74,6 +80,8 @@ GameContentServerBase::GetTitle() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GameContentServerBase::SetTitleId(const Util::String& tid)
 {
@@ -81,6 +89,8 @@ GameContentServerBase::SetTitleId(const Util::String& tid)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 GameContentServerBase::GetTitleId() const
 {
@@ -88,6 +98,8 @@ GameContentServerBase::GetTitleId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 GameContentServerBase::SetVersion(const Util::String& v)
 {
@@ -95,6 +107,8 @@ GameContentServerBase::SetVersion(const Util::String& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 GameContentServerBase::GetVersion() const
 {

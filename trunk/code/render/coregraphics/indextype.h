@@ -34,6 +34,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 IndexType::SizeOf(IndexType::Code type)
 {
@@ -47,6 +49,8 @@ IndexType::SizeOf(IndexType::Code type)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Util::String
 IndexType::ToString(IndexType::Code type)
 {
@@ -62,6 +66,8 @@ IndexType::ToString(IndexType::Code type)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexType::Code
 IndexType::FromString(const Util::String& str)
 {

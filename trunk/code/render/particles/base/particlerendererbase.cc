@@ -13,6 +13,8 @@ __ImplementAbstractClass(Base::ParticleRendererBase, 'PTRB', Core::RefCounted);
 using namespace Particles;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleRendererBase::ParticleRendererBase() :
     isValid(false),
     inAttach(false)
@@ -20,12 +22,16 @@ ParticleRendererBase::ParticleRendererBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleRendererBase::~ParticleRendererBase()
 {
     n_assert(!this->IsValid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleRendererBase::Setup()
 {
@@ -34,6 +40,8 @@ ParticleRendererBase::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleRendererBase::Discard()
 {
@@ -42,6 +50,8 @@ ParticleRendererBase::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleRendererBase::BeginAttach()
 {
@@ -51,6 +61,8 @@ ParticleRendererBase::BeginAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleRendererBase::AddVisibleParticleSystem(const Ptr<ParticleSystemInstance>& particleSystemInstance)
 {
@@ -61,6 +73,8 @@ ParticleRendererBase::AddVisibleParticleSystem(const Ptr<ParticleSystemInstance>
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ParticleRendererBase::EndAttach()
 {
@@ -70,6 +84,8 @@ ParticleRendererBase::EndAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ParticleRendererBase::RenderParticleSystem(const Ptr<Particles::ParticleSystemInstance>&particleSystemInstance)
 {

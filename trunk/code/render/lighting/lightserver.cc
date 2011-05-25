@@ -19,12 +19,16 @@ __ImplementClass(Lighting::LightServer, 'LISV', Lighting::LightPrePassServer);
 __ImplementSingleton(Lighting::LightServer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightServer::LightServer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightServer::~LightServer()
 {
     __DestructSingleton;

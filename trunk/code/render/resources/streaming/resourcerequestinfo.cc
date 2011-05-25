@@ -9,6 +9,8 @@ namespace Resources
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceRequestInfo::ResourceRequestInfo() :
     resourceId("not set"),
     autoManaged(true),
@@ -16,6 +18,8 @@ ResourceRequestInfo::ResourceRequestInfo() :
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceRequestInfo::ResourceRequestInfo(const ResourceId& resourceId, bool autoManaged, const Core::Rtti* resType) :
     resourceId(resourceId),
     autoManaged(autoManaged),
@@ -23,12 +27,16 @@ ResourceRequestInfo::ResourceRequestInfo(const ResourceId& resourceId, bool auto
 {}
 
 //------------------------------------------------------------------------------
+/**
+*/
 ResourceRequestInfo::~ResourceRequestInfo(void)
 {
 }
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ResourceRequestInfo::DebugPrint() const
 {

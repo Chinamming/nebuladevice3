@@ -29,6 +29,8 @@ using namespace Util;
 using namespace Shared;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalModelEntity::InternalModelEntity() :
     updateFrameId(InvalidIndex),
     rootNodeOffsetMatrix(matrix44::identity()),
@@ -45,12 +47,16 @@ InternalModelEntity::InternalModelEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalModelEntity::~InternalModelEntity()
 {
     n_assert(!this->modelInstance.isvalid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalModelEntity::ConfigureAnimDrivenMotionTracking(bool enabled, const StringAtom& jointName)
 {
@@ -60,6 +66,8 @@ InternalModelEntity::ConfigureAnimDrivenMotionTracking(bool enabled, const Strin
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalModelEntity::ConfigureAnimEventTracking(bool enabled, bool onlyDominatingClip)
 {
@@ -69,6 +77,8 @@ InternalModelEntity::ConfigureAnimEventTracking(bool enabled, bool onlyDominatin
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalModelEntity::ConfigureCharJointTracking(bool enabled, const Array<StringAtom>& jointNames)
 {
@@ -88,6 +98,8 @@ InternalModelEntity::ConfigureCharJointTracking(bool enabled, const Array<String
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalModelEntity::AddTrackedCharJoint(const StringAtom& jointName)
 {

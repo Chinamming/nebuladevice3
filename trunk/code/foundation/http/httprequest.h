@@ -52,6 +52,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequest::SetMethod(HttpMethod::Code m)
 {
@@ -59,6 +61,8 @@ HttpRequest::SetMethod(HttpMethod::Code m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline HttpMethod::Code
 HttpRequest::GetMethod() const
 {
@@ -66,6 +70,8 @@ HttpRequest::GetMethod() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequest::SetURI(const IO::URI& u)
 {
@@ -73,6 +79,8 @@ HttpRequest::SetURI(const IO::URI& u)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const IO::URI&
 HttpRequest::GetURI() const
 {
@@ -80,6 +88,8 @@ HttpRequest::GetURI() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequest::SetResponseContentStream(const Ptr<IO::Stream>& s)
 {
@@ -87,6 +97,8 @@ HttpRequest::SetResponseContentStream(const Ptr<IO::Stream>& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<IO::Stream>&
 HttpRequest::GetResponseContentStream() const
 {
@@ -94,6 +106,8 @@ HttpRequest::GetResponseContentStream() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequest::SetStatus(HttpStatus::Code s)
 {
@@ -101,6 +115,8 @@ HttpRequest::SetStatus(HttpStatus::Code s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline HttpStatus::Code
 HttpRequest::GetStatus() const
 {

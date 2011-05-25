@@ -12,6 +12,8 @@ __ImplementClass(IO::HistoryConsoleHandler, 'HICH', IO::ConsoleHandler);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HistoryConsoleHandler::HistoryConsoleHandler() :
     history(NEBULA3_CONSOLE_HISTORY_SIZE)
 {
@@ -19,6 +21,8 @@ HistoryConsoleHandler::HistoryConsoleHandler() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HistoryConsoleHandler::Print(const String& s)
 {
@@ -26,6 +30,8 @@ HistoryConsoleHandler::Print(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HistoryConsoleHandler::Error(const String& s)
 {
@@ -35,6 +41,8 @@ HistoryConsoleHandler::Error(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HistoryConsoleHandler::Warning(const String& s)
 {
@@ -44,6 +52,8 @@ HistoryConsoleHandler::Warning(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HistoryConsoleHandler::DebugOut(const String& s)
 {

@@ -48,6 +48,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AbstractLightEntity::SetLightType(Lighting::LightType::Code t)
 {
@@ -55,6 +57,8 @@ AbstractLightEntity::SetLightType(Lighting::LightType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Lighting::LightType::Code
 AbstractLightEntity::GetLightType() const
 {
@@ -62,6 +66,8 @@ AbstractLightEntity::GetLightType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 AbstractLightEntity::GetColor() const
 {
@@ -69,6 +75,8 @@ AbstractLightEntity::GetColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 AbstractLightEntity::GetCastShadows() const
 {
@@ -76,6 +84,8 @@ AbstractLightEntity::GetCastShadows() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 AbstractLightEntity::SetProjMapUvOffsetAndScale(const Math::float4& v)
 {
@@ -83,6 +93,8 @@ AbstractLightEntity::SetProjMapUvOffsetAndScale(const Math::float4& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 AbstractLightEntity::GetProjMapUvOffsetAndScale() const
 {

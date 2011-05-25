@@ -69,6 +69,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 #if NEBULA3_MEMORY_STATS
 inline uint
 Win360MemoryPool::GetAllocCount() const
@@ -78,6 +80,8 @@ Win360MemoryPool::GetAllocCount() const
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 Win360MemoryPool::ComputeAlignedBlockSize(uint blockSize)
 {
@@ -87,6 +91,8 @@ Win360MemoryPool::ComputeAlignedBlockSize(uint blockSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 Win360MemoryPool::GetNumBlocks() const
 {
@@ -94,6 +100,8 @@ Win360MemoryPool::GetNumBlocks() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 Win360MemoryPool::GetBlockSize() const
 {
@@ -101,6 +109,8 @@ Win360MemoryPool::GetBlockSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 Win360MemoryPool::GetAlignedBlockSize() const
 {
@@ -108,6 +118,8 @@ Win360MemoryPool::GetAlignedBlockSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 Win360MemoryPool::GetPoolSize() const
 {
@@ -115,6 +127,8 @@ Win360MemoryPool::GetPoolSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360MemoryPool::IsPoolBlock(void* ptr) const
 {

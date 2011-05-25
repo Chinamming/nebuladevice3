@@ -65,6 +65,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 CharacterSkeletonInstance::GetJointMatrix(IndexT i) const
 {
@@ -72,6 +74,8 @@ CharacterSkeletonInstance::GetJointMatrix(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterSkeletonInstance::IsValid() const
 {
@@ -79,6 +83,8 @@ CharacterSkeletonInstance::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 CharacterSkeletonInstance::GetNumJoints() const
 {
@@ -86,6 +92,8 @@ CharacterSkeletonInstance::GetNumJoints() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::FixedArray<Math::matrix44>&
 CharacterSkeletonInstance::GetSkinMatrixArray() const
 {

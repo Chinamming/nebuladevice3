@@ -20,6 +20,8 @@ using namespace Math;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformNodeInstance::TransformNodeInstance():
     isInViewSpace(false),
     lockedToViewer(false)
@@ -28,12 +30,16 @@ TransformNodeInstance::TransformNodeInstance():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformNodeInstance::~TransformNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformNodeInstance::Setup(const Ptr<ModelInstance>& inst, 
                              const Ptr<ModelNode>& node, 
@@ -65,6 +71,8 @@ TransformNodeInstance::Setup(const Ptr<ModelInstance>& inst,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TransformNodeInstance::Discard()
 {

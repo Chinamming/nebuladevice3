@@ -49,6 +49,8 @@ int noise::perm[512] =  {60,137,91,90,15,
    };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 noise::fade(float t)
@@ -57,6 +59,8 @@ noise::fade(float t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 noise::lerp(float t, float a, float b)
@@ -65,6 +69,8 @@ noise::lerp(float t, float a, float b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 noise::grad(int hash, float x, float y, float z)
@@ -76,6 +82,8 @@ noise::grad(int hash, float x, float y, float z)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 float
 noise::gen(float x, float y, float z)

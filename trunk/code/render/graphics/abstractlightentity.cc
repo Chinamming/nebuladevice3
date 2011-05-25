@@ -12,6 +12,8 @@ __ImplementClass(Graphics::AbstractLightEntity, 'GALE', Graphics::GraphicsEntity
 using namespace Lighting;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AbstractLightEntity::AbstractLightEntity() :
     lightType(LightType::InvalidLightType),
     color(1.0f, 1.0f, 1.0f, 1.0f),
@@ -22,12 +24,16 @@ AbstractLightEntity::AbstractLightEntity() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AbstractLightEntity::~AbstractLightEntity()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AbstractLightEntity::SetColor(const Math::float4& c)
 {
@@ -41,6 +47,8 @@ AbstractLightEntity::SetColor(const Math::float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AbstractLightEntity::SetCastShadows(bool b)
 {

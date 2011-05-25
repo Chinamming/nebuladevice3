@@ -35,6 +35,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceInfo::IsEqual(const ResourceInfo* info) const
 {
@@ -43,6 +45,8 @@ ResourceInfo::IsEqual(const ResourceInfo* info) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 ResourceInfo::GetSize() const
 {
@@ -50,6 +54,8 @@ ResourceInfo::GetSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceInfo::SetSize(uint size)
 {

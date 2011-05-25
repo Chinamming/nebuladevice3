@@ -10,6 +10,8 @@ namespace Base
 __ImplementClass(Base::VertexBufferBase, 'VXBB', Base::ResourceBase);
 
 //------------------------------------------------------------------------------
+/**
+*/
 VertexBufferBase::VertexBufferBase() :
     numVertices(0)
 {
@@ -17,12 +19,16 @@ VertexBufferBase::VertexBufferBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VertexBufferBase::~VertexBufferBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VertexBufferBase::Unload()
 {

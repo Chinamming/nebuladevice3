@@ -85,6 +85,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::restoreHex(float &v, int val)
@@ -93,6 +95,8 @@ DebugFloat::restoreHex(float &v, int val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 DebugFloat::restoreHex(Math::float4 &v, int x, int y, int z, int w)
@@ -106,6 +110,8 @@ DebugFloat::restoreHex(Math::float4 &v, int x, int y, int z, int w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::restoreHex(Math::matrix44 &m,
@@ -126,6 +132,8 @@ DebugFloat::restoreHex(Math::matrix44 &m,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 DebugFloat::restoreHex(Math::quaternion &q, int x, int y, int z, int w)
@@ -139,6 +147,8 @@ DebugFloat::restoreHex(Math::quaternion &q, int x, int y, int z, int w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 DebugFloat::restoreHex(Math::plane &pl, int x, int y, int z, int w)
@@ -152,6 +162,8 @@ DebugFloat::restoreHex(Math::plane &pl, int x, int y, int z, int w)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::printHex(const Math::matrix44 &m, const char *msg)
@@ -168,6 +180,8 @@ DebugFloat::printHex(const Math::matrix44 &m, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::printHex(const Math::float4 &v, const char *msg)
@@ -185,6 +199,8 @@ DebugFloat::printHex(const Math::float4 &v, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::printHex(const Math::quaternion &q, const char *msg)
@@ -202,6 +218,8 @@ DebugFloat::printHex(const Math::quaternion &q, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::printHex(const Math::plane &pl, const char *msg)
@@ -219,6 +237,8 @@ DebugFloat::printHex(const Math::plane &pl, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 DebugFloat::printHex(float val, const char *msg)
@@ -248,6 +268,8 @@ DebugFloat::printHex(float val, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void				
 DebugFloat::print(const Math::float4 &v, const char *msg)
@@ -258,6 +280,8 @@ DebugFloat::print(const Math::float4 &v, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void	
 DebugFloat::print(const float &v, const char *msg)
@@ -268,6 +292,8 @@ DebugFloat::print(const float &v, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void				
 DebugFloat::print(const Math::matrix44 &m, const char *msg)
@@ -285,6 +311,8 @@ DebugFloat::print(const Math::matrix44 &m, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void				
 DebugFloat::print(const Math::quaternion &q, const char *msg)
@@ -309,6 +337,8 @@ DebugFloat::print(const Math::quaternion &q, const char *msg)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void				
 DebugFloat::print(const Math::plane &p, const char *msg)

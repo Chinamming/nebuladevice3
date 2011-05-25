@@ -17,6 +17,8 @@ using namespace Jobs;
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityQuery::VisibilityQuery()
 {
     this->jobPort = JobPort::Create();
@@ -24,6 +26,8 @@ VisibilityQuery::VisibilityQuery()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityQuery::~VisibilityQuery()
 {
     this->jobPort = 0;
@@ -32,6 +36,8 @@ VisibilityQuery::~VisibilityQuery()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuery::AttachVisibilitySystem(const Ptr<VisibilitySystemBase>& visSystem)
 {
@@ -39,6 +45,8 @@ VisibilityQuery::AttachVisibilitySystem(const Ptr<VisibilitySystemBase>& visSyst
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuery::Run(IndexT frameId)
 {
@@ -74,6 +82,8 @@ VisibilityQuery::Run(IndexT frameId)
 }  
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool 
 VisibilityQuery::IsFinished() const
 {
@@ -81,6 +91,8 @@ VisibilityQuery::IsFinished() const
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 VisibilityQuery::WaitForFinished() const
 {
@@ -89,6 +101,8 @@ VisibilityQuery::WaitForFinished() const
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalGraphics::InternalGraphicsEntity::LinkType 
 VisibilityQuery::GetObserverType()
 {       

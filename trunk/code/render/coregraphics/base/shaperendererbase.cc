@@ -17,6 +17,8 @@ using namespace Threading;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeRendererBase::ShapeRendererBase() :
     isOpen(false)
 {
@@ -24,6 +26,8 @@ ShapeRendererBase::ShapeRendererBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeRendererBase::~ShapeRendererBase()
 {
     n_assert(!this->isOpen);
@@ -31,6 +35,8 @@ ShapeRendererBase::~ShapeRendererBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeRendererBase::Open()
 {
@@ -40,6 +46,8 @@ ShapeRendererBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeRendererBase::Close()
 {
@@ -49,6 +57,8 @@ ShapeRendererBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeRendererBase::DeleteShapesByThreadId(Threading::ThreadId threadId)
 {
@@ -66,6 +76,8 @@ ShapeRendererBase::DeleteShapesByThreadId(Threading::ThreadId threadId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeRendererBase::AddShape(const RenderShape& shape)
 {
@@ -74,6 +86,8 @@ ShapeRendererBase::AddShape(const RenderShape& shape)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeRendererBase::AddShapes(const Array<RenderShape>& shapeArray)
 {
@@ -82,6 +96,8 @@ ShapeRendererBase::AddShapes(const Array<RenderShape>& shapeArray)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeRendererBase::DrawShapes()
 {
@@ -90,6 +106,8 @@ ShapeRendererBase::DrawShapes()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 ShapeRendererBase::AddWireFrameBox(const Math::bbox& boundingBox, const Math::float4& color, Threading::ThreadId threadId)
 {

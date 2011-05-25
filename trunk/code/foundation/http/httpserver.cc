@@ -17,6 +17,8 @@ using namespace Net;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpServer::HttpServer() :
     isOpen(false),
     isSingleThreadMode(false)
@@ -27,6 +29,8 @@ HttpServer::HttpServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpServer::~HttpServer()
 {
     n_assert(!this->IsOpen());
@@ -34,6 +38,8 @@ HttpServer::~HttpServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpServer::Open()
 {
@@ -51,6 +57,8 @@ HttpServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServer::Close()
 {
@@ -72,6 +80,8 @@ HttpServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServer::AttachRequestHandler(const Ptr<HttpRequestHandler>& requestHandler)
 {
@@ -82,6 +92,8 @@ HttpServer::AttachRequestHandler(const Ptr<HttpRequestHandler>& requestHandler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServer::RemoveRequestHandler(const Ptr<HttpRequestHandler>& requestHandler)
 {
@@ -91,6 +103,8 @@ HttpServer::RemoveRequestHandler(const Ptr<HttpRequestHandler>& requestHandler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HttpServer::OnFrame()
 {
@@ -128,6 +142,8 @@ HttpServer::OnFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpServer::HandleHttpRequest(const Ptr<TcpClientConnection>& clientConnection)  
 {
@@ -208,6 +224,8 @@ HttpServer::HandleHttpRequest(const Ptr<TcpClientConnection>& clientConnection)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HttpServer::BuildHttpResponse(const Ptr<TcpClientConnection>& conn, const Ptr<HttpRequest>& httpRequest)
 {

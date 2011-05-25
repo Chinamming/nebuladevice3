@@ -16,12 +16,16 @@ __ImplementInterfaceSingleton(IO::ZipFileSystem);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileSystem::ZipFileSystem()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ZipFileSystem::~ZipFileSystem()
 {
     if (this->IsValid())
@@ -44,6 +48,8 @@ ZipFileSystem::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ZipFileSystem::Discard()
 {

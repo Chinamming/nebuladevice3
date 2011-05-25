@@ -16,18 +16,24 @@ using namespace Interface;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugInterface::DebugInterface()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DebugInterface::~DebugInterface()
 {
     __DestructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DebugInterface::Open()
 {

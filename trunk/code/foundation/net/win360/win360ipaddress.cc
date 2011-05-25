@@ -12,6 +12,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360IpAddress::Win360IpAddress()
 {
     if (!Win360Socket::NetworkInitialized)
@@ -23,6 +25,8 @@ Win360IpAddress::Win360IpAddress()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360IpAddress::Win360IpAddress(const Win360IpAddress& rhs) :
     hostName(rhs.hostName),
     addrAsString(rhs.addrAsString),
@@ -32,6 +36,8 @@ Win360IpAddress::Win360IpAddress(const Win360IpAddress& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360IpAddress::Win360IpAddress(const String& hostName_, ushort portNumber_)
 {
     Memory::Clear(&this->addr, sizeof(this->addr));
@@ -41,6 +47,8 @@ Win360IpAddress::Win360IpAddress(const String& hostName_, ushort portNumber_)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360IpAddress::Win360IpAddress(const URI& uri)
 {
     Memory::Clear(&this->addr, sizeof(this->addr));
@@ -49,6 +57,8 @@ Win360IpAddress::Win360IpAddress(const URI& uri)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360IpAddress::Win360IpAddress(const sockaddr_in& sa)
 {
     Memory::Clear(&this->addr, sizeof(this->addr));

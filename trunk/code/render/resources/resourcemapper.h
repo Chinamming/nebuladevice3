@@ -68,6 +68,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceMapper::IsAttachedToResourceManager() const
 {
@@ -75,6 +77,8 @@ ResourceMapper::IsAttachedToResourceManager() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceMapper::SetPlaceholderResourceId(const ResourceId& resId)
 {
@@ -83,6 +87,8 @@ ResourceMapper::SetPlaceholderResourceId(const ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ResourceId&
 ResourceMapper::GetPlaceholderResourceId() const
 {
@@ -90,6 +96,8 @@ ResourceMapper::GetPlaceholderResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourceMapper::SetAsyncEnabled(bool b)
 {
@@ -97,6 +105,8 @@ ResourceMapper::SetAsyncEnabled(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourceMapper::IsAsyncEnabled() const
 {

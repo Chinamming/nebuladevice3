@@ -122,6 +122,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 TransformDeviceBase::IsOpen() const
 {
@@ -129,6 +131,8 @@ TransformDeviceBase::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformDeviceBase::SetDirtyFlag(TransformType type)
 {
@@ -136,6 +140,8 @@ TransformDeviceBase::SetDirtyFlag(TransformType type)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TransformDeviceBase::ClearDirtyFlag(TransformType type)
 {
@@ -143,6 +149,8 @@ TransformDeviceBase::ClearDirtyFlag(TransformType type)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 TransformDeviceBase::IsDirty(TransformType type) const
 {
@@ -150,6 +158,8 @@ TransformDeviceBase::IsDirty(TransformType type) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetProjTransform()
 {
@@ -157,6 +167,8 @@ TransformDeviceBase::GetProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetInvProjTransform()
 {
@@ -168,6 +180,8 @@ TransformDeviceBase::GetInvProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetViewTransform()
 {
@@ -175,6 +189,8 @@ TransformDeviceBase::GetViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetInvViewTransform()
 {
@@ -186,6 +202,8 @@ TransformDeviceBase::GetInvViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetViewProjTransform()
 {
@@ -197,6 +215,8 @@ TransformDeviceBase::GetViewProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetModelTransform()
 {
@@ -204,6 +224,8 @@ TransformDeviceBase::GetModelTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetInvModelTransform()
 {
@@ -215,6 +237,8 @@ TransformDeviceBase::GetInvModelTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetModelViewTransform()
 {
@@ -226,6 +250,8 @@ TransformDeviceBase::GetModelViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetInvModelViewTransform()
 {
@@ -237,6 +263,8 @@ TransformDeviceBase::GetInvModelViewTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 TransformDeviceBase::GetModelViewProjTransform()
 {
@@ -248,12 +276,16 @@ TransformDeviceBase::GetModelViewProjTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 TransformDeviceBase::SetFocalLength(const Math::float2& len)
 {
     this->focalLength = len;
 }
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2& 
 TransformDeviceBase::GetFocalLength() const
 {

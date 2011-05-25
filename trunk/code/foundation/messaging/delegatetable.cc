@@ -11,6 +11,8 @@ namespace Messaging
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DelegateTable::AddDelegate(const Id& msgId, const Delegate<const Ptr<Message>&>& del)
 {
@@ -29,6 +31,8 @@ DelegateTable::AddDelegate(const Id& msgId, const Delegate<const Ptr<Message>&>&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 DelegateTable::Invoke(const Ptr<Message>& msg)
 {

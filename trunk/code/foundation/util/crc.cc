@@ -11,6 +11,8 @@ unsigned int Crc::Table[NumByteValues] = { 0 };
 bool Crc::TableInitialized = false;
 
 //------------------------------------------------------------------------------
+/**
+*/
 Crc::Crc() :
     inBegin(false),
     resultValid(false),

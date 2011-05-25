@@ -14,18 +14,24 @@ __ImplementClass(Models::ShapeNodeInstance, 'SPNI', Models::StateNodeInstance);
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeNodeInstance::ShapeNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeNodeInstance::~ShapeNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeNodeInstance::OnVisibilityResolve(IndexT resolveIndex, float distanceToViewer)
 {
@@ -39,6 +45,8 @@ ShapeNodeInstance::OnVisibilityResolve(IndexT resolveIndex, float distanceToView
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeNodeInstance::Render()
 {

@@ -11,6 +11,8 @@ namespace Characters
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterVariationSet::CharacterVariationSet() :
     variationLibrary(0)
 {
@@ -18,12 +20,16 @@ CharacterVariationSet::CharacterVariationSet() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterVariationSet::~CharacterVariationSet()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterVariationSet::Setup(const Util::StringAtom& defaultVariationName, const CharacterVariationLibrary& varLib)
 {
@@ -33,6 +39,8 @@ CharacterVariationSet::Setup(const Util::StringAtom& defaultVariationName, const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterVariationSet::Discard()
 {
@@ -41,6 +49,8 @@ CharacterVariationSet::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Util::FixedArray<CharJointComponents>& 
 CharacterVariationSet::GetVariationCharJointComponents() const
 {                             
@@ -49,6 +59,8 @@ CharacterVariationSet::GetVariationCharJointComponents() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 CharacterVariationSet::SetActiveVariation(const Util::StringAtom& variationName)
 {
@@ -57,6 +69,8 @@ CharacterVariationSet::SetActiveVariation(const Util::StringAtom& variationName)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Util::StringAtom& 
 CharacterVariationSet::GetActiveVariation() const
 {

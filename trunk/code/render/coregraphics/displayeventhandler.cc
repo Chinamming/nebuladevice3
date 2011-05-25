@@ -10,18 +10,24 @@ namespace CoreGraphics
 __ImplementClass(CoreGraphics::DisplayEventHandler, 'DSEH', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayEventHandler::DisplayEventHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayEventHandler::~DisplayEventHandler()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DisplayEventHandler::OnAttach()
 {
@@ -29,6 +35,8 @@ DisplayEventHandler::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DisplayEventHandler::OnRemove()
 {

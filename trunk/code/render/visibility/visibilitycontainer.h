@@ -37,6 +37,8 @@ protected:
     Util::Array<Ptr<VisibilityContext> > visibilityContexts; 
 };      
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 VisibilityContainer::SetGraphicsEntities(const Util::Array<Ptr<InternalGraphics::InternalGraphicsEntity> >& entities)
 {
@@ -44,6 +46,8 @@ VisibilityContainer::SetGraphicsEntities(const Util::Array<Ptr<InternalGraphics:
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<VisibilityContext> >& 
 VisibilityContainer::GetVisibilityContexts() const
 {
@@ -51,6 +55,8 @@ VisibilityContainer::GetVisibilityContexts() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<InternalGraphics::InternalGraphicsEntity> >& 
 VisibilityContainer::GetGraphicsEntities() const
 {
@@ -58,6 +64,8 @@ VisibilityContainer::GetGraphicsEntities() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 VisibilityContainer::SetVisibilityContexts(const Util::Array<Ptr<VisibilityContext> >& contexts)
 {

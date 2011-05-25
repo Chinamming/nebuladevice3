@@ -16,6 +16,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextRendererBase::TextRendererBase() :
     isOpen(false)
 {
@@ -23,6 +25,8 @@ TextRendererBase::TextRendererBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextRendererBase::~TextRendererBase()
 {
     n_assert(!this->IsOpen());
@@ -30,6 +34,8 @@ TextRendererBase::~TextRendererBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextRendererBase::Open()
 {
@@ -38,6 +44,8 @@ TextRendererBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextRendererBase::Close()
 {
@@ -47,6 +55,8 @@ TextRendererBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextRendererBase::AddTextElement(const TextElement& textElement)
 {
@@ -55,6 +65,8 @@ TextRendererBase::AddTextElement(const TextElement& textElement)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextRendererBase::AddTextElements(const Array<TextElement>& textElements)
 {
@@ -63,6 +75,8 @@ TextRendererBase::AddTextElements(const Array<TextElement>& textElements)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextRendererBase::DeleteTextElementsByThreadId(ThreadId threadId)
 {
@@ -80,6 +94,8 @@ TextRendererBase::DeleteTextElementsByThreadId(ThreadId threadId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 TextRendererBase::DrawTextElements()
 {

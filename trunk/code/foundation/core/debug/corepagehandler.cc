@@ -19,6 +19,8 @@ using namespace Core;
 using namespace System;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CorePageHandler::CorePageHandler()
 {
     this->SetName("Core");
@@ -27,6 +29,8 @@ CorePageHandler::CorePageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CorePageHandler::HandleRequest(const Ptr<HttpRequest>& request) 
 {

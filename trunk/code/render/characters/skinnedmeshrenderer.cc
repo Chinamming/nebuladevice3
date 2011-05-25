@@ -22,12 +22,16 @@ __ImplementClass(Characters::SkinnedMeshRenderer, 'SMRR', PS3::PS3SkinnedMeshRen
 __ImplementSingleton(Characters::SkinnedMeshRenderer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 SkinnedMeshRenderer::SkinnedMeshRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 SkinnedMeshRenderer::~SkinnedMeshRenderer()
 {
     __DestructSingleton;

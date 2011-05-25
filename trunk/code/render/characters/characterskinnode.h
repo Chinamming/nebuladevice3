@@ -55,6 +55,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 CharacterSkinNode::GetNumFragments() const
 {
@@ -62,6 +64,8 @@ CharacterSkinNode::GetNumFragments() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 CharacterSkinNode::GetFragmentPrimGroupIndex(IndexT fragmentIndex) const
 {
@@ -69,6 +73,8 @@ CharacterSkinNode::GetFragmentPrimGroupIndex(IndexT fragmentIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<IndexT>& 
 CharacterSkinNode::GetFragmentJointPalette(IndexT fragmentIndex) const
 {

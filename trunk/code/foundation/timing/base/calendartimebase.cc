@@ -12,6 +12,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTimeBase::CalendarTimeBase() :
     year(1972),
     month(July),
@@ -96,6 +98,8 @@ CalendarTimeBase::Format(const String& fmtString, const CalendarTime& calTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 CalendarTimeBase::MonthToString(Month m)
 {
@@ -118,6 +122,8 @@ CalendarTimeBase::MonthToString(Month m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Month
 CalendarTimeBase::StringToMonth(const String& str)
 {
@@ -141,6 +147,8 @@ CalendarTimeBase::StringToMonth(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 CalendarTimeBase::WeekdayToString(Weekday d)
 {
@@ -158,6 +166,8 @@ CalendarTimeBase::WeekdayToString(Weekday d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Weekday
 CalendarTimeBase::StringToWeekday(const String& str)
 {
@@ -176,6 +186,8 @@ CalendarTimeBase::StringToWeekday(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetYear(Year y)
 {
@@ -183,6 +195,8 @@ CalendarTimeBase::SetYear(Year y)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Year
 CalendarTimeBase::GetYear() const
 {
@@ -190,6 +204,8 @@ CalendarTimeBase::GetYear() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetMonth(Month m)
 {
@@ -197,6 +213,8 @@ CalendarTimeBase::SetMonth(Month m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Month
 CalendarTimeBase::GetMonth() const
 {
@@ -204,6 +222,8 @@ CalendarTimeBase::GetMonth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetWeekday(Weekday d)
 {
@@ -211,6 +231,8 @@ CalendarTimeBase::SetWeekday(Weekday d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Weekday
 CalendarTimeBase::GetWeekday() const
 {
@@ -218,6 +240,8 @@ CalendarTimeBase::GetWeekday() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetDay(Day d)
 {
@@ -225,6 +249,8 @@ CalendarTimeBase::SetDay(Day d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Day
 CalendarTimeBase::GetDay() const
 {
@@ -232,6 +258,8 @@ CalendarTimeBase::GetDay() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetHour(Hour h)
 {
@@ -239,6 +267,8 @@ CalendarTimeBase::SetHour(Hour h)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Hour
 CalendarTimeBase::GetHour() const
 {
@@ -246,6 +276,8 @@ CalendarTimeBase::GetHour() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetMinute(Minute m)
 {
@@ -253,6 +285,8 @@ CalendarTimeBase::SetMinute(Minute m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Minute
 CalendarTimeBase::GetMinute() const
 {
@@ -260,6 +294,8 @@ CalendarTimeBase::GetMinute() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetSecond(Second s)
 {
@@ -267,6 +303,8 @@ CalendarTimeBase::SetSecond(Second s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::Second
 CalendarTimeBase::GetSecond() const
 {
@@ -274,6 +312,8 @@ CalendarTimeBase::GetSecond() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CalendarTimeBase::SetMilliSecond(MilliSecond m)
 {
@@ -281,6 +321,8 @@ CalendarTimeBase::SetMilliSecond(MilliSecond m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CalendarTime::MilliSecond
 CalendarTimeBase::GetMilliSecond() const
 {

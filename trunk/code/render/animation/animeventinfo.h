@@ -63,6 +63,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 AnimEventInfo::AnimEventInfo(): weight(0.0f),
                                 id(InvalidIndex)
@@ -71,6 +73,8 @@ AnimEventInfo::AnimEventInfo(): weight(0.0f),
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator==(const AnimEventInfo& a, const AnimEventInfo& b)
 {
@@ -78,6 +82,8 @@ operator==(const AnimEventInfo& a, const AnimEventInfo& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator!=(const AnimEventInfo& a, const AnimEventInfo& b)
 {
@@ -85,6 +91,8 @@ operator!=(const AnimEventInfo& a, const AnimEventInfo& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator<(const AnimEventInfo& a, const AnimEventInfo& b)
 {
@@ -92,6 +100,8 @@ operator<(const AnimEventInfo& a, const AnimEventInfo& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator>(const AnimEventInfo& a, const AnimEventInfo& b)
 {
@@ -99,6 +109,8 @@ operator>(const AnimEventInfo& a, const AnimEventInfo& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator<=(const AnimEventInfo& a, const AnimEventInfo& b)
 {
@@ -106,6 +118,8 @@ operator<=(const AnimEventInfo& a, const AnimEventInfo& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 operator>=(const AnimEventInfo& a, const AnimEventInfo& b)
 {
@@ -113,6 +127,8 @@ operator>=(const AnimEventInfo& a, const AnimEventInfo& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CoreAnimation::AnimEvent& 
 AnimEventInfo::GetAnimEvent() const
 {
@@ -120,6 +136,8 @@ AnimEventInfo::GetAnimEvent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 AnimEventInfo::SetAnimEvent(const CoreAnimation::AnimEvent& val)
 {
@@ -127,6 +145,8 @@ AnimEventInfo::SetAnimEvent(const CoreAnimation::AnimEvent& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom& 
 AnimEventInfo::GetAnimJobName() const
 {
@@ -134,6 +154,8 @@ AnimEventInfo::GetAnimJobName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 AnimEventInfo::SetAnimJobName(const Util::StringAtom& val)
 {
@@ -141,6 +163,8 @@ AnimEventInfo::SetAnimJobName(const Util::StringAtom& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float 
 AnimEventInfo::GetWeight() const
 {
@@ -148,6 +172,8 @@ AnimEventInfo::GetWeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void 
 AnimEventInfo::SetWeight(float val)
 {
@@ -155,6 +181,8 @@ AnimEventInfo::SetWeight(float val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 AnimEventInfo::SetEntityId(const InternalGraphics::InternalGraphicsEntity::Id& id)
@@ -163,6 +191,8 @@ AnimEventInfo::SetEntityId(const InternalGraphics::InternalGraphicsEntity::Id& i
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const InternalGraphics::InternalGraphicsEntity::Id&
 AnimEventInfo::GetEntityId() const

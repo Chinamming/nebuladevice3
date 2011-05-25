@@ -12,6 +12,8 @@ namespace Core
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 RefCountedList::DumpLeaks()
 {

@@ -41,6 +41,8 @@ struct Nvx2Group
 #pragma pack(pop)
 
 //------------------------------------------------------------------------------
+/**
+*/
 Nvx2StreamReader::Nvx2StreamReader() :
     usage(Base::ResourceBase::UsageImmutable),
     access(Base::ResourceBase::AccessNone),
@@ -63,6 +65,8 @@ Nvx2StreamReader::Nvx2StreamReader() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Nvx2StreamReader::~Nvx2StreamReader()
 {
     if (this->IsOpen())
@@ -72,6 +76,8 @@ Nvx2StreamReader::~Nvx2StreamReader()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 Nvx2StreamReader::Open()
 {
@@ -101,6 +107,8 @@ Nvx2StreamReader::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Nvx2StreamReader::Close()
 {
@@ -155,6 +163,8 @@ Nvx2StreamReader::ReadHeaderData()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Nvx2StreamReader::ReadPrimitiveGroups()
 {
@@ -180,6 +190,8 @@ Nvx2StreamReader::ReadPrimitiveGroups()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Nvx2StreamReader::SetupVertexComponents()
 {
@@ -262,6 +274,8 @@ Nvx2StreamReader::UpdateGroupBoundingBoxes()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Nvx2StreamReader::SetupVertexBuffer()
 {
@@ -290,6 +304,8 @@ Nvx2StreamReader::SetupVertexBuffer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Nvx2StreamReader::SetupIndexBuffer()
 {

@@ -95,6 +95,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 RefCounted::RefCounted() : 
     refCount(0)
@@ -140,6 +142,8 @@ RefCounted::GetRefCount() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RefCounted::IsInstanceOf(const Rtti& other) const
 {
@@ -147,6 +151,8 @@ RefCounted::IsInstanceOf(const Rtti& other) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RefCounted::IsInstanceOf(const Util::String& other) const
 {
@@ -154,6 +160,8 @@ RefCounted::IsInstanceOf(const Util::String& other) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RefCounted::IsInstanceOf(const Util::FourCC& other) const
 {
@@ -161,6 +169,8 @@ RefCounted::IsInstanceOf(const Util::FourCC& other) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RefCounted::IsA(const Rtti& other) const
 {
@@ -168,6 +178,8 @@ RefCounted::IsA(const Rtti& other) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RefCounted::IsA(const Util::String& other) const
 {
@@ -175,6 +187,8 @@ RefCounted::IsA(const Util::String& other) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 RefCounted::IsA(const Util::FourCC& other) const
 {

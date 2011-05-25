@@ -30,6 +30,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 TextureRequestInfo::TextureRequestInfo() :
     mipLevel(-1)
@@ -37,12 +39,16 @@ TextureRequestInfo::TextureRequestInfo() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 TextureRequestInfo::~TextureRequestInfo()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 TextureRequestInfo::GetMipLevel() const
 {
@@ -50,6 +56,8 @@ TextureRequestInfo::GetMipLevel() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 TextureRequestInfo::SetMipLevel(SizeT mipLevel)
 {

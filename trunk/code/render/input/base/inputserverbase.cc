@@ -17,6 +17,8 @@ using namespace Input;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InputServerBase::InputServerBase() :
     isOpen(false),
     inBeginFrame(false),
@@ -30,6 +32,8 @@ InputServerBase::InputServerBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InputServerBase::~InputServerBase()
 {
     if (this->IsOpen())
@@ -53,6 +57,8 @@ InputServerBase::SetMaxNumLocalPlayers(SizeT num)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::Open()
 {
@@ -62,6 +68,8 @@ InputServerBase::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::Close()
 {
@@ -86,6 +94,8 @@ InputServerBase::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::Reset()
 {
@@ -103,6 +113,8 @@ InputServerBase::Reset()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::AttachInputHandler(InputPriority::Code pri, const Ptr<InputHandler>& inputHandler)
 {
@@ -122,6 +134,8 @@ InputServerBase::AttachInputHandler(InputPriority::Code pri, const Ptr<InputHand
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::RemoveInputHandler(const Ptr<InputHandler>& inputHandler)
 {
@@ -151,6 +165,8 @@ InputServerBase::RemoveInputHandler(const Ptr<InputHandler>& inputHandler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::BeginFrame()
 {
@@ -168,6 +184,8 @@ InputServerBase::BeginFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InputServerBase::OnFrame()
 {
@@ -305,6 +323,8 @@ InputServerBase::ReleaseMouseCapture(const Ptr<InputHandler>& inputHandler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InputHandler>&
 InputServerBase::GetMouseCaptureHandler() const
 {
@@ -383,6 +403,8 @@ InputServerBase::ReleaseKeyboardCapture(const Ptr<InputHandler>& inputHandler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<InputHandler>&
 InputServerBase::GetKeyboardCaptureHandler() const
 {
@@ -390,6 +412,8 @@ InputServerBase::GetKeyboardCaptureHandler() const
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Input::GamePad>
 InputServerBase::GetDefaultGamePad(IndexT playerIndex) const
 {

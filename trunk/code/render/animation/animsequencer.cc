@@ -21,6 +21,8 @@ using namespace CoreGraphics;
 namespace Animation
 {
 //------------------------------------------------------------------------------
+/**
+*/
 AnimSequencer::AnimSequencer() :
     time(0),
     debugHudEnabled(false)
@@ -29,6 +31,8 @@ AnimSequencer::AnimSequencer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AnimSequencer::~AnimSequencer()
 {
     if (this->IsValid())
@@ -38,6 +42,8 @@ AnimSequencer::~AnimSequencer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AnimSequencer::Setup(const Ptr<AnimResource>& animRsrc)
 {
@@ -527,6 +533,8 @@ AnimSequencer::StartAsyncEvaluation(const Ptr<JobPort>& jobPort)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AnimSequencer::UpdateTimeActiveAnimJobs(Timing::Tick time)
 {
@@ -540,6 +548,8 @@ AnimSequencer::UpdateTimeActiveAnimJobs(Timing::Tick time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Ptr<AnimJob> >
 AnimSequencer::GetAllAnimJobs() const
 {
@@ -555,6 +565,8 @@ AnimSequencer::GetAllAnimJobs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Ptr<AnimJob> >
 AnimSequencer::GetAnimJobsByTrackIndex(IndexT trackIndex) const
 {
@@ -579,6 +591,8 @@ AnimSequencer::GetAnimJobsByTrackIndex(IndexT trackIndex) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<Ptr<AnimJob> >
 AnimSequencer::GetAnimJobsByName(const Util::StringAtom& name) const
 {

@@ -81,6 +81,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360IpAddress::operator==(const Win360IpAddress& rhs) const
 {
@@ -89,6 +91,8 @@ Win360IpAddress::operator==(const Win360IpAddress& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360IpAddress::operator<(const Win360IpAddress& rhs) const
 {
@@ -103,6 +107,8 @@ Win360IpAddress::operator<(const Win360IpAddress& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Win360IpAddress::operator>(const Win360IpAddress& rhs) const
 {

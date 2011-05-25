@@ -30,6 +30,8 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreateModelEntity)
 {
     // create a new model entity
@@ -53,6 +55,8 @@ __StaticHandler(CreateModelEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, SetVisibility)
 {
     obj->SetVisible(msg->GetVisible());
@@ -62,6 +66,8 @@ __Handler(InternalModelEntity, SetVisibility)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, UpdModelNodeInstanceVisibility)
 {
     // need to defer handling until model is loaded
@@ -80,6 +86,8 @@ __Handler(InternalModelEntity, UpdModelNodeInstanceVisibility)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, UpdModelNodeInstanceShaderVariable)
 {
     Ptr<StateNodeInstance> stateNodeInst = RenderUtil::NodeLookupUtil::LookupStateNodeInstance(obj, msg->GetModelNodeInstanceName());
@@ -100,6 +108,8 @@ __Handler(InternalModelEntity, UpdModelNodeInstanceShaderVariable)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, SetAnimatorTime)
 {
     Ptr<AnimatorNodeInstance> nodeInst = RenderUtil::NodeLookupUtil::LookupAnimatorNodeInstance(obj, msg->GetNodeInstanceName());
@@ -110,6 +120,8 @@ __Handler(InternalModelEntity, SetAnimatorTime)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, AnimPlayClip)
 {
     // character related messages can only be handled once character has loaded
@@ -139,6 +151,8 @@ __Handler(InternalModelEntity, AnimPlayClip)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, AnimStopTrack)
 {
     // character related messages can only be handled once character has loaded
@@ -154,6 +168,8 @@ __Handler(InternalModelEntity, AnimStopTrack)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, AnimStopAllTracks)
 {
     // character related messages can only be handled once character has loaded
@@ -169,6 +185,8 @@ __Handler(InternalModelEntity, AnimStopAllTracks)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, AnimModifyBlendWeight)
 {
     // character related messages can only be handled once character has loaded
@@ -192,6 +210,8 @@ __Handler(InternalModelEntity, AnimModifyBlendWeight)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, AnimModifyTimeFactor)
 {
     // character related messages can only be handled once character has loaded
@@ -236,6 +256,8 @@ __Handler(InternalModelEntity, AnimIsClipPlaying)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, ApplySkinList)
 {
     // character related messages can only be handled once character has loaded
@@ -259,6 +281,8 @@ __Handler(InternalModelEntity, ApplySkinList)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, ShowSkin)
 {
     // character related messages can only be handled once character has loaded
@@ -274,6 +298,8 @@ __Handler(InternalModelEntity, ShowSkin)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, HideSkin)
 {
     // character related messages can only be handled once character has loaded
@@ -289,6 +315,8 @@ __Handler(InternalModelEntity, HideSkin)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, SetVariation)
 {
     // character related messages can only be handled once character has loaded
@@ -304,6 +332,8 @@ __Handler(InternalModelEntity, SetVariation)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, AddTrackedCharJoint)
 {
     // character related messages can only be handled once character has loaded
@@ -319,6 +349,8 @@ __Handler(InternalModelEntity, AddTrackedCharJoint)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, BindAttachment)
 {
     Ptr<InternalGraphicsEntity> attachment = msg->GetEntityToAttachObjectRef()->Ref<InternalGraphicsEntity>();
@@ -333,6 +365,8 @@ __Handler(InternalModelEntity, BindAttachment)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, UnbindAttachment)
 {
     Ptr<InternalGraphicsEntity> attachment = msg->GetEntityToAttachObjectRef()->Ref<InternalGraphicsEntity>();
@@ -344,6 +378,8 @@ __Handler(InternalModelEntity, UnbindAttachment)
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalModelEntity, SwitchAttachmentToNewJoint)
 {
     const Ptr<InternalGraphicsEntity>& attachment = msg->GetEntityToAttachObjectRef()->Ref<InternalGraphicsEntity>();

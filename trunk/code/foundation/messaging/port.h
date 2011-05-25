@@ -61,6 +61,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 SizeT
 Port::GetNumHandlers() const
@@ -69,6 +71,8 @@ Port::GetNumHandlers() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void
 Port::RegisterMessage(const Id& msgId)
@@ -82,6 +86,8 @@ Port::RegisterMessage(const Id& msgId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::Array<const Id*>&
 Port::GetAcceptedMessages() const
@@ -90,6 +96,8 @@ Port::GetAcceptedMessages() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Ptr<Handler>&
 Port::GetHandlerAtIndex(IndexT i) const
@@ -98,6 +106,8 @@ Port::GetHandlerAtIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 bool 
 Port::AcceptsMessage(const Id& msgId) const

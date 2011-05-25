@@ -67,6 +67,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequestHandler::SetName(const Util::String& n)
 {
@@ -74,6 +76,8 @@ HttpRequestHandler::SetName(const Util::String& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 HttpRequestHandler::GetName() const
 {
@@ -81,6 +85,8 @@ HttpRequestHandler::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequestHandler::SetDesc(const Util::String& d)
 {
@@ -88,6 +94,8 @@ HttpRequestHandler::SetDesc(const Util::String& d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 HttpRequestHandler::GetDesc() const
 {
@@ -95,6 +103,8 @@ HttpRequestHandler::GetDesc() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 HttpRequestHandler::SetRootLocation(const Util::String& l)
 {
@@ -102,6 +112,8 @@ HttpRequestHandler::SetRootLocation(const Util::String& l)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::String&
 HttpRequestHandler::GetRootLocation() const
 {

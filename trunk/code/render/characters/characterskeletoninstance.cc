@@ -28,6 +28,8 @@ extern void CharEvalSkeletonJobFunc(const JobFuncContext& ctx);
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkeletonInstance::CharacterSkeletonInstance() :
     skeletonPtr(0),
     isValid(false),
@@ -37,6 +39,8 @@ CharacterSkeletonInstance::CharacterSkeletonInstance() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 CharacterSkeletonInstance::~CharacterSkeletonInstance()
 {
     n_assert(!this->IsValid());
@@ -74,6 +78,8 @@ CharacterSkeletonInstance::Setup(const CharacterSkeleton& skeleton)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 CharacterSkeletonInstance::Discard()
 {
@@ -234,6 +240,8 @@ CharacterSkeletonInstance::RenderDebug(const matrix44& modelTransform)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 CharacterSkeletonInstance::ApplyJointComponents(const Util::FixedArray<CharJointComponents>& set)
 {

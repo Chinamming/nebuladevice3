@@ -18,6 +18,8 @@ using namespace Threading;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextRenderer::D3D9TextRenderer():
     d3dFont(0),
     d3dSprite(0)
@@ -26,6 +28,8 @@ D3D9TextRenderer::D3D9TextRenderer():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextRenderer::~D3D9TextRenderer()
 {
     if (this->IsOpen())
@@ -36,6 +40,8 @@ D3D9TextRenderer::~D3D9TextRenderer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TextRenderer::Open()
 {
@@ -68,19 +74,17 @@ D3D9TextRenderer::Open()
     // create sprite object for batched rendering
     hr = D3DXCreateSprite(d3d9Dev, &(this->d3dSprite));
     n_assert(SUCCEEDED(hr));
-
-	this->AddToResourceEventHandler();
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TextRenderer::Close()
 {
     n_assert(this->IsOpen());
     n_assert(0 != this->d3dFont);
     n_assert(0 != this->d3dSprite);
-
-	this->RemoveFromResourceEventHandler();
 
     // release d3d resources
     this->d3dFont->Release();
@@ -133,34 +137,6 @@ D3D9TextRenderer::DrawTextElements()
         // are from other threads and will be deleted through DeleteTextByThreadId()
         this->DeleteTextElementsByThreadId(Thread::GetMyThreadId());
     }
-}
-
-//------------------------------------------------------------------------------
-void
-D3D9TextRenderer::OnLostDevice()
-{
-	if (!this->isLosted)
-	{
-		HRESULT hr = this->d3dFont->OnLostDevice();
-		n_assert(SUCCEEDED(hr));
-		hr = this->d3dSprite->OnLostDevice();
-		n_assert(SUCCEEDED(hr));
-		this->isLosted = true;
-	}
-}
-
-//------------------------------------------------------------------------------
-void
-D3D9TextRenderer::OnResetDevice()
-{
-	if (this->isLosted)
-	{
-		HRESULT hr = this->d3dSprite->OnResetDevice();
-		n_assert(SUCCEEDED(hr));
-		hr = this->d3dFont->OnResetDevice();
-		n_assert(SUCCEEDED(hr));
-		this->isLosted = false;
-	}
 }
 
 } // namespace Direct3D9

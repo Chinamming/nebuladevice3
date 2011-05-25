@@ -10,9 +10,9 @@
 #include "toolkitutil/texutil/imageconverter.h"
 #include "util/guid.h"
 #include "toolkitutil/texutil/win32textureconversionjob.h"
-#include "toolkitutil/texutil/xbox360textureconversionjob.h"
-#include "toolkitutil/texutil/ps3textureconversionjob.h"
-#include "toolkitutil/texutil/wiitextureconversionjob.h"
+//#include "toolkitutil/texutil/xbox360textureconversionjob.h"
+//#include "toolkitutil/texutil/ps3textureconversionjob.h"
+//#include "toolkitutil/texutil/wiitextureconversionjob.h"
 #include "timing/timer.h"
 
 
@@ -190,43 +190,43 @@ TextureConverter::ConvertTexture(const String& srcTexPath, const String& tmpDir)
     }
     else if (this->platform == Platform::Xbox360)
     {
-        Xbox360TextureConversionJob job;
-        job.SetLogger(this->logger);
-        job.SetSrcPath(srcTexPath);
-        job.SetDstPath(dstTexPath);
-        job.SetTmpDir(tmpDir);
-        job.SetTexAttrTable(this->textureAttrTable);
-        job.SetToolPath(this->toolPath);
-        job.SetForceFlag(this->force);
-        job.SetQuietFlag(this->quiet);
-        job.Convert();
+        //Xbox360TextureConversionJob job;
+        //job.SetLogger(this->logger);
+        //job.SetSrcPath(srcTexPath);
+        //job.SetDstPath(dstTexPath);
+        //job.SetTmpDir(tmpDir);
+        //job.SetTexAttrTable(this->textureAttrTable);
+        //job.SetToolPath(this->toolPath);
+        //job.SetForceFlag(this->force);
+        //job.SetQuietFlag(this->quiet);
+        //job.Convert();
     }
     else if (this->platform == Platform::PS3)
     {
-        PS3TextureConversionJob job;
-        job.SetLogger(this->logger);
-        job.SetSrcPath(srcTexPath);
-        job.SetDstPath(dstTexPath);
-        job.SetTmpDir(tmpDir);
-        job.SetTexAttrTable(this->textureAttrTable);
-        job.SetToolPath(this->toolPath);
-        job.SetForceFlag(this->force);
-        job.SetQuietFlag(this->quiet);
-        job.SetNvdxtPath(this->ps3NvdxtPath);
-        job.Convert();
+        //PS3TextureConversionJob job;
+        //job.SetLogger(this->logger);
+        //job.SetSrcPath(srcTexPath);
+        //job.SetDstPath(dstTexPath);
+        //job.SetTmpDir(tmpDir);
+        //job.SetTexAttrTable(this->textureAttrTable);
+        //job.SetToolPath(this->toolPath);
+        //job.SetForceFlag(this->force);
+        //job.SetQuietFlag(this->quiet);
+        //job.SetNvdxtPath(this->ps3NvdxtPath);
+        //job.Convert();
     }
     else if (this->platform == Platform::Wii)
     {
-        WiiTextureConversionJob job;
-        job.SetLogger(this->logger);
-        job.SetSrcPath(srcTexPath);
-        job.SetDstPath(dstTexPath);
-        job.SetTmpDir(tmpDir);
-        job.SetTexAttrTable(this->textureAttrTable);
-        job.SetToolPath(this->toolPath);
-        job.SetForceFlag(this->force);
-        job.SetQuietFlag(this->quiet);
-        job.Convert();
+        //WiiTextureConversionJob job;
+        //job.SetLogger(this->logger);
+        //job.SetSrcPath(srcTexPath);
+        //job.SetDstPath(dstTexPath);
+        //job.SetTmpDir(tmpDir);
+        //job.SetTexAttrTable(this->textureAttrTable);
+        //job.SetToolPath(this->toolPath);
+        //job.SetForceFlag(this->force);
+        //job.SetQuietFlag(this->quiet);
+        //job.Convert();
     }
     else
     {  

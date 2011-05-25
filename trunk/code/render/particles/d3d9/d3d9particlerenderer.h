@@ -73,6 +73,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 IndexT 
 D3D9ParticleRenderer::GetCurParticleVertexIndex() const
@@ -81,6 +83,8 @@ D3D9ParticleRenderer::GetCurParticleVertexIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 D3D9ParticleRenderer::AddCurParticleVertexIndex(IndexT add)
@@ -90,6 +94,8 @@ D3D9ParticleRenderer::AddCurParticleVertexIndex(IndexT add)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void* 
 D3D9ParticleRenderer::GetCurVertexPtr()
@@ -98,6 +104,8 @@ D3D9ParticleRenderer::GetCurVertexPtr()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 D3D9ParticleRenderer::SetCurVertexPtr(void *ptr)
@@ -106,6 +114,8 @@ D3D9ParticleRenderer::SetCurVertexPtr(void *ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Ptr<CoreGraphics::VertexBuffer>&
 D3D9ParticleRenderer::GetParticleVertexBuffer() const
@@ -114,6 +124,8 @@ D3D9ParticleRenderer::GetParticleVertexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Ptr<CoreGraphics::VertexBuffer>&
 D3D9ParticleRenderer::GetCornerVertexBuffer() const
@@ -122,6 +134,8 @@ D3D9ParticleRenderer::GetCornerVertexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Ptr<CoreGraphics::IndexBuffer>& 
 D3D9ParticleRenderer::GetCornerIndexBuffer() const
@@ -130,6 +144,8 @@ D3D9ParticleRenderer::GetCornerIndexBuffer() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 CoreGraphics::PrimitiveGroup& 
 D3D9ParticleRenderer::GetPrimitiveGroup()
@@ -138,6 +154,8 @@ D3D9ParticleRenderer::GetPrimitiveGroup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Ptr<CoreGraphics::VertexLayout>& 
 D3D9ParticleRenderer::GetVertexLayout() const

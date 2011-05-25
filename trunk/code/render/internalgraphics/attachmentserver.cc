@@ -25,18 +25,24 @@ using namespace Characters;
 using namespace Animation;
 
 //------------------------------------------------------------------------------
+/**
+*/
 AttachmentServer::AttachmentServer() : isOpen(false)
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 AttachmentServer::~AttachmentServer()
 {
     __DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 AttachmentServer::Open()
 {
@@ -46,6 +52,8 @@ AttachmentServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AttachmentServer::Close()
 {
@@ -57,6 +65,8 @@ AttachmentServer::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AttachmentServer::AttachEntityTemporary(const Math::matrix44& offset, 
                                         const ClearType& clearType, 
@@ -90,6 +100,8 @@ AttachmentServer::AttachEntityTemporary(const Math::matrix44& offset,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AttachmentServer::AttachEntity(const Math::matrix44& offset,
                                const ClearType& clearType,
@@ -112,6 +124,8 @@ AttachmentServer::AttachEntity(const Math::matrix44& offset,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AttachmentServer::SwitchEntity(const Util::StringAtom& oldJoint, const Util::StringAtom& newJoint, const Ptr<InternalModelEntity>&  baseEntity, const Ptr<InternalGraphicsEntity>& entityToAttach)
 {    
@@ -133,6 +147,8 @@ AttachmentServer::SwitchEntity(const Util::StringAtom& oldJoint, const Util::Str
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 AttachmentServer::DetachEntity(const ClearType& clearType,
                                const Util::StringAtom& joint,
@@ -233,6 +249,8 @@ AttachmentServer::DetachEntity(const ClearType& clearType,
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AttachmentServer::DetachEntity(const Ptr<InternalGraphics::InternalGraphicsEntity>& entity)
 {
@@ -253,6 +271,8 @@ AttachmentServer::DetachEntity(const Ptr<InternalGraphics::InternalGraphicsEntit
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AttachmentServer::RemoveInvalidAttachments()
 {
@@ -380,6 +400,8 @@ AttachmentServer::OnFrame(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 AttachmentServer::SetVisibilityOnAttachments(const Ptr<InternalGraphics::InternalModelEntity>& baseEntity, bool visible)
 {

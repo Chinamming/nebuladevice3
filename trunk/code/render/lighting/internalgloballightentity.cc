@@ -13,16 +13,20 @@ using namespace Math;
 using namespace Messaging;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalGlobalLightEntity::InternalGlobalLightEntity() :
     backLightColor(0.0f, 0.0f, 0.0f, 0.0f),
     ambientLightColor(0.0f, 0.0f, 0.0f, 0.0f),
     lightDir(0.0f, 0.0f, -1.0f),
-    backLightOffset(0.3)
+    backLightOffset(0.3f)
 {
     this->SetLightType(LightType::Global);
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ClipStatus::Type
 InternalGlobalLightEntity::ComputeClipStatus(const Math::bbox& box)
 {
@@ -33,6 +37,8 @@ InternalGlobalLightEntity::ComputeClipStatus(const Math::bbox& box)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalGlobalLightEntity::OnTransformChanged()
 {
@@ -50,6 +56,8 @@ InternalGlobalLightEntity::OnTransformChanged()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 InternalGlobalLightEntity::OnRenderDebug()
 {

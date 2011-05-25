@@ -45,6 +45,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 PoolLoadingResource::PoolLoadingResource()
 {
@@ -52,6 +54,8 @@ PoolLoadingResource::PoolLoadingResource()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 PoolLoadingResource::~PoolLoadingResource()
 {
@@ -59,6 +63,8 @@ PoolLoadingResource::~PoolLoadingResource()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ResourceSlot>&
 PoolLoadingResource::GetNewSlot() const
 {
@@ -66,6 +72,8 @@ PoolLoadingResource::GetNewSlot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ResourceSlot>&
 PoolLoadingResource::GetOldSlot() const
 {
@@ -73,6 +81,8 @@ PoolLoadingResource::GetOldSlot() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PoolLoadingResource::SetTargetSlot(const Ptr<ResourceSlot>& targetSlot)
 {
@@ -80,6 +90,8 @@ PoolLoadingResource::SetTargetSlot(const Ptr<ResourceSlot>& targetSlot)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 PoolLoadingResource::SetSourceSlot(const Ptr<ResourceSlot>& srcSlot)
 {

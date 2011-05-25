@@ -17,6 +17,8 @@ using namespace CoreGraphics;
 using namespace Shared;
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalCameraEntity::InternalCameraEntity()
 {
     this->SetType(InternalGraphicsEntityType::Camera);
@@ -25,12 +27,16 @@ InternalCameraEntity::InternalCameraEntity()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InternalCameraEntity::~InternalCameraEntity()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 InternalCameraEntity::IsAttachedToView() const
 {
@@ -38,6 +44,8 @@ InternalCameraEntity::IsAttachedToView() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalCameraEntity::OnAttachToView(const Ptr<InternalView>& v)
 {
@@ -46,6 +54,8 @@ InternalCameraEntity::OnAttachToView(const Ptr<InternalView>& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalCameraEntity::OnRemoveFromView(const Ptr<InternalView>& v)
 {
@@ -54,6 +64,8 @@ InternalCameraEntity::OnRemoveFromView(const Ptr<InternalView>& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalCameraEntity::OnDeactivate()
 {
@@ -89,6 +101,8 @@ InternalCameraEntity::ComputeClipStatus(const bbox& box)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 InternalCameraEntity::SetCameraSettings(const CameraSettings& settings)
 {

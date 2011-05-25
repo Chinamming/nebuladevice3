@@ -45,6 +45,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StreamTextureSaverBase::SetStream(const Ptr<IO::Stream>& s)
 {
@@ -52,6 +54,8 @@ StreamTextureSaverBase::SetStream(const Ptr<IO::Stream>& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<IO::Stream>&
 StreamTextureSaverBase::GetStream() const
 {
@@ -59,6 +63,8 @@ StreamTextureSaverBase::GetStream() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StreamTextureSaverBase::SetFormat(CoreGraphics::ImageFileFormat::Code fmt)
 {
@@ -66,6 +72,8 @@ StreamTextureSaverBase::SetFormat(CoreGraphics::ImageFileFormat::Code fmt)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CoreGraphics::ImageFileFormat::Code
 StreamTextureSaverBase::GetFormat() const
 {
@@ -73,6 +81,8 @@ StreamTextureSaverBase::GetFormat() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 StreamTextureSaverBase::SetMipLevel(IndexT l)
 {
@@ -80,6 +90,8 @@ StreamTextureSaverBase::SetMipLevel(IndexT l)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 StreamTextureSaverBase::GetMipLevel() const
 {

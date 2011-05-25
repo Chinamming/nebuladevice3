@@ -11,6 +11,8 @@ __ImplementClass(Base::GameContentServerBase, 'GCSB', Core::RefCounted);
 __ImplementInterfaceSingleton(Base::GameContentServerBase);
 
 //------------------------------------------------------------------------------
+/**
+*/
 GameContentServerBase::GameContentServerBase() :
     isValid(false)
 {
@@ -18,6 +20,8 @@ GameContentServerBase::GameContentServerBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 GameContentServerBase::~GameContentServerBase()
 {
     n_assert(!this->IsValid());
@@ -25,6 +29,8 @@ GameContentServerBase::~GameContentServerBase()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GameContentServerBase::Setup()
 {
@@ -36,6 +42,8 @@ GameContentServerBase::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 GameContentServerBase::Discard()
 {

@@ -24,12 +24,16 @@ __ImplementSingleton(CoreGraphics::DisplayDevice);
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayDevice::DisplayDevice()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayDevice::~DisplayDevice()
 {
     __DestructSingleton;

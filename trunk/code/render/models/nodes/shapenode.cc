@@ -18,6 +18,8 @@ using namespace Resources;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeNode::ShapeNode() :
     primGroupIndex(InvalidIndex)
 {
@@ -25,12 +27,16 @@ ShapeNode::ShapeNode() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ShapeNode::~ShapeNode()
 {
     n_assert(!this->managedMesh.isvalid());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ModelNodeInstance>
 ShapeNode::CreateNodeInstance() const
 {
@@ -39,6 +45,8 @@ ShapeNode::CreateNodeInstance() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ShapeNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 {
@@ -61,6 +69,8 @@ ShapeNode::ParseDataTag(const FourCC& fourCC, const Ptr<BinaryReader>& reader)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Resource::State
 ShapeNode::GetResourceState() const
 {
@@ -73,6 +83,8 @@ ShapeNode::GetResourceState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeNode::LoadResources()
 {    
@@ -91,6 +103,8 @@ ShapeNode::LoadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeNode::UnloadResources()
 {
@@ -105,6 +119,8 @@ ShapeNode::UnloadResources()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ShapeNode::ApplySharedState(IndexT frameIndex)
 {

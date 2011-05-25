@@ -91,6 +91,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 Dictionary<KEYTYPE, VALUETYPE>::Dictionary() :
     inBulkInsert(false)
@@ -99,6 +101,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Dictionary() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 Dictionary<KEYTYPE, VALUETYPE>::Dictionary(const Dictionary<KEYTYPE, VALUETYPE>& rhs) :
     keyValuePairs(rhs.keyValuePairs),
@@ -110,6 +114,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Dictionary(const Dictionary<KEYTYPE, VALUETYPE>&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::operator=(const Dictionary<KEYTYPE, VALUETYPE>& rhs)
 {
@@ -121,6 +127,8 @@ Dictionary<KEYTYPE, VALUETYPE>::operator=(const Dictionary<KEYTYPE, VALUETYPE>& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::Clear()
 {
@@ -131,6 +139,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> SizeT
 Dictionary<KEYTYPE, VALUETYPE>::Size() const
 {
@@ -138,6 +148,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> bool
 Dictionary<KEYTYPE, VALUETYPE>::IsEmpty() const
 {
@@ -145,6 +157,8 @@ Dictionary<KEYTYPE, VALUETYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::Add(const KeyValuePair<KEYTYPE, VALUETYPE>& kvp)
 {
@@ -159,6 +173,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Add(const KeyValuePair<KEYTYPE, VALUETYPE>& kvp)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::Reserve(SizeT numElements)
 {
@@ -166,6 +182,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Reserve(SizeT numElements)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::BeginBulkAdd()
 {
@@ -176,6 +194,8 @@ Dictionary<KEYTYPE, VALUETYPE>::BeginBulkAdd()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::EndBulkAdd()
 {
@@ -187,6 +207,8 @@ Dictionary<KEYTYPE, VALUETYPE>::EndBulkAdd()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::Add(const KEYTYPE& key, const VALUETYPE& value)
 {
@@ -203,6 +225,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Add(const KEYTYPE& key, const VALUETYPE& value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::Erase(const KEYTYPE& key)
 {
@@ -217,6 +241,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Erase(const KEYTYPE& key)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> void
 Dictionary<KEYTYPE, VALUETYPE>::EraseAtIndex(IndexT index)
 {
@@ -227,6 +253,8 @@ Dictionary<KEYTYPE, VALUETYPE>::EraseAtIndex(IndexT index)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> IndexT
 Dictionary<KEYTYPE, VALUETYPE>::FindIndex(const KEYTYPE& key) const
 {
@@ -237,6 +265,8 @@ Dictionary<KEYTYPE, VALUETYPE>::FindIndex(const KEYTYPE& key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> bool
 Dictionary<KEYTYPE, VALUETYPE>::Contains(const KEYTYPE& key) const
 {
@@ -247,6 +277,8 @@ Dictionary<KEYTYPE, VALUETYPE>::Contains(const KEYTYPE& key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> const KEYTYPE&
 Dictionary<KEYTYPE, VALUETYPE>::KeyAtIndex(IndexT index) const
 {
@@ -257,6 +289,8 @@ Dictionary<KEYTYPE, VALUETYPE>::KeyAtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> VALUETYPE&
 Dictionary<KEYTYPE, VALUETYPE>::ValueAtIndex(IndexT index)
 {
@@ -267,6 +301,8 @@ Dictionary<KEYTYPE, VALUETYPE>::ValueAtIndex(IndexT index)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> const VALUETYPE&
 Dictionary<KEYTYPE, VALUETYPE>::ValueAtIndex(IndexT index) const
 {
@@ -277,6 +313,8 @@ Dictionary<KEYTYPE, VALUETYPE>::ValueAtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> KeyValuePair<KEYTYPE, VALUETYPE>&
 Dictionary<KEYTYPE, VALUETYPE>::KeyValuePairAtIndex(IndexT index) const
 {
@@ -287,6 +325,8 @@ Dictionary<KEYTYPE, VALUETYPE>::KeyValuePairAtIndex(IndexT index) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> VALUETYPE&
 Dictionary<KEYTYPE, VALUETYPE>::operator[](const KEYTYPE& key)
 {
@@ -298,6 +338,8 @@ Dictionary<KEYTYPE, VALUETYPE>::operator[](const KEYTYPE& key)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> const VALUETYPE&
 Dictionary<KEYTYPE, VALUETYPE>::operator[](const KEYTYPE& key) const
 {
@@ -309,6 +351,8 @@ Dictionary<KEYTYPE, VALUETYPE>::operator[](const KEYTYPE& key) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 template<class RETURNTYPE>
 RETURNTYPE
@@ -327,6 +371,8 @@ Dictionary<KEYTYPE, VALUETYPE>::ValuesAs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 Array<VALUETYPE>
 Dictionary<KEYTYPE, VALUETYPE>::ValuesAsArray() const
@@ -335,6 +381,8 @@ Dictionary<KEYTYPE, VALUETYPE>::ValuesAsArray() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE> 
 template<class RETURNTYPE>
 RETURNTYPE
@@ -353,6 +401,8 @@ Dictionary<KEYTYPE, VALUETYPE>::KeysAs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class KEYTYPE, class VALUETYPE>
 Array<KEYTYPE>
 Dictionary<KEYTYPE, VALUETYPE>::KeysAsArray() const

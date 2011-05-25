@@ -36,6 +36,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline 
 DebugMessage::DebugMessage() :
     portNum(0)
@@ -44,6 +46,8 @@ DebugMessage::DebugMessage() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 DebugMessage::DebugMessage(ushort p, const Ptr<IO::Stream>& s) :
     portNum(p),
@@ -53,6 +57,8 @@ DebugMessage::DebugMessage(ushort p, const Ptr<IO::Stream>& s) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ushort
 DebugMessage::GetPort() const
 {
@@ -60,6 +66,8 @@ DebugMessage::GetPort() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<IO::Stream>&
 DebugMessage::GetStream() const
 {
@@ -67,6 +75,8 @@ DebugMessage::GetStream() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 DebugMessage::IsValid() const
 {

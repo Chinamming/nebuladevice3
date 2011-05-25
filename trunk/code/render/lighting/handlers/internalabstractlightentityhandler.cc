@@ -15,18 +15,24 @@ namespace Messaging
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalAbstractLightEntity, SetLightColor)
 {
     obj->SetColor(msg->GetColor());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalAbstractLightEntity, SetLightCastShadows)
 {
     obj->SetCastShadows(msg->GetCastShadows());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Dispatcher(InternalAbstractLightEntity)
 {
     __Handle(InternalAbstractLightEntity, SetLightColor);

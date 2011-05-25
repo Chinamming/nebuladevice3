@@ -70,11 +70,15 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleSystemNode::SetEmitterMeshResourceId(const Resources::ResourceId& resId)
 {
     this->meshResId = resId;
 }//------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 ParticleSystemNode::GetEmitterMeshResourceId() const
 {
@@ -82,6 +86,8 @@ ParticleSystemNode::GetEmitterMeshResourceId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleSystemNode::SetPrimitiveGroupIndex(IndexT index)
 {
@@ -89,6 +95,8 @@ ParticleSystemNode::SetPrimitiveGroupIndex(IndexT index)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ParticleSystemNode::GetPrimitiveGroupIndex() const
 {
@@ -96,6 +104,8 @@ ParticleSystemNode::GetPrimitiveGroupIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleSystemNode::SetEmitterAttrs(const EmitterAttrs& attrs)
 {
@@ -103,6 +113,8 @@ ParticleSystemNode::SetEmitterAttrs(const EmitterAttrs& attrs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const EmitterAttrs&
 ParticleSystemNode::GetEmitterAttrs() const
 {
@@ -110,6 +122,8 @@ ParticleSystemNode::GetEmitterAttrs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ParticleSystem>&
 ParticleSystemNode::GetParticleSystem() const
 {

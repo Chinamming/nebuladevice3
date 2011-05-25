@@ -19,12 +19,16 @@ __ImplementClass(CoreGraphics::TransformDevice, 'TRDV', PS3::PS3TransformDevice)
 __ImplementSingleton(CoreGraphics::TransformDevice);
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformDevice::TransformDevice()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TransformDevice::~TransformDevice()
 {
     __DestructSingleton;

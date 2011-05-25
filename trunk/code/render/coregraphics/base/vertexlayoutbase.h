@@ -61,6 +61,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VertexLayoutBase::IsValid() const
 {
@@ -68,6 +70,8 @@ VertexLayoutBase::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VertexLayoutBase::GetNumComponents() const
 {
@@ -75,6 +79,8 @@ VertexLayoutBase::GetNumComponents() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const CoreGraphics::VertexComponent&
 VertexLayoutBase::GetComponentAt(IndexT i) const
 {
@@ -82,6 +88,8 @@ VertexLayoutBase::GetComponentAt(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VertexLayoutBase::HasComponent(CoreGraphics::VertexComponent::SemanticName semName, IndexT semIndex) const
 {
@@ -89,6 +97,8 @@ VertexLayoutBase::HasComponent(CoreGraphics::VertexComponent::SemanticName semNa
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 VertexLayoutBase::GetVertexByteSize() const
 {
@@ -96,6 +106,8 @@ VertexLayoutBase::GetVertexByteSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const Util::Array<CoreGraphics::VertexComponent>& 
 VertexLayoutBase::GetVertexComponents() const

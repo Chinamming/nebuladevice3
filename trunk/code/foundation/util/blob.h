@@ -86,6 +86,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void*
 Blob::operator new(size_t size)
 {
@@ -101,6 +103,8 @@ Blob::operator new(size_t size)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 Blob::operator delete(void* ptr)
 {
@@ -112,6 +116,8 @@ Blob::operator delete(void* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Setup()
 {
@@ -120,6 +126,8 @@ Blob::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Shutdown()
 {
@@ -129,6 +137,8 @@ Blob::Shutdown()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Blob::Blob() :
     ptr(0),
@@ -139,6 +149,8 @@ Blob::Blob() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::IsValid() const
 {
@@ -146,6 +158,8 @@ Blob::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Delete()
 {
@@ -160,6 +174,8 @@ Blob::Delete()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Blob::~Blob()
 {
@@ -167,6 +183,8 @@ Blob::~Blob()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Allocate(SizeT s)
 {
@@ -178,6 +196,8 @@ Blob::Allocate(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Copy(const void* fromPtr, SizeT fromSize)
 {
@@ -194,6 +214,8 @@ Blob::Copy(const void* fromPtr, SizeT fromSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Blob::Blob(const void* fromPtr, SizeT fromSize) :
     ptr(0),
@@ -204,6 +226,8 @@ Blob::Blob(const void* fromPtr, SizeT fromSize) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Blob::Blob(const Blob& rhs) :
     ptr(0),
@@ -217,6 +241,8 @@ Blob::Blob(const Blob& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 Blob::Blob(SizeT s) :
     ptr(0),
@@ -227,6 +253,8 @@ Blob::Blob(SizeT s) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::operator=(const Blob& rhs)
 {
@@ -237,6 +265,8 @@ Blob::operator=(const Blob& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::operator==(const Blob& rhs) const
 {
@@ -244,6 +274,8 @@ Blob::operator==(const Blob& rhs) const
 }
             
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::operator!=(const Blob& rhs) const
 {
@@ -251,6 +283,8 @@ Blob::operator!=(const Blob& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::operator>(const Blob& rhs) const
 {
@@ -258,6 +292,8 @@ Blob::operator>(const Blob& rhs) const
 }
             
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::operator<(const Blob& rhs) const
 {
@@ -265,6 +301,8 @@ Blob::operator<(const Blob& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::operator>=(const Blob& rhs) const
 {
@@ -272,6 +310,8 @@ Blob::operator>=(const Blob& rhs) const
 }
             
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 Blob::operator<=(const Blob& rhs) const
 {
@@ -279,6 +319,8 @@ Blob::operator<=(const Blob& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Reserve(SizeT s)
 {
@@ -291,6 +333,8 @@ Blob::Reserve(SizeT s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Trim(SizeT trimSize)
 {
@@ -299,6 +343,8 @@ Blob::Trim(SizeT trimSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 Blob::Set(const void* fromPtr, SizeT fromSize)
 {
@@ -306,6 +352,8 @@ Blob::Set(const void* fromPtr, SizeT fromSize)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void*
 Blob::GetPtr() const
 {
@@ -314,6 +362,8 @@ Blob::GetPtr() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 Blob::Size() const
 {
@@ -322,6 +372,8 @@ Blob::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 Blob::HashCode() const
 {

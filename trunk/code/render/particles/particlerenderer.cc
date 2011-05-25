@@ -21,12 +21,16 @@ __ImplementClass(Particles::ParticleRenderer, 'PRRD', Base::ParticleRendererBase
 __ImplementSingleton(Particles::ParticleRenderer);
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleRenderer::ParticleRenderer()
 {
     __ConstructSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ParticleRenderer::~ParticleRenderer()
 {
     __DestructSingleton;

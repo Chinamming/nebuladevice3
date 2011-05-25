@@ -88,6 +88,7 @@ void DumpMemoryLeaks();
 #define __MEMORY_VALIDATE(s)
 } // namespace Memory
 
+#if( NEBULA3_EDITOR==0 )
 #ifdef new
 #undef new
 #endif
@@ -135,6 +136,7 @@ operator delete[](void* p)
 {
     Memory::Free(Memory::ObjectArrayHeap, p);
 }
+#endif
 
 #define n_new(type) new type
 #define n_new_array(type,size) new type[size]

@@ -20,11 +20,15 @@ using namespace IO;
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextureStreamer::D3D9TextureStreamer()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9TextureStreamer::~D3D9TextureStreamer()
 {
 }
@@ -165,6 +169,8 @@ D3D9TextureStreamer::SetupTexture2DFromStream(const Ptr<IO::Stream>& stream)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9TextureStreamer::SetupTextureCubeFromStream(const Ptr<IO::Stream>& stream)
 {
@@ -348,6 +354,8 @@ D3D9TextureStreamer::ReuseMips()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TextureStreamer::LockSurfaces(Array<D3DLOCKED_RECT>& lockedRects, const Ptr<Texture>& tex, SizeT numMipsToLock)
 {
@@ -385,6 +393,8 @@ D3D9TextureStreamer::LockSurfaces(Array<D3DLOCKED_RECT>& lockedRects, const Ptr<
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TextureStreamer::UnlockSurfaces(const Ptr<Texture>& tex)
 {
@@ -419,6 +429,8 @@ D3D9TextureStreamer::UnlockSurfaces(const Ptr<Texture>& tex)
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 D3D9TextureStreamer::BitsPerPixel(D3DFORMAT fmt) const
 {
@@ -555,6 +567,8 @@ D3D9TextureStreamer::GetSurfaceInfo(uint width, uint height, D3DFORMAT fmt, uint
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 uint
 D3D9TextureStreamer::GetNumRows(uint height, D3DFORMAT fmt) const
 {
@@ -570,6 +584,8 @@ D3D9TextureStreamer::GetNumRows(uint height, D3DFORMAT fmt) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9TextureStreamer::Reset()
 {

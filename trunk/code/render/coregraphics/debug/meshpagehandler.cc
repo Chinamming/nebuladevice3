@@ -20,6 +20,8 @@ using namespace Http;
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 MeshPageHandler::MeshPageHandler()
 {
     this->SetName("Meshes");
@@ -28,6 +30,8 @@ MeshPageHandler::MeshPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 MeshPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {
@@ -105,6 +109,8 @@ MeshPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 MeshPageHandler::HandleMeshInfoRequest(const ResourceId& resId, const Ptr<Stream>& responseContentStream)
 {

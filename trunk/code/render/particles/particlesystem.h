@@ -58,6 +58,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ParticleSystem::IsValid() const
 {
@@ -65,6 +67,8 @@ ParticleSystem::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const EmitterMesh&
 ParticleSystem::GetEmitterMesh() const
 {
@@ -72,6 +76,8 @@ ParticleSystem::GetEmitterMesh() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const EmitterAttrs&
 ParticleSystem::GetEmitterAttrs() const
 {
@@ -79,6 +85,8 @@ ParticleSystem::GetEmitterAttrs() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const EnvelopeSampleBuffer&
 ParticleSystem::GetEnvelopeSampleBuffer() const
 {

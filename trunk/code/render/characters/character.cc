@@ -10,6 +10,8 @@ namespace Characters
 __ImplementClass(Characters::Character, 'CRTR', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 Character::Character() :
     isValid(false)
 {
@@ -17,6 +19,8 @@ Character::Character() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Character::~Character()
 {
     n_assert(!this->IsValid());
@@ -35,6 +39,8 @@ Character::Setup()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 Character::Discard()
 {

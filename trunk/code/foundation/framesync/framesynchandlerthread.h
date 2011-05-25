@@ -108,6 +108,8 @@ private:
 };    
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameSyncHandlerThread::LockStepModeActive() const
 {
@@ -115,6 +117,8 @@ FrameSyncHandlerThread::LockStepModeActive() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FrameSyncHandlerThread::GetFrameCount() const
 {
@@ -123,6 +127,8 @@ FrameSyncHandlerThread::GetFrameCount() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 FrameSyncHandlerThread::IsFixedFrameTime()
 {

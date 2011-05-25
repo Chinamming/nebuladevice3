@@ -69,6 +69,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ModelServer::IsOpen() const
 {
@@ -76,6 +78,8 @@ ModelServer::IsOpen() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ModelServer::SetModelResourceMapper(const Ptr<Resources::ResourceMapper>& mapper)
 {
@@ -83,6 +87,8 @@ ModelServer::SetModelResourceMapper(const Ptr<Resources::ResourceMapper>& mapper
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Resources::ResourceMapper>&
 ModelServer::GetModelResourceMapper() const
 {

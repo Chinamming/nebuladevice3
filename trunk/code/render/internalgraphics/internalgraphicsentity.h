@@ -198,6 +198,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::SetSharedData(const Ptr<FrameSync::FrameSyncSharedData>& data)
 {
@@ -205,6 +207,8 @@ InternalGraphicsEntity::SetSharedData(const Ptr<FrameSync::FrameSyncSharedData>&
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::MarkRemove()
 {
@@ -212,6 +216,8 @@ InternalGraphicsEntity::MarkRemove()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalGraphicsEntity::IsMarkedForRemove() const
 {
@@ -219,6 +225,8 @@ InternalGraphicsEntity::IsMarkedForRemove() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline InternalGraphicsEntity::Id
 InternalGraphicsEntity::GetId() const
 {
@@ -226,6 +234,8 @@ InternalGraphicsEntity::GetId() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalGraphicsEntity::IsActive() const
 {
@@ -233,6 +243,8 @@ InternalGraphicsEntity::IsActive() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::SetValid(bool b)
 {
@@ -240,6 +252,8 @@ InternalGraphicsEntity::SetValid(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalGraphicsEntity::IsValid() const
 {
@@ -247,6 +261,8 @@ InternalGraphicsEntity::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::SetType(InternalGraphicsEntityType::Code t)
 {
@@ -254,6 +270,8 @@ InternalGraphicsEntity::SetType(InternalGraphicsEntityType::Code t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline InternalGraphicsEntityType::Code
 InternalGraphicsEntity::GetType() const
 {
@@ -261,6 +279,8 @@ InternalGraphicsEntity::GetType() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 InternalGraphicsEntity::GetTransform() const
 {
@@ -268,6 +288,8 @@ InternalGraphicsEntity::GetTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 InternalGraphicsEntity::IsVisible() const
 {
@@ -275,6 +297,8 @@ InternalGraphicsEntity::IsVisible() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::SetLocalBoundingBox(const Math::bbox& b)
 {
@@ -283,6 +307,8 @@ InternalGraphicsEntity::SetLocalBoundingBox(const Math::bbox& b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 InternalGraphicsEntity::GetLocalBoundingBox()
 {
@@ -290,6 +316,8 @@ InternalGraphicsEntity::GetLocalBoundingBox()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 InternalGraphicsEntity::GetGlobalBoundingBox()
 {
@@ -302,6 +330,8 @@ InternalGraphicsEntity::GetGlobalBoundingBox()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::AddLink(LinkType linkType, const Ptr<InternalGraphicsEntity>& entity)
 {
@@ -309,6 +339,8 @@ InternalGraphicsEntity::AddLink(LinkType linkType, const Ptr<InternalGraphicsEnt
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<Ptr<InternalGraphicsEntity> >&
 InternalGraphicsEntity::GetLinks(LinkType linkType) const
 {
@@ -316,6 +348,8 @@ InternalGraphicsEntity::GetLinks(LinkType linkType) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::UpdateClipStatus(Math::ClipStatus::Type c)
 {
@@ -324,6 +358,8 @@ InternalGraphicsEntity::UpdateClipStatus(Math::ClipStatus::Type c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 InternalGraphicsEntity::UpdateTime(Timing::Time t, Timing::Time f)
 {
@@ -334,6 +370,8 @@ InternalGraphicsEntity::UpdateTime(Timing::Time t, Timing::Time f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline Timing::Time
 InternalGraphicsEntity::GetEntityTime() const
 {

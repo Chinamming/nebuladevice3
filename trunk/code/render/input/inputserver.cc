@@ -25,12 +25,16 @@ __ImplementInterfaceSingleton(Input::InputServer);
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 InputServer::InputServer()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 InputServer::~InputServer()
 {
     __DestructInterfaceSingleton;

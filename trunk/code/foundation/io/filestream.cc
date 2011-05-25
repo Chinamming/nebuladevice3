@@ -13,6 +13,8 @@ using namespace Util;
 using namespace Core;
 
 //------------------------------------------------------------------------------
+/**
+*/
 FileStream::FileStream() :
     handle(0),
     mappedContent(0)
@@ -21,6 +23,8 @@ FileStream::FileStream() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 FileStream::~FileStream()
 {
     if (this->IsOpen())
@@ -30,6 +34,8 @@ FileStream::~FileStream()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FileStream::CanRead() const
 {
@@ -37,6 +43,8 @@ FileStream::CanRead() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FileStream::CanWrite() const
 {
@@ -44,6 +52,8 @@ FileStream::CanWrite() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FileStream::CanSeek() const
 {
@@ -61,6 +71,8 @@ FileStream::CanBeMapped() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Size
 FileStream::GetSize() const
 {
@@ -69,6 +81,8 @@ FileStream::GetSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Position
 FileStream::GetPosition() const
 {
@@ -77,6 +91,8 @@ FileStream::GetPosition() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FileStream::Open()
 {
@@ -99,6 +115,8 @@ FileStream::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FileStream::Close()
 {
@@ -114,6 +132,8 @@ FileStream::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FileStream::Write(const void* ptr, Size numBytes)
 {
@@ -128,6 +148,8 @@ FileStream::Write(const void* ptr, Size numBytes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Stream::Size
 FileStream::Read(void* ptr, Size numBytes)
 {
@@ -140,6 +162,8 @@ FileStream::Read(void* ptr, Size numBytes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FileStream::Seek(Offset offset, SeekOrigin origin)
 {
@@ -150,6 +174,8 @@ FileStream::Seek(Offset offset, SeekOrigin origin)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FileStream::Flush()
 {
@@ -160,6 +186,8 @@ FileStream::Flush()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 FileStream::Eof() const
 {
@@ -170,6 +198,8 @@ FileStream::Eof() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void*
 FileStream::Map()
 {
@@ -186,6 +216,8 @@ FileStream::Map()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 FileStream::Unmap()
 {

@@ -13,18 +13,24 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 HtmlPageWriter::HtmlPageWriter()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HtmlPageWriter::~HtmlPageWriter()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 HtmlPageWriter::Open()
 {
@@ -52,6 +58,8 @@ HtmlPageWriter::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HtmlPageWriter::Close()
 {
@@ -121,6 +129,8 @@ HtmlPageWriter::End(HtmlElement::Code element)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HtmlPageWriter::LineBreak()
 {
@@ -130,6 +140,8 @@ HtmlPageWriter::LineBreak()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HtmlPageWriter::HorizontalRule()
 {
@@ -139,6 +151,8 @@ HtmlPageWriter::HorizontalRule()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HtmlPageWriter::Text(const Util::String& str)
 {
@@ -146,6 +160,8 @@ HtmlPageWriter::Text(const Util::String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HtmlPageWriter::Element(HtmlElement::Code e, const Util::String& text)
 {
@@ -155,6 +171,8 @@ HtmlPageWriter::Element(HtmlElement::Code e, const Util::String& text)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 HtmlPageWriter::TableRow2(const String& col0, const String& col1)
 {

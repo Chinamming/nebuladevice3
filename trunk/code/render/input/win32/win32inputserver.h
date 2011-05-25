@@ -31,9 +31,6 @@ public:
     /// call after processing window events (reads DInput raw mouse events)
     void OnFrame();
 
-	/// get the Win32InputDisplayEventHandler to process window messages
-	const Ptr<Win32InputDisplayEventHandler>& GetDisplayEventHandler();
-
 protected:
     friend class Win32Mouse;
 
@@ -54,17 +51,12 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float2&
 Win32InputServer::GetMouseMovement() const
 {
     return this->mouseMovement;
-}
-
-//------------------------------------------------------------------------------
-inline const Ptr<Win32InputDisplayEventHandler>&
-Win32InputServer::GetDisplayEventHandler()
-{
-	return this->eventHandler;
 }
 
 } // namespace Win32

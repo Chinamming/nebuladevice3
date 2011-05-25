@@ -86,6 +86,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 SimpleTree<VALUETYPE>::Node::Node() :
     refCount(0),
@@ -95,6 +97,8 @@ SimpleTree<VALUETYPE>::Node::Node() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 SimpleTree<VALUETYPE>::Node::Node(const Node& p, const VALUETYPE& val) :
     refCount(0),    
@@ -107,6 +111,8 @@ SimpleTree<VALUETYPE>::Node::Node(const Node& p, const VALUETYPE& val) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 SimpleTree<VALUETYPE>::Node::~Node()
 {
@@ -116,6 +122,8 @@ SimpleTree<VALUETYPE>::Node::~Node()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 void
 SimpleTree<VALUETYPE>::Node::AddRef()
@@ -124,6 +132,8 @@ SimpleTree<VALUETYPE>::Node::AddRef()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 void
 SimpleTree<VALUETYPE>::Node::Release()
@@ -139,6 +149,8 @@ SimpleTree<VALUETYPE>::Node::Release()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 const typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::operator[](IndexT i) const
@@ -147,6 +159,8 @@ SimpleTree<VALUETYPE>::Node::operator[](IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::operator[](IndexT i)
@@ -155,6 +169,8 @@ SimpleTree<VALUETYPE>::Node::operator[](IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 const typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::Child(IndexT i) const
@@ -163,6 +179,8 @@ SimpleTree<VALUETYPE>::Node::Child(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::Child(IndexT i)
@@ -171,6 +189,8 @@ SimpleTree<VALUETYPE>::Node::Child(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 bool
 SimpleTree<VALUETYPE>::Node::HasParent() const
@@ -179,6 +199,8 @@ SimpleTree<VALUETYPE>::Node::HasParent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 const typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::Parent() const
@@ -190,6 +212,8 @@ SimpleTree<VALUETYPE>::Node::Parent() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::Parent()
@@ -201,6 +225,8 @@ SimpleTree<VALUETYPE>::Node::Parent()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 void
 SimpleTree<VALUETYPE>::Node::Clear()
@@ -209,6 +235,8 @@ SimpleTree<VALUETYPE>::Node::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 SizeT
 SimpleTree<VALUETYPE>::Node::Size() const
@@ -217,6 +245,8 @@ SimpleTree<VALUETYPE>::Node::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 bool
 SimpleTree<VALUETYPE>::Node::IsEmpty() const
@@ -225,6 +255,8 @@ SimpleTree<VALUETYPE>::Node::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::Front() const
@@ -233,6 +265,8 @@ SimpleTree<VALUETYPE>::Node::Front() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Node::Back() const
@@ -241,6 +275,8 @@ SimpleTree<VALUETYPE>::Node::Back() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 void
 SimpleTree<VALUETYPE>::Node::Append(const VALUETYPE& val)
@@ -250,6 +286,8 @@ SimpleTree<VALUETYPE>::Node::Append(const VALUETYPE& val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 void
 SimpleTree<VALUETYPE>::Node::Erase(IndexT i)
@@ -258,6 +296,8 @@ SimpleTree<VALUETYPE>::Node::Erase(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 const VALUETYPE& 
 SimpleTree<VALUETYPE>::Node::Value() const
@@ -266,6 +306,8 @@ SimpleTree<VALUETYPE>::Node::Value() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 VALUETYPE& 
 SimpleTree<VALUETYPE>::Node::Value()
@@ -274,6 +316,8 @@ SimpleTree<VALUETYPE>::Node::Value()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 IndexT
 SimpleTree<VALUETYPE>::Node::Find(const VALUETYPE& val) const
@@ -291,6 +335,8 @@ SimpleTree<VALUETYPE>::Node::Find(const VALUETYPE& val) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 SimpleTree<VALUETYPE>::SimpleTree()
 {
@@ -298,6 +344,8 @@ SimpleTree<VALUETYPE>::SimpleTree()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Root()
@@ -306,6 +354,8 @@ SimpleTree<VALUETYPE>::Root()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class VALUETYPE>
 const typename SimpleTree<VALUETYPE>::Node&
 SimpleTree<VALUETYPE>::Root() const

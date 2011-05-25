@@ -13,17 +13,23 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityContext::VisibilityContext():
     visibleFrameId(0)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityContext::~VisibilityContext()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityContext::Setup(const Ptr<InternalGraphics::InternalGraphicsEntity>& entity)
 {
@@ -33,6 +39,8 @@ VisibilityContext::Setup(const Ptr<InternalGraphics::InternalGraphicsEntity>& en
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityContext::UpdateBoundingBox(const Math::bbox& box)
 {

@@ -17,6 +17,8 @@ using namespace Util;
 using namespace CoreGraphics;
 using namespace Threading;
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityBox::VisibilityBox()    
 {                             
     boxData.isProcessed = false;
@@ -26,11 +28,15 @@ VisibilityBox::VisibilityBox()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityBox::~VisibilityBox()
 {  
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBox::AttachNeighbour(IndexT newNeighbour)
 {
@@ -50,6 +56,8 @@ VisibilityBox::SetTransform(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityBox::UpdateBoxFrustumFromTransform()
 {
@@ -58,6 +66,8 @@ VisibilityBox::UpdateBoxFrustumFromTransform()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 VisibilityBox::IsPointInside(const point& p) const
 {
@@ -132,6 +142,8 @@ VisibilityBox::RenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityBox::Discard()
 {
@@ -139,6 +151,8 @@ VisibilityBox::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const VisibilityBox::VisibilityBoxJobData& 
 VisibilityBox::GetVisibilityBoxJobData() const
 {

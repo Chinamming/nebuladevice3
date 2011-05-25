@@ -12,6 +12,8 @@ __ImplementClass(IO::ConsoleHandler, 'CONH', Core::RefCounted);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ConsoleHandler::ConsoleHandler() :
     isOpen(false)
 {
@@ -19,6 +21,8 @@ ConsoleHandler::ConsoleHandler() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ConsoleHandler::~ConsoleHandler()
 {
     if (this->IsOpen())
@@ -28,6 +32,8 @@ ConsoleHandler::~ConsoleHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Open()
 {
@@ -36,6 +42,8 @@ ConsoleHandler::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Close()
 {
@@ -44,6 +52,8 @@ ConsoleHandler::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Update()
 {
@@ -51,6 +61,8 @@ ConsoleHandler::Update()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Print(const String& /*s*/)
 {
@@ -58,6 +70,8 @@ ConsoleHandler::Print(const String& /*s*/)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Error(const String& /*s*/)
 {
@@ -65,6 +79,8 @@ ConsoleHandler::Error(const String& /*s*/)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Warning(const String& s)
 {
@@ -72,6 +88,8 @@ ConsoleHandler::Warning(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::Confirm(const String& s)
 {
@@ -79,6 +97,8 @@ ConsoleHandler::Confirm(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 ConsoleHandler::DebugOut(const String& s)
 {
@@ -86,6 +106,8 @@ ConsoleHandler::DebugOut(const String& s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 ConsoleHandler::HasInput()
 {
@@ -93,6 +115,8 @@ ConsoleHandler::HasInput()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 ConsoleHandler::GetInput()
 {

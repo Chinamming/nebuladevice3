@@ -95,6 +95,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetName(const Resources::ResourceId& resId)
 {
@@ -102,6 +104,8 @@ FramePassBase::SetName(const Resources::ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Resources::ResourceId&
 FramePassBase::GetName() const
 {
@@ -109,6 +113,8 @@ FramePassBase::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetShader(const Ptr<CoreGraphics::ShaderInstance>& shd)
 {
@@ -116,6 +122,8 @@ FramePassBase::SetShader(const Ptr<CoreGraphics::ShaderInstance>& shd)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderInstance>&
 FramePassBase::GetShader() const
 {
@@ -123,6 +131,8 @@ FramePassBase::GetShader() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetRenderTarget(const Ptr<CoreGraphics::RenderTarget>& rt)
 {
@@ -130,6 +140,8 @@ FramePassBase::SetRenderTarget(const Ptr<CoreGraphics::RenderTarget>& rt)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::RenderTarget>&
 FramePassBase::GetRenderTarget() const
 {
@@ -137,6 +149,8 @@ FramePassBase::GetRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetMultipleRenderTarget(const Ptr<CoreGraphics::MultipleRenderTarget>& rt)
 {
@@ -144,6 +158,8 @@ FramePassBase::SetMultipleRenderTarget(const Ptr<CoreGraphics::MultipleRenderTar
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::MultipleRenderTarget>&
 FramePassBase::GetMultipleRenderTarget() const
 {
@@ -151,6 +167,8 @@ FramePassBase::GetMultipleRenderTarget() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::AddVariable(const Ptr<CoreGraphics::ShaderVariableInstance>& var)
 {
@@ -158,6 +176,8 @@ FramePassBase::AddVariable(const Ptr<CoreGraphics::ShaderVariableInstance>& var)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FramePassBase::GetNumVariables() const
 {
@@ -165,6 +185,8 @@ FramePassBase::GetNumVariables() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<CoreGraphics::ShaderVariableInstance>& 
 FramePassBase::GetVariableByIndex(IndexT i) const
 {
@@ -172,6 +194,8 @@ FramePassBase::GetVariableByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::AddBatch(const Ptr<FrameBatch>& batch)
 {
@@ -179,6 +203,8 @@ FramePassBase::AddBatch(const Ptr<FrameBatch>& batch)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 FramePassBase::GetNumBatches() const
 {
@@ -186,6 +212,8 @@ FramePassBase::GetNumBatches() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<FrameBatch>&
 FramePassBase::GetBatchByIndex(IndexT i) const
 {
@@ -193,6 +221,8 @@ FramePassBase::GetBatchByIndex(IndexT i) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetClearFlags(uint f)
 {
@@ -200,6 +230,8 @@ FramePassBase::SetClearFlags(uint f)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 FramePassBase::GetClearFlags() const
 {
@@ -207,6 +239,8 @@ FramePassBase::GetClearFlags() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetClearColor(const Math::float4& c)
 {
@@ -214,6 +248,8 @@ FramePassBase::SetClearColor(const Math::float4& c)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::float4&
 FramePassBase::GetClearColor() const
 {
@@ -221,6 +257,8 @@ FramePassBase::GetClearColor() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetClearDepth(float d)
 {
@@ -228,6 +266,8 @@ FramePassBase::SetClearDepth(float d)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline float
 FramePassBase::GetClearDepth() const
 {
@@ -235,6 +275,8 @@ FramePassBase::GetClearDepth() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 FramePassBase::SetClearStencil(uchar s)
 {
@@ -242,6 +284,8 @@ FramePassBase::SetClearStencil(uchar s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uchar
 FramePassBase::GetClearStencil() const
 {

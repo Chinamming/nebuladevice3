@@ -18,18 +18,24 @@ using namespace Util;
 using namespace CoreGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 StateNodeInstance::StateNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StateNodeInstance::~StateNodeInstance()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StateNodeInstance::Discard()
 {
@@ -38,6 +44,8 @@ StateNodeInstance::Discard()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 StateNodeInstance::ApplyState()
 {
@@ -56,6 +64,8 @@ StateNodeInstance::ApplyState()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<ShaderVariableInstance>
 StateNodeInstance::CreateShaderVariableInstance(const ShaderVariable::Semantic& sem)
 {
@@ -75,6 +85,8 @@ StateNodeInstance::CreateShaderVariableInstance(const ShaderVariable::Semantic& 
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StateNodeInstance::HasShaderVariableInstance(const ShaderVariable::Semantic& sem) const
 {
@@ -82,6 +94,8 @@ StateNodeInstance::HasShaderVariableInstance(const ShaderVariable::Semantic& sem
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const Ptr<ShaderVariableInstance>&
 StateNodeInstance::GetShaderVariableInstance(const ShaderVariable::Semantic& sem) const
 {

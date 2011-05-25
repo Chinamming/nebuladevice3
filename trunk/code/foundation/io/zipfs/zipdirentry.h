@@ -50,6 +50,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ZipDirEntry::SetName(const Util::StringAtom& n)
 {
@@ -57,6 +59,8 @@ ZipDirEntry::SetName(const Util::StringAtom& n)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ZipDirEntry::GetName() const
 {
@@ -64,6 +68,8 @@ ZipDirEntry::GetName() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<ZipDirEntry>&
 ZipDirEntry::GetDirEntries() const
 {
@@ -71,6 +77,8 @@ ZipDirEntry::GetDirEntries() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::Array<ZipFileEntry>&
 ZipDirEntry::GetFileEntries() const
 {

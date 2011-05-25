@@ -10,6 +10,8 @@ namespace Messaging
 __ImplementClass(Messaging::Handler, 'MHDL', Core::RefCounted);
 
 //------------------------------------------------------------------------------
+/**
+*/
 Handler::Handler() :
     isOpen(false)
 {
@@ -17,6 +19,8 @@ Handler::Handler() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Handler::~Handler()
 {
     n_assert(!this->IsOpen());

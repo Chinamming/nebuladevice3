@@ -60,6 +60,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityCluster::SetCameraInside(bool b)
 {
@@ -67,6 +69,8 @@ VisibilityCluster::SetCameraInside(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 VisibilityCluster::IsCameraInside() const
 {
@@ -74,6 +78,8 @@ VisibilityCluster::IsCameraInside() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 VisibilityCluster::SetBitIndex(IndexT i)
 {
@@ -81,6 +87,8 @@ VisibilityCluster::SetBitIndex(IndexT i)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 VisibilityCluster::GetBitIndex() const
 {

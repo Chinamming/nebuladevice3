@@ -16,18 +16,24 @@ using namespace Messaging;
 using namespace Interface;
 
 //------------------------------------------------------------------------------
+/**
+*/
 IoInterface::IoInterface()
 {
     __ConstructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 IoInterface::~IoInterface()
 {
     __DestructInterfaceSingleton;
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 IoInterface::Open()
 {

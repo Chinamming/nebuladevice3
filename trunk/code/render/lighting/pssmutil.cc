@@ -12,6 +12,8 @@ using namespace Math;
 using namespace Shared;
 
 //------------------------------------------------------------------------------
+/**
+*/
 PSSMUtil::PSSMUtil() :
     maxShadowDistance(200.0f),
     lightDir(0.0f, 1.0f, 0.0f)
@@ -20,6 +22,8 @@ PSSMUtil::PSSMUtil() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 PSSMUtil::Compute()
 {

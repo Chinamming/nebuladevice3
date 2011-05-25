@@ -16,6 +16,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 SvgTestPageHandler::SvgTestPageHandler()
 {
     this->SetName("SVG Rendering Test");
@@ -24,6 +26,8 @@ SvgTestPageHandler::SvgTestPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 SvgTestPageHandler::TestShapeRendering(const Ptr<HttpRequest>& request)
 {
@@ -83,6 +87,8 @@ SvgTestPageHandler::TestShapeRendering(const Ptr<HttpRequest>& request)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 SvgTestPageHandler::TestLineChartRendering(const Ptr<HttpRequest>& request)
 {
@@ -109,6 +115,8 @@ SvgTestPageHandler::TestLineChartRendering(const Ptr<HttpRequest>& request)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 SvgTestPageHandler::HandleRequest(const Ptr<HttpRequest>& request)
 {

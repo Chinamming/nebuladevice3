@@ -62,6 +62,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 PIDFeedbackLoop::PIDFeedbackLoop() : 
     value(0.0),
@@ -82,6 +84,8 @@ PIDFeedbackLoop::PIDFeedbackLoop() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 PIDFeedbackLoop::SetState(double value)
@@ -92,6 +96,8 @@ PIDFeedbackLoop::SetState(double value)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 PIDFeedbackLoop::SetGoal(double wantedValue)
@@ -100,6 +106,8 @@ PIDFeedbackLoop::SetGoal(double wantedValue)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 PIDFeedbackLoop::SetConstants(double pConst, double iConst, double dConst, double acceleration)
@@ -111,6 +119,8 @@ PIDFeedbackLoop::SetConstants(double pConst, double iConst, double dConst, doubl
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const double& 
 PIDFeedbackLoop::GetState() const
@@ -120,6 +130,8 @@ PIDFeedbackLoop::GetState() const
 
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 double 
 PIDFeedbackLoop::GetLastError() const
@@ -128,6 +140,8 @@ PIDFeedbackLoop::GetLastError() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 const double& 
 PIDFeedbackLoop::GetGoal() const
@@ -136,6 +150,8 @@ PIDFeedbackLoop::GetGoal() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 double 
 PIDFeedbackLoop::GetLastDelta() const
@@ -144,6 +160,8 @@ PIDFeedbackLoop::GetLastDelta() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 PIDFeedbackLoop::SetIsAngularValue(bool val)
@@ -152,6 +170,8 @@ PIDFeedbackLoop::SetIsAngularValue(bool val)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 PIDFeedbackLoop::Update(Timing::Time time) 
@@ -225,6 +245,8 @@ PIDFeedbackLoop::Update(Timing::Time time)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline
 void 
 PIDFeedbackLoop::ResetError()

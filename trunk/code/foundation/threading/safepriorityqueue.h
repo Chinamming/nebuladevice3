@@ -52,6 +52,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE>
 SafePriorityQueue<PRITYPE,TYPE>::SafePriorityQueue()
 {
@@ -59,6 +61,8 @@ SafePriorityQueue<PRITYPE,TYPE>::SafePriorityQueue()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE>
 SafePriorityQueue<PRITYPE,TYPE>::SafePriorityQueue(const SafePriorityQueue<PRITYPE,TYPE>& rhs)
 {
@@ -68,6 +72,8 @@ SafePriorityQueue<PRITYPE,TYPE>::SafePriorityQueue(const SafePriorityQueue<PRITY
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> void
 SafePriorityQueue<PRITYPE,TYPE>::operator=(const SafePriorityQueue<PRITYPE,TYPE>& rhs)
 {
@@ -77,6 +83,8 @@ SafePriorityQueue<PRITYPE,TYPE>::operator=(const SafePriorityQueue<PRITYPE,TYPE>
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> void
 SafePriorityQueue<PRITYPE,TYPE>::Clear()
 {
@@ -86,6 +94,8 @@ SafePriorityQueue<PRITYPE,TYPE>::Clear()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> SizeT
 SafePriorityQueue<PRITYPE,TYPE>::Size() const
 {
@@ -93,6 +103,8 @@ SafePriorityQueue<PRITYPE,TYPE>::Size() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> bool
 SafePriorityQueue<PRITYPE,TYPE>::IsEmpty() const
 {
@@ -100,6 +112,8 @@ SafePriorityQueue<PRITYPE,TYPE>::IsEmpty() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> void
 SafePriorityQueue<PRITYPE,TYPE>::Insert(PRITYPE pri, const TYPE& e)
 {
@@ -111,6 +125,8 @@ SafePriorityQueue<PRITYPE,TYPE>::Insert(PRITYPE pri, const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> void
 SafePriorityQueue<PRITYPE,TYPE>::EraseMatchingElements(const TYPE& e)
 {
@@ -131,6 +147,8 @@ SafePriorityQueue<PRITYPE,TYPE>::EraseMatchingElements(const TYPE& e)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> TYPE
 SafePriorityQueue<PRITYPE,TYPE>::Dequeue()
 {
@@ -142,6 +160,8 @@ SafePriorityQueue<PRITYPE,TYPE>::Dequeue()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> TYPE
 SafePriorityQueue<PRITYPE,TYPE>::Peek() const
 {
@@ -152,6 +172,8 @@ SafePriorityQueue<PRITYPE,TYPE>::Peek() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class PRITYPE, class TYPE> void
 SafePriorityQueue<PRITYPE,TYPE>::Wait()
 {

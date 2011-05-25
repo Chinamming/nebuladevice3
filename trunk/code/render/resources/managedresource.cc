@@ -13,6 +13,8 @@ using namespace Util;
 using namespace Math;
 
 //------------------------------------------------------------------------------
+/**
+*/
 ManagedResource::ManagedResource() :
     resType(0),
     clientCount(0),
@@ -24,6 +26,8 @@ ManagedResource::ManagedResource() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 ManagedResource::~ManagedResource()
 {
     // empty

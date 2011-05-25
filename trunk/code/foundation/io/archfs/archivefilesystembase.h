@@ -64,6 +64,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ArchiveFileSystemBase::IsValid() const
 {

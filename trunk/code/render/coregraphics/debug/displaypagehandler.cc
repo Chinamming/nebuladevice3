@@ -18,6 +18,8 @@ using namespace Util;
 using namespace IO;
 
 //------------------------------------------------------------------------------
+/**
+*/
 DisplayPageHandler::DisplayPageHandler()
 {
     this->SetName("Display");
@@ -26,6 +28,8 @@ DisplayPageHandler::DisplayPageHandler()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 DisplayPageHandler::HandleRequest(const Ptr<Http::HttpRequest>& request)
 {
@@ -224,6 +228,8 @@ DisplayPageHandler::WriteAdapterInfo(Adapter::Code adapter, const Ptr<HtmlPageWr
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 HttpStatus::Code
 DisplayPageHandler::WriteScreenshot(const String& fileFormat, const Ptr<Stream>& responseContentStream)
 {

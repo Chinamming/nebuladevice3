@@ -17,6 +17,8 @@ using namespace InternalGraphics;
 namespace Messaging
 {
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(CreateCameraEntity)
 {
     Ptr<InternalCameraEntity> cameraEntity = InternalCameraEntity::Create();
@@ -34,6 +36,8 @@ __StaticHandler(CreateCameraEntity)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalCameraEntity, AttachCameraToView)
 {
     const StringAtom& viewName = msg->GetViewName();
@@ -42,6 +46,8 @@ __Handler(InternalCameraEntity, AttachCameraToView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalCameraEntity, RemoveCameraFromView)
 {
     const StringAtom& viewName = msg->GetViewName();
@@ -55,6 +61,8 @@ __Handler(InternalCameraEntity, RemoveCameraFromView)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __Handler(InternalCameraEntity, UpdateCameraEntity)
 {
     obj->SetCameraSettings(msg->GetCameraSettings());

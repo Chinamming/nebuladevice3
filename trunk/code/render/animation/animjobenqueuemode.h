@@ -32,6 +32,8 @@ public:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline AnimJobEnqueueMode::Code
 AnimJobEnqueueMode::FromString(const char* s)
 {
@@ -47,6 +49,8 @@ AnimJobEnqueueMode::FromString(const char* s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const char*
 AnimJobEnqueueMode::ToString(Code c)
 {

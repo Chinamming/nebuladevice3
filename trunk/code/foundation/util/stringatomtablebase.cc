@@ -11,18 +11,24 @@ namespace Util
 {
 
 //------------------------------------------------------------------------------
+/**
+*/
 StringAtomTableBase::StringAtomTableBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 StringAtomTableBase::~StringAtomTableBase()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 const char*
 StringAtomTableBase::Find(const char* str) const
 {
@@ -41,6 +47,8 @@ StringAtomTableBase::Find(const char* str) const
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StringAtomTableBase::StaticString::operator==(const StaticString& rhs) const
 {
@@ -48,6 +56,8 @@ StringAtomTableBase::StaticString::operator==(const StaticString& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StringAtomTableBase::StaticString::operator!=(const StaticString& rhs) const
 {
@@ -55,6 +65,8 @@ StringAtomTableBase::StaticString::operator!=(const StaticString& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StringAtomTableBase::StaticString::operator<(const StaticString& rhs) const
 {
@@ -62,6 +74,8 @@ StringAtomTableBase::StaticString::operator<(const StaticString& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 StringAtomTableBase::StaticString::operator>(const StaticString& rhs) const
 {

@@ -24,6 +24,8 @@ List<Win360Thread*> Win360Thread::ThreadList;
 #endif
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360Thread::Win360Thread() :
     threadHandle(0),
     priority(Normal),
@@ -39,6 +41,8 @@ Win360Thread::Win360Thread() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Win360Thread::~Win360Thread()
 {
     if (this->IsRunning())

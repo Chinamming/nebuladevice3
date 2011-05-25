@@ -143,6 +143,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<ParticleSystem>&
 ParticleSystemInstanceBase::GetParticleSystem() const
 {
@@ -150,6 +152,8 @@ ParticleSystemInstanceBase::GetParticleSystem() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ParticleSystemInstanceBase::IsValid() const
 {
@@ -157,6 +161,8 @@ ParticleSystemInstanceBase::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ParticleSystemInstanceBase::IsPlaying() const
 {
@@ -164,6 +170,8 @@ ParticleSystemInstanceBase::IsPlaying() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ParticleSystemInstanceBase::IsStopping() const
 {
@@ -171,6 +179,8 @@ ParticleSystemInstanceBase::IsStopping() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ParticleSystemInstanceBase::IsStopped() const
 {
@@ -178,6 +188,8 @@ ParticleSystemInstanceBase::IsStopped() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline ParticleSystemState::Mask
 ParticleSystemInstanceBase::GetState() const
 {
@@ -185,6 +197,8 @@ ParticleSystemInstanceBase::GetState() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleSystemInstanceBase::SetTransform(const Math::matrix44& m)
 {
@@ -192,6 +206,8 @@ ParticleSystemInstanceBase::SetTransform(const Math::matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 ParticleSystemInstanceBase::GetTransform() const
 {
@@ -199,6 +215,8 @@ ParticleSystemInstanceBase::GetTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleSystemInstanceBase::SetVelocity(const Math::vector& v)
 {
@@ -206,6 +224,8 @@ ParticleSystemInstanceBase::SetVelocity(const Math::vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 ParticleSystemInstanceBase::GetVelocity() const
 {
@@ -213,6 +233,8 @@ ParticleSystemInstanceBase::GetVelocity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ParticleSystemInstanceBase::SetWindVector(const Math::vector& v)
 {
@@ -220,6 +242,8 @@ ParticleSystemInstanceBase::SetWindVector(const Math::vector& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::vector&
 ParticleSystemInstanceBase::GetWindVector() const
 {
@@ -227,6 +251,8 @@ ParticleSystemInstanceBase::GetWindVector() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::bbox&
 ParticleSystemInstanceBase::GetBoundingBox() const
 {
@@ -234,6 +260,8 @@ ParticleSystemInstanceBase::GetBoundingBox() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ParticleRenderInfo& 
 ParticleSystemInstanceBase::GetParticleRenderInfo() const
 {

@@ -18,6 +18,8 @@ using namespace Threading;
 using namespace InternalGraphics;
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityClusterSystem::VisibilityClusterSystem():
     inBeginAttachCluster(false),
     statsNumVisChecksAccepted(0),
@@ -26,11 +28,15 @@ VisibilityClusterSystem::VisibilityClusterSystem():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityClusterSystem::~VisibilityClusterSystem()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityClusterSystem::Open(IndexT orderIndex)
 {    
@@ -39,6 +45,8 @@ VisibilityClusterSystem::Open(IndexT orderIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityClusterSystem::Close()
 {                                
@@ -47,6 +55,8 @@ VisibilityClusterSystem::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityClusterSystem::InsertVisibilityContext(const Ptr<VisibilityContext>& context)
 {
@@ -54,6 +64,8 @@ VisibilityClusterSystem::InsertVisibilityContext(const Ptr<VisibilityContext>& c
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityClusterSystem::RemoveVisibilityContext(const Ptr<VisibilityContext>& context)
 {
@@ -66,6 +78,8 @@ VisibilityClusterSystem::RemoveVisibilityContext(const Ptr<VisibilityContext>& c
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityClusterSystem::UpdateVisibilityContext(const Ptr<VisibilityContext>& context)
 {    
@@ -73,6 +87,8 @@ VisibilityClusterSystem::UpdateVisibilityContext(const Ptr<VisibilityContext>& c
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityClusterSystem::CheckVisibility(const Ptr<ObserverContext>& observer, Util::FixedArray<Ptr<VisibilityContext> >& outEntitiyArray, uint entityMask)
 {        
@@ -123,6 +139,8 @@ VisibilityClusterSystem::CheckVisibility(const Ptr<ObserverContext>& observer, U
 }  
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityClusterSystem::InsertVisibilityContainer(const Ptr<VisibilityContainer>& container)
 {
@@ -158,6 +176,8 @@ VisibilityClusterSystem::InsertVisibilityContainer(const Ptr<VisibilityContainer
 }    
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityClusterSystem::DiscardVisibilityClusters()
 {
@@ -195,6 +215,8 @@ VisibilityClusterSystem::UpdateVisibilityClusters(const point& cameraPos)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Util::Array<Ptr<VisibilityCluster> > 
 VisibilityClusterSystem::FindClustersContainingPoint(const Math::point& pos)
 {
@@ -211,6 +233,8 @@ VisibilityClusterSystem::FindClustersContainingPoint(const Math::point& pos)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityClusterSystem::OnRenderDebug()
 {
@@ -222,6 +246,8 @@ VisibilityClusterSystem::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Jobs::Job> 
 VisibilityClusterSystem::CreateVisibilityJob(IndexT frameId, const Ptr<ObserverContext>& observer, Util::FixedArray<Ptr<VisibilityContext> >& outEntitiyArray, uint& entityMask)
 {

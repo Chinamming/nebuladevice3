@@ -80,6 +80,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetOrbitButton(bool b)
 {
@@ -87,6 +89,8 @@ MayaCameraUtil::SetOrbitButton(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetPanButton(bool b)
 {
@@ -94,6 +98,8 @@ MayaCameraUtil::SetPanButton(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetZoomButton(bool b)
 {
@@ -101,6 +107,8 @@ MayaCameraUtil::SetZoomButton(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetZoomInButton(bool b)
 {
@@ -108,6 +116,8 @@ MayaCameraUtil::SetZoomInButton(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetZoomOutButton(bool b)
 {
@@ -115,6 +125,8 @@ MayaCameraUtil::SetZoomOutButton(bool b)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetMouseMovement(const Math::float2& v)
 {
@@ -122,6 +134,8 @@ MayaCameraUtil::SetMouseMovement(const Math::float2& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Math::matrix44&
 MayaCameraUtil::GetCameraTransform() const
 {
@@ -129,6 +143,8 @@ MayaCameraUtil::GetCameraTransform() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetZoomIn(float v)
 {
@@ -136,6 +152,8 @@ MayaCameraUtil::SetZoomIn(float v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetZoomOut(float v)
 {
@@ -143,6 +161,8 @@ MayaCameraUtil::SetZoomOut(float v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetPanning(const Math::float2& v)
 {
@@ -150,6 +170,8 @@ MayaCameraUtil::SetPanning(const Math::float2& v)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 MayaCameraUtil::SetOrbiting(const Math::float2& v)
 {

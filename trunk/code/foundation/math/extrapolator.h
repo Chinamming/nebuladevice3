@@ -60,6 +60,8 @@ private:
 }; 
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Extrapolator<TYPE>::Extrapolator()
 {       
@@ -67,12 +69,16 @@ Extrapolator<TYPE>::Extrapolator()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE>
 Extrapolator<TYPE>::~Extrapolator()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool 
 Extrapolator<TYPE>::AddSample(Timing::Time packetTime, Timing::Time curTime, const TYPE& pos)
 {
@@ -89,6 +95,8 @@ Extrapolator<TYPE>::AddSample(Timing::Time packetTime, Timing::Time curTime, con
 }
      
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool 
 Extrapolator<TYPE>::AddSample(Timing::Time packetTime, Timing::Time curTime, const TYPE& pos, const TYPE& vel)
 {
@@ -122,6 +130,8 @@ Extrapolator<TYPE>::AddSample(Timing::Time packetTime, Timing::Time curTime, con
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void 
 Extrapolator<TYPE>::Reset(Timing::Time packetTime, Timing::Time curTime, const TYPE& pos)
 {
@@ -130,6 +140,8 @@ Extrapolator<TYPE>::Reset(Timing::Time packetTime, Timing::Time curTime, const T
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> void 
 Extrapolator<TYPE>::Reset(Timing::Time packetTime, Timing::Time curTime, const TYPE& pos, const TYPE& vel)
 {
@@ -146,6 +158,8 @@ Extrapolator<TYPE>::Reset(Timing::Time packetTime, Timing::Time curTime, const T
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool 
 Extrapolator<TYPE>::ReadValue(Timing::Time forTime, TYPE& oPos) const
 {
@@ -154,6 +168,8 @@ Extrapolator<TYPE>::ReadValue(Timing::Time forTime, TYPE& oPos) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool 
 Extrapolator<TYPE>::ReadValue(Timing::Time forTime, TYPE& oPos, TYPE& oVel) const
 {
@@ -182,6 +198,8 @@ Extrapolator<TYPE>::ReadValue(Timing::Time forTime, TYPE& oPos, TYPE& oVel) cons
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> Timing::Time 
 Extrapolator<TYPE>::EstimateLatency() const
 {
@@ -189,6 +207,8 @@ Extrapolator<TYPE>::EstimateLatency() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> Timing::Time 
 Extrapolator<TYPE>::EstimateUpdateTime() const
 {
@@ -196,6 +216,8 @@ Extrapolator<TYPE>::EstimateUpdateTime() const
 }
     
 //------------------------------------------------------------------------------
+/**
+*/
 template<class TYPE> bool 
 Extrapolator<TYPE>::Estimates(Timing::Time packet, Timing::Time cur)
 {

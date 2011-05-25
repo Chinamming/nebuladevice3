@@ -81,6 +81,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterInstance::IsValid() const
 {
@@ -88,6 +90,8 @@ CharacterInstance::IsValid() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 CharacterInstance::IsValidForRendering() const
 {
@@ -95,6 +99,8 @@ CharacterInstance::IsValidForRendering() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterSkeletonInstance&
 CharacterInstance::Skeleton()
 {
@@ -102,6 +108,8 @@ CharacterInstance::Skeleton()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterSkinSet&
 CharacterInstance::SkinSet()
 {
@@ -109,6 +117,8 @@ CharacterInstance::SkinSet()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline CharacterAnimationController&
 CharacterInstance::AnimController()
 {
@@ -116,6 +126,8 @@ CharacterInstance::AnimController()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT 
 CharacterInstance::GetJointTextureRowIndex() const
 {
@@ -123,6 +135,8 @@ CharacterInstance::GetJointTextureRowIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Ptr<Jobs::JobPort>&
 CharacterInstance::GetJobPort() const
 {

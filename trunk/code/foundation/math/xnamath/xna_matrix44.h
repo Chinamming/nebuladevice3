@@ -182,6 +182,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 matrix44::matrix44():
     mx(XMMatrixIdentity())
@@ -190,6 +192,8 @@ matrix44::matrix44():
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 matrix44::matrix44(float4 const &row0, float4 const &row1, float4 const &row2, float4 const &row3)
 {
@@ -200,6 +204,8 @@ matrix44::matrix44(float4 const &row0, float4 const &row1, float4 const &row2, f
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 /*
 __forceinline
 matrix44::matrix44(const matrix44& rhs) :
@@ -210,6 +216,8 @@ matrix44::matrix44(const matrix44& rhs) :
 */
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 matrix44::matrix44(const XMMATRIX& rhs) :
     mx(rhs)
@@ -218,6 +226,8 @@ matrix44::matrix44(const XMMATRIX& rhs) :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::operator=(const matrix44& rhs)
 {
@@ -225,6 +235,8 @@ matrix44::operator=(const matrix44& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::operator=(const XMMATRIX& rhs)
 {
@@ -232,6 +244,8 @@ matrix44::operator=(const XMMATRIX& rhs)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 matrix44::operator==(const matrix44& rhs) const
 {
@@ -242,6 +256,8 @@ matrix44::operator==(const matrix44& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 matrix44::operator!=(const matrix44& rhs) const
 {
@@ -252,6 +268,8 @@ matrix44::operator!=(const matrix44& rhs) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::load(const scalar* ptr)
 {
@@ -262,6 +280,8 @@ matrix44::load(const scalar* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::loadu(const scalar* ptr)
 {
@@ -272,6 +292,8 @@ matrix44::loadu(const scalar* ptr)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::store(scalar* ptr) const
 {
@@ -282,6 +304,8 @@ matrix44::store(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::storeu(scalar* ptr) const
 {
@@ -292,6 +316,8 @@ matrix44::storeu(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::stream(scalar* ptr) const
 {
@@ -302,6 +328,8 @@ matrix44::stream(scalar* ptr) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::set(float4 const &row0, float4 const &row1, float4 const &row2, float4 const &row3)
 {
@@ -312,6 +340,8 @@ matrix44::set(float4 const &row0, float4 const &row1, float4 const &row2, float4
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::setrow0(float4 const &r)
 {
@@ -319,6 +349,8 @@ matrix44::setrow0(float4 const &r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::getrow0() const
 {
@@ -326,6 +358,8 @@ matrix44::getrow0() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::setrow1(float4 const &r)
 {
@@ -333,6 +367,8 @@ matrix44::setrow1(float4 const &r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::getrow1() const
 {
@@ -340,6 +376,8 @@ matrix44::getrow1() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::setrow2(float4 const &r)
 {
@@ -347,6 +385,8 @@ matrix44::setrow2(float4 const &r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::getrow2() const
 {
@@ -354,6 +394,8 @@ matrix44::getrow2() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::setrow3(float4 const &r)
 {
@@ -361,6 +403,8 @@ matrix44::setrow3(float4 const &r)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::getrow3() const
 {
@@ -368,6 +412,8 @@ matrix44::getrow3() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::set_xaxis(float4 const &x)
 {
@@ -375,6 +421,8 @@ matrix44::set_xaxis(float4 const &x)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::set_yaxis(float4 const &y)
 {
@@ -382,6 +430,8 @@ matrix44::set_yaxis(float4 const &y)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::set_zaxis(float4 const &z)
 {
@@ -389,6 +439,8 @@ matrix44::set_zaxis(float4 const &z)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::set_position(float4 const &pos)
 {
@@ -396,6 +448,8 @@ matrix44::set_position(float4 const &pos)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::get_xaxis() const
 {
@@ -403,6 +457,8 @@ matrix44::get_xaxis() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::get_yaxis() const
 {
@@ -410,6 +466,8 @@ matrix44::get_yaxis() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::get_zaxis() const
 {
@@ -417,6 +475,8 @@ matrix44::get_zaxis() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline const float4&
 matrix44::get_position() const
 {
@@ -424,6 +484,8 @@ matrix44::get_position() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 void 
 matrix44::translate(float4 const &t)
@@ -435,6 +497,8 @@ matrix44::translate(float4 const &t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline void
 matrix44::scale(float4 const &s) 
 {    
@@ -449,6 +513,8 @@ matrix44::scale(float4 const &s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline bool
 matrix44::isidentity() const
 {
@@ -456,6 +522,8 @@ matrix44::isidentity() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline scalar
 matrix44::determinant() const
 {
@@ -463,6 +531,8 @@ matrix44::determinant() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::identity()
 {
@@ -470,6 +540,8 @@ matrix44::identity()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::inverse(const matrix44& m)
 {
@@ -478,6 +550,8 @@ matrix44::inverse(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::lookatlh(float4 const &eye, float4 const &at, float4 const &up)
 {
@@ -502,6 +576,8 @@ matrix44::lookatlh(float4 const &eye, float4 const &at, float4 const &up)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::lookatrh(float4 const &eye, float4 const &at, float4 const &up)
 {
@@ -526,6 +602,8 @@ matrix44::lookatrh(float4 const &eye, float4 const &at, float4 const &up)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::multiply(const matrix44& m0, const matrix44& m1)
 {
@@ -533,6 +611,8 @@ matrix44::multiply(const matrix44& m0, const matrix44& m1)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::ortholh(scalar w, scalar h, scalar zn, scalar zf)
 {
@@ -540,6 +620,8 @@ matrix44::ortholh(scalar w, scalar h, scalar zn, scalar zf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::orthorh(scalar w, scalar h, scalar zn, scalar zf)
 {
@@ -547,6 +629,8 @@ matrix44::orthorh(scalar w, scalar h, scalar zn, scalar zf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::orthooffcenterlh(scalar l, scalar r, scalar b, scalar t, scalar zn, scalar zf)
 {
@@ -554,6 +638,8 @@ matrix44::orthooffcenterlh(scalar l, scalar r, scalar b, scalar t, scalar zn, sc
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::orthooffcenterrh(scalar l, scalar r, scalar b, scalar t, scalar zn, scalar zf)
 {
@@ -561,6 +647,8 @@ matrix44::orthooffcenterrh(scalar l, scalar r, scalar b, scalar t, scalar zn, sc
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::perspfovlh(scalar fovy, scalar aspect, scalar zn, scalar zf)
 {
@@ -568,6 +656,8 @@ matrix44::perspfovlh(scalar fovy, scalar aspect, scalar zn, scalar zf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::perspfovrh(scalar fovy, scalar aspect, scalar zn, scalar zf)
 {
@@ -575,6 +665,8 @@ matrix44::perspfovrh(scalar fovy, scalar aspect, scalar zn, scalar zf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::persplh(scalar w, scalar h, scalar zn, scalar zf)
 {
@@ -582,6 +674,8 @@ matrix44::persplh(scalar w, scalar h, scalar zn, scalar zf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::persprh(scalar w, scalar h, scalar zn, scalar zf)
 {
@@ -589,6 +683,8 @@ matrix44::persprh(scalar w, scalar h, scalar zn, scalar zf)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::perspoffcenterlh(scalar l, scalar r, scalar b, scalar t, scalar zn, scalar zf)
 {
@@ -596,6 +692,8 @@ matrix44::perspoffcenterlh(scalar l, scalar r, scalar b, scalar t, scalar zn, sc
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::perspoffcenterrh(scalar l, scalar r, scalar b, scalar t, scalar zn, scalar zf)
 {
@@ -603,6 +701,8 @@ matrix44::perspoffcenterrh(scalar l, scalar r, scalar b, scalar t, scalar zn, sc
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::rotationaxis(float4 const &axis, scalar angle)
 {
@@ -610,6 +710,8 @@ matrix44::rotationaxis(float4 const &axis, scalar angle)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::rotationx(scalar angle)
 {
@@ -617,6 +719,8 @@ matrix44::rotationx(scalar angle)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::rotationy(scalar angle)
 {
@@ -624,6 +728,8 @@ matrix44::rotationy(scalar angle)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::rotationz(scalar angle)
 {
@@ -631,6 +737,8 @@ matrix44::rotationz(scalar angle)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::rotationyawpitchroll(scalar yaw, scalar pitch, scalar roll)
 {
@@ -638,6 +746,8 @@ matrix44::rotationyawpitchroll(scalar yaw, scalar pitch, scalar roll)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::scaling(scalar sx, scalar sy, scalar sz)
 {
@@ -645,6 +755,8 @@ matrix44::scaling(scalar sx, scalar sy, scalar sz)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::scaling(float4 const &s)
 {
@@ -652,6 +764,8 @@ matrix44::scaling(float4 const &s)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::translation(scalar x, scalar y, scalar z)
 {
@@ -659,6 +773,8 @@ matrix44::translation(scalar x, scalar y, scalar z)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::translation(float4 const &t)
 {
@@ -666,6 +782,8 @@ matrix44::translation(float4 const &t)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline matrix44
 matrix44::transpose(const matrix44& m)
 {
@@ -673,6 +791,8 @@ matrix44::transpose(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 float4
 matrix44::transform(const float4 &v, const matrix44 &m)
@@ -681,6 +801,8 @@ matrix44::transform(const float4 &v, const matrix44 &m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 quaternion
 matrix44::rotationmatrix(const matrix44& m)
@@ -689,6 +811,8 @@ matrix44::rotationmatrix(const matrix44& m)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __forceinline
 plane
 matrix44::transform(const plane &p, const matrix44& m)

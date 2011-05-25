@@ -13,6 +13,8 @@ __ImplementSingleton(Direct3D9::D3D9ShaderServer);
 using namespace Resources;
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderServer::D3D9ShaderServer() :
     d3d9EffectPool(0)
 {
@@ -20,6 +22,8 @@ D3D9ShaderServer::D3D9ShaderServer() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 D3D9ShaderServer::~D3D9ShaderServer()
 {
     if (this->IsOpen())
@@ -30,6 +34,8 @@ D3D9ShaderServer::~D3D9ShaderServer()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 D3D9ShaderServer::Open()
 {
@@ -47,6 +53,8 @@ D3D9ShaderServer::Open()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 D3D9ShaderServer::Close()
 {

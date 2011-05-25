@@ -167,6 +167,8 @@ protected:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline bool
 ResourcePool::IsInitialized() const
 {
@@ -174,6 +176,8 @@ ResourcePool::IsInitialized() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline SizeT
 ResourcePool::GetNumSlots() const
 {
@@ -181,6 +185,8 @@ ResourcePool::GetNumSlots() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::SetId(const Util::StringAtom& id)
 {
@@ -188,6 +194,8 @@ ResourcePool::SetId(const Util::StringAtom& id)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const ResourceInfo*
 ResourcePool::GetInfo() const
 {
@@ -195,6 +203,8 @@ ResourcePool::GetInfo() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ResourcePool::GetFrameIndex() const
 {
@@ -202,6 +212,8 @@ ResourcePool::GetFrameIndex() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline uint
 ResourcePool::GetPoolSize() const
 {
@@ -209,6 +221,8 @@ ResourcePool::GetPoolSize() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::SetScheduler(const Ptr<PoolScheduler>& scheduler)
 {
@@ -216,6 +230,8 @@ ResourcePool::SetScheduler(const Ptr<PoolScheduler>& scheduler)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::SetNumSlots(SizeT amountSlots)
 {
@@ -223,6 +239,8 @@ ResourcePool::SetNumSlots(SizeT amountSlots)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::SetInfo(ResourceInfo* info)
 {
@@ -230,6 +248,8 @@ ResourcePool::SetInfo(ResourceInfo* info)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::SetFrameIndex(IndexT frameIndex)
 {
@@ -238,6 +258,8 @@ ResourcePool::SetFrameIndex(IndexT frameIndex)
 
 #if !PUBLIC_BUILD
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ResourcePool::GetRejectedRequests(bool total) const
 {
@@ -252,6 +274,8 @@ ResourcePool::GetRejectedRequests(bool total) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ResourcePool::GetAutoMipPoolsNotFound(bool total) const
 {
@@ -266,6 +290,8 @@ ResourcePool::GetAutoMipPoolsNotFound(bool total) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IndexT
 ResourcePool::GetAutoMipSlotsNotFound(bool total) const
 {
@@ -280,6 +306,8 @@ ResourcePool::GetAutoMipSlotsNotFound(bool total) const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::IncreaseRejectedRequests(const ResourceId& resId)
 {
@@ -292,6 +320,8 @@ ResourcePool::IncreaseRejectedRequests(const ResourceId& resId)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::IncreaseAutoMipPoolsNotFound()
 {
@@ -300,6 +330,8 @@ ResourcePool::IncreaseAutoMipPoolsNotFound()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::IncreaseAutoMipSlotsNotFound()
 {
@@ -308,6 +340,8 @@ ResourcePool::IncreaseAutoMipSlotsNotFound()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 ResourcePool::ResetDebugStats(bool total)
 {
@@ -325,6 +359,8 @@ ResourcePool::ResetDebugStats(bool total)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline const Util::StringAtom&
 ResourcePool::GetId() const
 {

@@ -30,17 +30,23 @@ extern "C" {
 extern void VisibilityQuadtreeJobFunc(const JobFuncContext& ctx);
 #endif
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityQuadtree::VisibilityQuadtree():
     quadTreeDepth(0)
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 VisibilityQuadtree::~VisibilityQuadtree()
 {
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityQuadtree::Open(IndexT orderIndex)
 {    
@@ -54,6 +60,8 @@ VisibilityQuadtree::Open(IndexT orderIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 VisibilityQuadtree::Close()
 {           
@@ -64,6 +72,8 @@ VisibilityQuadtree::Close()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::InsertVisibilityContext(const Ptr<VisibilityContext>& context)
 {
@@ -73,6 +83,8 @@ VisibilityQuadtree::InsertVisibilityContext(const Ptr<VisibilityContext>& contex
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::RemoveVisibilityContext(const Ptr<VisibilityContext>& context)
 {
@@ -82,6 +94,8 @@ VisibilityQuadtree::RemoveVisibilityContext(const Ptr<VisibilityContext>& contex
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::UpdateVisibilityContext(const Ptr<VisibilityContext>& context)
 {       
@@ -98,6 +112,8 @@ VisibilityQuadtree::UpdateVisibilityContext(const Ptr<VisibilityContext>& contex
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<VisibilityCell> 
 VisibilityQuadtree::CreateQuadTreeCell(VisibilityCell* parentCell, uchar curLevel, ushort curCol, ushort curRow)
 {
@@ -125,6 +141,8 @@ VisibilityQuadtree::CreateQuadTreeCell(VisibilityCell* parentCell, uchar curLeve
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::OnRenderDebug()
 {
@@ -135,6 +153,8 @@ VisibilityQuadtree::OnRenderDebug()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::RenderCell(const Ptr<VisibilityCell>& cell, const Math::float4& color)
 {
@@ -180,6 +200,8 @@ VisibilityQuadtree::RenderCell(const Ptr<VisibilityCell>& cell, const Math::floa
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::PrepareTreeData(IndexT bufferIndex)
 {   
@@ -198,6 +220,8 @@ VisibilityQuadtree::PrepareTreeData(IndexT bufferIndex)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::CollectContextPtr(const Ptr<VisibilityCell>& cell, Util::QuadTree<CellInfo>::Node* node, IndexT& curEntityIndex)
 {
@@ -228,6 +252,8 @@ VisibilityQuadtree::CollectContextPtr(const Ptr<VisibilityCell>& cell, Util::Qua
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Ptr<Jobs::Job> 
 VisibilityQuadtree::CreateVisibilityJob(IndexT frameId, const Ptr<ObserverContext>& observer, Util::FixedArray<Ptr<VisibilityContext> >& outEntitiyArray, uint& entityMask)
 {   
@@ -273,6 +299,8 @@ VisibilityQuadtree::CreateVisibilityJob(IndexT frameId, const Ptr<ObserverContex
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void 
 VisibilityQuadtree::SetDirty()
 {

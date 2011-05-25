@@ -13,6 +13,8 @@ __ImplementClass(Base::KeyboardBase, 'KBBS', Input::InputHandler);
 using namespace Input;
 
 //------------------------------------------------------------------------------
+/**
+*/
 KeyboardBase::KeyboardBase() :
     keyStates(Key::NumKeyCodes)
 {
@@ -20,12 +22,16 @@ KeyboardBase::KeyboardBase() :
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 KeyboardBase::~KeyboardBase()
 {
     n_assert(!this->IsAttached());
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::BeginCapture()
 {
@@ -34,6 +40,8 @@ KeyboardBase::BeginCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::EndCapture()
 {
@@ -42,6 +50,8 @@ KeyboardBase::EndCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::OnAttach()
 {
@@ -52,6 +62,8 @@ KeyboardBase::OnAttach()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::OnBeginFrame()
 {
@@ -79,6 +91,8 @@ KeyboardBase::OnBeginFrame()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 bool
 KeyboardBase::OnEvent(const InputEvent& inputEvent)
 {
@@ -133,6 +147,8 @@ KeyboardBase::OnEvent(const InputEvent& inputEvent)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::OnObtainCapture()
 {
@@ -145,6 +161,8 @@ KeyboardBase::OnObtainCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::OnReleaseCapture()
 {
@@ -157,6 +175,8 @@ KeyboardBase::OnReleaseCapture()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 void
 KeyboardBase::OnReset()
 {

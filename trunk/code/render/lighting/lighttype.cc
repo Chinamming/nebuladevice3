@@ -10,6 +10,8 @@ namespace Lighting
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 LightType::Code
 LightType::FromString(const String& str)
 {
@@ -24,6 +26,8 @@ LightType::FromString(const String& str)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 LightType::ToString(Code code)
 {

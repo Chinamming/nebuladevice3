@@ -13,12 +13,16 @@ __ImplementClass(IO::TextReader, 'TXTR', IO::StreamReader);
 using namespace Util;
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextReader::TextReader()
 {
     // empty
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 TextReader::~TextReader()
 {
     if (this->IsOpen())
@@ -28,6 +32,8 @@ TextReader::~TextReader()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 unsigned char
 TextReader::ReadChar()
 {
@@ -37,6 +43,8 @@ TextReader::ReadChar()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 TextReader::ReadLine()
 {
@@ -54,6 +62,8 @@ TextReader::ReadLine()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 String
 TextReader::ReadAll()
 {
@@ -72,6 +82,8 @@ TextReader::ReadAll()
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 Array<String>
 TextReader::ReadAllLines()
 {
