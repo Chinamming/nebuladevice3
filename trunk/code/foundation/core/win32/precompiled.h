@@ -11,15 +11,16 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 
-#define _WIN32_WINNT 0x500
+#define _WIN32_WINNT 0x501
 
-#if( NEBULA3_EDITOR == 1 )
+#if NEBULA3_EDITOR
 #include "mfcconfig.h"
-#else
+#endif 
+
 #define NOGDICAPMASKS
 #define OEMRESOURCE
 #define NOATOM
-#define NOCTLMGR
+//#define NOCTLMGR
 #define NOMEMMGR
 #define NOMETAFILE
 #define NOOPENFILE
@@ -31,7 +32,6 @@
 #define NOPROFILER
 #define NODEFERWINDOWPOS
 #define NOMCX
-#endif
 
 // Windows headers
 #include <windows.h>
@@ -49,8 +49,10 @@
 
 // compile xna-math with sse/sse2 support for win32, to disable
 // it and run completely in floating point unit, uncomment the following line 
-#if( NEBULA3_EDITOR == 1 )
-  #define _XM_NO_INTRINSICS_ 
+#if NEBULA3_EDITOR
+    #define _XM_NO_INTRINSICS_ 
+	//#define _XM_SSE_INTRINSICS_
+	//#define XM_NO_ALIGNMENT
 #endif
 #include <xnamath.h>
 

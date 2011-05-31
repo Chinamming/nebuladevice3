@@ -45,13 +45,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\foundation;..\render;..\tools\editor"
+				AdditionalIncludeDirectories="..\foundation;..\render;..\toolkit;..\tools\editor;../extlibs/opencollada/COLLADABaseUtils/include;../extlibs/opencollada/COLLADAFramework/include;../extlibs/opencollada/COLLADASaxFrameworkLoader/include;../extlibs/opencollada/MathMLSolver/include;../extlibs/opencollada/MathMLSolver/include/AST"
 				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0"
 				StringPooling="true"
 				MinimalRebuild="true"
 				ExceptionHandling="1"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
+				StructMemberAlignment="5"
+				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				FloatingPointModel="2"
 				TreatWChar_tAsBuiltInType="true"
@@ -62,6 +64,7 @@
 				DebugInformationFormat="4"
 				CallingConvention="0"
 				CompileAs="0"
+				DisableSpecificWarnings="4819"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -78,10 +81,10 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/verbose:lib"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib"
+				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib COLLADABaseUtils.lib COLLADAFramework.lib COLLADASaxFrameworkLoader.lib GeneratedSaxParser.lib libexpatMT.lib MathMLSolver.lib pcre.lib"
 				OutputFile="..\..\bin\win32\nebula3_editor.debug.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=".\Win32"
+				AdditionalLibraryDirectories=".\Win32;..\..\lib\opencollada"
 				GenerateManifest="false"
 				IgnoreAllDefaultLibraries="false"
 				IgnoreDefaultLibraryNames=""
@@ -142,12 +145,14 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="..\foundation;..\render;..\tools\editor"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
 				MinimalRebuild="false"
 				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				TreatWChar_tAsBuiltInType="true"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="stdneb.h"
 				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
@@ -165,7 +170,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib"
+				OutputFile="..\..\bin\win32\nebula3_editor.exe"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories=".\Win32"
 				IgnoreDefaultLibraryNames="libcd.lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -213,11 +221,19 @@
 				>
 			</File>
 			<File
+				RelativePath="..\tools\editor\ExplorerView.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\tools\editor\MainFrm.cc"
 				>
 			</File>
 			<File
-				RelativePath="..\tools\editor\n3viewerapp.cc"
+				RelativePath="..\tools\editor\PaneDialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\PaneView.cpp"
 				>
 			</File>
 			<File
@@ -239,15 +255,19 @@
 				>
 			</File>
 			<File
+				RelativePath="..\tools\editor\ExplorerView.h"
+				>
+			</File>
+			<File
 				RelativePath="..\tools\editor\MainFrm.h"
 				>
 			</File>
 			<File
-				RelativePath="..\tools\editor\n3viewerapp.h"
+				RelativePath="..\tools\editor\PaneDialog.h"
 				>
 			</File>
 			<File
-				RelativePath=".\resource.h"
+				RelativePath="..\tools\editor\PaneView.h"
 				>
 			</File>
 		</Filter>
@@ -255,23 +275,91 @@
 			Name="Resource"
 			>
 			<File
-				RelativePath=".\res\editor.ico"
+				RelativePath="..\tools\editor\res\editor.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\res\editor2.rc2"
+				RelativePath="..\tools\editor\res\editor2.rc2"
 				>
 			</File>
 			<File
-				RelativePath=".\editor_win32.rc"
+				RelativePath="..\tools\editor\editor_win32.rc"
 				>
 			</File>
 			<File
-				RelativePath=".\res\paneicons.bmp"
+				RelativePath="..\tools\editor\res\paneicons.bmp"
 				>
 			</File>
 			<File
-				RelativePath=".\res\Toolbar.bmp"
+				RelativePath="..\tools\editor\resource.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\res\Toolbar.bmp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Toolkit"
+			>
+			<File
+				RelativePath="..\tools\editor\binarymodelwriter.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\binarymodelwriter.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\modelnodewriter.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\modelnodewriter.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\n3viewerapp.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\n3viewerapp.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="dae2n3"
+			>
+			<File
+				RelativePath="..\tools\editor\DAE2Nebula3Writer.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\DAE2Nebula3Writer.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\DAE2Nebula3Writer_Animation.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\DAE2Nebula3Writer_Controller.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\DAE2Nebula3Writer_Geometry.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\DAE2Nebula3Writer_VisualScene.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\Index.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tools\editor\Weight.h"
 				>
 			</File>
 		</Filter>
@@ -283,7 +371,7 @@
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="xtremetools2.rc"
+			Value="\Nebula3 SDK (Mar 2010)\code\tools\editor\editor_win32.rc"
 		/>
 	</Globals>
 </VisualStudioProject>

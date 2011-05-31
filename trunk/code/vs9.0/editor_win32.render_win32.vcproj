@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="render_win32"
 	ProjectGUID="{654D0C3A-5C3F-4251-AE00-2681040AFF02}"
+	RootNamespace="render_win32"
 	TargetFrameworkVersion="0"
 	>
 	<Platforms>
@@ -22,7 +23,7 @@
 			OutputDirectory=".\Win32\Editor_Debug"
 			IntermediateDirectory=".\Win32\Editor_Debug\render_win32"
 			ConfigurationType="4"
-			UseOfMFC="0"
+			UseOfMFC="1"
 			ATLMinimizesCRunTimeLibraryUsage="false"
 			WholeProgramOptimization="0"
 			>
@@ -48,13 +49,14 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions=""
 				Optimization="0"
-				AdditionalIncludeDirectories="..;../foundation;../extlibs;../render;../addons ;"
+				AdditionalIncludeDirectories="..;../foundation;../extlibs;../render;../addons;../extlibs/opencollada/COLLADABaseUtils/include;../extlibs/opencollada/COLLADAFramework/include;../extlibs/opencollada/COLLADASaxFrameworkLoader/include;../extlibs/opencollada/MathMLSolver/include;../extlibs/opencollada/MathMLSolver/include/AST"
 				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0"
 				StringPooling="true"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
+				StructMemberAlignment="5"
 				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -2532,6 +2534,14 @@
 			</File>
 			<File
 				RelativePath="..\render\models\modelserver.h"
+				>
+			</File>
+			<File
+				RelativePath="..\render\models\modelwriter.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\render\models\modelwriter.h"
 				>
 			</File>
 			<File
