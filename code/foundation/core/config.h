@@ -39,7 +39,7 @@
 #define NEBULA3_DEBUG (1)
 #endif
 
-#define NEBULA3_EDITOR (0)
+#define NEBULA3_EDITOR (1)
 
 /// max size of a data slice is 16 kByte - 1 byte
 /// this needs to be in a header, which is accessable from SPU too,

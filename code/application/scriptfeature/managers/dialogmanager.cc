@@ -6,9 +6,6 @@
 #include "scriptfeature/managers/dialogmanager.h"
 #include "scriptfeature/managers/scripttemplatemanager.h"
 #include "scriptfeature/scriptattr/scriptattributes.h"
-#include "scriptfeature/dialog/dialogtake.h"
-#include "scriptfeature/dialog/dialog.h"
-#include "scriptfeature/dialog/dialogdesc.h"
 #include "scriptfeature/scriptprotocol.h"
 #include "db/reader.h"
 #include "db/writer.h"
@@ -38,14 +35,14 @@ DialogManager::~DialogManager()
     __DestructSingleton;
 }
 
-//------------------------------------------------------------------------------
-/**
-*/
-Ptr<Script::Dialog>
-DialogManager::CreateDialog()
-{
-    return Script::Dialog::Create();
-}
+////------------------------------------------------------------------------------
+///**
+//*/
+//Ptr<Script::Dialog>
+//DialogManager::CreateDialog()
+//{
+//    return Script::Dialog::Create();
+//}
 
 //------------------------------------------------------------------------------
 /**

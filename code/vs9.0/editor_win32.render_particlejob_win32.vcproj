@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="render_particlejob_win32"
 	ProjectGUID="{EF6F113B-EACC-471F-95A2-ED30A545FCF0}"
+	RootNamespace="render_particlejob_win32"
 	TargetFrameworkVersion="0"
 	>
 	<Platforms>
@@ -55,12 +56,15 @@
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
+				StructMemberAlignment="5"
 				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
-				UsePrecompiledHeader="0"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -609,7 +613,7 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 			>
 			<File
-				RelativePath="..\render/particles\jobs\particlejob.cc"
+				RelativePath="..\render\particles\jobs\particlejob.cc"
 				>
 			</File>
 		</Filter>

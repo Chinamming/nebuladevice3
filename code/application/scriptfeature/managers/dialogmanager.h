@@ -22,6 +22,9 @@
 #include "core/singleton.h"
 #include "util/dictionary.h"
 #include "util/guid.h"
+#include "scriptfeature/dialog/dialogtake.h"
+#include "scriptfeature/dialog/dialog.h"
+#include "scriptfeature/dialog/dialogdesc.h"
 
 namespace Actions
 {
@@ -36,9 +39,9 @@ namespace Actions
 //------------------------------------------------------------------------------
 namespace Script
 {
-class Dialog;
-class DialogTake;
-class DialogDesc;
+//class Dialog;
+//class DialogTake;
+//class DialogDesc;
 
 class DialogManager : public Game::Manager
 {
@@ -64,7 +67,7 @@ public:
 	virtual void HandleMessage(const Ptr<Messaging::Message>& msg);
 
     /// create a Dialog
-    virtual Ptr<Script::Dialog> CreateDialog();
+    //virtual Ptr<Script::Dialog> CreateDialog();
 
     /// start a dialog for a given speaker
     virtual void StartDialog(const Util::String& speaker);

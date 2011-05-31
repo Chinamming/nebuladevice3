@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="render_charevalskeletonjob_win32"
 	ProjectGUID="{8DF4B071-0CD7-47AC-8240-E08E12A1E1F2}"
+	RootNamespace="render_charevalskeletonjob_win32"
 	TargetFrameworkVersion="0"
 	>
 	<Platforms>
@@ -55,12 +56,15 @@
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
+				StructMemberAlignment="5"
 				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
-				UsePrecompiledHeader="0"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -609,7 +613,7 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 			>
 			<File
-				RelativePath="..\render/characters\jobs\charevalskeletonjob.cc"
+				RelativePath="..\render\characters\jobs\charevalskeletonjob.cc"
 				>
 			</File>
 		</Filter>

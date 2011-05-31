@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9,00"
+	Version="9.00"
 	Name="testviewer"
 	ProjectGUID="{66B5D938-4F83-4645-B685-AAC19BAE5FE6}"
+	TargetFrameworkVersion="0"
 	>
 	<Platforms>
 		<Platform
@@ -32,6 +33,9 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
+				Name="Nebula3 Interface Definition"
+			/>
+			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -44,7 +48,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions=""
 				Optimization="0"
-				AdditionalIncludeDirectories="..;../foundation;../render;../extlibs;../tools;../addons ;"
+				AdditionalIncludeDirectories="..;../foundation;../render;../extlibs;../tools;../addons;../extlibs/bullet/src"
 				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				MinimalRebuild="true"
@@ -80,21 +84,24 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib libbulletcollision_d.lib libbulletdynamics_d.lib libbulletmath_d.lib libbulletmultithreaded_d.lib libspudispatchD.lib"
+				OutputFile="..\..\bin\win32\testviewer.debug.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Debug,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.debug.exe"
+				AdditionalLibraryDirectories=".\Win32\Debug;..\..\bin\win32;..\lib\win32_vc9_i386;..\..\lib\bullet\win32"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.debug.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -104,6 +111,9 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -123,6 +133,9 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -152,6 +165,9 @@
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -159,9 +175,6 @@
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -177,20 +190,23 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				OutputFile="..\..\bin\win32\testviewer.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".\Win32\Release,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.exe"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -200,6 +216,9 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -219,6 +238,9 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -248,6 +270,9 @@
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -255,9 +280,6 @@
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -273,20 +295,23 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				OutputFile="..\..\bin\win32\testviewer.programming.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".\Win32\Programming,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.programming.exe"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.programming.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.programming.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -296,6 +321,9 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -315,6 +343,9 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -344,6 +375,9 @@
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -351,9 +385,6 @@
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -369,20 +400,23 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				OutputFile="..\..\bin\win32\testviewer.public_build.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".\Win32\Public_Build,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.public_build.exe"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.public_build.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.public_build.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -392,6 +426,9 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -411,6 +448,9 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -440,6 +480,9 @@
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -447,9 +490,6 @@
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -464,22 +504,25 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalOptions="/export:SecuROM,@1"
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				OutputFile="..\..\bin\win32\testviewer.securom.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".\Win32\Securom,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.securom.exe"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.securom.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.securom.map"
 				MapExports="true"
-				AdditionalOptions="/export:SecuROM,@1"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -489,6 +532,9 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -508,6 +554,9 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -555,20 +604,23 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				OutputFile="..\..\bin\win32\testviewer.maya_debug.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".\Win32\Maya_Debug,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.maya_debug.exe"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.maya_debug.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.maya_debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -578,6 +630,9 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -599,6 +654,9 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
+				Name="Nebula3 Interface Definition"
+			/>
+			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -616,17 +674,17 @@
 				PreprocessorDefinitions="__MAYA__;__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				ExceptionHandling="0"
+				RuntimeTypeInfo="false"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
 				Detect64BitPortabilityProblems="false"
-				RuntimeTypeInfo="false"
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -642,20 +700,23 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib  "
+				OutputFile="..\..\bin\win32\testviewer.exe"
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".\Win32\Maya_Release,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\testviewer.exe"
+				GenerateManifest="false"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testviewer.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testviewer.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -667,6 +728,9 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -674,6 +738,38 @@
 	<References>
 	</References>
 	<Files>
+		<Filter
+			Name="bulletApp"
+			>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\bdapplication.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\bdapplication.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\bdsimple.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\bulletnebulaconversion.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\debugdrawer.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\debugdrawer.h"
+				>
+			</File>
+			<File
+				RelativePath="..\tests\bullet_dynamics_simple\nebulamotionstate.h"
+				>
+			</File>
+		</Filter>
 		<File
 			RelativePath="..\tools\stdneb.cc"
 			>
@@ -734,23 +830,6 @@
 				/>
 			</FileConfiguration>
 		</File>
-		<Filter
-			Name="testviewer"
-			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
-			>
-			<File
-				RelativePath="..\tools\testviewer\testviewer.cc"
-				>
-			</File>
-			<File
-				RelativePath="..\tools\testviewer\testviewerapplication.cc"
-				>
-			</File>
-			<File
-				RelativePath="..\tools\testviewer\testviewerapplication.h"
-				>
-			</File>
-		</Filter>
 	</Files>
 	<Globals>
 	</Globals>
