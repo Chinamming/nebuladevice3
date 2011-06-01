@@ -1,0 +1,8 @@
+#labels TCL,SLN
+ # install TCL
+ # install VS2008
+ # start "Visual Studio Command Prompt"
+ # change directory to "nebula3/code":
+  * cd d:\sdk\nebula3\code
+ # run update.tcl:
+  * d:\sdk\tcl\bin\tclsh85.exe update.tcl
