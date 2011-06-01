@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="texturestreamingtest_win32"
-	ProjectGUID="{A0E9977B-48DD-4041-BA00-BD8FFC0EE5B7}"
+	ProjectGUID="{832E8531-AE20-49E4-B41C-0048EF688D67}"
 	>
 	<Platforms>
 		<Platform

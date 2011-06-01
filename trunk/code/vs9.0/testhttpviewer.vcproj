@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="testhttpviewer"
-	ProjectGUID="{19B3B1D3-66DD-48BF-A20E-CF10D8CB6C77}"
+	ProjectGUID="{7DB35FA5-E023-43E0-8DEB-20486205FAFB}"
 	>
 	<Platforms>
 		<Platform

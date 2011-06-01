@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="render_visibilityboxsystemjob_win32"
-	ProjectGUID="{77BE9AA4-CDD0-45AC-9588-419F5EF5528C}"
+	ProjectGUID="{CFEC2519-384F-41D8-9908-12785BB6FCEF}"
 	>
 	<Platforms>
 		<Platform

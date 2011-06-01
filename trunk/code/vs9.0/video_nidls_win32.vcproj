@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="video_nidls_win32"
-	ProjectGUID="{501526E1-2DD6-4527-B2B7-26F0CC2C86EA}"
+	ProjectGUID="{EAB36960-07DB-4343-94EE-209D9922F5D3}"
 	>
 	<Platforms>
 		<Platform

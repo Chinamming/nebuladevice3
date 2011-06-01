@@ -5,6 +5,7 @@
 #include "stdneb.h"
 #include "coregraphics/rendertarget.h"
 #include "resources/resourcemanager.h"
+#include "coregraphics/displaydevice.h"
 
 namespace Base
 {
@@ -20,6 +21,8 @@ RenderTargetBase::RenderTargetBase() :
     batchType(BatchType::InvalidBatchType),
     width(0),
     height(0),
+	relWidth(0.0f),
+	relHeight(0.0f),
     resolveTextureDimensionsValid(false),
     resolveRectValid(false),
     resolveTextureWidth(0),
@@ -62,6 +65,16 @@ void
 RenderTargetBase::Setup()
 {
     n_assert(!this->isValid);
+	// recompute the relative width and height
+	const DisplayMode& displayMode = DisplayDevice::Instance()->GetDisplayMode();
+	if (0.0f != this->relWidth)
+	{
+		this->SetWidth(uint(float(displayMode.GetWidth()) * this->relWidth));
+	}
+	if (0.0f != this->relHeight)
+	{
+		this->SetHeight(uint(float(displayMode.GetHeight()) * this->relHeight));
+	}
     this->isValid = true;
 }
 

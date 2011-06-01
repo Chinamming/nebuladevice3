@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="framecapture_win32"
-	ProjectGUID="{4710AA12-EF28-480F-B307-5EE13E0BC0F4}"
+	ProjectGUID="{067820E2-9AF8-44B9-9DD7-42D9C0B4E9F3}"
 	>
 	<Platforms>
 		<Platform

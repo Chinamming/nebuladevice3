@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="audio2_nidls_win32"
-	ProjectGUID="{0F6F64DD-CEA8-4F1A-A782-01B1DEDEB77B}"
+	ProjectGUID="{40C0A9BA-A4B5-40A5-8197-217DDB45E683}"
 	>
 	<Platforms>
 		<Platform

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="forest_win32"
-	ProjectGUID="{62B3A25C-965A-4197-B477-955E69A738FF}"
+	ProjectGUID="{F92628C1-1503-4286-ADC4-92834DBE551C}"
 	>
 	<Platforms>
 		<Platform
@@ -382,6 +382,30 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 			>
 			<File
+				RelativePath="..\addons\forest\chunklodmesh.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\chunklodmesh.h"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\chunklodnode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\chunklodnode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\chunklodtree.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\chunklodtree.h"
+				>
+			</File>
+			<File
 				RelativePath="..\addons\forest\forestprotocol.cc"
 				>
 			</File>
@@ -395,6 +419,22 @@
 			</File>
 			<File
 				RelativePath="..\addons\forest\forestrendermodule.h"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\terrainnode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\terrainnode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\terrainrendermodule.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\addons\forest\terrainrendermodule.h"
 				>
 			</File>
 			<File
@@ -491,6 +531,30 @@
 				</File>
 				<File
 					RelativePath="..\addons\forest/rt\forestserver.h"
+					>
+				</File>
+				<File
+					RelativePath="..\addons\forest/rt\terrainhandler.cc"
+					>
+				</File>
+				<File
+					RelativePath="..\addons\forest/rt\terrainhandler.h"
+					>
+				</File>
+				<File
+					RelativePath="..\addons\forest/rt\terrainplugin.cc"
+					>
+				</File>
+				<File
+					RelativePath="..\addons\forest/rt\terrainplugin.h"
+					>
+				</File>
+				<File
+					RelativePath="..\addons\forest/rt\terrainserver.cc"
+					>
+				</File>
+				<File
+					RelativePath="..\addons\forest/rt\terrainserver.h"
 					>
 				</File>
 			</Filter>

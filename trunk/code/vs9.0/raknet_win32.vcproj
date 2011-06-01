@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="raknet_win32"
-	ProjectGUID="{B799A6D3-8F46-43D9-A989-6D9903ED7E48}"
+	ProjectGUID="{338830BC-3109-4CA6-9835-2F7229D34196}"
 	>
 	<Platforms>
 		<Platform

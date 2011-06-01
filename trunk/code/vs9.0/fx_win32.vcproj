@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="fx_win32"
-	ProjectGUID="{248209ED-AA92-49CF-86D4-C284B649D6D4}"
+	ProjectGUID="{41C60DF6-52A1-4324-8C85-9E7134A7953B}"
 	>
 	<Platforms>
 		<Platform

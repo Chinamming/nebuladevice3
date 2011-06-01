@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="scaleform_win32"
-	ProjectGUID="{9F13EA2A-BDD5-46D1-9B9B-E00F4DD3EF39}"
+	ProjectGUID="{30198CBC-0BE1-47E8-BDAE-8A57FDC6D37D}"
 	>
 	<Platforms>
 		<Platform

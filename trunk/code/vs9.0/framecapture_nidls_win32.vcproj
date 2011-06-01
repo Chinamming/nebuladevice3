@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="framecapture_nidls_win32"
-	ProjectGUID="{75C98048-26E0-4AFF-89E7-0B9DA77F94B8}"
+	ProjectGUID="{A3120BD8-E1A2-4219-B6EC-561A2088BB55}"
 	>
 	<Platforms>
 		<Platform

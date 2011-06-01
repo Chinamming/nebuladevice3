@@ -34,8 +34,6 @@ public:
     virtual bool PutEvent(const DisplayEvent& event);
 
 protected:
-	///TODO:
-public:
     /// called when an event should be processed, override this method in your subclass
     virtual bool HandleEvent(const DisplayEvent& event);
 };

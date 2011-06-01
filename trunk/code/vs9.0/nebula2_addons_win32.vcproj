@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="nebula2_addons_win32"
-	ProjectGUID="{0D9F0E70-650D-40EB-AFED-F55025718BC5}"
+	ProjectGUID="{7AFD8C9C-1759-41C2-80CA-42BA199C06D7}"
 	>
 	<Platforms>
 		<Platform

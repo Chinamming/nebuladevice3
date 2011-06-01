@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="tinyxml_win32"
-	ProjectGUID="{06E819D3-D9AF-49DD-9D57-2C1D78BED8CC}"
+	ProjectGUID="{29731B02-608D-4BDF-9A82-392F500EA2E8}"
 	>
 	<Platforms>
 		<Platform

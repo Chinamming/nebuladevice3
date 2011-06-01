@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="jobstest_test_win32"
-	ProjectGUID="{A78062A6-AAA4-4026-88FA-3D38447EF07C}"
+	ProjectGUID="{0A19BB6C-7433-40E0-9490-F548A93988F9}"
 	>
 	<Platforms>
 		<Platform

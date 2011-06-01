@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="video_win32"
-	ProjectGUID="{F5CFD04B-A4D1-43DA-9CCA-39E085651393}"
+	ProjectGUID="{705098DF-7583-4025-A102-56F63728C900}"
 	>
 	<Platforms>
 		<Platform

@@ -39,6 +39,10 @@ public:
     void SetFullscreen(bool b);
     /// get windowed/fullscreen mode
     bool IsFullscreen() const;
+	/// set whether the size can be auto-adjusted to window's size
+	void SetAutoAdjustSize(bool b);
+	/// get whether the size can be auto-adjusted to window's size
+	bool IsAutoAdjustSize() const;
     /// enable display mode switch when running fullscreen (default is true);
     void SetDisplayModeSwitchEnabled(bool b);
     /// is display mode switch enabled for fullscreen?
@@ -69,6 +73,7 @@ private:
     CoreGraphics::DisplayMode displayMode;
     CoreGraphics::AntiAliasQuality::Code antiAliasQuality;
     bool fullscreen;
+	bool autoAdjustSize;
     bool modeSwitchEnabled;
     bool tripleBufferingEnabled;
     bool alwaysOnTop;
@@ -143,6 +148,22 @@ DisplaySettings::SetFullscreen(bool b)
 //------------------------------------------------------------------------------
 /**
 */
+inline void
+DisplaySettings::SetAutoAdjustSize(bool b)
+{
+	this->autoAdjustSize = b;
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
+inline bool
+DisplaySettings::IsAutoAdjustSize() const
+{
+	return this->autoAdjustSize;
+}
+
+//------------------------------------------------------------------------------
 inline bool
 DisplaySettings::IsFullscreen() const
 {

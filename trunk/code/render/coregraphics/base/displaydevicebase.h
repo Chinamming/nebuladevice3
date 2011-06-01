@@ -59,6 +59,10 @@ public:
     void SetFullscreen(bool b);
     /// get windowed/fullscreen mode
     bool IsFullscreen() const;
+	/// set whether the size can be auto-adjusted to window's size
+	void SetAutoAdjustSize(bool b);
+	/// get whether the size can be auto-adjusted to window's size
+	bool IsAutoAdjustSize() const;
     /// enable display mode switch when running fullscreen (default is true);
     void SetDisplayModeSwitchEnabled(bool b);
     /// is display mode switch enabled for fullscreen?
@@ -102,16 +106,19 @@ public:
     void AttachEventHandler(const Ptr<CoreGraphics::DisplayEventHandler>& h);
     /// remove a display event handler
     void RemoveEventHandler(const Ptr<CoreGraphics::DisplayEventHandler>& h);
-        
-protected:
     /// notify event handlers about an event
     bool NotifyEventHandlers(const CoreGraphics::DisplayEvent& e);
 
+	/// adjust size to window's size
+	virtual void AdjustSize();
+
+protected:
     CoreGraphics::Adapter::Code adapter;
     CoreGraphics::DisplayMode displayMode;
     CoreGraphics::AntiAliasQuality::Code antiAliasQuality;
 
     bool fullscreen;
+	bool autoAdjustSize;
     bool modeSwitchEnabled;
     bool tripleBufferingEnabled;
     bool alwaysOnTop;
@@ -205,6 +212,20 @@ inline bool
 DisplayDeviceBase::IsFullscreen() const
 {
     return this->fullscreen;
+}
+
+//------------------------------------------------------------------------------
+inline void
+DisplayDeviceBase::SetAutoAdjustSize(bool b)
+{
+	this->autoAdjustSize = b;
+}
+
+//------------------------------------------------------------------------------
+inline bool
+DisplayDeviceBase::IsAutoAdjustSize() const
+{
+	return this->autoAdjustSize;
 }
 
 //------------------------------------------------------------------------------

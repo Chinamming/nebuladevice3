@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="multiplayerconnectiontest_win32"
-	ProjectGUID="{D53525CD-99AF-49B5-8EB3-F4AA8F2823CE}"
+	ProjectGUID="{1F23F629-FAF9-41CF-ABF4-DB2D59159F25}"
 	>
 	<Platforms>
 		<Platform

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="forest_nidls_win32"
-	ProjectGUID="{75AAB83F-FB14-41CB-9B63-CA8EF679706A}"
+	ProjectGUID="{7BE22BEA-5E6E-4EA4-9688-1307E41D9C44}"
 	>
 	<Platforms>
 		<Platform

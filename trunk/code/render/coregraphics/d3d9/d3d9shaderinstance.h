@@ -5,8 +5,6 @@
     
     D3D9 implementation of CoreGraphics::ShaderInstance.
     
-    @todo lost/reset device handling
-
     (C) 2007 Radon Labs GmbH
 */
 #include "coregraphics/base/shaderinstancebase.h"

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="physics_win32"
-	ProjectGUID="{C93CEFE8-39B1-458D-955D-404ADF356553}"
+	ProjectGUID="{70D77750-32BC-4331-A191-F7D91D454341}"
 	>
 	<Platforms>
 		<Platform

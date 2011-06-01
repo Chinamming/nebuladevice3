@@ -59,10 +59,10 @@ ViewerApplication::Open()
 
         // create a default stage
         // attach visibility systems to checker
-        Ptr<Visibility::VisibilityQuadtree> visQuadtreeSystem = Visibility::VisibilityQuadtree::Create();
+        Ptr<VisibilityQuadtree> visQuadtreeSystem = VisibilityQuadtree::Create();
         visQuadtreeSystem->SetQuadTreeSettings(4, Math::bbox(Math::point(0,0,0), Math::vector(100.0f, 10.0f, 100.0f)));
-        Ptr<Visibility::VisibilityClusterSystem> visClusterSystem = Visibility::VisibilityClusterSystem::Create();
-        Ptr<Visibility::VisibilityBoxSystem> visBoxSystem = Visibility::VisibilityBoxSystem::Create();
+        Ptr<VisibilityClusterSystem> visClusterSystem = VisibilityClusterSystem::Create();
+        Ptr<VisibilityBoxSystem> visBoxSystem = VisibilityBoxSystem::Create();
         
         Util::Array<Ptr<VisibilitySystemBase> > visSystems;
         visSystems.Append(visQuadtreeSystem.cast<VisibilitySystemBase>());

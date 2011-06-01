@@ -33,6 +33,9 @@ public:
     /// get general info about display adapter
     CoreGraphics::AdapterInfo GetAdapterInfo(CoreGraphics::Adapter::Code adapter);
 
+	/// adjust size to window's size
+	void AdjustSize();
+
 private:
     /// adjust window size taking client area into account
     virtual CoreGraphics::DisplayMode ComputeAdjustedWindowRect();

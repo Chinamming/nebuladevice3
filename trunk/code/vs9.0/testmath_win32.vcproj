@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="testmath_win32"
-	ProjectGUID="{5FC3958C-52A1-460C-9931-E2A93865D816}"
+	ProjectGUID="{FF429989-7918-4DB2-91EF-4143A60D75B5}"
 	>
 	<Platforms>
 		<Platform

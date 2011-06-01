@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="render_animjobsample_win32"
-	ProjectGUID="{63B2AE2D-0275-4D21-8F56-934AD13BD341}"
+	ProjectGUID="{B45E0219-0203-4FE1-A123-30B4179A95CF}"
 	>
 	<Platforms>
 		<Platform

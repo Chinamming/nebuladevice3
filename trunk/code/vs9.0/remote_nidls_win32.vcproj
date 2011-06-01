@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="remote_nidls_win32"
-	ProjectGUID="{1107172E-0FDE-45E0-8CD0-7DE1238083C2}"
+	ProjectGUID="{EDF1B231-38F8-4E55-9F71-9F01C8307970}"
 	>
 	<Platforms>
 		<Platform

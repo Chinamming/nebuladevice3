@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="testclient"
-	ProjectGUID="{9E47B6B6-ADCB-47C6-9C2B-2832A916E8BA}"
+	ProjectGUID="{EE4D781A-8CA9-41F2-9757-E2A310518E13}"
 	>
 	<Platforms>
 		<Platform

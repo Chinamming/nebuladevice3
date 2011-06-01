@@ -49,6 +49,7 @@ Display::Open()
     msg->SetDisplayMode(this->settings.DisplayMode());
     msg->SetAntiAliasQuality(this->settings.GetAntiAliasQuality());
     msg->SetFullscreen(this->settings.IsFullscreen());
+	msg->SetAutoAdjustSize(this->settings.IsAutoAdjustSize());
     msg->SetDisplayModeSwitchEnabled(this->settings.IsDisplayModeSwitchEnabled());
     msg->SetTripleBufferingEnabled(this->settings.IsTripleBufferingEnabled());
     msg->SetAlwaysOnTop(this->settings.IsAlwaysOnTop());
@@ -127,6 +128,16 @@ Display::SupportsDisplayMode(Adapter::Code adapter, const DisplayMode& requested
 }
 
 //------------------------------------------------------------------------------
+void
+Display::AdjustSize()
+{
+	Ptr<Graphics::AdjustDisplaySize> msg = Graphics::AdjustDisplaySize::Create();
+	GraphicsInterface::Instance()->Send(msg.cast<Message>());
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
 /**
 */
 DisplayMode

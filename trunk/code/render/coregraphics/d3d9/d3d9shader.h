@@ -5,12 +5,11 @@
     
     D3D9 implementation of Shader.
 
-    @todo lost/reset device handling
-    
     (C) 2007 Radon Labs GmbH
 */
 #include "coregraphics/base/shaderbase.h"
 #include "coregraphics/shaderinstance.h"
+#include "coregraphics/d3d9/d3d9resource.h"
 
 //------------------------------------------------------------------------------
 namespace Direct3D9
@@ -34,10 +33,11 @@ private:
 
     /// set d3d9 effect object
     void SetD3D9Effect(ID3DXEffect* ptr);
-    /// called by d3d9 shader server when d3d9 device is lost
-    void OnLostDevice();
-    /// called by d3d9 shader server when d3d9 device is reset
-    void OnResetDevice();
+
+    /// called when d3d9 device is lost
+    virtual void OnLostDevice();
+    /// called when d3d9 device is reset
+    virtual void OnResetDevice();
 
     ID3DXEffect* d3d9Effect;
 };
@@ -51,6 +51,8 @@ D3D9Shader::SetD3D9Effect(ID3DXEffect* ptr)
     n_assert(0 != ptr);
     n_assert(0 == this->d3d9Effect);
     this->d3d9Effect = ptr;
+
+	this->AddToResourceEventHandler();
 }
 
 //------------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="Nebula3Maya2009Plugin"
-	ProjectGUID="{ED8A2F41-B43E-4083-A5EF-3E5B8C07DAB5}"
+	ProjectGUID="{8CE48CC1-3A1B-45DA-9ED2-43380AFF3526}"
 	>
 	<Platforms>
 		<Platform

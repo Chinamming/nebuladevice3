@@ -132,6 +132,14 @@ Win32DisplayDevice::OpenWindow()
 		icon = LoadIcon(NULL, IDI_APPLICATION);
 	}
 
+	// if the window has been created, use it
+	if (0 != this->parentWindow)
+	{
+		this->hWnd = FindWindowEx((HWND)this->parentWindow, 0, NEBULA3_WINDOW_CLASS, NULL);
+	}
+	DisplayMode adjMode = this->ComputeAdjustedWindowRect();
+	if (0 == this->hWnd)
+	{
 	// register window class
 	WNDCLASSEX wndClass;
 	Memory::Clear(&wndClass, sizeof(wndClass));
@@ -160,7 +168,6 @@ Win32DisplayDevice::OpenWindow()
 	{
 		windowStyle = this->fullscreenStyle;
 	}
-	DisplayMode adjMode = this->ComputeAdjustedWindowRect();
 	HWND parentHwnd = (HWND) this->parentWindow;
 
 	// open window
@@ -181,6 +188,7 @@ Win32DisplayDevice::OpenWindow()
 	if (this->IsAlwaysOnTop())
 	{
 		SetWindowPos(this->hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
+	}
 	}
 
 	// if we're in child-window mode, adjust the actually used display mode!
@@ -281,6 +289,10 @@ Win32DisplayDevice::OnRestored()
     {
         ReleaseCapture();
     }
+	if (NULL != this->hWnd && this->IsAutoAdjustSize())
+	{
+		this->AdjustSize();
+}
 }
 
 //------------------------------------------------------------------------------
@@ -611,7 +623,7 @@ Win32DisplayDevice::WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     key code.
 */
 Input::Key::Code
-Win32DisplayDevice::TranslateKeyCode(WPARAM wParam) const
+Win32DisplayDevice::TranslateKeyCode(WPARAM wParam)
 {
     switch (wParam)
     {
@@ -752,6 +764,19 @@ Win32DisplayDevice::TranslateKeyCode(WPARAM wParam) const
         case 'Z':                       return Input::Key::Z;
         default:                        return Input::Key::InvalidKey;
     }
+}
+
+//------------------------------------------------------------------------------
+void
+Win32DisplayDevice::AdjustSize()
+{
+	n_assert(NULL != this->hWnd);
+
+	RECT rect = { 0 };
+	GetClientRect(this->hWnd, &rect);
+	this->displayMode.SetWidth(rect.right);
+	this->displayMode.SetHeight(rect.bottom);
+	this->displayMode.SetAspectRatio(float(rect.right) / float(rect.bottom));
 }
 
 } // namespace CoreGraphics

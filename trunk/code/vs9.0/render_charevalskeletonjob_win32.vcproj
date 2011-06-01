@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="render_charevalskeletonjob_win32"
-	ProjectGUID="{90ECCA6D-A595-409F-B65A-63055B976FD9}"
+	ProjectGUID="{02C53B78-42C2-44B9-9A38-AF8CE275AD9E}"
 	>
 	<Platforms>
 		<Platform
