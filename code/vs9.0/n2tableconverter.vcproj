@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="n2tableconverter"
-	ProjectGUID="{C5157184-8B4B-4AA8-8B8D-63E4E0457AE2}"
+	ProjectGUID="{3DB05A7A-6BD7-43FD-8448-22C7401122B4}"
 	>
 	<Platforms>
 		<Platform

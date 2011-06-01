@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="render_particlejob_win32"
-	ProjectGUID="{5D66DDF3-F80B-4D00-9D5A-74F35E826E09}"
+	ProjectGUID="{D9825F53-6ACF-417A-B133-A6347537E680}"
 	>
 	<Platforms>
 		<Platform

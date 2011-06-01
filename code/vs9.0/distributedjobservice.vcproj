@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="distributedjobservice"
-	ProjectGUID="{C948FDC5-0AA8-4D4B-A670-3E8E28DB9449}"
+	ProjectGUID="{EBEA651F-3225-4892-9680-67731D96B7C0}"
 	>
 	<Platforms>
 		<Platform

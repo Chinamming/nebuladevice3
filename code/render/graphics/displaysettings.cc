@@ -19,6 +19,7 @@ DisplaySettings::DisplaySettings() :
     displayMode(0, 0, 1024, 768, PixelFormat::X8R8G8B8),
     antiAliasQuality(AntiAliasQuality::None),
     fullscreen(false),
+	autoAdjustSize(true),
     modeSwitchEnabled(true),
     tripleBufferingEnabled(false),
     alwaysOnTop(false),

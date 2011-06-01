@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="forestviewer"
-	ProjectGUID="{E76E2F0B-8072-44D5-AEF7-824AA653BB22}"
+	ProjectGUID="{084B16CA-5E74-4168-A7B2-0721673A90F8}"
 	>
 	<Platforms>
 		<Platform

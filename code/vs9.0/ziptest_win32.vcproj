@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="ziptest_win32"
-	ProjectGUID="{CD3B2472-CAC9-4527-B2F6-B8CD3E37808F}"
+	ProjectGUID="{968F6787-F2F9-4820-91B8-D610D56CB18E}"
 	>
 	<Platforms>
 		<Platform

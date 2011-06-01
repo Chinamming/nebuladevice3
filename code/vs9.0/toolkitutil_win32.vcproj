@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="toolkitutil_win32"
-	ProjectGUID="{C587AC12-1554-4E21-B39D-3326C3E6931A}"
+	ProjectGUID="{FF1D84DB-ACD3-4543-B5A3-3A823D29A82D}"
 	>
 	<Platforms>
 		<Platform
@@ -718,6 +718,14 @@
 				</File>
 				<File
 					RelativePath="..\toolkit\toolkitutil/meshutil\meshbuildergroup.h"
+					>
+				</File>
+				<File
+					RelativePath="..\toolkit\toolkitutil/meshutil\meshbuildersaver.cc"
+					>
+				</File>
+				<File
+					RelativePath="..\toolkit\toolkitutil/meshutil\meshbuildersaver.h"
 					>
 				</File>
 				<File

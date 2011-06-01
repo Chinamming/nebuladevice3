@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="fmodcoretest_win32"
-	ProjectGUID="{55A7D0B4-AA1F-4DED-9AEC-4F2C36039A62}"
+	ProjectGUID="{BF144505-BF20-4C57-8A3A-CB6CF3C916FC}"
 	>
 	<Platforms>
 		<Platform

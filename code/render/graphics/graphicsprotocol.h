@@ -133,6 +133,18 @@ public:
 private:
     bool fullscreen;
 public:
+    void SetAutoAdjustSize(bool val)
+    {
+        n_assert(!this->handled);
+        this->autoadjustsize = val;
+    };
+    bool GetAutoAdjustSize() const
+    {
+        return this->autoadjustsize;
+    };
+private:
+    bool autoadjustsize;
+public:
     void SetDisplayModeSwitchEnabled(bool val)
     {
         n_assert(!this->handled);
@@ -406,6 +418,15 @@ public:
     };
 private:
     bool result;
+};
+//------------------------------------------------------------------------------
+class AdjustDisplaySize : public Messaging::Message
+{
+    __DeclareClass(AdjustDisplaySize);
+    __DeclareMsgId;
+public:
+    AdjustDisplaySize() 
+    { };
 };
 //------------------------------------------------------------------------------
 class GetCurrentAdapterDisplayMode : public Messaging::Message

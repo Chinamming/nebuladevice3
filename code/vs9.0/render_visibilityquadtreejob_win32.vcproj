@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="render_visibilityquadtreejob_win32"
-	ProjectGUID="{E90947FC-C80C-4FE3-8DCB-282C38583415}"
+	ProjectGUID="{64B7FF2E-BC1E-4381-86A1-9748F66DC4B6}"
 	>
 	<Platforms>
 		<Platform

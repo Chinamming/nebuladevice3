@@ -9,11 +9,12 @@
 */    
 #include "coregraphics/base/rendertargetbase.h"
 #include "coregraphics/shadervariable.h"
+#include "coregraphics/d3d9/d3d9resource.h"
 
 //------------------------------------------------------------------------------
 namespace Direct3D9
 {
-class D3D9RenderTarget : public Base::RenderTargetBase
+class D3D9RenderTarget : public Base::RenderTargetBase, public D3D9Resource
 {
     __DeclareClass(D3D9RenderTarget);
 public:
@@ -33,11 +34,17 @@ public:
     /// generate mipmap levels
     void GenerateMipLevels();
 
-protected:
-    friend class D3D9RenderDevice;
+private:
+	/// called when d3d9 device is lost
+	virtual void OnLostDevice();
+	/// called when d3d9 device is reset
+	virtual void OnResetDevice();
 
     /// setup compatible multisample type
     void SetupMultiSampleType();
+                                                      
+private:
+    friend class D3D9RenderDevice;
                                                       
     Ptr<CoreGraphics::ShaderVariable> sharedPixelSize; 
     Ptr<CoreGraphics::ShaderVariable> sharedHalfPixelSize;

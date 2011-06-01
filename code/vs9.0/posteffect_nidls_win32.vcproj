@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="posteffect_nidls_win32"
-	ProjectGUID="{D39A24A2-DCBD-4E68-A0D9-D49A79E70A71}"
+	ProjectGUID="{C10801E3-DAC0-4966-A9B1-F0CC0CE9D236}"
 	>
 	<Platforms>
 		<Platform

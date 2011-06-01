@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="zipstresstest_win32"
-	ProjectGUID="{2C96D23D-6E63-4DEC-B163-F3A2FE498180}"
+	ProjectGUID="{707A0629-DC87-4775-B142-08F3C1CD7283}"
 	>
 	<Platforms>
 		<Platform

@@ -53,8 +53,12 @@ D3D9Shader::Unload()
 void
 D3D9Shader::OnLostDevice()
 {
-    if (0 != this->d3d9Effect)
-    {
+	if (this->isLosted)
+		return;
+
+	if (0 == this->d3d9Effect)
+		return;
+
         HRESULT hr = this->d3d9Effect->OnLostDevice();
         n_assert(SUCCEEDED(hr));
 
@@ -64,6 +68,8 @@ D3D9Shader::OnLostDevice()
         {
             this->shaderInstances[i].downcast<D3D9ShaderInstance>()->OnLostDevice();
         }
+
+	this->isLosted = true;
     }
 }
 
@@ -73,8 +79,12 @@ D3D9Shader::OnLostDevice()
 void
 D3D9Shader::OnResetDevice()
 {
-    if (0 != this->d3d9Effect)
-    {
+	if (!this->isLosted)
+		return;
+
+	if (0 == this->d3d9Effect)
+		return;
+
         HRESULT hr = this->d3d9Effect->OnResetDevice();
         n_assert(SUCCEEDED(hr));
 
@@ -84,6 +94,8 @@ D3D9Shader::OnResetDevice()
         {
             this->shaderInstances[i].downcast<D3D9ShaderInstance>()->OnResetDevice();
         }
+
+	this->isLosted = false;
     }
 }
 

@@ -150,11 +150,15 @@ FrameShaderLoader::ParseRenderTarget(const Ptr<XmlReader>& xmlReader, const Ptr<
     }
     if (xmlReader->HasAttr("relWidth"))
     {
-        renderTarget->SetWidth(uint(float(displayMode.GetWidth()) * xmlReader->GetFloat("relWidth")));
+		float relWidth = xmlReader->GetFloat("relWidth");
+        renderTarget->SetWidth(uint(float(displayMode.GetWidth()) * relWidth));
+		renderTarget->SetRelativeWidth(relWidth);
     }
     if (xmlReader->HasAttr("relHeight"))
     {
-        renderTarget->SetHeight(uint(float(displayMode.GetHeight()) * xmlReader->GetFloat("relHeight")));
+		float relHeight = xmlReader->GetFloat("relHeight");
+        renderTarget->SetHeight(uint(float(displayMode.GetHeight()) * relHeight));
+		renderTarget->SetRelativeHeight(relHeight);
     }
     if (xmlReader->HasAttr("msaa"))
     {

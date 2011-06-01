@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="db_win32"
-	ProjectGUID="{4A641CAA-08D7-4CBF-A38C-B18AE4190159}"
+	ProjectGUID="{AC83FC84-2FDE-4530-BA3B-D04A51195335}"
 	>
 	<Platforms>
 		<Platform

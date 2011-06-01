@@ -20,6 +20,7 @@ DisplayDeviceBase::DisplayDeviceBase() :
     displayMode(0, 0, 1024, 768, PixelFormat::X8R8G8B8),
     antiAliasQuality(AntiAliasQuality::None),
     fullscreen(false),
+	autoAdjustSize(true),
     modeSwitchEnabled(true),
     tripleBufferingEnabled(false),
     alwaysOnTop(false),
@@ -200,6 +201,13 @@ DisplayDeviceBase::GetAdapterInfo(Adapter::Code adapter)
 {
     AdapterInfo emptyAdapterInfo;
     return emptyAdapterInfo;
+}
+
+//------------------------------------------------------------------------------
+void
+DisplayDeviceBase::AdjustSize()
+{
+	// implemented in sub-class
 }
 
 } // namespace DisplayDevice

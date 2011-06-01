@@ -187,4 +187,20 @@ D3D9DisplayDevice::ComputeAdjustedWindowRect()
     }
 }
 
+//------------------------------------------------------------------------------
+void
+D3D9DisplayDevice::AdjustSize()
+{
+	DisplayMode oldDisplayMode = this->GetDisplayMode();
+	Win32DisplayDevice::AdjustSize();
+	if (oldDisplayMode != this->GetDisplayMode())
+	{
+		D3D9RenderDevice* d3d9RenderDevice = D3D9RenderDevice::Instance();
+		if (d3d9RenderDevice->IsOpen())
+		{
+			d3d9RenderDevice->ResetDevice();
+		}
+	}
+}
+
 } // namespace CoreGraphics

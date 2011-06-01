@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="opcode_win32"
-	ProjectGUID="{5FBA2E2C-A97B-4A69-873D-3035323FC35B}"
+	ProjectGUID="{3F353464-FFFF-4EDC-937F-41F83D22D3B2}"
 	>
 	<Platforms>
 		<Platform

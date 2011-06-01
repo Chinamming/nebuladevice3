@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="lua_win32"
-	ProjectGUID="{EC6E6EE2-B948-40FA-BE2C-836527C1355D}"
+	ProjectGUID="{B02F6D05-9FAF-4898-A964-BFBEF7446706}"
 	>
 	<Platforms>
 		<Platform

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="audiobatcher3"
-	ProjectGUID="{1E0C2D40-4DF7-42CC-BF77-91403CF7971D}"
+	ProjectGUID="{AF7F4481-0697-4A49-BC90-12CDDF151A7D}"
 	>
 	<Platforms>
 		<Platform

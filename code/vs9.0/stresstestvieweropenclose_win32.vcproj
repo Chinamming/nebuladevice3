@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="stresstestvieweropenclose_win32"
-	ProjectGUID="{3C25D217-EE6B-429A-B9CF-EE3AF081A0E3}"
+	ProjectGUID="{3AB70FBE-72F5-4A3B-B542-E1EC75FA56C7}"
 	>
 	<Platforms>
 		<Platform

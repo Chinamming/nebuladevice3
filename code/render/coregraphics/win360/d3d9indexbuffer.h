@@ -5,16 +5,15 @@
   
     D3D9/Xbox360 implementation of index buffer.
     
-    FIXME: need to handle DeviceLost render event!
-    
     (C) 2007 Radon Labs GmbH
 */
 #include "coregraphics/base/indexbufferbase.h"
+#include "coregraphics/d3d9/d3d9resource.h"
 
 //------------------------------------------------------------------------------
 namespace Win360
 {
-class D3D9IndexBuffer : public Base::IndexBufferBase
+class D3D9IndexBuffer : public Base::IndexBufferBase, public Direct3D9::D3D9Resource
 {
     __DeclareClass(D3D9IndexBuffer);
 public:
@@ -23,6 +22,11 @@ public:
     /// destructor
     virtual ~D3D9IndexBuffer();
     
+	/// setup the d3d9 object
+	void Setup();
+	/// discard the d3d9 object
+	void Discard();
+
     /// unload the resource, or cancel the pending load
     virtual void Unload();
     /// map index buffer for CPU access
@@ -30,10 +34,14 @@ public:
     /// unmap the resource
     void Unmap();
 
-    /// set d3d9 index buffer pointer
-    void SetD3D9IndexBuffer(IDirect3DIndexBuffer9* ptr);
     /// get d3d9 index buffer pointer
     IDirect3DIndexBuffer9* GetD3D9IndexBuffer() const;
+
+private:
+	/// called when d3d9 device is lost
+	virtual void OnLostDevice();
+	/// called when d3d9 devcie is reset
+	virtual void OnResetDevice();
 
 private:
     IDirect3DIndexBuffer9* d3d9IndexBuffer;

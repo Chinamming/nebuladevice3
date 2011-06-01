@@ -333,6 +333,7 @@ GraphicsHandler::HandleMessage(const Ptr<Message>& msg)
     __StaticHandle(AdapterExists);
     __StaticHandle(GetAvailableDisplayModes);
     __StaticHandle(GetCurrentAdapterDisplayMode);
+	__StaticHandle(AdjustDisplaySize);
     __StaticHandle(GetAdapterInfo);
     __StaticHandle(AttachDisplayEventHandler);
     __StaticHandle(RemoveDisplayEventHandler);
@@ -419,6 +420,7 @@ GraphicsHandler::OnSetupGraphics(const Ptr<SetupGraphics>& msg)
     disp->SetDisplayMode(msg->GetDisplayMode());
     disp->SetAntiAliasQuality(msg->GetAntiAliasQuality());
     disp->SetFullscreen(msg->GetFullscreen());
+	disp->SetAutoAdjustSize(msg->GetAutoAdjustSize());
     disp->SetDisplayModeSwitchEnabled(msg->GetDisplayModeSwitchEnabled());
     disp->SetTripleBufferingEnabled(msg->GetTripleBufferingEnabled());
     disp->SetAlwaysOnTop(msg->GetAlwaysOnTop());

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="audio2_win32"
-	ProjectGUID="{12A1DA66-0DD3-4448-ABE5-00623450D4DD}"
+	ProjectGUID="{A7044D67-7083-483B-97A1-C5CA519AFD9F}"
 	>
 	<Platforms>
 		<Platform

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="foundation_win32"
-	ProjectGUID="{AA638DB2-2940-4F5E-8777-BD6A62A202D2}"
-	TargetFrameworkVersion="0"
+	ProjectGUID="{0CD03495-AE37-4084-A0C3-7479D6813DB5}"
 	>
 	<Platforms>
 		<Platform
@@ -31,9 +30,6 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -118,9 +114,6 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
-				Name="Nebula3 Interface Definition"
-			/>
-			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -148,9 +141,6 @@
 				EnableEnhancedInstructionSet="0"
 				FloatingPointModel="2"
 				RuntimeTypeInfo="false"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
@@ -158,6 +148,9 @@
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -204,9 +197,6 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="Nebula3 Interface Definition"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -287,9 +277,6 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
-				Name="Nebula3 Interface Definition"
-			/>
-			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -307,17 +294,17 @@
 				PreprocessorDefinitions="__MAYA__;__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				ExceptionHandling="0"
-				RuntimeTypeInfo="false"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
 				SuppressStartupBanner="true"
 				Detect64BitPortabilityProblems="false"
+				RuntimeTypeInfo="false"
 				DebugInformationFormat="3"
 				CallingConvention="0"
 				CompileAs="0"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -354,6 +341,42 @@
 	<References>
 	</References>
 	<Files>
+		<File
+			RelativePath="..\foundation\stdneb.cc"
+			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				>
+				<Tool
+					Name="VCCLCompilerTool"
+					UsePrecompiledHeader="1"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release|Win32"
+				>
+				<Tool
+					Name="VCCLCompilerTool"
+					UsePrecompiledHeader="1"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Maya_Debug|Win32"
+				>
+				<Tool
+					Name="VCCLCompilerTool"
+					UsePrecompiledHeader="1"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Maya_Release|Win32"
+				>
+				<Tool
+					Name="VCCLCompilerTool"
+					UsePrecompiledHeader="1"
+				/>
+			</FileConfiguration>
+		</File>
 		<Filter
 			Name="app"
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
@@ -2275,42 +2298,6 @@
 				</File>
 			</Filter>
 		</Filter>
-		<File
-			RelativePath="..\foundation\stdneb.cc"
-			>
-			<FileConfiguration
-				Name="Debug|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Release|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Maya_Debug|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Maya_Release|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-		</File>
 	</Files>
 	<Globals>
 	</Globals>

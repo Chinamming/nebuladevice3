@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="distributedtesttool"
-	ProjectGUID="{9B7F3D95-2E16-4953-AB98-7578E096DB0D}"
+	ProjectGUID="{D61902D4-437D-4BDB-89A6-9977557ACBC6}"
 	>
 	<Platforms>
 		<Platform

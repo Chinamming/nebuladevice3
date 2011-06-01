@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="mayapluginlib_win32"
-	ProjectGUID="{2810C9A3-19DC-4E25-8E3E-88208C663A2F}"
+	ProjectGUID="{42254E50-2123-4B3E-B149-FB12FF88D5BF}"
 	>
 	<Platforms>
 		<Platform
@@ -405,11 +405,127 @@
 				RelativePath="..\mayaplugin\mayacommands\mayaexportscenecmd.h"
 				>
 			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacommands\nebula3exporter.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacommands\nebula3exporter.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="mayacore"
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 			>
+			<File
+				RelativePath="..\mayaplugin\mayacore\animatornode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\animatornode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\animkey.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\animkeyarray.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\animlooptype.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\character.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\character.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characteranimationlibrary.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characteranimationlibrary.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterjoint.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterjoint.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characternode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characternode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskeleton.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskeleton.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskin.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskin.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskinlibrary.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskinlibrary.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskinlist.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskinlist.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskinnode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\characterskinnode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\emitterattrs.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\emitterattrs.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\envelopecurve.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\envelopecurve.h"
+				>
+			</File>
 			<File
 				RelativePath="..\mayaplugin\mayacore\mayamaterialgroupregistry.cc"
 				>
@@ -448,6 +564,54 @@
 			</File>
 			<File
 				RelativePath="..\mayaplugin\mayacore\mayavariableregistry.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\model.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\model.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\modelnode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\modelnode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\particlesystemnode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\particlesystemnode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\shapenode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\shapenode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\statenode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\statenode.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\transformnode.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayacore\transformnode.h"
 				>
 			</File>
 		</Filter>
@@ -516,6 +680,30 @@
 				RelativePath="..\mayaplugin\mayaextractors\mayashapenodeextractor.h"
 				>
 			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaextractors\meshextractor.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaextractors\meshextractor.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaextractors\modelextractor.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaextractors\modelextractor.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaextractors\modelextractorbase.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaextractors\modelextractorbase.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="mayalegacy"
@@ -556,6 +744,14 @@
 			</File>
 			<File
 				RelativePath="..\mayaplugin\mayaloadsave\mayascenewriter.h"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaloadsave\modelnodewriter.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\mayaplugin\mayaloadsave\modelnodewriter.h"
 				>
 			</File>
 		</Filter>

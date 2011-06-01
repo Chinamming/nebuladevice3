@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="scaleform_nidls_win32"
-	ProjectGUID="{98B43233-8CF4-432E-A2B3-DAE48E3CD13F}"
+	ProjectGUID="{3DABE7B9-9261-4EC2-BB6A-907A50FD81D8}"
 	>
 	<Platforms>
 		<Platform

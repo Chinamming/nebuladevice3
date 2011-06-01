@@ -75,7 +75,7 @@ proc write_compiler_tool_win32 { project platform config additionalIncPaths addi
             attr "MinimalRebuild" "true"
             attr "ExceptionHandling" "0"
             attr "BasicRuntimeChecks" "3"
-            attr "RuntimeLibrary" "1"
+            attr "RuntimeLibrary" "3"
             attr "BufferSecurityCheck" "true"
             attr "EnableFunctionLevelLinking" "true"
             attr "EnableEnhancedInstructionSet" "0"
@@ -142,7 +142,7 @@ proc write_compiler_tool_win32 { project platform config additionalIncPaths addi
             }                
             attr "StringPooling" "true"
             attr "ExceptionHandling" "0"
-            attr "RuntimeLibrary" "0"
+            attr "RuntimeLibrary" "2"
             attr "BufferSecurityCheck" "false"
             attr "EnableFunctionLevelLinking" "true"
             attr "EnableEnhancedInstructionSet" "0"
@@ -212,6 +212,9 @@ proc write_linker_tool_win32 { project platform config exe ext libs additionalLi
             set fileId ""
         }
         attr "OutputFile" "$binPrefix\\$exe$fileId.$ext"
+		if {($ext == "exe")} {
+			attr "GenerateManifest" "true"
+		}
         attr "GenerateDebugInformation" "true"
         attr "ProgramDatabaseFile" "$binPrefix\\$exe$fileId.pdb"
         attr "GenerateMapFile" "true"
@@ -222,7 +225,6 @@ proc write_linker_tool_win32 { project platform config exe ext libs additionalLi
             attr "AdditionalOptions" "/export:SecuROM,@1"
         }            
         attr "TargetMachine" "1"
-        attr "GenerateManifest" "false"
     end ""
 }
 
@@ -279,7 +281,7 @@ proc gen_lib_win32 { filename solution_name name guid subtype configs} {
     global vstudio9Prefix
     global indent_level    
 
-    puts "-> VS9.0: $solution_name.$name.vcproj"
+    puts "-> VS9.0: $name.vcproj"
     
     set i [findtargetbyname $name]
     set platform $tar($i,platform)
@@ -326,7 +328,7 @@ proc gen_exe_win32 { filename solution_name name guid ext configs } {
     global vstudio9Prefix
     global indent_level
 
-    puts "-> VS9.0: $solution_name.$name.vcproj"
+    puts "-> VS9.0: $name.vcproj"
     
     set component_list [gen_component_list $name]    
     set i [findtargetbyname $name]
@@ -440,7 +442,7 @@ proc gen_solution9_win32 { sln_name configs } {
         set t [findtargetbyname [lindex $target_list $i]]
 
         # vcproj filename
-        set vcproj_filename "$sln($s,name).$tar($t,name).vcproj"
+        set vcproj_filename "$tar($t,name).vcproj"
 
         # write project file
         if {$tar($t,type) == "dll"} {
@@ -452,7 +454,7 @@ proc gen_solution9_win32 { sln_name configs } {
         } elseif {($tar($t,type) == "lib") || ($tar($t,type) == "nidl") || ($tar($t,type) == "job")} {
             gen_lib_win32 $vcproj_filename $sln($s,name) $tar($t,name) $tar($t,uuid) $tar($t,type) $configs
         } elseif {$tar($t,type) == "import"} {
-            set vcproj_filename "$tar($t,import_path)\\$vstudio9Prefix\\$tar($t,solution).$tar($t,name).vcproj"
+            set vcproj_filename "$tar($t,import_path)\\$vstudio9Prefix\\$tar($t,name).vcproj"
         } else {
             puts "ERROR: UNKNOWN TARGET TYPE '$tar($t,type)'"
             exit
@@ -526,7 +528,7 @@ proc gen_solution9_win32 { sln_name configs } {
 #   gen_allsolutions9_win32
 #   Generate all solutions 
 #--------------------------------------------------------------------
-proc gen_allsolutions9_win32 { {configs {"Debug" "Release" "Programming" "Public_Build" "Securom" "Maya_Debug" "Maya_Release"}} } {
+proc gen_allsolutions9_win32 { {configs {"Debug" "Release" "Maya_Debug" "Maya_Release"}} } {
     global sln
     global num_slns
     global tar

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="sqlite_win32"
-	ProjectGUID="{D6DCAF7B-42FD-4B94-BF26-0100E8AE56B1}"
+	ProjectGUID="{6B6790AD-FE7C-49C5-A46A-062DB18FE424}"
 	>
 	<Platforms>
 		<Platform

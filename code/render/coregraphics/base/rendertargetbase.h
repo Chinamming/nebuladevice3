@@ -56,6 +56,10 @@ public:
     void SetHeight(SizeT h);
     /// get height of render target in pixels
     SizeT GetHeight() const;
+	/// set render target relative width
+	void SetRelativeWidth(float w);
+	/// set render target relative height
+	void SetRelativeHeight(float h);
     /// set antialias quality
     void SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code c);
     /// get anti-alias-quality
@@ -254,6 +258,20 @@ RenderTargetBase::GetHeight() const
 //------------------------------------------------------------------------------
 /**
 */
+inline void
+RenderTargetBase::SetRelativeWidth(float w)
+{
+	this->relWidth = w;
+}
+
+//------------------------------------------------------------------------------
+inline void
+RenderTargetBase::SetRelativeHeight(float h)
+{
+	this->relHeight = h;
+}
+
+//------------------------------------------------------------------------------
 inline void
 RenderTargetBase::SetAntiAliasQuality(CoreGraphics::AntiAliasQuality::Code aaq)
 {

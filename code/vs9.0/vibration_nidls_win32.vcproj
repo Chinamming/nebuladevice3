@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="vibration_nidls_win32"
-	ProjectGUID="{3AD85045-441C-41B4-BFB7-9FDAF5B39CF1}"
+	ProjectGUID="{32B3B4E4-0B18-42A3-9383-8B16CBD24C52}"
 	>
 	<Platforms>
 		<Platform

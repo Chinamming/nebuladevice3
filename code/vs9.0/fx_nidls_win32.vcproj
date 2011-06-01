@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="fx_nidls_win32"
-	ProjectGUID="{6705AA56-9AA3-4A3F-A42B-3FBAB1A343A8}"
+	ProjectGUID="{A37487F8-FC03-49AF-A8D3-028EB3F88617}"
 	>
 	<Platforms>
 		<Platform
