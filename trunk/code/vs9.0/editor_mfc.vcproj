@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="editor_win32"
+	Name="editor_mfc"
 	ProjectGUID="{A742EE82-5467-4E6A-ACC5-88F607C98D2A}"
 	RootNamespace="xtremetools2"
 	Keyword="MFCProj"
@@ -283,7 +283,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\tools\editor\editor_win32.rc"
+				RelativePath="..\tools\editor\editor_mfc.rc"
 				>
 			</File>
 			<File
@@ -371,7 +371,7 @@
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="\Nebula3 SDK (Mar 2010)\code\tools\editor\editor_win32.rc"
+			Value="\Nebula3 SDK (Mar 2010)\code\tools\editor\editor_mfc.rc"
 		/>
 	</Globals>
 </VisualStudioProject>
