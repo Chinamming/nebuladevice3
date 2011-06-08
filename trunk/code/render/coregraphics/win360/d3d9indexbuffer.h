@@ -51,17 +51,6 @@ private:
 //------------------------------------------------------------------------------
 /**
 */
-inline void
-D3D9IndexBuffer::SetD3D9IndexBuffer(IDirect3DIndexBuffer9* ptr)
-{
-    n_assert(0 != ptr);
-    n_assert(0 == this->d3d9IndexBuffer);
-    this->d3d9IndexBuffer = ptr;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
 inline IDirect3DIndexBuffer9*
 D3D9IndexBuffer::GetD3D9IndexBuffer() const
 {

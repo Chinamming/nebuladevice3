@@ -27,6 +27,8 @@
 //------------------------------------------------------------------------------
 namespace System
 {
+using namespace Math;
+
 class ByteOrder
 {
 public:
@@ -508,7 +510,7 @@ ByteOrder::Convert<double>(double val) const
 /**
 */
 template<> __forceinline void
-ByteOrder::ConvertInPlace<Math::float4>(Type fromByteOrder, Type toByteOrder, Math::float4& val)
+ByteOrder::ConvertInPlace<float4>(Type fromByteOrder, Type toByteOrder, float4& val)
 {
     if (fromByteOrder != toByteOrder)
     {
@@ -523,7 +525,7 @@ ByteOrder::ConvertInPlace<Math::float4>(Type fromByteOrder, Type toByteOrder, Ma
 /**
 */
 template<> __forceinline void
-ByteOrder::ConvertInPlace<Math::float4>(Math::float4& val) const
+ByteOrder::ConvertInPlace<float4>(float4& val) const
 {
     if (this->from != this->to)
     {
@@ -538,18 +540,18 @@ ByteOrder::ConvertInPlace<Math::float4>(Math::float4& val) const
 /**
 */
 template<> __forceinline void
-ByteOrder::ConvertInPlace<Math::matrix44>(Type fromByteOrder, Type toByteOrder, Math::matrix44& val)
+ByteOrder::ConvertInPlace<matrix44>(Type fromByteOrder, Type toByteOrder, matrix44& val)
 {
     if (fromByteOrder != toByteOrder)
     {
-        Math::float4 row0 = val.getrow0();
-        Math::float4 row1 = val.getrow1();
-        Math::float4 row2 = val.getrow2();
-        Math::float4 row3 = val.getrow3();
-        ConvertInPlace<Math::float4>(fromByteOrder, toByteOrder, row0);
-        ConvertInPlace<Math::float4>(fromByteOrder, toByteOrder, row1);
-        ConvertInPlace<Math::float4>(fromByteOrder, toByteOrder, row2);
-        ConvertInPlace<Math::float4>(fromByteOrder, toByteOrder, row3);
+        float4 row0 = val.getrow0();
+        float4 row1 = val.getrow1();
+        float4 row2 = val.getrow2();
+        float4 row3 = val.getrow3();
+        ConvertInPlace<float4>(fromByteOrder, toByteOrder, row0);
+        ConvertInPlace<float4>(fromByteOrder, toByteOrder, row1);
+        ConvertInPlace<float4>(fromByteOrder, toByteOrder, row2);
+        ConvertInPlace<float4>(fromByteOrder, toByteOrder, row3);
         val.setrow0(row0);
         val.setrow1(row1);
         val.setrow2(row2);
@@ -561,18 +563,18 @@ ByteOrder::ConvertInPlace<Math::matrix44>(Type fromByteOrder, Type toByteOrder, 
 /**
 */
 template<> __forceinline void
-ByteOrder::ConvertInPlace<Math::matrix44>(Math::matrix44& val) const
+ByteOrder::ConvertInPlace<matrix44>(matrix44& val) const
 {
     if (this->from != this->to)
     {
-        Math::float4 row0 = val.getrow0();
-        Math::float4 row1 = val.getrow1();
-        Math::float4 row2 = val.getrow2();
-        Math::float4 row3 = val.getrow3();
-        ConvertInPlace<Math::float4>(row0);
-        ConvertInPlace<Math::float4>(row1);
-        ConvertInPlace<Math::float4>(row2);
-        ConvertInPlace<Math::float4>(row3);
+        float4 row0 = val.getrow0();
+        float4 row1 = val.getrow1();
+        float4 row2 = val.getrow2();
+        float4 row3 = val.getrow3();
+        ConvertInPlace<float4>(row0);
+        ConvertInPlace<float4>(row1);
+        ConvertInPlace<float4>(row2);
+        ConvertInPlace<float4>(row3);
         val.setrow0(row0);
         val.setrow1(row1);
         val.setrow2(row2);

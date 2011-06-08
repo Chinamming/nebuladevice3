@@ -51,17 +51,6 @@ private:
 //------------------------------------------------------------------------------
 /**
 */
-inline void
-D3D9VertexBuffer::SetD3D9VertexBuffer(IDirect3DVertexBuffer9* ptr)
-{
-    n_assert(0 != ptr);
-    n_assert(0 == this->d3d9VertexBuffer);
-    this->d3d9VertexBuffer = ptr;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
 inline IDirect3DVertexBuffer9*
 D3D9VertexBuffer::GetD3D9VertexBuffer() const
 {

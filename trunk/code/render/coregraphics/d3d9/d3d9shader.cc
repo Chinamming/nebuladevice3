@@ -17,9 +17,9 @@ using namespace CoreGraphics;
 /**
 */
 D3D9Shader::D3D9Shader() :
-    d3d9Effect(0)
+	d3d9Effect(0)
 {
-    // empty
+	// empty
 }
 
 //------------------------------------------------------------------------------
@@ -27,10 +27,10 @@ D3D9Shader::D3D9Shader() :
 */
 D3D9Shader::~D3D9Shader()
 {
-    if (this->IsLoaded())
-    {
-        this->Unload();
-    }
+	if (this->IsLoaded())
+	{
+		this->Unload();
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -39,12 +39,12 @@ D3D9Shader::~D3D9Shader()
 void
 D3D9Shader::Unload()
 {
-    if (0 != this->d3d9Effect)
-    {
-        this->d3d9Effect->Release();
-        this->d3d9Effect = 0;
-    }
-    ShaderBase::Unload();
+	if (0 != this->d3d9Effect)
+	{
+		this->d3d9Effect->Release();
+		this->d3d9Effect = 0;
+	}
+	ShaderBase::Unload();
 }
 
 //------------------------------------------------------------------------------
@@ -59,18 +59,17 @@ D3D9Shader::OnLostDevice()
 	if (0 == this->d3d9Effect)
 		return;
 
-        HRESULT hr = this->d3d9Effect->OnLostDevice();
-        n_assert(SUCCEEDED(hr));
+	HRESULT hr = this->d3d9Effect->OnLostDevice();
+	n_assert(SUCCEEDED(hr));
 
-        // notify our instances
-        IndexT i;
-        for (i = 0; i < this->shaderInstances.Size(); i++)
-        {
-            this->shaderInstances[i].downcast<D3D9ShaderInstance>()->OnLostDevice();
-        }
+	// notify our instances
+	IndexT i;
+	for (i = 0; i < this->shaderInstances.Size(); i++)
+	{
+		this->shaderInstances[i].downcast<D3D9ShaderInstance>()->OnLostDevice();
+	}
 
 	this->isLosted = true;
-    }
 }
 
 //------------------------------------------------------------------------------
@@ -85,18 +84,17 @@ D3D9Shader::OnResetDevice()
 	if (0 == this->d3d9Effect)
 		return;
 
-        HRESULT hr = this->d3d9Effect->OnResetDevice();
-        n_assert(SUCCEEDED(hr));
+	HRESULT hr = this->d3d9Effect->OnResetDevice();
+	n_assert(SUCCEEDED(hr));
 
-        // notify our instances
-        IndexT i;
-        for (i = 0; i < this->shaderInstances.Size(); i++)
-        {
-            this->shaderInstances[i].downcast<D3D9ShaderInstance>()->OnResetDevice();
-        }
+	// notify our instances
+	IndexT i;
+	for (i = 0; i < this->shaderInstances.Size(); i++)
+	{
+		this->shaderInstances[i].downcast<D3D9ShaderInstance>()->OnResetDevice();
+	}
 
 	this->isLosted = false;
-    }
 }
 
 } // namespace Direct3D9
