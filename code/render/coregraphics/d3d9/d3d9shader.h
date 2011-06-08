@@ -14,7 +14,7 @@
 //------------------------------------------------------------------------------
 namespace Direct3D9
 {
-class D3D9Shader : public Base::ShaderBase
+class D3D9Shader : public Base::ShaderBase, public D3D9Resource
 {
     __DeclareClass(D3D9Shader);
 public:

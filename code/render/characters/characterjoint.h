@@ -13,7 +13,7 @@
 #include "math/vector.h"
 #include "math/quaternion.h"
 #include "math/matrix44.h"
-#include "models/modelwriter.h"
+//#include "models/modelwriter.h"
 
 //------------------------------------------------------------------------------
 namespace Characters

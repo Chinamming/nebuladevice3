@@ -166,7 +166,9 @@ protected:
     Resources::ResourceId resolveDepthTextureResId;
     CoreGraphics::BatchType::Code batchType;
     SizeT width;
-    SizeT height;
+	SizeT height;
+	float relWidth;
+	float relHeight;
     bool resolveTextureDimensionsValid;
     bool resolveRectValid;
     SizeT resolveTextureWidth;

@@ -19,7 +19,7 @@
 #include "models/visresolvecontainer.h"
 #include "math/bbox.h"
 #include "io/binaryreader.h"
-#include "models/modelwriter.h"
+//#include "models/modelwriter.h"
 
 //------------------------------------------------------------------------------
 namespace Models
