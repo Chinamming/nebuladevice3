@@ -2,7 +2,7 @@
 //  directoryinfo.cc
 //  (C) 2010 xoyojank
 //------------------------------------------------------------------------------
-#include "stdneb.h"
+#include "stdeditor.h"
 #include "editor/io/directoryinfo.h"
 #include "editor/util/typeconvert.h"
 #include "io/ioserver.h"

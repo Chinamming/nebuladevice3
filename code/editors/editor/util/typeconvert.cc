@@ -2,7 +2,7 @@
 //  typeconvert.cc
 //  (C) 2010 xoyojank
 //------------------------------------------------------------------------------
-#include "stdneb.h"
+#include "stdeditor.h"
 #include "editor/util/typeconvert.h"
 //------------------------------------------------------------------------------
 namespace Editor

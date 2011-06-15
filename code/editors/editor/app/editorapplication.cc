@@ -2,7 +2,7 @@
 //  editorapplication.cc
 //  (C) 2010 xoyojank
 //------------------------------------------------------------------------------
-#include "stdneb.h"
+#include "stdeditor.h"
 #include "editor/app/editorapplication.h"
 #include "debugrender/debugrender.h"
 #include "debugrender/debugshaperenderer.h"
