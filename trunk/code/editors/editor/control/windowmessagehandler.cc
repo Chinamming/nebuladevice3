@@ -2,7 +2,7 @@
 //  windowmessagehandler.cc
 //  (C) 2010 xoyojank
 //------------------------------------------------------------------------------
-#include "stdneb.h"
+#include "stdeditor.h"
 #pragma unmanaged
 #include "editor/control/windowmessagehandler.h"
 #include "coregraphics/displaydevice.h"

@@ -37,26 +37,24 @@
     <Optimize>false</Optimize>
     <OutputPath>..\..\..\bin\win32\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
     <Optimize>true</Optimize>
     <OutputPath>..\..\..\bin\win32\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.WpfDock, Version=1.9.0.0, Culture=neutral, PublicKeyToken=2037e151916410e7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\SourceCode\trunk\bin\Release\DevComponents.WpfDock.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.WpfEditors, Version=5.2.0.0, Culture=neutral, PublicKeyToken=cbba4a1563683cdb, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevComponents.WpfRibbon, Version=1.0.2590.16193, Culture=neutral, PublicKeyToken=2037e151916410e7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\SourceCode\trunk\bin\Release\DevComponents.WpfRibbon.dll</HintPath>
-    </Reference>
+    <Reference Include="AvalonDock, Version=1.3.3571.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL" />
+    <Reference Include="AvalonDock.Themes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="PresentationFramework.Luna" />
+    <Reference Include="PropertyTools.Wpf, Version=2011.3.4172.39431, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="RibbonControlsLibrary, Version=3.5.40729.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\win32\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -93,7 +91,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,16 +112,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\extlibs\PropertyEditor\PropertyEditor.csproj">
-      <Project>{7168F82F-288A-42C4-9EB1-FBBE5112F211}</Project>
-      <Name>PropertyEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\vs9.0\editor_win32.vcproj">
-      <Project>{9F13EA2A-BDD5-46D1-9B9B-E00F4DD3EF39}</Project>
-      <Name>editor_win32</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -159,50 +146,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\Bold.png" />
-    <Resource Include="images\ChangeStyles32.png" />
-    <Resource Include="images\Clipboard.png" />
-    <Resource Include="images\Component.png" />
-    <Resource Include="images\Copy.png" />
-    <Resource Include="images\Cut.png" />
-    <Resource Include="images\Document32.png" />
-    <Resource Include="images\Exit.png" />
-    <Resource Include="images\Find.png" />
-    <Resource Include="images\FindNext.png" />
-    <Resource Include="images\FolderClosed32.png" />
-    <Resource Include="images\FolderOpen32.png" />
-    <Resource Include="images\FontColor.png" />
-    <Resource Include="images\FontColorPart.png" />
-    <Resource Include="images\FontSizeDec.png" />
-    <Resource Include="images\FontSizeInc.png" />
-    <Resource Include="images\Help.png" />
-    <Resource Include="images\Italic.png" />
-    <Resource Include="images\MyFiles16.png" />
-    <Resource Include="images\NewDocument.png" />
-    <Resource Include="images\Options.png" />
-    <Resource Include="images\Paste16.png" />
-    <Resource Include="images\Paste32.png" />
-    <Resource Include="images\Print32.png" />
-    <Resource Include="images\Restrictions16.png" />
-    <Resource Include="images\Save.png" />
-    <Resource Include="images\Save32.png" />
-    <Resource Include="images\SaveAs32.png" />
-    <Resource Include="images\SchemeBlack.png" />
-    <Resource Include="images\SchemeBlack16.png" />
-    <Resource Include="images\SchemeBlue.png" />
-    <Resource Include="images\SchemeBlue16.png" />
-    <Resource Include="images\SchemeCustom.png" />
-    <Resource Include="images\SchemeCustom16.png" />
-    <Resource Include="images\SchemeSilver.png" />
-    <Resource Include="images\SchemeSilver16.png" />
-    <Resource Include="images\Select.png" />
-    <Resource Include="images\Strike.png" />
-    <Resource Include="images\Structure16.png" />
-    <Resource Include="images\StyleSet.png" />
-    <Resource Include="images\Subscript.png" />
-    <Resource Include="images\Superscript.png" />
-    <Resource Include="images\TextHighlight.png" />
-    <Resource Include="images\Underline.png" />
+    <Resource Include="images\LargeIcon.png" />
+    <Resource Include="images\SmallIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\vs9.0\editor.net.vcproj">
+      <Project>{9F13EA2A-BDD5-46D1-9B9B-E00F4DD3EF39}</Project>
+      <Name>editor.net</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

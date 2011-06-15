@@ -14,7 +14,7 @@ using System::IntPtr;
 using System::Windows::SizeChangedInfo;
 using namespace System::Windows::Interop;
 using namespace System::Windows::Input;
-using namespace System::Runtime::InteropServices;
+using System::Runtime::InteropServices::HandleRef;
 //------------------------------------------------------------------------------
 namespace Editor
 {

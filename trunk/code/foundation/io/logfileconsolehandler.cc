@@ -47,7 +47,7 @@ LogFileConsoleHandler::Open()
     ioServer->CreateDirectory("bin:logfiles");
 
     // build a file name for the log file
-    String calString = CalendarTime::Format("{YEAR}_{MONTH}_{DAY}_{HOUR}_{MINUTE}_{SECOND}", CalendarTime::GetLocalTime());
+	String calString = CalendarTime::Format("{YEAR}_{MONTH}_{DAY}_{HOUR}_{MINUTE}_{SECOND}", CalendarTime::GetLocalTime());
     String fileName;
     fileName.Format("bin:logfiles/%s_%s.txt", Core::CoreServer::Instance()->GetAppName().Value(), calString.AsCharPtr());
 

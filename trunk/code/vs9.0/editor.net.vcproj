@@ -63,7 +63,7 @@
 				FloatingPointModel="2"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderThrough="stdeditor.h"
 				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
@@ -167,7 +167,7 @@
 				FloatingPointModel="2"
 				RuntimeTypeInfo="true"
 				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
+				PrecompiledHeaderThrough="stdeditor.h"
 				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
 				WarningLevel="3"
 				WarnAsError="true"
@@ -250,6 +250,46 @@
 			Name="editor"
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 			>
+			<File
+				RelativePath="..\editors\editor\editorinterface.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\editors\editor\editorinterface.h"
+				>
+			</File>
+			<File
+				RelativePath="..\editors\editor\service.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\editors\editor\service.h"
+				>
+			</File>
+			<File
+				RelativePath="..\editors\editor\stdeditor.cc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\editors\editor\stdeditor.h"
+				>
+			</File>
 			<Filter
 				Name="app"
 				>
@@ -259,14 +299,6 @@
 				</File>
 				<File
 					RelativePath="..\editors\editor\app\editorapplication.h"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\app\modeleditor.cc"
-					>
-				</File>
-				<File
-					RelativePath="..\editors\editor\app\modeleditor.h"
 					>
 				</File>
 			</Filter>
@@ -318,27 +350,43 @@
 					>
 				</File>
 			</Filter>
+			<Filter
+				Name="cmd"
+				>
+				<File
+					RelativePath="..\editors\editor\cmd\command.h"
+					>
+				</File>
+				<File
+					RelativePath="..\editors\editor\cmd\dispatcher.cc"
+					>
+				</File>
+				<File
+					RelativePath="..\editors\editor\cmd\dispatcher.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="debug"
+				>
+				<File
+					RelativePath="..\editors\editor\debug\log.cc"
+					>
+				</File>
+				<File
+					RelativePath="..\editors\editor\debug\log.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="core"
+				>
+				<File
+					RelativePath="..\editors\editor\core\macros.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
-		<File
-			RelativePath="..\addons\stdneb.cc"
-			>
-			<FileConfiguration
-				Name="Debug|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Release|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-		</File>
 	</Files>
 	<Globals>
 	</Globals>
