@@ -136,6 +136,7 @@ Win32DisplayDevice::OpenWindow()
 	if (0 != this->parentWindow)
 	{
 		this->hWnd = FindWindowEx((HWND)this->parentWindow, 0, NEBULA3_WINDOW_CLASS, NULL);
+		n_assert(NULL != this->hWnd);
 	}
 	DisplayMode adjMode = this->ComputeAdjustedWindowRect();
 	if (0 == this->hWnd)

@@ -27,10 +27,20 @@ namespace WorldEditor
             // Insert code required on object creation below this point.
         }
 
+        private Editor.EditorInterface editor;
         private void RibbonWindow_Loaded(object sender, RoutedEventArgs e)
         {
             var hostWindow = new Editor.Control.HostWindow();
             this.renderArea.Child = hostWindow;
+            this.editor = new Editor.EditorInterface();
+            this.editor.Open(hostWindow);
+            this.propertyEditor.DataContext = this.editor.EditingObject;
+        }
+
+        private void RibbonWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.editor.Close();
+            this.editor = null;
         }
     }
 }

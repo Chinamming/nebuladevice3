@@ -16,36 +16,14 @@ namespace Editor
 using namespace App;
 
 //------------------------------------------------------------------------------
-EditorInterface::EditorInterface(HWND hWnd)
+EditorInterface::EditorInterface()
 {
 	MConstructSingleton;
-	// start nebula device
-	this->editorApp = new EditorApplication();
-	this->editorApp->SetParentWindow(hWnd);
-	bool result = this->editorApp->Open();
-	MAssert(result, "The Nebula Device is failed to initialize!");
-
-	CompositionTarget::Rendering += gcnew EventHandler(this, &EditorInterface::OnFrameUpdate);
-
-	this->services = gcnew List<Service^>();
-	this->AttachService(gcnew Debug::Log());
 }
 
 //------------------------------------------------------------------------------
 EditorInterface::~EditorInterface()
 {
-	// close services
-	for each (Service^ service in this->services)
-	{
-		service->OnDetach();
-	}
-	this->services->Clear();
-	delete this->services;
-
-	// end nebula device
-	this->editorApp->Close();
-	delete this->editorApp;
-	this->editorApp = NULL;
 	MDestructSingleton;
 }
 
@@ -102,6 +80,46 @@ EditorInterface::Send(Cmd::Command^ cmd)
 	{
 		Trace::WriteLine(e->Message);
 	}
+}
+
+//------------------------------------------------------------------------------
+bool
+EditorInterface::Open(Editor::Control::HostWindow^ wnd)
+{
+	// start nebula device
+	this->editorApp = new EditorApplication();
+	this->editorApp->SetParentWindow(wnd->GetParentWnd());
+	bool result = this->editorApp->Open();
+	if (!result)
+	{
+		MAssert(result, "The Nebula Device is failed to initialize!");
+		return false;
+	}
+
+	CompositionTarget::Rendering += gcnew EventHandler(this, &EditorInterface::OnFrameUpdate);
+
+	this->services = gcnew List<Service^>();
+	this->AttachService(gcnew Debug::Log());
+
+	return true;
+}
+
+//------------------------------------------------------------------------------
+void
+EditorInterface::Close()
+{
+	// close services
+	for each (Service^ service in this->services)
+	{
+		service->OnDetach();
+	}
+	this->services->Clear();
+	delete this->services;
+
+	// end nebula device
+	this->editorApp->Close();
+	delete this->editorApp;
+	this->editorApp = NULL;
 }
 
 }// Editor

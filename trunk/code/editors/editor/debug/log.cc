@@ -28,13 +28,15 @@ Log::OnAttach()
 	::Util::String calString = CalendarTime::Format("{YEAR}_{MONTH}_{DAY}_{HOUR}_{MINUTE}_{SECOND}", CalendarTime::GetLocalTime());
 	::Util::String fileName;
 	fileName.Format("bin:logfiles/%s_%s.log", Core::CoreServer::Instance()->GetAppName().Value(), calString.AsCharPtr());
-	fileName = IO::URI(fileName).AsString();
+	fileName = IO::URI(fileName).GetHostAndLocalPath();
 	System::String^ logPath = Util::TypeConvert::ToManagedString(fileName);
 	System::IO::FileStream^ traceLog = gcnew System::IO::FileStream(logPath, System::IO::FileMode::OpenOrCreate);
 	if (System::IO::File::Exists(logPath))
 	{
 		this->traceListener = gcnew TextWriterTraceListener(traceLog);
-		Trace::Listeners->Add(this->traceListener);
+		System::Diagnostics::Trace::Listeners->Add(this->traceListener);
+		System::Diagnostics::Trace::AutoFlush = true;
+		System::Diagnostics::Trace::WriteLine(System::String::Format("Log Start: {0}", System::DateTime::Now));
 		return true;
 	}
 	return false;
@@ -44,8 +46,9 @@ Log::OnAttach()
 void
 Log::OnDetach()
 {
+	System::Diagnostics::Trace::WriteLine(System::String::Format("Log End: {0}", System::DateTime::Now));
 	this->traceListener->Flush();
-	Trace::Listeners->Remove(this->traceListener);
+	System::Diagnostics::Trace::Listeners->Remove(this->traceListener);
 	Service::OnDetach();
 }
 

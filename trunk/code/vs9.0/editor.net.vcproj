@@ -313,18 +313,14 @@
 					RelativePath="..\editors\editor\control\hostwindow.h"
 					>
 				</File>
-				<Filter
-					Name="internal"
+				<File
+					RelativePath="..\editors\editor\control\windowmessagehandler.cc"
 					>
-					<File
-						RelativePath="..\editors\editor\control\windowmessagehandler.cc"
-						>
-					</File>
-					<File
-						RelativePath="..\editors\editor\control\windowmessagehandler.h"
-						>
-					</File>
-				</Filter>
+				</File>
+				<File
+					RelativePath="..\editors\editor\control\windowmessagehandler.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="io"
@@ -383,6 +379,10 @@
 				>
 				<File
 					RelativePath="..\editors\editor\core\macros.h"
+					>
+				</File>
+				<File
+					RelativePath="..\editors\editor\core\observable.h"
 					>
 				</File>
 			</Filter>
