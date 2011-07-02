@@ -37,7 +37,7 @@ EditorApplication::EditorApplication() :
 	renderDebug(false),
 	capturing(false)
 {
-	// empty
+	this->SetAppTitle("Nebula3 Editor");
 }
 
 //------------------------------------------------------------------------------
