@@ -12,6 +12,8 @@
 #include "framecapture/framecapturerendermodule.h"
 #include "framecapture/framecaptureprotocol.h"
 
+#include "io/ioserver.h"
+
 //------------------------------------------------------------------------------
 namespace Editor
 {
@@ -38,6 +40,10 @@ EditorApplication::EditorApplication() :
 	capturing(false)
 {
 	this->SetAppTitle("Nebula3 Editor");
+	IO::IoServer* ioServer = IO::IoServer::Instance();
+
+	// make sure log directory exists
+	ioServer->CreateDirectory("bin:logfiles");
 }
 
 //------------------------------------------------------------------------------
