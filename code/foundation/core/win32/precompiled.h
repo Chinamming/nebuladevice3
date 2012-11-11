@@ -37,7 +37,11 @@
 #include <windows.h>
 #include <winbase.h>
 #include <process.h>
+#if (NTDDI_VERSION >= NTDDI_WIN2K)
+#include <shlobj.h>
+#else
 #include <shfolder.h>
+#endif
 #include <windows.h>
 #include <tchar.h>
 #include <strsafe.h>
