@@ -10,7 +10,9 @@
 				<Param name="outColor" type="float4" defaultBinding="Result.Color" annotation="The sampled color."/>
 			</Outputs>
 			<Code>
-				outColor = tex2D(texSampler, texCoords);
+<![CDATA[
+outColor = tex2D(texSampler, texCoords);
+]]>
 			</Code>
 		</PixelShader>
 	</Fragment>

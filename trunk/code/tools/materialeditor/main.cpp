@@ -24,16 +24,14 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
 #include "stdneb.h"
-#include <QtGui/QApplication>
-#include "mainwindow.h"
-#include "nsc3/shadercompilerapplication.h"
+#include "materialeditorapplication.h"
 
-int main(int argc, char *argv[])
+void __cdecl
+main(int argc, const char** argv)
 {
-	Util::CommandLineArgs args(argc, (const char**)argv);
-	Tools::ShaderCompilerApplication app;
-	app.SetCompanyName("Radon Labs GmbH");
-	app.SetAppTitle("Nebula3 Shader Compiler");
+	Util::CommandLineArgs args(argc, argv);
+	Tools::MaterialEditorApplication app;
+	app.SetAppTitle("Nebula3 Material Editor");
 	app.SetCmdLineArgs(args);
 	if (app.Open())
 	{
@@ -41,9 +39,4 @@ int main(int argc, char *argv[])
 		app.Close();
 	}
 	app.Exit();
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-
-    return a.exec();
 }

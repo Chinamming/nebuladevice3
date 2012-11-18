@@ -153,7 +153,6 @@
     <ClCompile Include="..\nsc3\shaderbinding.cc" />
     <ClCompile Include="..\nsc3\shadercodegenerator.cc" />
     <ClCompile Include="..\nsc3\shadercompiler.cc" />
-    <ClCompile Include="..\nsc3\shadercompilerapplication.cc" />
     <ClCompile Include="..\nsc3\shaderfragment.cc" />
     <ClCompile Include="..\nsc3\shaderfragmentgroup.cc" />
     <ClCompile Include="..\nsc3\shaderfragmentmanager.cc" />
@@ -175,6 +174,7 @@
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="materialeditorapplication.cc" />
     <ClCompile Include="qnodeeditor\qneblock.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
@@ -204,7 +204,6 @@
     <ClInclude Include="..\nsc3\shaderbinding.h" />
     <ClInclude Include="..\nsc3\shadercodegenerator.h" />
     <ClInclude Include="..\nsc3\shadercompiler.h" />
-    <ClInclude Include="..\nsc3\shadercompilerapplication.h" />
     <ClInclude Include="..\nsc3\shaderfragment.h" />
     <ClInclude Include="..\nsc3\shaderfragmentgroup.h" />
     <ClInclude Include="..\nsc3\shaderfragmentmanager.h" />
@@ -234,6 +233,7 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -DNDEBUG  "-I.\..\.." "-I.\..\..\foundation" "-I.\..\..\extlibs" "-I.\..\..\tools" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\release" "-I." "-I.\..\..\Qt\mkspecs\default" "-I.\GeneratedFiles" "-fstdneb.h" "-f../mainwindow.h"</Command>
     </CustomBuild>
+    <ClInclude Include="materialeditorapplication.h" />
     <ClInclude Include="qnodeeditor\qneblock.h" />
     <ClInclude Include="qnodeeditor\qneconnection.h" />
     <ClInclude Include="qnodeeditor\qneport.h" />
