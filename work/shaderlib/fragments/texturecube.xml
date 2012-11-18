@@ -10,7 +10,9 @@
 				<Param name="outColor" type="float4" defaultBinding="Result.Color" annotation="The output color."/>
 			</Outputs>
 			<Code>
-				outColor = texCUBE(texSampler texCoord);
+<![CDATA[
+outColor = texCUBE(texSampler texCoord);
+]]>
 			</Code>
 		</PixelShader>
 	</Fragment>
