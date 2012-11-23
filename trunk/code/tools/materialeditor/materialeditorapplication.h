@@ -8,7 +8,7 @@
     Application class for the Nebula3 material editor. This is just a GUI wrapper
     around the class ShaderCompiler.
 
-    (C) 2007 xoyojank
+    (C) 2012 xoyojank
 */
 #include "app/consoleapplication.h"
 #include "nsc3/shadercompiler.h"
@@ -20,6 +20,7 @@ namespace Tools
 {
 class MaterialEditorApplication : public App::ConsoleApplication
 {
+    __DeclareSingleton(MaterialEditorApplication);
 public:
     /// constructor
     MaterialEditorApplication();
@@ -33,6 +34,12 @@ public:
 
     /// run the application
     virtual void Run();
+
+public:
+	void New();
+	bool Load(const Util::String& path);
+	void Save(const Util::String& path);
+	bool Compile();
 
 private:
     /// parse command line arguments

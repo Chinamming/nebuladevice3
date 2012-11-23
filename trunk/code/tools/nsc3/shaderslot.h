@@ -79,6 +79,11 @@ public:
     /// clear connections (must be called before destruction to remove cyclic dependencies)
     void ClearConnections();
 
+	/// set user data
+	void SetUserData(ulong u);
+	/// get user data
+	ulong GetUserData() const;
+
 private:
     SlotType slotType;
     SlotChannel slotChannel;
@@ -87,7 +92,22 @@ private:
     Util::String dataType;
     Util::String semantics;
     Util::Array<Ptr<ShaderSlot>> connections;
+	ulong userData;
 };
+
+//------------------------------------------------------------------------------
+inline void
+ShaderSlot::SetUserData(ulong u)
+{
+	this->userData = u;
+}
+
+//------------------------------------------------------------------------------
+inline ulong
+ShaderSlot::GetUserData() const
+{
+	return this->userData;
+}
 
 } // namespace Tools
 //------------------------------------------------------------------------------

@@ -27,9 +27,16 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 #define QNEMAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
 
-namespace Ui {
-	class MainWindow;
+namespace Ui
+{
+class MainWindow;
+}
+namespace Tools
+{
+class ShaderFragmentModel;
+class ShaderSamplerModel;
 }
 
 class QNodesEditor;
@@ -42,14 +49,23 @@ public:
 	explicit MainWindow(QWidget *parent = 0);
 	~MainWindow();
 
+	void SetupModels();
+
+	QGraphicsScene* GetScene() const;
+
 private slots:
-	void saveFile();
-	void loadFile();
+	void OnActionNew();
+	void OnActionLoad();
+	void OnActionSave();
+	void OnActionCompile();
 	void addBlock();
 
 private:
-	Ui::MainWindow *ui;
-	QNodesEditor *nodesEditor;
+	Ui::MainWindow* ui;
+	QNodesEditor* nodesEditor;
+
+	Tools::ShaderFragmentModel* fragmentModel;
+	Tools::ShaderSamplerModel* samplerModel;
 };
 
 #endif // QNEMAINWINDOW_H
