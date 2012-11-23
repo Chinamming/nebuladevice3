@@ -16,7 +16,8 @@ using namespace Util;
 */
 ShaderSlot::ShaderSlot() :
     slotType(InvalidSlotType),
-    slotChannel(InvalidSlotChannel)
+    slotChannel(InvalidSlotChannel),
+	userData(0)
 {
     // empty
 }

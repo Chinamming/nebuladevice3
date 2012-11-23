@@ -32,6 +32,8 @@ public:
     bool HasSampler(const Util::String& name) const;
     /// get access to a sampler
     const Ptr<ShaderSampler>& GetSampler(const Util::String& name) const;
+	/// get samplers
+	const Util::Dictionary<Util::String, Ptr<ShaderSampler>>& GetSamplers() const;
 
 private:
     Util::Dictionary<Util::String, Ptr<ShaderSampler>> samplers;
@@ -53,6 +55,13 @@ inline const Ptr<ShaderSampler>&
 ShaderSamplerManager::GetSampler(const Util::String& name) const
 {
     return this->samplers[name];
+}
+
+//------------------------------------------------------------------------------
+inline const Util::Dictionary<Util::String, Ptr<ShaderSampler>>&
+ShaderSamplerManager::GetSamplers() const
+{
+	return this->samplers;
 }
 
 } // namespace Tools

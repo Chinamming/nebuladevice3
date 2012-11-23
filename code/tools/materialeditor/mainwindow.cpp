@@ -27,87 +27,122 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "materialeditorapplication.h"
+#include "models/shaderfragmentmodel.h"
+#include "models/shadersamplermodel.h"
+
 #include "qnodeeditor/qneblock.h"
 #include "qnodeeditor/qnodeseditor.h"
-
-#include <QGraphicsScene>
-#include <QFileDialog>
-
 #include "qnodeeditor/qneport.h"
 
+#include <QFileDialog>
+
+
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+	QMainWindow(parent),
+	ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+	this->ui->setupUi(this);
 
-    QGraphicsScene *s = new QGraphicsScene();
-    ui->graphicsView->setScene(s);
-    ui->graphicsView->setRenderHint(QPainter::Antialiasing);
-    // ui->graphicsView->setDragMode(QGraphicsView::ScrollHandDrag);
+	QGraphicsScene *s = new QGraphicsScene();
+	this->ui->graphicsView->setScene(s);
+	this->ui->graphicsView->setRenderHint(QPainter::Antialiasing);
+	// this->ui->graphicsView->setDragMode(QGraphicsView::ScrollHandDrag);
 
-    QNEBlock *b = new QNEBlock(0, s);
-    b->addPort("test", 0, QNEPort::NamePort);
-    b->addPort("TestBlock", 0, QNEPort::TypePort);
-    b->addInputPort("in1");
-    b->addInputPort("in2");
-    b->addInputPort("in3");
-    b->addOutputPort("out1");
-    b->addOutputPort("out2");
-    b->addOutputPort("out3");
+	//QNEBlock *b = new QNEBlock(0, s);
+	//b->addPort("test", 0, QNEPort::NamePort);
+	//b->addPort("TestBlock", 0, QNEPort::TypePort);
+	//b->addInputPort("in1");
+	//b->addInputPort("in2");
+	//b->addInputPort("in3");
+	//b->addOutputPort("out1");
+	//b->addOutputPort("out2");
+	//b->addOutputPort("out3");
 
-    b = b->clone();
-    b->setPos(150, 0);
+	//b = b->clone();
+	//b->setPos(150, 0);
 
-    b = b->clone();
-    b->setPos(150, 150);
+	//b = b->clone();
+	//b->setPos(150, 150);
 
-    nodesEditor = new QNodesEditor(this);
-    nodesEditor->install(s);
+	this->nodesEditor = new QNodesEditor(this);
+	this->nodesEditor->install(s);
 
-    connect(ui->action_Save, SIGNAL(triggered()), this, SLOT(saveFile()));
-    connect(ui->action_Load, SIGNAL(triggered()), this, SLOT(loadFile()));
-    connect(ui->action_Quit, SIGNAL(triggered()), qApp, SLOT(quit()));
+	connect(this->ui->action_New, SIGNAL(triggered()), this, SLOT(OnActionNew()));
+	connect(this->ui->action_Load, SIGNAL(triggered()), this, SLOT(OnActionLoad()));
+	connect(this->ui->action_Save, SIGNAL(triggered()), this, SLOT(OnActionSave()));
+	connect(this->ui->action_Compile, SIGNAL(triggered()), this, SLOT(OnActionCompile()));
+	connect(this->ui->action_Exit, SIGNAL(triggered()),  qApp, SLOT(quit()));
 
-    ui->toolBar->addAction("Add block", this, SLOT(addBlock()));
+	this->ui->toolBar->addAction("Add block", this, SLOT(addBlock()));
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
-}
-
-void MainWindow::saveFile()
-{
-	QString fname = QFileDialog::getSaveFileName();
-	if (fname.isEmpty())
-		return;
-
-	QFile f(fname);
-	f.open(QFile::WriteOnly);
-	QDataStream ds(&f);
-	nodesEditor->save(ds);
-}
-
-void MainWindow::loadFile()
-{
-	QString fname = QFileDialog::getOpenFileName();
-	if (fname.isEmpty())
-		return;
-
-	QFile f(fname);
-	f.open(QFile::ReadOnly);
-	QDataStream ds(&f);
-	nodesEditor->load(ds);
+	delete this->ui;
 }
 
 void MainWindow::addBlock()
 {
-	QNEBlock *b = new QNEBlock(0, ui->graphicsView->scene());
+	QNEBlock *b = new QNEBlock(0, this->ui->graphicsView->scene());
 	static const char* names[] = {"Vin", "Voutsadfasdf", "Imin", "Imax", "mul", "add", "sub", "div", "Conv", "FFT"};
 	for (int i = 0; i < 4 + rand() % 3; i++)
 	{
 		b->addPort(names[rand() % 10], rand() % 2, 0, 0);
-		b->setPos(ui->graphicsView->sceneRect().center().toPoint());
+		b->setPos(this->ui->graphicsView->sceneRect().center().toPoint());
 	}
+}
+
+//------------------------------------------------------------------------------
+void
+MainWindow::OnActionNew()
+{
+	Tools::MaterialEditorApplication::Instance()->New();
+}
+
+//------------------------------------------------------------------------------
+void
+MainWindow::OnActionLoad()
+{
+	IO::URI uri = "home:work/shaderlib/shaders";
+	QString path = QString::fromLocal8Bit(uri.LocalPath().AsCharPtr());
+	QString fileName = QFileDialog::getOpenFileName(this, QObject::tr("Load shader xml"),
+	                   path, "Shaders (*.xml)");
+	Tools::MaterialEditorApplication::Instance()->Load(fileName.toLocal8Bit().data());
+}
+
+//------------------------------------------------------------------------------
+void
+MainWindow::OnActionSave()
+{
+	IO::URI uri = "home:work/shaderlib/shaders";
+	QString path = QString::fromLocal8Bit(uri.LocalPath().AsCharPtr());
+	QString fileName = QFileDialog::getSaveFileName(this, QObject::tr("Save shader xml"),
+	                   path, "Shaders (*.xml)");
+	Tools::MaterialEditorApplication::Instance()->Save(fileName.toLocal8Bit().data());
+}
+
+//------------------------------------------------------------------------------
+void
+MainWindow::OnActionCompile()
+{
+	Tools::MaterialEditorApplication::Instance()->Compile();
+}
+
+//------------------------------------------------------------------------------
+void
+MainWindow::SetupModels()
+{
+	this->fragmentModel = new Tools::ShaderFragmentModel(this);
+	this->ui->listViewFragments->setModel(this->fragmentModel);
+
+	this->samplerModel = new Tools::ShaderSamplerModel(this);
+	this->ui->listViewSamplers->setModel(this->samplerModel);
+}
+
+//------------------------------------------------------------------------------
+QGraphicsScene*
+MainWindow::GetScene() const
+{
+	return this->ui->graphicsView->scene();
 }
